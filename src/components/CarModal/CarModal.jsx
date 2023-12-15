@@ -34,30 +34,30 @@ const CarModal = ({ carId, onClose }) => {
           <span className={css.CarModalItemValue}>{car.model}</span>,{' '}
           <span>{car.year}</span>
         </h3>
-        <div>
-          <div>{car.address.split(', ')[1]}</div>
-          <div>{car.address.split(', ')[2]}</div>
-          <div>
+        <ul>
+          <li>{car.address.split(', ')[1]}</li>
+          <li>{car.address.split(', ')[2]}</li>
+          <li>
             Id:
             <span>{car.id}</span>
-          </div>
-          <div>
+          </li>
+          <li>
             Year:
             <span>{car.year}</span>
-          </div>
-          <div>
+          </li>
+          <li>
             Type:
             <span>{car.type}</span>
-          </div>
-          <div>
+          </li>
+          <li>
             Fuel Consumption:
             <span>{car.fuelConsumption}</span>
-          </div>
-          <div>
+          </li>
+          <li>
             Engine Size:
             <span>{car.engineSize}</span>
-          </div>
-        </div>
+          </li>
+        </ul>
         <h4>Accessories and functionalities:</h4>
         <ul>
           {car.accessories.map(item => {
