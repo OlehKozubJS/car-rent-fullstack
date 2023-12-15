@@ -38,24 +38,19 @@ const CarModal = ({ carId, onClose }) => {
           <li>{car.address.split(', ')[1]}</li>
           <li>{car.address.split(', ')[2]}</li>
           <li>
-            Id:
-            <span>{car.id}</span>
+            Id: <span>{car.id}</span>
           </li>
           <li>
-            Year:
-            <span>{car.year}</span>
+            Year: <span>{car.year}</span>
           </li>
           <li>
-            Type:
-            <span>{car.type}</span>
+            Type: <span>{car.type}</span>
           </li>
           <li>
-            Fuel Consumption:
-            <span>{car.fuelConsumption}</span>
+            Fuel Consumption: <span>{car.fuelConsumption}</span>
           </li>
           <li>
-            Engine Size:
-            <span>{car.engineSize}</span>
+            Engine Size: <span>{car.engineSize}</span>
           </li>
         </ul>
         <h4>Accessories and functionalities:</h4>
