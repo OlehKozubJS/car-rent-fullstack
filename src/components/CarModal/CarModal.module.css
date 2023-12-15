@@ -30,6 +30,13 @@
   padding: none;
 }
 
+.CarModalImage {
+  display: block;
+  width: 469px;
+  height: 314px;
+  border-radius: 12px;
+}
+
 .CarModalHeader {
   color: #121417;
   font-size: 18px;
@@ -47,6 +54,10 @@
   color: rgba(18, 20, 23, 0.5);
   font-size: 12px;
   line-height: 18px;
+}
+
+.CarModalItemValue {
+  color: #3470ff;
 }
 
 .CarModalDescription {
@@ -81,10 +92,6 @@
   font-weight: 400;
   line-height: 18px; /* 150% */
   letter-spacing: -0.24px;
-}
-
-.CarModalItemValue {
-  color: #3470ff;
 }
 
 .CarModalSubmitButton {
