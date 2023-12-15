@@ -30,9 +30,9 @@ const CarModal = ({ carId, onClose }) => {
         </div>
         <img src={car.img} alt="" />
         <h3 className={css.CarModalHeader}>
-          <span>{car.make}</span>
-          <span> </span>
-          <span>{car.model}</span>, <span>{car.year}</span>
+          <span>{car.make}</span>{' '}
+          <span className={css.CarModalItemValue}>{car.model}</span>,{' '}
+          <span>{car.year}</span>
         </h3>
         <div>
           <div>{car.address.split(', ')[1]}</div>
