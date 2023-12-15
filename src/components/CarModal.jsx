@@ -1,23 +1,23 @@
-import { useState, useEffect } from "react";
-import { SVGimage } from "../images";
-import cars from "../advertsCars.json";
+import { useState, useEffect } from 'react';
+import { SVGimage } from '../images';
+import cars from '../advertsCars.json';
 
 const CarModal = ({ carId, onClose }) => {
-  const [car] = useState(cars.find((car) => car.id === carId));
+  const [car] = useState(cars.find(car => car.id === carId));
 
   useEffect(() => {
-    const handleEsc = (event) => {
-      if (event.type === "keydown" && event.key === "Escape") {
+    const handleEsc = event => {
+      if (event.type === 'keydown' && event.key === 'Escape') {
         onClose();
       }
     };
 
-    window.addEventListener("keydown", handleEsc);
+    window.addEventListener('keydown', handleEsc);
 
     return () => {
-      window.removeEventListener("keydown", handleEsc);
+      window.removeEventListener('keydown', handleEsc);
     };
-  }, []);
+  }, [onClose]);
 
   return (
     <div>
@@ -32,8 +32,8 @@ const CarModal = ({ carId, onClose }) => {
         <span>{car.model}</span>, <span>{car.year}</span>
       </h3>
       <div>
-        <div>{car.address.split(", ")[1]}</div>
-        <div>{car.address.split(", ")[2]}</div>
+        <div>{car.address.split(', ')[1]}</div>
+        <div>{car.address.split(', ')[2]}</div>
         <div>
           Id:
           <span>{car.id}</span>
@@ -57,10 +57,10 @@ const CarModal = ({ carId, onClose }) => {
       </div>
       <h4>Accessories and functionalities:</h4>
       <ul>
-        {car.accessories.map((item) => {
+        {car.accessories.map(item => {
           <li>{item}</li>;
         })}
-        {car.functionalities.map((item) => {
+        {car.functionalities.map(item => {
           <li>{item}</li>;
         })}
       </ul>
@@ -68,10 +68,10 @@ const CarModal = ({ carId, onClose }) => {
       <div>
         <div>
           Minimum age:
-          <span>{car.rentalConditions.split("\n")[0].split(" ")[1]}</span>
+          <span>{car.rentalConditions.split('\n')[0].split(' ')[1]}</span>
         </div>
-        <div>{car.rentalConditions.split("\n")[1]}</div>
-        <div>{car.rentalConditions.split("\n")[2]}</div>
+        <div>{car.rentalConditions.split('\n')[1]}</div>
+        <div>{car.rentalConditions.split('\n')[2]}</div>
         <div>
           Mileage:
           <span>{car.mileage}</span>
