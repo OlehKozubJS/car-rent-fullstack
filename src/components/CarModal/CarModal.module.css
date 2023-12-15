@@ -24,3 +24,34 @@
   margin: none;
   padding: none;
 }
+
+.CarModalHeader {
+  color: #121417;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 133.333% */
+}
+
+.CarModalHeaderMake {
+  color: #3470ff;
+}
+
+.CarModalCharacteristics {
+  color: rgba(18, 20, 23, 0.5);
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+}
+
+.CarModalDescription {
+  color: #121417;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
