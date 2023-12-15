@@ -1,6 +1,21 @@
 import { useState, useEffect } from 'react';
 import { SVGimage } from '../../images';
 import cars from '../advertsCars.json';
+import {
+  CarModalBackdrop,
+  CarModalContainer,
+  CarModalCloseButtonContainer,
+  CarModalCloseButton,
+  CarModalHeader,
+  CarModalHeaderMake,
+  CarModalItems,
+  CarModalItem,
+  CarModalDescription,
+  CarModalSubHeader,
+  CarModalRentalItem,
+  CarModalRentalItemValue,
+  CarModalSubmitButton,
+} from './CarModal.module.css';
 
 const CarModal = ({ carId, onClose }) => {
   const [car] = useState(cars.find(car => car.id === carId));
