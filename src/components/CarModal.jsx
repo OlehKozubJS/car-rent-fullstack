@@ -58,10 +58,10 @@ const CarModal = ({ carId, onClose }) => {
       <h4>Accessories and functionalities:</h4>
       <ul>
         {car.accessories.map(item => {
-          <li>{item}</li>;
+          return <li>{item}</li>;
         })}
         {car.functionalities.map(item => {
-          <li>{item}</li>;
+          return <li>{item}</li>;
         })}
       </ul>
       <h4>Rental Conditions: </h4>
