@@ -38,19 +38,21 @@ const CarModal = ({ carId, onClose }) => {
           <li>{car.address.split(', ')[1]}</li>
           <li>{car.address.split(', ')[2]}</li>
           <li>
-            Id: <span>{car.id}</span>
+            Id: <span className={css.CarModalItemValue}>{car.id}</span>
           </li>
           <li>
-            Year: <span>{car.year}</span>
+            Year: <span className={css.CarModalItemValue}>{car.year}</span>
           </li>
           <li>
-            Type: <span>{car.type}</span>
+            Type: <span className={css.CarModalItemValue}>{car.type}</span>
           </li>
           <li>
-            Fuel Consumption: <span>{car.fuelConsumption}</span>
+            Fuel Consumption:{' '}
+            <span className={css.CarModalItemValue}>{car.fuelConsumption}</span>
           </li>
           <li>
-            Engine Size: <span>{car.engineSize}</span>
+            Engine Size:{' '}
+            <span className={css.CarModalItemValue}>{car.engineSize}</span>
           </li>
         </ul>
         <h4>Accessories and functionalities:</h4>
@@ -66,7 +68,9 @@ const CarModal = ({ carId, onClose }) => {
         <div className={css.CarModalItems}>
           <div className={css.CarModalRentalItem}>
             Minimum age:{' '}
-            <span>{car.rentalConditions.split('\n')[0].split(' ')[2]}</span>
+            <span className={css.CarModalItemValue}>
+              {car.rentalConditions.split('\n')[0].split(' ')[2]}
+            </span>
           </div>
           <div className={css.CarModalRentalItem}>
             {car.rentalConditions.split('\n')[1]}
@@ -75,10 +79,12 @@ const CarModal = ({ carId, onClose }) => {
             {car.rentalConditions.split('\n')[2]}
           </div>
           <div className={css.CarModalRentalItem}>
-            Mileage: <span>{car.mileage}</span>
+            Mileage:{' '}
+            <span className={css.CarModalItemValue}>{car.mileage}</span>
           </div>
           <div className={css.CarModalRentalItem}>
-            Price: <span>{car.rentalPrice}</span>
+            Price:{' '}
+            <span className={css.CarModalItemValue}>{car.rentalPrice}</span>
           </div>
         </div>
         <button className={css.CarModalSubmitButton}>Rental car</button>
