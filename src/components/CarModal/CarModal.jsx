@@ -34,59 +34,61 @@ const CarModal = ({ carId, onClose }) => {
           <span className={css.CarModalItemValue}>{car.model}</span>,{' '}
           <span>{car.year}</span>
         </h3>
-        <ul>
-          <li>{car.address.split(', ')[1]}</li>
-          <li>{car.address.split(', ')[2]}</li>
-          <li>
+        <ul className={css.CarModalItems}>
+          <li className={css.CarModalItem}>{car.address.split(', ')[1]}</li>
+          <li className={css.CarModalItem}>{car.address.split(', ')[2]}</li>
+          <li className={css.CarModalItem}>
             Id: <span className={css.CarModalItemValue}>{car.id}</span>
           </li>
-          <li>
+          <li className={css.CarModalItem}>
             Year: <span className={css.CarModalItemValue}>{car.year}</span>
           </li>
-          <li>
+          <li className={css.CarModalItem}>
             Type: <span className={css.CarModalItemValue}>{car.type}</span>
           </li>
-          <li>
+          <li className={css.CarModalItem}>
             Fuel Consumption:{' '}
             <span className={css.CarModalItemValue}>{car.fuelConsumption}</span>
           </li>
-          <li>
+          <li className={css.CarModalItem}>
             Engine Size:{' '}
             <span className={css.CarModalItemValue}>{car.engineSize}</span>
           </li>
         </ul>
-        <h4>Accessories and functionalities:</h4>
-        <ul>
+        <h4 className={css.CarModalSubHeader}>
+          Accessories and functionalities:
+        </h4>
+        <ul className={css.CarModalItems}>
           {car.accessories.map(item => {
-            return <li>{item}</li>;
+            return <li className={css.CarModalItem}>{item}</li>;
           })}
           {car.functionalities.map(item => {
-            return <li>{item}</li>;
+            return <li className={css.CarModalItem}>{item}</li>;
           })}
         </ul>
-        <h4>Rental Conditions: </h4>
-        <div className={css.CarModalItems}>
-          <div className={css.CarModalRentalItem}>
+        <h4 className={css.CarModalSubHeader}>Rental Conditions: </h4>
+        <ul className={css.CarModalItems}>
+          <li className={css.CarModalRentalItem}>
             Minimum age:{' '}
             <span className={css.CarModalItemValue}>
               {car.rentalConditions.split('\n')[0].split(' ')[2]}
             </span>
-          </div>
-          <div className={css.CarModalRentalItem}>
+          </li>
+          <li className={css.CarModalRentalItem}>
             {car.rentalConditions.split('\n')[1]}
-          </div>
-          <div className={css.CarModalRentalItem}>
+          </li>
+          <li className={css.CarModalRentalItem}>
             {car.rentalConditions.split('\n')[2]}
-          </div>
-          <div className={css.CarModalRentalItem}>
+          </li>
+          <li className={css.CarModalRentalItem}>
             Mileage:{' '}
             <span className={css.CarModalItemValue}>{car.mileage}</span>
-          </div>
-          <div className={css.CarModalRentalItem}>
+          </li>
+          <li className={css.CarModalRentalItem}>
             Price:{' '}
             <span className={css.CarModalItemValue}>{car.rentalPrice}</span>
-          </div>
-        </div>
+          </li>
+        </ul>
         <button className={css.CarModalSubmitButton}>Rental car</button>
       </div>
     </div>
