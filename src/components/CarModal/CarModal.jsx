@@ -68,17 +68,21 @@ const CarModal = ({ carId, onClose }) => {
           })}
         </ul>
         <h4>Rental Conditions: </h4>
-        <div>
-          <div>
+        <div className={css.CarModalItems}>
+          <div className={css.CarModalRentalItem}>
             Minimum age:{' '}
             <span>{car.rentalConditions.split('\n')[0].split(' ')[1]}</span>
           </div>
-          <div>{car.rentalConditions.split('\n')[1]}</div>
-          <div>{car.rentalConditions.split('\n')[2]}</div>
-          <div>
+          <div className={css.CarModalRentalItem}>
+            {car.rentalConditions.split('\n')[1]}
+          </div>
+          <div className={css.CarModalRentalItem}>
+            {car.rentalConditions.split('\n')[2]}
+          </div>
+          <div className={css.CarModalRentalItem}>
             Mileage: <span>{car.mileage}</span>
           </div>
-          <div>
+          <div className={css.CarModalRentalItem}>
             Price: <span>{car.rentalPrice}</span>
           </div>
         </div>
