@@ -12,3 +12,15 @@
   border-radius: 24px;
   background: #fff;
 }
+
+.CloseButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.CloseButton {
+  background: none;
+  border: none;
+  margin: none;
+  padding: none;
+}
