@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
-import { CarModal } from "./components/CarModal";
-import cars from "./advertsCars.json";
+import { useState /*useEffect*/ } from 'react';
+import { CarModal } from './components/CarModal';
+//import cars from "./advertsCars.json";
 
 function App() {
   const [isModal, setIsModal] = useState(true);
