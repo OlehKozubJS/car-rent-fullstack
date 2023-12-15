@@ -66,7 +66,7 @@ const CarModal = ({ carId, onClose }) => {
         <div className={css.CarModalItems}>
           <div className={css.CarModalRentalItem}>
             Minimum age:{' '}
-            <span>{car.rentalConditions.split('\n')[0].split(' ')[1]}</span>
+            <span>{car.rentalConditions.split('\n')[0].split(' ')[2]}</span>
           </div>
           <div className={css.CarModalRentalItem}>
             {car.rentalConditions.split('\n')[1]}
