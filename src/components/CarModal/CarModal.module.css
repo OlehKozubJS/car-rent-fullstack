@@ -34,10 +34,6 @@
   line-height: 24px; /* 133.333% */
 }
 
-.CarModalHeaderMake {
-  color: #3470ff;
-}
-
 .CarModalItems {
   display: flex;
   flex-wrap: wrap;
@@ -86,7 +82,7 @@
   letter-spacing: -0.24px;
 }
 
-.CarModalRentalItemValue {
+.CarModalItemValue {
   color: #3470ff;
 }
 
