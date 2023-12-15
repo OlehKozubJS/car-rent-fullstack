@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { SVGimage } from '../../images';
 import cars from '../../advertsCars.json';
 import css from './CarModal.module.css';
+import { ManropeR, ManropeM, ManropeB } from '../../fonts';
 
 const CarModal = ({ carId, onClose }) => {
   const [car] = useState(cars.find(car => car.id === carId));
