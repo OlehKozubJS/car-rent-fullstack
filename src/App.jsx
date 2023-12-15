@@ -1,5 +1,5 @@
 import { useState /*useEffect*/ } from 'react';
-import { CarModal } from './components/CarModal';
+import { CarModal } from './components/CarModal/CarModal';
 //import cars from "./advertsCars.json";
 
 function App() {
