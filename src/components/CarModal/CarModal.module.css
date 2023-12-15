@@ -38,6 +38,11 @@
   color: #3470ff;
 }
 
+.CarModalCharacteristicsModal {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .CarModalCharacteristics {
   color: rgba(18, 20, 23, 0.5);
   font-family: Manrope;
