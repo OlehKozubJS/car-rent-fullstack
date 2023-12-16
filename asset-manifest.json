@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/car-rent-fullstack/static/css/main.1425b0d3.css",
-    "main.js": "/car-rent-fullstack/static/js/main.ce10291b.js",
+    "main.css": "/car-rent-fullstack/static/css/main.f24fd7e8.css",
+    "main.js": "/car-rent-fullstack/static/js/main.0b61da33.js",
     "static/media/Montserrat-SemiBold.ttf": "/car-rent-fullstack/static/media/Montserrat-SemiBold.93b37a465fc4ec0d0415.ttf",
     "static/media/Montserrat-Regular.ttf": "/car-rent-fullstack/static/media/Montserrat-Regular.24785cc015b27a3e964b.ttf",
     "static/media/Manrope-SemiBold.ttf": "/car-rent-fullstack/static/media/Manrope-SemiBold.310f108cc524df0e5ffc.ttf",
     "static/media/Manrope-Medium.ttf": "/car-rent-fullstack/static/media/Manrope-Medium.08894ccb04665d1a9d53.ttf",
     "static/media/Manrope-Regular.ttf": "/car-rent-fullstack/static/media/Manrope-Regular.a9b9e09fe6b69741f316.ttf",
-    "static/media/icons.svg": "/car-rent-fullstack/static/media/icons.f04fc1361f9f06f905642e69c127a949.svg",
+    "static/media/icons.svg": "/car-rent-fullstack/static/media/icons.a1b870d457e2cfd1e28f038db23ac788.svg",
     "index.html": "/car-rent-fullstack/index.html",
-    "main.1425b0d3.css.map": "/car-rent-fullstack/static/css/main.1425b0d3.css.map",
-    "main.ce10291b.js.map": "/car-rent-fullstack/static/js/main.ce10291b.js.map"
+    "main.f24fd7e8.css.map": "/car-rent-fullstack/static/css/main.f24fd7e8.css.map",
+    "main.0b61da33.js.map": "/car-rent-fullstack/static/js/main.0b61da33.js.map"
   },
   "entrypoints": [
-    "static/css/main.1425b0d3.css",
-    "static/js/main.ce10291b.js"
+    "static/css/main.f24fd7e8.css",
+    "static/js/main.0b61da33.js"
   ]
 }
