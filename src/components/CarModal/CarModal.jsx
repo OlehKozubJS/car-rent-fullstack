@@ -2,7 +2,13 @@ import { useState, useEffect } from 'react';
 import { SVGimage } from '../../images';
 import cars from '../../advertsCars.json';
 import css from './CarModal.module.css';
-import { ManropeR, ManropeM, ManropeB, MontserratB } from '../../fonts';
+import {
+  ManropeR,
+  ManropeM,
+  ManropeB,
+  MontserratR,
+  MontserratB,
+} from '../../fonts';
 
 const CarModal = ({ carId, onClose }) => {
   const [car] = useState(cars.find(car => car.id === carId));
@@ -101,26 +107,26 @@ const CarModal = ({ carId, onClose }) => {
         <h4 className={`${css.CarModalSubHeader} ${ManropeM}`}>
           Rental Conditions:{' '}
         </h4>
-        <ul className={css.CarModalItems}>
-          <li className={css.CarModalRentalItem}>
+        <ul className={css.CarModalRentalItems}>
+          <li className={`${css.CarModalRentalItem} ${MontserratR}`}>
             Minimum age:{' '}
             <span className={`${css.CarModalItemValue} ${MontserratB}`}>
               {car.rentalConditions.split('\n')[0].split(' ')[2]}
             </span>
           </li>
-          <li className={css.CarModalRentalItem}>
+          <li className={`${css.CarModalRentalItem} ${MontserratR}`}>
             {car.rentalConditions.split('\n')[1]}
           </li>
-          <li className={css.CarModalRentalItem}>
+          <li className={`${css.CarModalRentalItem} ${MontserratR}`}>
             {car.rentalConditions.split('\n')[2]}
           </li>
-          <li className={css.CarModalRentalItem}>
+          <li className={`${css.CarModalRentalItem} ${MontserratR}`}>
             Mileage:{' '}
             <span className={`${css.CarModalItemValue} ${MontserratB}`}>
               {car.mileage}
             </span>
           </li>
-          <li className={css.CarModalRentalItem}>
+          <li className={`${css.CarModalRentalItem} ${MontserratR}`}>
             Price:{' '}
             <span className={`${css.CarModalItemValue} ${MontserratB}`}>
               {car.rentalPrice}
