@@ -6,6 +6,14 @@ import { ManropeR, ManropeM, ManropeB, MontserratB } from '../../fonts';
 
 const CarModal = ({ carId, onClose }) => {
   const [car] = useState(cars.find(car => car.id === carId));
+  const [isHover, setIsHover] = useState(false);
+
+  const handleMouseOver = () => {
+    setIsHover(true);
+  };
+  const handleMouseLeave = () => {
+    setIsHover(false);
+  };
 
   useEffect(() => {
     const handleEsc = event => {
@@ -25,11 +33,19 @@ const CarModal = ({ carId, onClose }) => {
     <div className={css.CarModalBackdrop}>
       <div className={css.CarModalContainer}>
         <div className={css.CarModalCloseButtonContainer}>
-          <button className={css.CarModalCloseButton} onClick={onClose}>
-            <SVGimage name="close" />
+          <button
+            className={css.CarModalCloseButton}
+            onClick={onClose}
+            onMouseOver={handleMouseOver}
+            onMouseLeave={handleMouseLeave}
+          >
+            <SVGimage
+              className={css.CarModalCloseButtonIcon}
+              name={isHover ? 'close-hover' : 'close'}
+            />
           </button>
         </div>
-        <img src={car.img} alt="" />
+        <img className={css.CarModalImage} src={car.img} alt="" />
         <h3 className={`${css.CarModalHeader} ${ManropeM}`}>
           <span>{car.make}</span>{' '}
           <span className={css.CarModalItemValue}>{car.model}</span>,{' '}

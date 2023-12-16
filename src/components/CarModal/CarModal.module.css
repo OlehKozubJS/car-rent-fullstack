@@ -24,15 +24,29 @@
 }
 
 .CarModalCloseButton {
-  background: none;
   border: none;
-  margin: none;
-  padding: none;
+  outline: none;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  background: none;
+}
+
+.CarModalCloseButton:hover {
+  background: #0b44cd;
+}
+
+.CarModalCloseButtonIcon {
+  display: block;
 }
 
 .CarModalImage {
   display: block;
-  width: 469px;
   height: 314px;
   border-radius: 12px;
 }
@@ -109,4 +123,8 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 20px; /* 142.857% */
+}
+
+.CarModalSubmitButton:hover {
+  background: #0b44cd;
 }

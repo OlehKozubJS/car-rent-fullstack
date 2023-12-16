@@ -1,8 +1,9 @@
-import icons from "./icons.svg";
+import icons from './icons.svg';
+import css from './SVGimage.module.css';
 
 const SVGimage = ({ name }) => {
   return (
-    <svg style={{ width: "20px", height: "20px" }}>
+    <svg className={css.Icon}>
       <use xlinkHref={`${icons}#${name}`} />
     </svg>
   );

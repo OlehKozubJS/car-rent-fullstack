@@ -1,3 +1,3 @@
-import { SVGimage } from "./CarRentIcon";
+import { SVGimage } from './SVGimage';
 
 export { SVGimage };

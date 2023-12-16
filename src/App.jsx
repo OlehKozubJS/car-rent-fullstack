@@ -3,7 +3,7 @@ import { CarModal } from './components/CarModal/CarModal';
 //import cars from "./advertsCars.json";
 
 function App() {
-  const [isModal, setIsModal] = useState(true);
+  const [isModal, setIsModal] = useState(false);
 
   const openModal = () => {
     setIsModal(true);
