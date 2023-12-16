@@ -83,14 +83,18 @@ const CarModal = ({ carId, onClose }) => {
           Accessories and functionalities:
         </h4>
         <ul className={css.CarModalItems}>
-          {car.accessories.map(item => {
+          {car.accessories.map((item, index) => {
             return (
-              <li className={`${css.CarModalItem} ${ManropeR}`}>{item}</li>
+              <li key={index} className={`${css.CarModalItem} ${ManropeR}`}>
+                {item}
+              </li>
             );
           })}
-          {car.functionalities.map(item => {
+          {car.functionalities.map((item, index) => {
             return (
-              <li className={`${css.CarModalItem} ${ManropeR}`}>{item}</li>
+              <li key={index} className={`${css.CarModalItem} ${ManropeR}`}>
+                {item}
+              </li>
             );
           })}
         </ul>
