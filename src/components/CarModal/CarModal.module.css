@@ -11,7 +11,7 @@
 }
 
 .CarModalContainer {
-  width: 541px;
+  max-width: 541px;
   height: 752px;
   padding: 15px 37px 40px 45px;
   border-radius: 24px;
@@ -58,6 +58,8 @@
 }
 
 .CarModalItems {
+  margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -76,18 +78,25 @@
 
 .CarModalDescription {
   color: #121417;
-  font-family: Manrope;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 20px; /* 142.857% */
+  line-height: 20px;
 }
 
 .CarModalSubHeader {
   color: #121417;
-  font-family: Manrope;
   font-size: 14px;
-  font-weight: 500;
-  line-height: 20px; /* 142.857% */
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+.CarModalRentalItems {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 4px;
+  row-gap: 8px;
 }
 
 .CarModalRentalItem {
@@ -101,14 +110,14 @@
   background: #f9f9f9;
 
   color: #363535;
-  font-family: Montserrat;
   font-size: 12px;
-  font-weight: 400;
-  line-height: 18px; /* 150% */
+  line-height: 18px;
   letter-spacing: -0.24px;
 }
 
 .CarModalSubmitButton {
+  margin-top: 24px;
+
   display: inline-flex;
   padding: 12px 50px;
   justify-content: center;
@@ -119,10 +128,8 @@
   background: #3470ff;
 
   color: #fff;
-  font-family: Manrope;
   font-size: 14px;
-  font-weight: 600;
-  line-height: 20px; /* 142.857% */
+  line-height: 20px;
 }
 
 .CarModalSubmitButton:hover {
