@@ -1,5 +1,6 @@
 import { useState /*useEffect*/ } from 'react';
 import { CarModal } from './components/CarModal/CarModal';
+import { getData, setData } from './backend';
 //import cars from "./advertsCars.json";
 
 function App() {
