@@ -8,3 +8,5 @@ const getData = async () => {
 const setData = async data => {
   await writeFile('./data.txt', JSON.stringify(data));
 };
+
+export { getData, setData };
