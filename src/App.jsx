@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import cars from "./advertsCars.json";
 
-import { CarModal } from "./components/CarModal/CarModal";
+import { CarModal } from "./components/CarModal";
 import { CarFilter } from "./components/CarFilter";
 
 const App = () => {
