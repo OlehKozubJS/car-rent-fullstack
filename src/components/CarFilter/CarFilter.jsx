@@ -22,6 +22,7 @@ const CarFilter = ({}) => {
     <form>
       <CarBrandsSelector />
 
+      <h3>Car mileage / km</h3>
       <label htmlFor="mileageFrom">
         <input id="mileageFrom" type="number" placeholder="From" />
       </label>
