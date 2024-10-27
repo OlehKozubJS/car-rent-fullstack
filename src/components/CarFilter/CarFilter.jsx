@@ -12,15 +12,19 @@ const CarFilter = ({}) => {
     <form>
       <div></div>
       <div></div>
-      <label htmlFor="">
-        <input type="number" />
+      <label htmlFor="from">
+        <input id="" type="number" placeholder="" />
       </label>
       <label htmlFor="">
-        <input type="number" />
+        <input id="" type="number" placeholder="" />
       </label>
       <ul>
-        {carBrands.map((carBrand) => {
-          return <li key={carBrand}>{carBrand}</li>;
+        {carBrands.map((carBrand, carBrandIndex) => {
+          return (
+            <li key={carBrandIndex}>
+              {carBrandIndex} {carBrand}
+            </li>
+          );
         })}
       </ul>
       <button type="submit">Search</button>
