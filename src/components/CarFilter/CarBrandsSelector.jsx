@@ -6,7 +6,7 @@ import makes from "../../makes.json";
 import { SVGimage } from "../../images";
 
 const CarBrandsSelector = ({}) => {
-  const [carBrands, setCarBrands] = useState(makes);
+  const [carBrands] = useState(makes);
   const [isCarBrandsOptions, setIsCarBrandsOptions] = useState(false);
 
   const openCarBrandOptions = () => {
