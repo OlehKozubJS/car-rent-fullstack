@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
+
+import cars from "./advertsCars.json";
+
 import { CarModal } from "./components/CarModal/CarModal";
-//import cars from "./advertsCars.json";
+import {
 
 function App() {
   const [isModal, setIsModal] = useState(false);
