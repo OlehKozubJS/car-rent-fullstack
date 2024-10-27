@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { SVGimage } from "../images";
 import cars from "../advertsCars.json";
 
-const CarModal = ({ carId, onClose }) => {
+const CarFilter = ({ carId, onClose }) => {
   const [car, setCar] = useState({});
 
   useEffect(() => {
@@ -93,4 +93,4 @@ const CarModal = ({ carId, onClose }) => {
   );
 };
 
-export { CarModal };
+export { CarFilter };
