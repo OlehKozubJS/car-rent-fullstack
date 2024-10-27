@@ -17,6 +17,7 @@ function App() {
 
   useEffect(() => {
     let dateAnimation;
+
     const dateAnimationFunction = () => {
       setDate(new Date());
     };
