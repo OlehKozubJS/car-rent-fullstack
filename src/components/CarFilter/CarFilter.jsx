@@ -9,9 +9,13 @@ const CarFilter = ({}) => {
   const [carBrands, setCarBrands] = useState(makes);
   const [isCarBrandsOptions, setIsCarBrandsOptions] = useState(false);
 
-  const openCarBrandOptions = () => {};
+  const openCarBrandOptions = () => {
+    setIsCarBrandsOptions(true);
+  };
 
-  const closeCarBrandOptions = () => {};
+  const closeCarBrandOptions = () => {
+    setIsCarBrandsOptions(false);
+  };
 
   return (
     <form>
