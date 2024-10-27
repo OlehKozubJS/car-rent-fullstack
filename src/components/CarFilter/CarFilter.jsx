@@ -22,12 +22,15 @@ const CarFilter = ({}) => {
       <div></div>
       <div></div>
       <label htmlFor="mileageFrom">
-        <input id="mileageFrom" type="number" placeholder="from" />
+        <input id="mileageFrom" type="number" placeholder="From" />
       </label>
       <label htmlFor="mileageTo">
-        <input id="mileageTo" type="number" placeholder="to" />
+        <input id="mileageTo" type="number" placeholder="To" />
       </label>
       <div>
+        <label htmlFor="carBrandSearch">
+          <input id="carBrandSearch" type="text" placeholder="Enter the text" />
+        </label>
         <button
           type="button"
           onClick={
