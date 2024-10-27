@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 
 import cars from "../../advertsCars.json";
-import carBrands from "../../makes.json";
+import makes from "../../makes.json";
 
 import { SVGimage } from "../../images";
 
 const CarFilter = ({}) => {
+  const [carBrands, setCarBrands] = useState(makes);
+
   return (
     <form>
       <div></div>
@@ -16,6 +18,9 @@ const CarFilter = ({}) => {
       <label htmlFor="">
         <input type="number" />
       </label>
+      <ul>
+        <li>{String(carBrands)}</li>
+      </ul>
       <button type="submit">Search</button>
     </form>
   );
