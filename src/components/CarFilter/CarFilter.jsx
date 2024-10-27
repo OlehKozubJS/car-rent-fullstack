@@ -27,17 +27,29 @@ const CarFilter = ({}) => {
       <label htmlFor="mileageTo">
         <input id="mileageTo" type="number" placeholder="to" />
       </label>
-      <ul>
-        {carBrands.map((carBrand, carBrandIndex) => {
-          return (
-            <li key={carBrandIndex}>
-              <button type="button" value={carBrand}>
-                {carBrand}
-              </button>
-            </li>
-          );
-        })}
-      </ul>
+      <div>
+        <button
+          type="button"
+          onClick={
+            isCarBrandsOptions ? closeCarBrandOptions : openCarBrandOptions
+          }
+        >
+          {}
+        </button>
+        {isCarBrandsOptions && (
+          <ul>
+            {carBrands.map((carBrand, carBrandIndex) => {
+              return (
+                <li key={carBrandIndex}>
+                  <button type="button" value={carBrand}>
+                    {carBrand}
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
+        )}
+      </div>
       <button type="submit">Search</button>
     </form>
   );
