@@ -3,7 +3,7 @@ import { SVGimage } from "../images";
 import cars from "../advertsCars.json";
 
 const CarFilter = ({}) => {
-  return <>This is cat filter</>;
+  return <>This is car filter</>;
 };
 
 export { CarFilter };
