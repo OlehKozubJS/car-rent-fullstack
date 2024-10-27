@@ -22,15 +22,16 @@ const CarBrandsSelector = ({}) => {
       <h3>Car brand</h3>
       <label htmlFor="carBrandSearch">
         <input id="carBrandSearch" type="text" placeholder="Enter the text" />
+
+        <button
+          type="button"
+          onClick={
+            isCarBrandsOptions ? closeCarBrandOptions : openCarBrandOptions
+          }
+        >
+          {<SVGimage name={isCarBrandsOptions ? "up" : "down"} />}
+        </button>
       </label>
-      <button
-        type="button"
-        onClick={
-          isCarBrandsOptions ? closeCarBrandOptions : openCarBrandOptions
-        }
-      >
-        {<SVGimage name={isCarBrandsOptions ? "up" : "down"} />}
-      </button>
       {isCarBrandsOptions && (
         <ul>
           {carBrands.map((carBrand, carBrandIndex) => {
