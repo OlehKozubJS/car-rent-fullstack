@@ -22,7 +22,7 @@ const CarFilter = ({}) => {
         {carBrands.map((carBrand, carBrandIndex) => {
           return (
             <li key={carBrandIndex}>
-              {carBrandIndex} {carBrand}
+              {carBrandIndex + 1} {carBrand}
             </li>
           );
         })}
