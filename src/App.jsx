@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import cars from "./advertsCars.json";
 
 import { CarModal } from "./components/CarModal";
-import { CarFilter } from "./components/CarFilter";
+import { CarGallery } from "./components/CarGallery";
 
 const App = () => {
   const [isModal, setIsModal] = useState(false);
@@ -37,7 +37,7 @@ const App = () => {
       <button onClick={openModal}>Open Modal</button>
       {isModal && <CarModal carId={9582} onClose={closeModal} />}
       {String(date)}
-      <CarFilter />
+      <CarGallery />
     </div>
   );
 };
