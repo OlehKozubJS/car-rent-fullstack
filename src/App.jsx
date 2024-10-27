@@ -3,9 +3,9 @@ import { useState, useEffect } from "react";
 import cars from "./advertsCars.json";
 
 import { CarModal } from "./components/CarModal/CarModal";
-import {
+import { CarFilter } from "./components/CarFilter";
 
-function App() {
+const App = () => {
   const [isModal, setIsModal] = useState(false);
 
   const openModal = () => {
@@ -39,6 +39,6 @@ function App() {
       {String(date)}
     </div>
   );
-}
+};
 
 export { App };
