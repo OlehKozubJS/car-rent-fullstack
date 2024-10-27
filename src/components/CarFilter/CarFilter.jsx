@@ -5,6 +5,7 @@ import makes from "../../makes.json";
 
 import { SVGimage } from "../../images";
 import { CarBrandsSelector } from "./CarBrandsSelector";
+import { CarMileageSelector } from "./CarMileageSelector";
 
 const CarFilter = ({}) => {
   const [carBrands, setCarBrands] = useState(makes);
@@ -22,14 +23,7 @@ const CarFilter = ({}) => {
     <form>
       <CarBrandsSelector />
 
-      <h3>Car mileage / km</h3>
-      <label htmlFor="mileageFrom">
-        <input id="mileageFrom" type="number" placeholder="From" />
-      </label>
-
-      <label htmlFor="mileageTo">
-        <input id="mileageTo" type="number" placeholder="To" />
-      </label>
+      <CarMileageSelector />
 
       <button type="submit">Search</button>
     </form>
