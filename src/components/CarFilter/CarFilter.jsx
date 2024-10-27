@@ -34,7 +34,7 @@ const CarFilter = ({}) => {
             isCarBrandsOptions ? closeCarBrandOptions : openCarBrandOptions
           }
         >
-          {}
+          {<SVGimage name={isCarBrandsOptions ? "up" : "down"} />}
         </button>
         {isCarBrandsOptions && (
           <ul>
