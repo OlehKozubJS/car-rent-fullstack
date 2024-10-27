@@ -7,6 +7,11 @@ import { SVGimage } from "../../images";
 
 const CarFilter = ({}) => {
   const [carBrands, setCarBrands] = useState(makes);
+  const [isCarBrandsOptions, setIsCarBrandsOptions] = useState(false);
+
+  const openCarBrandOptions = () => {};
+
+  const closeCarBrandOptions = () => {};
 
   return (
     <form>
@@ -22,7 +27,9 @@ const CarFilter = ({}) => {
         {carBrands.map((carBrand, carBrandIndex) => {
           return (
             <li key={carBrandIndex}>
-              <button type="button" value={}>{carBrand}</button>
+              <button type="button" value={carBrand}>
+                {carBrand}
+              </button>
             </li>
           );
         })}
