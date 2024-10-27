@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 import cars from "./advertsCars.json";
 
+import { CarFilter } from "./components/CarFilter";
 import { CarModal } from "./components/CarModal";
 import { CarGallery } from "./components/CarGallery";
 
@@ -38,6 +39,7 @@ const App = () => {
       {isModal && <CarModal carId={9582} onClose={closeModal} />}
       {String(date)}
       <CarGallery />
+      <CarFilter />
     </div>
   );
 };

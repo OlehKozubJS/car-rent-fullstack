@@ -19,7 +19,9 @@ const CarFilter = ({}) => {
         <input type="number" />
       </label>
       <ul>
-        <li>{String(carBrands)}</li>
+        {carBrands.map((carBrand) => {
+          return <li key={carBrand}>{carBrand}</li>;
+        })}
       </ul>
       <button type="submit">Search</button>
     </form>
