@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import cars from "../../advertsCars.json";
 import makes from "../../makes.json";
 
+import { CarFilterOptionsSelector } from "./CarFilterOptionsSelector";
+
 import { SVGimage } from "../../images";
 
 const CarBrandsSelector = ({}) => {
@@ -39,24 +41,10 @@ const CarBrandsSelector = ({}) => {
         </button>
       </label>
       {isCarBrandsOptions && (
-        <ul>
-          {carBrands.map((carBrand, carBrandIndex) => {
-            return (
-              <li key={carBrandIndex}>
-                <label htmlFor={carBrandIndex}>
-                  <input
-                    id={carBrandIndex}
-                    type="radio"
-                    name="carBrand"
-                    value={carBrand}
-                    onChange={handleCarBrand}
-                  />
-                  <span>{carBrand}</span>
-                </label>
-              </li>
-            );
-          })}
-        </ul>
+        <CarFilterOptionsSelector
+          options={carBrands}
+          onChange={handleCarBrand}
+        />
       )}
       {carBrand}
     </div>
