@@ -20,13 +20,11 @@ const App = () => {
   const [date, setDate] = useState(new Date());
 
   useEffect(() => {
-    let dateAnimation;
-
     const dateAnimationFunction = () => {
       setDate(new Date());
     };
 
-    dateAnimation = setInterval(dateAnimationFunction, 1000);
+    let dateAnimation = setInterval(dateAnimationFunction, 1000);
 
     return () => {
       clearInterval(dateAnimation);
