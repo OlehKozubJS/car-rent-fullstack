@@ -5,6 +5,7 @@ import cars from "./advertsCars.json";
 import { CarFilter } from "./components/CarFilter";
 import { CarModal } from "./components/CarModal";
 import { CarGallery } from "./components/CarGallery";
+import { ScrollRangeTest } from "./ScrollRangeTest";
 
 const App = () => {
   const [isModal, setIsModal] = useState(false);
@@ -38,6 +39,7 @@ const App = () => {
       {String(date)}
       <CarGallery />
       <CarFilter />
+      <ScrollRangeTest />
     </div>
   );
 };
