@@ -9,6 +9,7 @@ const CarBrandsSelector = ({}) => {
   const [carBrands] = useState(makes);
   const [carsInformation] = useState(makes);
   const [isCarBrandsOptions, setIsCarBrandsOptions] = useState(false);
+  const [carBrand, setCarBrand] = useState("");
 
   const openCarBrandOptions = () => {
     setIsCarBrandsOptions(true);
@@ -16,6 +17,10 @@ const CarBrandsSelector = ({}) => {
 
   const closeCarBrandOptions = () => {
     setIsCarBrandsOptions(false);
+  };
+
+  const handleCarBrand = (event) => {
+    setCarBrand(event.target.value);
   };
 
   return (
@@ -44,14 +49,16 @@ const CarBrandsSelector = ({}) => {
                     type="radio"
                     name="carBrand"
                     value={carBrand}
+                    onChange={handleCarBrand}
                   />
-                  <p>{carBrand}</p>
+                  <span>{carBrand}</span>
                 </label>
               </li>
             );
           })}
         </ul>
       )}
+      {carBrand}
     </div>
   );
 };
