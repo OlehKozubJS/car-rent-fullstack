@@ -7,6 +7,7 @@ import { SVGimage } from "../../images";
 
 const CarBrandsSelector = ({}) => {
   const [carBrands] = useState(makes);
+  const [carsInformation] = useState(makes);
   const [isCarBrandsOptions, setIsCarBrandsOptions] = useState(false);
 
   const openCarBrandOptions = () => {
@@ -37,9 +38,15 @@ const CarBrandsSelector = ({}) => {
           {carBrands.map((carBrand, carBrandIndex) => {
             return (
               <li key={carBrandIndex}>
-                <button type="button" value={carBrand}>
-                  {carBrand}
-                </button>
+                <label htmlFor={carBrandIndex}>
+                  <input
+                    id={carBrandIndex}
+                    type="radio"
+                    name="carBrand"
+                    value={carBrand}
+                  />
+                  <p>{carBrand}</p>
+                </label>
               </li>
             );
           })}
