@@ -24,6 +24,10 @@ const ScrollRangeTest = () => {
     setIsDraggable(false);
   };
 
+  const resetRange = () => {
+    setValueY(0);
+  };
+
   return (
     <>
       <div
@@ -52,6 +56,9 @@ const ScrollRangeTest = () => {
       <p>{!isDraggable && "not "}draggable</p>
       <p>{mouseDownY}</p>
       <p>{valueY}</p>
+      <button type="button" onClick={resetRange}>
+        Reset
+      </button>
     </>
   );
 };
