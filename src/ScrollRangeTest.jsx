@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const ScrollRangeTest = () => {
   const [isDraggable, setIsDraggable] = useState(false);
@@ -28,12 +28,14 @@ const ScrollRangeTest = () => {
   };
 
   const handleMouseLeave = (event) => {
-    setIsDraggable(false);
+    setIsDraggable(true);
   };
 
   const resetRange = () => {
     setValueY(0);
   };
+
+  useEffect(() => {}, []);
 
   return (
     <>
