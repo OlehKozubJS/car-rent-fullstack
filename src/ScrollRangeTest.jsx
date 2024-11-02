@@ -47,8 +47,7 @@ const ScrollRangeTest = () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
   }, [isDraggable]);
-  const firstProperty = "height";
-  const secondProperty = "width";
+
   return (
     <>
       <button type="button" onClick={resetRange}>
@@ -56,8 +55,8 @@ const ScrollRangeTest = () => {
       </button>
       <div
         className={css`
-          ${firstProperty}: 100px;
-          ${secondProperty}: 500px;
+          height: 100px;
+          width: 500px;
           background-color: cyan;
           position: relative;
         `}
