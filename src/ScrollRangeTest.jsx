@@ -55,7 +55,6 @@ const ScrollRangeTest = () => {
         <div
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
-          onMouseUp={handleMouseUp}
           style={{
             width: "100px",
             height: "250px",
