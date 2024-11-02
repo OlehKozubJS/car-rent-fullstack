@@ -47,8 +47,8 @@ const ScrollRangeTest = () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
   }, [isDraggable]);
-  const firstProperty = "width";
-  const secondProperty = "height";
+  const firstProperty = "height";
+  const secondProperty = "width";
   return (
     <>
       <button type="button" onClick={resetRange}>
