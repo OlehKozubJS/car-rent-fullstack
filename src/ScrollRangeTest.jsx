@@ -7,7 +7,7 @@ const ScrollRangeTest = () => {
   const [carBrands, setCarBrands] = useState(makes);
   const [isDraggable, setIsDraggable] = useState(false);
   const [mouseDownY, setMouseDownY] = useState(0);
-  const [valueY, setValueY] = useState(0);
+  const [valueY, setValueY] = useState(14);
 
   const handleMouseDown = (event) => {
     const cursorY = event.clientY;
@@ -85,7 +85,7 @@ const ScrollRangeTest = () => {
             top: ${valueY}px;
             right: 8px;
 
-            background-color: blue;
+            background-color: rgba(18, 20, 23, 0.05);
 
             border-radius: 10px;
           `}
