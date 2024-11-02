@@ -1,14 +1,27 @@
 import { useState } from "react";
 
 const ScrollRangeTest = () => {
-  const [isDraggable, setIsdraggable] = useState(false);
+  const [isDraggable, setIsDraggable] = useState(false);
   const [mouseDownY, setMouseDownY] = useState(0);
   const [valueY, setValueY] = useState(0);
 
-  const handleMouseDown = (event) => {};
-  const handleMouseUp = (event) => {};
-  const handleMouseMove = (event) => {};
-  const handleMouseLeave = (event) => {};
+  const handleMouseDown = (event) => {
+    const cursorY = event.clientY;
+    setIsDraggable(true);
+    setMouseDownY(cursorY - valueY);
+  };
+
+  const handleMouseUp = (event) => {
+    setValueY(valueY - mouseDownY);
+  };
+
+  const handleMouseMove = (event) => {
+    setIsDraggable(false);
+  };
+
+  const handleMouseLeave = (event) => {
+    setIsDraggable(false);
+  };
 
   return (
     <>
