@@ -1,6 +1,14 @@
 import { useState } from "react";
 
 const ScrollRangeTest = () => {
+  const rangeRotorStyle = {
+    wigth: "100px",
+    height: "250px",
+    backgroundColor: "blue",
+    position: "absolute",
+    top: "20px",
+    left: "20px",
+  };
   const [isDraggable, setIsDraggable] = useState(false);
   const [mouseDownY, setMouseDownY] = useState(0);
   const [valueY, setValueY] = useState(0);
@@ -39,14 +47,7 @@ const ScrollRangeTest = () => {
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUp}
           onMouseLeave={handleMouseLeave}
-          style={{
-            wigth: "100px",
-            height: "250px",
-            backgroundColor: "blue",
-            position: "absolute",
-            top: "10px",
-            left: "0px",
-          }}
+          style={rangeRotorStyle}
         ></div>
       </div>
       <p>{!isDraggable && "not "}draggable</p>
