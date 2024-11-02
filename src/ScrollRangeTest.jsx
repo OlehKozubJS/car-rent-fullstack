@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { css } from "@emotion/css";
 
 const ScrollRangeTest = () => {
   const [isDraggable, setIsDraggable] = useState(false);
@@ -53,12 +54,14 @@ const ScrollRangeTest = () => {
         Reset
       </button>
       <div
-        style={{
-          width: "100px",
-          height: "500px",
-          backgroundColor: "cyan",
-          position: "relative",
-        }}
+        className={css`
+           {
+            width: 100px;
+            height: 500px;
+            backgroundcolor: cyan;
+            position: relative;
+          }
+        `}
       >
         <div
           onMouseDown={handleMouseDown}
