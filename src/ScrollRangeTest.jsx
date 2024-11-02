@@ -55,8 +55,8 @@ const ScrollRangeTest = () => {
       </button>
       <div
         className={css`
-          width: 100px;
-          height: 500px;
+          height: 272px;
+          width: 224px;
           background-color: cyan;
           position: relative;
         `}
@@ -64,8 +64,8 @@ const ScrollRangeTest = () => {
         <div
           onMouseDown={handleMouseDown}
           className={css`
+            height: 8px;
             width: 100px;
-            height: 250px;
             background-color: blue;
             position: absolute;
             top: ${valueY}px;
