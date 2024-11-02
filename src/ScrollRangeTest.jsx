@@ -23,7 +23,7 @@ const ScrollRangeTest = () => {
     }
   };
 
-  const handleMouseUp = (event) => {
+  const handleMouseUp = () => {
     setIsDraggable(false);
   };
 
