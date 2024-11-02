@@ -44,7 +44,7 @@ const ScrollRangeTest = () => {
             height: "250px",
             backgroundColor: "blue",
             position: "absolute",
-            top: { valueY },
+            top: `${valueY}px`,
             left: "0px",
           }}
         ></div>
