@@ -30,6 +30,9 @@ const ScrollRangeTest = () => {
 
   return (
     <>
+      <button type="button" onClick={resetRange}>
+        Reset
+      </button>
       <div
         style={{
           width: "100px",
@@ -56,9 +59,6 @@ const ScrollRangeTest = () => {
       <p>{!isDraggable && "not "}draggable</p>
       <p>{mouseDownY}</p>
       <p>{valueY}</p>
-      <button type="button" onClick={resetRange}>
-        Reset
-      </button>
     </>
   );
 };
