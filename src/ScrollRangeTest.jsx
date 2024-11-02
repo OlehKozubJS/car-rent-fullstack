@@ -12,7 +12,8 @@ const ScrollRangeTest = () => {
   };
 
   const handleMouseUp = (event) => {
-    setValueY(valueY - mouseDownY);
+    const cursorY = event.clientY;
+    setValueY(cursorY - mouseDownY);
   };
 
   const handleMouseMove = (event) => {
@@ -25,13 +26,27 @@ const ScrollRangeTest = () => {
 
   return (
     <>
-      <div style={{ width: "10px", height: "500px", backgroundColor: "cyan" }}>
+      <div
+        style={{
+          width: "100px",
+          height: "500px",
+          backgroundColor: "cyan",
+          position: "relative",
+        }}
+      >
         <div
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUp}
           onMouseLeave={handleMouseLeave}
-          style={{ wigth: "10px", height: "250px", backgroundColor: "blue" }}
+          style={{
+            wigth: "100px",
+            height: "250px",
+            backgroundColor: "blue",
+            position: "absolute",
+            top: "10px",
+            left: "0px",
+          }}
         ></div>
       </div>
       <p>{!isDraggable && "not "}draggable</p>
