@@ -71,7 +71,7 @@ const ScrollRangeTest = () => {
             height: 136px;
             width: 8px;
             top: ${valueY}px;
-            right: 0px;
+            right: 8px;
 
             background-color: blue;
             border-radius: 10px;
