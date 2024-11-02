@@ -13,7 +13,7 @@ const ScrollRangeTest = () => {
 
   const handleMouseMove = (event) => {
     const cursorY = event.clientY;
-    setValueY(cursorY - mouseDownY);
+    //setValueY(cursorY - mouseDownY);
   };
 
   const handleMouseUp = (event) => {
