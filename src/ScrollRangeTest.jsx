@@ -12,7 +12,7 @@ const ScrollRangeTest = () => {
           style={{ wigth: "10px", height: "250px", backgroundColor: "blue" }}
         ></div>
       </div>
-      <p>{isDraggable}</p>
+      <p>{!isDraggable && "not "}draggable</p>
       <p>{mouseDownY}</p>
       <p>{valueY}</p>
     </>
