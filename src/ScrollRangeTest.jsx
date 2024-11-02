@@ -68,7 +68,7 @@ const ScrollRangeTest = () => {
         `}
       >
         <ul>
-          {carBrands.map((carBrand, carBrandIndex) => {
+          {carBrands.slice(0, 3).map((carBrand, carBrandIndex) => {
             return <li key={carBrandIndex}>{carBrand}</li>;
           })}
         </ul>
