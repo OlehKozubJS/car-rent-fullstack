@@ -27,15 +27,21 @@ const ScrollRangeTest = () => {
     setIsDraggable(false);
   };
 
-  const handleMouseLeave = (event) => {
-    setIsDraggable(true);
-  };
-
   const resetRange = () => {
     setValueY(0);
   };
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const stopDraggingWhenMouseUp = () => {
+      setIsDraggable(false);
+    };
+
+    window.addEventListener("mouseup", stopDraggingWhenMouseUp);
+
+    return () => {
+      window.removeEventListener("mouseup", stopDraggingWhenMouseUp);
+    };
+  }, []);
 
   return (
     <>
@@ -54,7 +60,6 @@ const ScrollRangeTest = () => {
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUp}
-          onMouseLeave={handleMouseLeave}
           style={{
             width: "100px",
             height: "250px",
