@@ -12,8 +12,10 @@ const ScrollRangeTest = () => {
   };
 
   const handleMouseMove = (event) => {
-    const cursorY = event.clientY;
-    //setValueY(cursorY - mouseDownY);
+    if (isDraggable) {
+      const cursorY = event.clientY;
+      setValueY(cursorY - mouseDownY);
+    }
   };
 
   const handleMouseUp = (event) => {
