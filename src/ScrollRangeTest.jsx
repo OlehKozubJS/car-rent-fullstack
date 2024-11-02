@@ -11,12 +11,12 @@ const ScrollRangeTest = () => {
     setMouseDownY(cursorY - valueY);
   };
 
-  const handleMouseUp = (event) => {
+  const handleMouseMove = (event) => {
     const cursorY = event.clientY;
     setValueY(cursorY - mouseDownY);
   };
 
-  const handleMouseMove = (event) => {
+  const handleMouseUp = (event) => {
     setIsDraggable(false);
   };
 
@@ -45,7 +45,7 @@ const ScrollRangeTest = () => {
             backgroundColor: "blue",
             position: "absolute",
             top: { valueY },
-            left: "20px",
+            left: "0px",
           }}
         ></div>
       </div>
