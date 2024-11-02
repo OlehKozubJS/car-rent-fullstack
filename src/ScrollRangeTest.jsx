@@ -61,8 +61,12 @@ const ScrollRangeTest = () => {
           height: 272px;
           width: 224px;
 
-          background-color: cyan;
+          background-color: white;
+
+          border-style: solid;
           border-radius: 14px;
+          border-width: 1px;
+          border-color: rgba(18, 20, 23, 0.05);
 
           position: relative;
         `}
@@ -82,6 +86,7 @@ const ScrollRangeTest = () => {
             right: 8px;
 
             background-color: blue;
+
             border-radius: 10px;
           `}
         ></div>
