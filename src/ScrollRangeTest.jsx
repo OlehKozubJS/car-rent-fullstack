@@ -55,12 +55,10 @@ const ScrollRangeTest = () => {
       </button>
       <div
         className={css`
-           {
-            width: 100px;
-            height: 500px;
-            backgroundcolor: cyan;
-            position: relative;
-          }
+          width: 100px;
+          height: 500px;
+          background-color: cyan;
+          position: relative;
         `}
       >
         <div
