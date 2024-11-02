@@ -18,7 +18,7 @@ const ScrollRangeTest = () => {
     if (isDraggable) {
       const cursorY = event.clientY;
       const newValueY = cursorY - mouseDownY;
-      if (newValueY >= 15 && newValueY <= 121) {
+      if (newValueY >= 14 && newValueY <= 122) {
         setValueY(newValueY);
       }
     }
