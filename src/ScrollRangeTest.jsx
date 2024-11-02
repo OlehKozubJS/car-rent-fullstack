@@ -57,19 +57,24 @@ const ScrollRangeTest = () => {
         className={css`
           height: 272px;
           width: 224px;
+
           background-color: cyan;
+          border-radius: 14px;
+
           position: relative;
         `}
       >
         <div
           onMouseDown={handleMouseDown}
           className={css`
+            position: absolute;
             height: 136px;
             width: 8px;
-            background-color: blue;
-            position: absolute;
             top: ${valueY}px;
-            right: "0px";
+            right: 0px;
+
+            background-color: blue;
+            border-radius: 10px;
           `}
         ></div>
       </div>
