@@ -39,6 +39,14 @@ const ScrollRangeTest = () => {
     };
   }, []);
 
+  useEffect(() => {
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, [isDraggable]);
+
   return (
     <>
       <button type="button" onClick={resetRange}>
@@ -54,7 +62,6 @@ const ScrollRangeTest = () => {
       >
         <div
           onMouseDown={handleMouseDown}
-          onMouseMove={handleMouseMove}
           style={{
             width: "100px",
             height: "250px",
