@@ -1,7 +1,14 @@
+.RangeStator {
+  width: "100px";
+  height: "500px";
+  background-color: cyan;
+  position: relative;
+}
+
 .RangeRotor {
-  wigth: "100px";
+  width: "100px";
   height: "250px";
-  backgroundcolor: "blue";
+  background-color: "blue";
   position: "absolute";
   top: "20px";
   left: "20px";
