@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import { css } from "@emotion/css";
 
+import makes from "./makes.json";
+
 const ScrollRangeTest = () => {
+  const [carBrands, setCarBrands] = useState(makes);
   const [isDraggable, setIsDraggable] = useState(false);
   const [mouseDownY, setMouseDownY] = useState(0);
   const [valueY, setValueY] = useState(0);
@@ -64,6 +67,11 @@ const ScrollRangeTest = () => {
           position: relative;
         `}
       >
+        <ul>
+          {carBrands.map((carBrand, carBrandIndex) => {
+            return <li key={carBrandIndex}>{carBrand}</li>;
+          })}
+        </ul>
         <div
           onMouseDown={handleMouseDown}
           className={css`
