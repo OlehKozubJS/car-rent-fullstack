@@ -63,14 +63,14 @@ const ScrollRangeTest = () => {
       >
         <div
           onMouseDown={handleMouseDown}
-          style={{
-            width: "100px",
-            height: "250px",
-            backgroundColor: "blue",
-            position: "absolute",
-            top: `${valueY}px`,
-            left: "0px",
-          }}
+          className={css`
+            width: 100px;
+            height: 250px;
+            background-color: blue;
+            position: absolute;
+            top: ${valueY}px;
+            left: "0px";
+          `}
         ></div>
       </div>
       <p>{!isDraggable && "not "}draggable</p>
