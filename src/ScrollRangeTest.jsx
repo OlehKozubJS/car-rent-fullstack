@@ -32,14 +32,10 @@ const ScrollRangeTest = () => {
   };
 
   useEffect(() => {
-    const stopDraggingWhenMouseUp = () => {
-      setIsDraggable(false);
-    };
-
-    window.addEventListener("mouseup", stopDraggingWhenMouseUp);
+    window.addEventListener("mouseup", handleMouseUp);
 
     return () => {
-      window.removeEventListener("mouseup", stopDraggingWhenMouseUp);
+      window.removeEventListener("mouseup", handleMouseUp);
     };
   }, []);
 
