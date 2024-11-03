@@ -59,6 +59,8 @@ const ScrollRangeTest = () => {
       </button>
       <div
         className={css`
+          box-sizing: border-box;
+
           height: 272px;
           width: 224px;
 
