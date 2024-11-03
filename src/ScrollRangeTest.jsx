@@ -84,7 +84,7 @@ const ScrollRangeTest = () => {
           className={css`
             position: absolute;
             height: 136px;
-            width: 8px;
+            width: 28px;
             top: ${valueY}px;
             right: 0px;
 
