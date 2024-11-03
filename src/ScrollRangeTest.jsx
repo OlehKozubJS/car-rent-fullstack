@@ -32,7 +32,7 @@ const ScrollRangeTest = () => {
   };
 
   const resetRange = () => {
-    setValueY(0);
+    setValueY(14);
   };
 
   useEffect(() => {
