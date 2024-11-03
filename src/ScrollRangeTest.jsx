@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { css } from "@emotion/css";
-import { Global } from "@emotion/react";
+import { Global, css } from "@emotion/react";
 
 import makes from "./makes.json";
 
