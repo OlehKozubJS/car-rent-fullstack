@@ -1,18 +1,14 @@
 import { useEffect, useState } from "react";
 import { css } from "@emotion/css";
 
-import makes from "./makes.json";
-
-const ScrollRangeTest = () => {
-  const [carBrands] = useState(makes);
+const ScrollRange = ({ value, onChange }) => {
   const [isDraggable, setIsDraggable] = useState(false);
   const [mouseDownY, setMouseDownY] = useState(0);
-  const [valueY, setValueY] = useState(14);
 
   const handleMouseDown = (event) => {
     const cursorY = event.clientY;
     setIsDraggable(true);
-    setMouseDownY(cursorY - valueY);
+    setMouseDownY(cursorY - value);
   };
 
   const handleMouseMove = (event) => {
@@ -20,19 +16,15 @@ const ScrollRangeTest = () => {
 
     if (isDraggable) {
       const cursorY = event.clientY;
-      const newValueY = cursorY - mouseDownY;
-      if (newValueY >= 14 && newValueY <= 122) {
-        setValueY(newValueY);
+      const newValue = cursorY - mouseDownY;
+      if (newValue >= 14 && newValue <= 122) {
+        onchange(newValue);
       }
     }
   };
 
   const handleMouseUp = () => {
     setIsDraggable(false);
-  };
-
-  const resetRange = () => {
-    setValueY(14);
   };
 
   useEffect(() => {
@@ -52,50 +44,37 @@ const ScrollRangeTest = () => {
   }, [isDraggable]);
 
   return (
-    <>
-      <button type="button" onClick={resetRange}>
-        Reset
-      </button>
+    <div
+      className={css`
+        height: 244px;
+        width: 8px;
+
+        background-color: white;
+
+        border-style: solid;
+        border-radius: 14px;
+        border-width: 1px;
+        border-color: rgba(18, 20, 23, 0.05);
+
+        position: relative;
+      `}
+    >
       <div
+        onMouseDown={handleMouseDown}
         className={css`
-          height: 272px;
-          width: 224px;
+          position: absolute;
+          height: 136px;
+          width: 8px;
+          top: ${valueY}px;
+          right: 8px;
 
-          background-color: white;
+          background-color: rgba(18, 20, 23, 0.05);
 
-          border-style: solid;
-          border-radius: 14px;
-          border-width: 1px;
-          border-color: rgba(18, 20, 23, 0.05);
-
-          position: relative;
+          border-radius: 10px;
         `}
-      >
-        <ul>
-          {carBrands.slice(0, 3).map((carBrand, carBrandIndex) => {
-            return <li key={carBrandIndex}>{carBrand}</li>;
-          })}
-        </ul>
-        <div
-          onMouseDown={handleMouseDown}
-          className={css`
-            position: absolute;
-            height: 136px;
-            width: 8px;
-            top: ${valueY}px;
-            right: 8px;
-
-            background-color: rgba(18, 20, 23, 0.05);
-
-            border-radius: 10px;
-          `}
-        ></div>
-      </div>
-      <p>{!isDraggable && "not "}draggable</p>
-      <p>{mouseDownY}</p>
-      <p>{valueY}</p>
-    </>
+      ></div>
+    </div>
   );
 };
 
-export { ScrollRangeTest };
+export { ScrollRange };
