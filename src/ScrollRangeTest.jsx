@@ -12,7 +12,7 @@ const ScrollRangeTest = () => {
   const handleMouseDown = (event) => {
     const cursorY = event.clientY;
     setIsDraggable(true);
-    setMouseDownY(cursorY - valueY);
+    setMouseDownY(cursorY);
   };
 
   const handleMouseMove = (event) => {
@@ -20,7 +20,8 @@ const ScrollRangeTest = () => {
 
     if (isDraggable) {
       const cursorY = event.clientY;
-      const newValueY = cursorY - mouseDownY;
+      const oldValueY = valueY;
+      const newValueY = cursorY - mouseDownY + oldValueY;
       if (newValueY >= 14 && newValueY <= 122) {
         setValueY(newValueY);
       }
@@ -62,6 +63,10 @@ const ScrollRangeTest = () => {
           width: 224px;
 
           background-color: white;
+
+          padiing-block: 14px;
+          padding-left: 18px
+          padding-right: 8px;
 
           border-style: solid;
           border-radius: 14px;
