@@ -75,7 +75,13 @@ const ScrollRangeTest = () => {
           justify-content: space-between;
         `}
       >
-        <ul>
+        <ul
+          className={css`
+            list-style: none;
+            margin: 0;
+            padding: 0;
+          `}
+        >
           {carBrands.slice(0, 3).map((carBrand, carBrandIndex) => {
             return <li key={carBrandIndex}>{carBrand}</li>;
           })}
