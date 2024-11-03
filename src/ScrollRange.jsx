@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
 import { css } from "@emotion/css";
 
-const ScrollRange = () => {
-  const [carBrands] = useState(makes);
+const ScrollRange = ({ value, onChange }) => {
   const [isDraggable, setIsDraggable] = useState(false);
   const [mouseDownY, setMouseDownY] = useState(0);
-  const [valueY, setValueY] = useState(0);
 
   const handleMouseDown = (event) => {
     const cursorY = event.clientY;
@@ -18,20 +16,16 @@ const ScrollRange = () => {
 
     if (isDraggable) {
       const cursorY = event.clientY;
-      const oldValueY = valueY;
-      const newValueY = cursorY - mouseDownY + oldValueY;
-      if (newValueY >= 0 && newValueY <= 136) {
-        setValueY(newValueY);
+      const oldValue = value;
+      const newValue = cursorY - mouseDownY + oldValue;
+      if (newValue >= 0 && newValue <= 136) {
+        onChange(newValue);
       }
     }
   };
 
   const handleMouseUp = () => {
     setIsDraggable(false);
-  };
-
-  const resetRange = () => {
-    setValueY(0);
   };
 
   useEffect(() => {
