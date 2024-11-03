@@ -7,7 +7,7 @@ const ScrollRangeTest = () => {
   const [carBrands] = useState(makes);
   const [isDraggable, setIsDraggable] = useState(false);
   const [mouseDownY, setMouseDownY] = useState(0);
-  const [valueY, setValueY] = useState(14);
+  const [valueY, setValueY] = useState(0);
 
   const handleMouseDown = (event) => {
     const cursorY = event.clientY;
@@ -33,7 +33,7 @@ const ScrollRangeTest = () => {
   };
 
   const resetRange = () => {
-    setValueY(14);
+    setValueY(0);
   };
 
   useEffect(() => {
@@ -62,8 +62,8 @@ const ScrollRangeTest = () => {
           height: 272px;
           width: 224px;
 
-          padiing-block: 14px;
-          padding-left: 18px
+          padding-block: 14px;
+          padding-left: 18px;
           padding-right: 8px;
 
           border-style: solid;
@@ -71,7 +71,8 @@ const ScrollRangeTest = () => {
           border-width: 1px;
           border-color: rgba(18, 20, 23, 0.05);
 
-          position: relative;
+          display: flex;
+          justify-content: space-between;
         `}
       >
         <ul>
@@ -80,19 +81,28 @@ const ScrollRangeTest = () => {
           })}
         </ul>
         <div
-          onMouseDown={handleMouseDown}
           className={css`
-            position: absolute;
-            height: 136px;
-            width: 28px;
-            top: ${valueY}px;
-            right: 0px;
+            height: 244px;
+            width: 8px;
 
-            background-color: rgba(18, 20, 23, 0.05);
-
-            border-radius: 10px;
+            position: relative;
           `}
-        ></div>
+        >
+          <div
+            onMouseDown={handleMouseDown}
+            className={css`
+              position: absolute;
+              height: 136px;
+              width: 8px;
+              top: ${valueY}px;
+              right: 0px;
+
+              background-color: rgba(18, 20, 23, 0.05);
+
+              border-radius: 10px;
+            `}
+          ></div>
+        </div>
       </div>
       <p>{!isDraggable && "not "}draggable</p>
       <p>{mouseDownY}</p>
