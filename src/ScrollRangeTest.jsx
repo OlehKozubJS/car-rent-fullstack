@@ -22,7 +22,7 @@ const ScrollRangeTest = () => {
       const cursorY = event.clientY;
       const oldValueY = valueY;
       const newValueY = cursorY - mouseDownY + oldValueY;
-      if (newValueY >= 14 && newValueY <= 122) {
+      if (newValueY >= 0 && newValueY <= 136) {
         setValueY(newValueY);
       }
     }
