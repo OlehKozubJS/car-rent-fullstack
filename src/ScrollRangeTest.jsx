@@ -102,7 +102,7 @@ const ScrollRangeTest = () => {
             onMouseDown={handleMouseDown}
             className={css`
               position: absolute;
-              height: 136px;
+              height: 122px;
               width: 8px;
               top: ${valueY}px;
               right: 0px;
