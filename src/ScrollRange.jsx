@@ -18,7 +18,7 @@ const ScrollRange = ({ value, onChange }) => {
       const cursorY = event.clientY;
       const oldValue = value;
       const newValue = cursorY - mouseDownY + oldValue;
-      if (newValue >= 0 && newValue <= 136) {
+      if (newValue >= 0 && newValue <= 122) {
         onChange(newValue);
       }
     }
