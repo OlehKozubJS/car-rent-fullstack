@@ -62,8 +62,6 @@ const ScrollRangeTest = () => {
           height: 272px;
           width: 224px;
 
-          background-color: white;
-
           padiing-block: 14px;
           padding-left: 18px
           padding-right: 8px;
@@ -88,7 +86,7 @@ const ScrollRangeTest = () => {
             height: 136px;
             width: 8px;
             top: ${valueY}px;
-            right: 8px;
+            right: 0px;
 
             background-color: rgba(18, 20, 23, 0.05);
 
