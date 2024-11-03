@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { css } from "@emotion/css";
 import { Global } from "@emotion/react";
 
