@@ -3,6 +3,8 @@ import { css } from "@emotion/css";
 
 import makes from "./makes.json";
 
+import { ScrollRange } from "./ScrollRange";
+
 const ScrollRangeTest = () => {
   const [carBrands] = useState(makes);
   const [isDraggable, setIsDraggable] = useState(false);
