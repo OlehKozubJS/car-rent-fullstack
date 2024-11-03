@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { css } from "@emotion/css";
+import { Global } from "@emotion/react";
 
 import makes from "./makes.json";
 
@@ -22,6 +23,7 @@ const ScrollRangeTest = () => {
       <button type="button" onClick={resetRange}>
         Reset
       </button>
+      <Global styles={``} />
       <div
         className={css`
           box-sizing: border-box;
