@@ -50,11 +50,7 @@ const ScrollRange = ({ value, onChange }) => {
         width: 8px;
 
         background-color: white;
-
         border-style: solid;
-        border-radius: 14px;
-        border-width: 1px;
-        border-color: rgba(18, 20, 23, 0.05);
 
         position: relative;
       `}
@@ -63,13 +59,13 @@ const ScrollRange = ({ value, onChange }) => {
         onMouseDown={handleMouseDown}
         className={css`
           position: absolute;
+
           height: 136px;
           width: 8px;
-          top: ${valueY}px;
+          top: ${value}px;
           right: 8px;
 
           background-color: rgba(18, 20, 23, 0.05);
-
           border-radius: 10px;
         `}
       ></div>
