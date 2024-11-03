@@ -43,10 +43,6 @@ const ScrollRangeTest = () => {
             justify-content: space-between;
           }
 
-          .menu-container:hover {
-            background-color: grey;
-          }
-
           .menu-list {
             list-style: none;
             margin: 0;
