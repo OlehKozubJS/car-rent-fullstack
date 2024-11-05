@@ -18,13 +18,14 @@ const ScrollRangeTest = () => {
     setValueY(value);
   };
 
-  useEffect(() => {
-    const menuList = document.querySelector(".menu-list");
+  const handleLoad = (event) => {
+    console.log(event);
+    const menuList = event.target;
 
     if (menuList.offsetHeight < 244) {
-      setMenuContainerWidth();
+      setMenuContainerWidth(menuList.offsetHeight + 28);
     }
-  }, []);
+  };
 
   return (
     <>
@@ -36,7 +37,7 @@ const ScrollRangeTest = () => {
           .menu-container {
             box-sizing: border-box;
 
-            height: 272px;
+            height: ${menuContainerWidth}px;
             width: 224px;
 
             padding-block: 14px;
@@ -60,7 +61,7 @@ const ScrollRangeTest = () => {
         `}
       />
       <div className="menu-container">
-        <ul className="menu-list">
+        <ul className="menu-list" onLoad={handleLoad}>
           {carBrands.slice(0, 3).map((carBrand, carBrandIndex) => {
             return <li key={carBrandIndex}>{carBrand}</li>;
           })}
