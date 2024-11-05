@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Global, css } from "@emotion/react";
 
 import makes from "../../makes.json";
@@ -16,6 +16,8 @@ const ScrollRangeTest = () => {
   const handleScrollRangeValue = (value) => {
     setValueY(value);
   };
+
+  useEffect(() => {}, []);
 
   return (
     <>
