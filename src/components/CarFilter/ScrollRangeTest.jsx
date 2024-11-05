@@ -4,6 +4,7 @@ import { Global, css } from "@emotion/react";
 import makes from "../../makes.json";
 
 import { ScrollRange } from "./ScrollRange";
+import { CarFilterOptionsSelector } from "./CarFilterOptionsSelector";
 
 const ScrollRangeTest = () => {
   const [carBrands] = useState(makes);
@@ -66,6 +67,10 @@ const ScrollRangeTest = () => {
         `}
       />
       <div className="menu-container">
+        <CarFilterOptionsSelector
+          options={carBrands}
+          onChange={handleCarBrand}
+        />
         <ul className="menu-list">
           {carBrands.slice(0, 15).map((carBrand, carBrandIndex) => {
             return <li key={carBrandIndex}>{carBrand}</li>;
