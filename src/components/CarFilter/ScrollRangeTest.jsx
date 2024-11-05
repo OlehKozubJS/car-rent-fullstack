@@ -71,11 +71,6 @@ const ScrollRangeTest = ({ handleCarBrand }) => {
           options={carBrands}
           onChange={handleCarBrand}
         />
-        <ul className="menu-list">
-          {carBrands.slice(0, 15).map((carBrand, carBrandIndex) => {
-            return <li key={carBrandIndex}>{carBrand}</li>;
-          })}
-        </ul>
         <ScrollRange value={valueY} onChange={handleScrollRangeValue} />
       </div>
       <p>{valueY}</p>
