@@ -7,10 +7,6 @@ const CarFilterOptionsMenu = ({ options, onChange }) => {
   const [valueY, setValueY] = useState(0);
   const [menuContainerHeight, setMenuContainerHeight] = useState(272);
 
-  const resetRange = () => {
-    setValueY(0);
-  };
-
   const handleScrollRangeValue = (value) => {
     setValueY(value);
   };
@@ -26,21 +22,15 @@ const CarFilterOptionsMenu = ({ options, onChange }) => {
   }, []);
 
   return (
-    <>
-      <button type="button" onClick={resetRange}>
-        Reset
-      </button>
-      <div
-        className="menu-container"
-        style={{ height: `${menuContainerHeight}px` }}
-      >
-        <div className="menu-list-container">
-          <CarFilterOptionsMenuList options={options} onChange={onChange} />
-        </div>
-        <ScrollRange value={valueY} onChange={handleScrollRangeValue} />
+    <div
+      className="menu-container"
+      style={{ height: `${menuContainerHeight}px` }}
+    >
+      <div className="menu-list-container">
+        <CarFilterOptionsMenuList options={options} onChange={onChange} />
       </div>
-      <p>{valueY}</p>
-    </>
+      <ScrollRange value={valueY} onChange={handleScrollRangeValue} />
+    </div>
   );
 };
 
