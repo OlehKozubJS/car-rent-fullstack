@@ -6,7 +6,7 @@ import makes from "../../makes.json";
 import { ScrollRange } from "./ScrollRange";
 import { CarFilterOptionsSelector } from "./CarFilterOptionsSelector";
 
-const ScrollRangeTest = () => {
+const ScrollRangeTest = ({ handleCarBrand }) => {
   const [carBrands] = useState(makes);
   const [valueY, setValueY] = useState(0);
   const [menuContainerHeight, setMenuContainerHeight] = useState(272);
