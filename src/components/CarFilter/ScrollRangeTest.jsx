@@ -8,6 +8,7 @@ import { ScrollRange } from "./ScrollRange";
 const ScrollRangeTest = () => {
   const [carBrands] = useState(makes);
   const [valueY, setValueY] = useState(0);
+  const [menuContainerWidth, setMenuContainerWidth] = useState(272);
 
   const resetRange = () => {
     setValueY(0);
@@ -17,7 +18,13 @@ const ScrollRangeTest = () => {
     setValueY(value);
   };
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const menuList = document.querySelector(".menu-list");
+
+    if (menuList.offsetHeight < 244) {
+      setMenuContainerWidth();
+    }
+  }, []);
 
   return (
     <>
