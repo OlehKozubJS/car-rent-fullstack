@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Global, css } from "@emotion/react";
 
 import { ScrollRange } from "./ScrollRange";
 import { CarFilterOptionsMenuList } from "./CarFilterOptionsMenuList";
