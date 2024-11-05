@@ -1,6 +1,6 @@
-const CarFilterOptionsMenuList = ({ options, onChange }) => {
+const CarFilterOptionsMenuList = ({ options, onChange, top }) => {
   return (
-    <ul className="menu-list">
+    <ul className="menu-list" style={{ top: `${top}px` }}>
       {options.map((option, optionIndex) => {
         return (
           <li key={optionIndex}>
