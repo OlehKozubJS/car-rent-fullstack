@@ -11,7 +11,7 @@ import { CarModal } from "./components/CarModal";
 import { CarGallery } from "./components/CarGallery";
 
 const App = () => {
-  const [isModal, setIsModal] = useState(false);
+  const [isModal, setIsModal] = useState(true);
 
   const openModal = () => {
     setIsModal(true);
