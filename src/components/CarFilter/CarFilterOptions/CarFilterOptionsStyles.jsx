@@ -1,8 +1,4 @@
-import { useEffect, useState } from "react";
 import { Global, css } from "@emotion/react";
-
-import { ScrollRange } from "./ScrollRange";
-import { CarFilterOptionsMenuList } from "./CarFilterOptionsMenuList";
 
 const CarFilterOptionsStyles = ({ options, onChange }) => {
   return (
@@ -30,6 +26,10 @@ const CarFilterOptionsStyles = ({ options, onChange }) => {
           overflow: hidden;
         }
 
+        .menu-list-container {
+          position: relative;
+        }
+
         .menu-list {
           list-style: none;
           background-color: red;
@@ -39,10 +39,6 @@ const CarFilterOptionsStyles = ({ options, onChange }) => {
 
         .menu-option-radio {
           display: none;
-        }
-
-        .options-list-container {
-          position: relative;
         }
       `}
     />
