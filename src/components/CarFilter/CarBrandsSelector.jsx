@@ -9,7 +9,6 @@ import { SVGimage } from "../../images";
 
 const CarBrandsSelector = ({}) => {
   const [carBrands] = useState(makes);
-  const [carsInformation] = useState(makes);
   const [isCarBrandsOptions, setIsCarBrandsOptions] = useState(false);
   const [carBrand, setCarBrand] = useState("");
 
