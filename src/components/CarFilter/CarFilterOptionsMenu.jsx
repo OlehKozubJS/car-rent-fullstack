@@ -6,7 +6,7 @@ import makes from "../../makes.json";
 import { ScrollRange } from "./ScrollRange";
 import { CarFilterOptionsSelector } from "./CarFilterOptionsSelector";
 
-const CarFilterOptionsMenu = ({ handleCarBrand }) => {
+const CarFilterOptionsMenu = ({ onChange }) => {
   const [carBrands] = useState(makes);
   const [valueY, setValueY] = useState(0);
   const [menuContainerHeight, setMenuContainerHeight] = useState(272);
@@ -71,10 +71,7 @@ const CarFilterOptionsMenu = ({ handleCarBrand }) => {
         `}
       />
       <div className="menu-container">
-        <CarFilterOptionsSelector
-          options={carBrands}
-          onChange={handleCarBrand}
-        />
+        <CarFilterOptionsSelector options={carBrands} onChange={onChange} />
         <ScrollRange value={valueY} onChange={handleScrollRangeValue} />
       </div>
       <p>{valueY}</p>
