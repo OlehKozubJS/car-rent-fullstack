@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { Global, css } from "@emotion/react";
 
-import makes from "../../makes.json";
-
 import { ScrollRange } from "./ScrollRange";
 import { CarFilterOptionsSelector } from "./CarFilterOptionsSelector";
 
@@ -70,7 +68,9 @@ const CarFilterOptionsMenu = ({ options, onChange }) => {
         `}
       />
       <div className="menu-container">
-        <CarFilterOptionsSelector options={options} onChange={onChange} />
+        <div>
+          <CarFilterOptionsSelector options={options} onChange={onChange} />
+        </div>
         <ScrollRange value={valueY} onChange={handleScrollRangeValue} />
       </div>
       <p>{valueY}</p>
