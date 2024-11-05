@@ -4,7 +4,6 @@ import cars from "../../advertsCars.json";
 import makes from "../../makes.json";
 
 import { SVGimage } from "../../images";
-import { CarBrandsSelector } from "./CarBrandsSelector";
 
 const CarMileageSelector = ({}) => {
   const [carBrands] = useState(makes);
