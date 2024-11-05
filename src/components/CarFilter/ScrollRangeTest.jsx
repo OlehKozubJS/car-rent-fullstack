@@ -64,6 +64,8 @@ const ScrollRangeTest = ({ handleCarBrand }) => {
             margin: 0;
             padding: 0;
           }
+
+          .menu-list 
         `}
       />
       <div className="menu-container">
