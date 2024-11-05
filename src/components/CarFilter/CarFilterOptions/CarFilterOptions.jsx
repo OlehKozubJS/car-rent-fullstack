@@ -28,8 +28,8 @@ const CarFilterOptions = ({}) => {
     <div>
       <CarFilterOptionsStyles />
       <h3>Car brand</h3>
-      <label htmlFor="carBrandSearch">
-        <input id="carBrandSearch" type="text" placeholder="Enter the text" />
+      <label htmlFor="search">
+        <input id="search" type="text" placeholder="Enter the text" />
 
         <button
           type="button"
