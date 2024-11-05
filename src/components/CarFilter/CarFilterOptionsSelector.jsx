@@ -8,9 +8,10 @@ const CarFilterOptionsSelector = ({ options, onChange }) => {
               <input
                 id={optionIndex}
                 type="radio"
-                name="option"
+                name="menu-option-radio"
                 value={option}
                 onChange={onChange}
+                className="menu-option-radio"
               />
               <span>{option}</span>
             </label>
