@@ -36,7 +36,7 @@ const CarFilterOptionsStyles = () => {
           left: 0px;
 
           list-style: none;
-          background-color: rgb(215, 215, 230);
+          background-color: rgb(215, 200, 230);
           margin: 0;
           padding: 0;
         }
