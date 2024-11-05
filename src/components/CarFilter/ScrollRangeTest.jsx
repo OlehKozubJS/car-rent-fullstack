@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Global, css } from "@emotion/react";
 
-import makes from "./makes.json";
+import makes from "../../makes.json";
 
 import { ScrollRange } from "./ScrollRange";
 
