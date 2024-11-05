@@ -8,7 +8,7 @@ import { ScrollRange } from "./ScrollRange";
 const ScrollRangeTest = () => {
   const [carBrands] = useState(makes);
   const [valueY, setValueY] = useState(0);
-  const [menuContainerWidth, setMenuContainerWidth] = useState(272);
+  const [menuContainerHeight, setMenuContainerHeight] = useState(272);
 
   const resetRange = () => {
     setValueY(0);
@@ -22,7 +22,7 @@ const ScrollRangeTest = () => {
     const menuList = document.querySelector(".menu-list");
 
     if (menuList.offsetHeight < 244) {
-      setMenuContainerWidth(menuList.offsetHeight + 28);
+      setMenuContainerHeight(menuList.offsetHeight + 28);
     }
   }, []);
 
@@ -36,7 +36,7 @@ const ScrollRangeTest = () => {
           .menu-container {
             box-sizing: border-box;
 
-            height: ${menuContainerWidth}px;
+            height: ${menuContainerHeight}px;
             width: 224px;
 
             padding-block: 14px;
@@ -54,6 +54,7 @@ const ScrollRangeTest = () => {
 
           .menu-list {
             list-style: none;
+            height: 100px;
             background-color: red;
             margin: 0;
             padding: 0;
