@@ -41,24 +41,24 @@ const CarFilterOptionsStyles = ({ menuContainerHeight, value }) => {
           display: none;
         }
 
-                  ".scroll-range-stator": {
-            height: "244px",
-            width: "8px",
+        .scroll-range-stator {
+          height: 244px;
+          width: 8px;
 
-            position: "relative",
-          },
+          position: relative;
+        }
 
-          ".scroll-range-rotor": {
-            position: "absolute",
-            height: "122px",
-            width: "8px",
-            top: `${value}px`,
-            right: "0px",
+        .scroll-range-rotor {
+          position: absolute;
+          height: 122px;
+          width: 8px;
+          top: ${value}px;
+          right: 0px;
 
-            backgroundColor: "rgba(18, 20, 23, 0.05)",
+          background-color: rgba(18, 20, 23, 0.05);
 
-            borderRadius: "10px",
-          },
+          border-radius: 10px;
+        }
       `}
     />
   );
