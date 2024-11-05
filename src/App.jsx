@@ -2,11 +2,7 @@ import { useState, useEffect } from "react";
 
 import cars from "./advertsCars.json";
 
-import {
-  CarFilter,
-  ScrollRangeTest,
-  SemiHiddenMenuTest,
-} from "./components/CarFilter";
+import { CarFilter, ScrollRangeTest } from "./components/CarFilter";
 import { CarModal } from "./components/CarModal";
 import { CarGallery } from "./components/CarGallery";
 
