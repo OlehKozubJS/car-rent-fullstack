@@ -17,16 +17,6 @@ const App = () => {
     setIsModal(false);
   };
 
-  const [isAnything, setIsAnything] = useState(false);
-
-  const open = () => {
-    setIsAnything(true);
-  };
-
-  const close = () => {
-    setIsAnything(false);
-  };
-
   const [date, setDate] = useState(new Date());
 
   useEffect(() => {
@@ -46,15 +36,13 @@ const App = () => {
       <button type="button" onClick={isAnything ? close : open}>
         {isAnything ? "Close" : "Open"}
       </button>
-      {isAnything && (
-        <>
-          <button onClick={openModal}>Open Modal</button>
-          {isModal && <CarModal carId={9582} onClose={closeModal} />}
-          {String(date)}
-          <CarGallery />
-          <CarFilter />
-        </>
-      )}
+
+      <button onClick={openModal}>Open Modal</button>
+      {isModal && <CarModal carId={9582} onClose={closeModal} />}
+      {String(date)}
+      <CarGallery />
+      <CarFilter />
+
       <CarFilterOptionsMenu />
     </div>
   );
