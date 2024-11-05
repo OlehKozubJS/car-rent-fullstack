@@ -55,7 +55,6 @@ const CarFilterOptions = ({}) => {
       {isCarBrandsOptions && (
         <CarFilterOptionsMenu options={carBrands} onChange={handleCarBrand} />
       )}
-      {carBrand}
     </div>
   );
 };
