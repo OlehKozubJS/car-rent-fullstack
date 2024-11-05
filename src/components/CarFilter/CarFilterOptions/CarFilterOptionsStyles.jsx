@@ -21,14 +21,13 @@ const CarFilterOptionsStyles = () => {
           display: flex;
           justify-content: space-between;
           align-items: flex-start;
-
-          overflow: hidden;
         }
 
         .menu-list-container {
           height: 244px;
 
           position: relative;
+          overflow: hidden;
         }
 
         .menu-list {
