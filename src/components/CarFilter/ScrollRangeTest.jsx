@@ -50,6 +50,7 @@ const ScrollRangeTest = () => {
 
             display: flex;
             justify-content: space-between;
+            align-items: flex-start;
           }
 
           .menu-list {
@@ -61,13 +62,11 @@ const ScrollRangeTest = () => {
         `}
       />
       <div className="menu-container">
-        <div className="menu-list-wrapper">
-          <ul className="menu-list">
-            {carBrands.slice(0, 3).map((carBrand, carBrandIndex) => {
-              return <li key={carBrandIndex}>{carBrand}</li>;
-            })}
-          </ul>
-        </div>
+        <ul className="menu-list">
+          {carBrands.slice(0, 3).map((carBrand, carBrandIndex) => {
+            return <li key={carBrandIndex}>{carBrand}</li>;
+          })}
+        </ul>
         <ScrollRange value={valueY} onChange={handleScrollRangeValue} />
       </div>
       <p>{valueY}</p>
