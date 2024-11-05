@@ -1,4 +1,4 @@
 import { CarFilter } from "./CarFilter";
-import { ScrollRangeTest } from "./ScrollRangeTest";
+import { CarFilterOptionsMenu } from "./CarFilterOptionsMenu";
 
-export { CarFilter, ScrollRangeTest };
+export { CarFilter, CarFilterOptionsMenu };
