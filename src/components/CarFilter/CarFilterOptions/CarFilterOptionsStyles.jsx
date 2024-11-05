@@ -32,7 +32,6 @@ const CarFilterOptionsStyles = () => {
         .menu-list {
           position: absolute;
           left: 0px;
-          top: -100px;
 
           list-style: none;
           background-color: red;
