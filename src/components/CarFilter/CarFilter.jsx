@@ -4,7 +4,7 @@ import cars from "../../advertsCars.json";
 import makes from "../../makes.json";
 
 import { SVGimage } from "../../images";
-import { CarBrandsSelector } from "./CarBrandsSelector";
+import { CarFilterOptions } from "./CarFilterOptions";
 import { CarMileageSelector } from "./CarMileageSelector";
 
 const CarFilter = ({}) => {
@@ -21,7 +21,7 @@ const CarFilter = ({}) => {
 
   return (
     <form>
-      <CarBrandsSelector />
+      <CarFilterOptions />
 
       <CarMileageSelector />
 
