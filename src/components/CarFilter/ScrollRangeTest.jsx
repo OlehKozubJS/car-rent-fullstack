@@ -20,7 +20,6 @@ const ScrollRangeTest = () => {
 
   useEffect(() => {
     const menuList = document.querySelector(".menu-list");
-    console.log(menuList.offsetHeight);
 
     if (menuList.offsetHeight < 244) {
       setMenuContainerWidth(menuList.offsetHeight + 28);
@@ -55,6 +54,7 @@ const ScrollRangeTest = () => {
 
           .menu-list {
             list-style: none;
+            display: block;
             background-color: red;
             margin: 0;
             padding: 0;
