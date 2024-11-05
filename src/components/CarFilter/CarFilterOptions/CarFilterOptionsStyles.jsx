@@ -7,7 +7,6 @@ const CarFilterOptionsStyles = ({ menuContainerHeight, value }) => {
         .menu-container {
           box-sizing: border-box;
 
-          height: ${menuContainerHeight}px;
           width: 224px;
 
           padding-block: 14px;
@@ -52,7 +51,6 @@ const CarFilterOptionsStyles = ({ menuContainerHeight, value }) => {
           position: absolute;
           height: 122px;
           width: 8px;
-          top: ${value}px;
           right: 0px;
 
           background-color: rgba(18, 20, 23, 0.05);
