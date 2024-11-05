@@ -5,7 +5,7 @@ import makes from "../../../makes.json";
 
 import { CarFilterOptionsMenu } from "./CarFilterOptionsMenu";
 
-import { SVGimage } from "../../images";
+import { SVGimage } from "../../../images";
 
 const CarFilterOptions = ({}) => {
   const [carBrands] = useState(makes);
