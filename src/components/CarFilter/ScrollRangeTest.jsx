@@ -23,6 +23,8 @@ const ScrollRangeTest = () => {
 
     if (menuList.offsetHeight < 244) {
       setMenuContainerHeight(menuList.offsetHeight + 28);
+    } else {
+      setMenuContainerHeight(272);
     }
   }, []);
 
@@ -51,6 +53,8 @@ const ScrollRangeTest = () => {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
+
+            overflow: hidden;
           }
 
           .menu-list {
@@ -63,7 +67,7 @@ const ScrollRangeTest = () => {
       />
       <div className="menu-container">
         <ul className="menu-list">
-          {carBrands.slice(0, 5).map((carBrand, carBrandIndex) => {
+          {carBrands.slice(0, 15).map((carBrand, carBrandIndex) => {
             return <li key={carBrandIndex}>{carBrand}</li>;
           })}
         </ul>
