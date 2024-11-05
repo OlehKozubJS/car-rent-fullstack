@@ -27,7 +27,7 @@ const CarFilterOptionsStyles = () => {
           height: 244px;
 
           position: relative;
-          overflow: hidden;
+          background-color: blue;
         }
 
         .menu-list {
