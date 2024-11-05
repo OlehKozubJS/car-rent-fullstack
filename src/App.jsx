@@ -2,10 +2,9 @@ import { useState, useEffect } from "react";
 
 import cars from "./advertsCars.json";
 
-import { CarFilter } from "./components/CarFilter";
+import { CarFilter, ScrollRangeTest } from "./components/CarFilter";
 import { CarModal } from "./components/CarModal";
 import { CarGallery } from "./components/CarGallery";
-import { ScrollRangeTest } from "./ScrollRangeTest";
 
 const App = () => {
   const [isModal, setIsModal] = useState(false);
