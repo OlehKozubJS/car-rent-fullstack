@@ -30,7 +30,7 @@ const CarFilterOptionsMenu = ({ options, onChange }) => {
         <CarFilterOptionsMenuList
           options={options}
           onChange={onChange}
-          top={-50}
+          top={-valueY}
         />
       </div>
       <ScrollRange value={valueY} onChange={handleScrollRangeValue} />
