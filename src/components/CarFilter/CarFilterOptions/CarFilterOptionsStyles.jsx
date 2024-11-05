@@ -45,4 +45,4 @@ const CarFilterOptionsStyles = ({ options, onChange }) => {
   );
 };
 
-export { CarFilterOptionsMenu };
+export { CarFilterOptionsStyles };
