@@ -7,7 +7,6 @@ import { ScrollRange } from "./ScrollRange";
 import { CarFilterOptionsSelector } from "./CarFilterOptionsSelector";
 
 const CarFilterOptionsMenu = ({ options, onChange }) => {
-  const [carBrands] = useState(makes);
   const [valueY, setValueY] = useState(0);
   const [menuContainerHeight, setMenuContainerHeight] = useState(272);
 
