@@ -65,6 +65,10 @@ const CarFilterOptionsMenu = ({ options, onChange }) => {
           .menu-option-radio {
             display: none;
           }
+
+          .options-selector-container {
+            position: relative;
+          }
         `}
       />
       <div className="menu-container">
