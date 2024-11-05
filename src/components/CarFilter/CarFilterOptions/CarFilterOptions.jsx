@@ -5,6 +5,7 @@ import makes from "../../../makes.json";
 
 import { CarFilterOptionsMenu } from "./CarFilterOptionsMenu";
 
+import { CarFilterOptionsStyles } from "./CarFilterOptionsStyles";
 import { SVGimage } from "../../../images";
 
 const CarFilterOptions = ({}) => {
@@ -26,6 +27,7 @@ const CarFilterOptions = ({}) => {
 
   return (
     <div>
+      <CarFilterOptionsStyles />
       <h3>Car brand</h3>
       <label htmlFor="carBrandSearch">
         <input id="carBrandSearch" type="text" placeholder="Enter the text" />
