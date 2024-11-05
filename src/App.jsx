@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import cars from "./advertsCars.json";
 
-import { CarFilter, CarFilterOptionsMenu } from "./components/CarFilter";
+import { CarFilter } from "./components/CarFilter";
 import { CarModal } from "./components/CarModal";
 import { CarGallery } from "./components/CarGallery";
 
@@ -38,8 +38,6 @@ const App = () => {
       {String(date)}
       <CarGallery />
       <CarFilter />
-
-      <CarFilterOptionsMenu />
     </div>
   );
 };
