@@ -71,7 +71,10 @@ const CarFilterOptionsMenu = ({ options, onChange }) => {
           }
         `}
       />
-      <div className="menu-container">
+      <div
+        className="menu-container"
+        style={{ height: `${menuContainerHeight}px` }}
+      >
         <div className="menu-list-container">
           <CarFilterOptionsMenuList options={options} onChange={onChange} />
         </div>
