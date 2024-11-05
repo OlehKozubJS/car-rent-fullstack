@@ -54,7 +54,6 @@ const ScrollRangeTest = () => {
 
           .menu-list {
             list-style: none;
-            height: 50px;
             background-color: red;
             margin: 0;
             padding: 0;
