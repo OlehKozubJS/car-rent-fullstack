@@ -1,6 +1,6 @@
 import { Global, css } from "@emotion/react";
 
-const CarFilterOptionsStyles = ({ menuContainerHeight, value }) => {
+const CarFilterOptionsStyles = () => {
   return (
     <Global
       styles={css`
