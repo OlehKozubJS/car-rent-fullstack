@@ -1,6 +1,6 @@
 const CarFilterOptionsSelector = ({ options, onChange }) => {
   return (
-    <ul>
+    <ul className="menu-list">
       {options.map((option, optionIndex) => {
         return (
           <li key={optionIndex}>
