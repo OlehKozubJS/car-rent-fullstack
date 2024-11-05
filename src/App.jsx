@@ -33,10 +33,6 @@ const App = () => {
 
   return (
     <div>
-      <button type="button" onClick={isAnything ? close : open}>
-        {isAnything ? "Close" : "Open"}
-      </button>
-
       <button onClick={openModal}>Open Modal</button>
       {isModal && <CarModal carId={9582} onClose={closeModal} />}
       {String(date)}
