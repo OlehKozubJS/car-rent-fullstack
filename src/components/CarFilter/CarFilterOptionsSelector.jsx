@@ -1,4 +1,4 @@
-const CarFilterOptionsSelector = ({ options, onChange }) => {
+const CarFilterOptionsMenuList = ({ options, onChange }) => {
   return (
     <ul className="menu-list">
       {options.map((option, optionIndex) => {
@@ -22,4 +22,4 @@ const CarFilterOptionsSelector = ({ options, onChange }) => {
   );
 };
 
-export { CarFilterOptionsSelector };
+export { CarFilterOptionsMenuList };
