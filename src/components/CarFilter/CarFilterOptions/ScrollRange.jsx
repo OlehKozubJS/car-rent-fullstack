@@ -69,7 +69,7 @@ const ScrollRange = ({ value, onChange }) => {
         }}
       />
 
-      <div className="scroll-range-stator">
+      <div className="scroll-range-stator" style={{ top: `${value}px` }}>
         <div onMouseDown={handleMouseDown} className="scroll-range-rotor"></div>
       </div>
     </>
