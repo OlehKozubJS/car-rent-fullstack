@@ -45,34 +45,9 @@ const ScrollRange = ({ value, onChange }) => {
   }, [isDraggable]);
 
   return (
-    <>
-      <Global
-        styles={{
-          ".scroll-range-stator": {
-            height: "244px",
-            width: "8px",
-
-            position: "relative",
-          },
-
-          ".scroll-range-rotor": {
-            position: "absolute",
-            height: "122px",
-            width: "8px",
-            top: `${value}px`,
-            right: "0px",
-
-            backgroundColor: "rgba(18, 20, 23, 0.05)",
-
-            borderRadius: "10px",
-          },
-        }}
-      />
-
-      <div className="scroll-range-stator" style={{ top: `${value}px` }}>
-        <div onMouseDown={handleMouseDown} className="scroll-range-rotor"></div>
-      </div>
-    </>
+    <div className="scroll-range-stator" style={{ top: `${value}px` }}>
+      <div onMouseDown={handleMouseDown} className="scroll-range-rotor"></div>
+    </div>
   );
 };
 
