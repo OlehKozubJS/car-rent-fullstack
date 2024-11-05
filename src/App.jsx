@@ -2,9 +2,7 @@ import { useState, useEffect } from "react";
 
 import cars from "./advertsCars.json";
 
-import { CarFilter } from "./components/CarFilter";
-import { CarModal } from "./components/CarModal";
-import { CarGallery } from "./components/CarGallery";
+import { CarFilter, CarGallery, CarModal } from "./components";
 
 const App = () => {
   const [isModal, setIsModal] = useState(false);
