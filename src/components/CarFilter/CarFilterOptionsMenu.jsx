@@ -73,7 +73,7 @@ const CarFilterOptionsMenu = ({ options, onChange }) => {
       />
       <div className="menu-container">
         <div>
-          <CarFilterOptionsSelector options={options} onChange={onChange} />
+          <CarFilterOptionsMenuList options={options} onChange={onChange} />
         </div>
         <ScrollRange value={valueY} onChange={handleScrollRangeValue} />
       </div>
