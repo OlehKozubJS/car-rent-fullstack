@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Global, css } from "@emotion/react";
 
 import { ScrollRange } from "./ScrollRange";
-import { CarFilterOptionsSelector } from "./CarFilterOptionsSelector";
+import { CarFilterOptionsMenuList } from "./CarFilterOptionsMenuList";
 
 const CarFilterOptionsMenu = ({ options, onChange }) => {
   const [valueY, setValueY] = useState(0);
