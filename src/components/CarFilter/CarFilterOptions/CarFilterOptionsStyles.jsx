@@ -46,7 +46,6 @@ const CarFilterOptionsStyles = () => {
         }
 
         .scroll-range-stator {
-          height: 244px;
           width: 8px;
 
           position: relative;
