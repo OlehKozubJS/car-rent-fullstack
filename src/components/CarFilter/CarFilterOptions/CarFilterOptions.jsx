@@ -10,7 +10,6 @@ import { SVGimage } from "../../../images";
 const CarFilterOptions = ({}) => {
   const [carBrands] = useState(makes);
   const [isCarBrandsOptions, setIsCarBrandsOptions] = useState(false);
-  //const [carBrand, setCarBrand] = useState("");
   const [searchResult, setSearchResult] = useState("");
 
   const openCarBrandOptions = () => {
@@ -22,7 +21,6 @@ const CarFilterOptions = ({}) => {
   };
 
   const handleCarBrand = (event) => {
-    //setCarBrand(event.target.value);
     setSearchResult(event.target.value);
   };
 
