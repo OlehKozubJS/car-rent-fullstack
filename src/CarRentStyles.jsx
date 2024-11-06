@@ -4,7 +4,7 @@ import { carFilterOptionsStyles } from "./components";
 
 import {} from "./";
 
-const CarFilterOptionsStyles = () => {
+const CarRentStyles = () => {
   return (
     <Global
       styles={css`
@@ -14,4 +14,4 @@ const CarFilterOptionsStyles = () => {
   );
 };
 
-export { CarFilterOptionsStyles };
+export { CarRentStyles };
