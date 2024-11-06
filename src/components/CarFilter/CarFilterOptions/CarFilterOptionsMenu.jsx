@@ -18,7 +18,7 @@ const CarFilterOptionsMenu = ({ options, onChange }) => {
     const menuList = document.querySelector(".menu-list");
 
     setMenuListHeight(menuList.offsetHeight);
-  }, []);
+  }, [options]);
 
   useEffect(() => {
     if (menuListHeight <= MAX_MENU_LIST_HEIGHT) {
