@@ -44,7 +44,7 @@ const CarFilterOptionsMenu = ({ options, onChange }) => {
         <ScrollRange
           value={valueY}
           onChange={handleScrollRangeValue}
-          height={menuListHeight - menuListContainerHeight - 4}
+          height={menuListHeight - menuListContainerHeight}
         />
       </div>
       {menuListHeight}
