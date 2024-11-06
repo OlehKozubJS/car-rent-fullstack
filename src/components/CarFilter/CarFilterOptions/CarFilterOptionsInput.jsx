@@ -2,18 +2,18 @@ import { useState, useEffect } from "react";
 
 import { SVGimage } from "../../../images";
 
-const CarFilterOptionsInput = ({}) => {
+const CarFilterOptionsInput = ({ options }) => {
   const [carBrands] = useState(makes);
-  const [isCarBrandsOptions, setIsCarBrandsOptions] = useState(false);
-  const [searchResult, setSearchResult] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
 
-  const openCarBrandOptions = () => {
-    setSearchResult("");
-    setIsCarBrandsOptions(true);
+  const open = () => {
+    setSearchQuery("");
+    setIsOpen(true);
   };
 
-  const closeCarBrandOptions = () => {
-    setIsCarBrandsOptions(false);
+  const close = () => {
+    setIsOpen(false);
   };
 
   const handleCarBrand = (event) => {
@@ -21,8 +21,8 @@ const CarFilterOptionsInput = ({}) => {
     setSearchResult(event.target.value);
   };
 
-  const handleSearchResult = (event) => {
-    setSearchResult(event.target.value);
+  const handleChange = (event) => {
+    setSearchQuery(event.target.value);
   };
 
   return (
@@ -31,16 +31,11 @@ const CarFilterOptionsInput = ({}) => {
         id="car-filter-input"
         type="text"
         placeholder="Enter the text"
-        value={searchResult}
-        onChange={handleSearchResult}
+        value={searchQuery}
+        onChange={handleChange}
         className="car-filter-input"
       />
-      <button
-        type="button"
-        onClick={
-          isCarBrandsOptions ? closeCarBrandOptions : openCarBrandOptions
-        }
-      >
+      <button type="button" onClick={isOpen ? close : open}>
         {<SVGimage name={isCarBrandsOptions ? "up" : "down"} />}
       </button>
     </label>
