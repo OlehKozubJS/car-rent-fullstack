@@ -38,11 +38,11 @@ const CarFilterOptionsMenu = ({ options, onChange }) => {
           <CarFilterOptionsMenuList
             options={options.slice(0, 22)}
             onChange={onChange}
-            top={-valueY * 5}
+            top={-scrollRangeValue * 5}
           />
         </div>
         <ScrollRange
-          value={valueY}
+          value={scrollRangeValue}
           onChange={handleScrollRangeValue}
           statorHeight={menuListContainerHeight}
           rotorHeight={
