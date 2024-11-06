@@ -31,7 +31,6 @@ const CarFilterOptions = ({}) => {
 
   return (
     <div>
-      <CarFilterOptionsStyles />
       <h3>Car brand</h3>
       <label htmlFor="car-filter-input" className="car-filter-input-label">
         <input
