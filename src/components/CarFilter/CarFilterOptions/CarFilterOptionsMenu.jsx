@@ -5,7 +5,7 @@ import { CarFilterOptionsMenuList } from "./CarFilterOptionsMenuList";
 
 const CarFilterOptionsMenu = ({ options, onChange }) => {
   const [valueY, setValueY] = useState(0);
-  const [menuContainerHeight, setMenuContainerHeight] = useState(272);
+  const [menuListContainerHeight, setMenuListContainerHeight] = useState(272);
   const [menuListHeight, setMenuListHeight] = useState(244);
 
   const handleScrollRangeValue = (value) => {
@@ -16,32 +16,38 @@ const CarFilterOptionsMenu = ({ options, onChange }) => {
     const menuList = document.querySelector(".menu-list");
 
     if (menuList.offsetHeight < 244) {
-      setMenuListHeight(menuList.offsetHeight);
+      setMenuListContainerHeight(menuList.offsetHeight);
     } else {
-      setMenuListHeight(244);
+      setMenuListContainerHeight(244);
     }
+  }, []);
+
+  useEffect(() => {
+    const menuList = document.querySelector(".menu-list");
+
+    setMenuListHeight(menuList.offsetHeight);
   }, []);
 
   return (
     <>
       <div
         className="menu-container"
-        style={{ height: `${menuListHeight + 28}px` }}
+        style={{ height: `${menuListContainerHeight + 28}px` }}
       >
         <div className="menu-list-container">
           <CarFilterOptionsMenuList
             options={options}
             onChange={onChange}
-            top={-valueY * 10}
+            top={-valueY}
           />
         </div>
         <ScrollRange
           value={valueY}
           onChange={handleScrollRangeValue}
-          height={50}
+          height={menuListHeight - menuListContainerHeight - 4}
         />
       </div>
-      {menuContainerHeight}
+      {menuListHeight}
     </>
   );
 };
