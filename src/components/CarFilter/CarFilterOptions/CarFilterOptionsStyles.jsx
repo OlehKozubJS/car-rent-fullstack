@@ -54,7 +54,6 @@ const CarFilterOptionsStyles = () => {
 
         .scroll-range-rotor {
           position: absolute;
-          height: 100px;
           width: 8px;
           right: 0px;
 
