@@ -36,7 +36,7 @@ const CarFilterOptionsMenu = ({ options, onChange }) => {
       >
         <div className="menu-list-container">
           <CarFilterOptionsMenuList
-            options={options.slice(0, 14)}
+            options={options}
             onChange={onChange}
             top={-scrollRangeValue * 5}
           />
