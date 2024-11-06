@@ -60,6 +60,10 @@ const CarFilterOptionsStyles = () => {
 
           border-radius: 10px;
         }
+
+        .car-filter-input {
+          background-color: rgba(247, 247, 251, 1);
+        }
       `}
     />
   );
