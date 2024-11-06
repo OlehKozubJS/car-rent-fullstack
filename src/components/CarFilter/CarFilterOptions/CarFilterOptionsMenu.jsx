@@ -5,8 +5,8 @@ import { CarFilterOptionsMenuList } from "./CarFilterOptionsMenuList";
 
 const CarFilterOptionsMenu = ({ options, onChange }) => {
   const [valueY, setValueY] = useState(0);
-  const [menuListContainerHeight, setMenuListContainerHeight] = useState(272);
-  const [menuListHeight, setMenuListHeight] = useState(244);
+  const [menuListContainerHeight, setMenuListContainerHeight] = useState(null);
+  const [menuListHeight, setMenuListHeight] = useState(null);
 
   const handleScrollRangeValue = (value) => {
     setValueY(value);
