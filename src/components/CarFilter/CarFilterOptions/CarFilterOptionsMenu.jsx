@@ -6,6 +6,7 @@ import { CarFilterOptionsMenuList } from "./CarFilterOptionsMenuList";
 const CarFilterOptionsMenu = ({ options, onChange }) => {
   const [valueY, setValueY] = useState(0);
   const [menuContainerHeight, setMenuContainerHeight] = useState(272);
+  const [menuListHeight, setMenuListHeight] = useState(244);
 
   const handleScrollRangeValue = (value) => {
     setValueY(value);
@@ -30,13 +31,13 @@ const CarFilterOptionsMenu = ({ options, onChange }) => {
         <CarFilterOptionsMenuList
           options={options}
           onChange={onChange}
-          top={-valueY}
+          top={-valueY * 5}
         />
       </div>
       <ScrollRange
         value={valueY}
         onChange={handleScrollRangeValue}
-        height={50}
+        height={5}
       />
     </div>
   );
