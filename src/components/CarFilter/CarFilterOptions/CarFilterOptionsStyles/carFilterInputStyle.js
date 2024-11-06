@@ -1,6 +1,7 @@
 const carFilterInputStyle = `        
         .car-filter-input-label {
           display: flex;
+          justify-content: space-between;
 
           box-sizing: border-box;
           height: 48px;
@@ -17,6 +18,7 @@ const carFilterInputStyle = `
           outline: none;
           border: none;
 
+          width: 150px;
           background-color: inherit;
 
           font-size: 18px;
