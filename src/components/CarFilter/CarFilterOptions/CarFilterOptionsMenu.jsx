@@ -36,7 +36,7 @@ const CarFilterOptionsMenu = ({ options, onChange }) => {
       >
         <div className="menu-list-container">
           <CarFilterOptionsMenuList
-            options={options.slice(0, 15)}
+            options={options.slice(0, 5)}
             onChange={onChange}
             top={-valueY * 5}
           />
