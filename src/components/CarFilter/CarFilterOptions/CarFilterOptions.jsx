@@ -34,15 +34,15 @@ const CarFilterOptions = ({}) => {
     <div>
       <CarFilterOptionsStyles />
       <h3>Car brand</h3>
-      <label htmlFor="search">
+      <label htmlFor="car-filter-input" className="car-filter-input-label">
         <input
-          id="search"
+          id="car-filter-input"
           type="text"
           placeholder="Enter the text"
           value={searchResult}
           onChange={handleSearchResult}
+          className="car-filter-input"
         />
-
         <button
           type="button"
           onClick={

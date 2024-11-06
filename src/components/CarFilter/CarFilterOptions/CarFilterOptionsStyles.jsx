@@ -32,13 +32,14 @@ const CarFilterOptionsStyles = () => {
         }
 
         .menu-list {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+
           position: absolute;
           left: 0px;
 
-          list-style: none;
-          background-color: rgb(215, 200, 230);
-          margin: 0;
-          padding: 0;
+          color: rgba(18, 20, 23, 0.2);
         }
 
         .menu-option-radio {
@@ -61,8 +62,31 @@ const CarFilterOptionsStyles = () => {
           border-radius: 10px;
         }
 
+        .car-filter-input-label {
+          display: flex;
+
+          box-sizing: border-box;
+          height: 48px;
+          width: 224px;
+          padding: 14px 18px;
+
+          background-color: rgb(247, 247, 251);
+          border-radius: 14px;
+
+          margin-bottom: 4px;
+        }
+
         .car-filter-input {
-          background-color: rgba(247, 247, 251, 1);
+          outline: none;
+          border: none;
+
+          background-color: inherit;
+
+          font-size: 18px;
+          color: rgb(18, 20, 23);
+        }
+
+        .car-filter-input {
         }
       `}
     />
