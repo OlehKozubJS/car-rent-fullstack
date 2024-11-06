@@ -52,9 +52,13 @@ const CarFilterOptions = ({}) => {
       </label>
       {isCarBrandsOptions && (
         <CarFilterOptionsMenu
-          options={carBrands.filter((carBrand) =>
-            carBrand.toLowerCase().includes(searchResult)
-          )}
+          options={
+            searchResult
+              ? carBrands.filter((carBrand) =>
+                  carBrand.toLowerCase().includes(searchResult)
+                )
+              : carBrands
+          }
           onChange={handleCarBrand}
         />
       )}
