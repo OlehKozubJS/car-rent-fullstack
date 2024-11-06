@@ -15,18 +15,18 @@ const CarFilterOptionsMenu = ({ options, onChange }) => {
   };
 
   useEffect(() => {
-    if (menuListHeight < MAX_MENU_LIST_HEIGHT) {
-      setMenuListContainerHeight(menuListHeight);
-    } else {
-      setMenuListContainerHeight(244);
-    }
-  }, []);
-
-  useEffect(() => {
     const menuList = document.querySelector(".menu-list");
 
     setMenuListHeight(menuList.offsetHeight);
   }, []);
+
+  useEffect(() => {
+    if (menuListHeight < MAX_MENU_LIST_HEIGHT) {
+      setMenuListContainerHeight(menuListHeight);
+    } else {
+      setMenuListContainerHeight(MAX_MENU_LIST_HEIGHT);
+    }
+  }, [menuListHeight]);
 
   return (
     <>
