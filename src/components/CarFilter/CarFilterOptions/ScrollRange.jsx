@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { css, Global } from "@emotion/react";
 
 const ScrollRange = ({ value, onChange, height }) => {
   const [isDraggable, setIsDraggable] = useState(false);
