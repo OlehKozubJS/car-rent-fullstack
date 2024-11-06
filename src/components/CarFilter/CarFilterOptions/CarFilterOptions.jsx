@@ -4,7 +4,6 @@ import makes from "../../../makes.json";
 
 import { CarFilterOptionsMenu } from "./CarFilterOptionsMenu";
 
-import { CarFilterOptionsStyles } from "./CarFilterOptionsStyles";
 import { SVGimage } from "../../../images";
 
 const CarFilterOptions = ({}) => {
