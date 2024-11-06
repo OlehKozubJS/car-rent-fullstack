@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { css, Global } from "@emotion/react";
 
-const ScrollRange = ({ value, onChange }) => {
+const ScrollRange = ({ value, onChange, height }) => {
   const [isDraggable, setIsDraggable] = useState(false);
   const [mouseDownY, setMouseDownY] = useState(0);
 
@@ -46,7 +46,11 @@ const ScrollRange = ({ value, onChange }) => {
 
   return (
     <div className="scroll-range-stator" style={{ top: `${value}px` }}>
-      <div onMouseDown={handleMouseDown} className="scroll-range-rotor"></div>
+      <div
+        onMouseDown={handleMouseDown}
+        className="scroll-range-rotor"
+        style={{ height: `${height}` }}
+      ></div>
     </div>
   );
 };
