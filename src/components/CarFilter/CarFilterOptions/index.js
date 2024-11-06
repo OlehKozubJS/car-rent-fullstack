@@ -1,3 +1,4 @@
 import { CarFilterOptions } from "./CarFilterOptions";
+import { carFilterOptionsStyles } from "./CarFilterOptionsStyles";
 
-export { CarFilterOptions };
+export { CarFilterOptions, carFilterOptionsStyles };
