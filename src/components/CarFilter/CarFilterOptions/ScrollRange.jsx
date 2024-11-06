@@ -13,11 +13,15 @@ const ScrollRange = ({ value, onChange, height }) => {
   const handleMouseMove = (event) => {
     event.preventDefault();
 
+    const scrollRangeStatorHeight = document.querySelector(
+      ".scroll-range-stator"
+    ).offsetHeight;
+
     if (isDraggable) {
       const cursorY = event.clientY;
       const oldValue = value;
       const newValue = cursorY - mouseDownY + oldValue;
-      if (newValue >= 0 && newValue <= 244 - height) {
+      if (newValue >= 0 && newValue <= scrollRangeStatorHeight - height) {
         onChange(newValue);
       }
     }
