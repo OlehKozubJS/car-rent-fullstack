@@ -36,7 +36,7 @@ const CarFilterOptionsMenu = ({ options, onChange }) => {
       <ScrollRange
         value={valueY}
         onChange={handleScrollRangeValue}
-        height={10}
+        height={244 - document.querySelector(".menu-list").offsetHeight}
       />
     </div>
   );
