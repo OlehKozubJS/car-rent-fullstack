@@ -33,7 +33,11 @@ const CarFilterOptionsMenu = ({ options, onChange }) => {
           top={-valueY}
         />
       </div>
-      <ScrollRange value={valueY} onChange={handleScrollRangeValue} />
+      <ScrollRange
+        value={valueY}
+        onChange={handleScrollRangeValue}
+        height={200}
+      />
     </div>
   );
 };
