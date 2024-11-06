@@ -13,6 +13,7 @@ const CarFilterOptions = ({}) => {
   const [searchResult, setSearchResult] = useState("");
 
   const openCarBrandOptions = () => {
+    setSearchResult("");
     setIsCarBrandsOptions(true);
   };
 
