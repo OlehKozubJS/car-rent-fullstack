@@ -38,7 +38,7 @@ const CarFilterOptionsMenu = ({ options, onChange }) => {
           <CarFilterOptionsMenuList
             options={options}
             onChange={onChange}
-            top={-valueY * 2}
+            top={-valueY * 5}
           />
         </div>
         <ScrollRange
@@ -46,7 +46,7 @@ const CarFilterOptionsMenu = ({ options, onChange }) => {
           onChange={handleScrollRangeValue}
           height={
             menuListContainerHeight -
-            (menuListHeight - menuListContainerHeight) / 2
+            (menuListHeight - menuListContainerHeight) / 5
           }
         />
       </div>
