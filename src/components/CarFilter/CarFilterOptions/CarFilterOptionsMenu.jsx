@@ -21,7 +21,7 @@ const CarFilterOptionsMenu = ({ options, onChange }) => {
   }, []);
 
   useEffect(() => {
-    if (menuListHeight < MAX_MENU_LIST_HEIGHT) {
+    if (menuListHeight <= MAX_MENU_LIST_HEIGHT) {
       setMenuListContainerHeight(menuListHeight);
     } else {
       setMenuListContainerHeight(MAX_MENU_LIST_HEIGHT);
@@ -36,20 +36,22 @@ const CarFilterOptionsMenu = ({ options, onChange }) => {
       >
         <div className="menu-list-container">
           <CarFilterOptionsMenuList
-            options={options.slice(0, 22)}
+            options={options.slice(0, 5)}
             onChange={onChange}
             top={-scrollRangeValue * 5}
           />
         </div>
-        <ScrollRange
-          value={scrollRangeValue}
-          onChange={handleScrollRangeValue}
-          statorHeight={menuListContainerHeight}
-          rotorHeight={
-            menuListContainerHeight -
-            (menuListHeight - menuListContainerHeight) / 5
-          }
-        />
+        {menuListHeight > MAX_MENU_LIST_HEIGHT && (
+          <ScrollRange
+            value={scrollRangeValue}
+            onChange={handleScrollRangeValue}
+            statorHeight={menuListContainerHeight}
+            rotorHeight={
+              menuListContainerHeight -
+              (menuListHeight - menuListContainerHeight) / 5
+            }
+          />
+        )}
       </div>
       {""}
     </>
