@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const ScrollRange = ({ value, onChange, height }) => {
+const ScrollRange = ({ value, onChange, statorHeight, rotorHeight }) => {
   const [isDraggable, setIsDraggable] = useState(false);
   const [mouseDownY, setMouseDownY] = useState(0);
 
@@ -13,15 +13,11 @@ const ScrollRange = ({ value, onChange, height }) => {
   const handleMouseMove = (event) => {
     event.preventDefault();
 
-    const scrollRangeStatorHeight = document.querySelector(
-      ".scroll-range-stator"
-    ).offsetHeight;
-
     if (isDraggable) {
       const cursorY = event.clientY;
       const oldValue = value;
       const newValue = cursorY - mouseDownY + oldValue;
-      if (newValue >= 0 && newValue <= scrollRangeStatorHeight - height) {
+      if (newValue >= 0 && newValue <= statorHeight - rotorHeight) {
         onChange(newValue);
       }
     }
