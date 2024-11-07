@@ -8,33 +8,33 @@ import { CarFilterOptionsMenu } from "./CarFilterOptionsMenu";
 const CarFilterOptions = ({}) => {
   const [carBrands] = useState(makes);
   const [isCarBrandsOptions, setIsCarBrandsOptions] = useState(false);
-  const [searchResult, setSearchResult] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
 
   const toggleCarBrandOptions = (value) => {
     setIsCarBrandsOptions(value);
   };
 
   const handleCarBrand = (event) => {
-    setSearchResult(event.target.value);
+    setSearchQuery(event.target.value);
   };
 
-  const handleSearchResult = (value) => {
-    setSearchResult(value);
+  const handleSearchQuery = (value) => {
+    setSearchQuery(value);
   };
 
   return (
     <div>
       <h3>Car brand</h3>
       <CarFilterOptionsInput
-        onChange={handleSearchResult}
+        onChange={handleSearchQuery}
         onClick={toggleCarBrandOptions}
       />
       {isCarBrandsOptions && (
         <CarFilterOptionsMenu
           options={
-            searchResult
+            searchQuery
               ? carBrands.filter((carBrand) =>
-                  carBrand.toLowerCase().includes(searchResult)
+                  carBrand.toLowerCase().includes(searchQuery)
                 )
               : carBrands
           }
