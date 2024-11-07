@@ -7,6 +7,7 @@ import { CarFilterOptionsMenu } from "./CarFilterOptionsMenu";
 
 const CarFilterOptions = ({}) => {
   const [carBrands] = useState(makes);
+  const [selectedCarBrands, setSelectedCarBrands] = useState(carBrands);
   const [isCarBrandsOptions, setIsCarBrandsOptions] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -20,6 +21,13 @@ const CarFilterOptions = ({}) => {
 
   const handleSearchQuery = (value) => {
     setSearchQuery(value);
+    setSelectedCarBrands(
+      searchQuery
+        ? carBrands.filter((carBrand) =>
+            carBrand.toLowerCase().includes(searchQuery.toLowerCase())
+          )
+        : carBrands
+    );
   };
 
   return (
@@ -32,13 +40,7 @@ const CarFilterOptions = ({}) => {
       />
       {isCarBrandsOptions && (
         <CarFilterOptionsMenu
-          options={
-            searchQuery
-              ? carBrands.filter((carBrand) =>
-                  carBrand.toLowerCase().includes(searchQuery.toLowerCase())
-                )
-              : carBrands
-          }
+          options={selectedCarBrands}
           onChange={handleCarBrand}
         />
       )}
