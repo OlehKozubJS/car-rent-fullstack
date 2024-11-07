@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 import { CarFilterOptionsInput } from "./CarFilterOptionsInput";
 import { CarFilterOptionsMenu } from "./CarFilterOptionsMenu";
 
-const CarFilterOptions = ({ makes }) => {
-  const [carBrands, setCarBrands] = useState([]);
+const CarFilterOptions = ({ carBrands }) => {
+  const [filteredCarBrands, setFilteredCarBrands] = useState([]);
   const [isCarBrandsOptions, setIsCarBrandsOptions] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -21,18 +21,18 @@ const CarFilterOptions = ({ makes }) => {
   };
 
   useEffect(() => {
-    setCarBrands(makes);
+    setFilteredCarBrands(makes);
   }, [makes]);
 
   useEffect(() => {
-    const filteredCarBrands = carBrands.filter((carBrand) =>
+    const newFilteredCarBrands = carBrands.filter((carBrand) =>
       carBrand.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
-    setCarBrands(
+    setFilteredCarBrands(
       searchQuery
-        ? filteredCarBrands.length
-          ? filteredCarBrands
+        ? newFilteredCarBrands.length
+          ? newFilteredCarBrands
           : ["Sorry, no results found"]
         : makes
     );
@@ -47,7 +47,10 @@ const CarFilterOptions = ({ makes }) => {
         onClick={toggleCarBrandOptions}
       />
       {isCarBrandsOptions && (
-        <CarFilterOptionsMenu options={carBrands} onChange={handleCarBrand} />
+        <CarFilterOptionsMenu
+          options={filteredCarBrands}
+          onChange={handleCarBrand}
+        />
       )}
     </div>
   );
