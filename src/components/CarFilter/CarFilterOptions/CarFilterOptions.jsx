@@ -34,7 +34,7 @@ const CarFilterOptions = ({ carBrands }) => {
         ? newFilteredCarBrands.length
           ? newFilteredCarBrands
           : ["Sorry, no results found"]
-        : makes
+        : carBrands
     );
   }, [searchQuery]);
 
