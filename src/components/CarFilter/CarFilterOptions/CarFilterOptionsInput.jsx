@@ -4,7 +4,7 @@ import { SVGimage } from "../../../images";
 
 const CarFilterOptionsInput = ({ value, onChange, onClick }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
+  const [newValue, setNewValue] = useState("");
 
   const open = () => {
     setIsOpen(true);
@@ -14,14 +14,17 @@ const CarFilterOptionsInput = ({ value, onChange, onClick }) => {
     setIsOpen(false);
   };
 
-  const handleCarBrand = (event) => {
-    setIsCarBrandsOptions(false);
-    setSearchResult(event.target.value);
+  const handleChange = (event) => {
+    setNewValue(event.target.value);
   };
 
-  const handleChange = (event) => {
-    setSearchQuery(event.target.value);
-  };
+  useEffect(() => {
+    onChange(isOpen);
+  }, [isOpen]);
+
+  useEffect(() => {
+    onChange(newValue);
+  }, [newValue]);
 
   return (
     <label htmlFor="car-filter-input" className="car-filter-input-label">
@@ -29,7 +32,7 @@ const CarFilterOptionsInput = ({ value, onChange, onClick }) => {
         id="car-filter-input"
         type="text"
         placeholder="Enter the text"
-        value={searchQuery}
+        value={value}
         onChange={handleChange}
         className="car-filter-input"
       />
