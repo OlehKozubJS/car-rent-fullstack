@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import { SVGimage } from "../../../images";
 
-const CarFilterOptionsInput = ({ value, onChange, onClick }) => {
+const CarFilterOptionsInput = ({ onChange, onClick }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [newValue, setNewValue] = useState("");
 
@@ -32,7 +32,7 @@ const CarFilterOptionsInput = ({ value, onChange, onClick }) => {
         id="car-filter-input"
         type="text"
         placeholder="Enter the text"
-        value={value}
+        value={newValue}
         onChange={handleChange}
         className="car-filter-input"
       />
