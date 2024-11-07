@@ -37,7 +37,7 @@ const CarFilterOptionsInput = ({ onChange, onClick }) => {
         className="car-filter-input"
       />
       <button type="button" onClick={isOpen ? close : open}>
-        {<SVGimage name={isCarBrandsOptions ? "up" : "down"} />}
+        {<SVGimage name={isOpen ? "up" : "down"} />}
       </button>
     </label>
   );
