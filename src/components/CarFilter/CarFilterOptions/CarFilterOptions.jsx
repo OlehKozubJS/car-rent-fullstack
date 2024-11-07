@@ -21,6 +21,9 @@ const CarFilterOptions = ({}) => {
 
   const handleSearchQuery = (value) => {
     setSearchQuery(value);
+  };
+
+  useEffect(() => {
     setSelectedCarBrands(
       searchQuery
         ? carBrands.filter((carBrand) =>
@@ -28,7 +31,7 @@ const CarFilterOptions = ({}) => {
           )
         : carBrands
     );
-  };
+  }, [searchQuery]);
 
   return (
     <div>
