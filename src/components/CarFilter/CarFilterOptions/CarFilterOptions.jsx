@@ -1,11 +1,9 @@
 import { useState, useEffect } from "react";
 
-import makes from "../../../makes.json";
-
 import { CarFilterOptionsInput } from "./CarFilterOptionsInput";
 import { CarFilterOptionsMenu } from "./CarFilterOptionsMenu";
 
-const CarFilterOptions = ({}) => {
+const CarFilterOptions = ({ makes }) => {
   const [carBrands, setCarBrands] = useState([]);
   const [isCarBrandsOptions, setIsCarBrandsOptions] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
