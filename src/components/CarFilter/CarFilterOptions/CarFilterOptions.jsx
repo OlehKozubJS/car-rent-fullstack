@@ -15,7 +15,6 @@ const CarFilterOptions = ({}) => {
   };
 
   const handleCarBrand = (event) => {
-    setIsCarBrandsOptions(false);
     setSearchResult(event.target.value);
   };
 
