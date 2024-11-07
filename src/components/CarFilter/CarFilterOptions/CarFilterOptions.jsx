@@ -10,13 +10,8 @@ const CarFilterOptions = ({}) => {
   const [isCarBrandsOptions, setIsCarBrandsOptions] = useState(false);
   const [searchResult, setSearchResult] = useState("");
 
-  const openCarBrandOptions = () => {
-    setSearchResult("");
-    setIsCarBrandsOptions(true);
-  };
-
-  const closeCarBrandOptions = () => {
-    setIsCarBrandsOptions(false);
+  const toggleCarBrandOptions = (value) => {
+    setIsCarBrandsOptions(value);
   };
 
   const handleCarBrand = (event) => {
@@ -31,7 +26,10 @@ const CarFilterOptions = ({}) => {
   return (
     <div>
       <h3>Car brand</h3>
-      <CarFilterOptionsInput />
+      <CarFilterOptionsInput
+        onChange={handleSearchResult}
+        onClick={toggleCarBrandOptions}
+      />
       {isCarBrandsOptions && (
         <CarFilterOptionsMenu
           options={
