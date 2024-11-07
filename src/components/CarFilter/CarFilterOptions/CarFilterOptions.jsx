@@ -28,7 +28,7 @@ const CarFilterOptions = ({}) => {
       searchQuery
         ? carBrands.filter((carBrand) =>
             carBrand.toLowerCase().includes(searchQuery.toLowerCase())
-          )
+          ) || ["Sorry, no results found"]
         : carBrands
     );
   }, [searchQuery]);
