@@ -21,8 +21,8 @@ const CarFilterOptions = ({ carBrands }) => {
   };
 
   useEffect(() => {
-    setFilteredCarBrands(makes);
-  }, [makes]);
+    setFilteredCarBrands(carBrands);
+  }, [carBrands]);
 
   useEffect(() => {
     const newFilteredCarBrands = carBrands.filter((carBrand) =>
