@@ -21,7 +21,7 @@ const CarFilter = ({}) => {
 
   return (
     <form>
-      <CarFilterOptions makes={makes} />
+      <CarFilterOptions carBrands={makes} />
 
       <CarMileageSelector />
 
