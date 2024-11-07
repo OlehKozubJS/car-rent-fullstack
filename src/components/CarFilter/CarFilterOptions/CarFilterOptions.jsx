@@ -24,11 +24,15 @@ const CarFilterOptions = ({}) => {
   };
 
   useEffect(() => {
+    const filteredCarBrands = carBrands.filter((carBrand) =>
+      carBrand.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+
     setSelectedCarBrands(
       searchQuery
-        ? carBrands.filter((carBrand) =>
-            carBrand.toLowerCase().includes(searchQuery.toLowerCase())
-          ) || ["Sorry, no results found"]
+        ? filteredCarBrands.length
+          ? filteredCarBrands
+          : ["Sorry, no results found"]
         : carBrands
     );
   }, [searchQuery]);
