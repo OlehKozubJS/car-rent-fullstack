@@ -2,9 +2,8 @@ import { useState, useEffect } from "react";
 
 import makes from "../../../makes.json";
 
+import { CarFilterOptionsInput } from "./CarFilterOptionsInput";
 import { CarFilterOptionsMenu } from "./CarFilterOptionsMenu";
-
-import { SVGimage } from "../../../images";
 
 const CarFilterOptions = ({}) => {
   const [carBrands] = useState(makes);
@@ -32,24 +31,7 @@ const CarFilterOptions = ({}) => {
   return (
     <div>
       <h3>Car brand</h3>
-      <label htmlFor="car-filter-input" className="car-filter-input-label">
-        <input
-          id="car-filter-input"
-          type="text"
-          placeholder="Enter the text"
-          value={searchResult}
-          onChange={handleSearchResult}
-          className="car-filter-input"
-        />
-        <button
-          type="button"
-          onClick={
-            isCarBrandsOptions ? closeCarBrandOptions : openCarBrandOptions
-          }
-        >
-          {<SVGimage name={isCarBrandsOptions ? "up" : "down"} />}
-        </button>
-      </label>
+      <CarFilterOptionsInput />
       {isCarBrandsOptions && (
         <CarFilterOptionsMenu
           options={
