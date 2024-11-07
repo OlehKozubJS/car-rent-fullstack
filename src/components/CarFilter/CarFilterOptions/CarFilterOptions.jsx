@@ -34,7 +34,7 @@ const CarFilterOptions = ({}) => {
           options={
             searchQuery
               ? carBrands.filter((carBrand) =>
-                  carBrand.toLowerCase().includes(searchQuery)
+                  carBrand.toLowerCase().includes(searchQuery.toLowerCase())
                 )
               : carBrands
           }
