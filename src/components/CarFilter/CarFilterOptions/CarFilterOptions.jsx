@@ -23,6 +23,8 @@ const CarFilterOptions = ({}) => {
     setSearchQuery(value);
   };
 
+  useEffect(() => {}, []);
+
   useEffect(() => {
     const filteredCarBrands = carBrands.filter((carBrand) =>
       carBrand.toLowerCase().includes(searchQuery.toLowerCase())
