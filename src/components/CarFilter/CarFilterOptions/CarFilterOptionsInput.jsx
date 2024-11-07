@@ -4,10 +4,9 @@ import { SVGimage } from "../../../images";
 
 const CarFilterOptionsInput = ({ value, onChange, onClick }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [newValue, setNewValue] = useState(value);
 
   const handleChange = (event) => {
-    setNewValue(event.target.value);
+    onChange(event.target.value);
   };
 
   const open = () => {
@@ -19,10 +18,6 @@ const CarFilterOptionsInput = ({ value, onChange, onClick }) => {
   };
 
   useEffect(() => {
-    onChange(newValue);
-  }, [newValue]);
-
-  useEffect(() => {
     onClick(isOpen);
   }, [isOpen]);
 
@@ -32,7 +27,7 @@ const CarFilterOptionsInput = ({ value, onChange, onClick }) => {
         id="car-filter-input"
         type="text"
         placeholder="Enter the text"
-        value={newValue}
+        value={value}
         onChange={handleChange}
         className="car-filter-input"
       />

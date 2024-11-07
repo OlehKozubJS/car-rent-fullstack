@@ -26,6 +26,7 @@ const CarFilterOptions = ({}) => {
     <div>
       <h3>Car brand</h3>
       <CarFilterOptionsInput
+        value={searchQuery}
         onChange={handleSearchQuery}
         onClick={toggleCarBrandOptions}
       />
