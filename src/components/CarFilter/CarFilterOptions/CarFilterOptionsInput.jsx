@@ -6,6 +6,10 @@ const CarFilterOptionsInput = ({ value, onChange, onClick }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [newValue, setNewValue] = useState("");
 
+  const handleChange = (event) => {
+    setNewValue(event.target.value);
+  };
+
   const open = () => {
     setIsOpen(true);
   };
@@ -14,17 +18,13 @@ const CarFilterOptionsInput = ({ value, onChange, onClick }) => {
     setIsOpen(false);
   };
 
-  const handleChange = (event) => {
-    setNewValue(event.target.value);
-  };
-
-  useEffect(() => {
-    onChange(isOpen);
-  }, [isOpen]);
-
   useEffect(() => {
     onChange(newValue);
   }, [newValue]);
+
+  useEffect(() => {
+    onClick(isOpen);
+  }, [isOpen]);
 
   return (
     <label htmlFor="car-filter-input" className="car-filter-input-label">
