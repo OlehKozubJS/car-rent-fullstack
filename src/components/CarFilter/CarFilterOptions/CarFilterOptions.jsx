@@ -18,8 +18,8 @@ const CarFilterOptions = ({}) => {
     setSearchResult(event.target.value);
   };
 
-  const handleSearchResult = (event) => {
-    setSearchResult(event.target.value);
+  const handleSearchResult = (value) => {
+    setSearchResult(value);
   };
 
   return (
