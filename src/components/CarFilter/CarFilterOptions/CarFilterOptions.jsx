@@ -41,14 +41,15 @@ const CarFilterOptions = ({ carBrands }) => {
         buttonValue={isCarBrandsOptions}
         onClick={toggleCarBrandOptions}
       />
-      {isCarBrandsOptions && filteredCarBrands.length ? (
-        <CarFilterOptionsMenu
-          options={filteredCarBrands}
-          onChange={handleCarBrand}
-        />
-      ) : (
-        <div>Sorry, no results found</div>
-      )}
+      {isCarBrandsOptions &&
+        (filteredCarBrands.length ? (
+          <CarFilterOptionsMenu
+            options={filteredCarBrands}
+            onChange={handleCarBrand}
+          />
+        ) : (
+          <div>Sorry, no results found</div>
+        ))}
     </div>
   );
 };
