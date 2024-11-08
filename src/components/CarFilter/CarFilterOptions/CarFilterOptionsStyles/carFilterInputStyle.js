@@ -26,6 +26,8 @@ const carFilterInputStyle = `
         }
 
         .car-filter-input:focus-within {
-        }`;
+        }
+        
+        .car-filter-input-button{}`;
 
 export { carFilterInputStyle };
