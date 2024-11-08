@@ -26,13 +26,17 @@ const CarFilterOptionsInput = ({
     onClick(isOpen);
   }, [isOpen]);
 
+  useEffect(() => {
+    setIsOpen(buttonValue);
+  }, [buttonValue]);
+
   return (
     <label htmlFor="car-filter-input" className="car-filter-input-label">
       <input
         id="car-filter-input"
         type="text"
         placeholder="Enter the text"
-        value={value}
+        value={inputValue}
         onChange={handleChange}
         className="car-filter-input"
       />
