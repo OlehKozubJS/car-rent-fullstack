@@ -40,7 +40,11 @@ const CarFilterOptionsInput = ({
         onChange={handleChange}
         className="car-filter-input"
       />
-      <button type="button" onClick={isOpen ? close : open}>
+      <button
+        type="button"
+        onClick={isOpen ? close : open}
+        className="car-filter-input-button"
+      >
         {<SVGimage name={isOpen ? "up" : "down"} />}
       </button>
     </label>
