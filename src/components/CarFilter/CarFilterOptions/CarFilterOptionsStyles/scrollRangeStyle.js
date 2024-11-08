@@ -13,9 +13,11 @@ const scrollRangeStyle = `
           background-color: rgba(18, 20, 23, 0.05);
 
           border-radius: 10px;
+
+          transition: 500ms;
         }
           
-        .scroll-range-rotor {
+        .scroll-range-rotor:hover {
           background-color: rgba(18, 20, 23, 0.5);
         }`;
 
