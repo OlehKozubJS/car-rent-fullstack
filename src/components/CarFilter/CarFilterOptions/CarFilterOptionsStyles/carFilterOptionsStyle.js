@@ -13,7 +13,7 @@ const carFilterOptionsStyle = `
           justify-content: center;
           align-items: center;
 
-          
+          color: red;
         }`;
 
 export { carFilterOptionsStyle };
