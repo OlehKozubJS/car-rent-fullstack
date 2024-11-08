@@ -3,7 +3,7 @@ const CarFilterOptionsMenuList = ({ options, onChange, top }) => {
     <ul className="menu-list" style={{ top: `${top}px` }}>
       {options.map((option, optionIndex) => {
         return (
-          <li key={optionIndex}>
+          <li key={optionIndex} className="menu-item">
             <label htmlFor={optionIndex}>
               <input
                 id={optionIndex}

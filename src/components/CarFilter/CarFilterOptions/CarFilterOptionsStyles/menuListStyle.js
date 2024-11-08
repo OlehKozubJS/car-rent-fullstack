@@ -13,9 +13,15 @@ const menuListStyle = `
           padding: 0;
 
           position: absolute;
-          left: 0px;
+          left: 0px;          
+        }
 
+        .menu-item {
           color: rgba(18, 20, 23, 0.2);
+        }
+
+        .menu-item {
+          color: rgb(18, 20, 23);
         }
 
         .menu-option-radio {
