@@ -17,9 +17,12 @@ const scrollRangeStyle = `
           transition: 500ms;
         }
           
-        .scroll-range-rotor:hover,
-        .scroll-range-rotor:active {
+        .scroll-range-rotor:hover {
           background-color: rgba(18, 20, 23, 0.5);
+        }
+
+        .scroll-range-rotor:active {
+          background-color: rgba(18, 20, 23, 0.25);
         }`;
 
 export { scrollRangeStyle };
