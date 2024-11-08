@@ -4,6 +4,9 @@ const carFilterOptionsStyle = `
 
           width: 224px;
 
+          padding-block: 14px;
+          padding-inline: 18px;
+
           border-style: solid;
           border-radius: 14px;
           border-width: 1px;
@@ -12,8 +15,6 @@ const carFilterOptionsStyle = `
           display: flex;
           justify-content: center;
           align-items: center;
-
-          color: red;
         }`;
 
 export { carFilterOptionsStyle };
