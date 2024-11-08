@@ -13,6 +13,10 @@ const scrollRangeStyle = `
           background-color: rgba(18, 20, 23, 0.05);
 
           border-radius: 10px;
+        }
+          
+        .scroll-range-rotor {
+          background-color: rgba(18, 20, 23, 0.5);
         }`;
 
 export { scrollRangeStyle };
