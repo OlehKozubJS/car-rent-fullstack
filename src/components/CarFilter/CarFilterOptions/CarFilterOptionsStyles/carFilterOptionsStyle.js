@@ -16,7 +16,7 @@ const carFilterOptionsStyle = `
           justify-content: center;
           align-items: center;
 
-          color: rgba(180, 20, 23, 0.05);
+          color: rgba(180, 20, 23, 0.5);
         }`;
 
 export { carFilterOptionsStyle };
