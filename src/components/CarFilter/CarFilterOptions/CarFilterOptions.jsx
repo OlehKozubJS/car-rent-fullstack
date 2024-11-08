@@ -49,7 +49,9 @@ const CarFilterOptions = ({ carBrands }) => {
             onChange={handleCarBrand}
           />
         ) : (
-          <div>Sorry, no results found</div>
+          <div className="car-filter-options-not-found-message">
+            Sorry, no results found
+          </div>
         ))}
     </div>
   );
