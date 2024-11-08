@@ -2,7 +2,12 @@ import { useState, useEffect } from "react";
 
 import { SVGimage } from "../../../images";
 
-const CarFilterOptionsInput = ({ value, onChange, onClick }) => {
+const CarFilterOptionsInput = ({
+  inputValue,
+  onChange,
+  buttonValue,
+  onClick,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleChange = (event) => {
