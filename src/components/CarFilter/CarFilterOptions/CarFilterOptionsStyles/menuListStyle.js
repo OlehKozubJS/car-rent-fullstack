@@ -20,7 +20,7 @@ const menuListStyle = `
           color: rgba(18, 20, 23, 0.2);
         }
 
-        .menu-item {
+        .menu-item:hover {
           color: rgb(18, 20, 23);
         }
 
