@@ -29,13 +29,7 @@ const CarFilterOptions = ({ carBrands }) => {
       carBrand.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
-    setFilteredCarBrands(
-      searchQuery
-        ? newFilteredCarBrands.length
-          ? newFilteredCarBrands
-          : ["Sorry, no results found"]
-        : carBrands
-    );
+    setFilteredCarBrands(searchQuery ? newFilteredCarBrands : carBrands);
   }, [searchQuery]);
 
   return (
@@ -47,11 +41,13 @@ const CarFilterOptions = ({ carBrands }) => {
         buttonValue={isCarBrandsOptions}
         onClick={toggleCarBrandOptions}
       />
-      {isCarBrandsOptions && (
+      {isCarBrandsOptions && filteredCarBrands.length ? (
         <CarFilterOptionsMenu
           options={filteredCarBrands}
           onChange={handleCarBrand}
         />
+      ) : (
+        <div>Sorry, no results found</div>
       )}
     </div>
   );
