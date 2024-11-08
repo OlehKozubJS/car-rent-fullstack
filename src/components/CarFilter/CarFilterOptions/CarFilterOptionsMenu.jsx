@@ -29,32 +29,29 @@ const CarFilterOptionsMenu = ({ options, onChange }) => {
   }, [menuListHeight]);
 
   return (
-    <>
-      <div
-        className="menu-container"
-        style={{ height: `${menuListContainerHeight + 28}px` }}
-      >
-        <div className="menu-list-container">
-          <CarFilterOptionsMenuList
-            options={options}
-            onChange={onChange}
-            top={-scrollRangeValue * 5}
-          />
-        </div>
-        {menuListHeight > MAX_MENU_LIST_HEIGHT && (
-          <ScrollRange
-            value={scrollRangeValue}
-            onChange={handleScrollRangeValue}
-            statorHeight={menuListContainerHeight}
-            rotorHeight={
-              menuListContainerHeight -
-              (menuListHeight - menuListContainerHeight) / 5
-            }
-          />
-        )}
+    <div
+      className="menu-container"
+      style={{ height: `${menuListContainerHeight + 28}px` }}
+    >
+      <div className="menu-list-container">
+        <CarFilterOptionsMenuList
+          options={options}
+          onChange={onChange}
+          top={-scrollRangeValue * 5}
+        />
       </div>
-      {""}
-    </>
+      {menuListHeight > MAX_MENU_LIST_HEIGHT && (
+        <ScrollRange
+          value={scrollRangeValue}
+          onChange={handleScrollRangeValue}
+          statorHeight={menuListContainerHeight}
+          rotorHeight={
+            menuListContainerHeight -
+            (menuListHeight - menuListContainerHeight) / 5
+          }
+        />
+      )}
+    </div>
   );
 };
 
