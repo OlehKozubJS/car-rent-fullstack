@@ -1,5 +1,5 @@
 const carFilterOptionsStyle = `        
-        .not-found-message {
+        .car-filter-not-found-message {
           box-sizing: border-box;
 
           width: 224px;
