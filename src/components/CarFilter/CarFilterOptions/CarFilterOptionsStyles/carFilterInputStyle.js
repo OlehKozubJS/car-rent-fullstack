@@ -26,7 +26,7 @@ const carFilterInputStyle = `
         }
 
         .car-filter-input-label:focus-within {
-          background-color: rgb(247, 247, 251);
+          background-color: rgb(251, 251, 255);
         }
         
         .car-filter-input-button {
