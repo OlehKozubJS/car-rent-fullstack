@@ -28,6 +28,12 @@ const carFilterInputStyle = `
         .car-filter-input:focus-within {
         }
         
-        .car-filter-input-button{}`;
+        .car-filter-input-button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: none;
+          border: none;
+        }`;
 
 export { carFilterInputStyle };
