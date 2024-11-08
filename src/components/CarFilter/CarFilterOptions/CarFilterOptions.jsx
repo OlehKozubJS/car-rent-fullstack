@@ -13,6 +13,7 @@ const CarFilterOptions = ({ carBrands }) => {
   };
 
   const handleCarBrand = (event) => {
+    setIsCarBrandsOptions(false);
     setSearchQuery(event.target.value);
   };
 
