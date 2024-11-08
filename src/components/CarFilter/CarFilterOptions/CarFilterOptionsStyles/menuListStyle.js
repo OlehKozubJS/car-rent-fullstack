@@ -18,6 +18,8 @@ const menuListStyle = `
 
         .menu-item {
           color: rgba(18, 20, 23, 0.2);
+          
+          transition: 500ms;
         }
 
         .menu-item:hover {
