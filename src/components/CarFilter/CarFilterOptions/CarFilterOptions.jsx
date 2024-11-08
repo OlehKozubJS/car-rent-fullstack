@@ -44,6 +44,7 @@ const CarFilterOptions = ({ carBrands }) => {
       <CarFilterOptionsInput
         inputValue={searchQuery}
         onChange={handleSearchQuery}
+        buttonValue={isCarBrandsOptions}
         onClick={toggleCarBrandOptions}
       />
       {isCarBrandsOptions && (
