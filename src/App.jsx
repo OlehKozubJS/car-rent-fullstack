@@ -43,7 +43,7 @@ const App = () => {
     };
   };
 
-  useEffect(handleInterval(dateAnimationFunctionTwo, 2000), []);
+  useEffect(handleInterval(dateAnimationFunctionTwo, 2000), [timeTwo]);
 
   useEffect(handleInterval(dateAnimationFunction, 1000), []);
 
