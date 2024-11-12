@@ -8,6 +8,7 @@ import { CarRentStyles } from "./CarRentStyles";
 
 const App = () => {
   const [isModal, setIsModal] = useState(false);
+  const [timeOne, setTimeOne] = useState(0);
   const [timeTwo, setTimeTwo] = useState(0);
   const [timeThree, setTimeThree] = useState(0);
 
@@ -23,6 +24,10 @@ const App = () => {
 
   const dateAnimationFunction = () => {
     setDate(new Date());
+  };
+
+  const dateAnimationFunctionOne = () => {
+    setTimeOne(timeOne + 1);
   };
 
   const dateAnimationFunctionTwo = () => {
@@ -43,11 +48,11 @@ const App = () => {
     };
   };
 
-  useEffect(handleInterval(dateAnimationFunctionTwo, 2000), [timeTwo]);
-
   useEffect(handleInterval(dateAnimationFunction, 1000), []);
 
-  useEffect(handleInterval(dateAnimationFunctionThree, 500), []);
+  useEffect(handleInterval(dateAnimationFunctionOne, 500), [timeOne]);
+  useEffect(handleInterval(dateAnimationFunctionTwo, 1000), [timeTwo]);
+  useEffect(handleInterval(dateAnimationFunctionThree, 2000), [timeThree]);
 
   return (
     <div>
@@ -57,6 +62,7 @@ const App = () => {
       {String(date)}
       <CarGallery />
       <CarFilter />
+      <p>{timeOne}</p>
       <p>{timeTwo}</p>
       <p>{timeThree}</p>
     </div>
