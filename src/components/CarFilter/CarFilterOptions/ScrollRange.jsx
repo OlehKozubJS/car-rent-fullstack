@@ -22,7 +22,7 @@ const ScrollRange = ({ value, onChange, statorHeight, rotorHeight }) => {
       }
     }
   };
-
+  //    console.log(Object.entries({ variableName }));
   const handleMouseUp = () => {
     setIsDraggable(false);
   };
