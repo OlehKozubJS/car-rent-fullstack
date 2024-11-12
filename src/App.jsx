@@ -19,11 +19,11 @@ const App = () => {
 
   const [date, setDate] = useState(new Date());
 
-  useEffect(() => {
-    const dateAnimationFunction = () => {
-      setDate(new Date());
-    };
+  const dateAnimationFunction = () => {
+    setDate(new Date());
+  };
 
+  useEffect(() => {
     let dateAnimation = setInterval(dateAnimationFunction, 1000);
 
     return () => {
