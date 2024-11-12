@@ -27,21 +27,19 @@ const ScrollRange = ({ value, onChange, statorHeight, rotorHeight }) => {
     setIsDraggable(false);
   };
 
-  useEffect(() => {
-    window.addEventListener("mouseup", handleMouseUp);
-
+  const handleEventListener = (eventType, callback) => {
     return () => {
-      window.removeEventListener("mouseup", handleMouseUp);
-    };
-  }, []);
+      window.addEventListener(eventType, callback);
 
-  useEffect(() => {
-    window.addEventListener("mousemove", handleMouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
+      return () => {
+        window.removeEventListener(eventType, callback);
+      };
     };
-  }, [isDraggable]);
+  };
+
+  useEffect(handleEventListener("mouseup", handleMouseUp), []);
+
+  useEffect(handleEventListener("mousemove", handleMouseMove), [isDraggable]);
 
   return (
     <div
