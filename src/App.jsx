@@ -23,13 +23,17 @@ const App = () => {
     setDate(new Date());
   };
 
-  useEffect(() => {
-    let dateAnimation = setInterval(dateAnimationFunction, 1000);
-
+  const handleInterval = (callback, timePeriod) => {
     return () => {
-      clearInterval(dateAnimation);
+      let newAnimation = setInterval(callback, timePeriod);
+
+      return () => {
+        clearInterval(newAnimation);
+      };
     };
-  }, []);
+  };
+
+  useEffect(handleInterval(dateAnimationFunction, 1000), []);
 
   return (
     <div>
