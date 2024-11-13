@@ -4,7 +4,7 @@ import cars from "./advertsCars.json";
 
 import { CarFilter, CarGallery, CarModal } from "./components";
 
-const App = () => {
+const TestPage = () => {
   const [timeOne, setTimeOne] = useState(0);
   const [timeTwo, setTimeTwo] = useState(0);
   const [timeThree, setTimeThree] = useState(0);
@@ -53,4 +53,4 @@ const App = () => {
   );
 };
 
-export { App };
+export { TestPage };
