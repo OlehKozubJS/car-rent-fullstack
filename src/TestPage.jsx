@@ -27,6 +27,8 @@ const TestPage = () => {
     setTimeThree(timeThree + 1);
   };
 
+  //    console.log(Object.entries({ variableName }));
+
   const handleInterval = (callback, timePeriod) => {
     return () => {
       let newAnimation = setInterval(callback, timePeriod);
