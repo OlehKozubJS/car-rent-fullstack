@@ -7,7 +7,7 @@ import { CarFilter, CarGallery, CarModal } from "./components";
 const TestPage = () => {
   const [time, setTime] = useState(0);
 
-  const [fibonacciArray, setFibonacciArray] = useState([]);
+  const [fibonacciArray, setFibonacciArray] = useState([0, 1]);
 
   const [date, setDate] = useState(new Date());
 
@@ -19,8 +19,12 @@ const TestPage = () => {
     setTime(time + 1);
   };
 
-  const fibpnacciTimeFunction = () => {
-    setFibonacciArray();
+  const fibonacciTimeFunction = () => {
+    setFibonacciArray([
+      ...fibonacciArray,
+      fibonacciArray[fibonacciArray.length - 1] +
+        fibonacciArray[fibonacciArray.length - 2],
+    ]);
   };
 
   const varNameToString = (objectName) => {
@@ -51,7 +55,7 @@ const TestPage = () => {
 
   useEffect(handleInterval(timeAnimationFunctionOne, 500), [time]);
 
-  //useEffect(handleTimeOut(dateAnimationFunctionTwo, 5000), [time]);
+  useEffect(handleTimeOut(fibonacciTimeFunction, 5000), [time]);
 
   return (
     <div>
