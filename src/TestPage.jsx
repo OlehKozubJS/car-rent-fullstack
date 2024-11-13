@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import cars from "./advertsCars.json";
+import { cars } from "./data_base";
 
 import { CarFilter, CarGallery, CarModal } from "./components";
 
