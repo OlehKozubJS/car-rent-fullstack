@@ -41,6 +41,16 @@ const TestPage = () => {
     };
   };
 
+  const handleTimeOut = (callback, timePeriod) => {
+    return () => {
+      let newAnimation = setTimeout(callback, timePeriod);
+
+      return () => {
+        clearTimeout(newAnimation);
+      };
+    };
+  };
+
   useEffect(handleInterval(dateAnimationFunction, 1000), []);
 
   useEffect(handleInterval(dateAnimationFunctionOne, 500), [timeOne]);
