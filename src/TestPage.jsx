@@ -27,8 +27,8 @@ const TestPage = () => {
     setTimeThree(timeThree + 1);
   };
 
-  const varNameToString = (variableName) => {
-    console.log(Object.entries({ variableName })[0]);
+  const varNameToString = (objectName) => {
+    return Object.keys(objectName)[0];
   };
 
   const handleInterval = (callback, timePeriod) => {
@@ -53,9 +53,9 @@ const TestPage = () => {
       <p>{timeOne}</p>
       <p>{timeTwo}</p>
       <p>{timeThree}</p>
-      <p>{varNameToString(timeOne)}</p>
-      <p>{varNameToString(timeTwo)}</p>
-      <p>{varNameToString(timeThree)}</p>
+      <p>{varNameToString({ timeOne })}</p>
+      <p>{varNameToString({ timeTwo })}</p>
+      <p>{varNameToString({ timeThree })}</p>
     </div>
   );
 };
