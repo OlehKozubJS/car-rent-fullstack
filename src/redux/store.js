@@ -14,3 +14,14 @@ import {
 } from "redux-persist";
 
 import storage from "redux-persist/lib/storage";
+
+const store = configureStore({
+  reducer: persistReducer({ key: "root", storage }),
+  middleware: (getDefaultMiddleware) => {
+    getDefaultMiddleware({
+      serializableCheck: {
+        ignoreActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+      },
+    });
+  },
+});
