@@ -6,8 +6,6 @@ import { CarFilter, CarGallery, CarModal } from "./components";
 
 const TestPage = () => {
   const [time, setTime] = useState(0);
-  const [timeTwo, setTimeTwo] = useState(0);
-  const [timeThree, setTimeThree] = useState(0);
 
   const [fibonacciArray, setFibonacciArray] = useState([]);
 
