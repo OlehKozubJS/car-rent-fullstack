@@ -9,6 +9,8 @@ const TestPage = () => {
   const [timeTwo, setTimeTwo] = useState(0);
   const [timeThree, setTimeThree] = useState(0);
 
+  const [fibonacciArray, setFibonacciArray] = useState([]);
+
   const [date, setDate] = useState(new Date());
 
   const dateAnimationFunction = () => {
@@ -18,6 +20,8 @@ const TestPage = () => {
   const timeAnimationFunctionOne = () => {
     setTime(time + 1);
   };
+
+  const fibTimeFunction = () => {};
 
   const varNameToString = (objectName) => {
     return Object.keys(objectName)[0];
