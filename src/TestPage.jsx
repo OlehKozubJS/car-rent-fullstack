@@ -5,11 +5,21 @@ import cars from "./advertsCars.json";
 import { CarFilter, CarGallery, CarModal } from "./components";
 
 const TestPage = () => {
+  const [isTestPage, setIsTestPage] = useState(false);
+
   const [time, setTime] = useState(0);
 
   const [fibonacciArray, setFibonacciArray] = useState([0, 1]);
 
   const [date, setDate] = useState(new Date());
+
+  const openTestPage = () => {
+    setIsTestPage(true);
+  };
+
+  const closeTestPage = () => {
+    setIsTestPage(false);
+  };
 
   const dateAnimationFunction = () => {
     setDate(new Date());
@@ -60,13 +70,20 @@ const TestPage = () => {
 
   useEffect(handleTimeOut(fibonacciTimeFunction, 1000), [fibonacciArray]);
 
-  return (
+  return isTestPage ? (
     <div>
+      <button type="button" onClick={closeTestPage}>
+        Close test page
+      </button>
       {String(date)}
       <p>{time}</p>
       <p>{fibonacciArray.join(", ")}</p>
       <p>{""}</p>
     </div>
+  ) : (
+    <button type="button" onClick={openTestPage}>
+      Open test page
+    </button>
   );
 };
 
