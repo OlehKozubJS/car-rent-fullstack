@@ -25,3 +25,5 @@ const store = configureStore({
     });
   },
 });
+
+const persistor = persistStore(store);
