@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
-import cars from "../../advertsCars.json";
-import makes from "../../makes.json";
+import { makes } from "./imports";
 
 import { SVGimage } from "../../images";
 
