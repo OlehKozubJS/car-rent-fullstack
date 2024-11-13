@@ -43,6 +43,10 @@ const TestPage = () => {
 
   useEffect(handleInterval(dateAnimationFunction, 1000), []);
 
+  useEffect(handleInterval(dateAnimationFunctionOne, 500), [timeOne]);
+  useEffect(handleInterval(dateAnimationFunctionTwo, 1000), [timeTwo]);
+  useEffect(handleInterval(dateAnimationFunctionThree, 2000), [timeThree]);
+
   return (
     <div>
       {String(date)}
