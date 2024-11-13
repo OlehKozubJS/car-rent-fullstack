@@ -16,7 +16,7 @@ import {
 import storage from "redux-persist/lib/storage";
 
 const store = configureStore({
-  reducer: persistReducer({ key: "root", storage }),
+  reducer: persistReducer({ key: "root", storage }, combineReducers()),
   middleware: (getDefaultMiddleware) => {
     getDefaultMiddleware({
       serializableCheck: {
