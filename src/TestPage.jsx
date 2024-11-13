@@ -20,6 +20,9 @@ const TestPage = () => {
   };
 
   const fibonacciTimeFunction = () => {
+    if (fibonacciArray.length === 20) {
+      return;
+    }
     setFibonacciArray([
       ...fibonacciArray,
       fibonacciArray[fibonacciArray.length - 1] +
@@ -55,13 +58,13 @@ const TestPage = () => {
 
   useEffect(handleInterval(timeAnimationFunctionOne, 500), [time]);
 
-  useEffect(handleTimeOut(fibonacciTimeFunction, 5000), [time]);
+  useEffect(handleTimeOut(fibonacciTimeFunction, 1000), [fibonacciArray]);
 
   return (
     <div>
       {String(date)}
       <p>{time}</p>
-      <p>{""}</p>
+      <p>{fibonacciArray.join(", ")}</p>
       <p>{""}</p>
     </div>
   );
