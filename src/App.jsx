@@ -4,6 +4,8 @@ import cars from "./advertsCars.json";
 
 import { CarFilter, CarGallery, CarModal } from "./components";
 
+import { TestPage } from "./TestPage";
+
 import { CarRentStyles } from "./CarRentStyles";
 
 const App = () => {
