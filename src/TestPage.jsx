@@ -19,7 +19,9 @@ const TestPage = () => {
     setTime(time + 1);
   };
 
-  const fibTimeFunction = () => {};
+  const fibpnacciTimeFunction = () => {
+    setFibonacciArray();
+  };
 
   const varNameToString = (objectName) => {
     return Object.keys(objectName)[0];
