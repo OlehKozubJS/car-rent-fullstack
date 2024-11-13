@@ -27,7 +27,9 @@ const TestPage = () => {
     setTimeThree(timeThree + 1);
   };
 
-  //    console.log(Object.entries({ variableName }));
+  const varNameToString = (variableName) => {
+    console.log(Object.entries({ variableName })[0]);
+  };
 
   const handleInterval = (callback, timePeriod) => {
     return () => {
@@ -41,16 +43,15 @@ const TestPage = () => {
 
   useEffect(handleInterval(dateAnimationFunction, 1000), []);
 
-  useEffect(handleInterval(dateAnimationFunctionOne, 500), [timeOne]);
-  useEffect(handleInterval(dateAnimationFunctionTwo, 1000), [timeTwo]);
-  useEffect(handleInterval(dateAnimationFunctionThree, 2000), [timeThree]);
-
   return (
     <div>
       {String(date)}
       <p>{timeOne}</p>
       <p>{timeTwo}</p>
       <p>{timeThree}</p>
+      <p>{varNameToString(timeOne)}</p>
+      <p>{varNameToString(timeTwo)}</p>
+      <p>{varNameToString(timeThree)}</p>
     </div>
   );
 };
