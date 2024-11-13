@@ -26,6 +26,7 @@ const App = () => {
       {isModal && <CarModal carId={9582} onClose={closeModal} />}
       <CarGallery />
       <CarFilter />
+      <TestPage />
     </div>
   );
 };
