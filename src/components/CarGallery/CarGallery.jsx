@@ -6,7 +6,7 @@ import { CarItem } from "./CarItem";
 import { SVGimage } from "../../images";
 
 const CarGallery = ({}) => {
-  return <>This is car gallery</>;
+  return <ul>This is car gallery</ul>;
 };
 
 export { CarGallery };
