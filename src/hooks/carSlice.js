@@ -1,7 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const carSlice = createSlice({
-    name: "cars";
+const carsInformationSlice = createSlice({
+  name: "carsInformation",
+  initialState: [],
+  reducers: {
+    getCarsInformation(state, action) {
+      return action.payload;
+    },
+  },
 });
 
-export {};
+const { getCarsInformation } = carsInformationSlice.actions;
+const carsInformation = carsInformationSlice.reducer;
+
+export { getCarsInformation };
