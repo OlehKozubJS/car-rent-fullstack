@@ -13,4 +13,4 @@ const carModelSlice = createSlice({
 const { setCarModel } = carModelSlice.actions;
 const carModel = carModelSlice.reducer;
 
-export { setCarModel };
+export { carModel, setCarModel };
