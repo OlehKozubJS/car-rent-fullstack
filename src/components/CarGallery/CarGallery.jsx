@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
+import {} from "react-redux";
 
-import { cars, makes } from "./imports";
+import {} from "../../redux";
 
 import { CarItem } from "./CarItem";
 import { SVGimage } from "../../images";
