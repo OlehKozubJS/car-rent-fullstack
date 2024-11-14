@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { SVGimage } from "../../images";
 
 const CarItem = ({}) => {
-  return <>This is car item</>;
+  return <li>This is car item</li>;
 };
 
 export { CarItem };
