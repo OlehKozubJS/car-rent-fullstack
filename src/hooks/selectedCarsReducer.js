@@ -1,10 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const carsInformationSlice = createSlice({
-  name: "carsInformation",
+const selectedCarsSlice = createSlice({
+  name: "selectedCars",
   initialState: [],
   reducers: {
-    setCarsInformation(state, action) {
+    setSelectedCars(state, action) {
+      const {} = action.payload;
+
       return action.payload.cars.filter(
         (carBrand) => carBrand === action.payload.model
       );
@@ -12,7 +14,7 @@ const carsInformationSlice = createSlice({
   },
 });
 
-const { setCarsInformation } = carsInformationSlice.actions;
-const carsInformation = carsInformationSlice.reducer;
+const { setSelectedCars } = selectedCarsSlice.actions;
+const selectedCars = selectedCarsSlice.reducer;
 
 export { carsInformation, setCarsInformation };
