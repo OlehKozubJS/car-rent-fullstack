@@ -7,7 +7,22 @@ import { CarItem } from "./CarItem";
 import { SVGimage } from "../../images";
 
 const CarGallery = ({}) => {
-  return <ul>This is car gallery</ul>;
+  const [selectedCarsInformation] = useState(useSelector(getSelectedCars));
+
+  return (
+    <ul>
+      {selectedCarsInformation.map(
+        (selectedCarInformation, selectedCarIndex) => {
+          return (
+            <CarItem
+              key={selectedCarIndex}
+              carInformation={selectedCarInformation}
+            />
+          );
+        }
+      )}
+    </ul>
+  );
 };
 
 export { CarGallery };
