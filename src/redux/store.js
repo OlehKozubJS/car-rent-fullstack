@@ -15,15 +15,22 @@ import {
 
 import storage from "redux-persist/lib/storage";
 
-const store = configureStore({
-  reducer: persistReducer({ key: "root", storage }, combineReducers()),
-  middleware: (getDefaultMiddleware) => {
-    getDefaultMiddleware({
-      serializableCheck: {
-        ignoreActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
-      },
-    });
-  },
-});
+const getStoreAndPersistor = ({ blacklist, whitelist }) => {
+  const store = configureStore({
+    reducer: persistReducer(
+      { key: "root", storage, blacklist, whitelist },
+      combineReducers({ ...blacklist, ...whitelist })
+    ),
+    middleware: (getDefaultMiddleware) => {
+      getDefaultMiddleware({
+        serializableCheck: {
+          ignoreActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+        },
+      });
+    },
+  });
 
-const persistor = persistStore(store);
+  const persistor = persistStore(store);
+
+  return { store, persistor };
+};
