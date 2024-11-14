@@ -11,7 +11,11 @@ const reactRoot = createRoot(htmlRoot);
 
 reactRoot.render(
   <StrictMode>
-    <ReducerComponent blacklist={[carModel, selectedCars]} whitelist={[]}>
+    <ReducerComponent
+      reducer={(carModel, selectedCars)}
+      blacklist={["carModel", "selectedCars"]}
+      whitelist={[]}
+    >
       <App />
     </ReducerComponent>
   </StrictMode>
