@@ -4,7 +4,7 @@ const carsInformationSlice = createSlice({
   name: "carsInformation",
   initialState: [],
   reducers: {
-    getCarsInformation(state, action) {
+    setCarsInformation(state, action) {
       return action.payload.cars.filter(
         (carBrand) => carBrand === action.payload.model
       );
@@ -12,7 +12,7 @@ const carsInformationSlice = createSlice({
   },
 });
 
-const { getCarsInformation } = carsInformationSlice.actions;
+const { setCarsInformation } = carsInformationSlice.actions;
 const carsInformation = carsInformationSlice.reducer;
 
-export { getCarsInformation };
+export { carsInformation, setCarsInformation };
