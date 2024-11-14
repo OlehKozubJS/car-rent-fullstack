@@ -17,7 +17,7 @@ const selectedCars = selectedCarsSlice.reducer;
 const { setSelectedCars } = selectedCarsSlice.actions;
 
 const getSelectedCars = (state) => {
-  state.selectedCars;
+  return state.selectedCars;
 };
 
 export { selectedCars, setSelectedCars, getSelectedCars };
