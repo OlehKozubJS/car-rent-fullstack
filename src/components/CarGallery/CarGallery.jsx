@@ -6,8 +6,8 @@ import { getSelectedCars } from "../../hooks";
 import { CarItem } from "./CarItem";
 
 const CarGallery = () => {
-  const [selectedCarsInformation] = useState([]);
-  console.log(useSelector((state) => state));
+  const [selectedCarsInformation] = useState(useSelector(getSelectedCars));
+
   return (
     <ul>
       {selectedCarsInformation.map(
