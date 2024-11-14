@@ -15,11 +15,11 @@ import {
 
 import storage from "redux-persist/lib/storage";
 
-const getStoreAndPersistor = ({ blacklist, whitelist }) => {
+const getStoreAndPersistor = ({ reducers, blacklist, whitelist }) => {
   const store = configureStore({
     reducer: persistReducer(
       { key: "root", storage, blacklist, whitelist },
-      combineReducers({ ...blacklist, ...whitelist })
+      combineReducers(reducers)
     ),
     middleware: (getDefaultMiddleware) => {
       return getDefaultMiddleware({
