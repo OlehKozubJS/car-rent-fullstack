@@ -1,10 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-import { cars } from "../data_base";
-
 const selectedCarsSlice = createSlice({
   name: "selectedCars",
-  initialState: [...cars],
+  initialState: [],
   reducers: {
     setSelectedCars(state, action) {
       const { cars, carModel } = action.payload;
