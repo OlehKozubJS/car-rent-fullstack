@@ -5,4 +5,11 @@ import {
   getSelectedCars,
 } from "./selectedCarsReducer";
 
-export { carModel, setCarModel, selectedCars, setSelectedCars };
+export {
+  carModel,
+  setCarModel,
+  getCarModel,
+  selectedCars,
+  setSelectedCars,
+  getSelectedCars,
+};
