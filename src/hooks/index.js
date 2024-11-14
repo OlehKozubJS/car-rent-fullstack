@@ -1,4 +1,8 @@
-import { carModel, setCarModel } from "./carModelReducer";
-import { selectedCars, setSelectedCars } from "./selectedCarsReducer";
+import { carModel, setCarModel, getCarModel } from "./carModelReducer";
+import {
+  selectedCars,
+  setSelectedCars,
+  getSelectedCars,
+} from "./selectedCarsReducer";
 
 export { carModel, setCarModel, selectedCars, setSelectedCars };
