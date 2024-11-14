@@ -22,7 +22,7 @@ const getStoreAndPersistor = ({ blacklist, whitelist }) => {
       combineReducers({ ...blacklist, ...whitelist })
     ),
     middleware: (getDefaultMiddleware) => {
-      getDefaultMiddleware({
+      return getDefaultMiddleware({
         serializableCheck: {
           ignoreActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
         },
