@@ -17,4 +17,4 @@ const selectedCarsSlice = createSlice({
 const { setSelectedCars } = selectedCarsSlice.actions;
 const selectedCars = selectedCarsSlice.reducer;
 
-export { carsInformation, setCarsInformation };
+export { selectedCars, setSelectedCars };
