@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
-import { useDispatch } from "react-redux";
-
-import { cars, makes } from "./imports";
+import { useSelector, useDispatch } from "react-redux";
 
 import { SVGimage } from "../../images";
 import { CarFilterOptions } from "./CarFilterOptions";
