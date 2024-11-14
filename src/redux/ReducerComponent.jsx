@@ -5,9 +5,9 @@ import { useState } from "react";
 
 import { getStoreAndPersistor } from "./store";
 
-const ReducerComponent = ({ children, blacklist, whitelist }) => {
+const ReducerComponent = ({ children, reducer, blacklist, whitelist }) => {
   const [{ store, persistor }] = useState(
-    getStoreAndPersistor({ blacklist, whitelist })
+    getStoreAndPersistor({ reducer, blacklist, whitelist })
   );
 
   return (
