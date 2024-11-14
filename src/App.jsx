@@ -2,8 +2,6 @@ import { useState, useEffect } from "react";
 
 import { cars } from "./data_base";
 
-import { ReducerComponent } from "./redux";
-
 import { CarFilter, CarGallery, CarModal } from "./components";
 
 import { TestPage } from "./TestPage";
