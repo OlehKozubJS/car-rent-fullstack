@@ -10,6 +10,8 @@ const reactRoot = createRoot(htmlRoot);
 
 reactRoot.render(
   <StrictMode>
-    <App />
+    <ReducerComponent blacklist={[]} whitelist={[]}>
+      <App />
+    </ReducerComponent>
   </StrictMode>
 );
