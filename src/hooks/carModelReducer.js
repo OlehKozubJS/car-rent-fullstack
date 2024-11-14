@@ -18,4 +18,4 @@ const getCarModel = (state) => {
   return state.carModel;
 };
 
-export { carModel, setCarModel };
+export { carModel, setCarModel, getCarModel };
