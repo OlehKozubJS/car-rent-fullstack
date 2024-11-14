@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
 import { ReducerComponent } from "./redux";
+import {} from "./hooks";
 
 import { App } from "./App.jsx";
 
