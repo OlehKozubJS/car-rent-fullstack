@@ -10,7 +10,12 @@ const carModelSlice = createSlice({
   },
 });
 
-const { setCarModel } = carModelSlice.actions;
 const carModel = carModelSlice.reducer;
+
+const { setCarModel } = carModelSlice.actions;
+
+const getCarModel = (state) => {
+  return state.carModel;
+};
 
 export { carModel, setCarModel };
