@@ -7,7 +7,7 @@ import { CarItem } from "./CarItem";
 
 const CarGallery = () => {
   const [selectedCarsInformation] = useState([]);
-  console.log(useSelector((state) => state[1]));
+  console.log(useSelector((state) => state));
   return (
     <ul>
       {selectedCarsInformation.map(
