@@ -34,3 +34,5 @@ const getStoreAndPersistor = ({ blacklist, whitelist }) => {
 
   return { store, persistor };
 };
+
+export { getStoreAndPersistor };
