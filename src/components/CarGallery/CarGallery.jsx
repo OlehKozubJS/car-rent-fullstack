@@ -6,21 +6,23 @@ import { getSelectedCars } from "../../hooks";
 import { CarItem } from "./CarItem";
 
 const CarGallery = () => {
-  const [selectedCarsInformation] = useState(useSelector(getSelectedCars));
+  const selectedCarsInformation = useSelector(getSelectedCars);
 
   return (
-    <ul>
-      {selectedCarsInformation.map(
-        (selectedCarInformation, selectedCarIndex) => {
-          return (
-            <CarItem
-              key={selectedCarIndex}
-              carInformation={selectedCarInformation}
-            />
-          );
-        }
-      )}
-    </ul>
+    <>
+      <ul>
+        {selectedCarsInformation.map(
+          (selectedCarInformation, selectedCarIndex) => {
+            return (
+              <CarItem
+                key={selectedCarIndex}
+                carInformation={selectedCarInformation}
+              />
+            );
+          }
+        )}
+      </ul>
+    </>
   );
 };
 
