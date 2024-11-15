@@ -5,9 +5,9 @@ const selectedCarsSlice = createSlice({
   initialState: [],
   reducers: {
     setSelectedCars(state, action) {
-      const { cars, carModel } = action.payload;
+      const { cars, carMake } = action.payload;
 
-      return cars.filter((car) => car.make === carModel);
+      return cars.filter((car) => car.make === carMake);
     },
   },
 });
