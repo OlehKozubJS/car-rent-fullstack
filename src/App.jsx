@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
+
 import { cars } from "./data_base";
 
 import { CarFilter, CarGallery, CarModal } from "./components";
