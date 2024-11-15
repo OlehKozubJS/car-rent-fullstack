@@ -23,7 +23,7 @@ const CarFilterOptions = ({ carBrands }) => {
     setIsCarBrandsOptions(false);
     const newCarBrand = event.target.value;
     setSearchQuery(newCarBrand);
-    dispatch(setSelectedCars({ cars: cars, carModel: newCarBrand }));
+    dispatch(setSelectedCars({ cars, carMake: newCarBrand }));
   };
 
   const handleSearchQuery = (value) => {
