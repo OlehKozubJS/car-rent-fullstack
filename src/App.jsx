@@ -19,13 +19,11 @@ import { CarRentStyles } from "./CarRentStyles";
 const App = () => {
   const dispatch = useDispatch();
 
-  const [carModel] = useState(useSelector(getCarModel));
+  const [carModel, setCarModel] = useState(useSelector(getCarModel));
 
   useEffect(() => {
-    console.log(carModel);
-
-    dispatch(setSelectedCars({ cars, carModel }));
-  }, [carModel]);
+    dispatch(setSelectedCars({ cars, carModel: "HUMMER" }));
+  }, []);
 
   const [isModal, setIsModal] = useState(false);
 
