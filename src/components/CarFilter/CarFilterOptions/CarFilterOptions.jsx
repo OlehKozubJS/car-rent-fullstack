@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 
 import { cars } from "./imports";
 
-import { setSelectedCars } from "../../../hooks";
+import { setCarModel, setSelectedCars } from "../../../hooks";
 
 import { CarFilterOptionsInput } from "./CarFilterOptionsInput";
 import { CarFilterOptionsMenu } from "./CarFilterOptionsMenu";
@@ -23,7 +23,7 @@ const CarFilterOptions = ({ carBrands }) => {
     setIsCarBrandsOptions(false);
     const newCarBrand = event.target.value;
     setSearchQuery(newCarBrand);
-    dispatch(setSelectedCars({ cars, carMake: newCarBrand }));
+    dispatch(setCarModel(newCarBrand));
   };
 
   const handleSearchQuery = (value) => {

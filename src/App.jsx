@@ -3,11 +3,14 @@ import { useSelector, useDispatch } from "react-redux";
 
 import { cars } from "./data_base";
 
+import { setSelectedCars } from "./hooks";
+
 import { CarFilter, CarGallery, CarModal } from "./components";
 
 import { TestPage } from "./TestPage";
 
 import { CarRentStyles } from "./CarRentStyles";
+import { getCarModel } from "./hooks";
 
 const App = () => {
   const [isModal, setIsModal] = useState(false);
@@ -19,6 +22,14 @@ const App = () => {
   const closeModal = () => {
     setIsModal(false);
   };
+
+  const dispatch = useDispatch();
+
+  const carMake = useSelector(getCarModel);
+
+  useEffect(() => {
+    dispatch(setSelectedCars({ cars, carMake }));
+  }, [carMake]);
 
   return (
     <div>
