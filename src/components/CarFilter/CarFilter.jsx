@@ -13,7 +13,7 @@ import {
 import { CarFilterOptions } from "./CarFilterOptions";
 import { CarMileageSelector } from "./CarMileageSelector";
 
-const CarFilter = ({}) => {
+const CarFilter = () => {
   const dispatch = useDispatch();
 
   const [carModel] = useState(useSelector(getCarModel));
