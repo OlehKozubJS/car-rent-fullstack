@@ -2,6 +2,13 @@ import { useState, useEffect } from "react";
 
 import { cars } from "./data_base";
 
+import {
+  getCarModel,
+  getSelectedCars,
+  selectedCars,
+  setSelectedCars,
+} from "./hooks";
+
 import { CarFilter, CarGallery, CarModal } from "./components";
 
 import { TestPage } from "./TestPage";
@@ -9,6 +16,12 @@ import { TestPage } from "./TestPage";
 import { CarRentStyles } from "./CarRentStyles";
 
 const App = () => {
+  const dispatch = useDispatch();
+
+  const [carModel] = useState(useSelector(getCarModel));
+
+  dispatch(setSelectedCars({ cars, carModel }));
+
   const [isModal, setIsModal] = useState(false);
 
   const openModal = () => {
