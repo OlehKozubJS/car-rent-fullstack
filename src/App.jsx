@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { cars } from "./data_base";
 
 import {
+  carModel,
   getCarModel,
   getSelectedCars,
   selectedCars,
@@ -20,7 +21,11 @@ const App = () => {
 
   const [carModel] = useState(useSelector(getCarModel));
 
-  dispatch(setSelectedCars({ cars, carModel }));
+  useEffect(() => {
+    console.log(carModel);
+
+    dispatch(setSelectedCars({ cars, carModel }));
+  }, [carModel]);
 
   const [isModal, setIsModal] = useState(false);
 
