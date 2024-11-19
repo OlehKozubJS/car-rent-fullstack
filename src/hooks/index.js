@@ -17,4 +17,7 @@ export {
   selectedCars,
   setSelectedCars,
   getSelectedCars,
+  handleEventListener,
+  handleInterval,
+  handleTimeOut,
 };
