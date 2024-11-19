@@ -5,7 +5,7 @@ import { MainPage, TestPage } from "./pages";
 const App = () => {
   return (
     <div>
-      <TestPage />
+      <MainPage />
       <TestPage />
     </div>
   );
