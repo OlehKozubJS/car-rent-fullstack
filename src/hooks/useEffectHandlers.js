@@ -27,3 +27,5 @@ const handleTimeOut = (callback, timePeriod) => {
     };
   };
 };
+
+export { handleEventListener, handleInterval, handleTimeOut };
