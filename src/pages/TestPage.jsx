@@ -8,7 +8,7 @@ import {
   CarFilter,
   CarGallery,
   CarModal,
-} from "./importse";
+} from "./imports";
 
 const TestPage = () => {
   const [isTestPage, setIsTestPage] = useState(false);
