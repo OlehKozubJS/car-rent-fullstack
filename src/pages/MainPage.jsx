@@ -7,8 +7,6 @@ import { setSelectedCars } from "./hooks";
 
 import { CarFilter, CarGallery, CarModal } from "./components";
 
-import { TestPage } from "./TestPage";
-
 import { CarRentStyles } from "./CarRentStyles";
 import { getCarModel } from "./hooks";
 
@@ -38,7 +36,6 @@ const MainPage = () => {
       {isModal && <CarModal carId={9582} onClose={closeModal} />}
       <CarFilter />
       <CarGallery />
-      <TestPage />
     </div>
   );
 };
