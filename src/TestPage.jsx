@@ -45,7 +45,9 @@ const TestPage = () => {
   };
 
   const primeNumbersFunction = () => {
-    if (primeNumbersArray.length === 50) {
+    if (primeNumbersArrayp[-1] < 100) {
+      //primeNumbersArray.forEach((primeNumber) => {});
+      //setPrimeNumbersArray([...primeNumbersArray, ]);
     }
   };
 
