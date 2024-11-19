@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-import {} from "./imports";
+import { createNewReducer } from "./imports";
 
 const carModelSlice = createSlice({
   name: "carModel",
