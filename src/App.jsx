@@ -28,7 +28,7 @@ const App = () => {
   const carMake = useSelector(getCarModel);
 
   useEffect(() => {
-    dispatch(setSelectedCars({ cars, carMake }));
+    dispatch(setSelectedCars(cars.filter((car) => car.make === carMake)));
   }, [carMake]);
 
   return (
