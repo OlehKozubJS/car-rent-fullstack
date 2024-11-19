@@ -10,12 +10,23 @@ import {
   handleInterval,
   handleTimeOut,
 } from "../hooks";
-import {
+import { CarFilter, CarGallery, CarModal } from "../components";
+import { CarRentStyles } from "../CarRentStyles";
+
+export {
+  cars,
+  makes,
+  carModel,
+  setCarModel,
+  getCarModel,
+  selectedCars,
+  setSelectedCars,
+  getSelectedCars,
+  handleEventListener,
+  handleInterval,
+  handleTimeOut,
   CarFilter,
   CarGallery,
   CarModal,
-  carFilterOptionsStyles,
-} from "../components";
-import { CarRentStyles } from "../CarRentStyles";
-
-export {};
+  CarRentStyles,
+};
