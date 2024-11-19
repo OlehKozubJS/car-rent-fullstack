@@ -1,3 +1,4 @@
+import { MainPage } from "./MainPage";
 import { TestPage } from "./TestPage";
 
-export { TestPage };
+export { MainPage, TestPage };
