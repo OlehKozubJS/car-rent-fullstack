@@ -12,7 +12,7 @@ import { TestPage } from "./TestPage";
 import { CarRentStyles } from "./CarRentStyles";
 import { getCarModel } from "./hooks";
 
-const App = () => {
+const MainPage = () => {
   const [isModal, setIsModal] = useState(false);
 
   const openModal = () => {
@@ -43,4 +43,4 @@ const App = () => {
   );
 };
 
-export { App };
+export { MainPage };
