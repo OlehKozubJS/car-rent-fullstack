@@ -1,10 +1,11 @@
 import { cars } from "./data_base";
 
-import { TestPage } from "./TestPage";
+import { MainPage, TestPage } from "./pages";
 
 const App = () => {
   return (
     <div>
+      <TestPage />
       <TestPage />
     </div>
   );
