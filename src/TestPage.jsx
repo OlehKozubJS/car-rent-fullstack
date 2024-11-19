@@ -13,6 +13,8 @@ const TestPage = () => {
 
   const [fibonacciArray, setFibonacciArray] = useState([0, 1]);
 
+  const [primeNumbersArray, setPrimeNumbersArray] = useState([2]);
+
   const [date, setDate] = useState(new Date());
 
   const openTestPage = () => {
@@ -40,6 +42,11 @@ const TestPage = () => {
       fibonacciArray[fibonacciArray.length - 1] +
         fibonacciArray[fibonacciArray.length - 2],
     ]);
+  };
+
+  const primeNumbersFunction = () => {
+    if (primeNumbersArray.length === 50) {
+    }
   };
 
   const varNameToString = (objectName) => {
