@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 
 import { cars } from "./data_base";
 
+import { handleEventListener, handleInterval, handleTimeOut } from "./hooks";
+
 import { CarFilter, CarGallery, CarModal } from "./components";
 
 const TestPage = () => {
