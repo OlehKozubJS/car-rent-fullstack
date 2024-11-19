@@ -49,10 +49,12 @@ const TestPage = () => {
   };
 
   const primeNumbersFunction = () => {
-    if (primeNumbersArrayp[-1] < 100) {
-      //primeNumbersArray.forEach((primeNumber) => {});
-      //setPrimeNumbersArray([...primeNumbersArray, ]);
+    if (primeNumbersArray[primeNumbersArray.length - 1] >= 100) {
+      return;
     }
+
+    //primeNumbersArray.forEach((primeNumber) => {});
+    //setPrimeNumbersArray([...primeNumbersArray, ]);
   };
 
   const varNameToString = (objectName) => {
