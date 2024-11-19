@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
 
-import { cars } from "./data_base";
-
-import { handleEventListener, handleInterval, handleTimeOut } from "./hooks";
-
-import { CarFilter, CarGallery, CarModal } from "./components";
+import {
+  cars,
+  handleEventListener,
+  handleInterval,
+  handleTimeOut,
+  CarFilter,
+  CarGallery,
+  CarModal,
+} from "./importse";
 
 const TestPage = () => {
   const [isTestPage, setIsTestPage] = useState(false);
