@@ -5,7 +5,7 @@ const createNewReducer = ({ name, initialState }) => {
     name,
     initialState,
     reducers: {
-      setCarModel(state, action) {
+      setNewReducer(state, action) {
         return action.payload;
       },
     },
