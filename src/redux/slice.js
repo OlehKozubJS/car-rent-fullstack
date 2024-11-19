@@ -1,21 +1,25 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const carModelSlice = createSlice({
-  name: "carModel",
-  initialState: "",
-  reducers: {
-    setCarModel(state, action) {
-      return action.payload;
+const createNewReducer = ({ name, initialState }) => {
+  const newSlice = createSlice({
+    name,
+    initialState,
+    reducers: {
+      setCarModel(state, action) {
+        return action.payload;
+      },
     },
-  },
-});
+  });
 
-const carModel = carModelSlice.reducer;
+  const newReducer = newSlice.reducer;
 
-const { setCarModel } = carModelSlice.actions;
+  const { setNewReducer } = newSlice.actions;
 
-const getCarModel = (state) => {
-  return state.carModel;
+  const getNewReducer = (state) => {
+    return state[name];
+  };
+
+  return [newReducer, setNewReducer, getNewReducer];
 };
 
-export { carModel, setCarModel, getCarModel };
+export { createNewReducer };
