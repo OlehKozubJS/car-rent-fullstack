@@ -1,5 +1,3 @@
-import { createSlice } from "@reduxjs/toolkit";
-
 import { createNewReducer } from "./imports";
 
 const [carModel, setCarModel, getCarModel] = createNewReducer({
