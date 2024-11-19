@@ -13,8 +13,8 @@ reactRoot.render(
   <StrictMode>
     <ReducerComponent
       reducers={{ carModel, selectedCars }}
-      blacklist={["carModel", "selectedCars"]}
-      whitelist={[]}
+      blacklist={["selectedCars"]}
+      whitelist={["carModel"]}
     >
       <App />
     </ReducerComponent>
