@@ -49,7 +49,9 @@ const TestPage = () => {
   };
 
   const primeNumbersFunction = () => {
-    if (primeNumbersArray[primeNumbersArray.length - 1] >= 100) {
+    const lastPrimeNumber = primeNumbersArray[primeNumbersArray.length - 1];
+
+    if (lastPrimeNumber >= 100) {
       return;
     }
 
