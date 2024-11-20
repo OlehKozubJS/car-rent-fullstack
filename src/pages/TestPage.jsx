@@ -49,20 +49,27 @@ const TestPage = () => {
   };
 
   const primeNumbersFunction = () => {
-    const lastPrimeNumber = primeNumbersArray[primeNumbersArray.length - 1];
+    let lastPrimeNumber = primeNumbersArray[primeNumbersArray.length - 1];
 
     if (lastPrimeNumber >= 100) {
       return;
     }
 
-    const newPrimeNumber = lastPrimeNumber;
+    let newPrimeNumber = lastPrimeNumber;
 
     while (true) {
       newPrimeNumber += 1;
 
-      primeNumbersArray.forEach((primeNumber) => {
-        Math.floor(newPrimeNumber / newPrimeNumber);
-      });
+      const isNoDivisors = primeNumbersArray.every(
+        (primeNumber) =>
+          newPrimeNumber / primeNumber -
+            Math.floor(newPrimeNumber / primeNumber) !==
+          0
+      );
+
+      if (isNoDivisors) {
+        break;
+      }
     }
 
     setPrimeNumbersArray([...primeNumbersArray, newPrimeNumber]);
@@ -88,7 +95,7 @@ const TestPage = () => {
       {String(date)}
       <p>{time}</p>
       <p>{fibonacciArray.join(", ")}</p>
-      <p>{""}</p>
+      <p>{primeNumbersArray.join(", ")}</p>
     </div>
   ) : (
     <button type="button" onClick={openTestPage}>
