@@ -55,8 +55,17 @@ const TestPage = () => {
       return;
     }
 
-    //primeNumbersArray.forEach((primeNumber) => {});
-    //setPrimeNumbersArray([...primeNumbersArray, ]);
+    const newPrimeNumber = lastPrimeNumber;
+
+    while (true) {
+      newPrimeNumber += 1;
+
+      primeNumbersArray.forEach((primeNumber) => {
+        Math.floor(newPrimeNumber / newPrimeNumber);
+      });
+    }
+
+    setPrimeNumbersArray([...primeNumbersArray, newPrimeNumber]);
   };
 
   const varNameToString = (objectName) => {
@@ -68,6 +77,8 @@ const TestPage = () => {
   useEffect(handleInterval(timeAnimationFunctionOne, 500), [time]);
 
   useEffect(handleTimeOut(fibonacciTimeFunction, 1000), [fibonacciArray]);
+
+  useEffect(handleInterval(primeNumbersFunction, 1000), [primeNumbersArray]);
 
   return isTestPage ? (
     <div>
