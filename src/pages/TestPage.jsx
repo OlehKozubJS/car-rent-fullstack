@@ -61,9 +61,8 @@ const TestPage = () => {
 
       const isNoDivisors = primeNumbersArray.every(
         (primeNumber) =>
-          newPrimeNumber / primeNumber -
-            Math.floor(newPrimeNumber / primeNumber) !==
-          0
+          newPrimeNumber / primeNumber !==
+          Math.floor(newPrimeNumber / primeNumber)
       );
 
       if (isNoDivisors) {
