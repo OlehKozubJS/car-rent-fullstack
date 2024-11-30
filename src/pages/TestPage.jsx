@@ -87,18 +87,16 @@ const TestPage = () => {
 
   useEffect(handleInterval(primeNumbersFunction, 1000), [primeNumbersArray]);
 
-  const [numberOfSquares, setNumberOfSquares] = useState(0);
   const [squares, setSquares] = useState([]);
 
   const getSquare = () => {
     const squaresLength = squares.length;
 
     if (squaresLength === 10) {
-      setNumberOfSquares(0);
+      return;
     } else {
-      const newNumberOfSquares = numberOfSquares + 1;
-      setSquares([...squares, Math.pow(newNumberOfSquares, 2)]);
-      setNumberOfSquares(newNumberOfSquares);
+      const newSquaresLength = squaresLength + 1;
+      setSquares([...squares, Math.pow(newSquaresLength, 2)]);
     }
   };
 
