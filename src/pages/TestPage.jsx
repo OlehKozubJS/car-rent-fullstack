@@ -92,11 +92,10 @@ const TestPage = () => {
   const getSquare = () => {
     const squaresLength = squares.length;
 
-    if (squaresLength === 10) {
+    if (squaresLength === 20) {
       return;
     } else {
-      const newSquaresLength = squaresLength + 1;
-      setSquares([...squares, Math.pow(newSquaresLength, 2)]);
+      setSquares([...squares, Math.pow(squaresLength + 1, 2)]);
     }
   };
 
