@@ -38,14 +38,13 @@ const TestPage = () => {
   };
 
   const fibonacciTimeFunction = () => {
-    if (fibonacciArray.length === 20) {
-      return;
+    if (fibonacciArray.length < 16) {
+      setFibonacciArray([
+        ...fibonacciArray,
+        fibonacciArray[fibonacciArray.length - 1] +
+          fibonacciArray[fibonacciArray.length - 2],
+      ]);
     }
-    setFibonacciArray([
-      ...fibonacciArray,
-      fibonacciArray[fibonacciArray.length - 1] +
-        fibonacciArray[fibonacciArray.length - 2],
-    ]);
   };
 
   const primeNumbersFunction = () => {
@@ -91,7 +90,7 @@ const TestPage = () => {
 
   const getSquare = () => {
     if (squares.length < 10) {
-      setSquares([...squares, Math.pow(squares.length + 1, 0.5)]);
+      setSquares([...squares, Math.pow(squares.length + 1, 2.5)]);
     }
   };
 
