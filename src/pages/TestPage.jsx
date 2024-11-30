@@ -87,14 +87,20 @@ const TestPage = () => {
 
   useEffect(handleInterval(primeNumbersFunction, 1000), [primeNumbersArray]);
 
-  const [numberOfSquares, setNumberOfSquares]
+  const [numberOfSquares, setNumberOfSquares] = useState(0);
   const [squares, setSquares] = useState([]);
 
-  useEffect(() => {
-const getSquare = (number)
+  const getSquare = () => {
+    if (numberOfSquares === 10) {
+      setNumberOfSquares(0);
+    } else {
+      const newNumberOfSquares = numberOfSquares + 1;
+      setSquares([...squares, Math.pow(newNumberOfSquares, 2)]);
+      setNumberOfSquares(newNumberOfSquares);
+    }
+  };
 
-    squares.forEach();
-  }, [squares]);
+  useEffect(getSquare, [squares]);
 
   return isTestPage ? (
     <div>
@@ -105,7 +111,7 @@ const getSquare = (number)
       <p>{time}</p>
       <p>{fibonacciArray.join(", ")}</p>
       <p>{primeNumbersArray.join(", ")}</p>
-      <p>{squares}</p>
+      <p>{squares.join(", ")}</p>
     </div>
   ) : (
     <button type="button" onClick={openTestPage}>
