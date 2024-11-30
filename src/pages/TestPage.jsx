@@ -90,12 +90,8 @@ const TestPage = () => {
   const [squares, setSquares] = useState([]);
 
   const getSquare = () => {
-    const squaresLength = squares.length;
-
-    if (squaresLength === 25) {
-      return;
-    } else {
-      setSquares([...squares, Math.pow(squaresLength + 1, 2)]);
+    if (squares.length < 10) {
+      setSquares([...squares, Math.pow(squares.length + 1, 0.5)]);
     }
   };
 
