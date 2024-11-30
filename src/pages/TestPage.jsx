@@ -91,7 +91,9 @@ const TestPage = () => {
   const [squares, setSquares] = useState([]);
 
   const getSquare = () => {
-    if (numberOfSquares === 10) {
+    const squaresLength = squares.length;
+
+    if (squaresLength === 10) {
       setNumberOfSquares(0);
     } else {
       const newNumberOfSquares = numberOfSquares + 1;
