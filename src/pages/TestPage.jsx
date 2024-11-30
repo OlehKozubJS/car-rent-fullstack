@@ -92,7 +92,7 @@ const TestPage = () => {
   const getSquare = () => {
     const squaresLength = squares.length;
 
-    if (squaresLength === 20) {
+    if (squaresLength === 25) {
       return;
     } else {
       setSquares([...squares, Math.pow(squaresLength + 1, 2)]);
