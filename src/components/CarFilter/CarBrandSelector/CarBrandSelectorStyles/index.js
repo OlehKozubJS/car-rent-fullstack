@@ -1,5 +1,9 @@
 import { CarBrandSelectorNotFoundMessageStyle } from "./carBrandSelectorStyle";
-import { carFilterInputStyle } from "./carBrandSelectorInputStyle";
+import {
+  carBrandSelectorInputLabelStyleBase,
+  carBrandSelectorInputStyleBase,
+  carBrandSelectorInputButtonStyleBase,
+} from "./carBrandSelectorInputStyle";
 import { menuContainerStyle } from "./carBrandSelectorMenuStyle";
 import { menuListStyle } from "./carBrandSelectorMenuListStyle";
 import { scrollRangeStyle } from "./scrollRangeStyle";
@@ -11,4 +15,10 @@ const carBrandSelectorStyles = [
   scrollRangeStyle,
 ].join(" ");
 
-export { carBrandSelectorStyles, CarBrandSelectorNotFoundMessageStyle };
+export {
+  carBrandSelectorStyles,
+  CarBrandSelectorNotFoundMessageStyle,
+  carBrandSelectorInputLabelStyleBase,
+  carBrandSelectorInputStyleBase,
+  carBrandSelectorInputButtonStyleBase,
+};
