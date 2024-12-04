@@ -141,7 +141,7 @@ const TestPage = () => {
       <p>{fibonacciArray.join(", ")}</p>
       <p>{primeNumbersArray.join(", ")}</p>
       <p>{squares.join(", ")}</p>
-      <form onSubmit={handleSubmit()}>
+      <form onSubmit={handleSubmit}>
         <div>
           <h3>Car brand (make)</h3>
           <label htmlFor="carMakeInput">
@@ -149,7 +149,7 @@ const TestPage = () => {
               id="carMakeInput"
               type="text"
               placeholder="Enter car make name or its part"
-              onChange={handleMake()}
+              onChange={handleMake}
               style={{ width: "200px" }}
             />
           </label>
@@ -161,7 +161,7 @@ const TestPage = () => {
               id="minCarRentalPriceInput"
               type="number"
               placeholder="From"
-              onChange={handleMinimalRentalPrice()}
+              onChange={handleMinimalRentalPrice}
             />
           </label>
           <label htmlFor="maxCarRentalPriceInput">
@@ -169,7 +169,7 @@ const TestPage = () => {
               id="maxCarRentalPriceInput"
               type="number"
               placeholder="To"
-              onChange={handleMaximalRentalPrice()}
+              onChange={handleMaximalRentalPrice}
             />
           </label>
         </div>
@@ -180,7 +180,7 @@ const TestPage = () => {
               id="minCarMileageInput"
               type="number"
               placeholder="From"
-              onChange={handleMinimalMileage()}
+              onChange={handleMinimalMileage}
             />
           </label>
           <label htmlFor="mapCarMileageInput">
@@ -188,7 +188,7 @@ const TestPage = () => {
               id="maxCarMileageInput"
               type="number"
               placeholder="To"
-              onChange={handleMaximalMileage()}
+              onChange={handleMaximalMileage}
             />
           </label>
         </div>
