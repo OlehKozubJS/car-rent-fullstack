@@ -105,16 +105,16 @@ const TestPage = () => {
       <p>{fibonacciArray.join(", ")}</p>
       <p>{primeNumbersArray.join(", ")}</p>
       <p>{squares.join(", ")}</p>
-      <form onSubmit="handleSubmit()">
+      <form onSubmit={handleSubmit()}>
         <div>
           <h3>Car brand (make)</h3>
-          <label for="carMakeInput">
+          <label htmlFor="carMakeInput">
             <input
               id="carMakeInput"
               type="text"
               placeholder="Enter car make name or its part"
-              onChange="handleMake()"
-              style="width: 200px;"
+              onChange={handleMake()}
+              style={{ width: "200px" }}
             />
           </label>
         </div>
