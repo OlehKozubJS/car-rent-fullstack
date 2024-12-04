@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 
-import { makes } from "./imports";
+import { makesLocalData } from "./imports";
 
 import { SVGimage } from "../../images";
 
 const CarPriceSelector = ({}) => {
-  const [carBrands] = useState(makes);
+  const [carBrands] = useState(makesLocalData);
 
   return (
     <div>
