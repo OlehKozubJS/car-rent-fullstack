@@ -1,5 +1,11 @@
 import { useState, useEffect } from "react";
 
+import {
+  carBrandSelectorInputLabelStyleBase,
+  carBrandSelectorInputStyleBase,
+  carBrandSelectorInputButtonStyleBase,
+} from "./CarBrandSelectorStyles";
+
 import { SVGimage } from "../../../images";
 
 const CarBrandSelectorInput = ({
