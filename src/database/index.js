@@ -1,4 +1,4 @@
-import cars from "./advertsCars.json";
-import makes from "./makes.json";
+import carsLocalData from "./advertsCars.json";
+import makesLocalData from "./makes.json";
 
-export { cars, makes };
+export { carsLocalData, makesLocalData };

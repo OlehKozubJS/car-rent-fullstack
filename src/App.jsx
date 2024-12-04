@@ -1,4 +1,4 @@
-import { cars } from "./data_base";
+import { cars } from "./database";
 
 import { MainPage, TestPage } from "./pages";
 

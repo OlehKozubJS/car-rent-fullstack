@@ -1,3 +1,3 @@
-import { cars, makes } from "../data_base";
+import { cars, makes } from "../database";
 
 export { cars, makes };
