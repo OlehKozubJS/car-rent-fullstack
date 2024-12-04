@@ -1,18 +1,20 @@
-const carFilterInputStyle = `        
-        .car-filter-input-label {
-          display: flex;
-          justify-content: space-between;
+import styled from "@emotion/styled";
 
-          box-sizing: border-box;
-          height: 48px;
-          width: 224px;
-          padding: 14px 18px;
+     
+const carBrandSelectorInputLabelStyleBase = styled.label`
+  display: flex;
+  justify-content: space-between;
 
-          background-color: rgb(247, 247, 251);
-          border-radius: 14px;
+  box-sizing: border-box;
+  height: 48px;
+  width: 224px;
+  padding: 14px 18px;
 
-          margin-bottom: 4px;
-        }
+  background-color: rgb(247, 247, 251);
+  border-radius: 14px;
+
+  margin-bottom: 4px;
+`
 
         .car-filter-input {
           outline: none;
@@ -35,6 +37,6 @@ const carFilterInputStyle = `
           align-items: center;
           background: none;
           border: none;
-        }`;
+        }
 
 export { carFilterInputStyle };
