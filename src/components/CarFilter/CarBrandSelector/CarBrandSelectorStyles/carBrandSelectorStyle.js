@@ -1,22 +1,23 @@
-const carFilterOptionsStyle = `        
-        .car-filter-options-not-found-message {
-          box-sizing: border-box;
+import styled from "@emotion/styled";
 
-          width: 224px;
+const CarBrandSelectorNotFoundMessageStyle = styled.div`
+  box-sizing: border-box;
 
-          padding-block: 14px;
-          padding-inline: 18px;
+  width: 224px;
 
-          border-style: solid;
-          border-radius: 14px;
-          border-width: 1px;
-          border-color: rgba(180, 20, 23, 0.05);
+  padding-block: 14px;
+  padding-inline: 18px;
 
-          display: flex;
-          justify-content: center;
-          align-items: center;
+  border-style: solid;
+  border-radius: 14px;
+  border-width: 1px;
+  border-color: rgba(180, 20, 23, 0.05);
 
-          color: rgba(180, 20, 23, 0.5);
-        }`;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: rgba(180, 20, 23, 0.5);
+`;
 
 export { carFilterOptionsStyle };
