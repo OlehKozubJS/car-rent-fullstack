@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { cars, makes } from "./imports";
+import { carsLocalData, makesLocalData } from "./imports";
 
 import { CarFilterOptions } from "./CarFilterOptions";
 import { CarMileageSelector } from "./CarMileageSelector";
@@ -8,7 +8,7 @@ import { CarMileageSelector } from "./CarMileageSelector";
 const CarFilter = () => {
   return (
     <form>
-      <CarFilterOptions carBrands={makes} />
+      <CarFilterOptions carBrands={makesLocalData} />
 
       <CarMileageSelector />
 
