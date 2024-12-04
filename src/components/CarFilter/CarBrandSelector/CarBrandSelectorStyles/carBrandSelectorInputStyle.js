@@ -30,7 +30,7 @@ const carBrandSelectorInputStyleBase = styled.input`
   color: rgb(18, 20, 23);
 `;
 
-const carBrandSelectorInputButtonStyleBase = styled.input`
+const carBrandSelectorInputButtonStyleBase = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
