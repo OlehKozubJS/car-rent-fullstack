@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
 import {
-  cars,
+  carsLocalData,
   setSelectedCars,
   CarFilter,
   CarGallery,
@@ -27,7 +27,9 @@ const MainPage = () => {
   const carMake = useSelector(getCarModel);
 
   useEffect(() => {
-    dispatch(setSelectedCars(cars.filter((car) => car.make === carMake)));
+    dispatch(
+      setSelectedCars(carsLocalData.filter((car) => car.make === carMake))
+    );
   }, [carMake]);
 
   return (
