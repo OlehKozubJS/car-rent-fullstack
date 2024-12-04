@@ -1,4 +1,4 @@
-import { cars, makes } from "../database";
+import { carsLocalData, makesLocalData } from "../database";
 import {
   carModel,
   setCarModel,
@@ -14,8 +14,8 @@ import { CarFilter, CarGallery, CarModal } from "../components";
 import { CarRentStyles } from "../CarRentStyles";
 
 export {
-  cars,
-  makes,
+  carsLocalData,
+  makesLocalData,
   carModel,
   setCarModel,
   getCarModel,
