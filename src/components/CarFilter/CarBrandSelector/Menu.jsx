@@ -34,7 +34,7 @@ const Menu = ({ options, onChange }) => {
       style={{ height: `${menuListContainerHeight + 28}px` }}
     >
       <div className="menu-list-container">
-        <CarFilterOptionsMenuList
+        <MenuList
           options={options}
           onChange={onChange}
           top={-scrollRangeValue * 5}
