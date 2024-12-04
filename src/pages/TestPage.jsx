@@ -139,20 +139,20 @@ const TestPage = () => {
         </div>
         <div>
           <h3>Car mileage</h3>
-          <label for="minCarMileageInput">
+          <label htmlFor="minCarMileageInput">
             <input
               id="minCarMileageInput"
               type="number"
               placeholder="From"
-              onChange="handleMinimalMileage()"
+              onChange={handleMinimalMileage()}
             />
           </label>
-          <label for="mapCarMileageInput">
+          <label htmlFor="mapCarMileageInput">
             <input
               id="maxCarMileageInput"
               type="number"
               placeholder="To"
-              onChange="handleMaximalMileage()"
+              onChange={handleMaximalMileage()}
             />
           </label>
         </div>
