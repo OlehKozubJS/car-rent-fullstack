@@ -9,7 +9,7 @@ const CarPriceSelector = ({}) => {
 
   return (
     <div>
-      <h3>Car mileage / km</h3>
+      <h3>Car price / dollars</h3>
 
       <label htmlFor="mileageFrom">
         <input id="mileageFrom" type="number" placeholder="From" />
