@@ -1,4 +1,4 @@
-const CarBrandSelectorMenuList = ({ options, onChange, top }) => {
+const MenuList = ({ options, onChange, top }) => {
   return (
     <ul className="menu-list" style={{ top: `${top}px` }}>
       {options.map((option, optionIndex) => {
@@ -22,4 +22,4 @@ const CarBrandSelectorMenuList = ({ options, onChange, top }) => {
   );
 };
 
-export { CarBrandSelectorMenuList };
+export { MenuList };
