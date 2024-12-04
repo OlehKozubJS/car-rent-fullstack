@@ -8,7 +8,7 @@ import { setCarModel, setSelectedCars } from "../../../hooks";
 import { CarFilterOptionsInput } from "./CarFilterOptionsInput";
 import { CarFilterOptionsMenu } from "./CarFilterOptionsMenu";
 
-const CarFilterOptions = ({ carBrands }) => {
+const CarBrandSelector = ({ carBrands }) => {
   const [filteredCarBrands, setFilteredCarBrands] = useState([]);
   const [isCarBrandsOptions, setIsCarBrandsOptions] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
@@ -66,4 +66,4 @@ const CarFilterOptions = ({ carBrands }) => {
   );
 };
 
-export { CarFilterOptions };
+export { CarBrandSelector };
