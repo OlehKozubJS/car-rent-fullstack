@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
 
-     
 const carBrandSelectorInputLabelStyleBase = styled.label`
   display: flex;
   justify-content: space-between;
@@ -14,9 +13,13 @@ const carBrandSelectorInputLabelStyleBase = styled.label`
   border-radius: 14px;
 
   margin-bottom: 4px;
-`
 
-const carBrandSelectorInput = styled.input`
+  &:focus-within {
+    background-color: rgb(251, 251, 255);
+  }
+`;
+
+const carBrandSelectorInputStyleBase = styled.input`
   outline: none;
   border: none;
 
@@ -25,18 +28,18 @@ const carBrandSelectorInput = styled.input`
 
   font-size: 18px;
   color: rgb(18, 20, 23);
-`
+`;
 
-        .car-filter-input-label:focus-within {
-          background-color: rgb(251, 251, 255);
-        }
-        
-        .car-filter-input-button {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background: none;
-          border: none;
-        }
+const carBrandSelectorInputButtonStyleBase = styled.input`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+`;
 
-export { carFilterInputStyle };
+export {
+  carBrandSelectorInputLabelStyleBase,
+  carBrandSelectorInputStyleBase,
+  carBrandSelectorInputButtonStyleBase,
+};
