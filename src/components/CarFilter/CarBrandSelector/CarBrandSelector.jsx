@@ -53,7 +53,7 @@ const CarBrandSelector = ({ carBrands }) => {
       />
       {isCarBrandsOptions &&
         (filteredCarBrands.length ? (
-          <CarBrandSelectorsMenu
+          <CarBrandSelectorMenu
             options={filteredCarBrands}
             onChange={handleCarBrand}
           />
