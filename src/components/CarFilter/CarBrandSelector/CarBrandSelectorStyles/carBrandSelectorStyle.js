@@ -20,4 +20,4 @@ const CarBrandSelectorNotFoundMessageStyle = styled.div`
   color: rgba(180, 20, 23, 0.5);
 `;
 
-export { carFilterOptionsStyle };
+export { CarBrandSelectorNotFoundMessageStyle };
