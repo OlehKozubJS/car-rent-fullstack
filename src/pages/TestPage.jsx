@@ -183,7 +183,7 @@ const TestPage = () => {
               onChange={handleMinimalMileage}
             />
           </label>
-          <label htmlFor="mapCarMileageInput">
+          <label htmlFor="maxCarMileageInput">
             <input
               id="maxCarMileageInput"
               type="number"
