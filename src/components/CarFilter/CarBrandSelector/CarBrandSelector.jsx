@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 
-import { cars } from "./imports";
+import { carsLocalData } from "./imports";
 
 import { setCarModel, setSelectedCars } from "../../../hooks";
 
