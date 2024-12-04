@@ -1,5 +1,5 @@
 import { CarFilter } from "./CarFilter";
 
-import { carFilterOptionsStyles } from "./CarBrandSelector";
+import { carBrandSelectorStyles } from "./CarBrandSelector";
 
-export { CarFilter, carFilterOptionsStyles };
+export { CarFilter, carBrandSelectorStyles };
