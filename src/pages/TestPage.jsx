@@ -95,6 +95,42 @@ const TestPage = () => {
 
   useEffect(getSquare, [squares]);
 
+  let make = "";
+  let minRentalPrice = 0;
+  let maxRentalPrice = 0;
+  let minMileage = 0;
+  let maxMileage = 0;
+
+  const handler = (event) => {
+    return event.target.value;
+  };
+
+  const handleMake = (event) => {
+    make = handler(event);
+  };
+
+  const handleMinimalRentalPrice = (event) => {
+    minRentalPrice = handler(event);
+  };
+
+  const handleMaximalRentalPrice = (event) => {
+    maxRentalPrice = handler(event);
+  };
+
+  const handleMinimalMileage = (event) => {
+    minMileage = handler(event);
+  };
+
+  const handleMaximalMileage = (event) => {
+    maxMileage = handler(event);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    onSubmit({ make, minRentalPrice, maxRentalPrice, minMileage, maxMileage });
+  };
+
   return isTestPage ? (
     <div>
       <button type="button" onClick={closeTestPage}>
