@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const carBrandSelectorInputLabelStyleBase = styled.label`
+const СarBrandSelectorInputLabelStyleBase = styled.label`
   display: flex;
   justify-content: space-between;
 
@@ -19,7 +19,7 @@ const carBrandSelectorInputLabelStyleBase = styled.label`
   }
 `;
 
-const carBrandSelectorInputStyleBase = styled.input`
+const СarBrandSelectorInputStyleBase = styled.input`
   outline: none;
   border: none;
 
@@ -30,7 +30,7 @@ const carBrandSelectorInputStyleBase = styled.input`
   color: rgb(18, 20, 23);
 `;
 
-const carBrandSelectorInputButtonStyleBase = styled.button`
+const СarBrandSelectorInputButtonStyleBase = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +39,7 @@ const carBrandSelectorInputButtonStyleBase = styled.button`
 `;
 
 export {
-  carBrandSelectorInputLabelStyleBase,
-  carBrandSelectorInputStyleBase,
-  carBrandSelectorInputButtonStyleBase,
+  СarBrandSelectorInputLabelStyleBase,
+  СarBrandSelectorInputStyleBase,
+  СarBrandSelectorInputButtonStyleBase,
 };
