@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 
 import {
-  carBrandSelectorInputLabelStyleBase,
-  carBrandSelectorInputStyleBase,
-  carBrandSelectorInputButtonStyleBase,
+  СarBrandSelectorInputLabelStyleBase,
+  СarBrandSelectorInputStyleBase,
+  СarBrandSelectorInputButtonStyleBase,
 } from "./CarBrandSelectorStyles";
 
 import { SVGimage } from "../../../images";
@@ -37,8 +37,11 @@ const CarBrandSelectorInput = ({
   }, [buttonValue]);
 
   return (
-    <label htmlFor="car-filter-input" className="car-filter-input-label">
-      <input
+    <СarBrandSelectorInputLabelStyleBase
+      htmlFor="car-filter-input"
+      className="car-filter-input-label"
+    >
+      <CarBrandSelectorInputStyleBase
         id="car-filter-input"
         type="text"
         placeholder="Enter the text"
@@ -53,7 +56,7 @@ const CarBrandSelectorInput = ({
       >
         {<SVGimage name={isOpen ? "up" : "down"} />}
       </button>
-    </label>
+    </СarBrandSelectorInputLabelStyleBase>
   );
 };
 
