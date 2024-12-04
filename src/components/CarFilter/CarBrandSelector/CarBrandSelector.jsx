@@ -5,8 +5,8 @@ import { cars } from "./imports";
 
 import { setCarModel, setSelectedCars } from "../../../hooks";
 
-import { CarFilterOptionsInput } from "./CarBrandSelectorInput";
-import { CarFilterOptionsMenu } from "./CarFilterOptionsMenu";
+import { CarBrandSelectorInput } from "./CarBrandSelectorInput";
+import { CarBrandSelectorMenu } from "./CarBrandSelectorMenu";
 
 const CarBrandSelector = ({ carBrands }) => {
   const [filteredCarBrands, setFilteredCarBrands] = useState([]);
@@ -45,7 +45,7 @@ const CarBrandSelector = ({ carBrands }) => {
   return (
     <div>
       <h3>Car brand</h3>
-      <CarFilterOptionsInput
+      <CarBrandSelectorInput
         inputValue={searchQuery}
         onChange={handleSearchQuery}
         buttonValue={isCarBrandsOptions}
@@ -53,7 +53,7 @@ const CarBrandSelector = ({ carBrands }) => {
       />
       {isCarBrandsOptions &&
         (filteredCarBrands.length ? (
-          <CarFilterOptionsMenu
+          <CarBrandSelectorsMenu
             options={filteredCarBrands}
             onChange={handleCarBrand}
           />
