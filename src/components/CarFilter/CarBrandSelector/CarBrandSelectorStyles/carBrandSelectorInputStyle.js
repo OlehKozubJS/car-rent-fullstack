@@ -16,16 +16,16 @@ const carBrandSelectorInputLabelStyleBase = styled.label`
   margin-bottom: 4px;
 `
 
-        .car-filter-input {
-          outline: none;
-          border: none;
+const carBrandSelectorInput = styled.input`
+  outline: none;
+  border: none;
 
-          width: 150px;
-          background-color: inherit;
+  width: 150px;
+  background-color: inherit;
 
-          font-size: 18px;
-          color: rgb(18, 20, 23);
-        }
+  font-size: 18px;
+  color: rgb(18, 20, 23);
+`
 
         .car-filter-input-label:focus-within {
           background-color: rgb(251, 251, 255);
