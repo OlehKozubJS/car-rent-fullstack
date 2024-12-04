@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { cars } from "./imports";
+import { carsLocalData } from "./imports";
 
 import { SVGimage } from "../../images";
 
@@ -14,7 +14,7 @@ import {
 } from "../../fonts";
 
 const CarModal = ({ carId, onClose }) => {
-  const [car] = useState(cars.find((car) => car.id === carId));
+  const [car] = useState(carsLocalData.find((car) => car.id === carId));
   const [isHover, setIsHover] = useState(false);
 
   const handleMouseOver = () => {
