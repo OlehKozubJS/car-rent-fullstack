@@ -120,20 +120,20 @@ const TestPage = () => {
         </div>
         <div>
           <h3>Car rental price</h3>
-          <label for="minCarRentalPriceInput">
+          <label htmlFor="minCarRentalPriceInput">
             <input
               id="minCarRentalPriceInput"
               type="number"
               placeholder="From"
-              onChange="handleMinimalRentalPrice()"
+              onChange={handleMinimalRentalPrice()}
             />
           </label>
-          <label for="maxCarRentalPriceInput">
+          <label htmlFor="maxCarRentalPriceInput">
             <input
               id="maxCarRentalPriceInput"
               type="number"
               placeholder="To"
-              onChange="handleMaximalRentalPrice()"
+              onChange={handleMaximalRentalPrice()}
             />
           </label>
         </div>
