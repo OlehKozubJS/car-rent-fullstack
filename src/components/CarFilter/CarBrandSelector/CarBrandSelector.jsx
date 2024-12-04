@@ -5,7 +5,7 @@ import { cars } from "./imports";
 
 import { setCarModel, setSelectedCars } from "../../../hooks";
 
-import { CarFilterOptionsInput } from "./CarFilterOptionsInput";
+import { CarFilterOptionsInput } from "./CarBrandSelectorInput";
 import { CarFilterOptionsMenu } from "./CarFilterOptionsMenu";
 
 const CarBrandSelector = ({ carBrands }) => {
