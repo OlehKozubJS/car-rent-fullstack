@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { ScrollRange } from "./ScrollRange";
-import { CarFilterOptionsMenuList } from "./CarFilterOptionsMenuList";
+import { MenuList } from "./MenuList";
 
 const Menu = ({ options, onChange }) => {
   const MAX_MENU_LIST_HEIGHT = 244;
