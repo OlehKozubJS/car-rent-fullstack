@@ -22,4 +22,4 @@ const CarBrandSelectorMenuList = ({ options, onChange, top }) => {
   );
 };
 
-export { CarFilterOptionsMenuList };
+export { CarBrandSelectorMenuList };
