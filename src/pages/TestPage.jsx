@@ -128,7 +128,7 @@ const TestPage = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    onSubmit({ make, minRentalPrice, maxRentalPrice, minMileage, maxMileage });
+    //onSubmit({ make, minRentalPrice, maxRentalPrice, minMileage, maxMileage });
   };
 
   return isTestPage ? (
