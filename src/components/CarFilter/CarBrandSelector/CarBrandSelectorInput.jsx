@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import { SVGimage } from "../../../images";
 
-const CarFilterOptionsInput = ({
+const CarBrandSelectorInput = ({
   inputValue,
   onChange,
   buttonValue,
@@ -51,4 +51,4 @@ const CarFilterOptionsInput = ({
   );
 };
 
-export { CarFilterOptionsInput };
+export { CarBrandSelectorInput };
