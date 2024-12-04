@@ -5,11 +5,10 @@ import { menuListStyle } from "./carBrandSelectorMenuListStyle";
 import { scrollRangeStyle } from "./scrollRangeStyle";
 
 const carBrandSelectorStyles = [
-  CarBrandSelectorNotFoundMessageStyle,
   carFilterInputStyle,
   menuContainerStyle,
   menuListStyle,
   scrollRangeStyle,
 ].join(" ");
 
-export { carBrandSelectorStyles };
+export { carBrandSelectorStyles, CarBrandSelectorNotFoundMessageStyle };
