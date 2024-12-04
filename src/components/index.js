@@ -2,6 +2,6 @@ import { CarFilter } from "./CarFilter";
 import { CarGallery } from "./CarGallery";
 import { CarModal } from "./CarModal";
 
-import { carFilterOptionsStyles } from "./CarFilter";
+import { carBrandSelectorStyles } from "./CarFilter";
 
-export { CarFilter, CarGallery, CarModal, carFilterOptionsStyles };
+export { CarFilter, CarGallery, CarModal, carBrandSelectorStyles };
