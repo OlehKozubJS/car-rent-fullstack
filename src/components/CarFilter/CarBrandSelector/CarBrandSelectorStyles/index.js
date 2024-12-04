@@ -1,8 +1,8 @@
 import { CarBrandSelectorNotFoundMessageStyle } from "./carBrandSelectorStyle";
 import {
-  СarBrandSelectorInputLabelStyleBase,
-  СarBrandSelectorInputStyleBase,
-  СarBrandSelectorInputButtonStyleBase,
+  CarBrandSelectorInputLabelStyleBase,
+  CarBrandSelectorInputStyleBase,
+  CarBrandSelectorInputButtonStyleBase,
 } from "./carBrandSelectorInputStyle";
 import { menuContainerStyle } from "./carBrandSelectorMenuStyle";
 import { menuListStyle } from "./carBrandSelectorMenuListStyle";
@@ -17,7 +17,7 @@ const carBrandSelectorStyles = [
 export {
   carBrandSelectorStyles,
   CarBrandSelectorNotFoundMessageStyle,
-  СarBrandSelectorInputLabelStyleBase,
-  СarBrandSelectorInputStyleBase,
-  СarBrandSelectorInputButtonStyleBase,
+  CarBrandSelectorInputLabelStyleBase,
+  CarBrandSelectorInputStyleBase,
+  CarBrandSelectorInputButtonStyleBase,
 };
