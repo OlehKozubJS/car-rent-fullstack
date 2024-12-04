@@ -105,6 +105,59 @@ const TestPage = () => {
       <p>{fibonacciArray.join(", ")}</p>
       <p>{primeNumbersArray.join(", ")}</p>
       <p>{squares.join(", ")}</p>
+      <form onSubmit="handleSubmit()">
+        <div>
+          <h3>Car brand (make)</h3>
+          <label for="carMakeInput">
+            <input
+              id="carMakeInput"
+              type="text"
+              placeholder="Enter car make name or its part"
+              onChange="handleMake()"
+              style="width: 200px;"
+            />
+          </label>
+        </div>
+        <div>
+          <h3>Car rental price</h3>
+          <label for="minCarRentalPriceInput">
+            <input
+              id="minCarRentalPriceInput"
+              type="number"
+              placeholder="From"
+              onChange="handleMinimalRentalPrice()"
+            />
+          </label>
+          <label for="maxCarRentalPriceInput">
+            <input
+              id="maxCarRentalPriceInput"
+              type="number"
+              placeholder="To"
+              onChange="handleMaximalRentalPrice()"
+            />
+          </label>
+        </div>
+        <div>
+          <h3>Car mileage</h3>
+          <label for="minCarMileageInput">
+            <input
+              id="minCarMileageInput"
+              type="number"
+              placeholder="From"
+              onChange="handleMinimalMileage()"
+            />
+          </label>
+          <label for="mapCarMileageInput">
+            <input
+              id="maxCarMileageInput"
+              type="number"
+              placeholder="To"
+              onChange="handleMaximalMileage()"
+            />
+          </label>
+        </div>
+        <button type="submit">Find car</button>
+      </form>
     </div>
   ) : (
     <button type="button" onClick={openTestPage}>
