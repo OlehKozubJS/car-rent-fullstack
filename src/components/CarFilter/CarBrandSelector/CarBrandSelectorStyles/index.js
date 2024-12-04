@@ -9,7 +9,6 @@ import { menuListStyle } from "./carBrandSelectorMenuListStyle";
 import { scrollRangeStyle } from "./scrollRangeStyle";
 
 const carBrandSelectorStyles = [
-  carFilterInputStyle,
   menuContainerStyle,
   menuListStyle,
   scrollRangeStyle,
