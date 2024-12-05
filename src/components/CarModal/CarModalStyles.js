@@ -48,19 +48,19 @@ const CarModalCloseButtonIconStyleBase = styled.svg`
   display: block;
 `;
 
-const CarModalImageStyleBase = styled.`
+const CarModalImageStyleBase = styled.img`
   display: block;
   height: 314px;
   border-radius: 12px;
 `;
 
-const CarModalHeaderStyleBase = styled.`
+const CarModalHeaderStyleBase = styled.h3`
   color: #121417;
   font-size: 18px;
   line-height: 24px;
 `;
 
-const CarModalItemsStyleBase = styled.`
+const CarModalItemsStyleBase = styled.ul`
   margin: 0;
   padding: 0;
   list-style: none;
@@ -69,23 +69,23 @@ const CarModalItemsStyleBase = styled.`
   column-gap: 4px;
 `;
 
-const CarModalItemStyleBase = styled.`
+const CarModalItemStyleBase = styled.li`
   color: rgba(18, 20, 23, 0.5);
   font-size: 12px;
   line-height: 18px;
 `;
 
-const CarModalItemValueStyleBase = styled.`
+const CarModalItemValueStyleBase = styled.span`
   color: #3470ff;
 `;
 
-const CarModalDescriptionStyleBase = styled.`
+const CarModalDescriptionStyleBase = styled.p`
   color: #121417;
   font-size: 14px;
   line-height: 20px;
 `;
 
-const CarModalSubHeaderStyleBase = styled.`
+const CarModalSubHeaderStyleBase = styled.h4`
   color: #121417;
   font-size: 14px;
   line-height: 20px;
