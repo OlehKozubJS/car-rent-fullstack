@@ -8,7 +8,7 @@ import { setCarModel, setSelectedCars } from "../../../hooks";
 import { CarBrandSelectorInput } from "./CarBrandSelectorInput";
 import { CarBrandSelectorMenu } from "./CarBrandSelectorMenu";
 
-import { CarBrandSelectorInputLabelStyleBase } from "./CarBrandSelectorStyles";
+import { CarBrandSelectorNotFoundMessageStyleBase } from "./CarBrandSelectorStyles";
 
 const CarBrandSelector = ({ carBrands }) => {
   const [filteredCarBrands, setFilteredCarBrands] = useState([]);
