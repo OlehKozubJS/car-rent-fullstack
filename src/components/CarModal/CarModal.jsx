@@ -16,7 +16,6 @@ import {
   CarModalContainerStyleBase,
   CarModalCloseButtonContainerStyleBase,
   CarModalCloseButtonStyleBase,
-  CarModalCloseButtonIconStyleBase,
   CarModalImageStyleBase,
   CarModalHeaderStyleBase,
   CarModalItemsStyleBase,
@@ -26,6 +25,7 @@ import {
   CarModalSubHeaderStyleBase,
   CarModalRentalItemsStyleBase,
   CarModalRentalItemStyleBase,
+  CarModalRentalItemValueStyleBase,
   CarModalSubmitButtonStyleBase,
 } from "./CarModalStyles";
 
