@@ -7,7 +7,7 @@ import {
   CarFilter,
   CarGallery,
   CarModal,
-  CarRentStyles,
+  CarRentGlobalStyle,
   getCarModel,
 } from "./imports";
 
@@ -34,7 +34,7 @@ const MainPage = () => {
 
   return (
     <div>
-      <CarRentStyles />
+      <CarRentGlobalStyle />
       <button onClick={openModal}>Open Modal</button>
       {isModal && <CarModal carId={9582} onClose={closeModal} />}
       <CarFilter />
