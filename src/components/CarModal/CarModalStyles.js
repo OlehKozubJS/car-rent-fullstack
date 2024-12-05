@@ -69,30 +69,30 @@ const CarModalItems = {
   column-gap: 4px;
 }
 
-const CarModalItem {
+const CarModalItem = {
   color: rgba(18, 20, 23, 0.5);
   font-size: 12px;
   line-height: 18px;
 }
 
-const CarModalItemValue {
+const CarModalItemValue = {
   color: #3470ff;
 }
 
-const CarModalDescription {
+const CarModalDescription = {
   color: #121417;
   font-size: 14px;
   line-height: 20px;
 }
 
-const CarModalSubHeader {
+const CarModalSubHeader = {
   color: #121417;
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 8px;
 }
 
-const CarModalRentalItems {
+const CarModalRentalItems = {
   margin: 0;
   padding: 0;
   list-style: none;
