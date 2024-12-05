@@ -1,6 +1,6 @@
-import {} from "@emotion/styled";
+import styled from "@emotion/styled";
 
-.CarModalBackdrop {
+const CarModalBackdrop {
   position: absolute;
   top: 0;
   left: 0;
@@ -12,7 +12,7 @@ import {} from "@emotion/styled";
   background: rgba(18, 20, 23, 0.5);
 }
 
-.CarModalContainer {
+const CarModalContainer {
   box-sizing: border-box;
   max-width: 50%;
   height: 100%;
@@ -21,12 +21,12 @@ import {} from "@emotion/styled";
   background: #fff;
 }
 
-.CarModalCloseButtonContainer {
+const CarModalCloseButtonContainer {
   display: flex;
   justify-content: flex-end;
 }
 
-.CarModalCloseButton {
+const CarModalCloseButton {
   border: none;
   outline: none;
   padding: 0;
@@ -40,27 +40,27 @@ import {} from "@emotion/styled";
   background: none;
 }
 
-.CarModalCloseButton:hover {
+&:hover {
   background: #0b44cd;
 }
 
-.CarModalCloseButtonIcon {
+const CarModalCloseButtonIcon {
   display: block;
 }
 
-.CarModalImage {
+const CarModalImage {
   display: block;
   height: 314px;
   border-radius: 12px;
 }
 
-.CarModalHeader {
+const CarModalHeader {
   color: #121417;
   font-size: 18px;
   line-height: 24px;
 }
 
-.CarModalItems {
+const CarModalItems {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -69,30 +69,30 @@ import {} from "@emotion/styled";
   column-gap: 4px;
 }
 
-.CarModalItem {
+const CarModalItem {
   color: rgba(18, 20, 23, 0.5);
   font-size: 12px;
   line-height: 18px;
 }
 
-.CarModalItemValue {
+const CarModalItemValue {
   color: #3470ff;
 }
 
-.CarModalDescription {
+const CarModalDescription {
   color: #121417;
   font-size: 14px;
   line-height: 20px;
 }
 
-.CarModalSubHeader {
+const CarModalSubHeader {
   color: #121417;
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 8px;
 }
 
-.CarModalRentalItems {
+const CarModalRentalItems {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -102,7 +102,7 @@ import {} from "@emotion/styled";
   row-gap: 8px;
 }
 
-.CarModalRentalItem {
+const CarModalRentalItem {
   display: flex;
   padding: 7px 14px;
   justify-content: center;
@@ -118,7 +118,7 @@ import {} from "@emotion/styled";
   letter-spacing: -0.24px;
 }
 
-.CarModalSubmitButton {
+const CarModalSubmitButton {
   margin-top: 24px;
 
   display: inline-flex;
@@ -135,6 +135,6 @@ import {} from "@emotion/styled";
   line-height: 20px;
 }
 
-.CarModalSubmitButton:hover {
+&:hover {
   background: #0b44cd;
 }
