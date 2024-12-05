@@ -58,6 +58,7 @@ const CarModalHeaderStyleBase = styled.h3`
   color: #121417;
   font-size: 18px;
   line-height: 24px;
+
   font-family: "Manrope-Medium", sans-serif;
 `;
 
@@ -74,6 +75,7 @@ const CarModalItemStyleBase = styled.li`
   color: rgba(18, 20, 23, 0.5);
   font-size: 12px;
   line-height: 18px;
+
   font-family: "Manrope-Regular", sans-serif;
 `;
 
@@ -85,6 +87,7 @@ const CarModalDescriptionStyleBase = styled.p`
   color: #121417;
   font-size: 14px;
   line-height: 20px;
+
   font-family: "Manrope-Regular", sans-serif;
 `;
 
@@ -93,6 +96,7 @@ const CarModalSubHeaderStyleBase = styled.h4`
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 8px;
+
   font-family: "Manrope-Medium", sans-serif;
 `;
 
@@ -105,15 +109,7 @@ const CarModalRentalItemsStyleBase = styled.ul`
   column-gap: 4px;
   row-gap: 8px;
 `;
-/*
 
-  font-family: 'Manrope-Regular', sans-serif;
-  font-family: 'Manrope-Medium', sans-serif;
-  font-family: 'Manrope-SemiBold', sans-serif;
-  font-family: 'Montserrat-Regular', sans-serif;
-  font-family: 'Montserrat-SemiBold', sans-serif;
-
-*/
 const CarModalRentalItemStyleBase = styled.li`
   display: flex;
   padding: 7px 14px;
@@ -128,6 +124,7 @@ const CarModalRentalItemStyleBase = styled.li`
   font-size: 12px;
   line-height: 18px;
   letter-spacing: -0.24px;
+
   font-family: "Montserrat-Regular", sans-serif;
 `;
 
