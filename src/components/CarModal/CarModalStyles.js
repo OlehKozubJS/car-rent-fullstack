@@ -138,3 +138,21 @@ const CarModalSubmitButtonStyleBase = styled.button`
     background: #0b44cd;
   }
 `;
+
+export {
+  CarModalBackdropStyleBase,
+  CarModalContainerStyleBase,
+  CarModalCloseButtonContainerStyleBase,
+  CarModalCloseButtonStyleBase,
+  CarModalCloseButtonIconStyleBase,
+  CarModalImageStyleBase,
+  CarModalHeaderStyleBase,
+  CarModalItemsStyleBase,
+  CarModalItemStyleBase,
+  CarModalItemValueStyleBase,
+  CarModalDescriptionStyleBase,
+  CarModalSubHeaderStyleBase,
+  CarModalRentalItemsStyleBase,
+  CarModalRentalItemStyleBase,
+  CarModalSubmitButtonStyleBase,
+};
