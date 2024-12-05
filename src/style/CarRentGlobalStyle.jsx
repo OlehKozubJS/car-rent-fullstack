@@ -1,7 +1,7 @@
 import { Global, css } from "@emotion/react";
 
-const CarRentStyles = () => {
+const CarRentGlobalStyle = () => {
   return <Global styles={css``} />;
 };
 
-export { CarRentStyles };
+export { CarRentGlobalStyle };
