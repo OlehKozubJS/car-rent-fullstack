@@ -102,7 +102,7 @@ const CarModalRentalItems = {
   row-gap: 8px;
 }
 
-const CarModalRentalItem {
+const CarModalRentalItem = {
   display: flex;
   padding: 7px 14px;
   justify-content: center;
@@ -118,7 +118,7 @@ const CarModalRentalItem {
   letter-spacing: -0.24px;
 }
 
-const CarModalSubmitButton {
+const CarModalSubmitButton = {
   margin-top: 24px;
 
   display: inline-flex;
