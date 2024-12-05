@@ -5,11 +5,40 @@ const CarRentGlobalStyle = () => {
     <Global
       styles={css`
         body {
-          background-image: linear-gradient(
-            270deg,
-            rgb(200, 200, 250),
-            rgb(250, 200, 200)
-          );
+          @font-face {
+            font-family: "Manrope-Regular";
+            src: local("Manrope-Regular"),
+              url("./Manrope-Regular.ttf") format("truetype");
+            font-weight: 400;
+          }
+
+          @font-face {
+            font-family: "Manrope-Medium";
+            src: local("Manrope-Medium"),
+              url("./Manrope-Medium.ttf") format("truetype");
+            font-weight: 500;
+          }
+
+          @font-face {
+            font-family: "Manrope-SemiBold";
+            src: local("Manrope-SemiBold"),
+              url("./Manrope-SemiBold.ttf") format("truetype");
+            font-weight: 600;
+          }
+
+          @font-face {
+            font-family: "Montserrat-Regular";
+            src: local("Montserrat-Regular"),
+              url("./Montserrat-Regular.ttf") format("truetype");
+            font-weight: 400;
+          }
+
+          @font-face {
+            font-family: "Montserrat-SemiBold";
+            src: local("Montserrat-SemiBold"),
+              url("./Montserrat-SemiBold.ttf") format("truetype");
+            font-weight: 600;
+          }
         }
       `}
     />
