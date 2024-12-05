@@ -6,7 +6,7 @@ const CarRentGlobalStyle = () => {
       styles={{
         "@font-face": {
           fontFamily: "Manrope-Regular",
-          src: "url('./Manrope-Regular.ttf') format('truetype')",
+          src: "url('./Kings-Regular.ttf') format('truetype')",
           fontWeight: 400,
         },
       }}
