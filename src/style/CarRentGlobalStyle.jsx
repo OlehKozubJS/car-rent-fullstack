@@ -10,8 +10,22 @@ const CarRentGlobalStyle = () => {
             url("./fonts/Manrope-Regular.ttf") format("truetype");
           font-weight: 400;
         }
+      `}
+    />
+  );
+};
 
-        @font-face {
+export { CarRentGlobalStyle };
+
+/*
+
+  font-family: 'Manrope-Regular', sans-serif;
+  font-family: 'Manrope-Medium', sans-serif;
+  font-family: 'Manrope-SemiBold', sans-serif;
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-family: 'Montserrat-SemiBold', sans-serif;
+
+@font-face {
           font-family: "Manrope-Medium";
           src: local("Manrope-Medium"),
             url("./fonts/Manrope-Medium.ttf") format("truetype");
@@ -38,19 +52,6 @@ const CarRentGlobalStyle = () => {
             url("./fonts/Montserrat-SemiBold.ttf") format("truetype");
           font-weight: 600;
         }
-      `}
-    />
-  );
-};
 
-export { CarRentGlobalStyle };
-
-/*
-
-  font-family: 'Manrope-Regular', sans-serif;
-  font-family: 'Manrope-Medium', sans-serif;
-  font-family: 'Manrope-SemiBold', sans-serif;
-  font-family: 'Montserrat-Regular', sans-serif;
-  font-family: 'Montserrat-SemiBold', sans-serif;
 
 */
