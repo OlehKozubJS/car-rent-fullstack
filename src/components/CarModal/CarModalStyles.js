@@ -128,6 +128,8 @@ const CarModalRentalItemStyleBase = styled.li`
   font-family: "Montserrat-Regular", sans-serif;
 `;
 
+//  font-family: "Montserrat-SemiBold", sans-serif;
+
 const CarModalSubmitButtonStyleBase = styled.button`
   margin-top: 24px;
 
@@ -143,7 +145,6 @@ const CarModalSubmitButtonStyleBase = styled.button`
   color: #fff;
   font-size: 14px;
   line-height: 20px;
-  font-family: "Montserrat-SemiBold", sans-serif;
 
   font-family: "Manrope-SemiBold", sans-serif;
 
