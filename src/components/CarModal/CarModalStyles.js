@@ -1,5 +1,15 @@
 import styled from "@emotion/styled";
 
+/*
+
+  font-family: 'Manrope-Regular', sans-serif;
+  font-family: 'Manrope-Medium', sans-serif;
+  font-family: 'Manrope-SemiBold', sans-serif;
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-family: 'Montserrat-SemiBold', sans-serif;
+
+*/
+
 const CarModalBackdropStyleBase = styled.div`
   position: absolute;
   top: 0;
