@@ -148,12 +148,12 @@ const CarModal = ({ carId, onClose }) => {
           <CarModalItemStyleBase className="{`${css.CarModalRentalItem} ${MontserratR}`}">
             {car.rentalConditions.split("\n")[2]}
           </CarModalItemStyleBase>
-          <CarModalItemsStyleBase className="{`${css.CarModalRentalItem} ${MontserratR}`}">
+          <CarModalItemStyleBase className="{`${css.CarModalRentalItem} ${MontserratR}`}">
             Mileage:{" "}
             <CarModalItemValueStyleBase className="{`${css.CarModalItemValue} ${MontserratB}`}">
               {car.mileage}
             </CarModalItemValueStyleBase>
-          </CarModalItemsStyleBase>
+          </CarModalItemStyleBase>
           <CarModalRentalItemStyleBase className="{`${css.CarModalRentalItem} ${MontserratR}`}">
             Price:{" "}
             <CarModalItemValueStyleBase className="{`${css.CarModalItemValue} ${MontserratB}`}">
