@@ -13,10 +13,7 @@ import {
 } from "./carBrandSelectorMenuListStyle";
 import { scrollRangeStyle } from "./scrollRangeStyle";
 
-const carBrandSelectorStyles = [scrollRangeStyle].join(" ");
-
 export {
-  carBrandSelectorStyles,
   CarBrandSelectorNotFoundMessageStyleBase,
   CarBrandSelectorInputLabelStyleBase,
   CarBrandSelectorInputStyleBase,
