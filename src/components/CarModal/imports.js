@@ -1,3 +1,19 @@
-import { carsLocalData, makesLocalData } from "../imports";
+import {
+  carsLocalData,
+  makesLocalData,
+  ManropeR,
+  ManropeM,
+  ManropeB,
+  MontserratR,
+  MontserratB,
+} from "../imports";
 
-export { carsLocalData, makesLocalData };
+export {
+  carsLocalData,
+  makesLocalData,
+  ManropeR,
+  ManropeM,
+  ManropeB,
+  MontserratR,
+  MontserratB,
+};
