@@ -11,7 +11,10 @@ import {
   CarBrandSelectorMenuItemStyleBase,
   CarBrandSelectorMenuOptionRadioStyleBase,
 } from "./carBrandSelectorMenuListStyle";
-import { scrollRangeStyle } from "./scrollRangeStyle";
+import {
+  ScrollRangeStatorStyleBase,
+  ScrollRangeRotorStyleBase,
+} from "./scrollRangeStyle";
 
 export {
   CarBrandSelectorNotFoundMessageStyleBase,
@@ -23,4 +26,6 @@ export {
   CarBrandSelectorMenuListStyleBase,
   CarBrandSelectorMenuItemStyleBase,
   CarBrandSelectorMenuOptionRadioStyleBase,
+  ScrollRangeStatorStyleBase,
+  ScrollRangeRotorStyleBase,
 };
