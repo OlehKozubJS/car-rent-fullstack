@@ -73,19 +73,19 @@ const CarModal = ({ carId, onClose }) => {
           <span>{car.year}</span>
         </CarModalHeaderStyleBase>
         <CarModalItemsStyleBase>
-          <CarModalItemStyleBase className="{`${css.CarModalItem} ${ManropeR}`}">
+          <CarModalItemStyleBase className="{ManropeR}">
             {car.address.split(", ")[1]}
           </CarModalItemStyleBase>
-          <CarModalItemStyleBase className="{`${css.CarModalItem} ${ManropeR}`}">
+          <CarModalItemStyleBase className="{ManropeR}">
             {car.address.split(", ")[2]}
           </CarModalItemStyleBase>
-          <CarModalItemStyleBase className="{`${css.CarModalItem} ${ManropeR}`}">
+          <CarModalItemStyleBase className="{ManropeR}">
             Id:{" "}
             <CarModalItemValueStyleBase className="{css.CarModalItemValue}">
               {car.id}
             </CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
-          <CarModalItemStyleBase className="{`${css.CarModalItem} ${ManropeR}`}">
+          <CarModalItemStyleBase className="{ManropeR}">
             Year:{" "}
             <CarModalItemValueStyleBase className="{css.CarModalItemValue}">
               {car.year}
