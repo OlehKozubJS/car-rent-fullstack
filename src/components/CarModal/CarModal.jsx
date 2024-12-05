@@ -97,9 +97,9 @@ const CarModal = ({ carId, onClose }) => {
           </CarModalItemStyleBase>
           <CarModalItemStyleBase className={`${css.CarModalItem} ${ManropeR}`}>
             Id:{" "}
-            <CarModalItemValue className={css.CarModalItemValue}>
+            <CarModalItemValueStyleBase className={css.CarModalItemValue}>
               {car.id}
-            </CarModalItemValue>
+            </CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
           <CarModalItemStyleBase className={`${css.CarModalItem} ${ManropeR}`}>
             Year:{" "}
@@ -168,11 +168,11 @@ const CarModal = ({ carId, onClose }) => {
             className={`${css.CarModalRentalItem} ${MontserratR}`}
           >
             Minimum age:{" "}
-            <CarModalItemValue
+            <CarModalItemValueStyleBase
               className={`${css.CarModalItemValue} ${MontserratB}`}
             >
               {car.rentalConditions.split("\n")[0].split(" ")[2]}
-            </CarModalItemValue>
+            </CarModalItemValueStyleBase>
           </CarModalRentalItemStyleBase>
           <CarModalRentalItemStyleBase
             className={`${css.CarModalRentalItem} ${MontserratR}`}
