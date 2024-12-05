@@ -19,7 +19,7 @@ const CarModalContainerStyleBase = styled.article`
   padding: 15px 37px 40px 45px;
   border-radius: 24px;
   background: #fff;
-`
+`;
 
 const CarModalCloseButtonContainerStyleBase = styled.div`
   display: flex;
@@ -39,10 +39,10 @@ const CarModalCloseButtonStyleBase = styled.button`
 
   background: none;
 
-
-&:hover {
-  background: #0b44cd;
-}`;
+  &:hover {
+    background: #0b44cd;
+  }
+`;
 
 const CarModalCloseButtonIconStyleBase = styled.svg`
   display: block;
@@ -92,7 +92,7 @@ const CarModalSubHeaderStyleBase = styled.h4`
   margin-bottom: 8px;
 `;
 
-const CarModalRentalItemsStyleBase = styled.`
+const CarModalRentalItemsStyleBase = styled.ul`
   margin: 0;
   padding: 0;
   list-style: none;
@@ -102,7 +102,7 @@ const CarModalRentalItemsStyleBase = styled.`
   row-gap: 8px;
 `;
 
-const CarModalRentalItemStyleBase = styled.`
+const CarModalRentalItemStyleBase = styled.li`
   display: flex;
   padding: 7px 14px;
   justify-content: center;
@@ -118,7 +118,7 @@ const CarModalRentalItemStyleBase = styled.`
   letter-spacing: -0.24px;
 `;
 
-const CarModalSubmitButtonStyleBase = styled.`
+const CarModalSubmitButtonStyleBase = styled.button`
   margin-top: 24px;
 
   display: inline-flex;
@@ -134,7 +134,7 @@ const CarModalSubmitButtonStyleBase = styled.`
   font-size: 14px;
   line-height: 20px;
 
-
-&:hover {
-  background: #0b44cd;
-}`;
+  &:hover {
+    background: #0b44cd;
+  }
+`;
