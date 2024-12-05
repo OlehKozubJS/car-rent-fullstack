@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const MenuListContainerStyleBase = styled.div`
+const CarBrandSelectorMenuListContainerStyleBase = styled.div`
   height: 244px;
   width: 190px;
 
@@ -8,7 +8,7 @@ const MenuListContainerStyleBase = styled.div`
   position: relative;
 `;
 
-const MenuListStyleBase = styled.ul`
+const CarBrandSelectorMenuListStyleBase = styled.ul`
   list-style: none;
   margin: 0;
   padding: 0;
@@ -17,7 +17,7 @@ const MenuListStyleBase = styled.ul`
   left: 0px;
 `;
 
-const MenuItemStyleBase = styled.li`
+const CarBrandSelectorMenuItemStyleBase = styled.li`
   color: rgba(18, 20, 23, 0.2);
 
   transition: 500ms;
@@ -26,13 +26,13 @@ const MenuItemStyleBase = styled.li`
   }
 `;
 
-const MenuOptionRadioStyleBase = styled.input`
+const CarBrandSelectorMenuOptionRadioStyleBase = styled.input`
   display: none;
 `;
 
 export {
-  MenuListContainerStyleBase,
-  MenuListStyleBase,
-  MenuItemStyleBase,
-  MenuOptionRadioStyleBase,
+  CarBrandSelectorMenuListContainerStyleBase,
+  CarBrandSelectorMenuListStyleBase,
+  CarBrandSelectorMenuItemStyleBase,
+  CarBrandSelectorMenuOptionRadioStyleBase,
 };
