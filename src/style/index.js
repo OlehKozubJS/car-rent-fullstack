@@ -8,4 +8,11 @@ import {
   MontserratB,
 } from "./fonts";
 
-export { CarRentGlobalStyle };
+export {
+  CarRentGlobalStyle,
+  ManropeR,
+  ManropeM,
+  ManropeB,
+  MontserratR,
+  MontserratB,
+};
