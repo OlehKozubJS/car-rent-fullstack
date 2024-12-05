@@ -132,9 +132,9 @@ const CarModal = ({ carId, onClose }) => {
         <CarModalRentalItemsStyleBase>
           <CarModalRentalItemStyleBase className="{MontserratR}">
             Minimum age:{" "}
-            <CarModalItemValueStyleBase className="{MontserratB}">
+            <CarModalRentalItemValueStyleBase className="{MontserratB}">
               {car.rentalConditions.split("\n")[0].split(" ")[2]}
-            </CarModalItemValueStyleBase>
+            </CarModalRentalItemValueStyleBase>
           </CarModalRentalItemStyleBase>
           <CarModalRentalItemStyleBase className="{MontserratR}">
             {car.rentalConditions.split("\n")[1]}
@@ -144,15 +144,15 @@ const CarModal = ({ carId, onClose }) => {
           </CarModalRentalItemStyleBase>
           <CarModalRentalItemStyleBase className="{MontserratR}">
             Mileage:{" "}
-            <CarModalItemValueStyleBase className="{MontserratB}">
+            <CarModalRentalItemValueStyleBase className="{MontserratB}">
               {car.mileage}
-            </CarModalItemValueStyleBase>
+            </CarModalRentalItemValueStyleBase>
           </CarModalRentalItemStyleBase>
           <CarModalRentalItemStyleBase className="{MontserratR}">
             Price:{" "}
-            <CarModalItemValueStyleBase className="{MontserratB}">
+            <CarModalRentalItemValueStyleBase className="{MontserratB}">
               {car.rentalPrice}
-            </CarModalItemValueStyleBase>
+            </CarModalRentalItemValueStyleBase>
           </CarModalRentalItemStyleBase>
         </CarModalRentalItemsStyleBase>
         <CarModalSubmitButtonStyleBase className="{ManropeB}">
