@@ -171,5 +171,6 @@ export {
   CarModalSubHeaderStyleBase,
   CarModalRentalItemsStyleBase,
   CarModalRentalItemStyleBase,
+  CarModalRentalItemValueStyleBase,
   CarModalSubmitButtonStyleBase,
 };
