@@ -149,44 +149,67 @@ const CarModal = ({ carId, onClose }) => {
           })}
           {car.functionalities.map((item, index) => {
             return (
-              <li key={index} className={`${css.CarModalItem} ${ManropeR}`}>
+              <CarModalItemStyleBase
+                key={index}
+                className={`${css.CarModalItem} ${ManropeR}`}
+              >
                 {item}
-              </li>
+              </CarModalItemStyleBase>
             );
           })}
         </CarModalItemsStyleBase>
-        <h4 className={`${css.CarModalSubHeader} ${ManropeM}`}>
+        <CarModalSubHeaderStyleBase
+          className={`${css.CarModalSubHeader} ${ManropeM}`}
+        >
           Rental Conditions:{" "}
-        </h4>
-        <ul className={css.CarModalRentalItems}>
-          <li className={`${css.CarModalRentalItem} ${MontserratR}`}>
+        </CarModalSubHeaderStyleBase>
+        <CarModalRentalItemsStyleBase className={css.CarModalRentalItems}>
+          <CarModalRentalItemStyleBase
+            className={`${css.CarModalRentalItem} ${MontserratR}`}
+          >
             Minimum age:{" "}
-            <span className={`${css.CarModalItemValue} ${MontserratB}`}>
+            <CarModalItemValue
+              className={`${css.CarModalItemValue} ${MontserratB}`}
+            >
               {car.rentalConditions.split("\n")[0].split(" ")[2]}
-            </span>
-          </li>
-          <li className={`${css.CarModalRentalItem} ${MontserratR}`}>
+            </CarModalItemValue>
+          </CarModalRentalItemStyleBase>
+          <CarModalRentalItemStyleBase
+            className={`${css.CarModalRentalItem} ${MontserratR}`}
+          >
             {car.rentalConditions.split("\n")[1]}
-          </li>
-          <li className={`${css.CarModalRentalItem} ${MontserratR}`}>
+          </CarModalRentalItemStyleBase>
+          <CarModalItemStyleBase
+            className={`${css.CarModalRentalItem} ${MontserratR}`}
+          >
             {car.rentalConditions.split("\n")[2]}
-          </li>
-          <li className={`${css.CarModalRentalItem} ${MontserratR}`}>
+          </CarModalItemStyleBase>
+          <CarModalItemsStyleBase
+            className={`${css.CarModalRentalItem} ${MontserratR}`}
+          >
             Mileage:{" "}
-            <span className={`${css.CarModalItemValue} ${MontserratB}`}>
+            <CarModalItemValueStyleBase
+              className={`${css.CarModalItemValue} ${MontserratB}`}
+            >
               {car.mileage}
-            </span>
-          </li>
-          <li className={`${css.CarModalRentalItem} ${MontserratR}`}>
+            </CarModalItemValueStyleBase>
+          </CarModalItemsStyleBase>
+          <CarModalRentalItemStyleBase
+            className={`${css.CarModalRentalItem} ${MontserratR}`}
+          >
             Price:{" "}
-            <span className={`${css.CarModalItemValue} ${MontserratB}`}>
+            <CarModalItemValueStyleBase
+              className={`${css.CarModalItemValue} ${MontserratB}`}
+            >
               {car.rentalPrice}
-            </span>
-          </li>
-        </ul>
-        <button className={`${css.CarModalSubmitButton} ${ManropeB}`}>
+            </CarModalItemValueStyleBase>
+          </CarModalRentalItemStyleBase>
+        </CarModalRentalItemsStyleBase>
+        <CarModalSubmitButtonStyleBase
+          className={`${css.CarModalSubmitButton} ${ManropeB}`}
+        >
           Rental car
-        </button>
+        </CarModalSubmitButtonStyleBase>
       </CarModalContainerStyleBase>
     </CarModalBackdropStyleBase>
   );
