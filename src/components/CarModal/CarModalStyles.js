@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const CarModalBackdrop {
+const CarModalBackdrop = {
   position: absolute;
   top: 0;
   left: 0;
@@ -12,7 +12,7 @@ const CarModalBackdrop {
   background: rgba(18, 20, 23, 0.5);
 }
 
-const CarModalContainer {
+const CarModalContainer = {
   box-sizing: border-box;
   max-width: 50%;
   height: 100%;
@@ -21,12 +21,12 @@ const CarModalContainer {
   background: #fff;
 }
 
-const CarModalCloseButtonContainer {
+const CarModalCloseButtonContainer = {
   display: flex;
   justify-content: flex-end;
 }
 
-const CarModalCloseButton {
+const CarModalCloseButton = {
   border: none;
   outline: none;
   padding: 0;
@@ -44,23 +44,23 @@ const CarModalCloseButton {
   background: #0b44cd;
 }
 
-const CarModalCloseButtonIcon {
+const CarModalCloseButtonIcon = {
   display: block;
 }
 
-const CarModalImage {
+const CarModalImage = {
   display: block;
   height: 314px;
   border-radius: 12px;
 }
 
-const CarModalHeader {
+const CarModalHeader = {
   color: #121417;
   font-size: 18px;
   line-height: 24px;
 }
 
-const CarModalItems {
+const CarModalItems = {
   margin: 0;
   padding: 0;
   list-style: none;
