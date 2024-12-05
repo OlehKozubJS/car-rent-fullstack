@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const CarModalBackdropStyleBase = styled.`
+const CarModalBackdropStyleBase = styled.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -12,7 +12,7 @@ const CarModalBackdropStyleBase = styled.`
   background: rgba(18, 20, 23, 0.5);
 `;
 
-const CarModalContainerStyleBase = styled.`
+const CarModalContainerStyleBase = styled.article`
   box-sizing: border-box;
   max-width: 50%;
   height: 100%;
@@ -21,12 +21,12 @@ const CarModalContainerStyleBase = styled.`
   background: #fff;
 `
 
-const CarModalCloseButtonContainerStyleBase = styled.`
+const CarModalCloseButtonContainerStyleBase = styled.div`
   display: flex;
   justify-content: flex-end;
 `;
 
-const CarModalCloseButtonStyleBase = styled.`
+const CarModalCloseButtonStyleBase = styled.button`
   border: none;
   outline: none;
   padding: 0;
@@ -44,7 +44,7 @@ const CarModalCloseButtonStyleBase = styled.`
   background: #0b44cd;
 }`;
 
-const CarModalCloseButtonIconStyleBase = styled.`
+const CarModalCloseButtonIconStyleBase = styled.svg`
   display: block;
 `;
 
