@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const CarModalBackdrop = {
+const CarModalBackdrop = styled.{
   position: absolute;
   top: 0;
   left: 0;
@@ -12,7 +12,7 @@ const CarModalBackdrop = {
   background: rgba(18, 20, 23, 0.5);
 }
 
-const CarModalContainer = {
+const CarModalContainer = styled.{
   box-sizing: border-box;
   max-width: 50%;
   height: 100%;
@@ -21,12 +21,12 @@ const CarModalContainer = {
   background: #fff;
 }
 
-const CarModalCloseButtonContainer = {
+const CarModalCloseButtonContainer = styled.{
   display: flex;
   justify-content: flex-end;
 }
 
-const CarModalCloseButton = {
+const CarModalCloseButton = styled.{
   border: none;
   outline: none;
   padding: 0;
@@ -44,23 +44,23 @@ const CarModalCloseButton = {
   background: #0b44cd;
 }
 
-const CarModalCloseButtonIcon = {
+const CarModalCloseButtonIcon = styled.{
   display: block;
 }
 
-const CarModalImage = {
+const CarModalImage = styled.{
   display: block;
   height: 314px;
   border-radius: 12px;
 }
 
-const CarModalHeader = {
+const CarModalHeader = styled.{
   color: #121417;
   font-size: 18px;
   line-height: 24px;
 }
 
-const CarModalItems = {
+const CarModalItems = styled.{
   margin: 0;
   padding: 0;
   list-style: none;
@@ -69,30 +69,30 @@ const CarModalItems = {
   column-gap: 4px;
 }
 
-const CarModalItem = {
+const CarModalItem = styled.{
   color: rgba(18, 20, 23, 0.5);
   font-size: 12px;
   line-height: 18px;
 }
 
-const CarModalItemValue = {
+const CarModalItemValue = styled.{
   color: #3470ff;
 }
 
-const CarModalDescription = {
+const CarModalDescription = styled.{
   color: #121417;
   font-size: 14px;
   line-height: 20px;
 }
 
-const CarModalSubHeader = {
+const CarModalSubHeader = styled.{
   color: #121417;
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 8px;
 }
 
-const CarModalRentalItems = {
+const CarModalRentalItems = styled.{
   margin: 0;
   padding: 0;
   list-style: none;
@@ -102,7 +102,7 @@ const CarModalRentalItems = {
   row-gap: 8px;
 }
 
-const CarModalRentalItem = {
+const CarModalRentalItem = styled.{
   display: flex;
   padding: 7px 14px;
   justify-content: center;
@@ -118,7 +118,7 @@ const CarModalRentalItem = {
   letter-spacing: -0.24px;
 }
 
-const CarModalSubmitButton = {
+const CarModalSubmitButton = styled.{
   margin-top: 24px;
 
   display: inline-flex;
