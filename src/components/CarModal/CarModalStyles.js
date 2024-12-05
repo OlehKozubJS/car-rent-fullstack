@@ -1,15 +1,5 @@
 import styled from "@emotion/styled";
 
-/*
-
-  font-family: 'Manrope-Regular', sans-serif;
-  font-family: 'Manrope-Medium', sans-serif;
-  font-family: 'Manrope-SemiBold', sans-serif;
-  font-family: 'Montserrat-Regular', sans-serif;
-  font-family: 'Montserrat-SemiBold', sans-serif;
-
-*/
-
 const CarModalBackdropStyleBase = styled.div`
   position: absolute;
   top: 0;
@@ -70,7 +60,15 @@ const CarModalHeaderStyleBase = styled.h3`
   line-height: 24px;
   font-family: "Manrope-Medium", sans-serif;
 `;
+/*
 
+  font-family: 'Manrope-Regular', sans-serif;
+  font-family: 'Manrope-Medium', sans-serif;
+  font-family: 'Manrope-SemiBold', sans-serif;
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-family: 'Montserrat-SemiBold', sans-serif;
+
+*/
 const CarModalItemsStyleBase = styled.ul`
   margin: 0;
   padding: 0;
