@@ -7,8 +7,8 @@ const CarRentGlobalStyle = () => {
         body {
           background-image: linear-gradient(
             to top,
-            rgb(150, 150, 190),
-            rgb(190, 150, 150)
+            rgb(200, 200, 250),
+            rgb(250, 200, 200)
           );
         }
       `}
