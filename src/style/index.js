@@ -1,3 +1,3 @@
-import { CarRentStyles } from "./CarRentGlobalStyle";
+import { CarRentGlobalStyle } from "./CarRentGlobalStyle";
 
-export { CarRentStyles };
+export { CarRentGlobalStyle };
