@@ -1,11 +1,10 @@
 import styled from "@emotion/styled";
 
-const scrollRangeStyle = `        
-        .scroll-range-stator {
-          width: 8px;
+const ScrollRangeStatorStyleBase = styled.div`
+  width: 8px;
 
-          position: relative;
-        }`;
+  position: relative;
+`;
 
 const ScrollRangeRotorStyleBase = styled.div`
   position: absolute;
@@ -27,4 +26,4 @@ const ScrollRangeRotorStyleBase = styled.div`
   }
 `;
 
-export { scrollRangeStyle };
+export { ScrollRangeStatorStyleBase, ScrollRangeRotorStyleBase };
