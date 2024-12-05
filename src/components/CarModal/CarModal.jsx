@@ -67,47 +67,47 @@ const CarModal = ({ carId, onClose }) => {
           </CarModalCloseButtonStyleBase>
         </CarModalCloseButtonContainerStyleBase>
         <CarModalImageStyleBase src={car.img} alt="" />
-        <CarModalHeaderStyleBase className={ManropeM}>
+        <CarModalHeaderStyleBase className="{ManropeM}">
           <span>{car.make}</span>{" "}
           <CarModalItemValueStyleBase>{car.model}</CarModalItemValueStyleBase>,{" "}
           <span>{car.year}</span>
         </CarModalHeaderStyleBase>
         <CarModalItemsStyleBase>
-          <CarModalItemStyleBase className={ManropeR}>
+          <CarModalItemStyleBase className="{ManropeR}">
             {car.address.split(", ")[1]}
           </CarModalItemStyleBase>
-          <CarModalItemStyleBase className={ManropeR}>
+          <CarModalItemStyleBase className="{ManropeR}">
             {car.address.split(", ")[2]}
           </CarModalItemStyleBase>
-          <CarModalItemStyleBase className={ManropeR}>
+          <CarModalItemStyleBase className="{ManropeR}">
             Id:{" "}
             <CarModalItemValueStyleBase>{car.id}</CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
-          <CarModalItemStyleBase className={ManropeR}>
+          <CarModalItemStyleBase className="{ManropeR}">
             Year:{" "}
             <CarModalItemValueStyleBase>{car.year}</CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
-          <CarModalItemStyleBase className={ManropeR}>
+          <CarModalItemStyleBase className="{ManropeR}">
             Type:{" "}
             <CarModalItemValueStyleBase>{car.type}</CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
-          <CarModalItemStyleBase className={ManropeR}>
+          <CarModalItemStyleBase className="{ManropeR}">
             Fuel Consumption:{" "}
             <CarModalItemValueStyleBase>
               {car.fuelConsumption}
             </CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
-          <CarModalItemStyleBase className={ManropeR}>
+          <CarModalItemStyleBase className="{ManropeR}">
             Engine Size:{" "}
             <CarModalItemValueStyleBase>
               {car.engineSize}
             </CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
         </CarModalItemsStyleBase>
-        <CarModalDescriptionStyleBase className={ManropeR}>
+        <CarModalDescriptionStyleBase className="{ManropeR}">
           {car.description}
         </CarModalDescriptionStyleBase>
-        <CarModalSubHeaderStyleBase className={ManropeM}>
+        <CarModalSubHeaderStyleBase className="{ManropeM}">
           Accessories and functionalities:
         </CarModalSubHeaderStyleBase>
         <CarModalItemsStyleBase>
