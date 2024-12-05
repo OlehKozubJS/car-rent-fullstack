@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const CarModalBackdrop = styled.{
+const CarModalBackdrop = styled.`
   position: absolute;
   top: 0;
   left: 0;
@@ -10,23 +10,23 @@ const CarModalBackdrop = styled.{
   justify-content: center;
   align-items: center;
   background: rgba(18, 20, 23, 0.5);
-}
+`
 
-const CarModalContainer = styled.{
+const CarModalContainer = styled.`
   box-sizing: border-box;
   max-width: 50%;
   height: 100%;
   padding: 15px 37px 40px 45px;
   border-radius: 24px;
   background: #fff;
-}
+`
 
-const CarModalCloseButtonContainer = styled.{
+const CarModalCloseButtonContainer = styled.`
   display: flex;
   justify-content: flex-end;
-}
+`
 
-const CarModalCloseButton = styled.{
+const CarModalCloseButton = styled.`
   border: none;
   outline: none;
   padding: 0;
@@ -38,52 +38,52 @@ const CarModalCloseButton = styled.{
   border-radius: 50%;
 
   background: none;
-}
+
 
 &:hover {
   background: #0b44cd;
-}
+}`
 
-const CarModalCloseButtonIcon = styled.{
+const CarModalCloseButtonIcon = styled.
   display: block;
 }
 
-const CarModalImage = styled.{
+const CarModalImage = styled.`
   display: block;
   height: 314px;
   border-radius: 12px;
-}
+`
 
-const CarModalHeader = styled.{
+const CarModalHeader = styled.`
   color: #121417;
   font-size: 18px;
   line-height: 24px;
-}
+`
 
-const CarModalItems = styled.{
+const CarModalItems = styled.`
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   column-gap: 4px;
-}
+`
 
-const CarModalItem = styled.{
+const CarModalItem = styled.`
   color: rgba(18, 20, 23, 0.5);
   font-size: 12px;
   line-height: 18px;
-}
+`
 
 const CarModalItemValue = styled.{
   color: #3470ff;
 }
 
-const CarModalDescription = styled.{
+const CarModalDescription = styled.`
   color: #121417;
   font-size: 14px;
   line-height: 20px;
-}
+`
 
 const CarModalSubHeader = styled.{
   color: #121417;
@@ -92,7 +92,7 @@ const CarModalSubHeader = styled.{
   margin-bottom: 8px;
 }
 
-const CarModalRentalItems = styled.{
+const CarModalRentalItems = styled.`
   margin: 0;
   padding: 0;
   list-style: none;
@@ -100,9 +100,9 @@ const CarModalRentalItems = styled.{
   flex-wrap: wrap;
   column-gap: 4px;
   row-gap: 8px;
-}
+`
 
-const CarModalRentalItem = styled.{
+const CarModalRentalItem = styled.`
   display: flex;
   padding: 7px 14px;
   justify-content: center;
@@ -116,9 +116,9 @@ const CarModalRentalItem = styled.{
   font-size: 12px;
   line-height: 18px;
   letter-spacing: -0.24px;
-}
+`
 
-const CarModalSubmitButton = styled.{
+const CarModalSubmitButton = styled.`
   margin-top: 24px;
 
   display: inline-flex;
@@ -133,8 +133,8 @@ const CarModalSubmitButton = styled.{
   color: #fff;
   font-size: 14px;
   line-height: 20px;
-}
+
 
 &:hover {
   background: #0b44cd;
-}
+}`
