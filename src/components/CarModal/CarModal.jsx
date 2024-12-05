@@ -1,17 +1,17 @@
 import { useState, useEffect } from "react";
 
-import { carsLocalData } from "./imports";
-
-import { SVGimage } from "../../images";
-
-import css from "./CarModal.module.css";
 import {
+  carsLocalData,
   ManropeR,
   ManropeM,
   ManropeB,
   MontserratR,
   MontserratB,
-} from "../../fonts";
+} from "./imports";
+
+import { SVGimage } from "../../images";
+
+import css from "./CarModal.module.css";
 
 const CarModal = ({ carId, onClose }) => {
   const [car] = useState(carsLocalData.find((car) => car.id === carId));
