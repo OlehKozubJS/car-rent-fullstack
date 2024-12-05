@@ -11,6 +11,24 @@ import {
 
 import { SVGimage } from "../../images";
 
+import {
+  CarModalBackdropStyleBase,
+  CarModalContainerStyleBase,
+  CarModalCloseButtonContainerStyleBase,
+  CarModalCloseButtonStyleBase,
+  CarModalCloseButtonIconStyleBase,
+  CarModalImageStyleBase,
+  CarModalHeaderStyleBase,
+  CarModalItemsStyleBase,
+  CarModalItemStyleBase,
+  CarModalItemValueStyleBase,
+  CarModalDescriptionStyleBase,
+  CarModalSubHeaderStyleBase,
+  CarModalRentalItemsStyleBase,
+  CarModalRentalItemStyleBase,
+  CarModalSubmitButtonStyleBase,
+} from "./CarModalStyles";
+
 import css from "./CarModal.module.css";
 
 const CarModal = ({ carId, onClose }) => {
