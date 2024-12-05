@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
 
+import {
+  ScrollRangeStatorStyleBase,
+  ScrollRangeRotorStyleBase,
+} from "./CarBrandSelectorStyles";
+
 const ScrollRange = ({ value, onChange, statorHeight, rotorHeight }) => {
   const [isDraggable, setIsDraggable] = useState(false);
   const [mouseDownY, setMouseDownY] = useState(0);
@@ -42,16 +47,16 @@ const ScrollRange = ({ value, onChange, statorHeight, rotorHeight }) => {
   useEffect(handleEventListener("mousemove", handleMouseMove), [isDraggable]);
 
   return (
-    <div
+    <ScrollRangeStatorStyleBase
       className="scroll-range-stator"
       style={{ top: `${value}px`, height: `${statorHeight}px` }}
     >
-      <div
+      <ScrollRangeRotorStyleBase
         onMouseDown={handleMouseDown}
         className="scroll-range-rotor"
         style={{ height: `${rotorHeight}px` }}
-      ></div>
-    </div>
+      ></ScrollRangeRotorStyleBase>
+    </ScrollRangeStatorStyleBase>
   );
 };
 
