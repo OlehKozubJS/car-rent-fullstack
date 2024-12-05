@@ -57,13 +57,11 @@ const CarModal = ({ carId, onClose }) => {
   }, [onClose]);
 
   return (
-    <CarModalBackdropStyleBase className={css.CarModalBackdrop}>
-      <CarModalContainerStyleBase className={css.CarModalContainer}>
-        <CarModalCloseButtonContainerStyleBase
-          className={css.CarModalCloseButtonContainer}
-        >
+    <CarModalBackdropStyleBase className="{css.CarModalBackdrop}">
+      <CarModalContainerStyleBase className="{css.CarModalContainer}">
+        <CarModalCloseButtonContainerStyleBase className="{css.CarModalCloseButtonContainer}">
           <CarModalCloseButtonStyleBase
-            className={css.CarModalCloseButton}
+            className="{css.CarModalCloseButton}"
             onClick={onClose}
             onMouseOver={handleMouseOver}
             onMouseLeave={handleMouseLeave}
@@ -72,7 +70,7 @@ const CarModal = ({ carId, onClose }) => {
           </CarModalCloseButtonStyleBase>
         </CarModalCloseButtonContainerStyleBase>
         <CarModalImageStyleBase
-          className={css.CarModalImage}
+          className="{css.CarModalImage}"
           src={car.img}
           alt=""
         />
@@ -80,65 +78,61 @@ const CarModal = ({ carId, onClose }) => {
           className={`${css.CarModalHeader} ${ManropeM}`}
         >
           <span>{car.make}</span>{" "}
-          <CarModalItemValueStyleBase className={css.CarModalItemValue}>
+          <CarModalItemValueStyleBase className="{css.CarModalItemValue}">
             {car.model}
           </CarModalItemValueStyleBase>
           , <span>{car.year}</span>
         </CarModalHeaderStyleBase>
-        <CarModalItemsStyleBase className={css.CarModalItems}>
-          <CarModalItemStyleBase className={`${css.CarModalItem} ${ManropeR}`}>
+        <CarModalItemsStyleBase className="{css.CarModalItems}">
+          <CarModalItemStyleBase className="{`${css.CarModalItem} ${ManropeR}`}">
             {car.address.split(", ")[1]}
           </CarModalItemStyleBase>
-          <CarModalItemStyleBase className={`${css.CarModalItem} ${ManropeR}`}>
+          <CarModalItemStyleBase className="{`${css.CarModalItem} ${ManropeR}`}">
             {car.address.split(", ")[2]}
           </CarModalItemStyleBase>
-          <CarModalItemStyleBase className={`${css.CarModalItem} ${ManropeR}`}>
+          <CarModalItemStyleBase className="{`${css.CarModalItem} ${ManropeR}`}">
             Id:{" "}
-            <CarModalItemValueStyleBase className={css.CarModalItemValue}>
+            <CarModalItemValueStyleBase className="{css.CarModalItemValue}">
               {car.id}
             </CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
-          <CarModalItemStyleBase className={`${css.CarModalItem} ${ManropeR}`}>
+          <CarModalItemStyleBase className="{`${css.CarModalItem} ${ManropeR}`}">
             Year:{" "}
-            <CarModalItemValueStyleBase className={css.CarModalItemValue}>
+            <CarModalItemValueStyleBase className="{css.CarModalItemValue}">
               {car.year}
             </CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
-          <CarModalItemStyleBase className={`${css.CarModalItem} ${ManropeR}`}>
+          <CarModalItemStyleBase className="{`${css.CarModalItem} ${ManropeR}`}">
             Type:{" "}
-            <CarModalItemValueStyleBase className={css.CarModalItemValue}>
+            <CarModalItemValueStyleBase className="{css.CarModalItemValue}">
               {car.type}
             </CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
-          <CarModalItemStyleBase className={`${css.CarModalItem} ${ManropeR}`}>
+          <CarModalItemStyleBase className="{`${css.CarModalItem} ${ManropeR}`}">
             Fuel Consumption:{" "}
-            <CarModalItemValueStyleBase className={css.CarModalItemValue}>
+            <CarModalItemValueStyleBase className="{css.CarModalItemValue}">
               {car.fuelConsumption}
             </CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
-          <CarModalItemStyleBase className={`${css.CarModalItem} ${ManropeR}`}>
+          <CarModalItemStyleBase className="{`${css.CarModalItem} ${ManropeR}`}">
             Engine Size:{" "}
-            <CarModalItemValueStyleBase className={css.CarModalItemValue}>
+            <CarModalItemValueStyleBase className="{css.CarModalItemValue}">
               {car.engineSize}
             </CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
         </CarModalItemsStyleBase>
-        <CarModalDescriptionStyleBase
-          className={`${css.CarModalDescription} ${ManropeR}`}
-        >
+        <CarModalDescriptionStyleBase className="{`${css.CarModalDescription} ${ManropeR}`}">
           {car.description}
         </CarModalDescriptionStyleBase>
-        <CarModalSubHeaderStyleBase
-          className={`${css.CarModalSubHeader} ${ManropeM}`}
-        >
+        <CarModalSubHeaderStyleBase className="{`${css.CarModalSubHeader} ${ManropeM}`}">
           Accessories and functionalities:
         </CarModalSubHeaderStyleBase>
-        <CarModalItemsStyleBase className={css.CarModalItems}>
+        <CarModalItemsStyleBase className="{css.CarModalItems}">
           {car.accessories.map((item, index) => {
             return (
               <CarModalItemStyleBase
                 key={index}
-                className={`${css.CarModalItem} ${ManropeR}`}
+                className="{`${css.CarModalItem} ${ManropeR}`}"
               >
                 {item}
               </CarModalItemStyleBase>
@@ -148,63 +142,43 @@ const CarModal = ({ carId, onClose }) => {
             return (
               <CarModalItemStyleBase
                 key={index}
-                className={`${css.CarModalItem} ${ManropeR}`}
+                className="{`${css.CarModalItem} ${ManropeR}`}"
               >
                 {item}
               </CarModalItemStyleBase>
             );
           })}
         </CarModalItemsStyleBase>
-        <CarModalSubHeaderStyleBase
-          className={`${css.CarModalSubHeader} ${ManropeM}`}
-        >
+        <CarModalSubHeaderStyleBase className="{`${css.CarModalSubHeader} ${ManropeM}`}">
           Rental Conditions:{" "}
         </CarModalSubHeaderStyleBase>
-        <CarModalRentalItemsStyleBase className={css.CarModalRentalItems}>
-          <CarModalRentalItemStyleBase
-            className={`${css.CarModalRentalItem} ${MontserratR}`}
-          >
+        <CarModalRentalItemsStyleBase className="{css.CarModalRentalItems}">
+          <CarModalRentalItemStyleBase className="{`${css.CarModalRentalItem} ${MontserratR}`}">
             Minimum age:{" "}
-            <CarModalItemValueStyleBase
-              className={`${css.CarModalItemValue} ${MontserratB}`}
-            >
+            <CarModalItemValueStyleBase className="{`${css.CarModalItemValue} ${MontserratB}`}">
               {car.rentalConditions.split("\n")[0].split(" ")[2]}
             </CarModalItemValueStyleBase>
           </CarModalRentalItemStyleBase>
-          <CarModalRentalItemStyleBase
-            className={`${css.CarModalRentalItem} ${MontserratR}`}
-          >
+          <CarModalRentalItemStyleBase className="{`${css.CarModalRentalItem} ${MontserratR}`}">
             {car.rentalConditions.split("\n")[1]}
           </CarModalRentalItemStyleBase>
-          <CarModalItemStyleBase
-            className={`${css.CarModalRentalItem} ${MontserratR}`}
-          >
+          <CarModalItemStyleBase className="{`${css.CarModalRentalItem} ${MontserratR}`}">
             {car.rentalConditions.split("\n")[2]}
           </CarModalItemStyleBase>
-          <CarModalItemsStyleBase
-            className={`${css.CarModalRentalItem} ${MontserratR}`}
-          >
+          <CarModalItemsStyleBase className="{`${css.CarModalRentalItem} ${MontserratR}`}">
             Mileage:{" "}
-            <CarModalItemValueStyleBase
-              className={`${css.CarModalItemValue} ${MontserratB}`}
-            >
+            <CarModalItemValueStyleBase className="{`${css.CarModalItemValue} ${MontserratB}`}">
               {car.mileage}
             </CarModalItemValueStyleBase>
           </CarModalItemsStyleBase>
-          <CarModalRentalItemStyleBase
-            className={`${css.CarModalRentalItem} ${MontserratR}`}
-          >
+          <CarModalRentalItemStyleBase className="{`${css.CarModalRentalItem} ${MontserratR}`}">
             Price:{" "}
-            <CarModalItemValueStyleBase
-              className={`${css.CarModalItemValue} ${MontserratB}`}
-            >
+            <CarModalItemValueStyleBase className="{`${css.CarModalItemValue} ${MontserratB}`}">
               {car.rentalPrice}
             </CarModalItemValueStyleBase>
           </CarModalRentalItemStyleBase>
         </CarModalRentalItemsStyleBase>
-        <CarModalSubmitButtonStyleBase
-          className={`${css.CarModalSubmitButton} ${ManropeB}`}
-        >
+        <CarModalSubmitButtonStyleBase className="{`${css.CarModalSubmitButton} ${ManropeB}`}">
           Rental car
         </CarModalSubmitButtonStyleBase>
       </CarModalContainerStyleBase>
