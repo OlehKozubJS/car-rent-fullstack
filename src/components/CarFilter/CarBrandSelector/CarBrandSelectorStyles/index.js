@@ -1,4 +1,4 @@
-import { CarBrandSelectorNotFoundMessageStyle } from "./carBrandSelectorStyle";
+import { CarBrandSelectorNotFoundMessageStyleBase } from "./carBrandSelectorStyle";
 import {
   CarBrandSelectorInputLabelStyleBase,
   CarBrandSelectorInputStyleBase,
@@ -16,7 +16,7 @@ const carBrandSelectorStyles = [
 
 export {
   carBrandSelectorStyles,
-  CarBrandSelectorNotFoundMessageStyle,
+  CarBrandSelectorNotFoundMessageStyleBase,
   CarBrandSelectorInputLabelStyleBase,
   CarBrandSelectorInputStyleBase,
   CarBrandSelectorInputButtonStyleBase,
