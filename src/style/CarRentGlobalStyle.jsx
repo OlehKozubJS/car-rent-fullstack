@@ -25,7 +25,14 @@ export { CarRentGlobalStyle };
   font-family: 'Montserrat-Regular', sans-serif;
   font-family: 'Montserrat-SemiBold', sans-serif;
 
-@font-face {
+        @font-face {
+          font-family: "Manrope-Regular";
+          src: local("Manrope-Regular"),
+            url("./fonts/Manrope-Regular.ttf") format("truetype");
+          font-weight: 400;
+        }
+
+        @font-face {
           font-family: "Manrope-Medium";
           src: local("Manrope-Medium"),
             url("./fonts/Manrope-Medium.ttf") format("truetype");
