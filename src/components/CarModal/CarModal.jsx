@@ -68,10 +68,7 @@ const CarModal = ({ carId, onClose }) => {
             onMouseOver={handleMouseOver}
             onMouseLeave={handleMouseLeave}
           >
-            <SVGimage
-              className={css.CarModalCloseButtonIcon}
-              name={isHover ? "close-hover" : "close"}
-            />
+            <SVGimage name={isHover ? "close-hover" : "close"} />
           </CarModalCloseButtonStyleBase>
         </CarModalCloseButtonContainerStyleBase>
         <CarModalImageStyleBase
