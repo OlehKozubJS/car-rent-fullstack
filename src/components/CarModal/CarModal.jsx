@@ -67,19 +67,19 @@ const CarModal = ({ carId, onClose }) => {
           </CarModalCloseButtonStyleBase>
         </CarModalCloseButtonContainerStyleBase>
         <CarModalImageStyleBase src={car.img} alt="" />
-        <CarModalHeaderStyleBase className="{ManropeM}">
+        <CarModalHeaderStyleBase className={ManropeM}>
           <span>{car.make}</span>{" "}
           <CarModalItemValueStyleBase>{car.model}</CarModalItemValueStyleBase>,{" "}
           <span>{car.year}</span>
         </CarModalHeaderStyleBase>
         <CarModalItemsStyleBase>
-          <CarModalItemStyleBase className="{ManropeR}">
+          <CarModalItemStyleBase className={ManropeR}>
             {car.address.split(", ")[1]}
           </CarModalItemStyleBase>
-          <CarModalItemStyleBase className="{ManropeR}">
+          <CarModalItemStyleBase className={ManropeR}>
             {car.address.split(", ")[2]}
           </CarModalItemStyleBase>
-          <CarModalItemStyleBase className="{ManropeR}">
+          <CarModalItemStyleBase className={ManropeR}>
             Id:{" "}
             <CarModalItemValueStyleBase>{car.id}</CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
