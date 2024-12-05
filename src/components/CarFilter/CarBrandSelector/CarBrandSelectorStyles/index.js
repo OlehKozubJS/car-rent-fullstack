@@ -4,7 +4,7 @@ import {
   CarBrandSelectorInputStyleBase,
   CarBrandSelectorInputButtonStyleBase,
 } from "./carBrandSelectorInputStyle";
-import { menuContainerStyle } from "./carBrandSelectorMenuStyle";
+import { CarBrandSelectorMenuContainerStyleBase } from "./carBrandSelectorMenuStyle";
 import {
   CarBrandSelectorMenuListContainerStyleBase,
   CarBrandSelectorMenuListStyleBase,
@@ -13,7 +13,7 @@ import {
 } from "./carBrandSelectorMenuListStyle";
 import { scrollRangeStyle } from "./scrollRangeStyle";
 
-const carBrandSelectorStyles = [menuContainerStyle, scrollRangeStyle].join(" ");
+const carBrandSelectorStyles = [scrollRangeStyle].join(" ");
 
 export {
   carBrandSelectorStyles,
@@ -21,6 +21,7 @@ export {
   CarBrandSelectorInputLabelStyleBase,
   CarBrandSelectorInputStyleBase,
   CarBrandSelectorInputButtonStyleBase,
+  CarBrandSelectorMenuContainerStyleBase,
   CarBrandSelectorMenuListContainerStyleBase,
   CarBrandSelectorMenuListStyleBase,
   CarBrandSelectorMenuItemStyleBase,
