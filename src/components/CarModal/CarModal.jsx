@@ -132,36 +132,36 @@ const CarModal = ({ carId, onClose }) => {
             );
           })}
         </CarModalItemsStyleBase>
-        <CarModalSubHeaderStyleBase className="{`${css.CarModalSubHeader} ${ManropeM}`}">
+        <CarModalSubHeaderStyleBase className="{ManropeM}">
           Rental Conditions:{" "}
         </CarModalSubHeaderStyleBase>
         <CarModalRentalItemsStyleBase className="{css.CarModalRentalItems}">
-          <CarModalRentalItemStyleBase className="{`${css.CarModalRentalItem} ${MontserratR}`}">
+          <CarModalRentalItemStyleBase className="{MontserratR}">
             Minimum age:{" "}
-            <CarModalItemValueStyleBase className="{`${css.CarModalItemValue} ${MontserratB}`}">
+            <CarModalItemValueStyleBase className="{MontserratB}">
               {car.rentalConditions.split("\n")[0].split(" ")[2]}
             </CarModalItemValueStyleBase>
           </CarModalRentalItemStyleBase>
-          <CarModalRentalItemStyleBase className="{`${css.CarModalRentalItem} ${MontserratR}`}">
+          <CarModalRentalItemStyleBase className="{MontserratR}">
             {car.rentalConditions.split("\n")[1]}
           </CarModalRentalItemStyleBase>
-          <CarModalRentalItemStyleBase className="{`${css.CarModalRentalItem} ${MontserratR}`}">
+          <CarModalRentalItemStyleBase className="{MontserratR}">
             {car.rentalConditions.split("\n")[2]}
           </CarModalRentalItemStyleBase>
-          <CarModalRentalItemStyleBase className="{`${css.CarModalRentalItem} ${MontserratR}`}">
+          <CarModalRentalItemStyleBase className="{MontserratR}">
             Mileage:{" "}
-            <CarModalItemValueStyleBase className="{`${css.CarModalItemValue} ${MontserratB}`}">
+            <CarModalItemValueStyleBase className="{MontserratB}">
               {car.mileage}
             </CarModalItemValueStyleBase>
           </CarModalRentalItemStyleBase>
-          <CarModalRentalItemStyleBase className="{`${css.CarModalRentalItem} ${MontserratR}`}">
+          <CarModalRentalItemStyleBase className="{MontserratR}">
             Price:{" "}
-            <CarModalItemValueStyleBase className="{`${css.CarModalItemValue} ${MontserratB}`}">
+            <CarModalItemValueStyleBase className="{MontserratB}">
               {car.rentalPrice}
             </CarModalItemValueStyleBase>
           </CarModalRentalItemStyleBase>
         </CarModalRentalItemsStyleBase>
-        <CarModalSubmitButtonStyleBase className="{`${css.CarModalSubmitButton} ${ManropeB}`}">
+        <CarModalSubmitButtonStyleBase className="{ManropeB}">
           Rental car
         </CarModalSubmitButtonStyleBase>
       </CarModalContainerStyleBase>
