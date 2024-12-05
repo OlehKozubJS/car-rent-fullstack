@@ -1,3 +1,5 @@
+import styled from "@emotion/styled";
+
 const scrollRangeStyle = `        
         .scroll-range-stator {
           width: 8px;
