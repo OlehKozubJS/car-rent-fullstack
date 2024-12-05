@@ -8,4 +8,12 @@ import {
   MontserratB,
 } from "../style";
 
-export { carsLocalData, makesLocalData };
+export {
+  carsLocalData,
+  makesLocalData,
+  ManropeR,
+  ManropeM,
+  ManropeB,
+  MontserratR,
+  MontserratB,
+};
