@@ -3,14 +3,13 @@ import { Global, css } from "@emotion/react";
 const CarRentGlobalStyle = () => {
   return (
     <Global
-      styles={css`
-        @font-face {
-          font-family: "Manrope-Regular";
-          src: local("Manrope-Regular"),
-            url("./fonts/Manrope-Regular.ttf") format("truetype");
-          font-weight: 400;
-        }
-      `}
+      styles={{
+        "@font-face": {
+          fontFamily: "Manrope-Regular",
+          src: "url('./fonts/Manrope-Regular.ttf') format('truetype')",
+          fontWeight: 400,
+        },
+      }}
     />
   );
 };
