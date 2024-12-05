@@ -110,7 +110,7 @@ const CarModal = ({ carId, onClose }) => {
         <CarModalSubHeaderStyleBase className="{ManropeM}">
           Accessories and functionalities:
         </CarModalSubHeaderStyleBase>
-        <CarModalItemsStyleBase className="{css.CarModalItems}">
+        <CarModalItemsStyleBase>
           {car.accessories.map((item, index) => {
             return (
               <CarModalItemStyleBase key={index} className="{ManropeR}">
@@ -129,7 +129,7 @@ const CarModal = ({ carId, onClose }) => {
         <CarModalSubHeaderStyleBase className="{ManropeM}">
           Rental Conditions:{" "}
         </CarModalSubHeaderStyleBase>
-        <CarModalRentalItemsStyleBase className="{css.CarModalRentalItems}">
+        <CarModalRentalItemsStyleBase>
           <CarModalRentalItemStyleBase className="{MontserratR}">
             Minimum age:{" "}
             <CarModalItemValueStyleBase className="{MontserratB}">
