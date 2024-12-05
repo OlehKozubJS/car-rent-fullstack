@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const CarBrandSelectorNotFoundMessageStyle = styled.div`
+const CarBrandSelectorNotFoundMessageStyleBase = styled.div`
   box-sizing: border-box;
 
   width: 224px;
@@ -20,4 +20,4 @@ const CarBrandSelectorNotFoundMessageStyle = styled.div`
   color: rgba(180, 20, 23, 0.5);
 `;
 
-export { CarBrandSelectorNotFoundMessageStyle };
+export { CarBrandSelectorNotFoundMessageStyleBase };
