@@ -29,8 +29,6 @@ import {
   CarModalSubmitButtonStyleBase,
 } from "./CarModalStyles";
 
-//import css from "./CarModal.module.css";
-
 const CarModal = ({ carId, onClose }) => {
   const [car] = useState(carsLocalData.find((car) => car.id === carId));
   const [isHover, setIsHover] = useState(false);
@@ -57,11 +55,10 @@ const CarModal = ({ carId, onClose }) => {
   }, [onClose]);
 
   return (
-    <CarModalBackdropStyleBase className="{css.CarModalBackdrop}">
-      <CarModalContainerStyleBase className="{css.CarModalContainer}">
-        <CarModalCloseButtonContainerStyleBase className="{css.CarModalCloseButtonContainer}">
+    <CarModalBackdropStyleBase>
+      <CarModalContainerStyleBase>
+        <CarModalCloseButtonContainerStyleBase>
           <CarModalCloseButtonStyleBase
-            className="{css.CarModalCloseButton}"
             onClick={onClose}
             onMouseOver={handleMouseOver}
             onMouseLeave={handleMouseLeave}
@@ -69,19 +66,13 @@ const CarModal = ({ carId, onClose }) => {
             <SVGimage name={isHover ? "close-hover" : "close"} />
           </CarModalCloseButtonStyleBase>
         </CarModalCloseButtonContainerStyleBase>
-        <CarModalImageStyleBase
-          className="{css.CarModalImage}"
-          src={car.img}
-          alt=""
-        />
-        <CarModalHeaderStyleBase className="{`${css.CarModalHeader} ${ManropeM}`}">
+        <CarModalImageStyleBase src={car.img} alt="" />
+        <CarModalHeaderStyleBase className="{ManropeM}">
           <span>{car.make}</span>{" "}
-          <CarModalItemValueStyleBase className="{css.CarModalItemValue}">
-            {car.model}
-          </CarModalItemValueStyleBase>
-          , <span>{car.year}</span>
+          <CarModalItemValueStyleBase>{car.model}</CarModalItemValueStyleBase>,{" "}
+          <span>{car.year}</span>
         </CarModalHeaderStyleBase>
-        <CarModalItemsStyleBase className="{css.CarModalItems}">
+        <CarModalItemsStyleBase>
           <CarModalItemStyleBase className="{`${css.CarModalItem} ${ManropeR}`}">
             {car.address.split(", ")[1]}
           </CarModalItemStyleBase>
@@ -100,21 +91,19 @@ const CarModal = ({ carId, onClose }) => {
               {car.year}
             </CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
-          <CarModalItemStyleBase className="{`${css.CarModalItem} ${ManropeR}`}">
+          <CarModalItemStyleBase className="{ManropeR}">
             Type:{" "}
-            <CarModalItemValueStyleBase className="{css.CarModalItemValue}">
-              {car.type}
-            </CarModalItemValueStyleBase>
+            <CarModalItemValueStyleBase>{car.type}</CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
-          <CarModalItemStyleBase className="{`${css.CarModalItem} ${ManropeR}`}">
+          <CarModalItemStyleBase className="{ManropeR}">
             Fuel Consumption:{" "}
-            <CarModalItemValueStyleBase className="{css.CarModalItemValue}">
+            <CarModalItemValueStyleBase>
               {car.fuelConsumption}
             </CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
-          <CarModalItemStyleBase className="{`${css.CarModalItem} ${ManropeR}`}">
+          <CarModalItemStyleBase className="{ManropeR}">
             Engine Size:{" "}
-            <CarModalItemValueStyleBase className="{css.CarModalItemValue}">
+            <CarModalItemValueStyleBase>
               {car.engineSize}
             </CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
