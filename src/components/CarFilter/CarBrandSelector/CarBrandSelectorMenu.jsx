@@ -33,13 +33,11 @@ const CarBrandSelectorMenu = ({ options, onChange }) => {
       className="menu-container"
       style={{ height: `${menuListContainerHeight + 28}px` }}
     >
-      <div className="menu-list-container">
-        <CarBrandSelectorMenuList
-          options={options}
-          onChange={onChange}
-          top={-scrollRangeValue * 5}
-        />
-      </div>
+      <CarBrandSelectorMenuList
+        options={options}
+        onChange={onChange}
+        top={-scrollRangeValue * 5}
+      />
       {menuListHeight > MAX_MENU_LIST_HEIGHT && (
         <ScrollRange
           value={scrollRangeValue}
