@@ -83,8 +83,10 @@ const CarModal = ({ carId, onClose }) => {
           className={`${css.CarModalHeader} ${ManropeM}`}
         >
           <span>{car.make}</span>{" "}
-          <span className={css.CarModalItemValue}>{car.model}</span>,{" "}
-          <span>{car.year}</span>
+          <CarModalItemValueStyleBase className={css.CarModalItemValue}>
+            {car.model}
+          </CarModalItemValueStyleBase>
+          , <span>{car.year}</span>
         </CarModalHeaderStyleBase>
         <CarModalItemsStyleBase className={css.CarModalItems}>
           <CarModalItemStyleBase className={`${css.CarModalItem} ${ManropeR}`}>
@@ -94,35 +96,55 @@ const CarModal = ({ carId, onClose }) => {
             {car.address.split(", ")[2]}
           </CarModalItemStyleBase>
           <CarModalItemStyleBase className={`${css.CarModalItem} ${ManropeR}`}>
-            Id: <span className={css.CarModalItemValue}>{car.id}</span>
+            Id:{" "}
+            <CarModalItemValue className={css.CarModalItemValue}>
+              {car.id}
+            </CarModalItemValue>
           </CarModalItemStyleBase>
           <CarModalItemStyleBase className={`${css.CarModalItem} ${ManropeR}`}>
-            Year: <span className={css.CarModalItemValue}>{car.year}</span>
+            Year:{" "}
+            <CarModalItemValueStyleBase className={css.CarModalItemValue}>
+              {car.year}
+            </CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
           <CarModalItemStyleBase className={`${css.CarModalItem} ${ManropeR}`}>
-            Type: <span className={css.CarModalItemValue}>{car.type}</span>
+            Type:{" "}
+            <CarModalItemValueStyleBase className={css.CarModalItemValue}>
+              {car.type}
+            </CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
           <CarModalItemStyleBase className={`${css.CarModalItem} ${ManropeR}`}>
             Fuel Consumption:{" "}
-            <span className={css.CarModalItemValue}>{car.fuelConsumption}</span>
+            <CarModalItemValueStyleBase className={css.CarModalItemValue}>
+              {car.fuelConsumption}
+            </CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
           <CarModalItemStyleBase className={`${css.CarModalItem} ${ManropeR}`}>
             Engine Size:{" "}
-            <span className={css.CarModalItemValue}>{car.engineSize}</span>
+            <CarModalItemValueStyleBase className={css.CarModalItemValue}>
+              {car.engineSize}
+            </CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
         </CarModalItemsStyleBase>
-        <p className={`${css.CarModalDescription} ${ManropeR}`}>
+        <CarModalDescriptionStyleBase
+          className={`${css.CarModalDescription} ${ManropeR}`}
+        >
           {car.description}
-        </p>
-        <h4 className={`${css.CarModalSubHeader} ${ManropeM}`}>
+        </CarModalDescriptionStyleBase>
+        <CarModalSubHeaderStyleBase
+          className={`${css.CarModalSubHeader} ${ManropeM}`}
+        >
           Accessories and functionalities:
-        </h4>
-        <ul className={css.CarModalItems}>
+        </CarModalSubHeaderStyleBase>
+        <CarModalItemsStyleBase className={css.CarModalItems}>
           {car.accessories.map((item, index) => {
             return (
-              <li key={index} className={`${css.CarModalItem} ${ManropeR}`}>
+              <CarModalItemStyleBase
+                key={index}
+                className={`${css.CarModalItem} ${ManropeR}`}
+              >
                 {item}
-              </li>
+              </CarModalItemStyleBase>
             );
           })}
           {car.functionalities.map((item, index) => {
@@ -132,7 +154,7 @@ const CarModal = ({ carId, onClose }) => {
               </li>
             );
           })}
-        </ul>
+        </CarModalItemsStyleBase>
         <h4 className={`${css.CarModalSubHeader} ${ManropeM}`}>
           Rental Conditions:{" "}
         </h4>
