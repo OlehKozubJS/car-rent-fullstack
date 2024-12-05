@@ -128,7 +128,10 @@ const CarModalRentalItemStyleBase = styled.li`
   font-family: "Montserrat-Regular", sans-serif;
 `;
 
-//  font-family: "Montserrat-SemiBold", sans-serif;
+const CarModalRentalItemValueStyleBase = styled.span`
+  color: #3470ff;
+  font-family: "Montserrat-SemiBold", sans-serif;
+`;
 
 const CarModalSubmitButtonStyleBase = styled.button`
   margin-top: 24px;
