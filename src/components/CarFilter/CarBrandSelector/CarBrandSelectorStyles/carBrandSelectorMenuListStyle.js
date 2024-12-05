@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 
-const      
-        menu-list-container `
+const MenuListContainerStyleBase = styled.div`
           height: 244px;
           width: 190px;
 
