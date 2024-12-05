@@ -81,15 +81,11 @@ const CarModal = ({ carId, onClose }) => {
           </CarModalItemStyleBase>
           <CarModalItemStyleBase className="{ManropeR}">
             Id:{" "}
-            <CarModalItemValueStyleBase className="{css.CarModalItemValue}">
-              {car.id}
-            </CarModalItemValueStyleBase>
+            <CarModalItemValueStyleBase>{car.id}</CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
           <CarModalItemStyleBase className="{ManropeR}">
             Year:{" "}
-            <CarModalItemValueStyleBase className="{css.CarModalItemValue}">
-              {car.year}
-            </CarModalItemValueStyleBase>
+            <CarModalItemValueStyleBase>{car.year}</CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
           <CarModalItemStyleBase className="{ManropeR}">
             Type:{" "}
@@ -108,10 +104,10 @@ const CarModal = ({ carId, onClose }) => {
             </CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
         </CarModalItemsStyleBase>
-        <CarModalDescriptionStyleBase className="{`${css.CarModalDescription} ${ManropeR}`}">
+        <CarModalDescriptionStyleBase className="{ManropeR}">
           {car.description}
         </CarModalDescriptionStyleBase>
-        <CarModalSubHeaderStyleBase className="{`${css.CarModalSubHeader} ${ManropeM}`}">
+        <CarModalSubHeaderStyleBase className="{ManropeM}">
           Accessories and functionalities:
         </CarModalSubHeaderStyleBase>
         <CarModalItemsStyleBase className="{css.CarModalItems}">
