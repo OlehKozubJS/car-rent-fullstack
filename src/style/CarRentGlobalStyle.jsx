@@ -7,7 +7,9 @@ const CarRentGlobalStyle = () => {
         @font-face {
           font-family: "Manrope-Regular";
           src: local("Manrope-Regular"),
-            url("./fonts/Manrope-Regular.ttf") format("truetype");
+            url("./fonts/Manrope-Regular.ttf") format("truetype"),
+            url("./fonts/Manrope-Regular.woff") format("woff"),
+            url("./fonts/Manrope-Regular.woff2") format("woff2");
           font-weight: 400;
         }
 
