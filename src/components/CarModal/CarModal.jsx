@@ -57,10 +57,12 @@ const CarModal = ({ carId, onClose }) => {
   }, [onClose]);
 
   return (
-    <div className={css.CarModalBackdrop}>
-      <div className={css.CarModalContainer}>
-        <div className={css.CarModalCloseButtonContainer}>
-          <button
+    <CarModalBackdropStyleBase className={css.CarModalBackdrop}>
+      <CarModalContainerStyleBase className={css.CarModalContainer}>
+        <CarModalCloseButtonContainerStyleBase
+          className={css.CarModalCloseButtonContainer}
+        >
+          <CarModalCloseButtonStyleBase
             className={css.CarModalCloseButton}
             onClick={onClose}
             onMouseOver={handleMouseOver}
@@ -70,30 +72,36 @@ const CarModal = ({ carId, onClose }) => {
               className={css.CarModalCloseButtonIcon}
               name={isHover ? "close-hover" : "close"}
             />
-          </button>
-        </div>
-        <img className={css.CarModalImage} src={car.img} alt="" />
-        <h3 className={`${css.CarModalHeader} ${ManropeM}`}>
+          </CarModalCloseButtonStyleBase>
+        </CarModalCloseButtonContainerStyleBase>
+        <CarModalImageStyleBase
+          className={css.CarModalImage}
+          src={car.img}
+          alt=""
+        />
+        <CarModalHeaderStyleBase
+          className={`${css.CarModalHeader} ${ManropeM}`}
+        >
           <span>{car.make}</span>{" "}
           <span className={css.CarModalItemValue}>{car.model}</span>,{" "}
           <span>{car.year}</span>
-        </h3>
-        <ul className={css.CarModalItems}>
-          <li className={`${css.CarModalItem} ${ManropeR}`}>
+        </CarModalHeaderStyleBase>
+        <CarModalItemsStyleBase className={css.CarModalItems}>
+          <CarModalItemStyleBase className={`${css.CarModalItem} ${ManropeR}`}>
             {car.address.split(", ")[1]}
-          </li>
-          <li className={`${css.CarModalItem} ${ManropeR}`}>
+          </CarModalItemStyleBase>
+          <CarModalItemStyleBase className={`${css.CarModalItem} ${ManropeR}`}>
             {car.address.split(", ")[2]}
-          </li>
-          <li className={`${css.CarModalItem} ${ManropeR}`}>
+          </CarModalItemStyleBase>
+          <CarModalItemStyleBase className={`${css.CarModalItem} ${ManropeR}`}>
             Id: <span className={css.CarModalItemValue}>{car.id}</span>
-          </li>
-          <li className={`${css.CarModalItem} ${ManropeR}`}>
+          </CarModalItemStyleBase>
+          <CarModalItemStyleBase className={`${css.CarModalItem} ${ManropeR}`}>
             Year: <span className={css.CarModalItemValue}>{car.year}</span>
-          </li>
-          <li className={`${css.CarModalItem} ${ManropeR}`}>
+          </CarModalItemStyleBase>
+          <CarmodalItemStyleBase className={`${css.CarModalItem} ${ManropeR}`}>
             Type: <span className={css.CarModalItemValue}>{car.type}</span>
-          </li>
+          </CarmodalItemStyleBase>
           <li className={`${css.CarModalItem} ${ManropeR}`}>
             Fuel Consumption:{" "}
             <span className={css.CarModalItemValue}>{car.fuelConsumption}</span>
@@ -102,7 +110,7 @@ const CarModal = ({ carId, onClose }) => {
             Engine Size:{" "}
             <span className={css.CarModalItemValue}>{car.engineSize}</span>
           </li>
-        </ul>
+        </CarModalItemsStyleBase>
         <p className={`${css.CarModalDescription} ${ManropeR}`}>
           {car.description}
         </p>
@@ -157,8 +165,8 @@ const CarModal = ({ carId, onClose }) => {
         <button className={`${css.CarModalSubmitButton} ${ManropeB}`}>
           Rental car
         </button>
-      </div>
-    </div>
+      </CarModalContainerStyleBase>
+    </CarModalBackdropStyleBase>
   );
 };
 
