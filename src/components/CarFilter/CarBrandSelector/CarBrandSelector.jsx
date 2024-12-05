@@ -8,7 +8,7 @@ import { setCarModel, setSelectedCars } from "../../../hooks";
 import { CarBrandSelectorInput } from "./CarBrandSelectorInput";
 import { CarBrandSelectorMenu } from "./CarBrandSelectorMenu";
 
-import { CarBrandSelectorNotFoundMessageStyle } from "./CarBrandSelectorStyles";
+import { CarBrandSelectorInputLabelStyleBase } from "./CarBrandSelectorStyles";
 
 const CarBrandSelector = ({ carBrands }) => {
   const [filteredCarBrands, setFilteredCarBrands] = useState([]);
@@ -60,9 +60,9 @@ const CarBrandSelector = ({ carBrands }) => {
             onChange={handleCarBrand}
           />
         ) : (
-          <CarBrandSelectorNotFoundMessageStyle className="car-filter-options-not-found-message">
+          <CarBrandSelectorNotFoundMessageStyleBase className="car-filter-options-not-found-message">
             Sorry, no results found
-          </CarBrandSelectorNotFoundMessageStyle>
+          </CarBrandSelectorNotFoundMessageStyleBase>
         ))}
     </div>
   );
