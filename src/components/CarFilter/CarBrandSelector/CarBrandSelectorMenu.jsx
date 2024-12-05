@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { ScrollRange } from "./ScrollRange";
 import { CarBrandSelectorMenuList } from "./CarBrandSelectorMenuList";
 
+import { CarBrandSelectorMenuContainerStyleBase } from "./CarBrandSelectorStyles";
+
 const CarBrandSelectorMenu = ({ options, onChange }) => {
   const MAX_MENU_LIST_HEIGHT = 244;
 
@@ -29,7 +31,7 @@ const CarBrandSelectorMenu = ({ options, onChange }) => {
   }, [menuListHeight]);
 
   return (
-    <div
+    <CarBrandSelectorMenuContainerStyleBase
       className="menu-container"
       style={{ height: `${menuListContainerHeight + 28}px` }}
     >
@@ -49,7 +51,7 @@ const CarBrandSelectorMenu = ({ options, onChange }) => {
           }
         />
       )}
-    </div>
+    </CarBrandSelectorMenuContainerStyleBase>
   );
 };
 
