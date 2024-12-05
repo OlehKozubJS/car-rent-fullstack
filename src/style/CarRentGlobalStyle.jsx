@@ -6,7 +6,7 @@ const CarRentGlobalStyle = () => {
       styles={css`
         body {
           background-image: linear-gradient(
-            to top,
+            270deg,
             rgb(200, 200, 250),
             rgb(250, 200, 200)
           );
