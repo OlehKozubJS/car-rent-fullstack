@@ -29,7 +29,7 @@ import {
   CarModalSubmitButtonStyleBase,
 } from "./CarModalStyles";
 
-import css from "./CarModal.module.css";
+//import css from "./CarModal.module.css";
 
 const CarModal = ({ carId, onClose }) => {
   const [car] = useState(carsLocalData.find((car) => car.id === carId));
@@ -74,9 +74,7 @@ const CarModal = ({ carId, onClose }) => {
           src={car.img}
           alt=""
         />
-        <CarModalHeaderStyleBase
-          className={`${css.CarModalHeader} ${ManropeM}`}
-        >
+        <CarModalHeaderStyleBase className="{`${css.CarModalHeader} ${ManropeM}`}">
           <span>{car.make}</span>{" "}
           <CarModalItemValueStyleBase className="{css.CarModalItemValue}">
             {car.model}
