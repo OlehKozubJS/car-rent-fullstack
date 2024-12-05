@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { carsLocalData } from "./imports";
+import { carsLocalData, ManropeR } from "./imports";
 
 import { SVGimage } from "../../images";
 
