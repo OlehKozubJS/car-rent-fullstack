@@ -113,10 +113,7 @@ const CarModal = ({ carId, onClose }) => {
         <CarModalItemsStyleBase className="{css.CarModalItems}">
           {car.accessories.map((item, index) => {
             return (
-              <CarModalItemStyleBase
-                key={index}
-                className="{`${css.CarModalItem} ${ManropeR}`}"
-              >
+              <CarModalItemStyleBase key={index} className="{ManropeR}">
                 {item}
               </CarModalItemStyleBase>
             );
