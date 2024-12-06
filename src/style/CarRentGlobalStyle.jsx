@@ -17,7 +17,6 @@ injectGlobal`
 
   * {
     font-family: 'MonsieurLaDoulaise-Regular', cursive;
-    
   } 
 
   body {
