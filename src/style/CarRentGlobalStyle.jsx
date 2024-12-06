@@ -8,7 +8,7 @@ const CarRentGlobalStyleBase = createGlobalStyle`
     src: 
       local('Kings-Regular'),
       url('./Kings-Regular.eot') format('embedded-opentype');
-      src: url('../fonts/Kings-Regular.eot?#iefix') format('eot');
+      src: url('../fonts/Kings-Regular.eot?#iefix') format('embedded-opentype');
         
     unicode-range: 
       U+0100-024f, U+1-1eff, U+20a0-20ab,
