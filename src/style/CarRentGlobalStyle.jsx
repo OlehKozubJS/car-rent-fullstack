@@ -7,7 +7,7 @@ injectGlobal`
 
     src: 
       local('Kings-Regular'),
-      url('/Kings-Regular.ttf') format('truetype');
+      url('../../public/fonts/Kings-Regular.ttf') format('truetype');
         
     unicode-range: 
       U+0100-024f, U+1-1eff, U+20a0-20ab,
@@ -15,7 +15,7 @@ injectGlobal`
   }
 
   * {
-    font-family: "Kings-Regular", serif;
+    font-family: 'Kings-Regular', serif;
   } 
 `;
 
