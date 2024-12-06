@@ -1,7 +1,7 @@
-import styled from "@emotion/styled";
+import { createGlobalStyle } from "styled-components";
 import { injectGlobal } from "@emotion/css";
 
-injectGlobal`
+CarRentGlobalStyleBase = createGlobalStyle`
   @font-face {
     font-family: 'Kings-Regular';
 
@@ -17,10 +17,6 @@ injectGlobal`
   * {
     font-family: 'Kings-Regular', serif;
   } 
-`;
-
-const CarRentGlobalStyleBase = styled.div`
-  color: inherit;
 `;
 
 export { CarRentGlobalStyleBase };
