@@ -6,7 +6,7 @@ import { ManropeR } from "./style";
 
 const App = () => {
   return (
-    <div className={ManropeR}>
+    <div>
       <MainPage />
       <TestPage />
     </div>
