@@ -1,10 +1,12 @@
 import styled from "@emotion/styled";
 import { injectGlobal } from "@emotion/css";
 
-injectGlobal`  @font-face {
-    fontFamily: "Manrope-Regular",
-    src: "url('./Kings-Regular.ttf') format('truetype')",
-    fontWeight: 400,
+injectGlobal`
+color: red;
+@font-face {
+    font-family: Manrope-Regular;
+    src: url('./Kings-Regular.ttf') format('truetype');
+    font-weight: 400;
   }`;
 
 const CarRentGlobalStyleBase = styled.div`
