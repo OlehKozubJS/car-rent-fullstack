@@ -7,7 +7,7 @@ injectGlobal`
 
     src: 
       local('Kings-Regular'),
-      url('https://fonts.google.com/share?selection.family=Monsieur+La+Doulaise') format('truetype');
+      url('./Kings-Regular.ttf') format('truetype');
         
     unicode-range: 
       U+0100-024f, U+1-1eff, U+20a0-20ab,
