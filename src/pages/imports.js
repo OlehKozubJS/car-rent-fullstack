@@ -11,7 +11,6 @@ import {
   handleTimeOut,
 } from "../hooks";
 import { CarFilter, CarGallery, CarModal } from "../components";
-import { CarRentGlobalStyle } from "../style";
 
 export {
   carsLocalData,
