@@ -7,8 +7,8 @@ const CarRentGlobalStyleBase = createGlobalStyle`
 
     src: 
       local('Kings-Regular'),
-      url('./Kings-Regular.eot') format('embedded-opentype');
-      src: url('../fonts/Kings-Regular.eot?#iefix') format('embedded-opentype');
+      url('./Kings-Regular.eot');
+
         
     unicode-range: 
       U+0100-024f, U+1-1eff, U+20a0-20ab,
@@ -23,6 +23,7 @@ const CarRentGlobalStyleBase = createGlobalStyle`
 export { CarRentGlobalStyleBase };
 
 /*
+  src: url('../fonts/Kings-Regular.eot?#iefix') format('embedded-opentype');
 
   @font-face {
     font-family: "Kings-Regular";
