@@ -9,7 +9,7 @@ injectGlobal`
 
     src: 
       local("Kings-Regular"),
-      url('./Kings-Regular.ttf')
+      url("https://fonts.googleapis.com/css2?family=Kings&display=swap")
         format('truetype');
     unicode-range: 
       U+0100-024f, U+1-1eff, U+20a0-20ab,
