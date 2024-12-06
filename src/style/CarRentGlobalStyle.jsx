@@ -7,7 +7,6 @@ injectGlobal`
 
   body {
     background-color: red;
-
   }
 `;
 
