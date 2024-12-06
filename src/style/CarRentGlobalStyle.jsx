@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import { injectGlobal } from "@emotion/css";
 
-CarRentGlobalStyleBase = createGlobalStyle`
+const CarRentGlobalStyleBase = createGlobalStyle`
   @font-face {
     font-family: 'Kings-Regular';
 
