@@ -1,4 +1,6 @@
-import { CarRentGlobalStyle } from "./CarRentGlobalStyle";
+import { CarRentGlobalStyleBase } from "./CarRentGlobalStyle";
+
+const CarRentGlobalStyle = CarRentGlobalStyleBase;
 
 import {
   ManropeR,
