@@ -15,7 +15,7 @@ const CarRentGlobalStyleBase = createGlobalStyle`
   }
 
   * {
-    font-family: 'Kings-Regular', serif;
+    font-family: 'MonsieurLaDoulaise-Regular', serif;
   } 
 `;
 
