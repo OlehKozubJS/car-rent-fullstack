@@ -1,7 +1,5 @@
 import { injectGlobal } from "@emotion/css";
 
-const CarRentGlobalStyleBase = createGlobalStyle``;
-
 injectGlobal`
   * {
     font-family: 'MonsieurLaDoulaise-Regular', cursive;
