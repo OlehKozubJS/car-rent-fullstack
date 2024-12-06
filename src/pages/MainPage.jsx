@@ -33,13 +33,12 @@ const MainPage = () => {
   }, [carMake]);
 
   return (
-    <div>
-      <CarRentGlobalStyle />
+    <CarRentGlobalStyle>
       <button onClick={openModal}>Open Modal</button>
       {isModal && <CarModal carId={9582} onClose={closeModal} />}
       <CarFilter />
       <CarGallery />
-    </div>
+    </CarRentGlobalStyle>
   );
 };
 
