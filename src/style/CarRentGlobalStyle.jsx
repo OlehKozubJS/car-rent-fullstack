@@ -4,15 +4,18 @@ import { injectGlobal } from "@emotion/css";
 injectGlobal`
   * {
     color: blue;
+    font-family: "Kings-Regular";
   } 
      
   @font-face {
-    font-family: "Manrope-Regular";
-    src: local("Manrope-Regular), url('./Kings-Regular.woff') format('woff');
+    font-family: "Kings-Regular";
+    src: local("Kings-Regular),
+      url('https://fonts.googleapis.com/css2?family=Kings&display=swap')
+      format('woff');
     font-weight: 400;
     unicode-range: U+0100-024f, U+1-1eff,
-    U+20a0-20ab, U+20ad-20cf, U+2c60-2c7f,
-    U+A720-A7FF;
+      U+20a0-20ab, U+20ad-20cf, U+2c60-2c7f,
+      U+A720-A7FF;
   }
 `;
 
