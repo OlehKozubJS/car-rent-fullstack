@@ -21,7 +21,7 @@ injectGlobal`
   }
 
   body {
-    font-family: "Kings-Regular", cursive;
+    font-family: "Ojuju-VariableFont_wght", cursive;
   }
 `;
 
