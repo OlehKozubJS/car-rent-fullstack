@@ -24,7 +24,7 @@ injectGlobal`
 
   body {
     font-family: "Ojuju", sans-serif;
-    background-image: linear-gradient(to right, red, green, blue);
+    background-image: radial-gradient(at right, red, green, blue);
   }
 `;
 
