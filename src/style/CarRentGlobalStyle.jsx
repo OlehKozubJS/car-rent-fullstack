@@ -1,13 +1,15 @@
 import { createGlobalStyle } from "styled-components";
 import { injectGlobal } from "@emotion/css";
 
-const CarRentGlobalStyleBase = createGlobalStyle`
+const CarRentGlobalStyleBase = createGlobalStyle``;
+
+injectGlobal`
   @font-face {
     font-family: 'MonsieurLaDoulaise-Regular';
 
     src: 
       local('MonsieurLaDoulaise-Regular'),
-      url('../../public/fonts/Kings-Regular.eot') format('embedded-opentype');
+      url('.Kings-Regular.eot') format('embedded-opentype');
         
     unicode-range: 
       U+0100-024f, U+1-1eff, U+20a0-20ab,
@@ -15,6 +17,7 @@ const CarRentGlobalStyleBase = createGlobalStyle`
   }
 
   * {
+    color: rgb(0, 0, 200);
     font-family: 'MonsieurLaDoulaise-Regular', cursive;
   } 
 `;
