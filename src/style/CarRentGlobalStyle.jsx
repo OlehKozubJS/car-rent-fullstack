@@ -5,7 +5,6 @@ injectGlobal`
   @font-face {
     font-family: "Kings-Regular";
     font-weight: 400;
-    font-style: normal;
 
     src: 
       local("Kings-Regular"),
