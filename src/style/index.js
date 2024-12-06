@@ -1,7 +1,3 @@
-import { CarRentGlobalStyleBase } from "./CarRentGlobalStyle";
-
-const CarRentGlobalStyle = CarRentGlobalStyleBase;
-
 import {
   ManropeR,
   ManropeM,
@@ -10,11 +6,4 @@ import {
   MontserratB,
 } from "./fonts";
 
-export {
-  CarRentGlobalStyle,
-  ManropeR,
-  ManropeM,
-  ManropeB,
-  MontserratR,
-  MontserratB,
-};
+export { ManropeR, ManropeM, ManropeB, MontserratR, MontserratB };
