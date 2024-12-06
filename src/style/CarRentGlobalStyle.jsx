@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { injectGlobal } from "@emotion/css";
 
 injectGlobal`
-*{
+* {
 color: red;
 }
 `;
