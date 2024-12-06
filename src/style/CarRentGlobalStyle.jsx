@@ -1,11 +1,3 @@
-import { injectGlobal } from "@emotion/css";
-
-injectGlobal`
-  body {
-    background-color: red;
-  }
-`;
-
 /*
   * {
     font-family: 'Kings-Regular', cursive;
