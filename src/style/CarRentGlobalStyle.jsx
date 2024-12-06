@@ -1,6 +1,6 @@
 import { Global, css } from "@emotion/react";
 
-const CarRentGlobalStyleBase = () => {
+const CarRentGlobalStyleBase = ({ children }) => {
   return (
     <Global
       styles={{
