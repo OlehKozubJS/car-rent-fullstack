@@ -3,10 +3,10 @@ import { injectGlobal } from "@emotion/css";
 
 const CarRentGlobalStyleBase = createGlobalStyle`
   @font-face {
-    font-family: 'Kings-Regular';
+    font-family: 'MonsieurLaDoulaise-Regular';
 
     src: 
-      local('Kings-Regular'),
+      local('MonsieurLaDoulaise-Regular'),
       url('./MonsieurLaDoulaise-Regular.eot') format('embedded-opentype');
         
     unicode-range: 
