@@ -2,9 +2,9 @@ import styled from "@emotion/styled";
 import { injectGlobal } from "@emotion/css";
 
 injectGlobal`
-* {
-color: red;
-}
+  * {
+    color: blue;
+  }
 `;
 
 const CarRentGlobalStyleBase = styled.div`
@@ -14,7 +14,7 @@ const CarRentGlobalStyleBase = styled.div`
 export { CarRentGlobalStyleBase };
 
 /*
-@font-face {
+  @font-face {
     font-family: Manrope-Regular;
     src: url('./Kings-Regular.ttf') format('truetype');
     font-weight: 400;
