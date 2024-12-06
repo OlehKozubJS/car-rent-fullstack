@@ -12,10 +12,10 @@ injectGlobal`
 
 /*
   @font-face {
-    font-family: 'MonsieurLaDoulaise-Regular';
+    font-family: 'Kings-Regular';
 
     src: 
-      local('MonsieurLaDoulaise-Regular'),
+      local('Kings-Regular'),
       url('.Kings-Regular.eot') format('embedded-opentype');
         
     unicode-range: 
