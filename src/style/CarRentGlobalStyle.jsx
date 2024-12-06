@@ -1,17 +1,18 @@
 import styled from "@emotion/styled";
 
 const CarRentGlobalStyleBase = styled.div`
-color: red;
-  &@font-face {
-    fontFamily: "Manrope-Regular",
-    src: "url('./Kings-Regular.woff') format('woff')",
-    fontWeight: 400,
-  }
-    `;
+  color: red;
+`;
 
 export { CarRentGlobalStyleBase };
 
 /*
+
+  &font-face {
+    fontFamily: "Manrope-Regular",
+    src: "url('./Kings-Regular.woff') format('woff')",
+    fontWeight: 400,
+  }
 
   font-family: 'Manrope-Regular', sans-serif;
   font-family: 'Manrope-Medium', sans-serif;
