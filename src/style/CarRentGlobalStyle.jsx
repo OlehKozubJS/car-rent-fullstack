@@ -7,7 +7,7 @@ const CarRentGlobalStyleBase = createGlobalStyle`
 
     src: 
       local('Kings-Regular'),
-      url('../../public/fonts/Kings-Regular.ttf') format('truetype');
+      url('../../../car-rent-fullstack/public/fonts/') format('truetype');
         
     unicode-range: 
       U+0100-024f, U+1-1eff, U+20a0-20ab,
