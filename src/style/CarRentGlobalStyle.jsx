@@ -1,4 +1,3 @@
-import { createGlobalStyle } from "styled-components";
 import { injectGlobal } from "@emotion/css";
 
 const CarRentGlobalStyleBase = createGlobalStyle``;
@@ -20,8 +19,6 @@ injectGlobal`
     font-family: 'MonsieurLaDoulaise-Regular', cursive;
   } 
 `;
-
-export { CarRentGlobalStyleBase };
 
 /*
   src: url('../fonts/Kings-Regular.eot?#iefix') format('embedded-opentype');
