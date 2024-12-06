@@ -7,7 +7,7 @@ const CarRentGlobalStyleBase = createGlobalStyle`
 
     src: 
       local('Kings-Regular'),
-      url('./Kings-Regular.eot');
+      url('./MonsieurLaDoulaise-Regular.eot');
 
         
     unicode-range: 
