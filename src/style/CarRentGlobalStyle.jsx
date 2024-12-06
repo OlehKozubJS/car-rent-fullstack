@@ -1,16 +1,16 @@
 import { injectGlobal } from "@emotion/css";
 
 injectGlobal`
-  * {
-    font-family: 'Kings-Regular', cursive;
-  } 
-
   body {
     background-color: red;
   }
 `;
 
 /*
+  * {
+    font-family: 'Kings-Regular', cursive;
+  } 
+
   @font-face {
     font-family: 'Kings-Regular';
 
