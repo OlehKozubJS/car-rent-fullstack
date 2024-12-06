@@ -3,7 +3,6 @@ import { injectGlobal } from "@emotion/css";
 
 injectGlobal`
   * {
-
     color: blue;
   } 
      
