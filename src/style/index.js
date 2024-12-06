@@ -21,7 +21,7 @@ injectGlobal`
   }
 
   body {
-    font-family: "Ojuju-VariableFont_wght";
+    font-family: "Ojuju-VariableFont_wght", sans-serif;
   }
 `;
 
