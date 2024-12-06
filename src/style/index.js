@@ -22,9 +22,9 @@ injectGlobal`
       U+A720-A7FF;
   }
 
-  * {
+  body {
     font-family: "Ojuju", sans-serif;
-    background-image: radial-gradient(at center, red, orange, yellow, green, cyan, blue, violet, red);
+    background-image: radial-gradient(at center, red, orange, yellow, green, cyan, blue, violet);
   }
 `;
 
