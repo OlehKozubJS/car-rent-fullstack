@@ -1,12 +1,12 @@
 import { Global, css } from "@emotion/react";
 
-const CarRentGlobalStyle = () => {
+const CarRentGlobalStyleBase = () => {
   return (
     <Global
       styles={{
         "@font-face": {
           fontFamily: "Manrope-Regular",
-          src: "url('./Kings-Regular.ttf') format('truetype')",
+          src: "url('./Kings-Regular.woff') format('woff')",
           fontWeight: 400,
         },
       }}
