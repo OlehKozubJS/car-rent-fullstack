@@ -16,7 +16,6 @@ injectGlobal`
   }
 
   * {
-    color: blue;
     font-family: "Kings-Regular", serif;
   } 
 `;
