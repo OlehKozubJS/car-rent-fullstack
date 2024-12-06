@@ -3,7 +3,7 @@ import { injectGlobal } from "@emotion/css";
 
 injectGlobal`  @font-face {
     fontFamily: "Manrope-Regular",
-    src: "url('./Kings-Regular.woff') format('woff')",
+    src: "url('./Kings-Regular.ttf') format('truetype')",
     fontWeight: 400,
   }`;
 
