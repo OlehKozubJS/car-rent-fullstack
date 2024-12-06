@@ -24,7 +24,6 @@ injectGlobal`
 
   body {
     font-family: "Ojuju", sans-serif;
-    background-image: radial-gradient(at center, red, orange 10%, yellow 20%, green 30%, cyan 40%, blue 50%, violet 60%);
   }
 `;
 
@@ -42,6 +41,7 @@ export { ManropeR, ManropeM, ManropeB, MontserratR, MontserratB };
       url("./Kings-Regular.eot?#iefix") format("embedded-opentype");
 
     background-image: linear-gradient(to right, red, green, blue);
+    background-image: radial-gradient(at center, red, orange 10%, yellow 20%, green 30%, cyan 40%, blue 50%, violet 60%);
 
   @font-face {
     font-family: Manrope-Regular;
