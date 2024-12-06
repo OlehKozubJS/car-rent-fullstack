@@ -8,8 +8,7 @@ injectGlobal`
 
     src: 
       local("Kings-Regular"),
-      url("Kings-Regular.woff2")
-        format("woff2");
+      url("Kings-Regular.woff2") format("woff2");
         
     unicode-range: 
       U+0100-024f, U+1-1eff, U+20a0-20ab,
