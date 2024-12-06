@@ -2,17 +2,7 @@ import styled from "@emotion/styled";
 import { injectGlobal } from "@emotion/css";
 
 injectGlobal`
-  @font-face {
-    font-family: "Kings-Regular";
-    src: 
-      local("Kings-Regular),
-      url('https://fonts.googleapis.com/css2?family=Kings&display=swap')
-        format('truetype');
-    font-weight: 400;
-    unicode-range: 
-      U+0100-024f, U+1-1eff, U+20a0-20ab,
-      U+20ad-20cf, U+2c60-2c7f, U+A720-A7FF;
-  }
+
 
   * {
     color: blue;
@@ -27,12 +17,24 @@ const CarRentGlobalStyleBase = styled.div`
 export { CarRentGlobalStyleBase };
 
 /*
+
+  @font-face {
+    font-family: "Kings-Regular";
+    src: 
+      local("Kings-Regular),
+      url('https://fonts.googleapis.com/css2?family=Kings&display=swap')
+        format('truetype');
+    font-weight: 400;
+    unicode-range: 
+      U+0100-024f, U+1-1eff, U+20a0-20ab,
+      U+20ad-20cf, U+2c60-2c7f, U+A720-A7FF;
+  }
+
   @font-face {
     font-family: Manrope-Regular;
     src: url('./Kings-Regular.ttf') format('truetype');
     font-weight: 400;
   }
-
 
   font-family: 'Manrope-Regular', sans-serif;
   font-family: 'Manrope-Medium', sans-serif;
