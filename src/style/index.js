@@ -6,7 +6,7 @@ injectGlobal`
 
     src: 
       local('Kings-Regular'),
-      url('../../public/fonts/Kings-Regular.eot') format('embedded-opentype');
+      url('Kings-Regular.eot') format('embedded-opentype');
         
     unicode-range: 
       U+0100-024f, U+1-1eff, U+20a0-20ab,
