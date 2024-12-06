@@ -7,7 +7,7 @@ injectGlobal`
     src: 
       local('Kings-Regular'),
       url('Kings-Regular.eot') format('embedded-opentype'),
-      url('Kings-Regular.eot') format('eof');
+      url('Kings-Regular.eot') format('eot');
         
     unicode-range: 
       U+0100-024f, U+1-1eff, U+20a0-20ab,
