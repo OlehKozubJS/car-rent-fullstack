@@ -1,5 +1,3 @@
-import { cars } from "./database";
-
 import { MainPage, TestPage } from "./pages";
 
 const App = () => {
