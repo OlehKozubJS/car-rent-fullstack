@@ -1,20 +1,13 @@
-import { Global, css } from "@emotion/react";
+import styled from "@emotion/styled";
 
-const CarRentGlobalStyleBase = ({ children }) => {
-  return (
-    <Global
-      styles={{
-        "@font-face": {
-          fontFamily: "Manrope-Regular",
-          src: "url('./Kings-Regular.woff') format('woff')",
-          fontWeight: 400,
-        },
-      }}
-    />
-  );
-};
+const CarRentGlobalStyleBase = styled.div`
+  "@font-face": {
+    fontFamily: "Manrope-Regular",
+    src: "url('./Kings-Regular.woff') format('woff')",
+    fontWeight: 400,
+  }`;
 
-export { CarRentGlobalStyle };
+export { CarRentGlobalStyleBase };
 
 /*
 
