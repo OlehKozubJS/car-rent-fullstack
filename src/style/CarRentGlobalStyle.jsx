@@ -2,7 +2,7 @@ import { injectGlobal } from "@emotion/css";
 
 injectGlobal`
   * {
-    font-family: 'MonsieurLaDoulaise-Regular', cursive;
+    font-family: 'Kings-Regular', cursive;
   } 
 
   body {
