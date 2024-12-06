@@ -12,7 +12,7 @@ injectGlobal`
   }
 
   @font-face {
-    font-family: "Ojuju-VariableFont_wght";
+    font-family: "Ojuju";
 
     src: local("Ojuju-VariableFont_wght"), url("./Ojuju-VariableFont_wght.eot") format(embedded-opentype"),
 
@@ -21,7 +21,7 @@ injectGlobal`
   }
 
   body {
-    font-family: "Ojuju-VariableFont_wght", sans-serif;
+    font-family: "Ojuju", sans-serif;
   }
 `;
 
