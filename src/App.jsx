@@ -10,11 +10,11 @@ const App = () => {
   ]);
 
   return (
-    <div>
+    <section>
       {pageName === "MainPage" && <MainPage />}
       {pageName === "TestPage" && <TestPage />}
       {pageName === "MygerPage" && <MygerPage />}
-    </div>
+    </section>
   );
 };
 
