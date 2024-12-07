@@ -131,7 +131,7 @@ const TestPage = () => {
     //onSubmit({ make, minRentalPrice, maxRentalPrice, minMileage, maxMileage });
   };
 
-  return isTestPage ? (
+  return (
     <div>
       <button type="button" onClick={closeTestPage}>
         Close test page
@@ -195,10 +195,6 @@ const TestPage = () => {
         <button type="submit">Find car</button>
       </form>
     </div>
-  ) : (
-    <button type="button" onClick={openTestPage}>
-      Open test page
-    </button>
   );
 };
 
