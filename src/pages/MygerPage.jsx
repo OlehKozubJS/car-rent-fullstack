@@ -16,7 +16,7 @@ const MygerPage = () => {
   //onSubmit({ make, minRentalPrice, maxRentalPrice, minMileage, maxMileage });
 
   return isMygerPage ? (
-    <div>
+    <section>
       <button type="button" onClick={closeMygerPage}>
         Close myger page
       </button>
@@ -24,7 +24,7 @@ const MygerPage = () => {
       <p></p>
       <p></p>
       <p></p>
-    </div>
+    </section>
   ) : (
     <button type="button" onClick={openMygerPage}>
       Open myger page
