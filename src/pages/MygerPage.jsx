@@ -14,7 +14,9 @@ const JustAnotherDiv = styled.div`
   position: absolute;
   top: 200px;
   left: 200px;
-  width: ${250}px;
+  width: ${({ width = 100 }) => {
+    return width;
+  }}px;
   height: 50px;
   background-color: white;
 `;
