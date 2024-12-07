@@ -34,7 +34,7 @@ const MygerPage = () => {
 
   return (
     <CheapTrick>
-      <JustAnotherDiv>Спать иди, быстро!</JustAnotherDiv>
+      <JustAnotherDiv>НЕМЕДЛЕННО ПРЕКРАТИ ПЕТЬ!</JustAnotherDiv>
       <div>
         <div></div>
       </div>
