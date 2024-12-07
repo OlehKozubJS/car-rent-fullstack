@@ -14,10 +14,12 @@ const JustAnotherDiv = styled.div`
   position: absolute;
   top: 200px;
   left: 200px;
-  width: ${({ width = 0 }) => {
-    return width;
+  width: ${({ size = 0 }) => {
+    return size;
   }}px;
-  height: ${({ size = 0 }) => {}}px;
+  height: ${({ size = 0 }) => {
+    return size;
+  }}px;
   background-color: white;
 `;
 
