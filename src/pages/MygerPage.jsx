@@ -11,11 +11,11 @@ const CheapTrick = styled.section`
 `;
 
 const JustAnotherDiv = styled.div`
+  position: absolute;
   top: 200px;
   left: 200px;
   width: 100px;
   height: 50px;
-  position: absolute;
 `;
 
 const MygerPage = () => {
