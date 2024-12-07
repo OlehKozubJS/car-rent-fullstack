@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import { carsLocalData } from "./imports";
 
-const TestPage = () => {
+const MygerPage = () => {
   const [isTestPage, setIsTestPage] = useState(false);
 
   const openMygerPage = () => {
