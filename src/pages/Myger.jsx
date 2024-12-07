@@ -17,7 +17,7 @@ const TestPage = () => {
 
   return isTestPage ? (
     <div>
-      <button type="button" onClick={closeTestPage}>
+      <button type="button" onClick={closeMygerPage}>
         Close myger page
       </button>
       <p></p>
@@ -26,7 +26,7 @@ const TestPage = () => {
       <p></p>
     </div>
   ) : (
-    <button type="button" onClick={openTestPage}>
+    <button type="button" onClick={openMygerPage}>
       Open myger page
     </button>
   );
