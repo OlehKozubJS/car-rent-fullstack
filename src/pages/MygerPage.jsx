@@ -5,8 +5,7 @@ import styled from "@emotion/styled";
 import { carsLocalData } from "./imports";
 
 const CheapTrick = styled.section`
-  width: inherit;
-  height: inherit;
+  height: 500px;
   background-color: black;
 `;
 
