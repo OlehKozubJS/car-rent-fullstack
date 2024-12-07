@@ -12,13 +12,13 @@ const App = () => {
   return (
     <section>
       <label>
-        <input />
+        <input name="pageSwitcher" />
       </label>
       <label>
-        <input />
+        <input name="pageSwitcher" />
       </label>
       <label>
-        <input />
+        <input name="pageSwitcher" />
       </label>
 
       {pageName === "MainPage" && <MainPage />}
