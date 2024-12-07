@@ -26,7 +26,7 @@ const MygerPage = () => {
   return (
     <CheapTrick>
       <div>
-        <div>pridurok</div>
+        <div></div>
       </div>
       <p></p>
       <p></p>
