@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
-import { carsLocalData } from "./imports";
+import {} from "@emotion/styled";
 
-import {} from "";
+import { carsLocalData } from "./imports";
 
 const MygerPage = () => {
   const [isMygerPage, setIsMygerPage] = useState(false);
