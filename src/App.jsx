@@ -3,11 +3,7 @@ import { eseEffect, useState } from "react";
 import { MainPage, TestPage, MygerPage } from "./pages";
 
 const App = () => {
-  const [pageName, setPageName] = useState([
-    "MainPage",
-    "TestPage",
-    "MygerPage",
-  ]);
+  const [pageName, setPageName] = useState("MainPage");
 
   const handlePageName = (event) => {
     setPageName(event.target.value);
