@@ -6,7 +6,7 @@ import { carsLocalData } from "./imports";
 
 const CheapTrick = styled.section`
   width: inherit;
-  height: auto;
+  height: inherit;
   background-color: inherit;
 `;
 
