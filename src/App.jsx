@@ -11,9 +11,15 @@ const App = () => {
 
   return (
     <section>
-      <label></label>
-      <label></label>
-      <label></label>
+      <label>
+        <input />
+      </label>
+      <label>
+        <input />
+      </label>
+      <label>
+        <input />
+      </label>
 
       {pageName === "MainPage" && <MainPage />}
       {pageName === "TestPage" && <TestPage />}
