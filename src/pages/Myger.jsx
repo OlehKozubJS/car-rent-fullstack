@@ -1,14 +1,6 @@
 import { useState, useEffect } from "react";
 
-import {
-  cars,
-  handleEventListener,
-  handleInterval,
-  handleTimeOut,
-  CarFilter,
-  CarGallery,
-  CarModal,
-} from "./imports";
+import { carsLocalData } from "./imports";
 
 const TestPage = () => {
   const [isTestPage, setIsTestPage] = useState(false);
