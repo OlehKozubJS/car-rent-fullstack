@@ -117,6 +117,9 @@ const TestPage = () => {
 
   return isTestPage ? (
     <div>
+      <button type="button" onClick={closeTestPage}>
+        Close test page
+      </button>
       <p></p>
       <p></p>
       <p></p>
