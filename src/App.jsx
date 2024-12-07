@@ -12,13 +12,13 @@ const App = () => {
   return (
     <section>
       <label htmlFor="mainPageRadio">
-        <input id="mainPageRadio" name="pageSwitcher" />
+        <input id="mainPageRadio" name="pageSwitcher" type="radio" />
       </label>
       <label htmlFor="testPageRadio">
-        <input id="testPageRadio" name="pageSwitcher" />
+        <input id="testPageRadio" name="pageSwitcher" type="radio" />
       </label>
       <label htmlFor="mygerPageRadio">
-        <input id="mygerPageRadio" name="pageSwitcher" />
+        <input id="mygerPageRadio" name="pageSwitcher" type="radio" />
       </label>
 
       {pageName === "MainPage" && <MainPage />}
