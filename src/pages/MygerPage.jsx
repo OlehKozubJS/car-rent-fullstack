@@ -7,6 +7,7 @@ import { carsLocalData } from "./imports";
 const CheapTrick = styled.section`
   height: 500px;
   background-color: black;
+  position: relative;
 `;
 
 const MygerPage = () => {
