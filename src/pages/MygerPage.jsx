@@ -36,7 +36,7 @@ const MygerPage = () => {
 
   return (
     <CheapTrick>
-      <JustAnotherDiv></JustAnotherDiv>
+      <JustAnotherDiv width={500}></JustAnotherDiv>
       <div>
         <div></div>
       </div>
