@@ -17,6 +17,9 @@ const MygerPage = () => {
 
   return (
     <section>
+      <div>
+        <div></div>
+      </div>
       <p></p>
       <p></p>
       <p></p>
