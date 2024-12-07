@@ -10,6 +10,8 @@ const CheapTrick = styled.section`
   position: relative;
 `;
 
+const JustAnotherDiv = styled.div``;
+
 const MygerPage = () => {
   const [isMygerPage, setIsMygerPage] = useState(false);
 
