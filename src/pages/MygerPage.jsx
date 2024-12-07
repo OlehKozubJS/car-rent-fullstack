@@ -13,6 +13,8 @@ const CheapTrick = styled.section`
 const JustAnotherDiv = styled.div`
   top: 200px;
   left: 200px;
+  width: 100px;
+  height: 50px;
   position: absolute;
 `;
 
