@@ -5,9 +5,9 @@ import styled from "@emotion/styled";
 import { carsLocalData } from "./imports";
 
 const CheapTrick = styled.section`
-  width: auto;
+  width: inherit;
   height: auto;
-  background-color: black;
+  background-color: inherit;
 `;
 
 const MygerPage = () => {
