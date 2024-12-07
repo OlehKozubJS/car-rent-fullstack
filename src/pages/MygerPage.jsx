@@ -32,4 +32,4 @@ const MygerPage = () => {
   );
 };
 
-export { TestPage };
+export { MygerPage };
