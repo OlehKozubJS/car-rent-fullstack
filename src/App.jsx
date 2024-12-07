@@ -11,14 +11,14 @@ const App = () => {
 
   return (
     <section>
-      <label>
-        <input name="pageSwitcher" />
+      <label for="mainPageRadio">
+        <input id="mainPageRadio" name="pageSwitcher" />
       </label>
-      <label>
-        <input name="pageSwitcher" />
+      <label for="testPageRadio">
+        <input id="testPageRadio" name="pageSwitcher" />
       </label>
-      <label>
-        <input name="pageSwitcher" />
+      <label for="mygerPageRadio">
+        <input id="mygerPageRadio" name="pageSwitcher" />
       </label>
 
       {pageName === "MainPage" && <MainPage />}
