@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import {} from "@emotion/styled";
+import styled from "@emotion/styled";
 
 import { carsLocalData } from "./imports";
 
