@@ -20,7 +20,7 @@ const App = () => {
           id="MainPageRadio"
           name="pageSwitcher"
           type="radio"
-          onchange={handlePageName}
+          onChange={handlePageName}
           value="MainPage"
         />
         <p>Main page</p>
