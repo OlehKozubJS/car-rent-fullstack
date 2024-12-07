@@ -11,9 +11,9 @@ const App = () => {
 
   return (
     <div>
-      {<MainPage />}
-      {<TestPage />}
-      {<MygerPage />}
+      {pageName === "MainPage" && <MainPage />}
+      {pageName === "TestPage" && <TestPage />}
+      {pageName === "MygerPage" && <MygerPage />}
     </div>
   );
 };
