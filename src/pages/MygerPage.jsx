@@ -16,6 +16,7 @@ const JustAnotherDiv = styled.div`
   left: 200px;
   width: 100px;
   height: 50px;
+  background-color: white;
 `;
 
 const MygerPage = () => {
@@ -33,7 +34,7 @@ const MygerPage = () => {
 
   return (
     <CheapTrick>
-      <JustAnotherDiv></JustAnotherDiv>
+      <JustAnotherDiv>Спать иди, быстро!</JustAnotherDiv>
       <div>
         <div></div>
       </div>
