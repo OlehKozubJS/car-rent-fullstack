@@ -5,11 +5,11 @@ import { carsLocalData } from "./imports";
 const TestPage = () => {
   const [isTestPage, setIsTestPage] = useState(false);
 
-  const openTestPage = () => {
+  const openMygerPage = () => {
     setIsTestPage(true);
   };
 
-  const closeTestPage = () => {
+  const closeMygerPage = () => {
     setIsTestPage(false);
   };
 
