@@ -11,6 +11,8 @@ const CheapTrick = styled.section`
 `;
 
 const JustAnotherDiv = styled.div`
+  top: 200px;
+  left: 200px;
   position: absolute;
 `;
 
@@ -29,6 +31,7 @@ const MygerPage = () => {
 
   return (
     <CheapTrick>
+      <JustAnotherDiv></JustAnotherDiv>
       <div>
         <div></div>
       </div>
