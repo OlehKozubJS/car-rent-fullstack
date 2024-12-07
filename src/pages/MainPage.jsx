@@ -7,7 +7,6 @@ import {
   CarFilter,
   CarGallery,
   CarModal,
-  CarRentGlobalStyle,
   getCarModel,
 } from "./imports";
 
