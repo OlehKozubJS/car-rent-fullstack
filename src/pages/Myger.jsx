@@ -6,11 +6,11 @@ const TestPage = () => {
   const [isTestPage, setIsTestPage] = useState(false);
 
   const openMygerPage = () => {
-    setIsTestPage(true);
+    setIsMygerPage(true);
   };
 
   const closeMygerPage = () => {
-    setIsTestPage(false);
+    setIsMygerPage(false);
   };
 
   //onSubmit({ make, minRentalPrice, maxRentalPrice, minMileage, maxMileage });
