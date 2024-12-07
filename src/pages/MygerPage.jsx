@@ -4,7 +4,9 @@ import styled from "@emotion/styled";
 
 import { carsLocalData } from "./imports";
 
-const cheapTrick = styled.section``;
+const CheapTrick = styled.section`
+  background-color: black;
+`;
 
 const MygerPage = () => {
   const [isMygerPage, setIsMygerPage] = useState(false);
