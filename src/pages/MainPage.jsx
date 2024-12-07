@@ -32,12 +32,12 @@ const MainPage = () => {
   }, [carMake]);
 
   return (
-    <div>
+    <section>
       <button onClick={openModal}>Open Modal</button>
       {isModal && <CarModal carId={9582} onClose={closeModal} />}
       <CarFilter />
       <CarGallery />
-    </div>
+    </section>
   );
 };
 
