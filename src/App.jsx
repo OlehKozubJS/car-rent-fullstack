@@ -20,7 +20,7 @@ const App = () => {
               type="radio"
               onChange={handlePageName}
               value="MainPage"
-              checked={false}
+              checked={pageName === "MainPage"}
             />
             <span>Main page</span>
           </label>
