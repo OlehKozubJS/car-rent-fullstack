@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { carsLocalData } from "./imports";
 
 const MygerPage = () => {
-  const [isTestPage, setIsTestPage] = useState(false);
+  const [isMygerPage, setIsMygerPage] = useState(false);
 
   const openMygerPage = () => {
     setIsMygerPage(true);
