@@ -22,7 +22,7 @@ const MygerPage = () => {
   //onSubmit({ make, minRentalPrice, maxRentalPrice, minMileage, maxMileage });
 
   return (
-    <section>
+    <CheapTrick>
       <div>
         <div></div>
       </div>
@@ -30,7 +30,7 @@ const MygerPage = () => {
       <p></p>
       <p></p>
       <p></p>
-    </section>
+    </CheapTrick>
   );
 };
 
