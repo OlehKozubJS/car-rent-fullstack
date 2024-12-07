@@ -3,7 +3,7 @@ import { eseEffect, useState } from "react";
 import { MainPage, TestPage, MygerPage } from "./pages";
 
 const App = () => {
-  const [] = useState();
+  const [] = useState(["MainPage", "TestPage", "MygerPage"]);
 
   return (
     <div>
