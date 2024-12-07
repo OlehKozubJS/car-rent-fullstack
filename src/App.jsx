@@ -23,7 +23,7 @@ const App = () => {
           onChange={handlePageName}
           value="MainPage"
         />
-        <p>Main page</p>
+        <span>Main page</span>
       </label>
       <label htmlFor="TestPageRadio">
         <input
@@ -33,7 +33,7 @@ const App = () => {
           onChange={handlePageName}
           value="TestPage"
         />
-        <p>Test page</p>
+        <span>Test page</span>
       </label>
       <label htmlFor="MygerPageRadio">
         <input
@@ -43,7 +43,7 @@ const App = () => {
           onChange={handlePageName}
           value="MygerPage"
         />
-        <p>Myger page</p>
+        <span>Myger page</span>
       </label>
 
       {pageName === "MainPage" && <MainPage />}
