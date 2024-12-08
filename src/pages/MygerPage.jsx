@@ -55,7 +55,7 @@ const MygerPage = () => {
     );
 
     return () => {
-      clearTimeout(setWhiteSpotParameters, 1000);
+      clearTimeout(setWhiteSpotParametersAnimation, 1000);
     };
   }, [sizeValue, topValue, leftValue]);
 
