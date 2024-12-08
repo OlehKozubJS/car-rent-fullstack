@@ -50,7 +50,7 @@ const MygerPage = () => {
 
   useEffect(() => {
     const setWhiteSpotCoordinatesAnimation = setTimeout(
-      setWhiteSpotParameters,
+      setWhiteSpotCoordinates,
       1000
     );
 
