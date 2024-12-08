@@ -23,6 +23,6 @@ injectGlobal`
 
   @font-face {
     font-family: "MysterYQuest-Regular"
-    src: "";
+    src: url(${MysteryQuestRegular});
   }
 `;
