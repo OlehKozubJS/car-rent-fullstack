@@ -11,8 +11,6 @@ import {
 } from "./imports";
 
 const TestPage = () => {
-  const [isTestPage, setIsTestPage] = useState(false);
-
   const [time, setTime] = useState(0);
 
   const [fibonacciArray, setFibonacciArray] = useState([0, 1]);
@@ -20,14 +18,6 @@ const TestPage = () => {
   const [primeNumbersArray, setPrimeNumbersArray] = useState([2]);
 
   const [date, setDate] = useState(new Date());
-
-  const openTestPage = () => {
-    setIsTestPage(true);
-  };
-
-  const closeTestPage = () => {
-    setIsTestPage(false);
-  };
 
   const dateAnimationFunction = () => {
     setDate(new Date());
@@ -133,9 +123,6 @@ const TestPage = () => {
 
   return (
     <div>
-      <button type="button" onClick={closeTestPage}>
-        Close test page
-      </button>
       {String(date)}
       <p>{time}</p>
       <p>{fibonacciArray.join(", ")}</p>
