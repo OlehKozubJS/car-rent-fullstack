@@ -75,7 +75,7 @@ const MygerPage = () => {
   //onSubmit({ make, minRentalPrice, maxRentalPrice, minMileage, maxMileage });
 
   return (
-    <div>
+    <div style={{}}>
       <CheapTrick>
         <JustAnotherDiv
           top={topValue}
