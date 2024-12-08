@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { MainPage, TestPage, MygerPage } from "./pages";
 
 const App = () => {
-  const [pageNames] = useState([
+  const [pages] = useState([
     { pageName: "Main page", element: MainPage },
     { pageName: "Test page", element: TestPage },
     { pageName: "Myger page", element: MygerPage },
@@ -19,7 +19,8 @@ const App = () => {
       <header>
         <nav>
           <ul>
-            ({pageName, element})=> {return (
+            {pages.map({pageName, element}) => {
+              return (
             <li>
               <label htmlFor="MainPageRadio">
                 <input
@@ -33,7 +34,9 @@ const App = () => {
                 <span>Main page</span>
               </label>
             </li>
-            );}
+            );
+            }
+            }
           </ul>
         </nav>
       </header>
