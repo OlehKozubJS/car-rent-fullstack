@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Manrope-Regular";
+  src: local("Manrope-Regular"), url("./Manrope-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Manrope-Medium";
+  src: local("Manrope-Medium"), url("./Manrope-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Manrope-SemiBold";
+  src: local("Manrope-SemiBold"),
+    url("./Manrope-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: local("Montserrat-Regular"),
+    url("./Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: local("Montserrat-SemiBold"),
+    url("./Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Kings-Regular";
+
+  src: local("Kings-Regular"), url("./Kings-Regular.ttf") format("truetype"),
+    url("./Kings-Regular.eot?#iefix") format("embedded-opentype");
+
+  unicode-range: U+0100-024f, U+1-1eff, U+20a0-20ab, U+20ad-20cf, U+2c60-2c7f,
+    U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Ojuju";
+
+  src: local("Ojuju"), url("./Ojuju.ttf") format("truetype"),
+    url("./Ojuju.eot") format("eot"),
+    url("./Ojuju.eot?#iefix") format("embedded-opentype");
+
+  unicode-range: U+0100-024f, U+1-1eff, U+20a0-20ab, U+20ad-20cf, U+2c60-2c7f,
+    U+A720-A7FF;
+}
+
+* {
+  background-color: green;
+}
