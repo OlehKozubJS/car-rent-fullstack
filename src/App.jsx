@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { MainPage, TestPage, MygerPage } from "./pages";
 
-import "./style";
+//import "./style";
 
 const App = () => {
   const [pages] = useState({
