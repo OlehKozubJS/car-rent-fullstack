@@ -48,7 +48,16 @@ const MygerPage = () => {
     setIsMygerPage(false);
   };
 
-  useEffect(() => {}, [sizeValue, topValue, leftValue]);
+  useEffect(() => {
+    const setWhiteSpotParametersAnimation = setTimeout(
+      setWhiteSpotParameters,
+      1000
+    );
+
+    return () => {
+      clearTimeout(setWhiteSpotParameters, 1000);
+    };
+  }, [sizeValue, topValue, leftValue]);
 
   //onSubmit({ make, minRentalPrice, maxRentalPrice, minMileage, maxMileage });
 
