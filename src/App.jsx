@@ -18,7 +18,6 @@ const App = () => {
     <>
       <header>
         <nav>
-          {" "}
           <ul>
             <li>
               <label htmlFor="MainPageRadio">
