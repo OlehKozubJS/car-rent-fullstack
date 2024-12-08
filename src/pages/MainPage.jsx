@@ -21,16 +21,6 @@ const MainPage = () => {
     setIsModal(false);
   };
 
-  const dispatch = useDispatch();
-
-  const carMake = useSelector(getCarModel);
-
-  useEffect(() => {
-    dispatch(
-      setSelectedCars(carsLocalData.filter((car) => car.make === carMake))
-    );
-  }, [carMake]);
-
   return (
     <section>
       <button onClick={openModal}>Open Modal</button>
