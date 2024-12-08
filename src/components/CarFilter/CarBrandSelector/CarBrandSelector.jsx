@@ -55,7 +55,7 @@ const CarBrandSelector = ({ carBrands }) => {
             onChange={handleCarBrand}
           />
         ) : (
-          <CarBrandSelectorNotFoundMessageStyleBase className="car-filter-options-not-found-message">
+          <CarBrandSelectorNotFoundMessageStyleBase>
             Sorry, no results found
           </CarBrandSelectorNotFoundMessageStyleBase>
         ))}
