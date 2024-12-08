@@ -31,6 +31,7 @@ const JustAnotherDiv = styled.div`
 
 const MygerPage = () => {
   const [sizeValue, setSizeValue] = useState(0);
+  const [] = useState(0);
   const [topValue, setTopValue] = useState(0);
   const [leftValue, setLeftValue] = useState(0);
 
@@ -65,7 +66,7 @@ const MygerPage = () => {
     return () => {
       crearTimeout(Animation);
     };
-  }, []);
+  }, [sizeValue]);
 
   //onSubmit({ make, minRentalPrice, maxRentalPrice, minMileage, maxMileage });
 
