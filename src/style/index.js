@@ -5,7 +5,7 @@ import KingsRegular from "./fonts/Kings-Regular.woff";
 injectGlobal`
   @font-face {
     font-family: "Kings-Regular";
-    src: url(${KingsRegular}) format("woff");
+    src: local("Kings-Regular"),url(${KingsRegular}) format("woff");
   }
 `;
 
