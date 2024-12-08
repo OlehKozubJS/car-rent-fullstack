@@ -65,7 +65,7 @@ const MygerPage = () => {
   }, [sizeValue]);
 
   useEffect(() => {
-    const setWhiteSpotSizeAnimation = setTimeout(setWhiteSpotSize, 10);
+    const setWhiteSpotSizeAnimation = setTimeout(setWhiteSpotSize, 50);
 
     return () => {
       clearTimeout(setWhiteSpotSizeAnimation);
