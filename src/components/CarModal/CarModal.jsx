@@ -60,95 +60,91 @@ const CarModal = ({ carId, onClose }) => {
           </CarModalCloseButtonStyleBase>
         </CarModalCloseButtonContainerStyleBase>
         <CarModalImageStyleBase src={car.img} alt="" />
-        <CarModalHeaderStyleBase className="{ManropeM}">
+        <CarModalHeaderStyleBase>
           <span>{car.make}</span>{" "}
           <CarModalItemValueStyleBase>{car.model}</CarModalItemValueStyleBase>,{" "}
           <span>{car.year}</span>
         </CarModalHeaderStyleBase>
         <CarModalItemsStyleBase>
-          <CarModalItemStyleBase className="{ManropeR}">
+          <CarModalItemStyleBase>
             {car.address.split(", ")[1]}
           </CarModalItemStyleBase>
-          <CarModalItemStyleBase className="{ManropeR}">
+          <CarModalItemStyleBase>
             {car.address.split(", ")[2]}
           </CarModalItemStyleBase>
-          <CarModalItemStyleBase className="{ManropeR}">
+          <CarModalItemStyleBase>
             Id:{" "}
             <CarModalItemValueStyleBase>{car.id}</CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
-          <CarModalItemStyleBase className="{ManropeR}">
+          <CarModalItemStyleBase>
             Year:{" "}
             <CarModalItemValueStyleBase>{car.year}</CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
-          <CarModalItemStyleBase className="{ManropeR}">
+          <CarModalItemStyleBase>
             Type:{" "}
             <CarModalItemValueStyleBase>{car.type}</CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
-          <CarModalItemStyleBase className="{ManropeR}">
+          <CarModalItemStyleBase>
             Fuel Consumption:{" "}
             <CarModalItemValueStyleBase>
               {car.fuelConsumption}
             </CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
-          <CarModalItemStyleBase className="{ManropeR}">
+          <CarModalItemStyleBase>
             Engine Size:{" "}
             <CarModalItemValueStyleBase>
               {car.engineSize}
             </CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
         </CarModalItemsStyleBase>
-        <CarModalDescriptionStyleBase className="{ManropeR}">
+        <CarModalDescriptionStyleBase>
           {car.description}
         </CarModalDescriptionStyleBase>
-        <CarModalSubHeaderStyleBase className="{ManropeM}">
+        <CarModalSubHeaderStyleBase>
           Accessories and functionalities:
         </CarModalSubHeaderStyleBase>
         <CarModalItemsStyleBase>
           {car.accessories.map((item, index) => {
             return (
-              <CarModalItemStyleBase key={index} className="{ManropeR}">
-                {item}
-              </CarModalItemStyleBase>
+              <CarModalItemStyleBase key={index}>{item}</CarModalItemStyleBase>
             );
           })}
           {car.functionalities.map((item, index) => {
             return (
-              <CarModalItemStyleBase key={index} className="{ManropeR}">
-                {item}
-              </CarModalItemStyleBase>
+              <CarModalItemStyleBase key={index}>{item}</CarModalItemStyleBase>
             );
           })}
         </CarModalItemsStyleBase>
-        <CarModalSubHeaderStyleBase className="{ManropeM}">
+        <CarModalSubHeaderStyleBase>
           Rental Conditions:{" "}
         </CarModalSubHeaderStyleBase>
         <CarModalRentalItemsStyleBase>
-          <CarModalRentalItemStyleBase className="{MontserratR}">
+          <CarModalRentalItemStyleBase>
             Minimum age:{" "}
-            <CarModalRentalItemValueStyleBase className="{MontserratB}">
+            <CarModalRentalItemValueStyleBase>
               {car.rentalConditions.split("\n")[0].split(" ")[2]}
             </CarModalRentalItemValueStyleBase>
           </CarModalRentalItemStyleBase>
-          <CarModalRentalItemStyleBase className="{MontserratR}">
+          <CarModalRentalItemStyleBase>
             {car.rentalConditions.split("\n")[1]}
           </CarModalRentalItemStyleBase>
-          <CarModalRentalItemStyleBase className="{MontserratR}">
+          <CarModalRentalItemStyleBase>
             {car.rentalConditions.split("\n")[2]}
           </CarModalRentalItemStyleBase>
-          <CarModalRentalItemStyleBase className="{MontserratR}">
+          <CarModalRentalItemStyleBase>
             Mileage:{" "}
-            <CarModalRentalItemValueStyleBase className="{MontserratB}">
+            <CarModalRentalItemValueStyleBase>
               {car.mileage}
             </CarModalRentalItemValueStyleBase>
           </CarModalRentalItemStyleBase>
-          <CarModalRentalItemStyleBase className="{MontserratR}">
+          <CarModalRentalItemStyleBase>
             Price:{" "}
-            <CarModalRentalItemValueStyleBase className="{MontserratB}">
+            <CarModalRentalItemValueStyleBase>
               {car.rentalPrice}
             </CarModalRentalItemValueStyleBase>
           </CarModalRentalItemStyleBase>
         </CarModalRentalItemsStyleBase>
-        <CarModalSubmitButtonStyleBase className="{ManropeB}">
+        <CarModalSubmitButtonStyleBase>
           Rental car
         </CarModalSubmitButtonStyleBase>
       </CarModalContainerStyleBase>
