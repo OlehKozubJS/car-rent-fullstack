@@ -22,7 +22,7 @@ injectGlobal`
   }
 
   @font-face {
-    font-family: ""
+    font-family: "MysterYQuest-Regular"
     src: "";
   }
 `;
