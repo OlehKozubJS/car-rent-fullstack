@@ -19,6 +19,7 @@ const App = () => {
       <header>
         <nav>
           <ul>
+            ({pageName, element})=> {return (
             <li>
               <label htmlFor="MainPageRadio">
                 <input
@@ -32,6 +33,7 @@ const App = () => {
                 <span>Main page</span>
               </label>
             </li>
+            );}
           </ul>
         </nav>
       </header>
