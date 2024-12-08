@@ -60,10 +60,10 @@ const MygerPage = () => {
   }, [sizeValue]);
 
   useEffect(() => {
-    const Animation = setTimeout();
+    const setWhiteSpotAnimation = setTimeout();
 
     return () => {
-      crearTimeout(Animation);
+      crearTimeout(setWhiteSpotAnimation);
     };
   }, [sizeValue]);
 
