@@ -10,6 +10,8 @@ import {
   getCarModel,
 } from "./imports";
 
+import {} from "../";
+
 const MainPage = () => {
   const [isModal, setIsModal] = useState(false);
 
