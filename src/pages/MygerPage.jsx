@@ -81,6 +81,7 @@ const MygerPage = () => {
           Hello
         </JustAnotherDiv>
       </CheapTrick>
+      <p>Progress wlways wins!</p>
     </div>
   );
 };
