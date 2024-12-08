@@ -15,7 +15,10 @@ const App = () => {
   };
 
   return (
-    <section>
+    <header>
+      <nav></nav>
+    </header>
+    <main>
       <ul>
         <li>
           <label htmlFor="MainPageRadio">
@@ -59,7 +62,7 @@ const App = () => {
       {pageName === "MainPage" && <MainPage />}
       {pageName === "TestPage" && <TestPage />}
       {pageName === "MygerPage" && <MygerPage />}
-    </section>
+    </main>
   );
 };
 
