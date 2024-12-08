@@ -75,13 +75,15 @@ const MygerPage = () => {
   //onSubmit({ make, minRentalPrice, maxRentalPrice, minMileage, maxMileage });
 
   return (
-    <CheapTrick>
-      <JustAnotherDiv
-        top={topValue}
-        left={leftValue}
-        size={middleSizeValue}
-      ></JustAnotherDiv>
-    </CheapTrick>
+    <div>
+      <CheapTrick>
+        <JustAnotherDiv
+          top={topValue}
+          left={leftValue}
+          size={middleSizeValue}
+        ></JustAnotherDiv>
+      </CheapTrick>
+    </div>
   );
 };
 
