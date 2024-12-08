@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 
 import { MainPage, TestPage, MygerPage } from "./pages";
 
+import "./style";
+
 const App = () => {
   const [pages] = useState({
     "Main page": <MainPage />,
