@@ -79,7 +79,7 @@ const MygerPage = () => {
       <JustAnotherDiv
         top={topValue}
         left={leftValue}
-        size={sizeValue}
+        size={middleSizeValue}
       ></JustAnotherDiv>
     </CheapTrick>
   );
