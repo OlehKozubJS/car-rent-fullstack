@@ -77,9 +77,11 @@ const MygerPage = () => {
   return (
     <div style={{ fontFamily: "Kings-Regular" }}>
       <CheapTrick>
-        <JustAnotherDiv top={topValue} left={leftValue} size={middleSizeValue}>
-          Hello
-        </JustAnotherDiv>
+        <JustAnotherDiv
+          top={topValue}
+          left={leftValue}
+          size={middleSizeValue}
+        ></JustAnotherDiv>
       </CheapTrick>
       <p>Progress always wins!</p>
     </div>
