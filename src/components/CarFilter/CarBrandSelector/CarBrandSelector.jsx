@@ -3,8 +3,6 @@ import { useDispatch } from "react-redux";
 
 import { carsLocalData } from "./imports";
 
-import { setCarModel, setSelectedCars } from "../../../hooks";
-
 import { CarBrandSelectorInput } from "./CarBrandSelectorInput";
 import { CarBrandSelectorMenu } from "./CarBrandSelectorMenu";
 
@@ -14,8 +12,6 @@ const CarBrandSelector = ({ carBrands }) => {
   const [filteredCarBrands, setFilteredCarBrands] = useState([]);
   const [isCarBrandsOptions, setIsCarBrandsOptions] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
-
-  const dispatch = useDispatch();
 
   const toggleCarBrandOptions = (value) => {
     setIsCarBrandsOptions(value);
