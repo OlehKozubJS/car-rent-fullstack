@@ -23,5 +23,6 @@ injectGlobal`
 
   @font-face {
     font-family: ""
+    src: "";
   }
 `;
