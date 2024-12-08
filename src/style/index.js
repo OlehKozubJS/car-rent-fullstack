@@ -25,13 +25,6 @@ injectGlobal`
   }
 `;
 
-import {
-  ManropeR,
-  ManropeM,
-  ManropeB,
-  MontserratR,
-  MontserratB,
-  commonFonts,
-} from "./fonts";
+import { commonFonts } from "./fonts";
 
 export { ManropeR, ManropeM, ManropeB, MontserratR, MontserratB, commonFonts };
