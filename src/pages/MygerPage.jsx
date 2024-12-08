@@ -20,6 +20,7 @@ const JustAnotherDiv = styled.div`
   height: ${({ size = 0 }) => {
     return size;
   }}px;
+
   background-color: white;
 `;
 
