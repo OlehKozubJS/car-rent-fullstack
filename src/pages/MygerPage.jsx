@@ -63,7 +63,11 @@ const MygerPage = () => {
 
   return (
     <CheapTrick>
-      <JustAnotherDiv top={30} left={40} size={100}></JustAnotherDiv>
+      <JustAnotherDiv
+        top={topValue}
+        left={leftValue}
+        size={sizeValue}
+      ></JustAnotherDiv>
       <div>
         <div></div>
       </div>
