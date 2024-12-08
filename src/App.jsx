@@ -11,7 +11,7 @@ const App = () => {
   const [CurrentPage, setCurrentPage] = useState("MainPage");
 
   const handleCurrentPageName = (event) => {
-    setCurrentPageName(event.target.value);
+    setCurrentPageName(pages[event.target.value]);
   };
 
   return (
@@ -19,7 +19,7 @@ const App = () => {
       <header>
         <nav>
           <ul>
-            {pages.map(({ pageName }) => {
+            {Object.keys(pages).map(({ pageName }) => {
               return (
                 <li key={pageName}>
                   <label htmlFor={pageName}>
@@ -29,7 +29,7 @@ const App = () => {
                       type="radio"
                       onChange={handleCurrentPageName}
                       value={pageName}
-                      checked={currentPageName === pageName}
+                      checked={CurrentPage === pageName}
                     />
                     <span>{pageName}</span>
                   </label>
