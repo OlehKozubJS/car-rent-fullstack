@@ -8,7 +8,7 @@ const App = () => {
     "Test page": <TestPage />,
     "Myger page": <MygerPage />,
   });
-  const [currentPageName, setCurrentPageName] = useState("Myger page");
+  const [currentPageName, setCurrentPageName] = useState("Main page");
 
   const handleCurrentPageName = (event) => {
     setCurrentPageName(event.target.value);
