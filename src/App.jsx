@@ -32,30 +32,6 @@ const App = () => {
                 <span>Main page</span>
               </label>
             </li>
-            <li>
-              <label htmlFor="TestPageRadio">
-                <input
-                  id="TestPageRadio"
-                  name="pageSwitcher"
-                  type="radio"
-                  onChange={handlePageName}
-                  value="TestPage"
-                />
-                <span>Test page</span>
-              </label>
-            </li>
-            <li>
-              <label htmlFor="MygerPageRadio">
-                <input
-                  id="MygerPageRadio"
-                  name="pageSwitcher"
-                  type="radio"
-                  onChange={handlePageName}
-                  value="MygerPage"
-                />
-                <span>Myger page</span>
-              </label>
-            </li>
           </ul>
         </nav>
       </header>
