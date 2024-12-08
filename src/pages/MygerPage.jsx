@@ -46,7 +46,12 @@ const MygerPage = () => {
   };
 
   const setWhiteSpotSize = () => {
-    setMiddleSizeValue(middleSizeValue + 1);
+    if () {
+      setMiddleSizeValue(0);
+    }
+    else {
+      setMiddleSizeValue(middleSizeValue + 1);
+    }
   };
 
   useEffect(() => {
@@ -66,7 +71,7 @@ const MygerPage = () => {
     return () => {
       clearTimeout(setWhiteSpotSizeAnimation);
     };
-  }, [sizeValue]);
+  }, [sizeValue, middleSizeValue]);
 
   //onSubmit({ make, minRentalPrice, maxRentalPrice, minMileage, maxMileage });
 
