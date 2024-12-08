@@ -40,6 +40,8 @@ const MygerPage = () => {
     setIsMygerPage(false);
   };
 
+  useEffect(() => {}, []);
+
   //onSubmit({ make, minRentalPrice, maxRentalPrice, minMileage, maxMileage });
 
   return (
