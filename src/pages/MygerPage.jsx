@@ -63,7 +63,7 @@ const MygerPage = () => {
     const setWhiteSpotSizeAnimation = setTimeout(setWhiteSpotSize);
 
     return () => {
-      crearTimeout(setWhiteSpotSizeAnimation);
+      clearTimeout(setWhiteSpotSizeAnimation);
     };
   }, [sizeValue]);
 
