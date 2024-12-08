@@ -3,7 +3,11 @@ import { useEffect, useState } from "react";
 import { MainPage, TestPage, MygerPage } from "./pages";
 
 const App = () => {
-  const [pageNames] = useState([{ MainPage }, { TestPage }, { MygerPage }]);
+  const [pageNames] = useState([
+    { pageName: "Main page", element: MainPage },
+    { pageName: "Test page", element: TestPage },
+    { pageName: "Myger page", element: MygerPage },
+  ]);
   const [pageName, setPageName] = useState("MainPage");
 
   const handlePageName = (event) => {
