@@ -21,6 +21,7 @@ const JustAnotherDiv = styled.div`
     return size;
   }}px;
 
+  border-radius: 50%;
   background-color: white;
 `;
 
