@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/car-rent-fullstack/static/css/main.4a41eecd.css",
-    "main.js": "/car-rent-fullstack/static/js/main.7ddf6f93.js",
+    "main.js": "/car-rent-fullstack/static/js/main.bbdc9073.js",
     "static/media/icons.svg": "/car-rent-fullstack/static/media/icons.45c641bebccb48fa781e4fabfae4ae89.svg",
     "index.html": "/car-rent-fullstack/index.html",
     "main.4a41eecd.css.map": "/car-rent-fullstack/static/css/main.4a41eecd.css.map",
-    "main.7ddf6f93.js.map": "/car-rent-fullstack/static/js/main.7ddf6f93.js.map"
+    "main.bbdc9073.js.map": "/car-rent-fullstack/static/js/main.bbdc9073.js.map"
   },
   "entrypoints": [
     "static/css/main.4a41eecd.css",
-    "static/js/main.7ddf6f93.js"
+    "static/js/main.bbdc9073.js"
   ]
 }
