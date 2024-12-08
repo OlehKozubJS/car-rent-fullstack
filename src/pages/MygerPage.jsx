@@ -40,13 +40,12 @@ const MygerPage = () => {
   };
 
   const setWhiteSpotCoordinates = () => {
-    setSizeValue(getRandomNumber(100));
     setTopValue(getRandomNumber(250));
     setLeftValue(getRandomNumber(1000));
   };
 
   const setWhiteSpotSize = () => {
-    setSizeValue(0);
+    setSizeValue(getRandomNumber(100));
   };
 
   useEffect(() => {
