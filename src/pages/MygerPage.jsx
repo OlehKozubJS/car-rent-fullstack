@@ -77,13 +77,6 @@ const MygerPage = () => {
         left={leftValue}
         size={sizeValue}
       ></JustAnotherDiv>
-      <div>
-        <div></div>
-      </div>
-      <p></p>
-      <p></p>
-      <p></p>
-      <p></p>
     </CheapTrick>
   );
 };
