@@ -10,8 +10,8 @@ import { CarBrandSelectorNotFoundMessageStyleBase } from "./CarBrandSelectorStyl
 
 const CarBrandSelector = ({ carBrands }) => {
   const [filteredCarBrands, setFilteredCarBrands] = useState([]);
-  const [isCarBrandsOptions, setIsCarBrandsOptions] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+  const [isCarBrandsOptions, setIsCarBrandsOptions] = useState(false);
 
   const toggleCarBrandOptions = (value) => {
     setIsCarBrandsOptions(value);
