@@ -3,7 +3,7 @@ import { injectGlobal } from "@emotion/css";
 import KingsRegular from "./fonts/Kings-Regular.ttf";
 import Ojuju from "./fonts/Ojuju.ttf";
 import ManropeRegular from "./fonts/Manrope-Regular.ttf";
-import MysteryQuestRegular from "./fonts/MysteryQuest-Regular.ttf";
+import MysteryQuest from "./fonts/MysteryQuest-Regular.ttf";
 
 injectGlobal`
   @font-face {
@@ -22,7 +22,7 @@ injectGlobal`
   }
 
   @font-face {
-    font-family: "MysterYQuest-Regular"
-    src: url(${MysteryQuestRegular});
+    font-family: "MysteryQuest"
+    src: url(${MysteryQuest});
   }
 `;
