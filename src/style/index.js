@@ -16,6 +16,7 @@ injectGlobal`
   }
 
   @font-face{
+    font-family: "Manrope-Regular";
   }
 `;
 
