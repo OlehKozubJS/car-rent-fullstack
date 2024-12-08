@@ -46,10 +46,9 @@ const MygerPage = () => {
   };
 
   const setWhiteSpotSize = () => {
-    if () {
+    if (middleSizeValue === sizeValue) {
       setMiddleSizeValue(0);
-    }
-    else {
+    } else {
       setMiddleSizeValue(middleSizeValue + 1);
     }
   };
