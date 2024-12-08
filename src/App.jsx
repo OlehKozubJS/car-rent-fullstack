@@ -17,7 +17,7 @@ const App = () => {
   };
 
   return (
-    <div style={{ fontFamily: "Manrope-Regular" }}>
+    <div style={{ fontFamily: "Kings-Regular" }}>
       <header>
         <nav>
           <ul>
