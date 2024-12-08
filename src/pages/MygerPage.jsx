@@ -34,8 +34,14 @@ const MygerPage = () => {
   const [topValue, setTopValue] = useState(0);
   const [leftValue, setLeftValue] = useState(0);
 
-  const openMygerPage = () => {
-    setIsMygerPage(true);
+  const getRandomNumber = (maximalNumber) => {
+    Math.floor(Math.random() * maximalNumber);
+  };
+
+  const setWhiteSpotParameters = () => {
+    setSizeValue(getRandomNumber(100));
+    setTopValue(getRandomNumber(100));
+    setLeftValue(getRandomNumber(250));
   };
 
   const closeMygerPage = () => {
