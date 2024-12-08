@@ -4,9 +4,9 @@ import { MainPage, TestPage, MygerPage } from "./pages";
 
 const App = () => {
   const [pages] = useState([
-    { pageName: "Main page", element: MainPage },
-    { pageName: "Test page", element: TestPage },
-    { pageName: "Myger page", element: MygerPage },
+    { pageName: "Main page", element: <MainPage /> },
+    { pageName: "Test page", element: <TestPage /> },
+    { pageName: "Myger page", element: <MygerPage /> },
   ]);
   const [currentPageName, setCurrentPageName] = useState("MainPage");
 
