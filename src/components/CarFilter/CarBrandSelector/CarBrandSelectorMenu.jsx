@@ -28,7 +28,7 @@ const CarBrandSelectorMenu = ({ options, onChange }) => {
     } else {
       setMenuListContainerHeight(MAX_MENU_LIST_HEIGHT);
     }
-  }, [menuListHeight]);
+  }, [menuListHeight, options]);
 
   return (
     <CarBrandSelectorMenuContainerStyleBase
