@@ -19,23 +19,23 @@ const App = () => {
       <header>
         <nav>
           <ul>
-            {pages.map({pageName, element}) => {
+            {pages.map(({pageName, element}) => {
               return (
-            <li>
-              <label htmlFor="MainPageRadio">
-                <input
-                  id="MainPageRadio"
-                  name="pageSwitcher"
-                  type="radio"
-                  onChange={handlePageName}
-                  value="MainPage"
-                  checked={pageName === "MainPage"}
-                />
-                <span>Main page</span>
-              </label>
-            </li>
-            );
-            }
+                <li>
+                  <label htmlFor="MainPageRadio">
+                    <input
+                      id="MainPageRadio"
+                      name="pageSwitcher"
+                      type="radio"
+                      onChange={handlePageName}
+                      value="MainPage"
+                      checked={pageName === "MainPage"}
+                    />
+                    <span>Main page</span>
+                  </label>
+                </li>
+                );
+              }
             }
           </ul>
         </nav>
