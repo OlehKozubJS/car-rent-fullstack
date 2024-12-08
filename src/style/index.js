@@ -4,4 +4,4 @@ injectGlobal``;
 
 import commonFonts from "./CarRentGlobalStyle.module.css";
 
-export { commonFonts };
+export default commonFonts;
