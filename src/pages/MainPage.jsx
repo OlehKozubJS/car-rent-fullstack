@@ -10,7 +10,7 @@ import {
   getCarModel,
 } from "./imports";
 
-import {} from "../";
+import { commonFonts } from "../style";
 
 const MainPage = () => {
   const [isModal, setIsModal] = useState(false);
