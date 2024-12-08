@@ -10,8 +10,6 @@ import {
   getCarModel,
 } from "./imports";
 
-import { commonFonts } from "../style";
-
 const MainPage = () => {
   const [isModal, setIsModal] = useState(false);
 
@@ -24,7 +22,7 @@ const MainPage = () => {
   };
 
   return (
-    <section style={{ fontFamily: "Kings-Regular" }}>
+    <section>
       <button onClick={openModal}>Open Modal</button>
       {isModal && <CarModal carId={9582} onClose={closeModal} />}
       <CarFilter />
