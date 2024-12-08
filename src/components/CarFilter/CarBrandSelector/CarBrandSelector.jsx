@@ -21,7 +21,6 @@ const CarBrandSelector = ({ carBrands }) => {
     setIsCarBrandsOptions(false);
     const newCarBrand = event.target.value;
     setSearchQuery(newCarBrand);
-    dispatch(setCarModel(newCarBrand));
   };
 
   const handleSearchQuery = (value) => {
