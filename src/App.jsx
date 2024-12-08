@@ -8,7 +8,7 @@ const App = () => {
     "Test page": <TestPage />,
     "Myger page": <MygerPage />,
   });
-  const [currentPageName, setCurrentPageName] = useState("MainPage");
+  const [currentPageName, setCurrentPageName] = useState("Main page");
 
   const handleCurrentPageName = (event) => {
     setCurrentPageName(event.target.value);
@@ -19,7 +19,7 @@ const App = () => {
       <header>
         <nav>
           <ul>
-            {Object.keys(pages).map(({ pageName }) => {
+            {Object.keys(pages).map((pageName) => {
               return (
                 <li key={pageName}>
                   <label htmlFor={pageName}>
