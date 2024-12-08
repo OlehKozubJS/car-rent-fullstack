@@ -40,9 +40,9 @@ const App = () => {
         </nav>
       </header>
       <main>
-        {pageName === "MainPage" && <MainPage />}
-        {pageName === "TestPage" && <TestPage />}
-        {pageName === "MygerPage" && <MygerPage />}
+        {currentPageName === "Main page" && <MainPage />}
+        {currentPageName === "Test page" && <TestPage />}
+        {currentPageName === "Myger page" && <MygerPage />}
       </main>
     </>
   );
