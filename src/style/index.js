@@ -16,8 +16,12 @@ injectGlobal`
     src: url(${Ojuju});
   }
 
-  @font-face{
+  @font-face {
     font-family: "Manrope-Regular";
     src: url(${ManropeRegular});
+  }
+
+  @font-face {
+    font-family: ""
   }
 `;
