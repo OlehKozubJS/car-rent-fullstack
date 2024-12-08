@@ -1,6 +1,6 @@
 import { injectGlobal } from "@emotion/css";
 
-import KingsRegular from "./fonts/Kings-Regular.woff";
+import KingsRegular from "./fonts/Kings-Regular.ttf";
 
 injectGlobal`
   @font-face {
