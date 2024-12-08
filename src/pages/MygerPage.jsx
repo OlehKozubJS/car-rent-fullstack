@@ -59,6 +59,14 @@ const MygerPage = () => {
     };
   }, [sizeValue]);
 
+  useEffect(() => {
+    const Animation = setTimeout();
+
+    return () => {
+      crearTimeout(Animation);
+    };
+  }, []);
+
   //onSubmit({ make, minRentalPrice, maxRentalPrice, minMileage, maxMileage });
 
   return (
