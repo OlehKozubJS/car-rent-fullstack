@@ -15,7 +15,7 @@ const App = () => {
   };
 
   return (
-    <div style={{ fontFamily: "Ojuju" }}>
+    <div style={{ fontFamily: "Kings-Regular" }}>
       <header>
         <nav>
           <ul>
