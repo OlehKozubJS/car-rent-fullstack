@@ -14,6 +14,10 @@ const CarBrandSelector = ({ carBrands }) => {
   const [isCarBrandsOptions, setIsCarBrandsOptions] = useState(false);
 
   const toggleCarBrandOptions = (value) => {
+    if (value) {
+      setSearchQuery("");
+    }
+
     setIsCarBrandsOptions(value);
   };
 
