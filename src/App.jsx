@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { MainPage, TestPage, MygerPage } from "./pages";
 
-import { commonFonts } from "./style";
+import "./style";
 
 const App = () => {
   const [pages] = useState({
@@ -17,7 +17,7 @@ const App = () => {
   };
 
   return (
-    <div style={{ fontFamily: "Manrope-SemiBold" }}>
+    <div style={{ fontFamily: "Ojuju" }}>
       <header>
         <nav>
           <ul>
