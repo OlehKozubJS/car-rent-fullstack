@@ -40,7 +40,7 @@ const MygerPage = () => {
   };
 
   const setWhiteSpotCoordinates = () => {
-    setTopValue(getRandomNumber(250));
+    setTopValue(getRandomNumber(500));
     setLeftValue(getRandomNumber(1000));
   };
 
