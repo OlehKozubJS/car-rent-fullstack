@@ -22,7 +22,7 @@ injectGlobal`
   }
 
   @font-face {
-    font-family: "MysteryQuest"
+    font-family: "MysteryQuest";
     src: url(${MysteryQuest});
   }
 `;
