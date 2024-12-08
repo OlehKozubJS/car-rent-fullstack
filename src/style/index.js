@@ -1,11 +1,11 @@
 import { injectGlobal } from "@emotion/css";
 
-import KingsRegular from "./fonts/Kings-Regular.ttf";
+import KingsRegular from "./fonts/Kings-Regular.woff";
 
 injectGlobal`
   @font-face {
     font-family: "Kings-Regular";
-    src: local("Kings-Regular"), url(${KingsRegular}) format("ttf");
+    src: local("Kings-Regular"), url(${KingsRegular}) format("woff");
   }
 `;
 
