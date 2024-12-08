@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 
 import { MainPage, TestPage, MygerPage } from "./pages";
 
+import { commonFonts } from "./style";
+
 const App = () => {
   const [pages] = useState({
     "Main page": <MainPage />,
@@ -15,7 +17,7 @@ const App = () => {
   };
 
   return (
-    <>
+    <div style={{ fontFamily: "Kings-Regular" }}>
       <header>
         <nav>
           <ul>
@@ -40,7 +42,7 @@ const App = () => {
         </nav>
       </header>
       <main>{pages[currentPageName]}</main>
-    </>
+    </div>
   );
 };
 
