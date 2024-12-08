@@ -21,6 +21,6 @@ injectGlobal`
   }
 `;
 
-import commonFonts from "./CarRentGlobalStyle.module.css";
+//import commonFonts from "./CarRentGlobalStyle.module.css";
 
-export default commonFonts;
+//export default commonFonts;
