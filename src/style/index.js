@@ -31,9 +31,10 @@ import {
   ManropeB,
   MontserratR,
   MontserratB,
+  commonFonts,
 } from "./fonts";
 
-export { ManropeR, ManropeM, ManropeB, MontserratR, MontserratB };
+export { ManropeR, ManropeM, ManropeB, MontserratR, MontserratB, commonFonts };
 
 /*
       url("./Kings-Regular.eot?#iefix") format("embedded-opentype");
