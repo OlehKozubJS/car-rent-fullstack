@@ -14,6 +14,9 @@ injectGlobal`
     font-family: "Ojuju";
     src: url(${Ojuju});
   }
+
+  @font-face{
+  }
 `;
 
 import commonFonts from "./CarRentGlobalStyle.module.css";
