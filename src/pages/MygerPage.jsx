@@ -42,10 +42,11 @@ const MygerPage = () => {
   const setWhiteSpotCoordinates = () => {
     setTopValue(getRandomNumber(500));
     setLeftValue(getRandomNumber(1000));
+    setSizeValue(getRandomNumber(100));
   };
 
   const setWhiteSpotSize = () => {
-    setSizeValue(getRandomNumber(100));
+    setMiddleSizeValue(middleSizeValue + 1);
   };
 
   useEffect(() => {
