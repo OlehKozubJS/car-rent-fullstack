@@ -27,7 +27,6 @@ const JustAnotherDiv = styled.div`
 
   border-radius: 50%;
   background-color: white;
-  transition: 20px;
 `;
 
 const MygerPage = () => {
