@@ -27,4 +27,4 @@ injectGlobal`
 
 import { commonFonts } from "./fonts";
 
-export { ManropeR, ManropeM, ManropeB, MontserratR, MontserratB, commonFonts };
+export { commonFonts };
