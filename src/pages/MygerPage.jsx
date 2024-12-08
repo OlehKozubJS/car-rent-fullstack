@@ -26,8 +26,7 @@ const JustAnotherDiv = styled.div`
   }}px;
 
   border-radius: 50%;
-  background-color: white;
-  background-image: radial-gradient(at center);
+  background-image: radial-gradient(at center, white, black);
 `;
 
 const MygerPage = () => {
