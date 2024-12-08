@@ -12,8 +12,12 @@ const CheapTrick = styled.section`
 
 const JustAnotherDiv = styled.div`
   position: absolute;
-  top: ${() => {}}px;
-  left: ${() => {}}px;
+  top: ${({ top = 0 }) => {
+    return top;
+  }}px;
+  left: ${({ left = 0 }) => {
+    return left;
+  }}px;
   width: ${({ size = 0 }) => {
     return size;
   }}px;
