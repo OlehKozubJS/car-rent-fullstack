@@ -39,14 +39,14 @@ const MygerPage = () => {
     return Math.floor(Math.random() * maximalNumber);
   };
 
-  const setWhiteSpotParameters = () => {
+  const setWhiteSpotCoordinates = () => {
     setSizeValue(getRandomNumber(100));
     setTopValue(getRandomNumber(250));
     setLeftValue(getRandomNumber(1000));
   };
 
-  const closeMygerPage = () => {
-    setIsMygerPage(false);
+  const setWhiteSpotSize = () => {
+    setSizeValue(0);
   };
 
   useEffect(() => {
