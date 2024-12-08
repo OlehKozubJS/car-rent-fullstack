@@ -8,10 +8,10 @@ const App = () => {
     { pageName: "Test page", element: TestPage },
     { pageName: "Myger page", element: MygerPage },
   ]);
-  const [pageName, setPageName] = useState("MainPage");
+  const [currentPageName, setCurrentPageName] = useState("MainPage");
 
-  const handlePageName = (event) => {
-    setPageName(event.target.value);
+  const handleCurrentPageName = (event) => {
+    setCurrentPageName(event.target.value);
   };
 
   return (
@@ -19,24 +19,23 @@ const App = () => {
       <header>
         <nav>
           <ul>
-            {pages.map(({pageName, element}) => {
+            {pages.map(({ pageName }) => {
               return (
-                <li>
-                  <label htmlFor="MainPageRadio">
+                <li key={pageName}>
+                  <label htmlFor={pageName}>
                     <input
-                      id="MainPageRadio"
+                      id={pageName}
                       name="pageSwitcher"
                       type="radio"
-                      onChange={handlePageName}
-                      value="MainPage"
-                      checked={pageName === "MainPage"}
+                      onChange={handleCurrentPageName}
+                      value={pageName}
+                      checked={currentPageName === pageName}
                     />
-                    <span>Main page</span>
+                    <span>{pageName}</span>
                   </label>
                 </li>
-                );
-              }
-            }
+              );
+            })}
           </ul>
         </nav>
       </header>
