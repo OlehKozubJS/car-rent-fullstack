@@ -30,7 +30,9 @@ const JustAnotherDiv = styled.div`
 `;
 
 const MygerPage = () => {
-  const [isMygerPage, setIsMygerPage] = useState(false);
+  const [size, setSize] = useState(0);
+  const [left, setLeft] = useState(0);
+  const [top, setTop] = useState(0);
 
   const openMygerPage = () => {
     setIsMygerPage(true);
