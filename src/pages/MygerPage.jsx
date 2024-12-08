@@ -51,11 +51,11 @@ const MygerPage = () => {
   useEffect(() => {
     const setWhiteSpotParametersAnimation = setTimeout(
       setWhiteSpotParameters,
-      1
+      1000
     );
 
     return () => {
-      clearTimeout(setWhiteSpotParametersAnimation, 1);
+      clearTimeout(setWhiteSpotParametersAnimation);
     };
   }, [sizeValue, topValue, leftValue]);
 
