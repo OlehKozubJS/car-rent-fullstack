@@ -20,7 +20,3 @@ injectGlobal`
     src: url(${ManropeRegular});
   }
 `;
-
-//import commonFonts from "./CarRentGlobalStyle.module.css";
-
-//export default commonFonts;
