@@ -2,6 +2,7 @@ import { injectGlobal } from "@emotion/css";
 
 import KingsRegular from "./fonts/Kings-Regular.ttf";
 import Ojuju from "./fonts/Ojuju.ttf";
+import ManropeRegular from "./fonts/Manrope-Regular.ttf";
 
 injectGlobal`
   @font-face {
