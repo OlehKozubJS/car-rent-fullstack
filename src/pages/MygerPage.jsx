@@ -41,7 +41,7 @@ const MygerPage = () => {
   const setWhiteSpotParameters = () => {
     setSizeValue(getRandomNumber(100));
     setTopValue(getRandomNumber(250));
-    setLeftValue(getRandomNumber(250));
+    setLeftValue(getRandomNumber(500));
   };
 
   const closeMygerPage = () => {
