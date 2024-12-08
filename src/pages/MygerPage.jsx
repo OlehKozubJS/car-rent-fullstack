@@ -57,7 +57,7 @@ const MygerPage = () => {
     return () => {
       clearTimeout(setWhiteSpotParametersAnimation);
     };
-  }, [sizeValue, topValue, leftValue]);
+  }, [sizeValue]);
 
   //onSubmit({ make, minRentalPrice, maxRentalPrice, minMileage, maxMileage });
 
