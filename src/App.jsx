@@ -3,12 +3,12 @@ import { useEffect, useState } from "react";
 import { MainPage, TestPage, MygerPage } from "./pages";
 
 const App = () => {
-  const [pages] = useState([
-    { pageName: "Main page", element: <MainPage /> },
-    { pageName: "Test page", element: <TestPage /> },
-    { pageName: "Myger page", element: <MygerPage /> },
-  ]);
-  const [currentPageName, setCurrentPageName] = useState("MainPage");
+  const [pages] = useState({
+    "Main page": <MainPage />,
+    "Test page": <TestPage />,
+    "Myger page": <MygerPage />,
+  });
+  const [CurrentPage, setCurrentPage] = useState("MainPage");
 
   const handleCurrentPageName = (event) => {
     setCurrentPageName(event.target.value);
@@ -39,11 +39,7 @@ const App = () => {
           </ul>
         </nav>
       </header>
-      <main>
-        {currentPageName === "Main page" && <MainPage />}
-        {currentPageName === "Test page" && <TestPage />}
-        {currentPageName === "Myger page" && <MygerPage />}
-      </main>
+      <main>{CurrentPage}</main>
     </>
   );
 };
