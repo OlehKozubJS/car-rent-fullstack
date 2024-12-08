@@ -17,6 +17,7 @@ injectGlobal`
 
   @font-face{
     font-family: "Manrope-Regular";
+    src: url(${ManropeRegular});
   }
 `;
 
