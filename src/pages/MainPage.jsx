@@ -24,7 +24,7 @@ const MainPage = () => {
   };
 
   return (
-    <section style={{ fontFamily: "Ojuju" }}>
+    <section style={{ fontFamily: "Kings-Regular" }}>
       <button onClick={openModal}>Open Modal</button>
       {isModal && <CarModal carId={9582} onClose={closeModal} />}
       <CarFilter />
