@@ -8,4 +8,13 @@ import KingsRegular from "./Kings-Regular.ttf";
 import Ojuju from "./Ojuju.ttf";
 import MysteryQuest from "./MysteryQuest-Regular.ttf";
 
-export {};
+export {
+  ManropeRegular,
+  ManropeMedium,
+  ManropeSemiBold,
+  MontserratRegular,
+  MontserratSemiBold,
+  KingsRegular,
+  Ojuju,
+  MysteryQuest,
+};
