@@ -5,8 +5,8 @@ import {
   MontserratRegular,
   MontserratSemiBold,
   KingsRegular,
-  MysteryQuest,
   Ojuju,
+  MysteryQuest,
 } from "./fonts";
 
 injectGlobal`
