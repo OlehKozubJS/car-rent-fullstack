@@ -1,7 +1,8 @@
-import KingsRegular from "./fonts/Kings-Regular.ttf";
-import Ojuju from "./fonts/Ojuju.ttf";
-import ManropeRegular from "./fonts/Manrope-Regular.ttf";
-import ManropeMedium from "./fonts/Manrope-Medium.ttf";
-import MysteryQuest from "./fonts/MysteryQuest-Regular.ttf";
+import KingsRegular from "./Kings-Regular.ttf";
+import Ojuju from "./Ojuju.ttf";
+import ManropeRegular from "./Manrope-Regular.ttf";
+import ManropeMedium from "./Manrope-Medium.ttf";
+import from "";
+import MysteryQuest from "./MysteryQuest-Regular.ttf";
 
 export {};
