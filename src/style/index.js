@@ -28,12 +28,12 @@ injectGlobal`
   }
 
   @font-face {
-    font-family: "MontserratRegular";
+    font-family: "Montserrat-Regular";
     src: url(${MontserratRegular});
   }
 
   @font-face {
-    font-face: "MontserratSemiBold";
+    font-face: "Montserrat-SemiBold";
     src: url(${MontserratSemiBold});
   }
 
