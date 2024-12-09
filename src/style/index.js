@@ -33,7 +33,7 @@ injectGlobal`
   }
 
   @font-face {
-    font-face: "Montserrat-SemiBold";
+    font-family: "Montserrat-SemiBold";
     src: url(${MontserratSemiBold});
   }
 
