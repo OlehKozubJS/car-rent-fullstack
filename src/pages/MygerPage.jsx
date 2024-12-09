@@ -75,7 +75,7 @@ const MygerPage = () => {
   //onSubmit({ make, minRentalPrice, maxRentalPrice, minMileage, maxMileage });
 
   return (
-    <div style={{ fontFamily: "manrope-semibold" }}>
+    <div style={{ fontFamily: "montserrat-semibold" }}>
       <CheapTrick>
         <JustAnotherDiv
           top={topValue}
