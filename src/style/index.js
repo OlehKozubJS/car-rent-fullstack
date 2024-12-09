@@ -55,4 +55,8 @@ injectGlobal`
   ul {
     list-style: none;
   }
+
+  * {
+    box-sizing: border-box;
+  }
 `;
