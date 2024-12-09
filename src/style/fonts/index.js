@@ -27,3 +27,5 @@ injectGlobal`
     src: url(${MysteryQuest});
   }
 `;
+
+export {};
