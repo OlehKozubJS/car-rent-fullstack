@@ -1,4 +1,13 @@
-import {} from "";
+import {
+  ManropeRegular,
+  ManropeMedium,
+  ManropeSemiBold,
+  MontserratRegular,
+  MontserratSemiBold,
+  KingsRegular,
+  MysteryQuest,
+  Ojuju,
+} from "./fonts";
 
 injectGlobal`
   @font-face {
