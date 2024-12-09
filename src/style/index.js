@@ -1,3 +1,5 @@
+import { injectGlobal } from "@emotion/css";
+
 import {
   ManropeRegular,
   ManropeMedium,
