@@ -30,8 +30,11 @@ injectGlobal`
     src: url(${MontserratRegular});
   }
 
+  @font-face {
+    font-face: "MontserratSemiBold";
+    src: url(${MontserratSemiBold});
+  }
 
-  
   @font-face {
     font-family: "Kings-Regular";
     src: url(${KingsRegular});
