@@ -51,4 +51,8 @@ injectGlobal`
     font-family: "MysteryQuest";
     src: url(${MysteryQuest});
   }
+
+  ul {
+    list-style: none;
+  }
 `;
