@@ -37,8 +37,6 @@ const CarModalSubHeaderStyleBase = styled.h4`
 `;
 
 export {
-  CarModalBackdropStyleBase,
-  CarModalContainerStyleBase,
   CarModalImageStyleBase,
   CarModalItemsStyleBase,
   CarModalItemStyleBase,
