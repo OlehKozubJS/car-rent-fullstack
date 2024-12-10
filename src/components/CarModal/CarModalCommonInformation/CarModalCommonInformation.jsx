@@ -4,15 +4,17 @@ import {
   CarModalItemValueStyleBase,
 } from "./imports";
 
-const CarModalCommonInformation = ({ address, id, type, fuelConsumption }) => {
+const CarModalCommonInformation = ({
+  address,
+  id,
+  type,
+  fuelConsumption,
+  engineSize,
+}) => {
   return (
     <CarModalItemsStyleBase>
-      <CarModalItemStyleBase>
-        {car.address.split(", ")[1]}
-      </CarModalItemStyleBase>
-      <CarModalItemStyleBase>
-        {car.address.split(", ")[2]}
-      </CarModalItemStyleBase>
+      <CarModalItemStyleBase>{address.split(", ")[1]}</CarModalItemStyleBase>
+      <CarModalItemStyleBase>{address.split(", ")[2]}</CarModalItemStyleBase>
       <CarModalItemStyleBase>
         Id: <CarModalItemValueStyleBase>{id}</CarModalItemValueStyleBase>
       </CarModalItemStyleBase>
@@ -30,9 +32,7 @@ const CarModalCommonInformation = ({ address, id, type, fuelConsumption }) => {
       </CarModalItemStyleBase>
       <CarModalItemStyleBase>
         Engine Size:{" "}
-        <CarModalItemValueStyleBase>
-          {car.engineSize}
-        </CarModalItemValueStyleBase>
+        <CarModalItemValueStyleBase>{engineSize}</CarModalItemValueStyleBase>
       </CarModalItemStyleBase>
     </CarModalItemsStyleBase>
   );
