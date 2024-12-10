@@ -1,13 +1,3 @@
-import {
-  CarModalSubHeaderStyleBase,
-  CarModalRentalItemsStyleBase,
-  CarModalRentalItemStyleBase,
-  CarModalRentalItemValueStyleBase,
-} from "../CarModalStyles";
+import { CarModalSubHeaderStyleBase } from "../CarModalStyles";
 
-export {
-  CarModalSubHeaderStyleBase,
-  CarModalRentalItemsStyleBase,
-  CarModalRentalItemStyleBase,
-  CarModalRentalItemValueStyleBase,
-};
+export { CarModalSubHeaderStyleBase };
