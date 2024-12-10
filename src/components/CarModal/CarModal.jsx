@@ -100,9 +100,7 @@ const CarModal = ({ car, onClose }) => {
             </CarModalRentalItemValueStyleBase>
           </CarModalRentalItemStyleBase>
         </CarModalRentalItemsStyleBase>
-        <CarModalLinkStyleBase href="tel:+380730000000">
-          Rental car
-        </CarModalLinkStyleBase>
+        <CarModalLink />
       </CarModalContainerStyleBase>
     </CarModalBackdropStyleBase>
   );
