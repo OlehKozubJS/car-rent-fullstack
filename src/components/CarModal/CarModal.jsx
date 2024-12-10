@@ -58,21 +58,10 @@ const CarModal = ({ car, onClose }) => {
           </CarModalItemStyleBase>
         </CarModalItemsStyleBase>
         <CarModalDescription description={car.description} />
-        <CarModalSubHeaderStyleBase>
-          Accessories and functionalities:
-        </CarModalSubHeaderStyleBase>
-        <CarModalItemsStyleBase>
-          {car.accessories.map((item, index) => {
-            return (
-              <CarModalItemStyleBase key={index}>{item}</CarModalItemStyleBase>
-            );
-          })}
-          {car.functionalities.map((item, index) => {
-            return (
-              <CarModalItemStyleBase key={index}>{item}</CarModalItemStyleBase>
-            );
-          })}
-        </CarModalItemsStyleBase>
+        <CarModalAccessoriesInformation
+          accessories={car.accessories}
+          functionalities={car.functionalities}
+        />
         <CarModalSubHeaderStyleBase>
           Rental Conditions:{" "}
         </CarModalSubHeaderStyleBase>
