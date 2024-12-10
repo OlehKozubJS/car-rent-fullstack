@@ -83,8 +83,6 @@ const MygerPage = () => {
           size={middleSizeValue}
         ></JustAnotherDiv>
       </CheapTrick>
-
-      <p>Progress always wins!</p>
     </div>
   );
 };
