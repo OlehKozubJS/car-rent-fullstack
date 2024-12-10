@@ -24,7 +24,7 @@ const MainPage = () => {
   return (
     <section>
       <button onClick={openModal}>Open Modal</button>
-      {isModal && <CarModal carId={carsLocalData[0]} onClose={closeModal} />}
+      {isModal && <CarModal car={carsLocalData[0]} onClose={closeModal} />}
       <CarFilter />
       <CarGallery />
       {JSON.stringify(carsLocalData[0])}
