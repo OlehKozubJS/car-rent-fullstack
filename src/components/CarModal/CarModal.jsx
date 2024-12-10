@@ -7,11 +7,7 @@ import { CarModalAccessoriesInformation } from "./CarModalAccessoriesInformation
 import { CarModalRentalInformation } from "./CarModalRentalInformation";
 import { CarModalLink } from "./CarModalLink";
 
-import {
-  CarModalBackdropStyleBase,
-  CarModalContainerStyleBase,
-  CarModalImageStyleBase,
-} from "./CarModalStyles";
+import { CarModalImageStyleBase } from "./CarModalStyles";
 
 const CarModal = ({ car, onClose }) => {
   return (
