@@ -44,4 +44,4 @@ const CarModalCloseButton = ({ onClose }) => {
   );
 };
 
-export { CarModal };
+export { CarModalCloseButton };
