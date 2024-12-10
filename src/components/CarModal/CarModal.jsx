@@ -61,9 +61,7 @@ const CarModal = ({ car, onClose }) => {
             </CarModalItemValueStyleBase>
           </CarModalItemStyleBase>
         </CarModalItemsStyleBase>
-        <CarModalDescriptionStyleBase>
-          {car.description}
-        </CarModalDescriptionStyleBase>
+        <CarModalDescription description={car.description} />
         <CarModalSubHeaderStyleBase>
           Accessories and functionalities:
         </CarModalSubHeaderStyleBase>
