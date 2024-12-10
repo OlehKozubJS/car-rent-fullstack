@@ -81,4 +81,8 @@ injectGlobal`
   a {
     text-decoration: none;
   }
+
+  input {
+    outline: none;
+  }
 `;
