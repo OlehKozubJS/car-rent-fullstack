@@ -4,19 +4,19 @@ import {
   CarModalItemStyleBase,
 } from "./imports";
 
-const CarModalAccessoriesInformation = ({ car, onClose }) => {
+const CarModalAccessoriesInformation = ({ accessories, functionalities }) => {
   return (
     <>
       <CarModalSubHeaderStyleBase>
         Accessories and functionalities:
       </CarModalSubHeaderStyleBase>
       <CarModalItemsStyleBase>
-        {car.accessories.map((item, index) => {
+        {accessories.map((item, index) => {
           return (
             <CarModalItemStyleBase key={index}>{item}</CarModalItemStyleBase>
           );
         })}
-        {car.functionalities.map((item, index) => {
+        {functionalities.map((item, index) => {
           return (
             <CarModalItemStyleBase key={index}>{item}</CarModalItemStyleBase>
           );
