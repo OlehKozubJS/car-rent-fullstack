@@ -6,9 +6,11 @@ const CarModalBackdropStyleBase = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   background: rgba(18, 20, 23, 0.5);
 `;
 
