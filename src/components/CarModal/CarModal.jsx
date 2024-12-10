@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 
-import { SVGimage } from "../../images";
-
 import { CarModalCloseButton } from "./CarModalCloseButton";
 
 import {
