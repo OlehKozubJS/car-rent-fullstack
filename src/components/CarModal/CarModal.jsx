@@ -23,38 +23,7 @@ const CarModal = ({ car, onClose }) => {
         <CarModalCloseButton onClose={onClose} />
         <CarModalImageStyleBase src={car.img} alt="" />
         <CarModalHeader make={car.make} model={car.model} year={car.year} />
-        <CarModalItemsStyleBase>
-          <CarModalItemStyleBase>
-            {car.address.split(", ")[1]}
-          </CarModalItemStyleBase>
-          <CarModalItemStyleBase>
-            {car.address.split(", ")[2]}
-          </CarModalItemStyleBase>
-          <CarModalItemStyleBase>
-            Id:{" "}
-            <CarModalItemValueStyleBase>{car.id}</CarModalItemValueStyleBase>
-          </CarModalItemStyleBase>
-          <CarModalItemStyleBase>
-            Year:{" "}
-            <CarModalItemValueStyleBase>{car.year}</CarModalItemValueStyleBase>
-          </CarModalItemStyleBase>
-          <CarModalItemStyleBase>
-            Type:{" "}
-            <CarModalItemValueStyleBase>{car.type}</CarModalItemValueStyleBase>
-          </CarModalItemStyleBase>
-          <CarModalItemStyleBase>
-            Fuel Consumption:{" "}
-            <CarModalItemValueStyleBase>
-              {car.fuelConsumption}
-            </CarModalItemValueStyleBase>
-          </CarModalItemStyleBase>
-          <CarModalItemStyleBase>
-            Engine Size:{" "}
-            <CarModalItemValueStyleBase>
-              {car.engineSize}
-            </CarModalItemValueStyleBase>
-          </CarModalItemStyleBase>
-        </CarModalItemsStyleBase>
+
         <CarModalDescription description={car.description} />
         <CarModalAccessoriesInformation
           accessories={car.accessories}
