@@ -21,10 +21,6 @@ const CarModalContainerStyleBase = styled.article`
   background: #fff;
 `;
 
-const CarModalCloseButtonIconStyleBase = styled.svg`
-  display: block;
-`;
-
 const CarModalImageStyleBase = styled.img`
   display: block;
   height: 314px;
