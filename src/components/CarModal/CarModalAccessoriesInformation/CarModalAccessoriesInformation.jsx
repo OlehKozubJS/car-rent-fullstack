@@ -1,22 +1,11 @@
 import {
-  CarModalBackdropStyleBase,
-  CarModalContainerStyleBase,
-  CarModalCloseButtonContainerStyleBase,
-  CarModalCloseButtonStyleBase,
-  CarModalImageStyleBase,
-  CarModalHeaderStyleBase,
-  CarModalItemsStyleBase,
   CarModalItemStyleBase,
+  CarModalItemsStyleBase,
   CarModalItemValueStyleBase,
-  CarModalDescriptionStyleBase,
   CarModalSubHeaderStyleBase,
-  CarModalRentalItemsStyleBase,
-  CarModalRentalItemStyleBase,
-  CarModalRentalItemValueStyleBase,
-  CarModalSubmitButtonStyleBase,
-} from "./CarModalStyles";
+} from "./imports";
 
-const CarModal = ({ car, onClose }) => {
+const CarModalAccessoriesInformation = ({ car, onClose }) => {
   return (
     <>
       <CarModalSubHeaderStyleBase>
@@ -38,4 +27,4 @@ const CarModal = ({ car, onClose }) => {
   );
 };
 
-export { CarModal };
+export { CarModalAccessoriesInformation };
