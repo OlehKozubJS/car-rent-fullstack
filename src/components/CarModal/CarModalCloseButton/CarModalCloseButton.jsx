@@ -7,7 +7,7 @@ import {
   CarModalCloseButtonStyleBase,
 } from "./CarModalCloseButtonStyles";
 
-const CarModal = ({ onClose }) => {
+const CarModalCloseButton = ({ onClose }) => {
   const [isHover, setIsHover] = useState(false);
 
   const handleMouseOver = () => {
