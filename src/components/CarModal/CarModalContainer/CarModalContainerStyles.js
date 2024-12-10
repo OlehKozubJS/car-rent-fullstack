@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 
 const CarModalBackdropStyleBase = styled.div`
   position: fixed;
-  overflow: auto;
   top: 0;
   left: 0;
   width: 100%;
@@ -10,7 +9,7 @@ const CarModalBackdropStyleBase = styled.div`
 
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 
   background: rgba(18, 20, 23, 0.5);
 `;
