@@ -13,10 +13,6 @@ import {
   CarModalItemsStyleBase,
   CarModalItemStyleBase,
   CarModalItemValueStyleBase,
-  CarModalSubHeaderStyleBase,
-  CarModalRentalItemsStyleBase,
-  CarModalRentalItemStyleBase,
-  CarModalRentalItemValueStyleBase,
 } from "./CarModalStyles";
 
 const CarModal = ({ car, onClose }) => {
