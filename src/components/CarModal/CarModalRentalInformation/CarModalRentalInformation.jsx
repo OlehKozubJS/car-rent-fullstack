@@ -1,9 +1,10 @@
+import { CarModalSubHeaderStyleBase } from "./imports";
+
 import {
-  CarModalSubHeaderStyleBase,
   CarModalRentalItemsStyleBase,
   CarModalRentalItemStyleBase,
   CarModalRentalItemValueStyleBase,
-} from "./imports";
+} from "./CarModalRentalInformationStyles";
 
 const CarModalRentalInformation = ({
   rentalConditions,
