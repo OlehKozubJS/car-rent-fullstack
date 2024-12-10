@@ -10,7 +10,6 @@ import {
   CarModalItemsStyleBase,
   CarModalItemStyleBase,
   CarModalItemValueStyleBase,
-  CarModalDescriptionStyleBase,
   CarModalSubHeaderStyleBase,
   CarModalRentalItemsStyleBase,
   CarModalRentalItemStyleBase,
