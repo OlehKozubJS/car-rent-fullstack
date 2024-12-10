@@ -1,3 +1,3 @@
-import { CarModal } from "./CarModal";
+import { CarModalContainer } from "./CarModalContainer";
 
-export { CarModal };
+export { CarModalContainer };
