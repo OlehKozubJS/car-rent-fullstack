@@ -7,6 +7,7 @@ import {
 const CarModalCommonInformation = ({
   address,
   id,
+  year,
   type,
   fuelConsumption,
   engineSize,
