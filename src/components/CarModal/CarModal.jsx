@@ -2,6 +2,7 @@ import { CarModalCloseButton } from "./CarModalCloseButton";
 import { CarModalHeader } from "./CarModalHeader";
 
 import { CarModalDescription } from "./CarModalDescription";
+import { CarModalLink } from "./CarModalLink";
 
 import {
   CarModalBackdropStyleBase,
@@ -13,8 +14,6 @@ import {
   CarModalSubHeaderStyleBase,
   CarModalRentalItemsStyleBase,
   CarModalRentalItemStyleBase,
-  CarModalRentalItemValueStyleBase,
-  CarModalLinkStyleBase,
 } from "./CarModalStyles";
 
 const CarModal = ({ car, onClose }) => {
