@@ -7,7 +7,6 @@ import {
   CarModalBackdropStyleBase,
   CarModalContainerStyleBase,
   CarModalImageStyleBase,
-  CarModalHeaderStyleBase,
   CarModalItemsStyleBase,
   CarModalItemStyleBase,
   CarModalItemValueStyleBase,
