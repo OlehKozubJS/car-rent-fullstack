@@ -1,10 +1,5 @@
 import styled from "@emotion/styled";
 
-const CarModalCloseButtonContainerStyleBase = styled.div`
-  display: flex;
-  justify-content: flex-end;
-`;
-
 const CarModalCloseButtonStyleBase = styled.button`
   position: absolute;
   top: 16px;
@@ -24,4 +19,4 @@ const CarModalCloseButtonStyleBase = styled.button`
   }
 `;
 
-export { CarModalCloseButtonContainerStyleBase, CarModalCloseButtonStyleBase };
+export { CarModalCloseButtonStyleBase };
