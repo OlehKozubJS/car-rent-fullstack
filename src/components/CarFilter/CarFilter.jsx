@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { carsLocalData, makesLocalData } from "./imports";
+import { makesLocalData } from "./imports";
 
 import { CarBrandSelector } from "./CarBrandSelector";
 import { CarMileageSelector } from "./CarMileageSelector";
