@@ -1,3 +1,11 @@
-import {} from "../CarModalStyles";
+import {
+  CarModalItemsStyleBase,
+  CarModalItemStyleBase,
+  CarModalItemValueStyleBase,
+} from "../CarModalStyles";
 
-export {};
+export {
+  CarModalItemsStyleBase,
+  CarModalItemStyleBase,
+  CarModalItemValueStyleBase,
+};
