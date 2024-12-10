@@ -12,6 +12,7 @@ const CarModalCloseButtonStyleBase = styled.button`
   padding: 0;
   width: 24px;
   height: 24px;
+
   display: flex;
   justify-content: center;
   align-items: center;
