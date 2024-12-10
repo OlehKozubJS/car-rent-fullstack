@@ -1,3 +1,5 @@
+import { CarModalItemValueStyleBase } from "./imports";
+
 import { CarModalHeaderStyleBase } from "./CarModalHeaderStyles";
 
 const CarModalHeader = ({ make, year, model }) => {
