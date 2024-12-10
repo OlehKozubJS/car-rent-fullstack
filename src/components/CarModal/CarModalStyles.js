@@ -90,7 +90,7 @@ const CarModalRentalItemValueStyleBase = styled.span`
   font-family: "Montserrat-SemiBold", sans-serif;
 `;
 
-const CarModalSubmitButtonStyleBase = styled.a`
+const CarModalLinkStyleBase = styled.a`
   margin-top: 24px;
 
   display: inline-flex;
@@ -124,5 +124,5 @@ export {
   CarModalRentalItemsStyleBase,
   CarModalRentalItemStyleBase,
   CarModalRentalItemValueStyleBase,
-  CarModalSubmitButtonStyleBase,
+  CarModalLinkStyleBase,
 };
