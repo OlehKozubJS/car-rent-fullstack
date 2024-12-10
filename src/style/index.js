@@ -26,7 +26,6 @@ injectGlobal`
 
   @font-face {
     font-family: "Manrope-SemiBold";
-    font-weight: 600px;
     src: url(${ManropeSemiBold});
   }
 
