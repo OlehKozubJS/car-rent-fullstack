@@ -87,6 +87,7 @@ injectGlobal`
   }
 
   button {
+    display: block;
     border: none;
     outline: none;
     padding: 0;
