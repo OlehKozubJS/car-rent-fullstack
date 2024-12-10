@@ -1,8 +1,7 @@
 import {
-  CarModalItemStyleBase,
-  CarModalItemsStyleBase,
-  CarModalItemValueStyleBase,
   CarModalSubHeaderStyleBase,
+  CarModalItemsStyleBase,
+  CarModalItemStyleBase,
 } from "./imports";
 
 const CarModalAccessoriesInformation = ({ car, onClose }) => {
