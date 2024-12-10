@@ -4,7 +4,7 @@ import {
   CarModalItemValueStyleBase,
 } from "./imports";
 
-const CarModal = ({ address, id, type, fuelConsumption }) => {
+const CarModalCommonInformation = ({ address, id, type, fuelConsumption }) => {
   return (
     <CarModalItemsStyleBase>
       <CarModalItemStyleBase>
@@ -38,4 +38,4 @@ const CarModal = ({ address, id, type, fuelConsumption }) => {
   );
 };
 
-export { CarModal };
+export { CarModalCommonInformation };
