@@ -1,3 +1,3 @@
-import { SVGimage } from "../imports";
+import { CarModalItemValueStyleBase } from "../CarModalStyles";
 
-export { SVGimage };
+export { CarModalItemValueStyleBase };
