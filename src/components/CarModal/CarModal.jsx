@@ -11,9 +11,6 @@ import {
   CarModalBackdropStyleBase,
   CarModalContainerStyleBase,
   CarModalImageStyleBase,
-  CarModalItemsStyleBase,
-  CarModalItemStyleBase,
-  CarModalItemValueStyleBase,
 } from "./CarModalStyles";
 
 const CarModal = ({ car, onClose }) => {
