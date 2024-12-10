@@ -3,7 +3,7 @@ import { CarModalHeader } from "./CarModalHeader";
 
 import { CarModalDescription } from "./CarModalDescription";
 import { CarModalAccessoriesInformation } from "./CarModalAccessoriesInformation";
-import {} from "./CarModalRentalInformation";
+//import {}} from "./CarModalRentalInformation";
 import { CarModalLink } from "./CarModalLink";
 
 import {
