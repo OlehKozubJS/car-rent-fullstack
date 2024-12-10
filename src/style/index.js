@@ -14,16 +14,19 @@ import {
 injectGlobal`
   @font-face {
     font-family: "Manrope-Regular";
+    font-weight: 400px;
     src: url(${ManropeRegular});
   }
 
   @font-face {
     font-family: "Manrope-Medium";
+    font-weight: 500px;
     src: url(${ManropeMedium});
   }
 
   @font-face {
     font-family: "Manrope-SemiBold";
+    font-weight: 600px;
     src: url(${ManropeSemiBold});
   }
 
