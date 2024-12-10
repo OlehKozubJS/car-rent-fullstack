@@ -85,4 +85,10 @@ injectGlobal`
   input {
     outline: none;
   }
+
+  button {
+    border: none;
+    outline: none;
+    padding: 0;
+  }
 `;
