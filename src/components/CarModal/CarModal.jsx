@@ -23,7 +23,6 @@ import {
 } from "./CarModalStyles";
 
 const CarModal = ({ car, onClose }) => {
-  const [car] = useState(car);
   const [isHover, setIsHover] = useState(false);
 
   const handleMouseOver = () => {
