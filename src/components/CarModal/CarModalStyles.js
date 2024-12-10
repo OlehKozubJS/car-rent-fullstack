@@ -132,7 +132,6 @@ const CarModalSubmitButtonStyleBase = styled.button`
 export {
   CarModalBackdropStyleBase,
   CarModalContainerStyleBase,
-  CarModalCloseButtonIconStyleBase,
   CarModalImageStyleBase,
   CarModalHeaderStyleBase,
   CarModalItemsStyleBase,
