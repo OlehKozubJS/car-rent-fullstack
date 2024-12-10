@@ -14,7 +14,7 @@ import {
   CarModalRentalItemsStyleBase,
   CarModalRentalItemStyleBase,
   CarModalRentalItemValueStyleBase,
-  CarModalSubmitButtonStyleBase,
+  CarModalLinkStyleBase,
 } from "./CarModalStyles";
 
 const CarModal = ({ car, onClose }) => {
@@ -101,9 +101,9 @@ const CarModal = ({ car, onClose }) => {
             </CarModalRentalItemValueStyleBase>
           </CarModalRentalItemStyleBase>
         </CarModalRentalItemsStyleBase>
-        <CarModalSubmitButtonStyleBase href="tel:+380730000000">
+        <CarModalLinkStyleBase href="tel:+380730000000">
           Rental car
-        </CarModalSubmitButtonStyleBase>
+        </CarModalLinkStyleBase>
       </CarModalContainerStyleBase>
     </CarModalBackdropStyleBase>
   );
