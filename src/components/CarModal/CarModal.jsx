@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 
-import { carsLocalData } from "./imports";
-
 import { SVGimage } from "../../images";
 
 import {
