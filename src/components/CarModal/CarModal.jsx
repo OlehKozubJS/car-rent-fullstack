@@ -4,7 +4,7 @@ import { CarModalHeader } from "./CarModalHeader";
 import { CarModalDescription } from "./CarModalDescription";
 import { CarModalAccessoriesInformation } from "./CarModalAccessoriesInformation";
 import { CarModalRentalInformation } from "./CarModalRentalInformation";
-import {} from "./CarModalCommonInformation";
+import { CarModalCommonInformation } from "./CarModalCommonInformation";
 import { CarModalLink } from "./CarModalLink";
 
 import {
