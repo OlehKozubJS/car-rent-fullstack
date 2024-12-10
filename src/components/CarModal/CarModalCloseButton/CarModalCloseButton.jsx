@@ -32,15 +32,13 @@ const CarModalCloseButton = ({ onClose }) => {
   }, [onClose]);
 
   return (
-    <CarModalCloseButtonContainerStyleBase>
-      <CarModalCloseButtonStyleBase
-        onClick={onClose}
-        onMouseOver={handleMouseOver}
-        onMouseLeave={handleMouseLeave}
-      >
-        <SVGimage name={isHover ? "close-hover" : "close"} />
-      </CarModalCloseButtonStyleBase>
-    </CarModalCloseButtonContainerStyleBase>
+    <CarModalCloseButtonStyleBase
+      onClick={onClose}
+      onMouseOver={handleMouseOver}
+      onMouseLeave={handleMouseLeave}
+    >
+      <SVGimage name={isHover ? "close-hover" : "close"} />
+    </CarModalCloseButtonStyleBase>
   );
 };
 
