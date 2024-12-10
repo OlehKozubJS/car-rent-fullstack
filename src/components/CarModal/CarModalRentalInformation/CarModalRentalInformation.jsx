@@ -3,7 +3,7 @@ import {
   CarModalRentalItemsStyleBase,
   CarModalRentalItemStyleBase,
   CarModalRentalItemValueStyleBase,
-} from "./CarModalStyles";
+} from "./imports";
 
 const CarModalRentalInformation = ({
   rentalConditions,
