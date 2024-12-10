@@ -1,3 +1,3 @@
-import { CarModalRentalInformation } from "./CarModalReantalInforamtion";
+import { CarModalRentalInformation } from "./CarModalRentalInforamtion";
 
 export { CarModalRentalInformation };
