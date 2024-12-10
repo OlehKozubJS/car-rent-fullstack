@@ -1,49 +1,11 @@
-import { useState, useEffect } from "react";
-
-import { SVGimage } from "../../images";
-
 import {
-  CarModalBackdropStyleBase,
-  CarModalContainerStyleBase,
-  CarModalCloseButtonContainerStyleBase,
-  CarModalCloseButtonStyleBase,
-  CarModalImageStyleBase,
-  CarModalHeaderStyleBase,
-  CarModalItemsStyleBase,
-  CarModalItemStyleBase,
-  CarModalItemValueStyleBase,
-  CarModalDescriptionStyleBase,
   CarModalSubHeaderStyleBase,
   CarModalRentalItemsStyleBase,
   CarModalRentalItemStyleBase,
   CarModalRentalItemValueStyleBase,
-  CarModalSubmitButtonStyleBase,
 } from "./CarModalStyles";
 
 const CarModal = ({ car, onClose }) => {
-  const [isHover, setIsHover] = useState(false);
-
-  const handleMouseOver = () => {
-    setIsHover(true);
-  };
-  const handleMouseLeave = () => {
-    setIsHover(false);
-  };
-
-  useEffect(() => {
-    const handleEsc = (event) => {
-      if (event.type === "keydown" && event.key === "Escape") {
-        onClose();
-      }
-    };
-
-    window.addEventListener("keydown", handleEsc);
-
-    return () => {
-      window.removeEventListener("keydown", handleEsc);
-    };
-  }, [onClose]);
-
   return (
     <CarModalBackdropStyleBase>
       <CarModalContainerStyleBase>
