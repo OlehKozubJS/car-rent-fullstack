@@ -1,3 +1,3 @@
-import { carsLocalData, makesLocalData } from "../database";
+import { makesLocalData } from "../database";
 
-export { carsLocalData, makesLocalData };
+export { makesLocalData };
