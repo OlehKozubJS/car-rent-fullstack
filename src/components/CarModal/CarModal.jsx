@@ -22,8 +22,8 @@ import {
   CarModalSubmitButtonStyleBase,
 } from "./CarModalStyles";
 
-const CarModal = ({ carId, onClose }) => {
-  const [car] = useState(carsLocalData.find((car) => car.id === carId));
+const CarModal = ({ car, onClose }) => {
+  const [car] = useState(car);
   const [isHover, setIsHover] = useState(false);
 
   const handleMouseOver = () => {
