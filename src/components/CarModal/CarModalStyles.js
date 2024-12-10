@@ -48,14 +48,6 @@ const CarModalItemValueStyleBase = styled.span`
   color: #3470ff;
 `;
 
-const CarModalDescriptionStyleBase = styled.p`
-  color: #121417;
-  font-size: 14px;
-  line-height: 20px;
-
-  font-family: "Manrope-Regular", sans-serif;
-`;
-
 const CarModalSubHeaderStyleBase = styled.h4`
   color: #121417;
   font-size: 14px;
@@ -128,7 +120,6 @@ export {
   CarModalItemsStyleBase,
   CarModalItemStyleBase,
   CarModalItemValueStyleBase,
-  CarModalDescriptionStyleBase,
   CarModalSubHeaderStyleBase,
   CarModalRentalItemsStyleBase,
   CarModalRentalItemStyleBase,
