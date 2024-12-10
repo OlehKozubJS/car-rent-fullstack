@@ -5,31 +5,31 @@ import {
   CarModalRentalItemValueStyleBase,
 } from "./CarModalStyles";
 
-const CarModal = ({ car, onClose }) => {
+const CarModal = ({ rentalConditions, mileage, rentalPrice }) => {
   return (
     <CarModalRentalItemsStyleBase>
       <CarModalRentalItemStyleBase>
         Minimum age:{" "}
         <CarModalRentalItemValueStyleBase>
-          {car.rentalConditions.split("\n")[0].split(" ")[2]}
+          {rentalConditions.split("\n")[0].split(" ")[2]}
         </CarModalRentalItemValueStyleBase>
       </CarModalRentalItemStyleBase>
       <CarModalRentalItemStyleBase>
-        {car.rentalConditions.split("\n")[1]}
+        {rentalConditions.split("\n")[1]}
       </CarModalRentalItemStyleBase>
       <CarModalRentalItemStyleBase>
-        {car.rentalConditions.split("\n")[2]}
+        {rentalConditions.split("\n")[2]}
       </CarModalRentalItemStyleBase>
       <CarModalRentalItemStyleBase>
         Mileage:{" "}
         <CarModalRentalItemValueStyleBase>
-          {car.mileage}
+          {mileage}
         </CarModalRentalItemValueStyleBase>
       </CarModalRentalItemStyleBase>
       <CarModalRentalItemStyleBase>
         Price:{" "}
         <CarModalRentalItemValueStyleBase>
-          {car.rentalPrice}
+          {rentalPrice}
         </CarModalRentalItemValueStyleBase>
       </CarModalRentalItemStyleBase>
     </CarModalRentalItemsStyleBase>
