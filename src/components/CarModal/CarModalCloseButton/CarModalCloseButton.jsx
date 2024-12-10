@@ -3,8 +3,6 @@ import { useState, useEffect } from "react";
 import { SVGimage } from "../../images";
 
 import {
-  CarModalBackdropStyleBase,
-  CarModalContainerStyleBase,
   CarModalCloseButtonContainerStyleBase,
   CarModalCloseButtonStyleBase,
   CarModalImageStyleBase,
