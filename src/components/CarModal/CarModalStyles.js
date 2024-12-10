@@ -1,9 +1,8 @@
 import styled from "@emotion/styled";
 
 const CarModalImageStyleBase = styled.img`
-  display: block;
-  height: 314px;
   border-radius: 12px;
+  width: 100%;
 `;
 
 const CarModalItemsStyleBase = styled.ul`
