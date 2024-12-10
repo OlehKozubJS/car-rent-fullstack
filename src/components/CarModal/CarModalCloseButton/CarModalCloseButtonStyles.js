@@ -7,8 +7,10 @@ const CarModalCloseButtonContainerStyleBase = styled.div`
 
 const CarModalCloseButtonStyleBase = styled.button`
   position: absolute;
-  width: 24px;
+  top: 16px;
+  left: 16px;
   height: 24px;
+  width: 24px;
 
   display: flex;
   justify-content: center;
