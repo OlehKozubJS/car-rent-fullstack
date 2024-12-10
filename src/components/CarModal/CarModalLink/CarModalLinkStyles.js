@@ -23,16 +23,4 @@ const CarModalLinkStyleBase = styled.a`
   }
 `;
 
-export {
-  CarModalBackdropStyleBase,
-  CarModalContainerStyleBase,
-  CarModalImageStyleBase,
-  CarModalItemsStyleBase,
-  CarModalItemStyleBase,
-  CarModalItemValueStyleBase,
-  CarModalSubHeaderStyleBase,
-  CarModalRentalItemsStyleBase,
-  CarModalRentalItemStyleBase,
-  CarModalRentalItemValueStyleBase,
-  CarModalLinkStyleBase,
-};
+export { CarModalLinkStyleBase };
