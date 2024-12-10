@@ -1,4 +1,5 @@
 import { CarModalCloseButton } from "./CarModalCloseButton";
+import { CarModalHeader } from "./CarModalHeader";
 
 import { CarModalDescription } from "./CarModalDescription";
 
@@ -23,11 +24,7 @@ const CarModal = ({ car, onClose }) => {
       <CarModalContainerStyleBase>
         <CarModalCloseButton onClose={onClose} />
         <CarModalImageStyleBase src={car.img} alt="" />
-        <CarModalHeaderStyleBase>
-          <span>{car.make}</span>{" "}
-          <CarModalItemValueStyleBase>{car.model}</CarModalItemValueStyleBase>,{" "}
-          <span>{car.year}</span>
-        </CarModalHeaderStyleBase>
+        <CarModalHeader make={car.make} model={car.model} year={car.year} />
         <CarModalItemsStyleBase>
           <CarModalItemStyleBase>
             {car.address.split(", ")[1]}
