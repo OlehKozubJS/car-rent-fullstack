@@ -7,8 +7,6 @@ import { CarModalCloseButton } from "./CarModalCloseButton";
 import {
   CarModalBackdropStyleBase,
   CarModalContainerStyleBase,
-  CarModalCloseButtonContainerStyleBase,
-  CarModalCloseButtonStyleBase,
   CarModalImageStyleBase,
   CarModalHeaderStyleBase,
   CarModalItemsStyleBase,
