@@ -27,7 +27,7 @@ const MainPage = () => {
       {isModal && <CarModal carId={carsLocalData[0]} onClose={closeModal} />}
       <CarFilter />
       <CarGallery />
-      {carsLocalData[0]}
+      {JSON.stringify(carsLocalData[0])}
     </section>
   );
 };
