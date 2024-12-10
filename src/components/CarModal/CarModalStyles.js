@@ -92,7 +92,7 @@ const CarModalRentalItemValueStyleBase = styled.span`
 
 const CarModalSubmitButtonStyleBase = styled.a``;
 
-const CarModalSubmitButtonStyleBas = styled.a`
+const CarModalSubmitButtonStyleBasee = styled.a`
   margin-top: 24px;
 
   display: inline-flex;
