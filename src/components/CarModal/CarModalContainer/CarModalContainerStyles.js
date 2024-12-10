@@ -17,6 +17,8 @@ const CarModalBackdropStyleBase = styled.div`
 const CarModalContainerStyleBase = styled.article`
   height: 752px;
   width: 541px;
+  flex-basis: 541px;
+
   padding: 15px 37px 40px 45px;
 
   border-radius: 24px;
