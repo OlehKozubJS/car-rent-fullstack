@@ -1,3 +1,3 @@
-import { CarGallery } from "../imports";
+import { SVGimage } from "../imports";
 
-export { CarGallery };
+export { SVGimage };
