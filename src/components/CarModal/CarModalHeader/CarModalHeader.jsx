@@ -1,6 +1,6 @@
 import { CarModalHeaderStyleBase } from "./CarModalHeaderStyles";
 
-const CarModal = ({ make, year, model }) => {
+const CarModalHeader = ({ make, year, model }) => {
   return (
     <CarModalHeaderStyleBase>
       <span>{make}</span>{" "}
@@ -10,4 +10,4 @@ const CarModal = ({ make, year, model }) => {
   );
 };
 
-export { CarModal };
+export { CarModalHeader };
