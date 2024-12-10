@@ -27,14 +27,6 @@ const CarModalImageStyleBase = styled.img`
   border-radius: 12px;
 `;
 
-const CarModalHeaderStyleBase = styled.h3`
-  color: #121417;
-  font-size: 18px;
-  line-height: 24px;
-
-  font-family: "Manrope-Medium", sans-serif;
-`;
-
 const CarModalItemsStyleBase = styled.ul`
   margin: 0;
   padding: 0;
@@ -133,7 +125,6 @@ export {
   CarModalBackdropStyleBase,
   CarModalContainerStyleBase,
   CarModalImageStyleBase,
-  CarModalHeaderStyleBase,
   CarModalItemsStyleBase,
   CarModalItemStyleBase,
   CarModalItemValueStyleBase,
