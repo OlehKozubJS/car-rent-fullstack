@@ -1,9 +1,9 @@
 import { CarModalDescriptionStyleBase } from "./CarModalStyles";
 
-const CarModal = ({ description }) => {
+const CarModalDescription = ({ description }) => {
   return (
     <CarModalDescriptionStyleBase>{description}</CarModalDescriptionStyleBase>
   );
 };
 
-export { CarModal };
+export { CarModalDescription };
