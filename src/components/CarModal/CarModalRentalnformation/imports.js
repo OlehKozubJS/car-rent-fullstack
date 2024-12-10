@@ -1,3 +1,13 @@
-import { carsLocalData, makesLocalData } from "../imports";
+import {
+  CarModalSubHeaderStyleBase,
+  CarModalRentalItemsStyleBase,
+  CarModalRentalItemStyleBase,
+  CarModalRentalItemValueStyleBase,
+} from "../CarModalStyles";
 
-export { carsLocalData, makesLocalData };
+export {
+  CarModalSubHeaderStyleBase,
+  CarModalRentalItemsStyleBase,
+  CarModalRentalItemStyleBase,
+  CarModalRentalItemValueStyleBase,
+};
