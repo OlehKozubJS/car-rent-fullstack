@@ -2,7 +2,7 @@ import { CarModalCloseButton } from "./CarModalCloseButton";
 import { CarModalHeader } from "./CarModalHeader";
 
 import { CarModalDescription } from "./CarModalDescription";
-import {} from "./CarModalAccessoriesInformation";
+import { CarModalAccessoriesInformation } from "./CarModalAccessoriesInformation";
 import { CarModalLink } from "./CarModalLink";
 
 import {
