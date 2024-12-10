@@ -5,7 +5,11 @@ import {
   CarModalRentalItemValueStyleBase,
 } from "./CarModalStyles";
 
-const CarModal = ({ rentalConditions, mileage, rentalPrice }) => {
+const CarModalRentalInformation = ({
+  rentalConditions,
+  mileage,
+  rentalPrice,
+}) => {
   return (
     <>
       <CarModalSubHeaderStyleBase>
@@ -41,4 +45,4 @@ const CarModal = ({ rentalConditions, mileage, rentalPrice }) => {
   );
 };
 
-export { CarModal };
+export { CarModalRentalInformation };
