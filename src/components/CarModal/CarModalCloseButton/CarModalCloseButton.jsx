@@ -18,7 +18,7 @@ import {
   CarModalRentalItemStyleBase,
   CarModalRentalItemValueStyleBase,
   CarModalSubmitButtonStyleBase,
-} from "./CarModalStyles";
+} from "./CarModalCloseButtonStyles";
 
 const CarModal = ({ car, onClose }) => {
   const [isHover, setIsHover] = useState(false);
