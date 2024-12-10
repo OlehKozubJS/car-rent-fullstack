@@ -19,6 +19,7 @@ const CarModalContainerStyleBase = styled.article`
   max-width: 50%;
   height: 100%;
   padding: 15px 37px 40px 45px;
+
   border-radius: 24px;
   background: #fff;
 `;
