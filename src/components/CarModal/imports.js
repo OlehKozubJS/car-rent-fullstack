@@ -1,3 +1,3 @@
-import {} from "..";
+import { CarGallery } from "../CarGallery";
 
-export {};
+export { CarGallery };
