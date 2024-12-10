@@ -1,21 +1,10 @@
 import { useState, useEffect } from "react";
 
-import { SVGimage } from "../../images";
+import { SVGimage } from "../imports";
 
 import {
   CarModalCloseButtonContainerStyleBase,
   CarModalCloseButtonStyleBase,
-  CarModalImageStyleBase,
-  CarModalHeaderStyleBase,
-  CarModalItemsStyleBase,
-  CarModalItemStyleBase,
-  CarModalItemValueStyleBase,
-  CarModalDescriptionStyleBase,
-  CarModalSubHeaderStyleBase,
-  CarModalRentalItemsStyleBase,
-  CarModalRentalItemStyleBase,
-  CarModalRentalItemValueStyleBase,
-  CarModalSubmitButtonStyleBase,
 } from "./CarModalCloseButtonStyles";
 
 const CarModal = ({ car, onClose }) => {
