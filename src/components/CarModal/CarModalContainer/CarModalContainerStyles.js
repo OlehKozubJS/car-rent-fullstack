@@ -18,7 +18,7 @@ const CarModalContainerStyleBase = styled.article`
   position: relative;
   height: 752px;
   width: 541px;
-  padding: 15px 37px 40px 45px;
+  padding: 40px;
 
   border-radius: 24px;
   background: #fff;
