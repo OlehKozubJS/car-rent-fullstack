@@ -47,7 +47,7 @@ const CarModal = ({ car, onClose }) => {
   return (
     <CarModalBackdropStyleBase>
       <CarModalContainerStyleBase>
-        <CarModalCloseButton onClose={}/>
+        <CarModalCloseButton onClose={onClose} />
         <CarModalImageStyleBase src={car.img} alt="" />
         <CarModalHeaderStyleBase>
           <span>{car.make}</span>{" "}
