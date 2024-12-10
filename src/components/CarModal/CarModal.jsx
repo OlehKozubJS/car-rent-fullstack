@@ -28,8 +28,8 @@ const CarModal = ({ car, onClose }) => {
           id={car.id}
           year={car.year}
           type={car.type}
-          engineSize={car.engineSize}
           fuelConsumption={car.fuelConsumption}
+          engineSize={car.engineSize}
         />
         <CarModalDescription description={car.description} />
         <CarModalAccessoriesInformation
