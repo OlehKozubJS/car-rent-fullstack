@@ -1,14 +1,7 @@
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
-import {
-  carsLocalData,
-  setSelectedCars,
-  CarFilter,
-  CarGallery,
-  CarModal,
-  getCarModel,
-} from "./imports";
+import { carsLocalData, CarFilter, CarGallery, CarModal } from "./imports";
 
 const MainPage = () => {
   const [isModal, setIsModal] = useState(false);
