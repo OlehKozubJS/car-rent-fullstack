@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const CarModalHeaderStyleBase1 = styled.h3`
+const CarModalHeaderStyleBaseOne = styled.h3`
   margin-top: 14px;
 
   font-family: "Manrope-Regular";
@@ -9,7 +9,7 @@ const CarModalHeaderStyleBase1 = styled.h3`
   color: #121417;
 `;
 
-const CarModalHeaderStyleBase2 = styled.h3`
+const CarModalHeaderStyleBaseTwo = styled.h3`
   margin-top: 14px;
 
   font-family: "Manrope-Medium";
@@ -18,7 +18,7 @@ const CarModalHeaderStyleBase2 = styled.h3`
   color: #121417;
 `;
 
-const CarModalHeaderStyleBase3 = styled.h3`
+const CarModalHeaderStyleBaseThree = styled.h3`
   margin-top: 14px;
 
   font-family: "Manrope-SemiBold";
@@ -28,7 +28,7 @@ const CarModalHeaderStyleBase3 = styled.h3`
 `;
 
 export {
-  CarModalHeaderStyleBase1,
-  CarModalHeaderStyleBase2,
-  CarModalHeaderStyleBase3,
+  CarModalHeaderStyleBaseOne,
+  CarModalHeaderStyleBaseTwo,
+  CarModalHeaderStyleBaseThree,
 };
