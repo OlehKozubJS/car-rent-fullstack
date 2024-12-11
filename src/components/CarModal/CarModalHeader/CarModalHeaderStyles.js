@@ -25,6 +25,9 @@ const CarModalHeaderStyleBaseThree = styled.h3`
   font-size: 18px;
   line-height: 24px;
   color: #121417;
+  &:hover {
+    font-family: "Manrope-Medium";
+  }
 `;
 
 export {
