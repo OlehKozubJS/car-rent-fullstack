@@ -12,7 +12,7 @@ const CarModalHeaderStyleBaseOne = styled.h3`
 const CarModalHeaderStyleBaseTwo = styled.h3`
   margin-top: 14px;
 
-  font-family: ${(font) => {
+  font-family: ${({ font }) => {
     font;
   }};
   font-size: 18px;
