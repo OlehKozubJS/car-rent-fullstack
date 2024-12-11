@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const CarModalHeaderStyleBaseOne = styled.h3`
+const CarModalHeaderStyleBaseOne = styled.p`
   margin-top: 14px;
 
   font-family: "Manrope-Regular";
@@ -9,7 +9,7 @@ const CarModalHeaderStyleBaseOne = styled.h3`
   color: #121417;
 `;
 
-const CarModalHeaderStyleBaseTwo = styled.h3`
+const CarModalHeaderStyleBaseTwo = styled.p`
   margin-top: 14px;
 
   font-family: ${({ font }) => {
@@ -20,7 +20,7 @@ const CarModalHeaderStyleBaseTwo = styled.h3`
   color: #121417;
 `;
 
-const CarModalHeaderStyleBaseThree = styled.h3`
+const CarModalHeaderStyleBaseThree = styled.p`
   margin-top: 14px;
 
   font-family: "Manrope-SemiBold";
