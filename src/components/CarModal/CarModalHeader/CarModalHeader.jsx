@@ -14,7 +14,7 @@ const CarModalHeader = ({ make, year, model }) => {
         <CarModalItemValueStyleBase>{model}</CarModalItemValueStyleBase>,{" "}
         <span>{year}</span>
       </CarModalHeaderStyleBaseOne>
-      <CarModalHeaderStyleBaseTwo font="Ojuju">
+      <CarModalHeaderStyleBaseTwo font="manrope-semibold">
         <span>{make}</span>{" "}
         <CarModalItemValueStyleBase>{model}</CarModalItemValueStyleBase>,{" "}
         <span>{year}</span>
