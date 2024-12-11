@@ -1,29 +1,29 @@
 import { CarModalItemValueStyleBase } from "./imports";
 
 import {
-  CarModalHeaderStyleBase1,
-  CarModalHeaderStyleBase2,
-  CarModalHeaderStyleBase3,
+  CarModalHeaderStyleBaseOne,
+  CarModalHeaderStyleBaseTwo,
+  CarModalHeaderStyleBaseThree,
 } from "./CarModalHeaderStyles";
 
 const CarModalHeader = ({ make, year, model }) => {
   return (
     <>
-      <CarModalHeaderStyleBase1>
+      <CarModalHeaderStyleBaseOne>
         <span>{make}</span>{" "}
         <CarModalItemValueStyleBase>{model}</CarModalItemValueStyleBase>,{" "}
         <span>{year}</span>
-      </CarModalHeaderStyleBase1>
-      <CarModalHeaderStyleBase2>
+      </CarModalHeaderStyleBaseOne>
+      <CarModalHeaderStyleBaseTwo>
         <span>{make}</span>{" "}
         <CarModalItemValueStyleBase>{model}</CarModalItemValueStyleBase>,{" "}
         <span>{year}</span>
-      </CarModalHeaderStyleBase2>
-      <CarModalHeaderStyleBase3>
+      </CarModalHeaderStyleBaseTwo>
+      <CarModalHeaderStyleBaseThree>
         <span>{make}</span>{" "}
         <CarModalItemValueStyleBase>{model}</CarModalItemValueStyleBase>,{" "}
         <span>{year}</span>
-      </CarModalHeaderStyleBase3>
+      </CarModalHeaderStyleBaseThree>
     </>
   );
 };
