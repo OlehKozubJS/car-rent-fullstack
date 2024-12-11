@@ -64,6 +64,7 @@ injectGlobal`
   h6,
   p {
     margin: 0;
+    text-decoration: underline;
   }
 
   ul {
