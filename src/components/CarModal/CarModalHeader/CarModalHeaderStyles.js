@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 const CarModalHeaderStyleBase1 = styled.h3`
   margin-top: 14px;
 
-  font-family: "Montserrat-Regular";
+  font-family: "Manrope-Regular";
   font-size: 18px;
   line-height: 24px;
   color: #121417;
@@ -12,7 +12,7 @@ const CarModalHeaderStyleBase1 = styled.h3`
 const CarModalHeaderStyleBase2 = styled.h3`
   margin-top: 14px;
 
-  font-family: "Manrope-Medium";
+  font-family: "Montserrat-Regular";
   font-size: 18px;
   line-height: 24px;
   color: #121417;
