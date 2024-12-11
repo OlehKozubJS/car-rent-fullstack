@@ -83,9 +83,9 @@ const MygerPage = () => {
           size={middleSizeValue}
         ></JustAnotherDiv>
       </CheapTrick>
-      <span style={{}}>Regular</span>
-      <span style={{}}>Medium</span>
-      <span style={{}}>Semibold</span>
+      <span style={{ fontFamily: "" }}>Regular</span>
+      <span style={{ fontFamily: "" }}>Medium</span>
+      <span style={{ fontFamily: "" }}>Semibold</span>
     </div>
   );
 };
