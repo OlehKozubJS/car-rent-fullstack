@@ -13,7 +13,7 @@ const CarModalHeaderStyleBaseTwo = styled.h3`
   margin-top: 14px;
 
   font-family: ${({ font }) => {
-    font;
+    return font;
   }};
   font-size: 18px;
   line-height: 24px;
