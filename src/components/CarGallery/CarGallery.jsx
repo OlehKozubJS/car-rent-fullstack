@@ -6,9 +6,7 @@ const CarGallery = ({ cars, onClick }) => {
   return (
     <ul>
       {cars.map((car, carIndex) => {
-        return (
-          <CarItem key={carIndex} carInformation={car} onClick={onClick} />
-        );
+        return <CarItem key={carIndex} car={car} onClick={onClick} />;
       })}
     </ul>
   );
