@@ -23,17 +23,9 @@ const App = () => {
   return (
     <div style={{ fontFamily: "Manrope-Regular" }}>
       <header>
-        <
-                      onChange={handleCurrentPageName}
-                      value={pageName}
-                      checked={currentPageName === pageName}
-                    />
-                    <span>{pageName}</span>
-                  </label>
-                </li>
-              );
-            })}
-          </ul>
+        <PageNavigation
+                      onChange={handleCurrentPageName}/>
+
         </nav>
       </header>
       <main>{pages[currentPageName]}</main>
