@@ -24,7 +24,6 @@ const CarItem = ({ car, onClick }) => {
         functionalities={car.functionalities}
       />
       <CarModalLink />
-      {JSON.stringify(car)}
       <button onClick={handleClick}>Learn more</button>
     </li>
   );
