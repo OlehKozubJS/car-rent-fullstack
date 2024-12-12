@@ -6,9 +6,6 @@ const CarModalImageStyleBase = styled.img`
 `;
 
 const CarModalItemsStyleBase = styled.ul`
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   column-gap: 4px;
