@@ -8,7 +8,7 @@ import "./style";
 
 const PageNavigation = ({ pagesObject, onClick }) => {
   const handleCurrentPageName = (event) => {
-    onClick(pagesObject event.target.value);
+    onClick(pagesObject[event.target.value]);
   };
 
   return (
