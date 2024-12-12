@@ -23,16 +23,7 @@ const App = () => {
   return (
     <div style={{ fontFamily: "Manrope-Regular" }}>
       <header>
-        <nav>
-          <ul>
-            {Object.keys(pages).map((pageName) => {
-              return (
-                <li key={pageName}>
-                  <label htmlFor={pageName}>
-                    <input
-                      id={pageName}
-                      name="pageSwitcher"
-                      type="radio"
+        <
                       onChange={handleCurrentPageName}
                       value={pageName}
                       checked={currentPageName === pageName}
