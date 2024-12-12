@@ -1,3 +1,3 @@
-import { CarModalInformationDivider } from "./CarModalInformationDivider";
+import { CarGalleryInformationDivider } from "./CarGalleryInformationDivider";
 
-export { CarModalInformationDivider };
+export { CarGalleryInformationDivider };
