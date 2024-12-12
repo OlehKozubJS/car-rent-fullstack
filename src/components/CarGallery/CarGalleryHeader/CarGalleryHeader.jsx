@@ -1,6 +1,6 @@
 import { CarGalleryItemValueStyleBase } from "./imports";
 
-import { CarGalleryHeaderStyleBase } from "./CarModalHeaderStyles";
+import { CarGalleryHeaderStyleBase } from "./CarGalleryHeaderStyles";
 
 const CarGalleryHeader = ({ make, year, model }) => {
   return (
