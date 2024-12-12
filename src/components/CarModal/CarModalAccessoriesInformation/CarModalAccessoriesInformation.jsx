@@ -15,14 +15,9 @@ const CarModalAccessoriesInformation = ({ accessories, functionalities }) => {
       <CarModalItemsStyleBase>
         {accessories.map((item, index, array) => {
           return (
-            <p>
-              <CarModalItemStyleBase key={`info${index}`}>
-                {item}
-              </CarModalItemStyleBase>
-              {index < array.length - 1 && (
-                <CarModalInformationDivider key={`div${index}`} />
-              )}
-            </p>
+            <CarModalItemStyleBase key={`info${index}`}>
+              {item}
+            </CarModalItemStyleBase>
           );
         })}
         {functionalities.map((item, index) => {
