@@ -33,7 +33,7 @@ const CarGallerySubHeaderStyleBase = styled.h4`
   color: #121417;
 `;
 
-const CarModalLinkStyleBase = styled.a`
+const CarGalleryButtonStyleBase = styled.button`
   display: inline-flex;
   padding: 12px 50px;
   justify-content: center;
@@ -41,7 +41,7 @@ const CarModalLinkStyleBase = styled.a`
 
   border: none;
   border-radius: 12px;
-  background: rgb(52, 112, 255);
+  background-color: rgb(52, 112, 255);
 
   color: #fff;
   font-size: 14px;
@@ -50,7 +50,7 @@ const CarModalLinkStyleBase = styled.a`
   font-family: "Manrope-SemiBold", sans-serif;
 
   &:hover {
-    background: #0b44cd;
+    background-color: #0b44cd;
   }
 `;
 
@@ -60,4 +60,5 @@ export {
   CarModalItemStyleBase,
   CarModalItemValueStyleBase,
   CarModalSubHeaderStyleBase,
+  CarGalleryButtonStyleBase,
 };
