@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { SVGimage } from "../../images";
 
 const CarItem = ({ car, onClick }) => {
+  const [ifFavourite, setIsFavourite] = useState();
+
   const handleClick = () => {
     onClick(car);
   };
