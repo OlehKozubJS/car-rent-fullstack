@@ -1,6 +1,6 @@
 const PageNavigation = ({ page, onClick, currentPageName }) => {
   const handleCurrentPage = (event) => {
-    onClick({ [event.target.value]: pagesObject[event.target.value] });
+    onClick(pages.find(() => {}));
   };
 
   return (
