@@ -4,6 +4,8 @@ import { carsLocalData } from "./database";
 
 import { MainPage, TestPage, MygerPage } from "./pages";
 
+import { PageNavigation } from "./components";
+
 import "./style";
 
 const App = () => {
