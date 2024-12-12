@@ -27,7 +27,7 @@ const App = () => {
           onChange={handleCurrentPageName}
         />
       </header>
-      <main>{pages[currentPageName]}</main>
+      <main>{currentPage}</main>
     </div>
   );
 };
