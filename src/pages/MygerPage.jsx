@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import styled from "@emotion/styled";
 
-import { carsLocalData } from "./imports";
+import { SVGimage } from "../images";
 
 const CheapTrick = styled.section`
   height: 500px;
@@ -88,6 +88,7 @@ const MygerPage = () => {
       <span style={{ fontFamily: "manrope-semibold" }}>Semibold</span>
       <span style={{ fontFamily: "montserrat-regular" }}>Regular</span>
       <span style={{ fontFamily: "montserrat-semibold" }}>Semibold</span>
+      <SVGimage name="norm" />
     </div>
   );
 };
