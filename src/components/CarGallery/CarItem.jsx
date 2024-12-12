@@ -1,6 +1,14 @@
 import { useState, useEffect } from "react";
 
-import { CarGalleryContainerStyleBase } from "./CarGalleryStyles";
+import { CarGalleryHeader } from "./CarGalleryHeader";
+import { CarGalleryCommonInformation } from "./CarGalleryCommonInformation";
+import { CarGalleryAccessoriesInformation } from "./CarGalleryAccessoriesInformation";
+
+import {
+  CarGalleryContainerStyleBase,
+  CarGalleryImageStyleBase,
+  CarGalleryButtonSDtyleBase,
+} from "./CarGalleryStyles";
 
 import { SVGimage } from "../../images";
 
