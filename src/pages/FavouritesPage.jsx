@@ -25,4 +25,4 @@ const FavouritesPage = ({ cars }) => {
   );
 };
 
-export { MainPage };
+export { FavouritesPage };
