@@ -551,7 +551,7 @@
     "make": "Kia",
     "model": "Rio",
     "type": "Hatchback",
-    "photoLink": "https://ftp.goit.study/img/cars-test-task/kia_rio_hatchback.jpeg",
+    "img": "https://ftp.goit.study/img/cars-test-task/kia_rio_hatchback.jpeg",
     "description": "The Kia Rio is a compact and fuel-efficient hatchback that offers a blend of affordability, reliability, and practicality, making it an excellent choice for urban commuting and everyday driving.",
     "fuelConsumption": "6.2",
     "engineSize": "1.6L 4-cylinder",
