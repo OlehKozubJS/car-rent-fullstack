@@ -8,6 +8,7 @@ const CarGalleryHeader = ({ make, year, model }) => {
       <span>{make}</span>{" "}
       <CarGalleryItemValueStyleBase>{model}</CarGalleryItemValueStyleBase>,{" "}
       <span>{year}</span>
+      <CarGalleryItemValueStyleBase>{model}</CarGalleryItemValueStyleBase>,{" "}
     </CarGalleryHeaderStyleBase>
   );
 };
