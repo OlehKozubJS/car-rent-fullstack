@@ -1,6 +1,8 @@
 import styled from "@emotion/styled";
 
-const CarModalInformationDivisorStyleBase = styled.div`
+const CarModalInformationDividerStyleBase = styled.div`
   height: 16px;
   width: 10px;
 `;
+
+const CarModalInformationDivider = () => {};
