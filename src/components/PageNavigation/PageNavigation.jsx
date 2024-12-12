@@ -48,4 +48,4 @@ const PageNavigation = ({ pages }) => {
   );
 };
 
-export { App };
+export { PageNavigation };
