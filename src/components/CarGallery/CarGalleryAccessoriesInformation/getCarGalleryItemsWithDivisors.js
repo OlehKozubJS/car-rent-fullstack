@@ -1,4 +1,4 @@
-import { CarModalInformationDivider } from "../CarModalInformationDivider";
+import { CarGalleryInformationDivider } from "../CarGalleryInformationDivider";
 
 import { CarModalItemStyleBase } from "./imports";
 
