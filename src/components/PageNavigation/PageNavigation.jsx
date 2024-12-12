@@ -6,7 +6,7 @@ import { MainPage, TestPage, MygerPage } from "./pages";
 
 import "./style";
 
-const App = () => {
+const PageNavigation = () => {
   const [pages] = useState({
     "Main page": <MainPage cars={carsLocalData.slice(0, 25)} />,
     "Test page": <TestPage />,
