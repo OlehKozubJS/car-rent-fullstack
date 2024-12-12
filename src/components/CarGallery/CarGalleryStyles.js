@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const CarGalleryContainerStyleBase = styled.ul``;
+const CarGalleryStyleBase = styled.ul``;
 
 const CarGalleryItemContainerStyleBase = styled.li`
   position: relative;
@@ -68,7 +68,7 @@ const CarGalleryButtonStyleBase = styled.button`
 `;
 
 export {
-  CarGalleryContainerStyleBase,
+  CarGalleryStyleBase,
   CarGalleryItemContainerStyleBase,
   CarGalleryImageStyleBase,
   CarGalleryItemsStyleBase,
