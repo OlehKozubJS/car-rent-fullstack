@@ -8,7 +8,7 @@ import "./style";
 
 const PageNavigation = ({ pages }) => {
   const [pages] = useState({
-    "Main page": <MainPage cars={carsLocalData.slice(0, 25)} />,
+    "Main page": 
 
   const [currentPageName, setCurrentPageName] = useState("Main page");
 
