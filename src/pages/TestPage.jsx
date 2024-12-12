@@ -192,7 +192,7 @@ const TestPage = () => {
         <SVGimage name="fav" />
       </div>
       <img
-        src="https://ftp.goit.study/img/cars-test-task/chrysler_voyager.jpg"
+        src="https://ftp.goit.study/img/cars-test-task/chrysler_voyager.jpeg"
         alt=""
       />
     </div>
