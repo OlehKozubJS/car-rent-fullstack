@@ -55,10 +55,10 @@ const CarGalleryButtonStyleBase = styled.button`
 `;
 
 export {
-  CarModalImageStyleBase,
-  CarModalItemsStyleBase,
-  CarModalItemStyleBase,
-  CarModalItemValueStyleBase,
-  CarModalSubHeaderStyleBase,
+  CarGalleryImageStyleBase,
+  CarGalleryItemsStyleBase,
+  CarGalleryItemStyleBase,
+  CarGalleryItemValueStyleBase,
+  CarGallerySubHeaderStyleBase,
   CarGalleryButtonStyleBase,
 };
