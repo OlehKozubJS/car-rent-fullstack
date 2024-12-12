@@ -8,7 +8,7 @@ const CarGalleryHeaderStyleBase = styled.h3`
   line-height: 24px;
   color: #121417;
 
-  diplay: flex;
+  display: flex;
   justify-content: space-between;
 `;
 
