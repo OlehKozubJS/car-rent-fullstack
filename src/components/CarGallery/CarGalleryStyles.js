@@ -33,6 +33,8 @@ const CarGalleryImageStyleBase = styled.img`
 
 const CarGalleryFavouriteButtonStyleBase = styled.button`
   position: absolute;
+  top: 14px;
+  right: 14px;
 `;
 
 const CarGalleryItemsStyleBase = styled.div`
