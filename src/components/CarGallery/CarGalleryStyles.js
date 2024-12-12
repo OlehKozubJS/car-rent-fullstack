@@ -76,6 +76,7 @@ export {
   CarGalleryStyleBase,
   CarGalleryItemContainerStyleBase,
   CarGalleryImageStyleBase,
+  CarGalleryImageContainerStyleBase,
   CarGalleryItemsStyleBase,
   CarGalleryItemStyleBase,
   CarGalleryItemValueStyleBase,
