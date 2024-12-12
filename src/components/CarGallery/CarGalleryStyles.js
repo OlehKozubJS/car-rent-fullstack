@@ -21,11 +21,12 @@ const CarGalleryItemContainerStyleBase = styled.li`
 const CarGalleryImageContainerStyleBase = styled.div`
   height: 268px;
   with: 274px;
+  overflow: hidden;
 `;
 
 const CarGalleryImageStyleBase = styled.img`
   border-radius: 12px;
-  width: 100%;
+  height: 100%;
 `;
 
 const CarGalleryItemsStyleBase = styled.div`
