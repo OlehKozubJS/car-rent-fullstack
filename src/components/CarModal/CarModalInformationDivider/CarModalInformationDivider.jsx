@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 const CarModalInformationDividerStyleBase = styled.div`
   height: 16px;
-  width: 10px;
+  width: 0.5px;
 
   background-color: rgba(18, 20, 23, 0.1);
 `;
