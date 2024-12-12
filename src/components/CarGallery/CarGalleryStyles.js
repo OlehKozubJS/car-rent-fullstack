@@ -45,13 +45,6 @@ const CarGalleryItemValueStyleBase = styled.span`
   color: rgb(52, 112, 255);
 `;
 
-const CarGallerySubHeaderStyleBase = styled.h4`
-  font-family: "Manrope-Medium", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  color: rgb(18, 20, 23);
-`;
-
 const CarGalleryButtonStyleBase = styled.button`
   display: inline-flex;
   padding: 12px 50px;
