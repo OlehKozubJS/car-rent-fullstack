@@ -12,7 +12,7 @@ import {
   CarGalleryButtonStyleBase,
 } from "./CarGalleryStyles";
 
-import { SVGimage } from "../../images";
+import { SVGimage } from "../imports";
 
 const CarGalleryItem = ({ car, onClick }) => {
   const [ifFavourite, setIsFavourite] = useState(false);
@@ -34,7 +34,7 @@ const CarGalleryItem = ({ car, onClick }) => {
       <CarGalleryImageContainerStyleBase>
         <CarGalleryImageStyleBase src={car.img} alt="" />
         <CarGalleryFavouriteButtonStyleBase>
-          Hello
+          <SVGimage name={isFavourite ? "fav" : "norm"} />
         </CarGalleryFavouriteButtonStyleBase>
       </CarGalleryImageContainerStyleBase>
       <CarGalleryHeader make={car.make} model={car.model} year={car.year} />
