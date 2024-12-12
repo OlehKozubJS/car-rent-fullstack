@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 import { CarFilter, CarGallery, CarModal } from "./imports";
 
-const MainPage = ({ cars }) => {
+const FavouritesPage = ({ cars }) => {
   const [isModal, setIsModal] = useState(false);
   const [car, setCar] = useState(null);
 
