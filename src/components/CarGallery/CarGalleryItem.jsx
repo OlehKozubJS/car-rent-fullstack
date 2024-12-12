@@ -55,7 +55,7 @@ const CarGalleryItem = ({ car, onClick }) => {
         accessories={car.accessories}
         functionalities={car.functionalities}
       />
-      {car.price}
+      {car.rentalPrice}
       <CarGalleryButtonStyleBase onClick={handleClick}>
         Learn more
       </CarGalleryButtonStyleBase>
