@@ -1,5 +1,3 @@
-import { CarModalInformationDivider } from "../CarModalInformationDivider";
-
 import {
   CarModalSubHeaderStyleBase,
   CarModalItemsStyleBase,
@@ -8,25 +6,20 @@ import {
 
 const CarModalAccessoriesInformation = ({ accessories, functionalities }) => {
   return (
-    <>
-      <CarModalSubHeaderStyleBase>
-        Accessories and functionalities:
-      </CarModalSubHeaderStyleBase>
-      <CarModalItemsStyleBase>
-        {accessories.map((item, index, array) => {
-          return (
-            <CarModalItemStyleBase key={`info${index}`}>
-              {item}
-            </CarModalItemStyleBase>
-          );
-        })}
-        {functionalities.map((item, index) => {
-          return (
-            <CarModalItemStyleBase key={index}>{item}</CarModalItemStyleBase>
-          );
-        })}
-      </CarModalItemsStyleBase>
-    </>
+    <CarModalItemsStyleBase>
+      {accessories.map((item, index, array) => {
+        return (
+          <CarModalItemStyleBase key={`info${index}`}>
+            {item}
+          </CarModalItemStyleBase>
+        );
+      })}
+      {functionalities.map((item, index) => {
+        return (
+          <CarModalItemStyleBase key={index}>{item}</CarModalItemStyleBase>
+        );
+      })}
+    </CarModalItemsStyleBase>
   );
 };
 
