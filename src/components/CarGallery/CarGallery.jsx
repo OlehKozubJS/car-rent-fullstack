@@ -1,14 +1,14 @@
-import {} from "./CarGalleryStyles";
+import { CarGalleryStyleBase } from "./CarGalleryStyles";
 
 import { CarGalleryItem } from "./CarGalleryItem";
 
 const CarGallery = ({ cars, onClick }) => {
   return (
-    <ul>
+    <CarGalleryStyleBase>
       {cars.map((car, carIndex) => {
         return <CarGalleryItem key={carIndex} car={car} onClick={onClick} />;
       })}
-    </ul>
+    </CarGalleryStyleBase>
   );
 };
 
