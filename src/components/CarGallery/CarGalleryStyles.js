@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 const CarGalleryContainerStyleBase = styled.article`
   position: relative;
-  width: 541px;
+  width: 274px;
   padding: 40px;
 
   border-radius: 24px;
