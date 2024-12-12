@@ -12,9 +12,9 @@ const CarModalItemsStyleBase = styled.ul`
 `;
 
 const CarModalItemStyleBase = styled.li`
-  color: rgba(18, 20, 23, 0.5);
   font-size: 12px;
   line-height: 18px;
+  color: rgba(18, 20, 23, 0.5);
 
   font-family: "Manrope-Regular", sans-serif;
 `;
