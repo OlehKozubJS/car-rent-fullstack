@@ -33,7 +33,7 @@ const CarGalleryItem = ({ car, onClick }) => {
     <CarGalleryItemContainerStyleBase>
       <CarGalleryImageContainerStyleBase>
         <CarGalleryImageStyleBase src={car.img} alt="" />
-        <CarGalleryFavouriteButtonStyleBase>
+        <CarGalleryFavouriteButtonStyleBase type="button" onClick={}>
           <SVGimage name={isFavourite ? "fav" : "norm"} />
         </CarGalleryFavouriteButtonStyleBase>
       </CarGalleryImageContainerStyleBase>
