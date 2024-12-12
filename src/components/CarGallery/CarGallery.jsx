@@ -3,7 +3,12 @@ import { useState, useEffect } from "react";
 import { CarItem } from "./CarItem";
 
 const CarGallery = ({ cars, onClick }) => {
-  return (
+  return <>{cars}</>;
+};
+
+export { CarGallery };
+/*
+
     <ul>
       {cars.map((car, carIndex) => {
         return (
@@ -11,7 +16,5 @@ const CarGallery = ({ cars, onClick }) => {
         );
       })}
     </ul>
-  );
-};
 
-export { CarGallery };
+*/
