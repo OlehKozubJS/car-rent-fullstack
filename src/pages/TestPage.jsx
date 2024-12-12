@@ -191,10 +191,6 @@ const TestPage = () => {
       <div style={{ backgroundColor: "black" }}>
         <SVGimage name="fav" />
       </div>
-      <img
-        src="https://ftp.goit.study/img/cars-test-task/chrysler_voyager.jpeg"
-        alt=""
-      />
     </div>
   );
 };
