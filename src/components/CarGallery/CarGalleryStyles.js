@@ -1,6 +1,9 @@
 import styled from "@emotion/styled";
 
-const CarGalleryStyleBase = styled.ul``;
+const CarGalleryStyleBase = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+`;
 
 const CarGalleryItemContainerStyleBase = styled.li`
   position: relative;
