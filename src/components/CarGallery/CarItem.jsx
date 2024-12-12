@@ -7,7 +7,7 @@ import { CarGalleryAccessoriesInformation } from "./CarGalleryAccessoriesInforma
 import {
   CarGalleryContainerStyleBase,
   CarGalleryImageStyleBase,
-  CarGalleryButtonSDtyleBase,
+  CarGalleryButtonStyleBase,
 } from "./CarGalleryStyles";
 
 import { SVGimage } from "../../images";
@@ -43,7 +43,9 @@ const CarItem = ({ car, onClick }) => {
         accessories={car.accessories}
         functionalities={car.functionalities}
       />
-      <button onClick={handleClick}>Learn more</button>
+      <CarGalleryButtonStyleBase onClick={handleClick}>
+        Learn more
+      </CarGalleryButtonStyleBase>
     </CarGalleryContainerStyleBase>
   );
 };
