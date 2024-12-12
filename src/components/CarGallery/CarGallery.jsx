@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 
 import { CarItem } from "./CarItem";
 
-const CarGallery = ({ cars, onClick }) => {
-  return <>{cars}</>;
+const CarGallery = ({ cars, onClick = null }) => {
+  return <>{JSON.stringify(cars)}</>;
 };
 
 export { CarGallery };
