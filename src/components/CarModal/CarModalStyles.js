@@ -7,6 +7,7 @@ const CarModalImageStyleBase = styled.img`
 
 const CarModalItemsStyleBase = styled.div`
   margin-top: 8px;
+
   display: flex;
   flex-wrap: wrap;
   column-gap: 6px;
