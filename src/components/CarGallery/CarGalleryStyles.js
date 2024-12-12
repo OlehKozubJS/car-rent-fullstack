@@ -20,13 +20,19 @@ const CarGalleryItemContainerStyleBase = styled.li`
 
 const CarGalleryImageContainerStyleBase = styled.div`
   height: 268px;
-  with: 274px;
+  width: 274px;
+
+  position: relative;
   overflow: hidden;
 `;
 
 const CarGalleryImageStyleBase = styled.img`
   border-radius: 12px;
   height: 100%;
+`;
+
+const CarGlleryFavouriteButtonStyleBase = styled.button`
+  position: abolute;
 `;
 
 const CarGalleryItemsStyleBase = styled.div`
