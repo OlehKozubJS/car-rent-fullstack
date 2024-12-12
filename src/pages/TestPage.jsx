@@ -192,19 +192,6 @@ const TestPage = () => {
         <SVGimage name="fav" />
       </div>
       <img src="" alt="" />
-      <img src="" alt="" />
-      <img
-        src="https://ftp.goit.study/img/cars-test-task/volvo_xc60_2.jpeg"
-        alt=""
-      />
-      <img
-        src="https://ftp.goit.study/img/cars-test-task/land_rover_range_rover_sport.jpeg"
-        alt=""
-      />
-      <img
-        src="https://ftp.goit.study/img/cars-test-task/kia_rio_sedan_hatchback.jpeg"
-        alt=""
-      />
     </div>
   );
 };
