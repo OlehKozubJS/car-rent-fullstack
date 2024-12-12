@@ -1,11 +1,11 @@
 import {
-  CarModalSubHeaderStyleBase,
-  CarModalItemsStyleBase,
-  CarModalItemStyleBase,
-} from "../CarModalStyles";
+  CarGallerySubHeaderStyleBase,
+  CarGalleryItemsStyleBase,
+  CarGalleryItemStyleBase,
+} from "../CarGalleryStyles";
 
 export {
-  CarModalSubHeaderStyleBase,
-  CarModalItemsStyleBase,
-  CarModalItemStyleBase,
+  CarGallerySubHeaderStyleBase,
+  CarGalleryItemsStyleBase,
+  CarGalleryItemStyleBase,
 };
