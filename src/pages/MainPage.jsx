@@ -17,7 +17,7 @@ const MainPage = () => {
   return (
     <section>
       <button onClick={openModal}>Open Modal</button>
-      {isModal && <CarModal car={carsLocalData[0]} onClose={closeModal} />}
+      {isModal && <CarModal car={carsLocalData[1]} onClose={closeModal} />}
       <CarFilter />
       <CarGallery />
     </section>
