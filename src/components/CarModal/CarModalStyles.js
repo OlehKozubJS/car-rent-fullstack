@@ -24,12 +24,12 @@ const CarModalItemValueStyleBase = styled.span`
 `;
 
 const CarModalSubHeaderStyleBase = styled.h4`
-  color: #121417;
+  font-family: "Manrope-Medium", sans-serif;
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 8px;
+  color: #121417;
 
-  font-family: "Manrope-Medium", sans-serif;
+  margin-bottom: 8px;
 `;
 
 export {
