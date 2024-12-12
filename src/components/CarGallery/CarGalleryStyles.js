@@ -35,6 +35,8 @@ const CarGalleryFavouriteButtonStyleBase = styled.button`
   position: absolute;
   top: 14px;
   right: 14px;
+
+  background: none;
 `;
 
 const CarGalleryItemsStyleBase = styled.div`
