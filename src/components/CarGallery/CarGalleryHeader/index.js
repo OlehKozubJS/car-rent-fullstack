@@ -1,3 +1,3 @@
-import { CarGalleryHeader } from "./CarModalHeader";
+import { CarGalleryHeader } from "./CarGalleryHeader";
 
 export { CarGalleryHeader };
