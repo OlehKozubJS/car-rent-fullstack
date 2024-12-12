@@ -17,7 +17,6 @@ const CarModalAccessoriesInformation = ({ accessories, functionalities }) => {
           return (
             <CarModalItemStyleBase key={`info${index}`}>
               {item}
-              <CarModalInformationDivider />
             </CarModalItemStyleBase>
           );
         })}
