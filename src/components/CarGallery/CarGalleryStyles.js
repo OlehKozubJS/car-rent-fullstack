@@ -73,6 +73,5 @@ export {
   CarGalleryItemsStyleBase,
   CarGalleryItemStyleBase,
   CarGalleryItemValueStyleBase,
-  CarGallerySubHeaderStyleBase,
   CarGalleryButtonStyleBase,
 };
