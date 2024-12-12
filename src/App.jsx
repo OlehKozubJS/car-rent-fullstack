@@ -20,9 +20,9 @@ const App = () => {
       <header>
         <PageNavigation
           pagesObject={{
-            "Main page": <MainPage cars={carsLocalData.slice(0, 25)} />,
-            "Test page": <TestPage />,
-            "Myger page": <MygerPage />,
+            name:"Main page", : <MainPage cars={carsLocalData.slice(0, 25)} />,
+            name: "Test page", : <TestPage />,
+            name: "Myger page", : <MygerPage />,
           }}
           onChange={handleCurrentPage}
         />
