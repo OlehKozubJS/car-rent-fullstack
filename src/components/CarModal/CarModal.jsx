@@ -1,5 +1,6 @@
 import { CarModalContainer } from "./CarModalContainer";
 import { CarModalCloseButton } from "./CarModalCloseButton";
+import { CarModalUpperSection } from "./CarModalUpperSection";
 import { CarModalHeader } from "./CarModalHeader";
 import { CarModalCommonInformation } from "./CarModalCommonInformation";
 import { CarModalDescription } from "./CarModalDescription";
