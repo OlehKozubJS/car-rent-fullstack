@@ -20,7 +20,7 @@ const CarModalItemStyleBase = styled.li`
 `;
 
 const CarModalItemValueStyleBase = styled.span`
-  color: #3470ff;
+  color: rgb(52, 112, 255);
 `;
 
 const CarModalSubHeaderStyleBase = styled.h4`
