@@ -1,6 +1,6 @@
 import {} from "./CarGalleryStyles";
 
-import { CarItem } from "./CarItem";
+import { CarItem } from "./CarGalleryItem";
 
 const CarGallery = ({ cars, onClick }) => {
   return (
