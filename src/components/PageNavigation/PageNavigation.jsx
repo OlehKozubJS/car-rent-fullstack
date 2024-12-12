@@ -1,5 +1,3 @@
-import { /*useEffect,*/ useState } from "react";
-
 import { carsLocalData } from "./database";
 
 import { MainPage, TestPage, MygerPage } from "./pages";
