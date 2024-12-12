@@ -5,23 +5,22 @@ import { CarFilter, CarGallery, CarModal } from "./imports";
 
 const MainPage = ({ cars }) => {
   const [isModal, setIsModal] = useState(false);
+  const [car, setCar] = useState(null);
 
   const openModal = () => {
     setIsModal(true);
+    setCar(true);
   };
 
   const closeModal = () => {
     setIsModal(false);
   };
 
-  const [car, setCar] = useState(false);
-
   return (
     <section>
-      <button onClick={openModal}>Open Modal</button>
       {isModal && <CarModal car={car} onClose={closeModal} />}
       <CarFilter />
-      <CarGallery cars={cars} onClick={handleClick} />
+      <CarGallery cars={cars} onClick={openModal} />
     </section>
   );
 };
