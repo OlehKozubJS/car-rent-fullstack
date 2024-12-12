@@ -1,4 +1,4 @@
-const PageNavigation = ({ page, onClick, currentPageName = "" }) => {
+const PageNavigation = ({ page, onClick, currentPageName }) => {
   const handleCurrentPage = (event) => {
     onClick({ [event.target.value]: pagesObject[event.target.value] });
   };
@@ -8,17 +8,17 @@ const PageNavigation = ({ page, onClick, currentPageName = "" }) => {
       <ul>
         {pages.map(({ name, page }) => {
           return (
-            <li key={pageName}>
-              <label htmlFor={pageName}>
+            <li key={name}>
+              <label htmlFor={name}>
                 <input
-                  id={pageName}
+                  id={name}
                   name="pageSwitcher"
                   type="radio"
                   onChange={handleCurrentPage}
-                  value={pageName}
-                  checked={currentPageName === pageName}
+                  value={name}
+                  checked={currentPageName === name}
                 />
-                <span>{pageName}</span>
+                <span>{name}</span>
               </label>
             </li>
           );
