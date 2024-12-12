@@ -1,5 +1,18 @@
 import styled from "@emotion/styled";
 
+const CarModalContainerStyleBase = styled.article`
+  position: relative;
+  width: 541px;
+  padding: 40px;
+
+  border-radius: 24px;
+  background: #fff;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+`;
+
 const CarGalleryImageStyleBase = styled.img`
   border-radius: 12px;
   width: 100%;
