@@ -1,3 +1,5 @@
+import { CarModalInformationDivider } from "../CarModalInformationDivider";
+
 import {
   CarModalItemsStyleBase,
   CarModalItemStyleBase,
@@ -25,6 +27,7 @@ const CarModalCommonInformation = ({
       <CarModalItemStyleBase>
         Type: <CarModalItemValueStyleBase>{type}</CarModalItemValueStyleBase>
       </CarModalItemStyleBase>
+      <br />
       <CarModalItemStyleBase>
         Fuel Consumption:{" "}
         <CarModalItemValueStyleBase>
