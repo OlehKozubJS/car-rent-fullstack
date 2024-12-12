@@ -5,7 +5,7 @@ import { CarGalleryCommonInformation } from "./CarGalleryCommonInformation";
 import { CarGalleryAccessoriesInformation } from "./CarGalleryAccessoriesInformation";
 
 import {
-  CarGalleryItemStyleBase,
+  CarGalleryItemContainerStyleBase,
   CarGalleryImageStyleBase,
   CarGalleryButtonStyleBase,
 } from "./CarGalleryStyles";
@@ -28,7 +28,7 @@ const CarGalleryItem = ({ car, onClick }) => {
   };
 
   return (
-    <CarGalleryItemStyleBase>
+    <CarGalleryItemContainerStyleBase>
       <CarGalleryImageStyleBase src={car.img} alt="" />
       <CarGalleryHeader make={car.make} model={car.model} year={car.year} />
       <CarGalleryCommonInformation
@@ -46,7 +46,7 @@ const CarGalleryItem = ({ car, onClick }) => {
       <CarGalleryButtonStyleBase onClick={handleClick}>
         Learn more
       </CarGalleryButtonStyleBase>
-    </CarGalleryItemStyleBase>
+    </CarGalleryItemContainerStyleBase>
   );
 };
 
