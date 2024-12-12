@@ -1,23 +1,23 @@
 import { CarGalleryInformationDivider } from "../CarGalleryInformationDivider";
 
-import { CarModalItemStyleBase } from "./imports";
+import { CarGalleryItemStyleBase } from "./imports";
 
-const getCarModalItemsWithDivisors = (items) => {
-  let CarModalItemsArray = [];
+const getCarGalleryItemsWithDivisors = (items) => {
+  let CarGalleryItemsArray = [];
 
   for (let itemIndex = 0; itemIndex < items.length; itemIndex += 1) {
-    CarModalItemsArray = [
-      ...CarModalItemsArray,
-      <CarModalItemStyleBase key={`item${itemIndex}`}>
+    CarGalleryItemsArray = [
+      ...CarGalleryItemsArray,
+      <CarGalleryItemStyleBase key={`item${itemIndex}`}>
         {items[itemIndex]}
-      </CarModalItemStyleBase>,
+      </CarGalleryItemStyleBase>,
       itemIndex < items.length - 1 && (
-        <CarModalInformationDivider key={`divisor${itemIndex}`} />
+        <CarGalleryInformationDivider key={`divisor${itemIndex}`} />
       ),
     ];
   }
 
-  return CarModalItemsArray;
+  return CarGalleryItemsArray;
 };
 
-export { getCarModalItemsWithDivisors };
+export { getCarGalleryItemsWithDivisors };
