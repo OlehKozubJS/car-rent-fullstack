@@ -16,8 +16,8 @@ const App = () => {
   });
   const [currentPageName, setCurrentPageName] = useState("Main page");
 
-  const handleCurrentPageName = (event) => {
-    setCurrentPageName(event.target.value);
+  const handleCurrentPageName = (page) => {
+    setCurrentPageName(page);
   };
 
   return (
