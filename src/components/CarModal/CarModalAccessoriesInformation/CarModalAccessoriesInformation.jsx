@@ -1,11 +1,6 @@
-import { CarModalInformationDivider } from "../CarModalInformationDivider";
 import { getCarModalItemsWithDivisors } from "./getCarModalItemsWithDivisors";
 
-import {
-  CarModalSubHeaderStyleBase,
-  CarModalItemsStyleBase,
-  CarModalItemStyleBase,
-} from "./imports";
+import { CarModalSubHeaderStyleBase, CarModalItemsStyleBase } from "./imports";
 
 const CarModalAccessoriesInformation = ({ accessories, functionalities }) => {
   return (
