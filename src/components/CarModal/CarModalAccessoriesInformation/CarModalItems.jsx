@@ -1,14 +1,12 @@
 import { CarModalInformationDivider } from "../CarModalInformationDivider";
 
-import {
-  CarModalSubHeaderStyleBase,
-  CarModalItemsStyleBase,
-  CarModalItemStyleBase,
-} from "./imports";
+import { CarModalItemStyleBase } from "./imports";
 
 const CarModalAccessoriesInformation = ({ accessories, functionalities }) => {
   return accessories.map((item, index, array) => {
-    return <CarModalItemStyleBase key={index}>{item}</CarModalItemStyleBase>;
+    return (
+      <CarModalItemStyleBase key={`item${index}`}>{item}</CarModalItemStyleBase>
+    );
   });
 };
 
