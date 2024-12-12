@@ -1,5 +1,3 @@
-import { carsLocalData } from "./database";
-
 import { MainPage, TestPage, MygerPage } from "./pages";
 
 import "./style";
