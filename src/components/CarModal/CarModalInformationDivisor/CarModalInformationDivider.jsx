@@ -6,3 +6,5 @@ const CarModalInformationDividerStyleBase = styled.div`
 `;
 
 const CarModalInformationDivider = () => {};
+
+export { CarModalInformationDivider };
