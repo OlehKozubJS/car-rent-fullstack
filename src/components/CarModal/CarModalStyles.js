@@ -30,8 +30,6 @@ const CarModalSubHeaderStyleBase = styled.h4`
   font-size: 14px;
   line-height: 20px;
   color: #121417;
-
-  margin-bottom: 8px;
 `;
 
 export {
