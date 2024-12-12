@@ -41,7 +41,7 @@ const CarModalLinkStyleBase = styled.a`
 
   border: none;
   border-radius: 12px;
-  background: #3470ff;
+  background: rgb(52, 112, 255);
 
   color: #fff;
   font-size: 14px;
