@@ -8,12 +8,10 @@ const CarModalItems = ({ items }) => {
   for (let item of items) {
     CarModalItemsArray = [
       ...CarModalItemsArray,
-      <CarModalItemStyleBase key={`item${index}`}>
-        {item}
-      </CarModalItemStyleBase>,
+      <CarModalItemStyleBase>{item}</CarModalItemStyleBase>,
       <CarModalInformationDivider />,
     ];
   }
 };
 
-export {};
+export { CarModalItems };
