@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const CarModalHeaderStyleBase = styled.h3`
+const CarGalleryHeaderStyleBase = styled.h3`
   margin-top: 14px;
 
   font-family: "Manrope-Medium";
@@ -9,4 +9,4 @@ const CarModalHeaderStyleBase = styled.h3`
   color: #121417;
 `;
 
-export { CarModalHeaderStyleBase };
+export { CarGalleryHeaderStyleBase };
