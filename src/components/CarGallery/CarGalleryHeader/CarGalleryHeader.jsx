@@ -5,11 +5,11 @@ import { CarGalleryHeaderStyleBase } from "./CarGalleryHeaderStyles";
 const CarGalleryHeader = ({ make, year, model, rentalPrice }) => {
   return (
     <CarGalleryHeaderStyleBase>
-      <div>
+      <span>
         <span>{make}</span>{" "}
         <CarGalleryItemValueStyleBase>{model}</CarGalleryItemValueStyleBase>,{" "}
         <span>{year}</span>
-      </div>
+      </span>
       <CarGalleryItemValueStyleBase>{rentalPrice}</CarGalleryItemValueStyleBase>
     </CarGalleryHeaderStyleBase>
   );
