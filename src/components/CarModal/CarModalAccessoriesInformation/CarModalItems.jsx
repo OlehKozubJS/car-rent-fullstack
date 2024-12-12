@@ -3,11 +3,12 @@ import { CarModalInformationDivider } from "../CarModalInformationDivider";
 import { CarModalItemStyleBase } from "./imports";
 
 const CarModalAccessoriesInformation = ({ accessories, functionalities }) => {
-  return accessories.map((item, index, array) => {
+  let
+  return accessories.forEach((item, index, array) => {
     return (
       <CarModalItemStyleBase key={`item${index}`}>{item}</CarModalItemStyleBase>
     );
   });
 };
 
-export { CarModalAccessoriesInformation };
+export {  };
