@@ -31,7 +31,7 @@ const CarGalleryImageStyleBase = styled.img`
   height: 100%;
 `;
 
-const CarGlleryFavouriteButtonStyleBase = styled.button`
+const CarGalleryFavouriteButtonStyleBase = styled.button`
   position: absolute;
 `;
 
@@ -82,8 +82,9 @@ const CarGalleryButtonStyleBase = styled.button`
 export {
   CarGalleryStyleBase,
   CarGalleryItemContainerStyleBase,
-  CarGalleryImageStyleBase,
   CarGalleryImageContainerStyleBase,
+  CarGalleryImageStyleBase,
+  CarGalleryFavouriteButtonStyleBase,
   CarGalleryItemsStyleBase,
   CarGalleryItemStyleBase,
   CarGalleryItemValueStyleBase,
