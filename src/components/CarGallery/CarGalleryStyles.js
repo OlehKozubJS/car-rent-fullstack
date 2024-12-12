@@ -1,11 +1,11 @@
 import styled from "@emotion/styled";
 
-const CarModalImageStyleBase = styled.img`
+const CarGalleryImageStyleBase = styled.img`
   border-radius: 12px;
   width: 100%;
 `;
 
-const CarModalItemsStyleBase = styled.div`
+const CarGalleryItemsStyleBase = styled.div`
   margin-top: 8px;
 
   display: flex;
@@ -14,7 +14,7 @@ const CarModalItemsStyleBase = styled.div`
   row-gap: 4px;
 `;
 
-const CarModalItemStyleBase = styled.p`
+const CarGalleryItemStyleBase = styled.p`
   font-size: 12px;
   line-height: 18px;
   color: rgba(18, 20, 23, 0.5);
@@ -22,11 +22,11 @@ const CarModalItemStyleBase = styled.p`
   font-family: "Manrope-Regular", sans-serif;
 `;
 
-const CarModalItemValueStyleBase = styled.span`
+const CarGalleryItemValueStyleBase = styled.span`
   color: rgb(52, 112, 255);
 `;
 
-const CarModalSubHeaderStyleBase = styled.h4`
+const CarGallerySubHeaderStyleBase = styled.h4`
   font-family: "Manrope-Medium", sans-serif;
   font-size: 14px;
   line-height: 20px;
