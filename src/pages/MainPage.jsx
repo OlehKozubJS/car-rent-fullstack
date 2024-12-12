@@ -14,7 +14,7 @@ const MainPage = ({ cars }) => {
     setIsModal(false);
   };
 
-  const [car, setCar] = useState();
+  const [car, setCar] = useState(false);
 
   return (
     <section>
