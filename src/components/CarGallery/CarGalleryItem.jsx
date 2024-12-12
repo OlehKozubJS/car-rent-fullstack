@@ -32,7 +32,7 @@ const CarGalleryItem = ({ car, onClick }) => {
   return (
     <CarGalleryItemContainerStyleBase>
       <CarGalleryImageContainerStyleBase>
-        <CarGalleryImageStyleBase src={car.img} alt="" />
+        <CarGalleryImageStyleBase src={car.photoLink} alt="" />
         <CarGalleryFavouriteButtonStyleBase
           type="button"
           onClick={isFavourite ? unMarkAsFavourite : markAsFavourite}
