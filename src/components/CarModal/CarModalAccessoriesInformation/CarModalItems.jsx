@@ -2,7 +2,7 @@ import { CarModalInformationDivider } from "../CarModalInformationDivider";
 
 import { CarModalItemStyleBase } from "./imports";
 
-const CarModalItems = ({ items }) => {
+const getCarModalItemsWithDivisors = ({ items }) => {
   let CarModalItemsArray = [];
 
   for (let item of items) {
@@ -14,4 +14,4 @@ const CarModalItems = ({ items }) => {
   }
 };
 
-export { CarModalItems };
+export { getCarModalItemsWithDivisors };
