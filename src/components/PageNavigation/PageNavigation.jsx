@@ -1,4 +1,4 @@
-const PageNavigation = ({ pagesObject, onClick, currentPageName = "" }) => {
+const PageNavigation = ({ page, onClick, currentPageName = "" }) => {
   const handleCurrentPage = (event) => {
     onClick({ [event.target.value]: pagesObject[event.target.value] });
   };
@@ -6,7 +6,7 @@ const PageNavigation = ({ pagesObject, onClick, currentPageName = "" }) => {
   return (
     <nav>
       <ul>
-        {pagesObject.map((page) => {
+        {pages.map((page) => {
           return (
             <li key={pageName}>
               <label htmlFor={pageName}>
