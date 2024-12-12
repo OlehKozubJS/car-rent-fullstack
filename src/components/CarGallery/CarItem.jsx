@@ -5,6 +5,9 @@ import { SVGimage } from "../../images";
 const CarItem = ({ car, onClick }) => {
   const [ifFavourite, setIsFavourite] = useState();
 
+  const markAsFavourite = () => {};
+  const unMarkAsFavourite = () => {};
+
   const handleClick = () => {
     onClick(car);
   };
