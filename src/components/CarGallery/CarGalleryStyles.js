@@ -16,7 +16,6 @@ const CarGalleryItemContainerStyleBase = styled.li`
 
   display: flex;
   flex-direction: column;
-  row-gap: 24px;
 `;
 
 const CarGalleryImageStyleBase = styled.img`
