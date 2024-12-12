@@ -69,6 +69,7 @@ const CarGalleryButtonStyleBase = styled.button`
 
 export {
   CarGalleryContainerStyleBase,
+  CarItemStyleBase,
   CarGalleryImageStyleBase,
   CarGalleryItemsStyleBase,
   CarGalleryItemStyleBase,
