@@ -1,3 +1,3 @@
-import { CarGalleryAccessoriesInformation } from "./CarModalAccessoriesInformation";
+import { CarGalleryAccessoriesInformation } from "./CarGalleryAccessoriesInformation";
 
 export { CarGalleryAccessoriesInformation };
