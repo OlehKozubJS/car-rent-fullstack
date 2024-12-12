@@ -194,7 +194,10 @@ const TestPage = () => {
       <img src="" alt="" />
       <img src="" alt="" />
       <img src="" alt="" />
-      <img src="" alt="" />
+      <img
+        src="https://ftp.goit.study/img/cars-test-task/land_rover_range_rover_sport.jpeg"
+        alt=""
+      />
       <img
         src="https://ftp.goit.study/img/cars-test-task/kia_rio_sedan_hatchback.jpeg"
         alt=""
