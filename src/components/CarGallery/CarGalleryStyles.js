@@ -63,7 +63,7 @@ const CarGalleryButtonStyleBase = styled.button`
   font-family: "Manrope-SemiBold", sans-serif;
 
   &:hover {
-    background-color: #0b44cd;
+    background-color: rgb(11, 68, 205);
   }
 `;
 
