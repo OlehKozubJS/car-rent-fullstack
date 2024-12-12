@@ -41,7 +41,12 @@ const CarGalleryItem = ({ car, onClick }) => {
             <SVGimage name={isFavourite ? "fav" : "norm"} />
           </CarGalleryFavouriteButtonStyleBase>
         </CarGalleryImageContainerStyleBase>
-        <CarGalleryHeader make={car.make} model={car.model} year={car.year} />
+        <CarGalleryHeader
+          make={car.make}
+          model={car.model}
+          year={car.year}
+          rentalPrice={car.rentalPrice}
+        />
       </div>
       <CarGalleryCommonInformation
         address={car.address}
@@ -55,7 +60,6 @@ const CarGalleryItem = ({ car, onClick }) => {
         accessories={car.accessories}
         functionalities={car.functionalities}
       />
-      {car.rentalPrice}
       <CarGalleryButtonStyleBase onClick={handleClick}>
         Learn more
       </CarGalleryButtonStyleBase>
