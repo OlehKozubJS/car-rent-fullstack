@@ -24,7 +24,7 @@ const App = () => {
             "Test page": <TestPage />,
             "Myger page": <MygerPage />,
           }}
-          onChange={handleCurrentPageName}
+          onChange={handleCurrentPage}
         />
       </header>
       <main>{currentPage}</main>
