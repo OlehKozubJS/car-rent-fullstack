@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 const CarGalleryStyleBase = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  colum-gap: 29px;
+  column-gap: 29px;
   row-gap: 50px;
 `;
 
