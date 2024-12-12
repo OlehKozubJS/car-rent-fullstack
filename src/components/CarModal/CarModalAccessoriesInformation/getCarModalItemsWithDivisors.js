@@ -8,8 +8,12 @@ const getCarModalItemsWithDivisors = (items) => {
   for (let itemIndex = 0; itemIndex < items.length; itemIndex += 1) {
     CarModalItemsArray = [
       ...CarModalItemsArray,
-      <CarModalItemStyleBase>{item}</CarModalItemStyleBase>,
-      <CarModalInformationDivider />,
+      <CarModalItemStyleBase key={`item${itemIndex}`}>
+        {items[itemIndex]}
+      </CarModalItemStyleBase>,
+      itemIndex < items.length - 1 && (
+        <CarModalInformationDivider key={`divisor${itemIndex}`} />
+      ),
     ];
   }
 
