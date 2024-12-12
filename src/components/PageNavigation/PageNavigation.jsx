@@ -14,7 +14,7 @@ const PageNavigation = ({ pages }) => {
   };
 
   return (
-    <div style={{ fontFamily: "Manrope-Regular" }}>
+    <div>
       <header>
         <nav>
           <ul>
