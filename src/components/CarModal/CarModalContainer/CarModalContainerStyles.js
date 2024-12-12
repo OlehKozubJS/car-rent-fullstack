@@ -21,6 +21,10 @@ const CarModalContainerStyleBase = styled.article`
 
   border-radius: 24px;
   background: #fff;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
 `;
 
 export { CarModalBackdropStyleBase, CarModalContainerStyleBase };
