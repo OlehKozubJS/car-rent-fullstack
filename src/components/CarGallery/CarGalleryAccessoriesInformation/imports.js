@@ -3,6 +3,4 @@ import {
   CarGalleryItemStyleBase,
 } from "../CarGalleryStyles";
 
-import {} from "";
-
 export { CarGalleryItemsStyleBase, CarGalleryItemStyleBase };
