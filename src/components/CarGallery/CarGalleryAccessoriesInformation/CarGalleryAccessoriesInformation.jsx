@@ -1,19 +1,22 @@
-import { getCarModalItemsWithDivisors } from "./getCarModalItemsWithDivisors";
+import { getCarGalleryItemsWithDivisors } from "./getCarModalItemsWithDivisors";
 
-import { CarModalSubHeaderStyleBase, CarModalItemsStyleBase } from "./imports";
+import {
+  CarGallerySubHeaderStyleBase,
+  CarGalleryItemsStyleBase,
+} from "./imports";
 
-const CarModalAccessoriesInformation = ({ accessories, functionalities }) => {
+const CarGalleryAccessoriesInformation = ({ accessories, functionalities }) => {
   return (
     <section>
-      <CarModalSubHeaderStyleBase>
+      <CarGallerySubHeaderStyleBase>
         Accessories and functionalities:
-      </CarModalSubHeaderStyleBase>
-      <CarModalItemsStyleBase>
+      </CarGallerySubHeaderStyleBase>
+      <CarGalleryItemsStyleBase>
         {getCarModalItemsWithDivisors(accessories)}
         {getCarModalItemsWithDivisors(functionalities)}
-      </CarModalItemsStyleBase>
+      </CarGalleryItemsStyleBase>
     </section>
   );
 };
 
-export { CarModalAccessoriesInformation };
+export { CarGalleryAccessoriesInformation };
