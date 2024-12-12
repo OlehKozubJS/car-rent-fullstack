@@ -9,7 +9,7 @@ import {
 
 const CarModalAccessoriesInformation = ({ accessories, functionalities }) => {
   return (
-    <>
+    <div>
       <CarModalSubHeaderStyleBase>
         Accessories and functionalities:
       </CarModalSubHeaderStyleBase>
@@ -17,7 +17,7 @@ const CarModalAccessoriesInformation = ({ accessories, functionalities }) => {
         {getCarModalItemsWithDivisors(accessories)}
         {getCarModalItemsWithDivisors(functionalities)}
       </CarModalItemsStyleBase>
-    </>
+    </div>
   );
 };
 
