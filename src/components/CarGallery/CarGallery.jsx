@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import {} from "./CarGalleryStyles";
 
 import { CarItem } from "./CarItem";
 
