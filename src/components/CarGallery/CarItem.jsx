@@ -2,10 +2,12 @@ import { useState, useEffect } from "react";
 
 import { SVGimage } from "../../images";
 
-const CarItem = ({ car }) => {
-  return <li>{JSON.stringify(car)}
+const CarItem = ({ car, onClick }) => {
+  import 
+
+  return (<li>{JSON.stringify(car)}
   <button onClick={}>Learn more</button>
-  </li>;
+  </li>);
 };
 
 export { CarItem };
