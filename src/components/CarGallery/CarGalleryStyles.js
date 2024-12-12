@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const CarModalContainerStyleBase = styled.article`
+const CarGalleryContainerStyleBase = styled.article`
   position: relative;
   width: 541px;
   padding: 40px;
@@ -68,6 +68,7 @@ const CarGalleryButtonStyleBase = styled.button`
 `;
 
 export {
+  CarGalleryContainerStyleBase,
   CarGalleryImageStyleBase,
   CarGalleryItemsStyleBase,
   CarGalleryItemStyleBase,
