@@ -28,7 +28,7 @@ const CarItem = ({ car, onClick }) => {
   };
 
   return (
-    <li>
+    <CarGalleryContainerStyleBase>
       <CarGalleryImageStyleBase src={car.img} alt="" />
       <CarGalleryHeader make={car.make} model={car.model} year={car.year} />
       <CarGalleryCommonInformation
@@ -44,7 +44,7 @@ const CarItem = ({ car, onClick }) => {
         functionalities={car.functionalities}
       />
       <button onClick={handleClick}>Learn more</button>
-    </li>
+    </CarGalleryContainerStyleBase>
   );
 };
 
