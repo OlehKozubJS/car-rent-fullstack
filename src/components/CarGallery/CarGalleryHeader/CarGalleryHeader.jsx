@@ -2,13 +2,14 @@ import { CarGalleryItemValueStyleBase } from "./imports";
 
 import { CarGalleryHeaderStyleBase } from "./CarGalleryHeaderStyles";
 
-const CarGalleryHeader = ({ make, year, model }) => {
+const CarGalleryHeader = ({ make, year, model, rentalPrice }) => {
   return (
     <CarGalleryHeaderStyleBase>
       <span>{make}</span>{" "}
       <CarGalleryItemValueStyleBase>{model}</CarGalleryItemValueStyleBase>,{" "}
       <span>{year}</span>
-      <CarGalleryItemValueStyleBase>{model}</CarGalleryItemValueStyleBase>,{" "}
+      <CarGalleryItemValueStyleBase>{rentalPrice}</CarGalleryItemValueStyleBase>
+      ,{" "}
     </CarGalleryHeaderStyleBase>
   );
 };
