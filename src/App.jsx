@@ -23,10 +23,7 @@ const App = () => {
   return (
     <div style={{ fontFamily: "Manrope-Regular" }}>
       <header>
-        <PageNavigation
-                      onChange={handleCurrentPageName}/>
-
-        </nav>
+        <PageNavigation onChange={handleCurrentPageName} />
       </header>
       <main>{pages[currentPageName]}</main>
     </div>
