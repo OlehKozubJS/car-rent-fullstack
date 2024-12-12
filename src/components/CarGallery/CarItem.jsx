@@ -10,7 +10,16 @@ const CarItem = ({ car, onClick }) => {
   return (
     <li>
       <CarModalContainer>
-        <CarModalUpperSection car={car} />
+        <CarModalImageStyleBase src={car.img} alt="" />
+        <CarModalHeader make={car.make} model={car.model} year={car.year} />
+        <CarModalCommonInformation
+          address={car.address}
+          id={car.id}
+          year={car.year}
+          type={car.type}
+          fuelConsumption={car.fuelConsumption}
+          engineSize={car.engineSize}
+        />
         <CarModalAccessoriesInformation
           accessories={car.accessories}
           functionalities={car.functionalities}
