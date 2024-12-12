@@ -1,8 +1,6 @@
 import styled from "@emotion/styled";
 
 const CarModalLinkStyleBase = styled.a`
-  margin-top: 24px;
-
   display: inline-flex;
   padding: 12px 50px;
   justify-content: center;
