@@ -2,13 +2,8 @@ import { useState, useEffect } from "react";
 
 import { CarItem } from "./CarItem";
 
-const CarGallery = ({ cars, onClick = null }) => {
-  return <>{JSON.stringify(cars)}</>;
-};
-
-export { CarGallery };
-/*
-
+const CarGallery = ({ cars, onClick }) => {
+  return (
     <ul>
       {cars.map((car, carIndex) => {
         return (
@@ -16,5 +11,7 @@ export { CarGallery };
         );
       })}
     </ul>
+  );
+};
 
-*/
+export { CarGallery };
