@@ -9,11 +9,6 @@ import { PageNavigation } from "./components";
 import "./style";
 
 const App = () => {
-  const [pages] = useState({
-    "Main page": <MainPage cars={carsLocalData.slice(0, 25)} />,
-    "Test page": <TestPage />,
-    "Myger page": <MygerPage />,
-  });
   const [currentPage, setCurrentPage] = useState("Main page");
 
   const handleCurrentPage = (page) => {
