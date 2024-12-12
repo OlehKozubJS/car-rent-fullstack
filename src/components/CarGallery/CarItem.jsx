@@ -3,10 +3,15 @@ import { useState, useEffect } from "react";
 import { SVGimage } from "../../images";
 
 const CarItem = ({ car, onClick }) => {
-  const [ifFavourite, setIsFavourite] = useState();
+  const [ifFavourite, setIsFavourite] = useState(false);
 
-  const markAsFavourite = () => {};
-  const unMarkAsFavourite = () => {};
+  const markAsFavourite = () => {
+    setIsFavourite(true);
+  };
+
+  const unMarkAsFavourite = () => {
+    setIsFavourite(false);
+  };
 
   const handleClick = () => {
     onClick(car);
