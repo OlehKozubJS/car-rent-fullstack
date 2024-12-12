@@ -32,7 +32,7 @@ const CarGalleryImageStyleBase = styled.img`
 `;
 
 const CarGlleryFavouriteButtonStyleBase = styled.button`
-  position: abolute;
+  position: absolute;
 `;
 
 const CarGalleryItemsStyleBase = styled.div`
