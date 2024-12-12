@@ -14,7 +14,7 @@ const PageNavigation = ({ pagesObject, onClick }) => {
                   id={pageName}
                   name="pageSwitcher"
                   type="radio"
-                  onChange={handleCurrentPageName}
+                  onChange={handleCurrentPage}
                   value={pageName}
                   checked={currentPageName === pageName}
                 />
