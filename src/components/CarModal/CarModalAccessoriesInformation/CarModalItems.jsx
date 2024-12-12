@@ -5,11 +5,15 @@ import { CarModalItemStyleBase } from "./imports";
 const CarModalItems = ({ items }) => {
   let CarModalItemsArray = [];
 
-  return items.forEach((item, index, array) => {
-    return (
-      <CarModalItemStyleBase key={`item${index}`}>{item}</CarModalItemStyleBase>
-    );
-  });
+  for (let item of items) {
+    CarModalItemsArray = [
+      ...CarModalItemsArray,
+      <CarModalItemStyleBase key={`item${index}`}>
+        {item}
+      </CarModalItemStyleBase>,
+      <CarModalInformationDivider />,
+    ];
+  }
 };
 
 export {};
