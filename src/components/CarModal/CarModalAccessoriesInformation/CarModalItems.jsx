@@ -9,9 +9,7 @@ const CarModalAccessoriesInformation = ({ accessories, functionalities }) => {
     <CarModalItemsStyleBase>
       {accessories.map((item, index, array) => {
         return (
-          <CarModalItemStyleBase key={`info${index}`}>
-            {item}
-          </CarModalItemStyleBase>
+          <CarModalItemStyleBase key={index}>{item}</CarModalItemStyleBase>
         );
       })}
       {functionalities.map((item, index) => {
