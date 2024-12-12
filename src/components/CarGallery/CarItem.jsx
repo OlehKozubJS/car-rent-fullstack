@@ -10,7 +10,6 @@ const CarItem = ({ car, onClick }) => {
   return (
     <li>
       <CarModalContainer>
-        <CarModalCloseButton onClose={onClose} />
         <CarModalUpperSection car={car} />
         <CarModalAccessoriesInformation
           accessories={car.accessories}
