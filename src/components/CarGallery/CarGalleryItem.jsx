@@ -28,7 +28,7 @@ const CarGalleryItem = ({ car, onClick }) => {
   };
 
   return (
-    <CarGalleryItemContainerStyleBase>
+    <CarGalleryItemStyleBase>
       <CarGalleryImageStyleBase src={car.img} alt="" />
       <CarGalleryHeader make={car.make} model={car.model} year={car.year} />
       <CarGalleryCommonInformation
@@ -46,7 +46,7 @@ const CarGalleryItem = ({ car, onClick }) => {
       <CarGalleryButtonStyleBase onClick={handleClick}>
         Learn more
       </CarGalleryButtonStyleBase>
-    </CarGalleryItemContainerStyleBase>
+    </CarGalleryItemStyleBase>
   );
 };
 
