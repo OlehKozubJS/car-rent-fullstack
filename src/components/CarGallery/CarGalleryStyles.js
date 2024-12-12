@@ -6,7 +6,6 @@ const CarGalleryContainerStyleBase = styled.article`
   padding: 40px;
 
   border-radius: 24px;
-  background-color: #fff;
 
   display: flex;
   flex-direction: column;
