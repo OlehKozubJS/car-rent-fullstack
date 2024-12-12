@@ -1,9 +1,8 @@
 import styled from "@emotion/styled";
 
 const CarModalRentalItemsStyleBase = styled.ul`
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  margin-top: 8px;
+
   display: flex;
   flex-wrap: wrap;
   column-gap: 4px;
