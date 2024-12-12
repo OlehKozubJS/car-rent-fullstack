@@ -195,7 +195,10 @@ const TestPage = () => {
       <img src="" alt="" />
       <img src="" alt="" />
       <img src="" alt="" />
-      <img src="" alt="" />
+      <img
+        src="https://ftp.goit.study/img/cars-test-task/kia_rio_sedan_hatchback.jpeg"
+        alt=""
+      />
     </div>
   );
 };
