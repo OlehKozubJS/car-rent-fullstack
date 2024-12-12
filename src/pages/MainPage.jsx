@@ -8,8 +8,8 @@ const MainPage = ({ cars }) => {
   const [car, setCar] = useState(null);
 
   const openModal = () => {
-    setIsModal(true);
     setCar(true);
+    setIsModal(true);
   };
 
   const closeModal = () => {
