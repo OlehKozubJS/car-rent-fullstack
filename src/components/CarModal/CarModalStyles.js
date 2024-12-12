@@ -5,15 +5,16 @@ const CarModalImageStyleBase = styled.img`
   width: 100%;
 `;
 
-const CarModalItemsStyleBase = styled.ul`
+const CarModalItemsStyleBase = styled.div`
   margin-top: 8px;
 
   display: flex;
   flex-wrap: wrap;
+  column-gap: 6px;
   row-gap: 4px;
 `;
 
-const CarModalItemStyleBase = styled.li`
+const CarModalItemStyleBase = styled.p`
   font-size: 12px;
   line-height: 18px;
   color: rgba(18, 20, 23, 0.5);
