@@ -9,7 +9,7 @@ const CarGalleryHeaderStyleBase = styled.h3`
   color: #121417;
 
   diplay: flex;
-  justify-content: space-bteween;
+  justify-content: space-btetween;
 `;
 
 export { CarGalleryHeaderStyleBase };
