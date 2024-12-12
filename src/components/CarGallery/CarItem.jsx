@@ -16,11 +16,6 @@ const CarItem = ({ car, onClick }) => {
           accessories={car.accessories}
           functionalities={car.functionalities}
         />
-        <CarModalRentalInformation
-          rentalConditions={car.rentalConditions}
-          mileage={car.mileage}
-          rentalPrice={car.rentalPrice}
-        />
         <CarModalLink />
       </CarModalContainer>
       {JSON.stringify(car)}
