@@ -12,6 +12,8 @@ const getCarModalItemsWithDivisors = (items) => {
       <CarModalInformationDivider />,
     ];
   }
+
+  return CarModalItemsArray;
 };
 
 export { getCarModalItemsWithDivisors };
