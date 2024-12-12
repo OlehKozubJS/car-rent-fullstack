@@ -14,10 +14,10 @@ const App = () => {
     "Test page": <TestPage />,
     "Myger page": <MygerPage />,
   });
-  const [currentPageName, setCurrentPageName] = useState("Main page");
+  const [currentPage, setCurrentPage] = useState("Main page");
 
   const handleCurrentPageName = (page) => {
-    setCurrentPageName(page);
+    setCurrentPage(page);
   };
 
   return (
