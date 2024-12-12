@@ -1,12 +1,12 @@
-import { CarModalInformationDivider } from "../CarModalInformationDivider";
+import { CarGalleryInformationDivider } from "../CarModalInformationDivider";
 
 import {
-  CarModalItemsStyleBase,
-  CarModalItemStyleBase,
-  CarModalItemValueStyleBase,
+  CarGalleryItemsStyleBase,
+  CarGalleryItemStyleBase,
+  CarGalleryItemValueStyleBase,
 } from "./imports";
 
-const CarModalCommonInformation = ({
+const CarGalleryCommonInformation = ({
   address,
   id,
   year,
@@ -15,38 +15,44 @@ const CarModalCommonInformation = ({
   engineSize,
 }) => {
   return (
-    <>
-      <CarModalItemsStyleBase>
-        <CarModalItemStyleBase>{address.split(", ")[1]}</CarModalItemStyleBase>
-        <CarModalInformationDivider />
-        <CarModalItemStyleBase>{address.split(", ")[2]}</CarModalItemStyleBase>
-        <CarModalInformationDivider />
-        <CarModalItemStyleBase>
-          Id: <CarModalItemValueStyleBase>{id}</CarModalItemValueStyleBase>
-        </CarModalItemStyleBase>
-        <CarModalInformationDivider />
-        <CarModalItemStyleBase>
-          Year: <CarModalItemValueStyleBase>{year}</CarModalItemValueStyleBase>
-        </CarModalItemStyleBase>
-        <CarModalInformationDivider />
-        <CarModalItemStyleBase>
-          Type: <CarModalItemValueStyleBase>{type}</CarModalItemValueStyleBase>
-        </CarModalItemStyleBase>
-        <CarModalInformationDivider />
-        <CarModalItemStyleBase>
-          Fuel Consumption:{" "}
-          <CarModalItemValueStyleBase>
-            {fuelConsumption}
-          </CarModalItemValueStyleBase>
-        </CarModalItemStyleBase>
-        <CarModalInformationDivider />
-        <CarModalItemStyleBase>
-          Engine Size:{" "}
-          <CarModalItemValueStyleBase>{engineSize}</CarModalItemValueStyleBase>
-        </CarModalItemStyleBase>
-      </CarModalItemsStyleBase>
-    </>
+    <CarGalleryItemsStyleBase>
+      <CarGalleryItemStyleBase>
+        {address.split(", ")[1]}
+      </CarGalleryItemStyleBase>
+      <CarGalleryInformationDivider />
+      <CarGalleryItemStyleBase>
+        {address.split(", ")[2]}
+      </CarGalleryItemStyleBase>
+      <CarGalleryInformationDivider />
+      <CarGalleryItemStyleBase>
+        Id: <CarGalleryItemValueStyleBase>{id}</CarGalleryItemValueStyleBase>
+      </CarGalleryItemStyleBase>
+      <CarGalleryInformationDivider />
+      <CarGalleryItemStyleBase>
+        Year:{" "}
+        <CarGalleryItemValueStyleBase>{year}</CarGalleryItemValueStyleBase>
+      </CarGalleryItemStyleBase>
+      <CarGalleryInformationDivider />
+      <CarGalleryItemStyleBase>
+        Type:{" "}
+        <CarGalleryItemValueStyleBase>{type}</CarGalleryItemValueStyleBase>
+      </CarGalleryItemStyleBase>
+      <CarGalleryInformationDivider />
+      <CarGalleryItemStyleBase>
+        Fuel Consumption:{" "}
+        <CarGalleryItemValueStyleBase>
+          {fuelConsumption}
+        </CarGalleryItemValueStyleBase>
+      </CarGalleryItemStyleBase>
+      <CarGalleryInformationDivider />
+      <CarGalleryItemStyleBase>
+        Engine Size:{" "}
+        <CarGalleryItemValueStyleBase>
+          {engineSize}
+        </CarGalleryItemValueStyleBase>
+      </CarGalleryItemStyleBase>
+    </CarGalleryItemsStyleBase>
   );
 };
 
-export { CarModalCommonInformation };
+export { CarGalleryCommonInformation };
