@@ -191,6 +191,7 @@ const TestPage = () => {
       <div style={{ backgroundColor: "black" }}>
         <SVGimage name="fav" />
       </div>
+      <img src="" alt=""></img>
     </div>
   );
 };
