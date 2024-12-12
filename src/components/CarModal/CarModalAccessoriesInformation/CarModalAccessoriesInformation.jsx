@@ -1,3 +1,5 @@
+import { CarModalInformationDivider } from "../CarModalInformationDivider";
+
 import {
   CarModalSubHeaderStyleBase,
   CarModalItemsStyleBase,
