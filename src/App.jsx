@@ -8,7 +8,7 @@ import "./style";
 
 const App = () => {
   const [pages] = useState({
-    "Main page": <MainPage cars={carsLocalData.slice(15, 25)} />,
+    "Main page": <MainPage cars={carsLocalData.slice(0, 25)} />,
     "Test page": <TestPage />,
     "Myger page": <MygerPage />,
   });
