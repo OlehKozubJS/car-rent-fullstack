@@ -4,7 +4,7 @@ import { CarModalDescription } from "../CarModalDescription";
 
 import { CarModalImageStyleBase } from "./CarModalStyles";
 
-const CarModalUpperSection = ({ car, onClose }) => {
+const CarModalUpperSection = ({ car }) => {
   return (
     <section>
       <CarModalImageStyleBase src={car.img} alt="" />
