@@ -1,4 +1,4 @@
-import { getCarGalleryItemsWithDivisors } from "./getCarModalItemsWithDivisors";
+import { getCarGalleryItemsWithDivisors } from "./getCarGalleryItemsWithDivisors";
 
 import {
   CarGallerySubHeaderStyleBase,
@@ -12,8 +12,8 @@ const CarGalleryAccessoriesInformation = ({ accessories, functionalities }) => {
         Accessories and functionalities:
       </CarGallerySubHeaderStyleBase>
       <CarGalleryItemsStyleBase>
-        {getCarModalItemsWithDivisors(accessories)}
-        {getCarModalItemsWithDivisors(functionalities)}
+        {getCarGalleryItemsWithDivisors(accessories)}
+        {getCarGalleryItemsWithDivisors(functionalities)}
       </CarGalleryItemsStyleBase>
     </section>
   );
