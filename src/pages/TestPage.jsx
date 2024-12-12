@@ -10,6 +10,8 @@ import {
   CarModal,
 } from "./imports";
 
+import { SVGimage } from "../images";
+
 const TestPage = () => {
   const [time, setTime] = useState(0);
 
