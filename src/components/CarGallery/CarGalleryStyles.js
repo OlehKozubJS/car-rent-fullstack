@@ -18,6 +18,8 @@ const CarGalleryItemContainerStyleBase = styled.li`
   flex-direction: column;
 `;
 
+const CarGalleryImageContainerStyleBase = styled.div``;
+
 const CarGalleryImageStyleBase = styled.img`
   border-radius: 12px;
   width: 100%;
