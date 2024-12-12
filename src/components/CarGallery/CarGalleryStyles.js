@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 const CarGalleryStyleBase = styled.ul`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   column-gap: 29px;
   row-gap: 50px;
 `;
