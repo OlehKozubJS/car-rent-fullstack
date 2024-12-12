@@ -12,9 +12,9 @@ import { CarModalImageStyleBase } from "./CarModalStyles";
 const CarModal = ({ car, onClose }) => {
   return (
     <CarModalContainer>
+      <CarModalCloseButton onClose={onClose} />
+      <CarModalImageStyleBase src={car.img} alt="" />{" "}
       <div>
-        <CarModalCloseButton onClose={onClose} />
-        <CarModalImageStyleBase src={car.img} alt="" />
         <CarModalHeader make={car.make} model={car.model} year={car.year} />
         <CarModalCommonInformation
           address={car.address}
