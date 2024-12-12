@@ -577,7 +577,7 @@
     "make": "Volvo",
     "model": "XC60",
     "type": "SUV",
-    "photoLink": "https://ftp.goit.study/img/cars-test-task/volvo_xc60_2.jpeg",
+    "img": "https://ftp.goit.study/img/cars-test-task/volvo_xc60_2.jpeg",
     "description": "The Volvo XC60 is a luxurious and versatile SUV that combines Scandinavian design, advanced safety features, and a comfortable driving experience, making it an ideal choice for families and adventure enthusiasts.",
     "fuelConsumption": "8.5",
     "engineSize": "2.0L 4-cylinder",
