@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const CarModalBackdropStyleBase = styled.div`
+const CarModalBackdropStyleBase = styled.section`
   position: fixed;
   top: 0;
   left: 0;
