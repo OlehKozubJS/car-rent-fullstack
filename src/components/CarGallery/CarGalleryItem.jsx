@@ -33,6 +33,7 @@ const CarGalleryItem = ({ car, onClick }) => {
     <CarGalleryItemContainerStyleBase>
       <CarGalleryImageContainerStyleBase>
         <CarGalleryImageStyleBase src={car.img} alt="" />
+        <CarGalleryFavouriteButtonStyleBase></CarGalleryFavouriteButtonStyleBase>
       </CarGalleryImageContainerStyleBase>
       <CarGalleryHeader make={car.make} model={car.model} year={car.year} />
       <CarGalleryCommonInformation
