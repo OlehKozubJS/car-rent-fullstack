@@ -32,8 +32,6 @@ const CarModalCommonInformation = ({
         <CarModalItemStyleBase>
           Type: <CarModalItemValueStyleBase>{type}</CarModalItemValueStyleBase>
         </CarModalItemStyleBase>
-      </CarModalItemsStyleBase>
-      <CarModalItemsStyleBase>
         <CarModalItemStyleBase>
           Fuel Consumption:{" "}
           <CarModalItemValueStyleBase>
