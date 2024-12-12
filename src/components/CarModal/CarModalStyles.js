@@ -10,7 +10,7 @@ const CarModalItemsStyleBase = styled.ul`
 
   display: flex;
   flex-wrap: wrap;
-  column-gap: 4px;
+  row-gap: 4px;
 `;
 
 const CarModalItemStyleBase = styled.li`
