@@ -14,19 +14,7 @@ const CarModal = ({ car, onClose }) => {
   return (
     <CarModalContainer>
       <CarModalCloseButton onClose={onClose} />
-      <section>
-        <CarModalImageStyleBase src={car.img} alt="" />
-        <CarModalHeader make={car.make} model={car.model} year={car.year} />
-        <CarModalCommonInformation
-          address={car.address}
-          id={car.id}
-          year={car.year}
-          type={car.type}
-          fuelConsumption={car.fuelConsumption}
-          engineSize={car.engineSize}
-        />
-        <CarModalDescription description={car.description} />
-      </section>
+      <CarModalUpperSection car={car} />
       <CarModalAccessoriesInformation
         accessories={car.accessories}
         functionalities={car.functionalities}
