@@ -14,12 +14,14 @@ const MainPage = ({ cars }) => {
     setIsModal(false);
   };
 
+  const [car, setCar] = useState();
+
   return (
     <section>
       <button onClick={openModal}>Open Modal</button>
       {isModal && <CarModal car={car} onClose={closeModal} />}
       <CarFilter />
-      <CarGallery cars={cars} />
+      <CarGallery cars={cars} onClick={handleClick} />
     </section>
   );
 };
