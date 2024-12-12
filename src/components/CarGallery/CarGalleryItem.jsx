@@ -6,7 +6,9 @@ import { CarGalleryAccessoriesInformation } from "./CarGalleryAccessoriesInforma
 
 import {
   CarGalleryItemContainerStyleBase,
+  CarGalleryImageContainerStyleBase,
   CarGalleryImageStyleBase,
+  CarGalleryFavouriteButtonStyleBase,
   CarGalleryButtonStyleBase,
 } from "./CarGalleryStyles";
 
