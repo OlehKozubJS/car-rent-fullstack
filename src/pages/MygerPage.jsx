@@ -88,7 +88,7 @@ const MygerPage = () => {
       <span style={{ fontFamily: "manrope-semibold" }}>Semibold</span>
       <span style={{ fontFamily: "montserrat-regular" }}>Regular</span>
       <span style={{ fontFamily: "montserrat-semibold" }}>Semibold</span>
-      <SVGimage name="norm" />
+      <SVGimage name="not-fav" />
     </div>
   );
 };
