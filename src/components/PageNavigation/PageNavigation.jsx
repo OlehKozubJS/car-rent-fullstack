@@ -1,5 +1,3 @@
-import { MainPage, TestPage, MygerPage } from "./pages";
-
 import "./style";
 
 const PageNavigation = ({ pagesObject, onClick }) => {
