@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
 
+import { carsLocalData } from "./database";
+
 import { MainPage, TestPage, MygerPage } from "./pages";
 
 import "./style";
 
 const App = () => {
   const [pages] = useState({
-    "Main page": <MainPage />,
+    "Main page": <MainPage cars={carsLocalData} />,
     "Test page": <TestPage />,
     "Myger page": <MygerPage />,
   });
