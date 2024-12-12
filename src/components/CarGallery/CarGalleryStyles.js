@@ -43,7 +43,7 @@ const CarGallerySubHeaderStyleBase = styled.h4`
   font-family: "Manrope-Medium", sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: #121417;
+  color: rgb(18, 20, 23);
 `;
 
 const CarGalleryButtonStyleBase = styled.button`
