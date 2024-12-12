@@ -6,7 +6,7 @@ const PageNavigation = ({ page, onClick, currentPageName = "" }) => {
   return (
     <nav>
       <ul>
-        {pages.map((page) => {
+        {pages.map(({ name, page }) => {
           return (
             <li key={pageName}>
               <label htmlFor={pageName}>
