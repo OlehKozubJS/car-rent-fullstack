@@ -2,11 +2,13 @@ import { useState, useEffect } from "react";
 
 import { CarItem } from "./CarItem";
 
-const CarGallery = ({ cars }) => {
+const CarGallery = ({ cars, onClick }) => {
   return (
     <ul>
       {cars.map((car, carIndex) => {
-        return <CarItem key={carIndex} carInformation={car} />;
+        return (
+          <CarItem key={carIndex} carInformation={car} onClick={onClick} />
+        );
       })}
     </ul>
   );
