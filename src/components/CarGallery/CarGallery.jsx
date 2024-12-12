@@ -5,16 +5,9 @@ import { CarItem } from "./CarItem";
 const CarGallery = ({ cars }) => {
   return (
     <ul>
-      {selectedCarsInformation.map(
-        (selectedCarInformation, selectedCarIndex) => {
-          return (
-            <CarItem
-              key={selectedCarIndex}
-              carInformation={selectedCarInformation}
-            />
-          );
-        }
-      )}
+      {cars.map((car, carIndex) => {
+        return <CarItem key={carIndex} carInformation={car} />;
+      })}
     </ul>
   );
 };
