@@ -189,7 +189,7 @@ const TestPage = () => {
       <span style={{ fontFamily: "montserrat-regular" }}>Regular</span>
       <span style={{ fontFamily: "montserrat-semibold" }}>Semibold</span>
       <div style={{ backgroundColor: "black" }}>
-        <SVGimage name="norm" />
+        <SVGimage name="fav" />
       </div>
     </div>
   );
