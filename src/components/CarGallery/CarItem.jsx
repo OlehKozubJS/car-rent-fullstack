@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 
+import { CarGalleryContainerStyleBase } from "./CarGalleryStyles";
+
 import { SVGimage } from "../../images";
 
 const CarItem = ({ car, onClick }) => {
@@ -19,9 +21,9 @@ const CarItem = ({ car, onClick }) => {
 
   return (
     <li>
-      <CarModalImageStyleBase src={car.img} alt="" />
-      <CarModalHeader make={car.make} model={car.model} year={car.year} />
-      <CarModalCommonInformation
+      <CarGalleryImageStyleBase src={car.img} alt="" />
+      <CarGalleryHeader make={car.make} model={car.model} year={car.year} />
+      <CarGalleryCommonInformation
         address={car.address}
         id={car.id}
         year={car.year}
@@ -29,11 +31,10 @@ const CarItem = ({ car, onClick }) => {
         fuelConsumption={car.fuelConsumption}
         engineSize={car.engineSize}
       />
-      <CarModalAccessoriesInformation
+      <CarGalleryAccessoriesInformation
         accessories={car.accessories}
         functionalities={car.functionalities}
       />
-      <CarModalLink />
       <button onClick={handleClick}>Learn more</button>
     </li>
   );
