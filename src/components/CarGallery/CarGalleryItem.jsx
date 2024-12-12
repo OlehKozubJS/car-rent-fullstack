@@ -31,16 +31,18 @@ const CarGalleryItem = ({ car, onClick }) => {
 
   return (
     <CarGalleryItemContainerStyleBase>
-      <CarGalleryImageContainerStyleBase>
-        <CarGalleryImageStyleBase src={car.photoLink} alt="" />
-        <CarGalleryFavouriteButtonStyleBase
-          type="button"
-          onClick={isFavourite ? unMarkAsFavourite : markAsFavourite}
-        >
-          <SVGimage name={isFavourite ? "fav" : "norm"} />
-        </CarGalleryFavouriteButtonStyleBase>
-      </CarGalleryImageContainerStyleBase>
-      <CarGalleryHeader make={car.make} model={car.model} year={car.year} />
+      <div>
+        <CarGalleryImageContainerStyleBase>
+          <CarGalleryImageStyleBase src={car.photoLink} alt="" />
+          <CarGalleryFavouriteButtonStyleBase
+            type="button"
+            onClick={isFavourite ? unMarkAsFavourite : markAsFavourite}
+          >
+            <SVGimage name={isFavourite ? "fav" : "norm"} />
+          </CarGalleryFavouriteButtonStyleBase>
+        </CarGalleryImageContainerStyleBase>
+        <CarGalleryHeader make={car.make} model={car.model} year={car.year} />
+      </div>
       <CarGalleryCommonInformation
         address={car.address}
         id={car.id}
