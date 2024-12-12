@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const CarGalleryContainerStyleBase = styled.article`
+const CarGalleryContainerStyleBase = styled.li`
   position: relative;
   width: 274px;
   padding: 40px;
