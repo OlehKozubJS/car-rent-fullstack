@@ -12,7 +12,7 @@ const CarModalRentalInformation = ({
   rentalPrice,
 }) => {
   return (
-    <>
+    <div>
       <CarModalSubHeaderStyleBase>
         Rental Conditions:{" "}
       </CarModalSubHeaderStyleBase>
@@ -42,7 +42,7 @@ const CarModalRentalInformation = ({
           </CarModalRentalItemValueStyleBase>
         </CarModalRentalItemStyleBase>
       </CarModalRentalItemsStyleBase>
-    </>
+    </div>
   );
 };
 
