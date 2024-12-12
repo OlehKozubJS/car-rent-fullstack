@@ -11,6 +11,7 @@ const CarGalleryStyleBase = styled.ul`
 const CarGalleryItemContainerStyleBase = styled.li`
   position: relative;
   width: 274px;
+  height: 600px;
 
   border-radius: 24px;
 
