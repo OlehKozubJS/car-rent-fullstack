@@ -7,8 +7,8 @@ const MainPage = ({ cars }) => {
   const [isModal, setIsModal] = useState(false);
   const [car, setCar] = useState(null);
 
-  const openModal = () => {
-    setCar(true);
+  const openModal = (newCar) => {
+    setCar(newCar);
     setIsModal(true);
   };
 
