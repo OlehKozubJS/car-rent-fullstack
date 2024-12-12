@@ -8,10 +8,10 @@ const CarModalBackdropStyleBase = styled.section`
   height: 100%;
 
   display: flex;
+
   justify-content: center;
   align-items: center;
-
-  background: rgba(18, 20, 23, 0.5);
+  background-color: rgba(18, 20, 23, 0.5);
 `;
 
 const CarModalContainerStyleBase = styled.article`
