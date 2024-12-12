@@ -12,7 +12,7 @@ import {
 
 import { SVGimage } from "../../images";
 
-const CarItem = ({ car, onClick }) => {
+const CarGalleryItem = ({ car, onClick }) => {
   const [ifFavourite, setIsFavourite] = useState(false);
 
   const markAsFavourite = () => {
@@ -50,4 +50,4 @@ const CarItem = ({ car, onClick }) => {
   );
 };
 
-export { CarItem };
+export { CarGalleryItem };
