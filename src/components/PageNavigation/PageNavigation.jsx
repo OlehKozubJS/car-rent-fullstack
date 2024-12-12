@@ -6,9 +6,9 @@ import { MainPage, TestPage, MygerPage } from "./pages";
 
 import "./style";
 
-const PageNavigation = ({ pages, onClick }) => {
+const PageNavigation = ({ pagesObject, onClick }) => {
   const handleCurrentPageName = (event) => {
-    onClick(event.target.value);
+    onClick(pagesObject event.target.value);
   };
 
   return (
