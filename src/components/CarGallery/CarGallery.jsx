@@ -6,7 +6,14 @@ const CarGallery = ({ cars, onClick }) => {
   return (
     <CarGalleryStyleBase>
       {cars.map((car, carIndex) => {
-        return <CarGalleryItem key={carIndex} car={car} onClick={onClick} />;
+        return (
+          <CarGalleryItem
+            key={carIndex}
+            car={car}
+            onLearnMoreClick={onLearnMoreClick}
+            onFavouriteClick={onFavouriteClick}
+          />
+        );
       })}
     </CarGalleryStyleBase>
   );
