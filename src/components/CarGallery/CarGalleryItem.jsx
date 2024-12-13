@@ -18,6 +18,7 @@ const CarGalleryItem = ({ car, onLearnMoreClick, onFavouriteClick }) => {
   const [isFavourite, setIsFavourite] = useState(false);
 
   const markAsFavourite = () => {
+    onFavouriteClick(car);
     setIsFavourite(true);
   };
 
@@ -28,11 +29,12 @@ const CarGalleryItem = ({ car, onLearnMoreClick, onFavouriteClick }) => {
   const handleClick = () => {
     onLearnMoreClick(car);
   };
-
+  /*
   useEffect(() => {
     onFavouriteClick(car);
   }, [isFavourite]);
-  //{ car, isFavourite }
+  { car, isFavourite }
+   */
   return (
     <CarGalleryItemContainerStyleBase>
       <div>
