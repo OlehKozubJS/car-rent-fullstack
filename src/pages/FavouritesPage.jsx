@@ -19,7 +19,6 @@ const FavouritesPage = ({ cars, onFavouriteClick }) => {
   return (
     <section>
       {isModal && <CarModal car={car} onClose={closeModal} />}
-      <CarFilter />
       <CarGallery
         cars={cars}
         onLearnMoreClick={openModal}
