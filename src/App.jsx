@@ -30,8 +30,8 @@ const App = () => {
               page: (
                 <MainPage
                   cars={carsLocalData.slice(0, 25)}
-                  onFavouriteClick={() => {
-                    return;
+                  onFavouriteClick={(carData) => {
+                    console.log(carData);
                   }}
                 />
               ),
@@ -42,7 +42,7 @@ const App = () => {
                 <FavouritesPage
                   cars={carsLocalData}
                   onFavouriteClick={() => {
-                    return;
+                    console.log(carData);
                   }}
                 />
               ),
