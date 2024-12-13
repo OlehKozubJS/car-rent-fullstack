@@ -2,7 +2,7 @@ import { /*useEffect,*/ useState } from "react";
 
 import { carsLocalData } from "./database";
 
-import { MainPage, TestPage, MygerPage } from "./pages";
+import { MainPage, TestPage, MygerPage, FavouritesPage } from "./pages";
 
 import { PageNavigation } from "./components";
 
