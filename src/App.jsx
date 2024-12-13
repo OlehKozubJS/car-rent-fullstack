@@ -48,7 +48,7 @@ const App = () => {
               page: (
                 <FavouritesPage
                   cars={
-                    favouriteCars.length > 0 ? favouriteCars : carsLocalData
+                    /*favouriteCars.length > 0 ? favouriteCars : */ carsLocalData
                   }
                   onFavouriteClick={handleFavouriteCars}
                 />
