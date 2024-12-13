@@ -30,14 +30,21 @@ const App = () => {
               page: (
                 <MainPage
                   cars={carsLocalData.slice(0, 25)}
-                  onFavouriteClick={null}
+                  onFavouriteClick={() => {
+                    return;
+                  }}
                 />
               ),
             },
             {
               name: "Favourites page",
               page: (
-                <FavouritesPage cars={carsLocalData} onFavouriteClick={null} />
+                <FavouritesPage
+                  cars={carsLocalData}
+                  onFavouriteClick={() => {
+                    return;
+                  }}
+                />
               ),
             },
             {
