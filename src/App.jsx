@@ -18,6 +18,8 @@ const App = () => {
     setCurrentPage(page);
   };
 
+  const [] = useState();
+
   return (
     <div style={{ fontFamily: "Manrope-Regular" }}>
       <header>
