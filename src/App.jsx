@@ -27,6 +27,8 @@ const App = () => {
 
   const [] = useState();
 
+  const handleFavouriteCars = () => {};
+
   return (
     <div style={{ fontFamily: "Manrope-Regular" }}>
       <header>
