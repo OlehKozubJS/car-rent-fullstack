@@ -15,6 +15,10 @@ const App = () => {
     setFavouriteCars([...favouriteCars, carData]);
   };
 
+  useEffect(() => {
+    console.log(favouriteCars);
+  }, [favouriteCars]);
+
   const [currentPage, setCurrentPage] = useState({
     name: "Favourites page",
     page: (
