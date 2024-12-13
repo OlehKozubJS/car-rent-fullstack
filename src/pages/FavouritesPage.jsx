@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 import { CarFilter, CarGallery, CarModal } from "./imports";
 
-const FavouritesPage = ({ cars }) => {
+const FavouritesPage = ({ cars, onFavouriteClick }) => {
   const [isModal, setIsModal] = useState(false);
   const [car, setCar] = useState(null);
 
@@ -20,7 +20,11 @@ const FavouritesPage = ({ cars }) => {
     <section>
       {isModal && <CarModal car={car} onClose={closeModal} />}
       <CarFilter />
-      <CarGallery cars={cars} onClick={openModal} />
+      <CarGallery
+        cars={cars}
+        onLearnMoreClick={openModal}
+        onFavouriteClick={onFavouriteClick}
+      />
     </section>
   );
 };
