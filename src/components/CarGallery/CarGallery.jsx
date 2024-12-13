@@ -11,9 +11,7 @@ const CarGallery = ({ cars, onLearnMoreClick, onFavouriteClick }) => {
             key={carIndex}
             car={car}
             onLearnMoreClick={onLearnMoreClick}
-            onFavouriteClick={(carData) => {
-              console.log(carData);
-            }}
+            onFavouriteClick={onFavouriteClick}
           />
         );
       })}
