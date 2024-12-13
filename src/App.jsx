@@ -11,7 +11,14 @@ import "./style";
 const App = () => {
   const [currentPage, setCurrentPage] = useState({
     name: "Main page",
-    page: <MainPage cars={carsLocalData.slice(0, 25)} />,
+    page: (
+      <MainPage
+        cars={carsLocalData.slice(0, 25)}
+        onFavouriteClick={(carData) => {
+          console.log(carData);
+        }}
+      />
+    ),
   });
 
   const handleCurrentPage = (page) => {
