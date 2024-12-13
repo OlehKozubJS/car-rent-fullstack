@@ -29,7 +29,9 @@ const CarGalleryItem = ({ car, onLearnMoreClick, onFavouriteClick }) => {
     onLearnMoreClick(car);
   };
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    onFavouriteClick({ car, isFavourite });
+  }, [isFavourite]);
 
   return (
     <CarGalleryItemContainerStyleBase>
