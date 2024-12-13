@@ -23,9 +23,7 @@ const FavouritesPage = ({ cars, onFavouriteClick }) => {
       <CarGallery
         cars={cars}
         onLearnMoreClick={openModal}
-        onFavouriteClick={(carData) => {
-          console.log(carData);
-        }}
+        onFavouriteClick={onFavouriteClick}
       />
     </section>
   );
