@@ -28,6 +28,10 @@ const App = () => {
               page: <MainPage cars={carsLocalData.slice(0, 25)} />,
             },
             {
+              name: "Favourites page",
+              page: <FavouritesPage cars={carsLocalData} />,
+            },
+            {
               name: "Test page",
               page: <TestPage />,
             },
@@ -35,7 +39,6 @@ const App = () => {
               name: "Myger page",
               page: <MygerPage />,
             },
-            { name: "Favourites page", page: <FavouritesPage /> },
           ]}
           onChange={handleCurrentPage}
           currentPageName={currentPage.name}
