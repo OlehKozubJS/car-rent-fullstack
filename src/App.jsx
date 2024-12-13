@@ -62,7 +62,7 @@ const App = () => {
           currentPageName={currentPage.name}
         />
       </header>
-      <main>{currentPage}</main>
+      <main>{currentPage.page}</main>
     </div>
   );
 };
