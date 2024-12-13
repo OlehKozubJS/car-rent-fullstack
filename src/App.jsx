@@ -9,6 +9,12 @@ import { PageNavigation } from "./components";
 import "./style";
 
 const App = () => {
+  const [favouriteCars, setFavouriteCars] = useState([]);
+
+  const handleFavouriteCars = (carData) => {
+    console.log(carData);
+  };
+
   const [currentPage, setCurrentPage] = useState({
     name: "Main page",
     page: (
@@ -21,12 +27,6 @@ const App = () => {
 
   const handleCurrentPage = (page) => {
     setCurrentPage(page);
-  };
-
-  const [favouriteCars, setFavouriteCars] = useState([]);
-
-  const handleFavouriteCars = (carData) => {
-    console.log(carData);
   };
 
   return (
