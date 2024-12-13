@@ -20,7 +20,7 @@ const FavouritesPage = ({ cars, onFavouriteClick }) => {
     <section>
       {isModal && <CarModal car={car} onClose={closeModal} />}
       <CarFilter />
-      {cars.length && (
+      {cars.length > 0 && (
         <CarGallery
           cars={cars}
           onLearnMoreClick={openModal}
