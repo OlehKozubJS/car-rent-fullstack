@@ -35,6 +35,7 @@ const App = () => {
               name: "Myger page",
               page: <MygerPage />,
             },
+            { name: "Favourites page", page: <FavouritesPage /> },
           ]}
           onChange={handleCurrentPage}
           currentPageName={currentPage.name}
