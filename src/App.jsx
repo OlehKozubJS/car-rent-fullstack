@@ -16,9 +16,12 @@ const App = () => {
   };
 
   const [currentPage, setCurrentPage] = useState({
-    name: "Main page",
+    name: "Favourites page",
     page: (
-      <MainPage cars={carsLocalData} onFavouriteClick={handleFavouriteCars} />
+      <FavouritesPage
+        cars={favouriteCars}
+        onFavouriteClick={handleFavouriteCars}
+      />
     ),
   });
 
