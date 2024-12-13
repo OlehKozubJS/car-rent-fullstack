@@ -27,11 +27,18 @@ const App = () => {
           pages={[
             {
               name: "Main page",
-              page: <MainPage cars={carsLocalData.slice(0, 25)} />,
+              page: (
+                <MainPage
+                  cars={carsLocalData.slice(0, 25)}
+                  onFavouriteClick={null}
+                />
+              ),
             },
             {
               name: "Favourites page",
-              page: <FavouritesPage cars={carsLocalData} />,
+              page: (
+                <FavouritesPage cars={carsLocalData} onFavouriteClick={null} />
+              ),
             },
             {
               name: "Test page",
