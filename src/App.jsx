@@ -14,9 +14,7 @@ const App = () => {
     page: (
       <MainPage
         cars={carsLocalData.slice(0, 25)}
-        onFavouriteClick={(carData) => {
-          console.log(carData);
-        }}
+        onFavouriteClick={handleFavouriteCars}
       />
     ),
   });
@@ -25,9 +23,11 @@ const App = () => {
     setCurrentPage(page);
   };
 
-  const [favouriteCars, setFavouriteCars] = useState();
+  const [favouriteCars, setFavouriteCars] = useState([]);
 
-  const handleFavouriteCars = () => {};
+  const handleFavouriteCars = (carData) => {
+    console.log(carData);
+  };
 
   return (
     <div style={{ fontFamily: "Manrope-Regular" }}>
@@ -39,9 +39,7 @@ const App = () => {
               page: (
                 <MainPage
                   cars={carsLocalData.slice(0, 25)}
-                  onFavouriteClick={(carData) => {
-                    console.log(carData);
-                  }}
+                  onFavouriteClick={handleFavouriteCars}
                 />
               ),
             },
@@ -50,9 +48,7 @@ const App = () => {
               page: (
                 <FavouritesPage
                   cars={carsLocalData}
-                  onFavouriteClick={(carData) => {
-                    console.log(carData);
-                  }}
+                  onFavouriteClick={handleFavouriteCars}
                 />
               ),
             },
