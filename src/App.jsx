@@ -12,6 +12,7 @@ const App = () => {
   const [favouriteCars, setFavouriteCars] = useState([]);
 
   const handleFavouriteCars = (carData) => {
+    console.log(carData);
     setFavouriteCars([...favouriteCars, carData]);
   };
 
