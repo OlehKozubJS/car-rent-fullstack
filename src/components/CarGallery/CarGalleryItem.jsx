@@ -14,7 +14,7 @@ import {
 
 import { SVGimage } from "../imports";
 
-const CarGalleryItem = ({ car, onClick }) => {
+const CarGalleryItem = ({ car, onClick, onFavouriteClick }) => {
   const [isFavourite, setIsFavourite] = useState(false);
 
   const markAsFavourite = () => {
