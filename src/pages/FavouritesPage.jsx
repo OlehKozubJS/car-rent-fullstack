@@ -30,9 +30,5 @@ const FavouritesPage = ({ cars, onFavouriteClick }) => {
     </section>
   );
 };
-/*
 
-
-
-*/
 export { FavouritesPage };
