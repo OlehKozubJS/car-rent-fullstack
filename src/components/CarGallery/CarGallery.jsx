@@ -2,7 +2,7 @@ import { CarGalleryStyleBase } from "./CarGalleryStyles";
 
 import { CarGalleryItem } from "./CarGalleryItem";
 
-const CarGallery = ({ cars, onClick }) => {
+const CarGallery = ({ cars, onLearnMoreClick, onFavouriteClick }) => {
   return (
     <CarGalleryStyleBase>
       {cars.map((car, carIndex) => {
