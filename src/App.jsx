@@ -25,7 +25,7 @@ const App = () => {
     setCurrentPage(page);
   };
 
-  const [] = useState();
+  const [favouriteCars, setFavouriteCars] = useState();
 
   const handleFavouriteCars = () => {};
 
