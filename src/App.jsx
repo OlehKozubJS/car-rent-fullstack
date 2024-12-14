@@ -5,7 +5,7 @@ import { carsLocalData } from "./database";
 
 const MainPage = lazy(() => import("./pages/MainPage"));
 
-const FavouritesPage = lazy(() => import("./pages/FavouritesPage"));
+const FavouriteCarsPage = lazy(() => import("./pages/FavouriteCarsPage"));
 
 const TestPageOne = lazy(() => import("./pages/TestPageOne"));
 
@@ -20,8 +20,8 @@ const App = () => {
         <nav>
           <NavLink to="/">Car Rent</NavLink>
           <NavLink to="/FavouriteCars">Favourite Cars</NavLink>
-          <NavLink to=""></NavLink>
-          <NavLink to=""></NavLink>
+          <NavLink to="/TestOne">Test One</NavLink>
+          <NavLink to="TestTwo">Test Two</NavLink>
         </nav>
       </header>
       <main>
