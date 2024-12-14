@@ -1,8 +1,11 @@
 {
   "files": {
     "main.css": "/car-rent-fullstack/static/css/main.4a41eecd.css",
-    "main.js": "/car-rent-fullstack/static/js/main.294782b3.js",
-    "static/js/383.4e288542.chunk.js": "/car-rent-fullstack/static/js/383.4e288542.chunk.js",
+    "main.js": "/car-rent-fullstack/static/js/main.c071ed5a.js",
+    "static/js/727.8839fc78.chunk.js": "/car-rent-fullstack/static/js/727.8839fc78.chunk.js",
+    "static/js/411.2db97a26.chunk.js": "/car-rent-fullstack/static/js/411.2db97a26.chunk.js",
+    "static/js/381.094de5a3.chunk.js": "/car-rent-fullstack/static/js/381.094de5a3.chunk.js",
+    "static/js/224.7b7b2ebe.chunk.js": "/car-rent-fullstack/static/js/224.7b7b2ebe.chunk.js",
     "static/media/Kings-Regular.ttf": "/car-rent-fullstack/static/media/Kings-Regular.88581f6650e5461f6c1c.ttf",
     "static/media/Ojuju.ttf": "/car-rent-fullstack/static/media/Ojuju.3d850912660ca49391d1.ttf",
     "static/media/Montserrat-SemiBold.ttf": "/car-rent-fullstack/static/media/Montserrat-SemiBold.93b37a465fc4ec0d0415.ttf",
@@ -14,11 +17,14 @@
     "static/media/icons.svg": "/car-rent-fullstack/static/media/icons.33633ab5c522b43212f596ab9c5993ed.svg",
     "index.html": "/car-rent-fullstack/index.html",
     "main.4a41eecd.css.map": "/car-rent-fullstack/static/css/main.4a41eecd.css.map",
-    "main.294782b3.js.map": "/car-rent-fullstack/static/js/main.294782b3.js.map",
-    "383.4e288542.chunk.js.map": "/car-rent-fullstack/static/js/383.4e288542.chunk.js.map"
+    "main.c071ed5a.js.map": "/car-rent-fullstack/static/js/main.c071ed5a.js.map",
+    "727.8839fc78.chunk.js.map": "/car-rent-fullstack/static/js/727.8839fc78.chunk.js.map",
+    "411.2db97a26.chunk.js.map": "/car-rent-fullstack/static/js/411.2db97a26.chunk.js.map",
+    "381.094de5a3.chunk.js.map": "/car-rent-fullstack/static/js/381.094de5a3.chunk.js.map",
+    "224.7b7b2ebe.chunk.js.map": "/car-rent-fullstack/static/js/224.7b7b2ebe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4a41eecd.css",
-    "static/js/main.294782b3.js"
+    "static/js/main.c071ed5a.js"
   ]
 }
