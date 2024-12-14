@@ -195,4 +195,4 @@ const TestPage = () => {
   );
 };
 
-export { TestPage };
+export default TestPage;
