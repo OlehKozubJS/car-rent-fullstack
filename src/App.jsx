@@ -19,7 +19,7 @@ const App = () => {
 
   const removeFavouriteCar = (car) => {
     setFavouriteCars(
-      favouriteCars.filter((favouriteCar) => car.id === favouriteCar.id)
+      favouriteCars.filter((favouriteCar) => car.id !== favouriteCar.id)
     );
   };
 
