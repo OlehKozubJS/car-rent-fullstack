@@ -11,6 +11,8 @@ const TestPageTwo = lazy(() => import("./pages/TestPageTwo"));
 import "./style";
 
 const App = () => {
+  const [favouriteCars, setFavouriteCars] = useState([]);
+
   const addFavouriteCar = () => {
     return;
   };
@@ -54,7 +56,7 @@ const App = () => {
               path="/FavouriteCars"
               element={
                 <FavouriteCarsPage
-                  cars={carsLocalData}
+                  cars={favouriteCars}
                   onFavouriteClick={removeFavouriteCar}
                 />
               }
