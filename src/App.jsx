@@ -3,21 +3,13 @@ import { Routes, Route, NavLink } from "react-router-dom";
 
 import { carsLocalData } from "./database";
 
-const MainPage = lazy(() => {
-  import("./pages/MainPage");
-});
+const MainPage = lazy(() => import("./pages/MainPage"));
 
-const FavouritesPage = lazy(() => {
-  import("./pages/FavouritesPage");
-});
+const FavouritesPage = lazy(() => import("./pages/FavouritesPage"));
 
-const TestPage = lazy(() => {
-  import("./pages/TestPage");
-});
+const TestPage = lazy(() => import("./pages/TestPage"));
 
-const MygerPage = lazy(() => {
-  import("./pages/MygerPage");
-});
+const MygerPage = lazy(() => import("./pages/MygerPage"));
 
 import "./style";
 
