@@ -7,9 +7,9 @@ const MainPage = lazy(() => import("./pages/MainPage"));
 
 const FavouritesPage = lazy(() => import("./pages/FavouritesPage"));
 
-const TestPage = lazy(() => import("./pages/TestPage"));
+const TestPageOne = lazy(() => import("./pages/TestPageOne"));
 
-const MygerPage = lazy(() => import("./pages/MygerPage"));
+const TestPageTwo = lazy(() => import("./pages/MygerPageTwo"));
 
 import "./style";
 
