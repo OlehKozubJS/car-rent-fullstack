@@ -2,10 +2,12 @@ import { useEffect, useState, lazy, Suspense } from "react";
 
 import { carsLocalData } from "./database";
 
-const MainPage = lazy();
-const TestPage = lazy();
-const MygerPage = lazy();
-const FavouritesPage = lazy();
+import { MainPage, FavouritesPage, TestPage, MygerPage } from "./pages";
+
+//const MainPage = lazy();
+//const TestPage = lazy();
+//const MygerPage = lazy();
+//const FavouritesPage = lazy();
 
 import { PageNavigation } from "./components";
 
