@@ -3,8 +3,6 @@ import { Routes, Route, NavLink } from "react-router-dom";
 
 import { carsLocalData } from "./database";
 
-//import { MainPage, FavouritesPage, TestPage, MygerPage } from "./pages";
-
 const MainPage = lazy(() => {
   import("./pages/MainPage");
 });
