@@ -28,4 +28,4 @@ const FavouritesPage = ({ cars, onFavouriteClick }) => {
   );
 };
 
-export { FavouritesPage };
+export default FavouritesPage;
