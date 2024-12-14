@@ -12,7 +12,10 @@ const reactRoot = createRoot(htmlRoot);
 
 reactRoot.render(
   <StrictMode>
-    <BrowserRouter basename="/car-rent-fullstack">
+    <BrowserRouter
+      future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
+      basename="/car-rent-fullstack"
+    >
       <App />
     </BrowserRouter>
   </StrictMode>
