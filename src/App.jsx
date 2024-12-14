@@ -35,7 +35,7 @@ const App = () => {
   }, [favouriteCars]);
 
   return (
-    <div style={{ fontFamily: "Manrope-Regular" }}>
+    <div>
       <header></header>
       <main></main>
     </div>
