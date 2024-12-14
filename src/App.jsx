@@ -35,7 +35,7 @@ const App = () => {
       <main>
         <Suspense>
           <Routes>
-            <Route path="" />
+            <Route path="/" element={<MainPage />} />
           </Routes>
         </Suspense>
       </main>
