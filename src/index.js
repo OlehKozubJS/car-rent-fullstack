@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter } from "ract-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 import { ReducerComponent } from "./redux";
 import { carModel, selectedCars } from "./hooks";
@@ -17,9 +17,11 @@ reactRoot.render(
       blacklist={["selectedCars"]}
       whitelist={["carModel"]}
     >
-      <App />
+      <BrowserRouter basename="/OlehKozubJS.github.io/car-rent-fullstack/">
+        <App />
+      </BrowserRouter>
     </ReducerComponent>
   </StrictMode>
 );
 
-// https://OlehKozubJS.github.io/car-rent-fullstack/
+//
