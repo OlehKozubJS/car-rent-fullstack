@@ -16,8 +16,9 @@ const App = () => {
   const addFavouriteCar = (car) => {
     setFavouriteCars([...favouriteCars, car]);
   };
+
   const removeFavouriteCar = () => {
-    return;
+    setFavouriteCars(favouriteCars.filter(() => {}));
   };
 
   return (
