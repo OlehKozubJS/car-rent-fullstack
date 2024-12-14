@@ -12,7 +12,7 @@ import {
 
 import { SVGimage } from "../images";
 
-const TestPage = () => {
+const TestPageOne = () => {
   const [time, setTime] = useState(0);
 
   const [fibonacciArray, setFibonacciArray] = useState([0, 1]);
@@ -195,4 +195,4 @@ const TestPage = () => {
   );
 };
 
-export default TestPage;
+export default TestPageOne;
