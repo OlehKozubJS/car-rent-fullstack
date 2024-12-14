@@ -27,7 +27,7 @@ const App = () => {
       <main>
         <Suspense downfall={<p>loading...</p>}>
           <Routes>
-            <Route path="/" element={<TestPage />} />
+            <Route path="/" element={<MainPage />} />
           </Routes>
         </Suspense>
       </main>
