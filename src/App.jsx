@@ -33,7 +33,7 @@ const App = () => {
             <Route path="/" element={<MainPage cars={carsLocalData} />} />
             <Route
               path="/FavouriteCars"
-              element={<FavouriteCarsPage cars={cars} />}
+              element={<FavouriteCarsPage cars={carsLocalData} />}
             />
             <Route path="/TestOne" element={<TestPageOne />} />
             <Route path="/TestTwo" element={<TestPageTwo />} />
