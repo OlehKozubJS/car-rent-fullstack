@@ -27,7 +27,7 @@ const App = () => {
       <main>
         <Suspense downfall={<p>loading...</p>}>
           <Routes>
-            <Route path="/" element={<MainPage />} />
+            <Route path="/" element={<MainPage cars={carsLocalData} />} />
           </Routes>
         </Suspense>
       </main>
