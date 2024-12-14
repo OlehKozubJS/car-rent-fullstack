@@ -28,6 +28,9 @@ const App = () => {
         <Suspense downfall={<p>loading...</p>}>
           <Routes>
             <Route path="/" element={<MainPage cars={carsLocalData} />} />
+            <Route path="/"></Route>
+            <Route path=""></Route>
+            <Route path=""></Route>
           </Routes>
         </Suspense>
       </main>
