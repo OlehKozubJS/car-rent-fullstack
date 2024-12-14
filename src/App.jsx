@@ -22,7 +22,7 @@ const App = () => {
       <main>
         <Suspense>
           <Routes>
-            <Route path="/" element={<MainPage />} />
+            <Route path="/" element={<TestPage />} />
           </Routes>
         </Suspense>
       </main>
