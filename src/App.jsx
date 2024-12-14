@@ -9,7 +9,7 @@ const FavouritesPage = lazy(() => import("./pages/FavouritesPage"));
 
 const TestPageOne = lazy(() => import("./pages/TestPageOne"));
 
-const TestPageTwo = lazy(() => import("./pages/MygerPageTwo"));
+const TestPageTwo = lazy(() => import("./pages/TestPageTwo"));
 
 import "./style";
 
