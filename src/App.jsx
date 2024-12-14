@@ -4,11 +4,8 @@ import { Routes, Route, NavLink } from "react-router-dom";
 import { carsLocalData } from "./database";
 
 const MainPage = lazy(() => import("./pages/MainPage"));
-
 const FavouriteCarsPage = lazy(() => import("./pages/FavouriteCarsPage"));
-
 const TestPageOne = lazy(() => import("./pages/TestPageOne"));
-
 const TestPageTwo = lazy(() => import("./pages/TestPageTwo"));
 
 import "./style";
