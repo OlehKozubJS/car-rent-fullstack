@@ -1,6 +1,6 @@
 import MainPage from "./MainPage";
 import TestPageOne from "./TestPageOne";
 import TestPageTwo from "./TestPageTwo";
-import FavouritesPage from "./FavouritesPage";
+import FavouriteCarsPage from "./FavouriteCarsPage";
 
-export { MainPage, TestPageOne, TestPageTwo, FavouritesPage };
+export { MainPage, TestPageOne, TestPageTwo, FavouriteCarsPage };
