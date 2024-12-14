@@ -24,7 +24,9 @@ import "./style";
 const App = () => {
   return (
     <div>
-      <header></header>
+      <header>
+        <nav></nav>
+      </header>
       <main></main>
     </div>
   );
