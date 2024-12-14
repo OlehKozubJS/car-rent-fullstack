@@ -33,9 +33,11 @@ const App = () => {
         </nav>
       </header>
       <main>
-        <Routes>
-          <Routes path="" />
-        </Routes>
+        <Suspense>
+          <Routes>
+            <Route path="" />
+          </Routes>
+        </Suspense>
       </main>
     </div>
   );
