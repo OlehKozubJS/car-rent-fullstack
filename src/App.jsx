@@ -13,8 +13,8 @@ import "./style";
 const App = () => {
   const [favouriteCars, setFavouriteCars] = useState([]);
 
-  const addFavouriteCar = () => {
-    return;
+  const addFavouriteCar = (car) => {
+    setFavouriteCars([...favouriteCars, car]);
   };
   const removeFavouriteCar = () => {
     return;
