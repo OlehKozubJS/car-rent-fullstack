@@ -19,9 +19,9 @@ const App = () => {
       <header>
         <nav>
           <NavLink to="/">Car Rent</NavLink>
-          <NavLink to="" />
-          <NavLink to="" />
-          <NavLink to="" />
+          <NavLink to=""></NavLink>
+          <NavLink to=""></NavLink>
+          <NavLink to=""></NavLink>
         </nav>
       </header>
       <main>
