@@ -12,21 +12,24 @@ const reactRoot = createRoot(htmlRoot);
 
 reactRoot.render(
   <StrictMode>
-    <BrowserRouter
-      future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
-      basename="/car-rent-fullstack"
-    >
-      <App />
-    </BrowserRouter>
-  </StrictMode>
-);
-
-/*
-
+    {" "}
     <ReducerComponent
       reducers={{ carModel, selectedCars }}
       blacklist={["selectedCars"]}
       whitelist={["carModel"]}
     >
+      <BrowserRouter
+        future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
+        basename="/car-rent-fullstack"
+      >
+        <App />
+      </BrowserRouter>
     </ReducerComponent>
+  </StrictMode>
+);
+
+/*
+
+
+    
 */
