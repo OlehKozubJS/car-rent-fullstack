@@ -17,7 +17,7 @@ reactRoot.render(
       blacklist={["selectedCars"]}
       whitelist={["carModel"]}
     >
-      <BrowserRouter basename="/car-rent-fullstack">
+      <BrowserRouter basename="/car-rent-fullstack/">
         <App />
       </BrowserRouter>
     </ReducerComponent>
