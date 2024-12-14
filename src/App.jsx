@@ -21,10 +21,20 @@ const App = () => {
     <div>
       <header>
         <nav>
-          <NavLink to="/">Car Rent</NavLink>
-          <NavLink to="/FavouriteCars">Favourite Cars</NavLink>
-          <NavLink to="/TestOne">Test One</NavLink>
-          <NavLink to="TestTwo">Test Two</NavLink>
+          <ul>
+            <li>
+              <NavLink to="/">Car Rent</NavLink>
+            </li>
+            <li>
+              <NavLink to="/FavouriteCars">Favourite Cars</NavLink>
+            </li>
+            <li>
+              <NavLink to="/TestOne">Test One</NavLink>
+            </li>
+            <li>
+              <NavLink to="TestTwo">Test Two</NavLink>
+            </li>
+          </ul>
         </nav>
       </header>
       <main>
