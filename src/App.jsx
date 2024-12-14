@@ -11,8 +11,12 @@ const TestPageTwo = lazy(() => import("./pages/TestPageTwo"));
 import "./style";
 
 const App = () => {
-  const addFavouriteCar = () => {};
-  const removeFavouriteCar = () => {};
+  const addFavouriteCar = () => {
+    return;
+  };
+  const removeFavouriteCar = () => {
+    return;
+  };
 
   return (
     <div>
