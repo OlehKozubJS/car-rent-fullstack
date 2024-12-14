@@ -27,9 +27,3 @@ reactRoot.render(
     </ReducerComponent>
   </StrictMode>
 );
-
-/*
-
-
-    
-*/
