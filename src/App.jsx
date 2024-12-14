@@ -21,8 +21,6 @@ const MygerPage = lazy(() => {
   import("./pages/MygerPage");
 });
 
-import { PageNavigation } from "./components";
-
 import "./style";
 
 const App = () => {
