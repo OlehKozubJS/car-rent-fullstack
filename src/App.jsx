@@ -5,16 +5,16 @@ import { carsLocalData } from "./database";
 //import { MainPage, FavouritesPage, TestPage, MygerPage } from "./pages";
 
 const MainPage = lazy(() => {
-  import("./pages");
+  import("./pages/MainPage");
 });
 const TestPage = lazy(() => {
-  import("./pages");
+  import("./pages/TestPage");
 });
 const MygerPage = lazy(() => {
-  import("./pages");
+  import("./pages/MygerPage");
 });
 const FavouritesPage = lazy(() => {
-  import("./pages");
+  import("./pages/FavouritesPage");
 });
 
 import { PageNavigation } from "./components";
