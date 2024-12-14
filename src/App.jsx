@@ -17,8 +17,10 @@ const App = () => {
     setFavouriteCars([...favouriteCars, car]);
   };
 
-  const removeFavouriteCar = () => {
-    setFavouriteCars(favouriteCars.filter(() => {}));
+  const removeFavouriteCar = (car) => {
+    setFavouriteCars(
+      favouriteCars.filter((favouriteCar) => car.id === favouriteCar.id)
+    );
   };
 
   return (
