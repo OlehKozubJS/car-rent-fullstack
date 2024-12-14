@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 import { CarFilter, CarGallery, CarModal } from "./imports";
 
-const FavouritesPage = ({ cars, onFavouriteClick }) => {
+const FavouriteCarsPage = ({ cars, onFavouriteClick }) => {
   const [isModal, setIsModal] = useState(false);
   const [car, setCar] = useState(null);
 
@@ -28,4 +28,4 @@ const FavouritesPage = ({ cars, onFavouriteClick }) => {
   );
 };
 
-export default FavouritesPage;
+export default FavouriteCarsPage;
