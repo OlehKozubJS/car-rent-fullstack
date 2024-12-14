@@ -26,15 +26,6 @@ import { PageNavigation } from "./components";
 import "./style";
 
 const App = () => {
-  const handleFavouriteCars = (carData) => {
-    console.log(carData);
-    setFavouriteCars([...favouriteCars, carData]);
-  };
-
-  useEffect(() => {
-    console.log(favouriteCars);
-  }, [favouriteCars]);
-
   return (
     <div>
       <header></header>
