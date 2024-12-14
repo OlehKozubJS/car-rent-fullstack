@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcar_rent_fullstack=self.webpackChunkcar_rent_fullstack||[]).push([[464,981],{727:(e,r,a)=>{a.r(r),a.d(r,{default:()=>c});var s=a(791),l=a(682),t=a(329);const c=e=>{let{cars:r,onFavouriteClick:a}=e;const[c,n]=(0,s.useState)(!1),[u,o]=(0,s.useState)(null);return(0,t.jsxs)("section",{children:[c&&(0,t.jsx)(l.CarModal,{car:u,onClose:()=>{n(!1)}}),(0,t.jsx)(l.CarFilter,{}),(0,t.jsx)(l.CarGallery,{cars:r,onLearnMoreClick:e=>{o(e),n(!0)},onFavouriteClick:a})]})}}}]);
+//# sourceMappingURL=464.721f4831.chunk.js.map
