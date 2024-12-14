@@ -25,7 +25,13 @@ const App = () => {
   return (
     <div>
       <header>
-        <nav></nav>
+        <nav>
+          <NavLink to="" />
+          <NavLink to="" />
+          <NavLink to="" />
+          <NavLink to="" />
+          <NavLink tp="" />
+        </nav>
       </header>
       <main></main>
     </div>
