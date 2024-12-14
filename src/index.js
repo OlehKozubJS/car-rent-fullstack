@@ -12,16 +12,18 @@ const reactRoot = createRoot(htmlRoot);
 
 reactRoot.render(
   <StrictMode>
+    <BrowserRouter basename="/car-rent-fullstack">
+      <App />
+    </BrowserRouter>
+  </StrictMode>
+);
+
+/*
+
     <ReducerComponent
       reducers={{ carModel, selectedCars }}
       blacklist={["selectedCars"]}
       whitelist={["carModel"]}
     >
-      <BrowserRouter basename="/car-rent-fullstack/">
-        <App />
-      </BrowserRouter>
     </ReducerComponent>
-  </StrictMode>
-);
-
-//
+*/
