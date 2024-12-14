@@ -17,7 +17,12 @@ const App = () => {
   return (
     <div>
       <header>
-        <nav></nav>
+        <nav>
+          <NavLink to="" />
+          <NavLink to="" />
+          <NavLink to="" />
+          <NavLink to="" />
+        </nav>
       </header>
       <main>
         <Suspense>
@@ -29,12 +34,5 @@ const App = () => {
     </div>
   );
 };
-/*
 
-          <NavLink to="" />
-          <NavLink to="" />
-          <NavLink to="" />
-          <NavLink to="" />
-          
-*/
 export { App };
