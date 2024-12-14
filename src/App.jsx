@@ -30,10 +30,13 @@ const App = () => {
           <NavLink to="" />
           <NavLink to="" />
           <NavLink to="" />
-          <NavLink tp="" />
         </nav>
       </header>
-      <main></main>
+      <main>
+        <Routes>
+          <Routes path="" />
+        </Routes>
+      </main>
     </div>
   );
 };
