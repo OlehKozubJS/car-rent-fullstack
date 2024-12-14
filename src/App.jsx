@@ -21,7 +21,6 @@ const App = () => {
           <NavLink to="/">Car Rent</NavLink>
           <NavLink to="/FavouriteCars">Favourite Cars</NavLink>
           <NavLink to=""></NavLink>
-          <NavLink to=""></NavLink>
         </nav>
       </header>
       <main>
