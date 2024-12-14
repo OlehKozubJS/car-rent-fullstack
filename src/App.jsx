@@ -18,7 +18,7 @@ const App = () => {
     <div>
       <header>
         <nav>
-          <NavLink to="" />
+          <NavLink to="/">Car Rent</NavLink>
           <NavLink to="" />
           <NavLink to="" />
           <NavLink to="" />
