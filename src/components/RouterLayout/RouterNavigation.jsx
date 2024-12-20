@@ -1,7 +1,4 @@
-import { useEffect, useState, lazy, Suspense } from "react";
-import { Routes, Route, NavLink } from "react-router-dom";
-
-import { carsLocalData } from "./database";
+import { NavLink } from "react-router-dom";
 
 const RouterNavigation = () => {
   return (
