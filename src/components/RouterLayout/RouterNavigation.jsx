@@ -14,7 +14,7 @@ const [MainPage, FavouriteCarsPage, TestPageOne, TestPageTwo] = [
 
 import "./style";
 
-const RouterLayout = () => {
+const RouterNavigation = () => {
   return (
     <nav>
       <ul>
@@ -35,4 +35,4 @@ const RouterLayout = () => {
   );
 };
 
-export { RouterLayout };
+export { RouterNavigation };
