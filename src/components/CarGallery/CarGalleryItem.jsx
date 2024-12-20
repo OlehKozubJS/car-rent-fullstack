@@ -29,12 +29,14 @@ const CarGalleryItem = ({ car, onLearnMoreClick, onFavouriteClick }) => {
   const handleClick = () => {
     onLearnMoreClick(car);
   };
-  /*
+
   useEffect(() => {
     onFavouriteClick(car);
   }, [isFavourite]);
-  { car, isFavourite }
-   */
+  {
+    car, isFavourite;
+  }
+
   return (
     <CarGalleryItemContainerStyleBase>
       <div>
