@@ -15,18 +15,6 @@ const [MainPage, FavouriteCarsPage, TestPageOne, TestPageTwo] = [
 import "./style";
 
 const RouterLayout = () => {
-  const [favouriteCars, setFavouriteCars] = useState([]);
-
-  const addFavouriteCar = (car) => {
-    setFavouriteCars([...favouriteCars, car]);
-  };
-
-  const removeFavouriteCar = (car) => {
-    setFavouriteCars(
-      favouriteCars.filter((favouriteCar) => car.id !== favouriteCar.id)
-    );
-  };
-
   return (
     <div>
       <header>
