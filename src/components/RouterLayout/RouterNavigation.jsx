@@ -7,7 +7,7 @@ const RouterNavigation = ({ pages }) => {
         {() => {
           return (
             <li>
-              <NavLink to="/">Car Rent</NavLink>
+              <NavLink to={pagePath}>{pageTitle}</NavLink>
             </li>
           );
         }}
