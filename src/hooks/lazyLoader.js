@@ -1,3 +1,9 @@
 import { lazy } from "react";
 
-lazy(() => import(`pages${pageName}`));
+const lazyLoader = (pageNames) => {
+  return pageNames.map((pageName) => {
+    return lazy(() => import(`pages${pageName}`));
+  });
+};
+
+export { lazyLoader };
