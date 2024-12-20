@@ -10,6 +10,8 @@ import {
   handleTimeOut,
 } from "./useEffectHandlers";
 
+import { lazyLoader } from "./lazyLoader";
+
 export {
   carModel,
   setCarModel,
