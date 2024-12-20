@@ -3,15 +3,6 @@ import { Routes, Route, NavLink } from "react-router-dom";
 
 import { RouterNavigation } from "./RouterNavigation";
 
-const [MainPage, FavouriteCarsPage, TestPageOne, TestPageTwo] = [
-  "MainPage",
-  "FavouriteCarsPage",
-  "TestPageOne",
-  "TestPageTwo",
-].map((pageName) => {
-  return lazy(() => import(`./pages/${pageName}`));
-});
-
 import "./style";
 
 const RouterLayout = () => {
@@ -36,7 +27,7 @@ const RouterLayout = () => {
         </nav>
       </header>
       <main>
-        <Suspense downfall={<p>loading...</p>}>
+        <Suspense downfall={<section>loading...</section>}>
           <Outlet></Outlet>
         </Suspense>
       </main>
