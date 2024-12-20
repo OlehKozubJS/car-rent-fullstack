@@ -13,7 +13,7 @@ const RouterLayout = () => {
       </header>
       <main>
         <Suspense downfall={<section>loading...</section>}>
-          <Outlet></Outlet>
+          <Outlet />
         </Suspense>
       </main>
       <footer></footer>
