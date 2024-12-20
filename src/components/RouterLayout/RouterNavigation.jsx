@@ -3,17 +3,6 @@ import { Routes, Route, NavLink } from "react-router-dom";
 
 import { carsLocalData } from "./database";
 
-const [MainPage, FavouriteCarsPage, TestPageOne, TestPageTwo] = [
-  "MainPage",
-  "FavouriteCarsPage",
-  "TestPageOne",
-  "TestPageTwo",
-].map((pageName) => {
-  return lazy(() => import(`./pages/${pageName}`));
-});
-
-import "./style";
-
 const RouterNavigation = () => {
   return (
     <nav>
