@@ -4,18 +4,13 @@ const RouterNavigation = ({ pages }) => {
   return (
     <nav>
       <ul>
-        <li>
-          <NavLink to="/">Car Rent</NavLink>
-        </li>
-        <li>
-          <NavLink to="/FavouriteCars">Favourite Cars</NavLink>
-        </li>
-        <li>
-          <NavLink to="/TestOne">Test One</NavLink>
-        </li>
-        <li>
-          <NavLink to="TestTwo">Test Two</NavLink>
-        </li>
+        {() => {
+          return (
+            <li>
+              <NavLink to="/">Car Rent</NavLink>
+            </li>
+          );
+        }}
       </ul>
     </nav>
   );
