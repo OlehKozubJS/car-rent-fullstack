@@ -2,11 +2,11 @@ import { Suspense } from "react";
 
 import { RouterNavigation } from "./RouterNavigation";
 
-const RouterLayout = () => {
+const RouterLayout = ({ pages }) => {
   return (
     <div>
       <header>
-        <RouterNavigation />
+        <RouterNavigation pages={pages} />
       </header>
       <main>
         <Suspense downfall={<section>loading...</section>}>
