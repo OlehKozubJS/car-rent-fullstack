@@ -14,7 +14,7 @@ const [MainPage, FavouriteCarsPage, TestPageOne, TestPageTwo] = [
 
 import "./style";
 
-const App = () => {
+const RouterLayout = () => {
   const [favouriteCars, setFavouriteCars] = useState([]);
 
   const addFavouriteCar = (car) => {
