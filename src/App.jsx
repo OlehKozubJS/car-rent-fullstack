@@ -3,7 +3,7 @@ import { Routes, Route, NavLink } from "react-router-dom";
 
 import { carsLocalData } from "./database";
 
-import {} from "./hooks";
+import { lazyloader } from "./hooks";
 
 const [MainPage, FavouriteCarsPage, TestPageOne, TestPageTwo] = [
   "MainPage",
