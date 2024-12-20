@@ -2,8 +2,6 @@ import { Suspense } from "react";
 
 import { RouterNavigation } from "./RouterNavigation";
 
-import "./style";
-
 const RouterLayout = () => {
   return (
     <div>
