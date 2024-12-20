@@ -78,4 +78,4 @@ const RouterLayout = () => {
   );
 };
 
-export { App };
+export { RouterLayout };
