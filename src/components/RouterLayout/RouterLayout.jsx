@@ -49,28 +49,7 @@ const RouterLayout = () => {
       </header>
       <main>
         <Suspense downfall={<p>loading...</p>}>
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <MainPage
-                  cars={carsLocalData}
-                  onFavouriteClick={addFavouriteCar}
-                />
-              }
-            />
-            <Route
-              path="/FavouriteCars"
-              element={
-                <FavouriteCarsPage
-                  cars={favouriteCars}
-                  onFavouriteClick={removeFavouriteCar}
-                />
-              }
-            />
-            <Route path="/TestOne" element={<TestPageOne />} />
-            <Route path="/TestTwo" element={<TestPageTwo />} />
-          </Routes>
+          <Outlet></Outlet>
         </Suspense>
       </main>
       <footer></footer>
