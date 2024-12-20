@@ -73,6 +73,7 @@ const App = () => {
           </Routes>
         </Suspense>
       </main>
+      <footer></footer>
     </div>
   );
 };
