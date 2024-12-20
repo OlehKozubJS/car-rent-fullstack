@@ -3,16 +3,14 @@ import { Routes, Route, NavLink } from "react-router-dom";
 
 import { carsLocalData } from "./database";
 
-import { lazyloader } from "./hooks";
+import { lazyLoader } from "./hooks";
 
-const [MainPage, FavouriteCarsPage, TestPageOne, TestPageTwo] = [
+const [MainPage, FavouriteCarsPage, TestPageOne, TestPageTwo] = lazyLoader([
   "MainPage",
   "FavouriteCarsPage",
   "TestPageOne",
   "TestPageTwo",
-].map((pageName) => {
-  return lazy(() => import(`./pages/${pageName}`));
-});
+]);
 
 import "./style";
 
