@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-const RouterNavigation = () => {
+const RouterNavigation = ({ pages }) => {
   return (
     <nav>
       <ul>
