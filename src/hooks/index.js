@@ -22,4 +22,5 @@ export {
   handleEventListener,
   handleInterval,
   handleTimeOut,
+  lazyLoader,
 };
