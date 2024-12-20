@@ -1,5 +1,4 @@
-import { useEffect, useState, lazy, Suspense } from "react";
-import { Routes, Route, NavLink } from "react-router-dom";
+import { Suspense } from "react";
 
 import { RouterNavigation } from "./RouterNavigation";
 
