@@ -4,9 +4,9 @@ const RouterNavigation = ({ pages }) => {
   return (
     <nav>
       <ul>
-        {() => {
+        {({ pagePath, pageTitle }, pageIndex) => {
           return (
-            <li>
+            <li key={pageIndex}>
               <NavLink to={pagePath}>{pageTitle}</NavLink>
             </li>
           );
