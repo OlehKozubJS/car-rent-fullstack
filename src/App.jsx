@@ -58,9 +58,11 @@ export { App };
 
 /*
 
-<NavLink to="/">Car Rent</NavLink>
-<NavLink to="/FavouriteCars">Favourite Cars</NavLink>
-<NavLink to="/TestOne">Test One</NavLink>
-<NavLink to="/TestTwo">Test Two</NavLink>
+[ 
+  {pagePath: "/", pageTitle: "Car Rent"},
+  {pagePath: "/FavouriteCars", pageTitle: "Favourite Cars"},
+  {pagePath="/TestOne", pageTitle: "Test One"},
+  {pagePath="/TestTwo", pageTitle: "Test Two"
+]
 
 */
