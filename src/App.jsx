@@ -31,7 +31,19 @@ const App = () => {
 
   return (
     <Routes>
-      <Route path="/" element={<RouterLayout />}>
+      <Route
+        path="/"
+        element={
+          <RouterLayout
+            pages={[
+              { pagePath: "/", pageTitle: "Car Rent" },
+              { pagePath: "/FavouriteCars", pageTitle: "Favourite Cars" },
+              { pagePath: "/TestOne", pageTitle: "Test One" },
+              { pagePath: "/TestTwo", pageTitle: "Test Two" },
+            ]}
+          />
+        }
+      >
         <Route
           index
           element={
@@ -55,14 +67,3 @@ const App = () => {
 };
 
 export { App };
-
-/*
-
-[ 
-  {pagePath: "/", pageTitle: "Car Rent"},
-  {pagePath: "/FavouriteCars", pageTitle: "Favourite Cars"},
-  {pagePath="/TestOne", pageTitle: "Test One"},
-  {pagePath="/TestTwo", pageTitle: "Test Two"
-]
-
-*/
