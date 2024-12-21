@@ -5,14 +5,16 @@ import { carsLocalData } from "./database";
 
 import { lazyLoader } from "./hooks";
 
+import { RouterLayout } from "./components";
+
+import "./style";
+
 const [MainPage, FavouriteCarsPage, TestPageOne, TestPageTwo] = lazyLoader([
   "MainPage",
   "FavouriteCarsPage",
   "TestPageOne",
   "TestPageTwo",
 ]);
-
-import "./style";
 
 const App = () => {
   const [favouriteCars, setFavouriteCars] = useState([]);
