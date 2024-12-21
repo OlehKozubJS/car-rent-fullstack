@@ -55,3 +55,12 @@ const App = () => {
 };
 
 export { App };
+
+/*
+
+<NavLink to="/">Car Rent</NavLink>
+<NavLink to="/FavouriteCars">Favourite Cars</NavLink>
+<NavLink to="/TestOne">Test One</NavLink>
+<NavLink to="TestTwo">Test Two</NavLink>
+
+*/
