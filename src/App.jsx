@@ -33,13 +33,13 @@ const App = () => {
     <Routes>
       <Route path="/" element={<RouterLayout />}>
         <Route
-          path="/"
+          index
           element={
             <MainPage cars={carsLocalData} onFavouriteClick={addFavouriteCar} />
           }
         />
         <Route
-          path="/FavouriteCars"
+          path="FavouriteCars"
           element={
             <FavouriteCarsPage
               cars={favouriteCars}
@@ -47,8 +47,8 @@ const App = () => {
             />
           }
         />
-        <Route path="/TestOne" element={<TestPageOne />} />
-        <Route path="/TestTwo" element={<TestPageTwo />} />
+        <Route path="TestOne" element={<TestPageOne />} />
+        <Route path="TestTwo" element={<TestPageTwo />} />
       </Route>
     </Routes>
   );
