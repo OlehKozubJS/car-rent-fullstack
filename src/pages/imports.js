@@ -14,7 +14,7 @@ import {
 
 import { CarFilter, CarGallery, CarModal } from "../components";
 
-import { vanillaReducer } from "redux";
+import { vanillaReducer } from "../redux";
 
 export {
   carsLocalData,
