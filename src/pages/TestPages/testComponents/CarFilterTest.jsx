@@ -63,5 +63,3 @@ const CarFilterTest = () => {
 };
 
 export { CarFilterTest };
-
-export default CarFilterTest;
