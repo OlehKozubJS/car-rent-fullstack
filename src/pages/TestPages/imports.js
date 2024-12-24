@@ -1,6 +1,6 @@
-import { carsLocalData, makesLocalData } from "../database";
-
 import {
+  carsLocalData,
+  makesLocalData,
   carModel,
   setCarModel,
   getCarModel,
@@ -10,11 +10,11 @@ import {
   handleEventListener,
   handleInterval,
   handleTimeOut,
-} from "../hooks";
-
-import { CarFilter, CarGallery, CarModal } from "../components";
-
-import { vanillaReducer } from "../redux";
+  CarFilter,
+  CarGallery,
+  CarModal,
+  vanillaReducer,
+} from "../imports";
 
 export {
   carsLocalData,
