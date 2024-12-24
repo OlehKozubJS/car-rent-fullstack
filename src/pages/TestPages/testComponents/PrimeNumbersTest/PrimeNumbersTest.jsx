@@ -1,15 +1,6 @@
 import { useState, useEffect } from "react";
 
-import {
-  cars,
-  handleEventListener,
-  handleInterval,
-  handleTimeOut,
-  CarFilter,
-  CarGallery,
-  CarModal,
-  vanillaReducer,
-} from "./imports";
+import { handleInterval } from "./imports";
 
 const PrimeNumbersTest = () => {
   const [primeNumbersArray, setPrimeNumbersArray] = useState([2]);
