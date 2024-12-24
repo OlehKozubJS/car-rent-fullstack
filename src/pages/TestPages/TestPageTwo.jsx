@@ -29,7 +29,7 @@ const JustAnotherDiv = styled.div`
   background-image: radial-gradient(at center, white, white, black);
 `;
 
-const MygerPage = () => {
+const TestPageTwo = () => {
   const [sizeValue, setSizeValue] = useState(0);
   const [middleSizeValue, setMiddleSizeValue] = useState(0);
   const [topValue, setTopValue] = useState(0);
@@ -87,4 +87,4 @@ const MygerPage = () => {
   );
 };
 
-export default MygerPage;
+export default TestPageTwo;
