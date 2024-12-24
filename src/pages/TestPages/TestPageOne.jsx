@@ -19,9 +19,6 @@ const TestPageOne = () => {
 
   return (
     <div>
-      {String(date)}
-      <p>{time}</p>
-
       <p>{squares.join(", ")}</p>
 
       <span style={{ fontFamily: "manrope-regular" }}>Regular</span>
