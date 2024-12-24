@@ -13,6 +13,7 @@ import {
   CarFilter,
   CarGallery,
   CarModal,
+  SVGimage,
   vanillaReducer,
 } from "../imports";
 
@@ -31,5 +32,6 @@ export {
   CarFilter,
   CarGallery,
   CarModal,
+  SVGimage,
   vanillaReducer,
 };
