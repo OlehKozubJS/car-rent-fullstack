@@ -11,7 +11,7 @@ import {
   vanillaReducer,
 } from "./imports";
 
-import { SVGimage } from "../images";
+import { SVGimage } from "../../images";
 
 const TestPageOne = () => {
   const [time, setTime] = useState(0);
