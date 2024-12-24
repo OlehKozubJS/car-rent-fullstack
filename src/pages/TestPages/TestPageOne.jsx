@@ -1,27 +1,11 @@
 import { useState, useEffect } from "react";
 
-import { handleInterval, SVGimage } from "./imports";
+import { SVGimage } from "./imports";
 
 const TestPageOne = () => {
-  const [time, setTime] = useState(0);
-
-  const [date, setDate] = useState(new Date());
-
-  const dateAnimationFunction = () => {
-    setDate(new Date());
-  };
-
-  const timeAnimationFunctionOne = () => {
-    setTime(time + 1);
-  };
-
   const varNameToString = (objectName) => {
     return Object.keys(objectName)[0];
   };
-
-  useEffect(handleInterval(dateAnimationFunction, 1000), []);
-
-  useEffect(handleInterval(timeAnimationFunctionOne, 500), [time]);
 
   const [squares, setSquares] = useState([]);
 
