@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { handleInterval, handleTimeOut } from "./imports";
+import { handleTimeOut } from "./imports";
 
 const FibonacciTest = () => {
   const [fibonacciArray, setFibonacciArray] = useState([0, 1]);
