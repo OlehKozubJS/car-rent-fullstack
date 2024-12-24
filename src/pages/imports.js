@@ -1,4 +1,5 @@
 import { carsLocalData, makesLocalData } from "../database";
+
 import {
   carModel,
   setCarModel,
@@ -10,7 +11,10 @@ import {
   handleInterval,
   handleTimeOut,
 } from "../hooks";
+
 import { CarFilter, CarGallery, CarModal } from "../components";
+
+import { vanillaReducer } from "redux";
 
 export {
   carsLocalData,
