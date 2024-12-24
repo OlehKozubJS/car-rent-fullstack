@@ -12,7 +12,7 @@ import {
   SVGimage,
 } from "./imports";
 
-const TestPageOne = () => {
+const DateAndTimeTest = () => {
   const [time, setTime] = useState(0);
 
   const [date, setDate] = useState(new Date());
@@ -23,10 +23,6 @@ const TestPageOne = () => {
 
   const timeAnimationFunctionOne = () => {
     setTime(time + 1);
-  };
-
-  const varNameToString = (objectName) => {
-    return Object.keys(objectName)[0];
   };
 
   useEffect(handleInterval(dateAnimationFunction, 1000), []);
@@ -47,19 +43,8 @@ const TestPageOne = () => {
     <div>
       {String(date)}
       <p>{time}</p>
-
-      <p>{squares.join(", ")}</p>
-
-      <span style={{ fontFamily: "manrope-regular" }}>Regular</span>
-      <span style={{ fontFamily: "manrope-medium" }}>Medium</span>
-      <span style={{ fontFamily: "manrope-semibold" }}>Semibold</span>
-      <span style={{ fontFamily: "montserrat-regular" }}>Regular</span>
-      <span style={{ fontFamily: "montserrat-semibold" }}>Semibold</span>
-      <div style={{ backgroundColor: "black" }}>
-        <SVGimage name="fav" />
-      </div>
     </div>
   );
 };
 
-export default TestPageOne;
+export default DateAndTimeTest;
