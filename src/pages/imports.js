@@ -16,6 +16,8 @@ import { CarFilter, CarGallery, CarModal } from "../components";
 
 import { vanillaReducer } from "../redux";
 
+import { SVGimage } from "../images";
+
 export {
   carsLocalData,
   makesLocalData,
