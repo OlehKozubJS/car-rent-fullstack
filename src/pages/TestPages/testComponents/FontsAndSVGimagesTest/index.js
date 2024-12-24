@@ -1,3 +1,3 @@
-import { FibonacciTest } from "./FibonacciTest";
+import { FontsAndSVGimagesTest } from "./FontsAndSVGimagesTest";
 
-export { FibonacciTest };
+export { FontsAndSVGimagesTest };
