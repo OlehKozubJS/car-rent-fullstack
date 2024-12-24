@@ -1,3 +1,3 @@
-import {} from "./CarFilterTest";
+import { CarFilterTest } from "./CarFilterTest";
 
-export {};
+export { CarFilterTest };
