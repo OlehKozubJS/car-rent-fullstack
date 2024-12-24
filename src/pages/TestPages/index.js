@@ -1,3 +1,4 @@
-import {} from "";
+import TestPageOne from "./TestPageOne";
+import TestPageTwo from "./TestPageTwo";
 
-export {};
+export { TestPageOne, TestPageTwo };
