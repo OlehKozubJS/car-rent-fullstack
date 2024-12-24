@@ -1,3 +1,3 @@
-import { CarFilterTest } from "./CarFilterTest";
+import { FibonacciTest } from "./FibonacciTest";
 
-export { CarFilterTest };
+export { FibonacciTest };
