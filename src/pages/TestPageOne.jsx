@@ -8,6 +8,7 @@ import {
   CarFilter,
   CarGallery,
   CarModal,
+  vanillaReducer,
 } from "./imports";
 
 import { SVGimage } from "../images";
