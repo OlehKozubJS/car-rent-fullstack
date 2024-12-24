@@ -25,10 +25,6 @@ const TestPageOne = () => {
     setTime(time + 1);
   };
 
-  const varNameToString = (objectName) => {
-    return Object.keys(objectName)[0];
-  };
-
   useEffect(handleInterval(dateAnimationFunction, 1000), []);
 
   useEffect(handleInterval(timeAnimationFunctionOne, 500), [time]);
