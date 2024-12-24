@@ -1,16 +1,6 @@
 import { useState, useEffect } from "react";
 
-import {
-  cars,
-  handleEventListener,
-  handleInterval,
-  handleTimeOut,
-  CarFilter,
-  CarGallery,
-  CarModal,
-  vanillaReducer,
-  SVGimage,
-} from "./imports";
+import { handleInterval } from "./imports";
 
 const DateAndTimeTest = () => {
   const [time, setTime] = useState(0);
@@ -28,16 +18,6 @@ const DateAndTimeTest = () => {
   useEffect(handleInterval(dateAnimationFunction, 1000), []);
 
   useEffect(handleInterval(timeAnimationFunctionOne, 500), [time]);
-
-  const [squares, setSquares] = useState([]);
-
-  const getSquare = () => {
-    if (squares.length < 10) {
-      setSquares([...squares, Math.pow(squares.length, 2)]);
-    }
-  };
-
-  useEffect(getSquare, [squares]);
 
   return (
     <div>
