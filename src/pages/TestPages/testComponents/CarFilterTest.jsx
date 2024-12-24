@@ -1,4 +1,4 @@
-const TestPageOne = () => {
+const CarFilterTest = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -62,4 +62,4 @@ const TestPageOne = () => {
   );
 };
 
-export default TestPageOne;
+export default CarFilterTest;
