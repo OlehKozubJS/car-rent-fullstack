@@ -1,3 +1,3 @@
-import { FibonacciTest } from "./FibonacciTest";
+import { SquaresTest } from "./SquaresTest";
 
-export { FibonacciTest };
+export { SquaresTest };
