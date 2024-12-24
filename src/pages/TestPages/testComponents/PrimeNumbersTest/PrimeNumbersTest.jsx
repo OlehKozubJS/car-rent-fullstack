@@ -36,4 +36,4 @@ const PrimeNumbersTest = () => {
   return <p>{primeNumbersArray.join(", ")}</p>;
 };
 
-export default TestPageOne;
+export { PrimeNumbersTest };
