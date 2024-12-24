@@ -31,4 +31,5 @@ export {
   CarFilter,
   CarGallery,
   CarModal,
+  vanillaReducer,
 };
