@@ -33,5 +33,6 @@ export {
   CarFilter,
   CarGallery,
   CarModal,
+  SVGimage,
   vanillaReducer,
 };
