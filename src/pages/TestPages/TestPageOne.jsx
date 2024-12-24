@@ -1,16 +1,6 @@
 import { useState, useEffect } from "react";
 
-import {
-  cars,
-  handleEventListener,
-  handleInterval,
-  handleTimeOut,
-  CarFilter,
-  CarGallery,
-  CarModal,
-  vanillaReducer,
-  SVGimage,
-} from "./imports";
+import { handleInterval, SVGimage } from "./imports";
 
 const TestPageOne = () => {
   const [time, setTime] = useState(0);
