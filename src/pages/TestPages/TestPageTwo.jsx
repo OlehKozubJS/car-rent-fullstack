@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import styled from "@emotion/styled";
 
-import { SVGimage } from "../images";
+import { SVGimage } from "../../images";
 
 const CheapTrick = styled.section`
   height: 500px;
