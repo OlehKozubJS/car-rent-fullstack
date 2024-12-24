@@ -27,4 +27,4 @@ const DateAndTimeTest = () => {
   );
 };
 
-export default DateAndTimeTest;
+export { DateAndTimeTest };
