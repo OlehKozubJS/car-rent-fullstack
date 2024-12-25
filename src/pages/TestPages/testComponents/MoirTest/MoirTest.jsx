@@ -15,7 +15,7 @@ const MoirTest = () => {
   return (
     <MoirTestStyleBase>
       <StripedSquare top={top} left={left} />
-      <StripedSquare top={500} left={500} />
+      <StripedSquare top={300} left={300} />
     </MoirTestStyleBase>
   );
 };
