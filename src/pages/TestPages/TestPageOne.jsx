@@ -17,7 +17,10 @@ const TestPageOne = () => {
 
   return (
     <Routes>
-      <Routes></Routes>
+      <Route>
+        <Route></Route>
+        <Route></Route>
+      </Route>
     </Routes>
   );
 };
