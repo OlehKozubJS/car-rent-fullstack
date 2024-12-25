@@ -39,13 +39,15 @@ const StripedSquare = ({ top, left }) => {
       <StripeStyleBase
         key={stripes.length + 1}
         color={stripes.length % 2 === 0 ? "blue" : "none"}
-        top={top}
-        left={left}
       ></StripeStyleBase>,
     ]);
   }, [stripes]);
 
-  return <SquareStyleBase>{stripes}</SquareStyleBase>;
+  return (
+    <SquareStyleBase top={top} left={left}>
+      {stripes}
+    </SquareStyleBase>
+  );
 };
 
 export { StripedSquare };
