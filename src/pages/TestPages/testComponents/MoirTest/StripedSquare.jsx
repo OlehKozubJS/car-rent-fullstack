@@ -13,6 +13,7 @@ const StripeStyleBase = styled.div`
     return height;
   }}px;
   width: 200px;
+  background-color: blue;
 `;
 
 const StripedSquare = () => {
@@ -25,7 +26,10 @@ const StripedSquare = () => {
 
     setStripes([
       ...stripes,
-      <StripeStyleBase key={stripes.length + 1}></StripeStyleBase>,
+      <StripeStyleBase
+        key={stripes.length + 1}
+        height={stripes.length}
+      ></StripeStyleBase>,
     ]);
   }, [stripes]);
 
