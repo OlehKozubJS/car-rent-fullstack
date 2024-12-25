@@ -4,6 +4,8 @@ import styled from "@emotion/styled";
 
 const SquareStyleBase = styled.div`
   position: absolute;
+  top: 100px;
+  left: 150px;
 
   height: 250px;
   width: 250px;
