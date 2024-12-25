@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcar_rent_fullstack=self.webpackChunkcar_rent_fullstack||[]).push([[788,60],{7788:(r,e,a)=>{a.r(e),a.d(e,{StripedSquare:()=>t.StripedSquare});var t=a(6060)},6060:(r,e,a)=>{a.r(e),a.d(e,{StripedSquare:()=>s});var t=a(3329);const s=()=>(0,t.jsx)("div",{children:"Striped square"})}}]);
+//# sourceMappingURL=788.72b0bca7.chunk.js.map
