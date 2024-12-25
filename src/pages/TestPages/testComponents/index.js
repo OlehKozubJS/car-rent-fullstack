@@ -6,6 +6,7 @@ import { FontsAndSVGimagesTest } from "./FontsAndSVGimagesTest";
 import { SquaresTest } from "./SquaresTest";
 import { StarsEffectTest } from "./StarsEffectTest";
 import { PageNavigationTest } from "./PageNavigationTest";
+import { TestPageLayout } from "./TestPageLayout";
 
 export {
   CarFilterTest,
@@ -16,4 +17,5 @@ export {
   SquaresTest,
   StarsEffectTest,
   PageNavigationTest,
+  TestPageLayout,
 };
