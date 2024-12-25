@@ -7,6 +7,7 @@ import { SquaresTest } from "./SquaresTest";
 import { StarsEffectTest } from "./StarsEffectTest";
 import { PageNavigationTest } from "./PageNavigationTest";
 import { TestPageLayout } from "./TestPageLayout";
+import { MoirTest } from "./MoirTest";
 
 export {
   CarFilterTest,
@@ -18,4 +19,5 @@ export {
   StarsEffectTest,
   PageNavigationTest,
   TestPageLayout,
+  MoirTest,
 };
