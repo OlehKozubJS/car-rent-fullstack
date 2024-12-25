@@ -26,7 +26,7 @@ const MoirTest = () => {
     };
   }, []);
 
-  useEffect((event) => {}, []);
+  useEffect(() => {}, []);
 
   return (
     <MoirTestStyleBase>
