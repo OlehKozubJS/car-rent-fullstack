@@ -2,7 +2,11 @@ import { useState, useEffect } from "react";
 
 import styled from "@emotion/styled";
 
-const SquareStyleBase = styled.div``;
+const SquareStyleBase = styled.div`
+  height: 200px;
+  width: 200px;
+  background-color: green;
+`;
 
 const StripeStyleBase = styled.div``;
 
@@ -20,7 +24,7 @@ const StripedSquare = () => {
     ]);
   }, [stripes]);
 
-  return <div>{stripes}</div>;
+  return <SquareStyleBase>{stripes}</SquareStyleBase>;
 };
 
 export { StripedSquare };
