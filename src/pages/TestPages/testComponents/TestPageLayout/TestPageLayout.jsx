@@ -5,7 +5,7 @@ const TestPageLayout = () => {
     <div>
       <ul>
         <li>
-          <NavLink to="/">Various tests</NavLink>
+          <NavLink to="tests">Various tests</NavLink>
         </li>
         <li>
           <NavLink to="stars">Stars effect tests</NavLink>
