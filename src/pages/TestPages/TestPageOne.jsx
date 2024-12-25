@@ -1,4 +1,4 @@
-import { Route, Outlet, NavLink } from "react-router-dom";
+import { Routes, Route, Outlet, NavLink } from "react-router-dom";
 
 import {
   CarFilterTest,
@@ -15,7 +15,7 @@ const TestPageOne = () => {
     return Object.keys(objectName)[0];
   };
 
-  return <Route></Route>;
+  return <Routes></Routes>;
 };
 
 export default TestPageOne;
