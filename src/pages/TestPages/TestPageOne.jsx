@@ -4,7 +4,8 @@ import {
   FibonacciTest,
   FontsAndSVGimagesTest,
   PrimeNumbersTest,
-  Squaretest,
+  StarsEffectTest,
+  SquaresTest,
 } from "./testComponents";
 
 const TestPageOne = () => {
