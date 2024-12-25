@@ -4,8 +4,12 @@ import styled from "@emotion/styled";
 
 const SquareStyleBase = styled.div`
   position: absolute;
-  top: 100px;
-  left: 150px;
+  top: ${(top) => {
+    return top;
+  }}px;
+  left: ${(left) => {
+    return left;
+  }}px;
 
   height: 250px;
   width: 250px;
@@ -22,7 +26,7 @@ const StripeStyleBase = styled.div`
   }};
 `;
 
-const StripedSquare = ({}) => {
+const StripedSquare = ({ top, left }) => {
   const [stripes, setStripes] = useState([]);
 
   useEffect(() => {
