@@ -5,13 +5,13 @@ const TestPageLayout = () => {
     <div>
       <ul>
         <li>
-          <NavLink to="TestOne/tests">Various tests</NavLink>
+          <NavLink to="/tests">Various tests</NavLink>
         </li>
         <li>
-          <NavLink to="TestOne/stars">Stars effect tests</NavLink>
+          <NavLink to="/stars">Stars effect tests</NavLink>
         </li>
         <li>
-          <NavLink to="TestOne/moir">Moir test</NavLink>
+          <NavLink to="/moir">Moir test</NavLink>
         </li>
       </ul>
       <div>
