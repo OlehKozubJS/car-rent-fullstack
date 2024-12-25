@@ -12,9 +12,9 @@ const MoirTest = () => {
   const [top, setTop] = useState(200);
   const [left, setLeft] = useState(200);
 
-  useEffect();
+  useEffect(() => {}, []);
 
-  useEffect();
+  useEffect(() => {}, []);
 
   return (
     <MoirTestStyleBase>
