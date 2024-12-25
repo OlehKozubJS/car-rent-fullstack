@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 import styled from "@emotion/styled";
 
 const SquareStyleBase = styled.div`
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
 
   background-color: green;
 
@@ -17,7 +17,6 @@ const StripeStyleBase = styled.div`
     return height;
   }}px;
   width: 200px;
-  border: 1px solid red;
   background-color: blue;
 `;
 
