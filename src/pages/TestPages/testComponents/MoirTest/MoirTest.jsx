@@ -13,16 +13,19 @@ const MoirTest = () => {
   const [left, setLeft] = useState(200);
 
   useEffect(() => {
-    const increaseTop = (event) => {
+    const changeTop = (event) => {
       if (event.type === "keydown" && event.key === "w") {
         setTop(top - 10);
       }
+      if (event.type === "keydown" && event.key === "s") {
+        setTop(top + 10);
+      }
     };
 
-    window.addEventListener("keydown", increaseTop);
+    window.addEventListener("keydown", changeTop);
 
     return () => {
-      window.removeEventListener("keydown", increaseTop);
+      window.removeEventListener("keydown", changeTop);
     };
   }, [top]);
 
