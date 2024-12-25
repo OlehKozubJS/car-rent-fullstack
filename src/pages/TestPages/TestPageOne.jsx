@@ -20,7 +20,7 @@ const TestPageOne = () => {
     <Routes>
       <Route path="/" element={<TestPageLayout />}>
         <Route
-          path="/"
+          path="tests"
           element={
             <div>
               <CarFilterTest />
