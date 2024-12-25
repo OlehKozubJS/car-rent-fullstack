@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/788.72b0bca7.chunk.js","mappings":"4PAAA,MAAMA,EAAgBA,KACbC,EAAAA,EAAAA,KAAA,OAAAC,SAAK,kB","sources":["pages/TestPages/testComponents/MoirTest/StripedSquare.jsx"],"sourcesContent":["const StripedSquare = () => {\n  return <div>Striped square</div>;\n};\n\nexport { StripedSquare };\n"],"names":["StripedSquare","_jsx","children"],"sourceRoot":""}
