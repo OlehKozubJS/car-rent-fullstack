@@ -1,4 +1,4 @@
-import { Routes, Route, Outlet, NavLink } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import {
   CarFilterTest,
@@ -18,7 +18,7 @@ const TestPageOne = () => {
 
   return (
     <Routes>
-      <Route path="/" element={<Outlet />}>
+      <Route path="/" element={<TestPageLayout />}>
         <Route
           path="tests"
           element={
