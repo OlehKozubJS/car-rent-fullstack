@@ -59,7 +59,7 @@ const App = () => {
             />
           }
         />
-        <Route path="TestOne" element={<TestPageOne />} />
+        <Route path="TestOne/*" element={<TestPageOne />} />
         <Route path="TestTwo" element={<TestPageTwo />} />
       </Route>
     </Routes>
