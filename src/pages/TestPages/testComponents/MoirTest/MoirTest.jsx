@@ -1,3 +1,11 @@
 import { StripedSquare } from "./StripedSquare";
 
-export { StripedSquare };
+const MoirTest = () => {
+  return (
+    <div>
+      <StripedSquare />
+    </div>
+  );
+};
+
+export { MoirTest };
