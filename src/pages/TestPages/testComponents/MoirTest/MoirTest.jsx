@@ -9,9 +9,12 @@ const MoirTestStyleBase = styled.div`
 `;
 
 const MoirTest = () => {
+  const [top, setTop] = useState(0);
+  const [left, setLeft] = useState(0);
+
   return (
     <MoirTestStyleBase>
-      <StripedSquare top={300} left={300} />
+      <StripedSquare top={top} left={left} />
       <StripedSquare top={500} left={500} />
     </MoirTestStyleBase>
   );
