@@ -1,6 +1,6 @@
 import { Outlet, NavLink } from "react-router-dom";
 
-const TestPageOne = () => {
+const TestPageLayout = () => {
   return (
     <div>
       <ul>
@@ -21,4 +21,4 @@ const TestPageOne = () => {
   );
 };
 
-export default TestPageOne;
+export default TestPageLayout;
