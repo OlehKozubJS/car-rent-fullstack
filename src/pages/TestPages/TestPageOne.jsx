@@ -19,13 +19,13 @@ const TestPageOne = () => {
     <div>
       <ul>
         <li>
-          <NavLink></NavLink>
+          <NavLink to="tests">Various tests</NavLink>
         </li>
         <li>
-          <NavLink></NavLink>
+          <NavLink to="stars">Stars effect tests</NavLink>
         </li>
         <li>
-          <NavLink></NavLink>
+          <NavLink to="moir">Moir test</NavLink>
         </li>
       </ul>
       <Routes>
@@ -43,8 +43,8 @@ const TestPageOne = () => {
               </div>
             }
           />
-          <Route path="moir" element={<div>Moir</div>} />
           <Route path="stars" element={<StarsEffectTest />} />
+          <Route path="moir" element={<div>Moir</div>} />
         </Route>
       </Routes>
     </div>
