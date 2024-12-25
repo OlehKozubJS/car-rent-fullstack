@@ -11,6 +11,12 @@ const SquareStyleBase = styled.div`
     return left;
   }}px;
 
+  transform: rotate(
+    ${({ angle }) => {
+      return angle;
+    }}deg
+  );
+
   height: 250px;
   width: 250px;
 
@@ -26,7 +32,7 @@ const StripeStyleBase = styled.div`
   }};
 `;
 
-const StripedSquare = ({ top, left }) => {
+const StripedSquare = ({ top, left, angle }) => {
   const [stripes, setStripes] = useState([]);
 
   useEffect(() => {
@@ -44,7 +50,7 @@ const StripedSquare = ({ top, left }) => {
   }, [stripes]);
 
   return (
-    <SquareStyleBase top={top} left={left}>
+    <SquareStyleBase top={top} left={left} angle={angle}>
       {stripes}
     </SquareStyleBase>
   );
