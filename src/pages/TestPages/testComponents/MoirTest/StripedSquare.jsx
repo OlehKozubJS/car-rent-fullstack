@@ -5,7 +5,11 @@ import styled from "@emotion/styled";
 const SquareStyleBase = styled.div`
   height: 200px;
   width: 200px;
+
   background-color: green;
+
+  display: flex;
+  flaex-direction: column;
 `;
 
 const StripeStyleBase = styled.div`
