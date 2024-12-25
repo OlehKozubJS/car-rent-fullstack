@@ -1,4 +1,4 @@
-const PageNavigation = ({ pages, onChange, currentPageName }) => {
+const PageNavigationTest = ({ pages, onChange, currentPageName }) => {
   const handleCurrentPage = (event) => {
     onChange(pages.find(({ name }) => event.target.value === name));
   };
@@ -28,4 +28,4 @@ const PageNavigation = ({ pages, onChange, currentPageName }) => {
   );
 };
 
-export { PageNavigation };
+export { PageNavigationTest };
