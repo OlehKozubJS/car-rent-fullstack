@@ -38,7 +38,7 @@ const App = () => {
             pages={[
               { pagePath: "/", pageTitle: "Car Rent" },
               { pagePath: "/FavouriteCars", pageTitle: "Favourite Cars" },
-              { pagePath: "/TestOne/", pageTitle: "Test One" },
+              { pagePath: "/TestOne/tests", pageTitle: "Test One" },
               { pagePath: "/TestTwo", pageTitle: "Test Two" },
             ]}
           />
