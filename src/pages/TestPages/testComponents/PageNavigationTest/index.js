@@ -1,3 +1,3 @@
-import { PrimeNumbersTest } from "./PrimeNumbersTest";
+import { PageNavigationTest } from "./PageNavigationTest";
 
-export { PrimeNumbersTest };
+export { PageNavigationTest };
