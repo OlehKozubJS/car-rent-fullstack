@@ -9,7 +9,7 @@ const SquareStyleBase = styled.div`
   background-color: green;
 
   display: flex;
-  flaex-direction: column;
+  flex-direction: column;
 `;
 
 const StripeStyleBase = styled.div`
@@ -30,10 +30,9 @@ const StripedSquare = () => {
 
     setStripes([
       ...stripes,
-      <StripeStyleBase
-        key={stripes.length + 1}
-        height={stripes.length}
-      ></StripeStyleBase>,
+      <StripeStyleBase key={stripes.length + 1}>
+        {stripes.length}
+      </StripeStyleBase>,
     ]);
   }, [stripes]);
 
