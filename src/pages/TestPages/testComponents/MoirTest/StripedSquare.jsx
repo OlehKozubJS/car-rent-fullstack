@@ -17,6 +17,7 @@ const StripeStyleBase = styled.div`
     return height;
   }}px;
   width: 200px;
+  border: 1px solid red;
   background-color: blue;
 `;
 
