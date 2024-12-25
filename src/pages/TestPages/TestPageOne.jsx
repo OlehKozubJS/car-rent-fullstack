@@ -18,7 +18,7 @@ const TestPageOne = () => {
 
   return (
     <Routes>
-      <Route path="*" element={<TestPageLayout />}>
+      <Route path="/*" element={<TestPageLayout />}>
         <Route
           path="tests"
           element={
