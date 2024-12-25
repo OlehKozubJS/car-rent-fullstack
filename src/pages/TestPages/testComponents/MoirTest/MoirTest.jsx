@@ -1,3 +1,5 @@
+import styled from "@emotion/styled";
+
 import { StripedSquare } from "./StripedSquare";
 
 const MoirTest = () => {
