@@ -29,10 +29,22 @@ const TestPageOne = () => {
         </li>
       </ul>
       <Routes>
-        <Route>
-          <Route></Route>
-          <Route></Route>
-          <Route></Route>
+        <Route path="/" element={<Outlet />}>
+          <Route
+            path="tests"
+            element={
+              <div>
+                <CarFilterTest />
+                <DateAndTimeTest />
+                <FibonacciTest />
+                <FontsAndSVGimagesTest />
+                <PrimeNumbersTest />
+                <SquaresTest />
+              </div>
+            }
+          />
+          <Route path="moir" element={<div>Moir</div>} />
+          <Route path="stars" element={<StarsEffectTest />} />
         </Route>
       </Routes>
     </div>
