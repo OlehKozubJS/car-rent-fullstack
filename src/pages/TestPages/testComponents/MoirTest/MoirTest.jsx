@@ -19,7 +19,11 @@ const MoirTest = () => {
       }
     };
 
-    window.add;
+    window.addEventListener("keydown", increaseTop);
+
+    return () => {
+      window.removeEventListener("keydown", increaseTop);
+    };
   }, []);
 
   useEffect((event) => {}, []);
