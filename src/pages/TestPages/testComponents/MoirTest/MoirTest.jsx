@@ -9,8 +9,8 @@ const MoirTestStyleBase = styled.div`
 `;
 
 const MoirTest = () => {
-  const [top, setTop] = useState(0);
-  const [left, setLeft] = useState(0);
+  const [top, setTop] = useState(200);
+  const [left, setLeft] = useState(200);
 
   return (
     <MoirTestStyleBase>
