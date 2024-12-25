@@ -8,7 +8,12 @@ const SquareStyleBase = styled.div`
   background-color: green;
 `;
 
-const StripeStyleBase = styled.div``;
+const StripeStyleBase = styled.div`
+  height: ${({ height }) => {
+    return height;
+  }}px;
+  width: 200px;
+`;
 
 const StripedSquare = () => {
   const [stripes, setStripes] = useState([]);
