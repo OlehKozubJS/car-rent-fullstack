@@ -50,10 +50,10 @@ const MoirTest = () => {
   useEffect(() => {
     const changeAngle = (event) => {
       if (event.type === "keydown" && event.key === "q") {
-        setAngle(left - 5);
+        setAngle(angle - 5);
       }
       if (event.type === "keydown" && event.key === "e") {
-        setAngle(left + 5);
+        setAngle(angle + 5);
       }
     };
 
