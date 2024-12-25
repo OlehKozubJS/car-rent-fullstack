@@ -22,7 +22,7 @@ const StripeStyleBase = styled.div`
   }};
 `;
 
-const StripedSquare = () => {
+const StripedSquare = ({}) => {
   const [stripes, setStripes] = useState([]);
 
   useEffect(() => {
