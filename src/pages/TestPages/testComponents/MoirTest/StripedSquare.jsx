@@ -38,7 +38,7 @@ const StripedSquare = ({ top, left }) => {
       ...stripes,
       <StripeStyleBase
         key={stripes.length + 1}
-        color={stripes.length % 2 === 0 ? "blue" : "none"}
+        color={stripes.length % 2 === 0 ? "rgba(0, 0, 250, 0.5)" : "none"}
       ></StripeStyleBase>,
     ]);
   }, [stripes]);
