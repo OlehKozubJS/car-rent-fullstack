@@ -29,7 +29,22 @@ const MoirTest = () => {
     };
   }, [top]);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const changeLeft = (event) => {
+      if (event.type === "keydown" && event.key === "a") {
+        setLeft(top - 1);
+      }
+      if (event.type === "keydown" && event.key === "d") {
+        setLeft(top + 1);
+      }
+    };
+
+    window.addEventListener("keydown", changeLeft);
+
+    return () => {
+      window.removeEventListener("keydown", changeLeft);
+    };
+  }, []);
 
   return (
     <MoirTestStyleBase>
