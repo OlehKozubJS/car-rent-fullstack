@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 
 import styled from "@emotion/styled";
 
+const SquareStyleBase = styled.div``;
+
 const StripeStyleBase = styled.div``;
 
 const StripedSquare = () => {
