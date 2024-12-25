@@ -8,6 +8,7 @@ import {
   PrimeNumbersTest,
   StarsEffectTest,
   SquaresTest,
+  TestPageLayout,
 } from "./testComponents";
 
 const TestPageOne = () => {
