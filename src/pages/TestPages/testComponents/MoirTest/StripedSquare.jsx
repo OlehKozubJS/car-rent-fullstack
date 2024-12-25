@@ -10,7 +10,10 @@ const StripedSquare = () => {
       return;
     }
 
-    setStripes([...stripes, <div key={stripes.length + 1}>Stripe</div>]);
+    setStripes([
+      ...stripes,
+      <div key={stripes.length + 1}>Stripe {stripes.length + 1}</div>,
+    ]);
   }, [stripes]);
 
   return <div>{stripes}</div>;
