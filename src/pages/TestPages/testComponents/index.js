@@ -4,6 +4,7 @@ import { PrimeNumbersTest } from "./PrimeNumbersTest";
 import { DateAndTimeTest } from "./DateAndTimeTest";
 import { FontsAndSVGimagesTest } from "./FontsAndSVGimagesTest";
 import { SquaresTest } from "./SquaresTest";
+import { StarsEffectTest } from "./StarsEffectTest";
 import { PageNavigationTest } from "./PageNavigationTest";
 
 export {
@@ -13,5 +14,6 @@ export {
   DateAndTimeTest,
   FontsAndSVGimagesTest,
   SquaresTest,
+  StarsEffectTest,
   PageNavigationTest,
 };
