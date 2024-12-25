@@ -1,4 +1,4 @@
-import { Routes, Outlet } from "react-redux";
+import { Routes, Outlet } from "react-router-dom";
 
 import {
   CarFilterTest,
@@ -15,7 +15,11 @@ const TestPageOne = () => {
     return Object.keys(objectName)[0];
   };
 
-  return <div></div>;
+  return (
+    <div>
+      <Routes></Routes>
+    </div>
+  );
 };
 
 export default TestPageOne;
