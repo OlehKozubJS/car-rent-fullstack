@@ -24,7 +24,7 @@ const MoirTest = () => {
     return () => {
       window.removeEventListener("keydown", increaseTop);
     };
-  }, []);
+  }, [top]);
 
   useEffect(() => {}, []);
 
