@@ -15,10 +15,10 @@ const MoirTest = () => {
   useEffect(() => {
     const changeTop = (event) => {
       if (event.type === "keydown" && event.key === "w") {
-        setTop(top - 1);
+        setTop(top - 5);
       }
       if (event.type === "keydown" && event.key === "s") {
-        setTop(top + 1);
+        setTop(top + 5);
       }
     };
 
@@ -32,10 +32,10 @@ const MoirTest = () => {
   useEffect(() => {
     const changeLeft = (event) => {
       if (event.type === "keydown" && event.key === "a") {
-        setLeft(left - 1);
+        setLeft(left - 5);
       }
       if (event.type === "keydown" && event.key === "d") {
-        setLeft(left + 1);
+        setLeft(left + 5);
       }
     };
 
