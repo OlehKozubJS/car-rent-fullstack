@@ -9,7 +9,7 @@ const MoirTestStyleBase = styled.div`
 const MoirTest = () => {
   return (
     <div>
-      <StripedSquare />
+      <StripedSquare top={200} left={500} />
     </div>
   );
 };
