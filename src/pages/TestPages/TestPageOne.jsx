@@ -1,4 +1,11 @@
-//import {} from "./testComponents";
+import {
+  CarFilterTest,
+  DateAndTimeTest,
+  FibonacciTest,
+  FontsAndSVGimagesTest,
+  PrimeNumbersTest,
+  Squaretest,
+} from "./testComponents";
 
 const TestPageOne = () => {
   const varNameToString = (objectName) => {
