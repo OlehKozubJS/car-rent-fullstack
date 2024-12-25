@@ -8,7 +8,7 @@ const TestPageLayout = () => {
           <NavLink to="tests">Various tests</NavLink>
         </li>
         <li>
-          <NavLink to="stars">Stars effect tests</NavLink>
+          <NavLink to="stars">Stars effect test</NavLink>
         </li>
         <li>
           <NavLink to="moir">Moir test</NavLink>
