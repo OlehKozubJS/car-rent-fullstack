@@ -4,10 +4,10 @@ import styled from "@emotion/styled";
 
 const SquareStyleBase = styled.div`
   position: absolute;
-  top: ${(top) => {
+  top: ${({ top }) => {
     return top;
   }}px;
-  left: ${(left) => {
+  left: ${({ left }) => {
     return left;
   }}px;
 
