@@ -12,9 +12,17 @@ const MoirTest = () => {
   const [top, setTop] = useState(200);
   const [left, setLeft] = useState(200);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const increaseTop = (event) => {
+      if (event.type === "keydown" && event.key === "w") {
+        setTop(set + 10);
+      }
+    };
 
-  useEffect(() => {}, []);
+    window.add;
+  }, []);
+
+  useEffect((event) => {}, []);
 
   return (
     <MoirTestStyleBase>
