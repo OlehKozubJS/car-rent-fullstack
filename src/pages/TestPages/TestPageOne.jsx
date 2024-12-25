@@ -22,7 +22,7 @@ const TestPageOne = () => {
           <NavLink />
         </li>
         <li>
-          <Navlink />
+          <NavLink />
         </li>
         <li>
           <NavLink />
