@@ -15,7 +15,11 @@ const TestPageOne = () => {
     return Object.keys(objectName)[0];
   };
 
-  return <Routes></Routes>;
+  return (
+    <Routes>
+      <Routes></Routes>
+    </Routes>
+  );
 };
 
 export default TestPageOne;
