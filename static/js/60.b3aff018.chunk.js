@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcar_rent_fullstack=self.webpackChunkcar_rent_fullstack||[]).push([[60],{6060:(e,t,n)=>{n.r(t),n.d(t,{StripedSquare:()=>i});var r,c,s=n(168),l=n(2791),h=n(9716),u=n(3329);const a=h.Z.div(r||(r=(0,s.Z)(["\n  height: 200px;\n  width: 200px;\n  background-color: green;\n"]))),i=(h.Z.div(c||(c=(0,s.Z)([""]))),()=>{const[e,t]=(0,l.useState)([]);return(0,l.useEffect)((()=>{e.length>=10||t([...e,(0,u.jsxs)("div",{children:["Stripe ",e.length+1]},e.length+1)])}),[e]),(0,u.jsx)(a,{children:e})})}}]);
+//# sourceMappingURL=60.b3aff018.chunk.js.map
