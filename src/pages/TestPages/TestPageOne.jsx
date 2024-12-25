@@ -9,6 +9,7 @@ import {
   StarsEffectTest,
   SquaresTest,
   TestPageLayout,
+  MoirTest,
 } from "./testComponents";
 
 const TestPageOne = () => {
@@ -33,7 +34,7 @@ const TestPageOne = () => {
           }
         />
         <Route path="stars" element={<StarsEffectTest />} />
-        <Route path="moir" element={<div>Moir</div>} />
+        <Route path="moir" element={<MoirTest />} />
       </Route>
     </Routes>
   );
