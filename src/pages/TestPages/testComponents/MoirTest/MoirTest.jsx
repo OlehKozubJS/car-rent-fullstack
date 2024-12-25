@@ -11,6 +11,7 @@ const MoirTestStyleBase = styled.div`
 const MoirTest = () => {
   const [top, setTop] = useState(200);
   const [left, setLeft] = useState(200);
+  const [angle, setAngle] = useState(0);
 
   useEffect(() => {
     const changeTop = (event) => {
@@ -46,9 +47,26 @@ const MoirTest = () => {
     };
   }, [left]);
 
+  useEffect(() => {
+    const changeAngle = (event) => {
+      if (event.type === "keydown" && event.key === "q") {
+        setAngle(left - 5);
+      }
+      if (event.type === "keydown" && event.key === "e") {
+        setAngle(left + 5);
+      }
+    };
+
+    window.addEventListener("keydown", changeAngle);
+
+    return () => {
+      window.removeEventListener("keydown", changeAngle);
+    };
+  }, [angle]);
+
   return (
     <MoirTestStyleBase>
-      <StripedSquare top={top} left={left} />
+      <StripedSquare top={top} left={left} angle={angle} />
       <StripedSquare top={300} left={300} />
     </MoirTestStyleBase>
   );
