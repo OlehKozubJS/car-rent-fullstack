@@ -5,7 +5,9 @@ import styled from "@emotion/styled";
 const StripedSquare = () => {
   const [stripes, setStripes] = useState([]);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    setStripes();
+  }, [stripes]);
 
   return <div>Striped square</div>;
 };
