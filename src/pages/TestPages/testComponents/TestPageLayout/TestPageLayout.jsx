@@ -21,4 +21,4 @@ const TestPageLayout = () => {
   );
 };
 
-export default TestPageLayout;
+export { TestPageLayout };
