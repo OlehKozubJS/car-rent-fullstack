@@ -6,10 +6,14 @@ const StripedSquare = () => {
   const [stripes, setStripes] = useState([]);
 
   useEffect(() => {
-    setStripes();
+    if (stripes.length >= 10) {
+      return;
+    }
+
+    setStripes([...stripes, <div key={stripes.length + 1}>Stripe</div>]);
   }, [stripes]);
 
-  return <div>Striped square</div>;
+  return <div>{stripes}</div>;
 };
 
 export { StripedSquare };
