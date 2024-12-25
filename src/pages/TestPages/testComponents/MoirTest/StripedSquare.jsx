@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import styled from "@emotion/styled";
 
 const SquareStyleBase = styled.div`
+  position: absolute;
+
   height: 250px;
   width: 250px;
 
