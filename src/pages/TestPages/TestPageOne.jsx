@@ -1,4 +1,4 @@
-import { Routes, Outlet } from "react-router-dom";
+import { Route, Outlet } from "react-router-dom";
 
 import {
   CarFilterTest,
@@ -17,7 +17,7 @@ const TestPageOne = () => {
 
   return (
     <div>
-      <Routes></Routes>
+      <Route></Route>
     </div>
   );
 };
