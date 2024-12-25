@@ -13,11 +13,11 @@ const SquareStyleBase = styled.div`
 `;
 
 const StripeStyleBase = styled.div`
-  height: ${({ height }) => {
-    return height;
-  }}px;
-  width: 200px;
-  background-color: blue;
+  height: 250px;
+  width: 10px;
+  background-color: ${({ color }) => {
+    return color;
+  }};
 `;
 
 const StripedSquare = () => {
