@@ -25,7 +25,7 @@ const StripedSquare = () => {
 
     setStripes([
       ...stripes,
-      <div key={stripes.length + 1}>Stripe {stripes.length + 1}</div>,
+      <StripeStyleBase key={stripes.length + 1}></StripeStyleBase>,
     ]);
   }, [stripes]);
 
