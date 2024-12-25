@@ -15,10 +15,10 @@ const MoirTest = () => {
   useEffect(() => {
     const changeTop = (event) => {
       if (event.type === "keydown" && event.key === "w") {
-        setTop(top - 10);
+        setTop(top - 1);
       }
       if (event.type === "keydown" && event.key === "s") {
-        setTop(top + 10);
+        setTop(top + 1);
       }
     };
 
