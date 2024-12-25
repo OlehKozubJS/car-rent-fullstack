@@ -12,6 +12,10 @@ const MoirTest = () => {
   const [top, setTop] = useState(200);
   const [left, setLeft] = useState(200);
 
+  useEffect();
+
+  useEffect();
+
   return (
     <MoirTestStyleBase>
       <StripedSquare top={top} left={left} />
