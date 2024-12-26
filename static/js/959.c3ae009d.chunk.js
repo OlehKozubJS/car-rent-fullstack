@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkcar_rent_fullstack=self.webpackChunkcar_rent_fullstack||[]).push([[959,543],{5959:(e,n,r)=>{r.r(n),r.d(n,{useKeyboard:()=>s.useKeyboard});var s=r(543)},543:(e,n,r)=>{r.r(n),r.d(n,{useKeyboard:()=>s});const s=(e,n,r)=>()=>{const s=s=>{"keydown"===s.type&&s.key===e&&n(r)};return window.addEventListener("keydown",s),()=>{window.removeEventListener("keydown",s)}}}}]);
-//# sourceMappingURL=959.c3ae009d.chunk.js.map
