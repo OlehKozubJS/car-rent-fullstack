@@ -57,7 +57,13 @@ const StripedSquare = ({ height, width, top, left, angle }) => {
   }, [stripes]);
 
   return (
-    <SquareStyleBase top={top} left={left} angle={angle}>
+    <SquareStyleBase
+      top={top}
+      left={left}
+      angle={angle}
+      height={height}
+      width={width}
+    >
       {stripes}
     </SquareStyleBase>
   );
