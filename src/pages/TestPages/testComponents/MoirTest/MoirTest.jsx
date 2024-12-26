@@ -15,12 +15,42 @@ const MoirTest = () => {
   const [left, setLeft] = useState(0);
   const [angle, setAngle] = useState(0);
 
-  useEffect(useKeyboard(setTop(top - 5), "w"), [top]);
-  useEffect(useKeyboard(setTop(top + 5), "s"), [top]);
-  useEffect(useKeyboard(setLeft(left - 5), "a"), [left]);
-  useEffect(useKeyboard(setLeft(left - 5), "a"), [left]);
-  useEffect(useKeyboard(setAngle(angle - 5), "q"), [angle]);
-  useEffect(useKeyboard(setAngle(angle + 5), "e"), [angle]);
+  useEffect(
+    useKeyboard("w", () => {
+      setTop(top - 5);
+    }),
+    [top]
+  );
+  useEffect(
+    useKeyboard("s", () => {
+      setTop(top + 5);
+    }),
+    [top]
+  );
+  useEffect(
+    useKeyboard("a", () => {
+      setLeft(left - 5);
+    }),
+    [left]
+  );
+  useEffect(
+    useKeyboard("d", () => {
+      setLeft(left + 5);
+    }),
+    [left]
+  );
+  useEffect(
+    useKeyboard("q", () => {
+      setAngle(angle - 5);
+    }),
+    [angle]
+  );
+  useEffect(
+    useKeyboard("e", () => {
+      setAngle(angle + 5);
+    }),
+    [angle]
+  );
 
   return (
     <MoirTestStyleBase>
