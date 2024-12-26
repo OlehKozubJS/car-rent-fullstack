@@ -5,7 +5,7 @@ import styled from "@emotion/styled";
 import { StripedSquare } from "./StripedSquare";
 
 const MoirTestStyleBase = styled.div`
-  postion: relative;
+  position: relative;
 `;
 
 const MoirTest = () => {
