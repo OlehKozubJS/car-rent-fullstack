@@ -1,7 +1,7 @@
-const useKeyboard = (key, callback) => {
+const useKeyboard = (keyName, callback) => {
   return () => {
-    const keydownCallback = (event) => {
-      if (event.type === "keydown" && event.key === key) {
+    const keydownCallback = ({ type, key }) => {
+      if (type === "keydown" && key === keyName) {
         callback();
       }
     };
