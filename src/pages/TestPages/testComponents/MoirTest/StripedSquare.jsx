@@ -43,7 +43,7 @@ const StripedSquare = ({ height, width, top, left, angle }) => {
   const [stripes, setStripes] = useState([]);
 
   useEffect(() => {
-    if (stripes.length >= 50) {
+    if (stripes.length >= height / 5) {
       return;
     }
 
