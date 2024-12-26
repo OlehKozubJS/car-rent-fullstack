@@ -33,7 +33,11 @@ const SquareStyleBase = styled.div`
 
 const StripeStyleBase = styled.div`
   height: 5px;
-  width: 250px;
+
+  width: ${({ width }) => {
+    return width;
+  }}px;
+
   background: ${({ color }) => {
     return color;
   }};
