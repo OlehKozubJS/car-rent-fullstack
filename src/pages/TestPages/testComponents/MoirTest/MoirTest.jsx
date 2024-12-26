@@ -15,6 +15,8 @@ const MoirTest = () => {
   const [left, setLeft] = useState(0);
   const [angle, setAngle] = useState(0);
 
+  useEffect(useKeyboard(), []);
+
   useEffect(() => {
     const changeTop = (event) => {
       if (event.type === "keydown" && event.key === "w") {
