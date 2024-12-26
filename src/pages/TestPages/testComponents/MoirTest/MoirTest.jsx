@@ -6,6 +6,8 @@ const MoirTestStyleBase = styled.div`
   position: relative;
 `;
 
+import {} from ".";
+
 import styled from "@emotion/styled";
 
 const MoirTest = () => {
