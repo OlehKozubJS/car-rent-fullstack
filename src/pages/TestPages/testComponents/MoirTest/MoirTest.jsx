@@ -73,7 +73,7 @@ const MoirTest = () => {
         height={500}
         width={500}
       />
-      <StripedSquare top={300} left={300} angle={90} height={100} width={500} />
+      <StripedSquare top={0} left={0} angle={90} height={100} width={500} />
     </MoirTestStyleBase>
   );
 };
