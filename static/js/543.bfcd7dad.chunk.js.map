@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/543.bfcd7dad.chunk.js","mappings":"wJAAA,MAAMA,EAAcA,CAACC,EAAUC,IACtB,IACE,M","sources":["pages/TestPages/testHooks/useKeyboard.js"],"sourcesContent":["const useKeyboard = (callback, keyName) => {\n  return () => {\n    return () => {};\n  };\n};\n\nexport { useKeyboard };\n"],"names":["useKeyboard","callback","keyName"],"sourceRoot":""}
