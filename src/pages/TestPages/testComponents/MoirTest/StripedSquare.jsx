@@ -4,9 +4,11 @@ import styled from "@emotion/styled";
 
 const SquareStyleBase = styled.div`
   position: absolute;
+
   top: ${({ top }) => {
     return top;
   }}px;
+
   left: ${({ left }) => {
     return left;
   }}px;
@@ -17,8 +19,13 @@ const SquareStyleBase = styled.div`
     }}deg
   );
 
-  height: 250px;
-  width: 250px;
+  height: ${(height) => {
+    return height;
+  }}px;
+
+  width: ${(width) => {
+    return width;
+  }}px;
 
   display: flex;
   flex-direction: column;
