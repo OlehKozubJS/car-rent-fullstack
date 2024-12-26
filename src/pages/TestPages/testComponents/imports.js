@@ -17,6 +17,8 @@ import {
   vanillaReducer,
 } from "../imports";
 
+import { useKeyboard } from "../testHooks";
+
 export {
   carsLocalData,
   makesLocalData,
