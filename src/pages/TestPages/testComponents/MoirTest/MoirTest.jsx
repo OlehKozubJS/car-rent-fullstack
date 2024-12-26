@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 
-import styled from "@emotion/styled";
-
 import { StripedSquare } from "./StripedSquare";
 
 const MoirTestStyleBase = styled.div`
   position: relative;
 `;
+
+import styled from "@emotion/styled";
 
 const MoirTest = () => {
   const [top, setTop] = useState(0);
