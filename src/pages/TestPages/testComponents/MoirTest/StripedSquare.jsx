@@ -25,7 +25,7 @@ const SquareStyleBase = styled.div`
 `;
 
 const StripeStyleBase = styled.div`
-  height: 1px;
+  height: 5px;
   width: 250px;
   background: ${({ color }) => {
     return color;
@@ -36,7 +36,7 @@ const StripedSquare = ({ top, left, angle }) => {
   const [stripes, setStripes] = useState([]);
 
   useEffect(() => {
-    if (stripes.length >= 250) {
+    if (stripes.length >= 50) {
       return;
     }
 
