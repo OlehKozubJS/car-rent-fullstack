@@ -35,5 +35,6 @@ export {
   CarGallery,
   CarModal,
   SVGimage,
+  useKeyboard,
   vanillaReducer,
 };
