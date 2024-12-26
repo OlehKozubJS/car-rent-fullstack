@@ -20,7 +20,7 @@ const MoirTest = () => {
   useEffect(useKeyboard(setLeft(left - 5), "a"), [left]);
   useEffect(useKeyboard(setLeft(left - 5), "a"), [left]);
   useEffect(useKeyboard(setAngle(angle - 5), "q"), [angle]);
-  useEffect(usekeyboard(setAngle(angle + 5), "e"), [angle]);
+  useEffect(useKeyboard(setAngle(angle + 5), "e"), [angle]);
 
   return (
     <MoirTestStyleBase>
