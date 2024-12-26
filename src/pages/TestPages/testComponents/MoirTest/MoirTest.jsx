@@ -15,7 +15,9 @@ const MoirTest = () => {
   const [left, setLeft] = useState(0);
   const [angle, setAngle] = useState(0);
 
-  useEffect(useKeyboard(), []);
+  useEffect(useKeyboard(setTop(top - 5), "w"), [top]);
+  useEffect(useKeyboard(setTop(top + 5), "s"), [top]);
+  useEffect(useKeyboard(setLeft()), [left]);
 
   useEffect(() => {
     const changeTop = (event) => {
