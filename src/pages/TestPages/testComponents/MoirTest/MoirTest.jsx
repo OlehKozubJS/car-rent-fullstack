@@ -9,8 +9,8 @@ const MoirTestStyleBase = styled.div`
 `;
 
 const MoirTest = () => {
-  const [top, setTop] = useState(200);
-  const [left, setLeft] = useState(200);
+  const [top, setTop] = useState(0);
+  const [left, setLeft] = useState(0);
   const [angle, setAngle] = useState(0);
 
   useEffect(() => {
@@ -73,7 +73,7 @@ const MoirTest = () => {
         height={500}
         width={500}
       />
-      <StripedSquare top={0} left={0} angle={90} height={100} width={500} />
+      <StripedSquare top={0} left={0} angle={0} height={100} width={500} />
     </MoirTestStyleBase>
   );
 };
