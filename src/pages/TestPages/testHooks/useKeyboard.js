@@ -1,9 +1,11 @@
 const useKeyboard = (callback, keyName) => {
   return () => {
-    window.addEventListener();
+    const keydownCallback = () => {};
+
+    window.addEventListener("keydown", keydownCallback);
 
     return () => {
-      window.removeEventListener();
+      window.removeEventListener("keydown", keydownCallback);
     };
   };
 };
