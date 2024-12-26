@@ -19,11 +19,11 @@ const SquareStyleBase = styled.div`
     }}deg
   );
 
-  height: ${(height) => {
+  height: ${({ height }) => {
     return height;
   }}px;
 
-  width: ${(width) => {
+  width: ${({ width }) => {
     return width;
   }}px;
 
