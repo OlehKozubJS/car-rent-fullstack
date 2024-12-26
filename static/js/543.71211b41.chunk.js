@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcar_rent_fullstack=self.webpackChunkcar_rent_fullstack||[]).push([[543],{543:(e,n,t)=>{t.r(n),t.d(n,{useKeyboard:()=>r});const r=(e,n,t)=>()=>{const r=r=>{"keydown"===r.type&&r.key===e&&n(t)};return window.addEventListener("keydown",r),()=>{window.removeEventListener("keydown",r)}}}}]);
+//# sourceMappingURL=543.71211b41.chunk.js.map
