@@ -12,7 +12,7 @@ import {
   MoirTest,
 } from "./testComponents";
 
-const TestPageOne = () => {
+const TestPage = () => {
   return (
     <Routes>
       <Route path="/" element={<TestPageLayout />}>
@@ -62,4 +62,4 @@ const TestPageOne = () => {
   );
 };
 
-export default TestPageOne;
+export default TestPage;
