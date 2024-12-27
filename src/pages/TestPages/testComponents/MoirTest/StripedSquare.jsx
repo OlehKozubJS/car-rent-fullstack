@@ -49,12 +49,13 @@ const StripedSquare = ({ height, width, top, left, angle }) => {
   const [stripes, setStripes] = useState([]);
 
   useEffect(() => {
-    while (stripes.length < height / 5) {
+    while (stripes.length < 5) {
       setStripes([
         ...stripes,
         <StripeStyleBase
           key={stripes.length + 1}
           color={stripes.length % 2 === 0 ? "rgba(0, 0, 250, 0.5)" : "none"}
+          width={5}
         ></StripeStyleBase>,
       ]);
     }
