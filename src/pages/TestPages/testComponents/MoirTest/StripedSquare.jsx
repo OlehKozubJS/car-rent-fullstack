@@ -8,14 +8,14 @@ const StripedSquare = ({ height, width, top, left, angle }) => {
   let newStripes = [];
 
   useMultiple(height / 5, 1, (number) => {
-    setNewStripes([
+    newStripes = [
       ...newStripes,
       <StripeStyleBase
         key={number + 1}
         color={number % 2 === 0 ? "rgba(0, 0, 250, 0.5)" : "none"}
         width={width}
       ></StripeStyleBase>,
-    ]);
+    ];
   });
 
   return (
