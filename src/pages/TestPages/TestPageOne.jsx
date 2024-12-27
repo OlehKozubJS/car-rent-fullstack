@@ -24,8 +24,8 @@ const TestPageOne = () => {
           <Route path="" />
           <Route path="" />
           <Route path="" />
-          <Route />
-          <Route />
+          <Route path="" />
+          <Route path="" />
         </Route>
         <Route path="stars" element={<StarsEffectTest />} />
         <Route path="moir" element={<MoirTest />} />
