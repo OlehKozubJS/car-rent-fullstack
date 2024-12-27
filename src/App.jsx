@@ -39,7 +39,6 @@ const App = () => {
               { pagePath: "/", pageTitle: "Car Rent" },
               { pagePath: "/FavouriteCars", pageTitle: "Favourite Cars" },
               { pagePath: "/TestOne/tests", pageTitle: "Test One" },
-              { pagePath: "/TestTwo", pageTitle: "Test Two" },
             ]}
           />
         }
@@ -60,7 +59,6 @@ const App = () => {
           }
         />
         <Route path="TestOne/*" element={<TestPageOne />} />
-        <Route path="TestTwo" element={<TestPageTwo />} />
       </Route>
     </Routes>
   );
