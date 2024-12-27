@@ -21,11 +21,11 @@ const TestPageOne = () => {
     <Routes>
       <Route path="/" element={<TestPageLayout />}>
         <Route path="tests" element={<Outlet />}>
-          <Route path="" />
-          <Route path="" />
-          <Route path="" />
-          <Route path="" />
-          <Route path="" />
+          <Route path="" element={} />
+          <Route path="" elemnt={} />
+          <Route path="" element={} />
+          <Route path="" element={} />
+          <Route path="" element={} />
         </Route>
         <Route path="stars" element={<StarsEffectTest />} />
         <Route path="moir" element={<MoirTest />} />
