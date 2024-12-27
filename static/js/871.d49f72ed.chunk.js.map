@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/871.d49f72ed.chunk.js","mappings":"yJAAA,MAAMA,EAAcA,M","sources":["pages/TestPages/testHooks/useMultiple.js"],"sourcesContent":["const useMultiple = () => {};\n\nexport { useMultiple };\n"],"names":["useMultiple"],"sourceRoot":""}
