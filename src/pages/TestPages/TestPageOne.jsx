@@ -24,6 +24,8 @@ const TestPageOne = () => {
           path="tests"
           element={
             <>
+              <NavLink to="dateAndTime">Date and time</NavLink>
+              <NavLink to="fibonacci">Fibonacci</NavLink>
               <NavLink to="primeNumbers">Prime numbers</NavLink>
               <NavLink to="squares">Squares</NavLink>
               <NavLink to="fontsAndSVGimages">Fonts and SVG images</NavLink>
