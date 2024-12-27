@@ -47,7 +47,7 @@ const StripeStyleBase = styled.div`
 
 const StripedSquare = ({ height, width, top, left, angle }) => {
   const [stripes, setStripes] = useState([]);
-
+  /*
   useEffect(() => {
     while (stripes.length < height / 5) {
       setStripes([
@@ -60,7 +60,7 @@ const StripedSquare = ({ height, width, top, left, angle }) => {
       ]);
     }
   }, []);
-
+*/
   return (
     <SquareStyleBase
       top={top}
