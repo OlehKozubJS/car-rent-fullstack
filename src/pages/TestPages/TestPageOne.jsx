@@ -22,7 +22,7 @@ const TestPageOne = () => {
       <Route path="/" element={<TestPageLayout />}>
         <Route path="tests" element={<Outlet />}>
           <Route path="dateAndTime" element={<DateAndTimeTest />} />
-          <Route path="fibonacci" elemnt={<FibonacciTest />} />
+          <Route path="fibonacci" element={<FibonacciTest />} />
           <Route path="primeNumbers" element={<PrimeNumbersTest />} />
           <Route path="squares" element={<SquaresTest />} />
           <Route path="fontsAndSVGimages" element={<FontsAndSVGimagesTest />} />
