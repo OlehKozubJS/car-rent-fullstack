@@ -12,7 +12,7 @@ import "./style";
 const [MainPage, FavouriteCarsPage, TestPageOne] = lazyLoader([
   "MainPage",
   "FavouriteCarsPage",
-  "TestPages/TestPageOne",
+  "TestPage/TestPageOne",
 ]);
 
 const App = () => {
