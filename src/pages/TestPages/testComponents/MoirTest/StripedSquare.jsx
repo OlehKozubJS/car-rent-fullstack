@@ -50,8 +50,7 @@ const StripedSquare = ({ height, width, top, left, angle }) => {
 
   let newStripes = [];
 
-  useMultiple(height / 5, 1, () => {
-    const i = newStripes.length;
+  useMultiple(height / 5, 1, (i) => {
     newStripes = [
       ...newStripes,
       <StripeStyleBase
