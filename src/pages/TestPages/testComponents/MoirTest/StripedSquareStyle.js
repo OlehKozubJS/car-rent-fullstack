@@ -30,7 +30,9 @@ const SquareStyleBase = styled.div`
 `;
 
 const StripeStyleBase = styled.div`
-  height: 5px;
+  height: ${({ stripeHeight }) => {
+    return stripeHeight;
+  }}px;
 
   width: ${({ width }) => {
     return width;
