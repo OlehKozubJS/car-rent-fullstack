@@ -20,24 +20,27 @@ const TestPageOne = () => {
   return (
     <Routes>
       <Route path="/" element={<TestPageLayout />}>
-        <Route
-          path="tests"
-          element={
-            <div>
-              <CarFilterTest />
-              <DateAndTimeTest />
-              <FibonacciTest />
-              <FontsAndSVGimagesTest />
-              <PrimeNumbersTest />
-              <SquaresTest />
-            </div>
-          }
-        />
+        <Route path="tests" element={<Outlet />}>
+          <Route />
+          <Route />
+          <Route />
+          <Route />
+          <Route />
+        </Route>
         <Route path="stars" element={<StarsEffectTest />} />
         <Route path="moir" element={<MoirTest />} />
       </Route>
     </Routes>
   );
 };
+/*
 
+<CarFilterTest />
+          <DateAndTimeTest />
+          <FibonacciTest />
+          <FontsAndSVGimagesTest />
+          <PrimeNumbersTest />
+          <SquaresTest />
+
+*/
 export default TestPageOne;
