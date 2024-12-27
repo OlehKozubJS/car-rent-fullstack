@@ -1,4 +1,4 @@
-import { Routes, Route, Outlet } from "react-router-dom";
+import { Routes, Route, Outlet, NavLink } from "react-router-dom";
 
 import {
   CarFilterTest,
@@ -20,7 +20,15 @@ const TestPageOne = () => {
   return (
     <Routes>
       <Route path="/" element={<TestPageLayout />}>
-        <Route path="tests" element={<Outlet />}>
+        <Route
+          path="tests"
+          element={
+            <>
+              <NavLink to="fontsAndSVGimages" />
+              <Outlet />
+            </>
+          }
+        >
           <Route path="dateAndTime" element={<DateAndTimeTest />} />
           <Route path="fibonacci" element={<FibonacciTest />} />
           <Route path="primeNumbers" element={<PrimeNumbersTest />} />
