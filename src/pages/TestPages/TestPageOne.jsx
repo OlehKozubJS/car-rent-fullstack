@@ -13,10 +13,6 @@ import {
 } from "./testComponents";
 
 const TestPageOne = () => {
-  const varNameToString = (objectName) => {
-    return Object.keys(objectName)[0];
-  };
-
   return (
     <Routes>
       <Route path="/" element={<TestPageLayout />}>
