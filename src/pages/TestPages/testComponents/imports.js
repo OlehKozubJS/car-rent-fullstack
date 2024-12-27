@@ -17,7 +17,7 @@ import {
   vanillaReducer,
 } from "../imports";
 
-import { useKeyboard } from "../testHooks";
+import { useKeyboard, useMultiple } from "../testHooks";
 
 export {
   carsLocalData,
@@ -36,5 +36,6 @@ export {
   CarModal,
   SVGimage,
   useKeyboard,
+  useMultiple,
   vanillaReducer,
 };
