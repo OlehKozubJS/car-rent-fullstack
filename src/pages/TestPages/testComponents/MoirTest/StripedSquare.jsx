@@ -56,7 +56,7 @@ const StripedSquare = ({ height, width, top, left, angle }) => {
       <StripeStyleBase
         key={number + 1}
         color={number % 2 === 0 ? "rgba(0, 0, 250, 0.5)" : "none"}
-        width={100}
+        width={width}
       ></StripeStyleBase>,
     ];
   });
