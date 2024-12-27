@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import { useMultiple } from "../imports";
 
-import styled from "./StripedSquareStyle";
+import { SquareStyleBase, StripeStyleBase } from "./StripedSquareStyle";
 
 const StripedSquare = ({ height, width, top, left, angle }) => {
   let newStripes = [];
