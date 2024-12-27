@@ -61,14 +61,5 @@ const TestPageOne = () => {
     </Routes>
   );
 };
-/*
 
-<CarFilterTest />
-          <DateAndTimeTest />
-          <FibonacciTest />
-          <FontsAndSVGimagesTest />
-          <PrimeNumbersTest />
-          <SquaresTest />
-
-*/
 export default TestPageOne;
