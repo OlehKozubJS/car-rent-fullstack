@@ -26,7 +26,7 @@ const TestPageOne = () => {
           <Route path="primeNumbers" element={<PrimeNumbersTest />} />
           <Route path="squares" element={<SquaresTest />} />
           <Route path="fontsAndSVGimages" element={<FontsAndSVGimagesTest />} />
-          <Route path="/carFilter" element={<CarFilterTest />} />
+          <Route path="carFilter" element={<CarFilterTest />} />
         </Route>
         <Route path="stars" element={<StarsEffectTest />} />
         <Route path="moir" element={<MoirTest />} />
