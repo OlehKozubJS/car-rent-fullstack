@@ -16,6 +16,7 @@ import {
   SVGimage,
   vanillaReducer,
   useKeyboard,
+  useMultiple,
 } from "../imports";
 
 export {
@@ -35,5 +36,6 @@ export {
   CarModal,
   SVGimage,
   useKeyboard,
+  useMultiple,
   vanillaReducer,
 };
