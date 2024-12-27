@@ -9,9 +9,10 @@ import { RouterLayout } from "./components";
 
 import "./style";
 
-const [MainPage, FavouriteCarsPage] = lazyLoader([
+const [MainPage, FavouriteCarsPage, TestPage] = lazyLoader([
   "MainPage",
   "FavouriteCarsPage",
+  "TestPage",
 ]);
 
 const App = () => {
@@ -36,6 +37,7 @@ const App = () => {
             pages={[
               { pagePath: "/", pageTitle: "Car Rent" },
               { pagePath: "/FavouriteCars", pageTitle: "Favourite Cars" },
+              { pagePath: "/Test", pageTitle: "Test" },
             ]}
           />
         }
@@ -55,6 +57,7 @@ const App = () => {
             />
           }
         />
+        <Route path="Test" element={<TestPage />} />
       </Route>
     </Routes>
   );
