@@ -1,3 +1,3 @@
-import TestPageOne from "./TestPageOne";
+import TestPage from "./TestPage";
 
-export { TestPageOne };
+export { TestPage };
