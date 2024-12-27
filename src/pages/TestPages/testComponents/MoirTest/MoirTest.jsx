@@ -6,7 +6,7 @@ const MoirTestStyleBase = styled.div`
   position: relative;
 `;
 
-import { useKeyboard, useMultiple } from "../imports";
+import { useKeyboard } from "../imports";
 
 import styled from "@emotion/styled";
 
