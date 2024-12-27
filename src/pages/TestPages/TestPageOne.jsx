@@ -21,9 +21,9 @@ const TestPageOne = () => {
     <Routes>
       <Route path="/" element={<TestPageLayout />}>
         <Route path="tests" element={<Outlet />}>
-          <Route path={} />
-          <Route path={} />
-          <Route />
+          <Route path="" />
+          <Route path="" />
+          <Route path="" />
           <Route />
           <Route />
         </Route>
