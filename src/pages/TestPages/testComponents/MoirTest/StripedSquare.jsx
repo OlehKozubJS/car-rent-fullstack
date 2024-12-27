@@ -47,7 +47,7 @@ const StripeStyleBase = styled.div`
 
 const StripedSquare = ({ height, width, top, left, angle }) => {
   const [stripes, setStripes] = useState([]);
-
+  /*
   for (let i = 0; i / 5; i += 1) {
       setStripes([
         ...stripes,
@@ -59,7 +59,7 @@ const StripedSquare = ({ height, width, top, left, angle }) => {
       ]);
     }
   };
-
+*/
   return (
     <SquareStyleBase
       top={top}
