@@ -23,15 +23,33 @@ const TestPageOne = () => {
         <Route
           path="tests"
           element={
-            <>
-              <NavLink to="dateAndTime">Date and time</NavLink>
-              <NavLink to="fibonacci">Fibonacci</NavLink>
-              <NavLink to="primeNumbers">Prime numbers</NavLink>
-              <NavLink to="squares">Squares</NavLink>
-              <NavLink to="fontsAndSVGimages">Fonts and SVG images</NavLink>
-              <NavLink to="carFilter">Car filter</NavLink>
+            <div>
+              <nav>
+                <ul>
+                  <li>
+                    <NavLink to="dateAndTime">Date and time</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="fibonacci">Fibonacci</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="primeNumbers">Prime numbers</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="squares">Squares</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="fontsAndSVGimages">
+                      Fonts and SVG images
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="carFilter">Car filter</NavLink>
+                  </li>
+                </ul>
+              </nav>
               <Outlet />
-            </>
+            </div>
           }
         >
           <Route path="dateAndTime" element={<DateAndTimeTest />} />
