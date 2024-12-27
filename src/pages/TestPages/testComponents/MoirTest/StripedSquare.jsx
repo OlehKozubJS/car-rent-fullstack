@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 
+import { useMultiple } from "../imports";
+
 import styled from "@emotion/styled";
 
 const SquareStyleBase = styled.div`
