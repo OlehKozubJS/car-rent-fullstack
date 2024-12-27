@@ -1,0 +1,3 @@
+const useMultiple = () => {};
+
+export { useMultiple };
