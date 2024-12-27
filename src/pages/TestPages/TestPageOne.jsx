@@ -25,6 +25,7 @@ const TestPageOne = () => {
           element={
             <>
               <NavLink to="fontsAndSVGimages" />
+              <NavLink to="squares" />
               <Outlet />
             </>
           }
