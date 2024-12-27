@@ -12,7 +12,6 @@ import "./style";
 const [MainPage, FavouriteCarsPage, TestPage] = lazyLoader([
   "MainPage",
   "FavouriteCarsPage",
-  "TestPage/TestPage",
 ]);
 
 const App = () => {
@@ -57,7 +56,6 @@ const App = () => {
             />
           }
         />
-        <Route path="Test/*" element={<TestPage />} />
       </Route>
     </Routes>
   );
