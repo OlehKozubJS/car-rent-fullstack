@@ -48,7 +48,7 @@ const StripeStyleBase = styled.div`
 const StripedSquare = ({ height, width, top, left, angle }) => {
   const [stripes, setStripes] = useState([]);
 
-  useMultiple(height / 5, 1, () => {
+  useMultiple(2, 1, () => {
     setStripes([
       ...stripes,
       <StripeStyleBase
