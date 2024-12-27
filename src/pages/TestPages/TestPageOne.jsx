@@ -24,8 +24,10 @@ const TestPageOne = () => {
           path="tests"
           element={
             <>
-              <NavLink to="fontsAndSVGimages">Fonts and SVG images</NavLink>
+              <NavLink to="primeNumbers">Prime numbers</NavLink>
               <NavLink to="squares">Squares</NavLink>
+              <NavLink to="fontsAndSVGimages">Fonts and SVG images</NavLink>
+              <NavLink to="carFilter">Car filter</NavLink>
               <Outlet />
             </>
           }
