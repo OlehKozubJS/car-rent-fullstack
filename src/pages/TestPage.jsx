@@ -31,8 +31,8 @@ const TestPage = () => {
     <section>
       This is test page
       <button>{(inputA && "true") || "false"}</button>
-      <button>{inputB}</button>
-      <button>{inputC}</button>
+      <button>{(inputB && "true") || "false"}</button>
+      <button>{(inputC && "true") || "false"}</button>
       <p>{output}</p>
     </section>
   );
