@@ -93,6 +93,8 @@ injectGlobal`
     padding: 0;
     border: none;
     background: none;
+    transform: rotate(10deg);
+    transition: 10s;
   }
 
   button:hover {
