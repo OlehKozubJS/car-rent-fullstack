@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 
 const TestPage = () => {
-  const [] = useState();
+  const [inputA, setInputA] = useState();
+  const [inputB, setInputB] = useState();
+  const [inputC, setInputC] = useState();
 
   useEffect(() => {}, []);
 
