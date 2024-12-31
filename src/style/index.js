@@ -94,4 +94,8 @@ injectGlobal`
     border: none;
     background: none;
   }
+
+  button:hover {
+    font-family: "ojuju";
+  };
 `;
