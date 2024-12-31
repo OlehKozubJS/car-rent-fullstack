@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { handleEventListener } from "./hooks";
 
-import { RangeField, RangeDial } from "./style";
+import styled from "@emotion/styled";
 /*
 .RangeField {
   width: 500px;
