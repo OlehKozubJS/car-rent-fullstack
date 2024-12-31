@@ -12,6 +12,7 @@ const TestPage = () => {
     <section>
       This is test page
       <form></form>
+      <p>{output}</p>
     </section>
   );
 };
