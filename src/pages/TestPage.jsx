@@ -18,8 +18,12 @@ const TestPage = () => {
   const handleFalseB = () => {
     setInputB(false);
   };
-  const handleTrueC = () => {};
-  const handleFalseC = () => {};
+  const handleTrueC = () => {
+    setInputC(true);
+  };
+  const handleFalseC = () => {
+    setInputC(false);
+  };
 
   useEffect(() => {}, []);
 
