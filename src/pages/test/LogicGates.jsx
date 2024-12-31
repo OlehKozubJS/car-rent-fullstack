@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const TestPage = () => {
+const LogicGates = () => {
   const [inputA, setInputA] = useState(false);
   const [inputB, setInputB] = useState(false);
   const [inputC, setInputC] = useState(false);
@@ -56,4 +56,4 @@ const TestPage = () => {
   );
 };
 
-export default TestPage;
+export { LogicGates };
