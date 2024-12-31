@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { handleEventListener } from "./hooks";
+import { handleEventListener } from "../hooks";
 
 import styled from "@emotion/styled";
 
