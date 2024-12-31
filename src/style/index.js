@@ -93,7 +93,7 @@ injectGlobal`
     padding: 0;
     border: none;
     background: none;
-    transition: 1000ms;
+    transition: 5000ms;
   }
 
   button:hover {
