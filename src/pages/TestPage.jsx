@@ -30,7 +30,10 @@ const TestPage = () => {
   };
 
   useEffect(() => {
-    setOutput();
+    const valOneAB = nor(inputA, inputB);
+    const valTwoA = nor(inputA, valOneAB);
+    const valTwoB = nor(valOneAB, inputB);
+    setOutput(nor(nor(), nor()));
   }, [inputA, inputB, inputC]);
 
   return (
