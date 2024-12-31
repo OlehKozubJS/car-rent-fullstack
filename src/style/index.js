@@ -93,11 +93,12 @@ injectGlobal`
     padding: 0;
     border: none;
     background: none;
-    transform: rotate(10deg);
-    transition: 10s;
+    transform: rotateX(10deg);
+    transition: 5s;
   }
 
   button:hover {
+    
     font-family: "ojuju";
   };
 `;
