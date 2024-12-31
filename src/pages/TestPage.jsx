@@ -25,7 +25,9 @@ const TestPage = () => {
     setInputC(false);
   };
 
-  useEffect((setOutput()) => {}, [inputA, inputB, inputC]);
+  useEffect(() => {
+    setOutput(true);
+  }, [inputA, inputB, inputC]);
 
   return (
     <section>
@@ -39,7 +41,7 @@ const TestPage = () => {
       <button type="button" onClick={(inputC && handleFalseC) || handleTrueC}>
         C: {(inputC && "true") || "false"}
       </button>
-      <p>{output}</p>
+      <p>{(output && "true") || "false"}</p>
     </section>
   );
 };
