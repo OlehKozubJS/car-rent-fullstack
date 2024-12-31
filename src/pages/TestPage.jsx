@@ -6,10 +6,18 @@ const TestPage = () => {
   const [inputC, setInputC] = useState(false);
   const [output, setOutput] = useState(false);
 
-  const handleTrueA = () => {};
-  const handleFalseA = () => {};
-  const handleTrueB = () => {};
-  const handleFalseB = () => {};
+  const handleTrueA = () => {
+    setInputA(true);
+  };
+  const handleFalseA = () => {
+    setInputA(false);
+  };
+  const handleTrueB = () => {
+    setInputB(true);
+  };
+  const handleFalseB = () => {
+    setInputB(false);
+  };
   const handleTrueC = () => {};
   const handleFalseC = () => {};
 
