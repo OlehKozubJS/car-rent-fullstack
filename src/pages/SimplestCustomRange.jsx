@@ -7,10 +7,8 @@ import { setState, getState } from "./ultimateRedux";
 
 import { RangeField, RangeDial } from "./style";
 
-const SimplestCustomRange = () => {
+const SimplestCustomRange = ({ stateRangeValue }) => {
   const dispatch = useDispatch();
-
-  const stateRangeValue = useSelector(getState);
 
   const [isDraggable, setIsDraggable] = useState(false);
   const [rangeValue, setRangeValue] = useState(stateRangeValue);
@@ -48,10 +46,6 @@ const SimplestCustomRange = () => {
   useEffect(() => {
     dispatch(setState(rangeValue));
   }, [rangeValue]);
-
-  useEffect(() => {
-    setRangeValue(stateRangeValue);
-  }, [stateRangeValue]);
 
   return (
     <div className={RangeField}>
