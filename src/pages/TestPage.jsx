@@ -25,7 +25,7 @@ const TestPage = () => {
     setInputC(false);
   };
 
-  useEffect(() => {}, []);
+  useEffect(() => {}, [inputA, inputB, inputC]);
 
   return (
     <section>
