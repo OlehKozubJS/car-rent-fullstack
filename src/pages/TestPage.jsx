@@ -1,13 +1,18 @@
 import { useEffect, useState } from "react";
 
 const TestPage = () => {
-  const [inputA, setInputA] = useState();
-  const [inputB, setInputB] = useState();
-  const [inputC, setInputC] = useState();
+  const [inputA, setInputA] = useState(false);
+  const [inputB, setInputB] = useState(false);
+  const [inputC, setInputC] = useState(false);
 
   useEffect(() => {}, []);
 
-  return <section>This is test page</section>;
+  return (
+    <section>
+      This is test page
+      <form></form>
+    </section>
+  );
 };
 
 export default TestPage;
