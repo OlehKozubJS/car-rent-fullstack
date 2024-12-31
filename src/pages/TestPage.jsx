@@ -30,7 +30,9 @@ const TestPage = () => {
   return (
     <section>
       This is test page
-      <form></form>
+      <button>{inputA}</button>
+      <button>{inputB}</button>
+      <button>{inputC}</button>
       <p>{output}</p>
     </section>
   );
