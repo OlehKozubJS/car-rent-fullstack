@@ -34,8 +34,9 @@ const TestPage = () => {
     const valTwoA = nor(inputA, valOneAB);
     const valTwoB = nor(valOneAB, inputB);
     const valThreeAB = nor(valTwoA, valTwoB);
+    const valFourAB = nor(valThreeAB, valThreeAB);
 
-    setOutput(valThreeAB);
+    setOutput(valFourAB);
   }, [inputA, inputB, inputC]);
 
   return (
