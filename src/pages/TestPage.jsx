@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const TestPage = () => {
   const [] = useState();
 
-  useEffect();
+  useEffect(() => {}, []);
 
   return <section>This is test page</section>;
 };
