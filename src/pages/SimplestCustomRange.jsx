@@ -4,11 +4,9 @@ import { handleEventListener } from "./hooks";
 
 import { RangeField, RangeDial } from "./style";
 
-const SimplestCustomRange = ({ stateRangeValue, onChange }) => {
-  const dispatch = useDispatch();
-
+const SimplestCustomRange = ({ value, onChange }) => {
   const [isDraggable, setIsDraggable] = useState(false);
-  const [rangeValue, setRangeValue] = useState(stateRangeValue);
+  const [rangeValue, setRangeValue] = useState(value);
   const [mouseDownX, setMouseDownX] = useState(0);
 
   const handleMouseDown = (event) => {
