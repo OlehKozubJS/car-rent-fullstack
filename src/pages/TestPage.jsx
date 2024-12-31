@@ -30,13 +30,13 @@ const TestPage = () => {
   return (
     <section>
       This is test page
-      <button type="button" onClick={(inputA && handleTrueA) || handleFalseA}>
+      <button type="button" onClick={(inputA && handleFalseA) || handleTrueA}>
         A: {(inputA && "true") || "false"}
       </button>
-      <button type="button" onClick={(inputB && handleTrueB) || handleFalseB}>
+      <button type="button" onClick={(inputB && handleFalseB) || handleTrueB}>
         B: {(inputB && "true") || "false"}
       </button>
-      <button type="button" onClick={(inputC && handleTrueC) || handleFalseC}>
+      <button type="button" onClick={(inputC && handleFalseC) || handleTrueC}>
         C: {(inputC && "true") || "false"}
       </button>
       <p>{output}</p>
