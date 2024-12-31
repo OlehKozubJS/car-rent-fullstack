@@ -60,13 +60,12 @@ const SimplestCustomRange = ({ value, onChange }) => {
   }, [rangeValue]);
 
   return (
-    <div className={RangeField}>
-      <div
+    <RangeField />
+      <RangeDial 
         onMouseDown={handleMouseDown}
         style={{ left: rangeValue }}
-        className={RangeDial}
-      ></div>
-    </div>
+      ></RangeDial>
+    </RangeDial>
   );
 };
 
