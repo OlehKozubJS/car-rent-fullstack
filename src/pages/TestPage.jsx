@@ -25,8 +25,12 @@ const TestPage = () => {
     setInputC(false);
   };
 
+  const nor = (a, b) => {
+    return !(a || b);
+  };
+
   useEffect(() => {
-    setOutput(true);
+    setOutput();
   }, [inputA, inputB, inputC]);
 
   return (
