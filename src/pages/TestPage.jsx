@@ -4,6 +4,7 @@ const TestPage = () => {
   const [inputA, setInputA] = useState(false);
   const [inputB, setInputB] = useState(false);
   const [inputC, setInputC] = useState(false);
+  const [output, setOutput] = useState(false);
 
   useEffect(() => {}, []);
 
