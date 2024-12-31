@@ -30,9 +30,9 @@ const TestPage = () => {
   return (
     <section>
       This is test page
-      <button>{(inputA && "true") || "false"}</button>
-      <button>{(inputB && "true") || "false"}</button>
-      <button>{(inputC && "true") || "false"}</button>
+      <button>A: {(inputA && "true") || "false"}</button>
+      <button>B: {(inputB && "true") || "false"}</button>
+      <button>C: {(inputC && "true") || "false"}</button>
       <p>{output}</p>
     </section>
   );
