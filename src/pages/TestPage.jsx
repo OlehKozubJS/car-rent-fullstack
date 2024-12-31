@@ -6,6 +6,13 @@ const TestPage = () => {
   const [inputC, setInputC] = useState(false);
   const [output, setOutput] = useState(false);
 
+  const handleTrueA = () => {};
+  const handleFalseA = () => {};
+  const handleTrueB = () => {};
+  const handleFalseB = () => {};
+  const handleTrueC = () => {};
+  const handleFalseC = () => {};
+
   useEffect(() => {}, []);
 
   return (
