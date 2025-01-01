@@ -25,7 +25,9 @@ const TestPage = () => {
     if (valueY > 200) {
       setValueY(valueY);
     }
-    setValueX(valueX);
+    if (valueX > 0) {
+      setValueX(valueX);
+    }
   };
 
   return (
