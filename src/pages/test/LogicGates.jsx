@@ -4,6 +4,8 @@ const LogicGates = () => {
   const [inputA, setInputA] = useState(false);
   const [inputB, setInputB] = useState(false);
   const [inputC, setInputC] = useState(false);
+  const [inputD, setInputD] = useState(0);
+  const [inputE, setInputE] = useState(0);
   const [output, setOutput] = useState(false);
 
   const handleTrueA = () => {
