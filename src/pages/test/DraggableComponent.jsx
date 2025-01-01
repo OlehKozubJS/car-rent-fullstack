@@ -15,13 +15,8 @@ const DraggableComponent = ({ value, onChange }) => {
   };
 
   const handleMouseMove = ({ clientY, clientX }) => {
-    if (isDraggable) {
-      const newRangeValue = value + clientX - mouseDownX;
-
-      if (newRangeValue >= 0 && newRangeValue <= 450) {
-        onChange(newRangeValue);
-      }
-    }
+    onChange(value + clientY - mouseDownY);
+    onChange(value + clientX - mouseDownX);
   };
 
   const handleMouseUp = () => {
