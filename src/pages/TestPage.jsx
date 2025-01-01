@@ -22,7 +22,11 @@ const TestPage = () => {
   return (
     <section>
       <PageChooser
-        componentNames={["Logic gates", "Simplest custom range"]}
+        componentNames={[
+          "Logic gates",
+          "Simplest custom range",
+          "Draggable component",
+        ]}
         currentComponentName={componentName}
         onChange={chooseComponent}
       />
