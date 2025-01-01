@@ -78,7 +78,6 @@ const LogicGates = () => {
 
   return (
     <div>
-      This is test page
       <div>
         <button type="button" onClick={(inputA && handleFalseA) || handleTrueA}>
           A: {(inputA && "true") || "false"}
