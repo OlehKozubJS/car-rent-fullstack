@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import { LogicGates, SimplestCustomRange } from "./test";
 
@@ -44,4 +44,4 @@ const PageChooser = () => {
   );
 };
 
-export default TestPage;
+export { PageChooser };
