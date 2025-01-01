@@ -16,10 +16,10 @@ const TestPage = () => {
 
   return (
     <section>
-      {[].map(() => {
+      {[].map((value) => {
         return (
-          <label for="">
-            <input />
+          <label for={value}>
+            <input id={value} name="" type="radio" onChange={chooseComponent} />
           </label>
         );
       })}
