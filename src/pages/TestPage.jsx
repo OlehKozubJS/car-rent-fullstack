@@ -27,6 +27,7 @@ const TestPage = () => {
                   type="radio"
                   value={value}
                   onChange={chooseComponent}
+                  checked={componentName === value}
                 />
                 <span>{value}</span>
               </label>
