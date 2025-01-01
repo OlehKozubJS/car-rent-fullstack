@@ -6,7 +6,7 @@ import { DraggableComponentStyle } from "./SimplestCustomRangeStyle";
 
 const DraggableComponent = ({ valueY, valueX, onChange }) => {
   const [isDraggable, setIsDraggable] = useState(false);
-  const [mouseDownY, setMouseDownY] = useState(0);
+  const [mouseDownY, setMouseDownY] = useState(201);
   const [mouseDownX, setMouseDownX] = useState(0);
 
   const handleMouseDown = ({ clientY, clientX }) => {
