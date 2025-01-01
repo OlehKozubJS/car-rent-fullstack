@@ -16,7 +16,10 @@ const DraggableComponent = ({ value, onChange }) => {
   };
 
   const handleMouseMove = ({ clientY, clientX }) => {
-    onChange(value + clientY - mouseDownY, value + clientX - mouseDownX);
+    onChange({
+      valueY: value + clientY - mouseDownY,
+      valueX: value + clientX - mouseDownX,
+    });
   };
 
   const handleMouseUp = () => {
