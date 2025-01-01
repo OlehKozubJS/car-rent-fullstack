@@ -49,7 +49,8 @@ const TestPage = () => {
         />
       )}
       <p>{rangeValue}</p>
-      <p>{}</p>
+      <p>valueY={valueY}</p>
+      <p>valueX={valueX}</p>
     </section>
   );
 };
