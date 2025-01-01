@@ -34,6 +34,7 @@ const LogicGates = () => {
   };
 
   const ternarAND = () => {};
+  const ternarOR = () => {};
 
   useEffect(() => {
     const valOneAB = nor(inputA, inputB);
