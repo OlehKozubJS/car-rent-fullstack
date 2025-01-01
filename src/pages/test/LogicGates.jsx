@@ -79,16 +79,18 @@ const LogicGates = () => {
   return (
     <div>
       This is test page
-      <button type="button" onClick={(inputA && handleFalseA) || handleTrueA}>
-        A: {(inputA && "true") || "false"}
-      </button>
-      <button type="button" onClick={(inputB && handleFalseB) || handleTrueB}>
-        B: {(inputB && "true") || "false"}
-      </button>
-      <button type="button" onClick={(inputC && handleFalseC) || handleTrueC}>
-        C: {(inputC && "true") || "false"}
-      </button>
-      <p>{(output && "true") || "false"}</p>
+      <div>
+        <button type="button" onClick={(inputA && handleFalseA) || handleTrueA}>
+          A: {(inputA && "true") || "false"}
+        </button>
+        <button type="button" onClick={(inputB && handleFalseB) || handleTrueB}>
+          B: {(inputB && "true") || "false"}
+        </button>
+        <button type="button" onClick={(inputC && handleFalseC) || handleTrueC}>
+          C: {(inputC && "true") || "false"}
+        </button>
+        <p>{(output && "true") || "false"}</p>
+      </div>
       <button type="button" onClick={handleValueD}>
         D: {inputD}
       </button>
