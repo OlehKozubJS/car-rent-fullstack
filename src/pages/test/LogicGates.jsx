@@ -26,9 +26,13 @@ const LogicGates = () => {
   const handleFalseC = () => {
     setInputC(false);
   };
-const handleValueD = () => {};
-const handleValueE = () => {};
-
+  const handleValueD = () => {
+    const newValueD = inputD + 1;
+    if (newValueD === 2) {
+    } else {
+    }
+  };
+  const handleValueE = () => {};
 
   const nor = (a, b) => {
     return !(a || b);
@@ -75,8 +79,12 @@ const handleValueE = () => {};
       <button type="button" onClick={(inputC && handleFalseC) || handleTrueC}>
         C: {(inputC && "true") || "false"}
       </button>
-      <button type="button" onClick={}>D: {inputD}</button>
-      <button type="button" onClick={}>E: {inputE}</button>
+      <button type="button" onClick={handleValueD}>
+        D: {inputD}
+      </button>
+      <button type="button" onClick={handleValueE}>
+        E: {inputE}
+      </button>
       <p>{(output && "true") || "false"}</p>
     </div>
   );
