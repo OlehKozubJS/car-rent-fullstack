@@ -10,9 +10,9 @@ import {
 const TestPage = () => {
   const [componentName, setComponentName] = useState("Logic gates");
   const [rangeValue, setRangeValue] = useState(0);
-  const [] = useState();
-  const [] = useState();
-
+  const [valueY, setValueY] = useState();
+  const [valueX, setValueX] = useState();
+  
   const handleRangeValue = (newRangeValue) => {
     setRangeValue(newRangeValue);
   };
