@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-const PageChooser = ({ componentNames, currentComponentName }) => {
+const PageChooser = ({ componentNames, currentComponentName, onChange }) => {
   const chooseComponent = ({ target }) => {
-    setComponentName(target.value);
+    onChange(target.value);
   };
 
   return (
