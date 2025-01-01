@@ -37,7 +37,9 @@ const LogicGates = () => {
   const handleValueE = () => {
     const newValueE = inputE + 1;
     if (newValueE === 2) {
+      setInputE(0);
     } else {
+      setInputE(newValueE);
     }
   };
 
