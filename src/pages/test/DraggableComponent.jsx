@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { handleEventListener } from "../../hooks";
 
-import { RangeDial } from "./SimplestCustomRangeStyle";
+import { DraggableComponentStyle } from "./SimplestCustomRangeStyle";
 
 const DraggableComponent = ({ value, onChange }) => {
   const [isDraggable, setIsDraggable] = useState(false);
