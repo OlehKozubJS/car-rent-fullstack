@@ -52,14 +52,14 @@ const LogicGates = () => {
   };
 
   const ternarAND = (a, b) => {
-    if (a >= b) {
+    if (a <= b) {
       return a;
     } else {
       return b;
     }
   };
   const ternarOR = (a, b) => {
-    if (a <= b) {
+    if (a >= b) {
       return a;
     } else {
       return b;
