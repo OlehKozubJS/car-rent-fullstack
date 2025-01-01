@@ -72,6 +72,8 @@ const LogicGates = () => {
       <button type="button" onClick={(inputC && handleFalseC) || handleTrueC}>
         C: {(inputC && "true") || "false"}
       </button>
+      <button></button>
+      <button></button>
       <p>{(output && "true") || "false"}</p>
     </div>
   );
