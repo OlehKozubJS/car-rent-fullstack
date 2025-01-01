@@ -21,9 +21,9 @@ const TestPage = () => {
     setComponentName(newComponentName);
   };
 
-  const handleXYvalue = ({ newValueY, newValueX }) => {
-    setValueY(newValueY);
-    setValueX(newValueX);
+  const handleXYvalue = ({ valueY, valueX }) => {
+    setValueY(valueY);
+    setValueX(valueX);
   };
 
   return (
