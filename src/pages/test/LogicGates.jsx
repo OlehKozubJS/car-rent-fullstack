@@ -33,7 +33,13 @@ const LogicGates = () => {
     return !(a && b);
   };
 
-  const ternarAND = (a, b) => {};
+  const ternarAND = (a, b) => {
+    if (a >= b) {
+      return a;
+    } else {
+      return b;
+    }
+  };
   const ternarOR = (a, b) => {};
 
   useEffect(() => {
