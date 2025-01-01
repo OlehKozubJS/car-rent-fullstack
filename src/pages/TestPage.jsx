@@ -16,7 +16,7 @@ const TestPage = () => {
 
   return (
     <section>
-      {[].map((value) => {
+      {["Simplest custom range", "Logic gates"].map((value) => {
         return (
           <label for={value}>
             <input
@@ -25,6 +25,7 @@ const TestPage = () => {
               type="radio"
               onChange={chooseComponent}
             />
+            <p>{value}</p>
           </label>
         );
       })}
