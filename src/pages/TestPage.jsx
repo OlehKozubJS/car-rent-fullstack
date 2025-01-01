@@ -23,6 +23,7 @@ const TestPage = () => {
               id={value}
               name="chooseComponentRadio"
               type="radio"
+              value={value}
               onChange={chooseComponent}
             />
             <p>{value}</p>
