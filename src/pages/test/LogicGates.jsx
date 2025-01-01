@@ -32,7 +32,12 @@ const LogicGates = () => {
     } else {
     }
   };
-  const handleValueE = () => {};
+  const handleValueE = () => {
+    const newValueE = inputE + 1;
+    if (newValueE === 2) {
+    } else {
+    }
+  };
 
   const nor = (a, b) => {
     return !(a || b);
