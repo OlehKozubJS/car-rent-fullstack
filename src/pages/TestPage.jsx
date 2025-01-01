@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
 
-import { LogicGates, SimplestCustomRange, PageChooser } from "./test";
+import {
+  LogicGates,
+  SimplestCustomRange,
+  PageChooser,
+  DraggableComponent,
+} from "./test";
 
 const TestPage = () => {
   const [componentName, setComponentName] = useState("Logic gates");
