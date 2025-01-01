@@ -10,8 +10,8 @@ import {
 const TestPage = () => {
   const [componentName, setComponentName] = useState("Logic gates");
   const [rangeValue, setRangeValue] = useState(0);
-  const [valueY, setValueY] = useState();
-  const [valueX, setValueX] = useState();
+  const [valueY, setValueY] = useState(0);
+  const [valueX, setValueX] = useState(0);
   
   const handleRangeValue = (newRangeValue) => {
     setRangeValue(newRangeValue);
@@ -20,6 +20,8 @@ const TestPage = () => {
   const chooseComponent = (newComponentName) => {
     setComponentName(newComponentName);
   };
+
+  const handleXYvalue = () => {};
 
   return (
     <section>
