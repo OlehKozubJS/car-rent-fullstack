@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { LogicGates, SimplestCustomRange, PageChooser } from "./test";
 
 const TestPage = () => {
-  const [componentName, setComponentName] = useState("Simplest custom range");
+  const [componentName, setComponentName] = useState("Logic gates");
   const [rangeValue, setRangeValue] = useState(0);
 
   const handleRangeValue = (newRangeValue) => {
