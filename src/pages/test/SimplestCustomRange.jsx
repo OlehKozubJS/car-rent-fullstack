@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { handleEventListener } from "../../hooks";
 
-import styled from "@emotion/styled";
+import { RangeField, RangeDial } from "./SimplestCustomRangeStyle";
 
 const RangeField = styled.div`
   width: 500px;
