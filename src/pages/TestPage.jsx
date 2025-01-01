@@ -16,20 +16,24 @@ const TestPage = () => {
 
   return (
     <section>
-      {["Simplest custom range", "Logic gates"].map((value) => {
-        return (
-          <label key={value} htmlFor={value}>
-            <input
-              id={value}
-              name="chooseComponentRadio"
-              type="radio"
-              value={value}
-              onChange={chooseComponent}
-            />
-            <span>{value}</span>
-          </label>
-        );
-      })}
+      <ul>
+        {["Simplest custom range", "Logic gates"].map((value) => {
+          return (
+            <li>
+              <label key={value} htmlFor={value}>
+                <input
+                  id={value}
+                  name="chooseComponentRadio"
+                  type="radio"
+                  value={value}
+                  onChange={chooseComponent}
+                />
+                <span>{value}</span>
+              </label>
+            </li>
+          );
+        })}
+      </ul>
       {componentName === "Simplest custom range" && (
         <SimplestCustomRange onChange={handleRangeValue} value={rangeValue} />
       )}
