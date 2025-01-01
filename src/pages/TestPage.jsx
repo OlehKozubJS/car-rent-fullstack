@@ -11,7 +11,7 @@ const TestPage = () => {
 
   return (
     <section>
-      <SimplestCustomRange />
+      <SimplestCustomRange onChange={handleRangeValue} value={rangeValue} />
       <LogicGates />
       <p></p>
     </section>
