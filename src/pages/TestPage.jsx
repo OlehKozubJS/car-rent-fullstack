@@ -10,8 +10,8 @@ const TestPage = () => {
     setRangeValue(newRangeValue);
   };
 
-  const chooseComponent = ({ target }) => {
-    setComponentName(target.value);
+  const chooseComponent = (newComponentName) => {
+    setComponentName(newComponentName);
   };
 
   return (
