@@ -32,7 +32,12 @@ const DraggableComponent = ({ value, onChange }) => {
   useEffect(handleEventListener("mousemove", handleMouseMove), [isDraggable]);
   useEffect(handleEventListener("mouseup", handleMouseUp), [isDraggable]);
 
-  return <RangeDial onMouseDown={handleMouseDown} left={value}></RangeDial>;
+  return (
+    <DraggableComponentStyle
+      onMouseDown={handleMouseDown}
+      left={value}
+    ></DraggableComponentStyle>
+  );
 };
 
 export { DraggableComponent };
