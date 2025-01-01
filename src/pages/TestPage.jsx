@@ -22,7 +22,9 @@ const TestPage = () => {
   };
 
   const handleXYvalue = ({ valueY, valueX }) => {
-    setValueY(valueY);
+    if (valueY > 200) {
+      setValueY(valueY);
+    }
     setValueX(valueX);
   };
 
