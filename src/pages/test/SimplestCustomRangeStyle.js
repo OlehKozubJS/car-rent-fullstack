@@ -32,4 +32,4 @@ const DraggableComponentStyle = styled.div`
   background-color: rgb(100, 100, 250);
 `;
 
-export { RangeField, RangeDial };
+export { RangeField, RangeDial, DraggableComponentStyle };
