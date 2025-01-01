@@ -8,7 +8,7 @@ const PageChooser = ({ componentNames, currentComponentName }) => {
   return (
     <nav>
       <ul>
-        {["Simplest custom range", "Logic gates"].map((value) => {
+        {componentNames.map((value) => {
           return (
             <li key={value}>
               <label htmlFor={value}>
@@ -18,7 +18,7 @@ const PageChooser = ({ componentNames, currentComponentName }) => {
                   type="radio"
                   value={value}
                   onChange={chooseComponent}
-                  checked={componentName === value}
+                  checked={currentComponentName === value}
                 />
                 <span>{value}</span>
               </label>
