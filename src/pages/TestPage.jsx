@@ -19,7 +19,12 @@ const TestPage = () => {
       {[].map((value) => {
         return (
           <label for={value}>
-            <input id={value} name="" type="radio" onChange={chooseComponent} />
+            <input
+              id={value}
+              name="chooseComponentRadio"
+              type="radio"
+              onChange={chooseComponent}
+            />
           </label>
         );
       })}
