@@ -40,7 +40,13 @@ const LogicGates = () => {
       return b;
     }
   };
-  const ternarOR = (a, b) => {};
+  const ternarOR = (a, b) => {
+    if (a <= b) {
+      return a;
+    } else {
+      return b;
+    }
+  };
 
   useEffect(() => {
     const valOneAB = nor(inputA, inputB);
