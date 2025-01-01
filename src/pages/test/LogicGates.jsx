@@ -40,7 +40,7 @@ const LogicGates = () => {
   }, [inputA, inputB, inputC]);
 
   return (
-    <section>
+    <div>
       This is test page
       <button type="button" onClick={(inputA && handleFalseA) || handleTrueA}>
         A: {(inputA && "true") || "false"}
@@ -52,7 +52,7 @@ const LogicGates = () => {
         C: {(inputC && "true") || "false"}
       </button>
       <p>{(output && "true") || "false"}</p>
-    </section>
+    </div>
   );
 };
 
