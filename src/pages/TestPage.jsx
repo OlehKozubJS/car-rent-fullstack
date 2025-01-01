@@ -25,7 +25,6 @@ const TestPage = () => {
       {componentName === "Simplest custom range" && (
         <SimplestCustomRange onChange={handleRangeValue} value={rangeValue} />
       )}
-
       <p>{rangeValue}</p>
     </section>
   );
