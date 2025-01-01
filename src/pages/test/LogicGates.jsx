@@ -79,13 +79,15 @@ const LogicGates = () => {
       <button type="button" onClick={(inputC && handleFalseC) || handleTrueC}>
         C: {(inputC && "true") || "false"}
       </button>
+      <p>{(output && "true") || "false"}</p>
       <button type="button" onClick={handleValueD}>
         D: {inputD}
       </button>
       <button type="button" onClick={handleValueE}>
         E: {inputE}
       </button>
-      <p>{(output && "true") || "false"}</p>
+      <p>{ternarAND(inputD, inputE)}</p>
+      <p>{ternarOR(inputD, inputE)}</p>
     </div>
   );
 };
