@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { LogicGates, SimplestCustomRange } from "./test";
+import { LogicGates, SimplestCustomRange, PageChooser } from "./test";
 
 const TestPage = () => {
   const [componentName, setComponentName] = useState("Simplest custom range");
