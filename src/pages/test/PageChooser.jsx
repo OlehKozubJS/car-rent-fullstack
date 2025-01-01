@@ -1,14 +1,7 @@
 import { useState } from "react";
 
-import { LogicGates, SimplestCustomRange } from "./test";
-
 const PageChooser = () => {
   const [componentName, setComponentName] = useState("Simplest custom range");
-  const [rangeValue, setRangeValue] = useState(0);
-
-  const handleRangeValue = (newRangeValue) => {
-    setRangeValue(newRangeValue);
-  };
 
   const chooseComponent = ({ target }) => {
     setComponentName(target.value);
