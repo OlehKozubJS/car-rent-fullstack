@@ -1,13 +1,9 @@
 import { useEffect, useState } from "react";
 
-import 
+import { LogicGates, SimplestCustomRange } from "./test";
 
 const TestPage = () => {
-
-  return (
-    <section>
-    </section>
-  );
+  return <section></section>;
 };
 
 export default TestPage;
