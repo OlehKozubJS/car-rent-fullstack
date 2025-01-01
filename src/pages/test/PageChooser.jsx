@@ -8,7 +8,7 @@ const PageChooser = () => {
   };
 
   return (
-    <section>
+    <nav>
       <ul>
         {["Simplest custom range", "Logic gates"].map((value) => {
           return (
@@ -28,12 +28,7 @@ const PageChooser = () => {
           );
         })}
       </ul>
-      {componentName === "Simplest custom range" && (
-        <SimplestCustomRange onChange={handleRangeValue} value={rangeValue} />
-      )}
-      {componentName === "Logic gates" && <LogicGates />}
-      <p>{rangeValue}</p>
-    </section>
+    </nav>
   );
 };
 
