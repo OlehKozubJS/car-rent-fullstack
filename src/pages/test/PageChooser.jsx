@@ -1,8 +1,6 @@
 import { useState } from "react";
 
-const PageChooser = () => {
-  const [componentName, setComponentName] = useState("Simplest custom range");
-
+const PageChooser = ({ componentNames, currentComponentName }) => {
   const chooseComponent = ({ target }) => {
     setComponentName(target.value);
   };
