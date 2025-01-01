@@ -19,8 +19,8 @@ const TestPage = () => {
       <ul>
         {["Simplest custom range", "Logic gates"].map((value) => {
           return (
-            <li>
-              <label key={value} htmlFor={value}>
+            <li key={value}>
+              <label htmlFor={value}>
                 <input
                   id={value}
                   name="chooseComponentRadio"
