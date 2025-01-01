@@ -28,19 +28,19 @@ const SimplestCustomRange = ({ value, onChange }) => {
   const [rangeValue, setRangeValue] = useState(value);
   const [mouseDownX, setMouseDownX] = useState(0);
 
-  const handleMouseDown = (event) => {
+  const handleMouseDown = ({ clientX }) => {
     setIsDraggable(true);
-    setMouseDownX(event.clientX);
+    setMouseDownX(clientX);
   };
 
-  const handleMouseMove = (event) => {
-    event.preventDefault();
+  const handleMouseMove = ({ preventDefault, clientX }) => {
+    preventDefault();
 
     if (!isDraggable) {
       return;
     }
 
-    const mouseMoveX = event.clientX;
+    const mouseMoveX = clientX;
 
     const newRangeValue = rangeValue + mouseMoveX - mouseDownX;
 
