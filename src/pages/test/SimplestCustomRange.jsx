@@ -33,9 +33,7 @@ const SimplestCustomRange = ({ value, onChange }) => {
     setMouseDownX(clientX);
   };
 
-  const handleMouseMove = ({ preventDefault, clientX }) => {
-    preventDefault();
-
+  const handleMouseMove = ({ clientX }) => {
     if (!isDraggable) {
       return;
     }
