@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { handleEventListener } from "../../hooks";
 
-import { RangeField, RangeDial } from "./SimplestCustomRangeStyle";
+import { RangeDial } from "./SimplestCustomRangeStyle";
 
 const DraggableComponent = ({ value, onChange }) => {
   const [isDraggable, setIsDraggable] = useState(false);
@@ -32,11 +32,7 @@ const DraggableComponent = ({ value, onChange }) => {
   useEffect(handleEventListener("mousemove", handleMouseMove), [isDraggable]);
   useEffect(handleEventListener("mouseup", handleMouseUp), [isDraggable]);
 
-  return (
-    <RangeField>
-      <RangeDial onMouseDown={handleMouseDown} left={value}></RangeDial>
-    </RangeField>
-  );
+  return <RangeDial onMouseDown={handleMouseDown} left={value}></RangeDial>;
 };
 
 export { DraggableComponent };
