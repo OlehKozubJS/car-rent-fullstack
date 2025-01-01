@@ -6,7 +6,6 @@ import { RangeField, RangeDial } from "./SimplestCustomRangeStyle";
 
 const SimplestCustomRange = ({ value, onChange }) => {
   const [isDraggable, setIsDraggable] = useState(false);
-  const [rangeValue, setRangeValue] = useState(value);
   const [mouseDownX, setMouseDownX] = useState(0);
 
   const handleMouseDown = ({ clientX }) => {
@@ -16,10 +15,10 @@ const SimplestCustomRange = ({ value, onChange }) => {
 
   const handleMouseMove = ({ clientX }) => {
     if (isDraggable) {
-      const newRangeValue = rangeValue + clientX - mouseDownX;
+      const newRangeValue = value + clientX - mouseDownX;
 
       if (newRangeValue >= 0 && newRangeValue <= 450) {
-        setRangeValue(newRangeValue);
+        onChange(newRangeValue);
       }
     }
   };
@@ -32,13 +31,9 @@ const SimplestCustomRange = ({ value, onChange }) => {
 
   useEffect(handleEventListener("mouseup", handleMouseUp), [isDraggable]);
 
-  useEffect(() => {
-    onChange(rangeValue);
-  }, [rangeValue]);
-
   return (
     <RangeField>
-      <RangeDial onMouseDown={handleMouseDown} left={rangeValue}></RangeDial>
+      <RangeDial onMouseDown={handleMouseDown} left={value}></RangeDial>
     </RangeField>
   );
 };
