@@ -4,7 +4,7 @@ import { handleEventListener } from "../../hooks";
 
 import { DraggableComponentStyle } from "./SimplestCustomRangeStyle";
 
-const DraggableComponent = ({ value, onChange }) => {
+const DraggableComponent = ({ valueY, valueX, onChange }) => {
   const [isDraggable, setIsDraggable] = useState(false);
   const [mouseDownY, setMouseDownY] = useState(0);
   const [mouseDownX, setMouseDownX] = useState(0);
@@ -35,7 +35,8 @@ const DraggableComponent = ({ value, onChange }) => {
   return (
     <DraggableComponentStyle
       onMouseDown={handleMouseDown}
-      left={value}
+      top={valueY}
+      left={valueX}
     ></DraggableComponentStyle>
   );
 };
