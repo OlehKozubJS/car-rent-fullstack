@@ -16,7 +16,13 @@ const TestPage = () => {
 
   return (
     <section>
-      {[].map()}
+      {[].map(() => {
+        return (
+          <label for="">
+            <input />
+          </label>
+        );
+      })}
       <SimplestCustomRange onChange={handleRangeValue} value={rangeValue} />
       <LogicGates />
       <p>{rangeValue}</p>
