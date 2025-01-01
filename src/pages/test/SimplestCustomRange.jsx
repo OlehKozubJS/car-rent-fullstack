@@ -35,13 +35,11 @@ const SimplestCustomRange = ({ value, onChange }) => {
 
   const handleMouseMove = ({ clientX }) => {
     if (!isDraggable) {
-      return;
-    }
+      const newRangeValue = rangeValue + clientX - mouseDownX;
 
-    const newRangeValue = rangeValue + clientX - mouseDownX;
-
-    if (newRangeValue >= 0 && newRangeValue <= 450) {
-      setRangeValue(newRangeValue);
+      if (newRangeValue >= 0 && newRangeValue <= 450) {
+        setRangeValue(newRangeValue);
+      }
     }
   };
 
