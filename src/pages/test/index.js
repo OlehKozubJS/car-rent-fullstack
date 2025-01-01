@@ -1,4 +1,4 @@
-import { SimplestCustomRange } from "./SimplestCustomRange";
 import { LogicGates } from "./LogicGates";
+import { SimplestCustomRange } from "./SimplestCustomRange";
 
-export { SimplestCustomRange, LogicGates };
+export { LogicGates, SimplestCustomRange };
