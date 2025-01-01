@@ -17,14 +17,15 @@ const TestPage = () => {
   return (
     <section>
       <PageChooser
-        componentNames={["Simplest custom range", "Logic gates"]}
+        componentNames={["Logic gates", "Simplest custom range"]}
         currentComponentName={componentName}
         onChange={chooseComponent}
       />
+      {componentName === "Logic gates" && <LogicGates />}
       {componentName === "Simplest custom range" && (
         <SimplestCustomRange onChange={handleRangeValue} value={rangeValue} />
       )}
-      {componentName === "Logic gates" && <LogicGates />}
+
       <p>{rangeValue}</p>
     </section>
   );
