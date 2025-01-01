@@ -10,6 +10,8 @@ import {
 const TestPage = () => {
   const [componentName, setComponentName] = useState("Logic gates");
   const [rangeValue, setRangeValue] = useState(0);
+  const [] = useState();
+  const [] = useState();
 
   const handleRangeValue = (newRangeValue) => {
     setRangeValue(newRangeValue);
@@ -36,7 +38,7 @@ const TestPage = () => {
       )}
       {componentName === "Draggable component" && <DraggableComponent valueY={} valueX={} onChange={}/>}
       <p>{rangeValue}</p>
-      <p></p>
+      <p>{}</p>
     </section>
   );
 };
