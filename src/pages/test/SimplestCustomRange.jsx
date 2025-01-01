@@ -17,7 +17,7 @@ const RangeDial = styled.div`
   top: 0;
   left: ${({ left }) => {
     return left;
-  }};
+  }}px;
   width: 50px;
   height: 50px;
   background-color: rgb(100, 100, 250);
