@@ -29,6 +29,10 @@ const LogicGates = () => {
     return !(a || b);
   };
 
+  const nand = (a, b) => {
+    return !(a && b);
+  };
+
   useEffect(() => {
     const valOneAB = nor(inputA, inputB);
     const valTwoA = nor(inputA, valOneAB);
