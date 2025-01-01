@@ -18,8 +18,8 @@ const DraggableComponent = ({ valueY, valueX, onChange }) => {
   const handleMouseMove = ({ clientY, clientX }) => {
     if (isDraggable) {
       onChange({
-        valueY: value + clientY - mouseDownY,
-        valueX: value + clientX - mouseDownX,
+        valueY: valueY + clientY - mouseDownY,
+        valueX: valueX + clientX - mouseDownX,
       });
     }
   };
