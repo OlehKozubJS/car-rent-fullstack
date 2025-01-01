@@ -29,8 +29,10 @@ const TestPage = () => {
           </label>
         );
       })}
-      <SimplestCustomRange onChange={handleRangeValue} value={rangeValue} />
-      <LogicGates />
+      {"Simplest custom range" && (
+        <SimplestCustomRange onChange={handleRangeValue} value={rangeValue} />
+      )}
+      {"Logic gates" && <LogicGates />}
       <p>{rangeValue}</p>
     </section>
   );
