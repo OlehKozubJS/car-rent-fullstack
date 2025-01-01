@@ -9,9 +9,9 @@ const DraggableComponent = ({ value, onChange }) => {
   const [mouseDownY, setMouseDownY] = useState(0);
   const [mouseDownX, setMouseDownX] = useState(0);
 
-  const handleMouseDown = ({ clientX }) => {
+  const handleMouseDown = ({ clientY, clientX }) => {
     setIsDraggable(true);
-    setMouseDownX(clientY);
+    setMouseDownY(clientY);
     setMouseDownX(clientX);
   };
 
