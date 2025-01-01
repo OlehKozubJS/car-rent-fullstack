@@ -26,7 +26,8 @@ const LogicGates = () => {
   const handleFalseC = () => {
     setInputC(false);
   };
-
+const handleValueD = () => {};
+const handleValueE = () => {};
 
 
   const nor = (a, b) => {
