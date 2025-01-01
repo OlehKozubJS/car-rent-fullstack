@@ -26,7 +26,7 @@ const TestPage = () => {
               value={value}
               onChange={chooseComponent}
             />
-            <p>{value}</p>
+            <span>{value}</span>
           </label>
         );
       })}
