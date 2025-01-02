@@ -7,7 +7,7 @@ import {
 
 const CarBrandSelectorMenuList = ({ options, onChange, top }) => {
   return (
-    <CarBrandSelectorMenuListContainerStyleBase className="menu-list-container">
+    <CarBrandSelectorMenuListContainerStyleBase>
       <CarBrandSelectorMenuListStyleBase
         className="menu-list"
         style={{ top: `${top}px` }}
