@@ -37,22 +37,17 @@ const CarBrandSelectorInput = ({
   }, [buttonValue]);
 
   return (
-    <CarBrandSelectorInputLabelStyleBase
-      htmlFor="car-filter-input"
-      className="car-filter-input-label"
-    >
+    <CarBrandSelectorInputLabelStyleBase htmlFor="car-filter-input">
       <CarBrandSelectorInputStyleBase
         id="car-filter-input"
         type="text"
         placeholder="Enter the text"
         value={inputValue}
         onChange={handleChange}
-        className="car-filter-input"
       />
       <CarBrandSelectorInputButtonStyleBase
         type="button"
         onClick={isOpen ? close : open}
-        className="car-filter-input-button"
       >
         {<SVGimage name={isOpen ? "up" : "down"} />}
       </CarBrandSelectorInputButtonStyleBase>
