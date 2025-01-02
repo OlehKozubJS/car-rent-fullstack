@@ -2,8 +2,6 @@ import { useState, useEffect } from "react";
 
 import { makesLocalData } from "./imports";
 
-import { SVGimage } from "../../images";
-
 const CarMileageSelector = ({}) => {
   const [carBrands] = useState(makesLocalData);
 
