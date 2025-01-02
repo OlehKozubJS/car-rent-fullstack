@@ -22,6 +22,8 @@ const CarBrandSelectorMenu = ({ options, onChange }) => {
     setMenuListHeight(menuList.offsetHeight);
   }, [options]);
 
+  const handleMenuListHeight = () => {};
+
   useEffect(() => {
     if (menuListHeight <= MAX_MENU_LIST_HEIGHT) {
       setMenuListContainerHeight(menuListHeight);
