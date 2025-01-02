@@ -19,10 +19,11 @@ const CarBrandSelectorMenu = ({ options, onChange }) => {
   useEffect(() => {
     const menuList = document.querySelector(".menu-list");
     setScrollRangeValue(0);
-    setMenuListHeight(menuList.offsetHeight);
   }, [options]);
 
-  const handleMenuListHeight = () => {};
+  const handleMenuListHeight = ({ target }) => {
+    setMenuListHeight(target.offsetHeight);
+  };
 
   useEffect(() => {
     if (menuListHeight <= MAX_MENU_LIST_HEIGHT) {
