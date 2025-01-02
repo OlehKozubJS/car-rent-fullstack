@@ -23,7 +23,7 @@ const CarBrandSelectorMenu = ({ options, onChange }) => {
   const handleMenuListHeight = ({ target }) => {
     setMenuListHeight(target.offsetHeight);
     setScrollRangeValue(0);
-    onChange();
+    onChange(target.value);
   };
 
   useEffect(() => {
