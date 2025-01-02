@@ -48,12 +48,10 @@ const ScrollRange = ({ value, onChange, statorHeight, rotorHeight }) => {
 
   return (
     <ScrollRangeStatorStyleBase
-      className="scroll-range-stator"
       style={{ top: `${value}px`, height: `${statorHeight}px` }}
     >
       <ScrollRangeRotorStyleBase
         onMouseDown={handleMouseDown}
-        className="scroll-range-rotor"
         style={{ height: `${rotorHeight}px` }}
       ></ScrollRangeRotorStyleBase>
     </ScrollRangeStatorStyleBase>
