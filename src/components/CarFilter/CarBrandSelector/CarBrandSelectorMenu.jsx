@@ -18,11 +18,12 @@ const CarBrandSelectorMenu = ({ options, onChange }) => {
 
   useEffect(() => {
     const menuList = document.querySelector(".menu-list");
-    setScrollRangeValue(0);
   }, [options]);
 
   const handleMenuListHeight = ({ target }) => {
     setMenuListHeight(target.offsetHeight);
+    setScrollRangeValue(0);
+    onChange();
   };
 
   useEffect(() => {
@@ -40,7 +41,7 @@ const CarBrandSelectorMenu = ({ options, onChange }) => {
       <CarBrandSelectorMenuList
         className="menu-list"
         options={options}
-        onChange={onChange}
+        onChange={handleMenuListHeight}
         top={-scrollRangeValue * 5}
       />
       {menuListHeight > MAX_MENU_LIST_HEIGHT && (
