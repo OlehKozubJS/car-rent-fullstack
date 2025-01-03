@@ -47,7 +47,7 @@ const App = () => {
           element={
             <MainPage
               cars={carsLocalData}
-              brands={makesLocalData}
+              carBrands={makesLocalData}
               onFavouriteClick={addFavouriteCar}
             />
           }
