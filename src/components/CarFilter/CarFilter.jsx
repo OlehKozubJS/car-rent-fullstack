@@ -4,7 +4,7 @@ import { CarMileageSelector } from "./CarMileageSelector";
 const CarFilter = ({ cars, carBrands }) => {
   return (
     <form>
-      <CarBrandSelector cars={carBrands} />
+      <CarBrandSelector carBrands={carBrands} />
 
       <CarMileageSelector cars={cars} />
 
