@@ -1,10 +1,10 @@
 import { CarBrandSelector } from "./CarBrandSelector";
 import { CarMileageSelector } from "./CarMileageSelector";
 
-const CarFilter = ({ cars }) => {
+const CarFilter = ({ cars, carBrands }) => {
   return (
     <form>
-      <CarBrandSelector cars={cars} />
+      <CarBrandSelector cars={carBrands} />
 
       <CarMileageSelector cars={cars} />
 
