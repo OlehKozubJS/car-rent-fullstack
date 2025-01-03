@@ -7,11 +7,17 @@ import {
 
 const CarBrandSelectorMenuList = ({ options, onChange, top }) => {
   return (
-    <CarBrandSelectorMenuListContainerStyleBase>
-      <CarBrandSelectorMenuListStyleBase style={{ top: `${top}px` }}>
+    <CarBrandSelectorMenuListContainerStyleBase className="menu-list-container">
+      <CarBrandSelectorMenuListStyleBase
+        className="menu-list"
+        style={{ top: `${top}px` }}
+      >
         {options.map((option, optionIndex) => {
           return (
-            <CarBrandSelectorMenuItemStyleBase key={optionIndex}>
+            <CarBrandSelectorMenuItemStyleBase
+              key={optionIndex}
+              className="menu-item"
+            >
               <label htmlFor={optionIndex}>
                 <CarBrandSelectorMenuOptionRadioStyleBase
                   id={optionIndex}
@@ -19,6 +25,7 @@ const CarBrandSelectorMenuList = ({ options, onChange, top }) => {
                   name="menu-option-radio"
                   value={option}
                   onChange={onChange}
+                  className="menu-option-radio"
                 />
                 <span>{option}</span>
               </label>
