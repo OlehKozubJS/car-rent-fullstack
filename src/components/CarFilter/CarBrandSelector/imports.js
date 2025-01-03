@@ -1,3 +1,3 @@
-import { carsLocalData, makesLocalData } from "../imports";
+import { SVGimage } from "../imports";
 
-export { carsLocalData, makesLocalData };
+export { SVGimage };
