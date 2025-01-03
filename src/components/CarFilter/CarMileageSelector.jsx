@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
-const CarMileageSelector = ({ makesLocalData }) => {
-  const [carBrands] = useState(makesLocalData);
+const CarMileageSelector = ({ cars }) => {
+  const [carBrands] = useState(cars);
 
   return (
     <div>
