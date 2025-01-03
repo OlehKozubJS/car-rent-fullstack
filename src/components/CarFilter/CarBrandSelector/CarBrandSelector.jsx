@@ -5,7 +5,7 @@ import { CarBrandSelectorMenu } from "./CarBrandSelectorMenu";
 
 import { CarBrandSelectorNotFoundMessageStyleBase } from "./CarBrandSelectorStyles";
 
-const CarBrandSelector = ({ cars }) => {
+const CarBrandSelector = ({ carBrands }) => {
   const [filteredCarBrands, setFilteredCarBrands] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [isCarBrandsOptions, setIsCarBrandsOptions] = useState(false);
@@ -29,15 +29,15 @@ const CarBrandSelector = ({ cars }) => {
   };
 
   useEffect(() => {
-    setFilteredCarBrands(cars);
-  }, [cars]);
+    setFilteredCarBrands(carBrands);
+  }, [carBrands]);
 
   useEffect(() => {
-    const newFilteredCarBrands = cars.filter((car) =>
-      car.toLowerCase().includes(searchQuery.toLowerCase())
+    const newFilteredCarBrands = carBrands.filter((carBrand) =>
+      carBrand.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
-    setFilteredCarBrands(searchQuery ? newFilteredCarBrands : cars);
+    setFilteredCarBrands(searchQuery ? newFilteredCarBrands : carBrands);
   }, [searchQuery]);
 
   return (
