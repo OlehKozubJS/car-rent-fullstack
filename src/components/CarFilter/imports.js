@@ -1,3 +1,3 @@
-import { makesLocalData, handleEventListener } from "../imports";
+import { handleEventListener } from "../imports";
 
-export { makesLocalData, handleEventListener };
+export { handleEventListener };
