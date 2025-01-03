@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+import { handleEventListener } from "../imports";
+
 import {
   ScrollRangeStatorStyleBase,
   ScrollRangeRotorStyleBase,
@@ -26,16 +28,6 @@ const ScrollRange = ({ value, onChange, statorHeight, rotorHeight }) => {
 
   const handleMouseUp = () => {
     setIsDraggable(false);
-  };
-
-  const handleEventListener = (eventType, callback) => {
-    return () => {
-      window.addEventListener(eventType, callback);
-
-      return () => {
-        window.removeEventListener(eventType, callback);
-      };
-    };
   };
 
   useEffect(handleEventListener("mouseup", handleMouseUp), []);
