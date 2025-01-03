@@ -1,12 +1,12 @@
 import { CarBrandSelector } from "./CarBrandSelector";
 import { CarMileageSelector } from "./CarMileageSelector";
 
-const CarFilter = ({ makesLocalData }) => {
+const CarFilter = ({ cars }) => {
   return (
     <form>
-      <CarBrandSelector carBrands={makesLocalData} />
+      <CarBrandSelector cars={cars} />
 
-      <CarMileageSelector carBrands={makesLocalData} />
+      <CarMileageSelector cars={cars} />
 
       <button type="submit">Search</button>
     </form>
