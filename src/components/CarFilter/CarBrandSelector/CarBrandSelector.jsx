@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
-import { useDispatch } from "react-redux";
 
 import { CarBrandSelectorInput } from "./CarBrandSelectorInput";
 import { CarBrandSelectorMenu } from "./CarBrandSelectorMenu";
 
 import { CarBrandSelectorNotFoundMessageStyleBase } from "./CarBrandSelectorStyles";
 
-const CarBrandSelector = ({ carBrands }) => {
+const CarBrandSelector = ({ cars }) => {
   const [filteredCarBrands, setFilteredCarBrands] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [isCarBrandsOptions, setIsCarBrandsOptions] = useState(false);
@@ -30,8 +29,8 @@ const CarBrandSelector = ({ carBrands }) => {
   };
 
   useEffect(() => {
-    setFilteredCarBrands(carBrands);
-  }, [carBrands]);
+    setFilteredCarBrands(cars);
+  }, [cars]);
 
   useEffect(() => {
     const newFilteredCarBrands = carBrands.filter((carBrand) =>
