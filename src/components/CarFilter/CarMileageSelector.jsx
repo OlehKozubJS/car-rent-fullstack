@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { makesLocalData } from "./imports";
-
-const CarMileageSelector = ({}) => {
+const CarMileageSelector = ({ makesLocalData }) => {
   const [carBrands] = useState(makesLocalData);
 
   return (
