@@ -32,7 +32,6 @@ const CarBrandSelectorMenu = ({ options, onChange }) => {
 
   return (
     <CarBrandSelectorMenuContainerStyleBase
-      className="menu-container"
       style={{ height: `${menuListContainerHeight + 28}px` }}
     >
       <CarBrandSelectorMenuList
