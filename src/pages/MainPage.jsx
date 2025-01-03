@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import { CarFilter, CarGallery, CarModal } from "./imports";
 
-const MainPage = ({ cars, onFavouriteClick }) => {
+const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
   const [isModal, setIsModal] = useState(false);
   const [car, setCar] = useState(null);
 
@@ -18,7 +18,7 @@ const MainPage = ({ cars, onFavouriteClick }) => {
   return (
     <section>
       {isModal && <CarModal car={car} onClose={closeModal} />}
-      <CarFilter cars={cars} brands={brands} />
+      <CarFilter cars={cars} carBrands={carBrands} />
       <CarGallery
         cars={cars}
         onLearnMoreClick={openModal}
