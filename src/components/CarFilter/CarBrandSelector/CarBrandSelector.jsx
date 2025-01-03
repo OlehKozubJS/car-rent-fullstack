@@ -33,11 +33,11 @@ const CarBrandSelector = ({ cars }) => {
   }, [cars]);
 
   useEffect(() => {
-    const newFilteredCarBrands = carBrands.filter((carBrand) =>
-      carBrand.toLowerCase().includes(searchQuery.toLowerCase())
+    const newFilteredCarBrands = cars.filter((car) =>
+      car.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
-    setFilteredCarBrands(searchQuery ? newFilteredCarBrands : carBrands);
+    setFilteredCarBrands(searchQuery ? newFilteredCarBrands : cars);
   }, [searchQuery]);
 
   return (
