@@ -1,7 +1,7 @@
 import { useEffect, useState, Suspense } from "react";
 import { Routes, Route, NavLink } from "react-router-dom";
 
-import { carsLocalData } from "./database";
+import { carsLocalData, makesLocalData } from "./database";
 
 import { lazyLoader } from "./hooks";
 
@@ -45,7 +45,11 @@ const App = () => {
         <Route
           index
           element={
-            <MainPage cars={carsLocalData} onFavouriteClick={addFavouriteCar} />
+            <MainPage
+              cars={carsLocalData}
+              brands={makesLocalData}
+              onFavouriteClick={addFavouriteCar}
+            />
           }
         />
         <Route
