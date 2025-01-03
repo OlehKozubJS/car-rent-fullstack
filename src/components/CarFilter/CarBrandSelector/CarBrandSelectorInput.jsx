@@ -6,7 +6,7 @@ import {
   CarBrandSelectorInputButtonStyleBase,
 } from "./CarBrandSelectorStyles";
 
-import { SVGimage } from "../images";
+import { SVGimage } from "../imports";
 
 const CarBrandSelectorInput = ({
   inputValue,
