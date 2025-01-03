@@ -18,7 +18,7 @@ const MainPage = ({ cars, onFavouriteClick }) => {
   return (
     <section>
       {isModal && <CarModal car={car} onClose={closeModal} />}
-      <CarFilter />
+      <CarFilter cars={cars} />
       <CarGallery
         cars={cars}
         onLearnMoreClick={openModal}
