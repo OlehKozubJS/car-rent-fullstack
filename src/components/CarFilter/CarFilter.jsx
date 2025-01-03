@@ -6,7 +6,7 @@ const CarFilter = ({ makesLocalData }) => {
     <form>
       <CarBrandSelector carBrands={makesLocalData} />
 
-      <CarMileageSelector />
+      <CarMileageSelector carBrands={makesLocalData} />
 
       <button type="submit">Search</button>
     </form>
