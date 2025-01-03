@@ -1,3 +1,3 @@
-import { handleEventListener } from "../imports";
+import { handleEventListener, SVGimage } from "../imports";
 
-export { handleEventListener };
+export { handleEventListener, SVGimage };
