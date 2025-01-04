@@ -16,7 +16,7 @@ const CarFilterHeader = styled.h3`
   margin-bottom: 8px;
 `;
 
-const CarFilterButtonButtonStyleBase = styled.button`
+const CarFilterSubmitButtonStyleBase = styled.button`
   margin-top: 28px;
 
   display: inline-flex;
@@ -39,4 +39,4 @@ const CarFilterButtonButtonStyleBase = styled.button`
   }
 `;
 
-export { CarFilterContainer, CarFilterHeader, CarFilterButtonButtonStyleBase };
+export { CarFilterContainer, CarFilterHeader, CarFilterSubmitButtonStyleBase };
