@@ -7,15 +7,17 @@ import {
   CarPriceSelectorDividerStyleBase,
 } from "./CarPriceSelectorStyle";
 
+import { CarFilterHeader } from "./imports";
+
 const CarPriceSelector = ({ value, onChange }) => {
   return (
     <div>
-      <h3>Car price / dollars</h3>
+      <CarFilterHeader>Car price / dollars</CarFilterHeader>
       <div style={{ display: "flex" }}>
         <CarPriceSelectorLabelFromStyleBase htmlFor="mileageFrom">
           <CarPriceSelectorInputStyleBase
             id="mileageFrom"
-            type="number"
+            type="text"
             placeholder="From"
           />
         </CarPriceSelectorLabelFromStyleBase>
@@ -23,7 +25,7 @@ const CarPriceSelector = ({ value, onChange }) => {
         <CarPriceSelectorLabelToStyleBase htmlFor="mileageTo">
           <CarPriceSelectorInputStyleBase
             id="mileageTo"
-            type="number"
+            type="text"
             placeholder="To"
           />
         </CarPriceSelectorLabelToStyleBase>
