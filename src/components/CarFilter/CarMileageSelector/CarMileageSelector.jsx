@@ -7,9 +7,7 @@ import {
   CarMileageSelectorDividerStyleBase,
 } from "./CarMileageSelectorStyle";
 
-const CarMileageSelector = ({ cars }) => {
-  const [carBrands] = useState(cars);
-
+const CarMileageSelector = ({ value, onChange }) => {
   return (
     <div>
       <h3>Car mileage / km</h3>
