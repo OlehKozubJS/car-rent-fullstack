@@ -10,6 +10,10 @@ import {
 } from "./CarFilterStyle";
 
 const CarFilter = ({ carBrands, onSubmit }) => {
+  const [] = useState();
+  const [] = useState();
+  const [] = useState();
+
   const handleSubmit = () => {
     onSubmit();
   };
