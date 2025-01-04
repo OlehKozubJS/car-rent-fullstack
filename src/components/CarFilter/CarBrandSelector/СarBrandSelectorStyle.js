@@ -24,4 +24,7 @@ const CarBrandSelectorNotFoundMessageStyleBase = styled.div`
   color: rgba(180, 20, 23, 0.5);
 `;
 
-export { CarBrandSelectorNotFoundMessageStyleBase };
+export {
+  CarBrandSelectorContainerStyleBase,
+  CarBrandSelectorNotFoundMessageStyleBase,
+};
