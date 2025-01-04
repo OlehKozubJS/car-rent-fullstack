@@ -3,7 +3,7 @@ import {
   CarBrandSelectorMenuListStyleBase,
   CarBrandSelectorMenuItemStyleBase,
   CarBrandSelectorMenuOptionRadioStyleBase,
-} from "./CarBrandSelectorStyles";
+} from "./СarBrandSelectorMenuListStyle";
 
 const CarBrandSelectorMenuList = ({ options, onChange, top }) => {
   return (
