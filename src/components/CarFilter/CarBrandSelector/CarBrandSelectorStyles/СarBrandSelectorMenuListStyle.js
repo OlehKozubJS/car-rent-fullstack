@@ -3,20 +3,21 @@ import styled from "@emotion/styled";
 const CarBrandSelectorMenuListContainerStyleBase = styled.div`
   height: 244px;
   width: 190px;
-  top: ${({ top }) => {
-    return top;
-  }}px;
   overflow: hidden;
 
   position: relative;
 `;
 
 const CarBrandSelectorMenuListStyleBase = styled.ul`
+  position: absolute;
+
   list-style: none;
   margin: 0;
   padding: 0;
 
-  position: absolute;
+  top: ${({ top }) => {
+    return top;
+  }}px;
   left: 0px;
 `;
 
