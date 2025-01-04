@@ -36,9 +36,9 @@ const CarFilter = ({ carBrands, onSubmit }) => {
     <CarFilterContainer onSubmit={handleSubmit}>
       <CarBrandSelector carBrands={carBrands} onChange={handleCarBrand} />
 
-      <CarMileageSelector minValue={} maxValue={} onMinChange={} onMaxChange={} />
+      <CarMileageSelector minValue={} maxValue={} onMinChange={handleMinMileage} onMaxChange={handleMaxMileage} />
 
-      <CarPriceSelector minValue={} maxValue={} onMaxChange={} onMaxChange={} />
+      <CarPriceSelector minValue={} maxValue={} onMaxChange={handleMinPrice} onMaxChange={handleMaxPrice} />
 
       <CarFilterSubmitButtonStyleBase type="submit">
         Search
