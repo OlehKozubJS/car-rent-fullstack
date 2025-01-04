@@ -15,7 +15,7 @@ const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
   const closeModal = () => {
     setIsModal(false);
   };
-  // make rentalPrice mileage
+  //
   const handleFilteredCars = ({
     carBrand,
     minMileage,
@@ -23,7 +23,12 @@ const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
     minPrice,
     maxPrice,
   }) => {
-    setFilteredCars(cars.filter(() => {}));
+    setFilteredCars(
+      cars.filter(
+        ({ make, rentalPrice, mileage }) =>
+          carBrand && make === carBrand && rentalPrice
+      )
+    );
   };
 
   return (
