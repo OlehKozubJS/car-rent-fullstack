@@ -9,7 +9,7 @@ import {
 
 import { CarFilterHeader } from "./imports";
 
-const CarMileageSelector = ({ value, onChange }) => {
+const CarMileageSelector = ({ value, onMinChange, onMaxChange }) => {
   return (
     <div>
       <CarFilterHeader>Car mileage / km</CarFilterHeader>
@@ -19,6 +19,7 @@ const CarMileageSelector = ({ value, onChange }) => {
             id="mileageFrom"
             type="text"
             placeholder="From"
+            onChange={onMinChange}
           />
         </CarMileageSelectorLabelFromStyleBase>
         <CarMileageSelectorDividerStyleBase />
@@ -27,6 +28,7 @@ const CarMileageSelector = ({ value, onChange }) => {
             id="mileageTo"
             type="text"
             placeholder="To"
+            onChange={onMaxChange}
           />
         </CarMileageSelectorLabelToStyleBase>
       </div>
