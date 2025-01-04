@@ -9,7 +9,7 @@ import {
 
 const CarFilter = ({ carBrands }) => {
   return (
-    <CarFilterContainer>
+    <CarFilterContainer onSubmit={}>
       <CarBrandSelector carBrands={carBrands} />
 
       <CarMileageSelector />
