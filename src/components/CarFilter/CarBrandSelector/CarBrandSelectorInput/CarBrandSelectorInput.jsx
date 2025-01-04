@@ -49,7 +49,7 @@ const CarBrandSelectorInput = ({
         type="button"
         onClick={isOpen ? close : open}
       >
-        {<SVGimage name={isOpen ? "up" : "down"} />}
+        <SVGimage name={isOpen ? "up" : "down"} />
       </CarBrandSelectorInputButtonStyleBase>
     </CarBrandSelectorInputLabelStyleBase>
   );
