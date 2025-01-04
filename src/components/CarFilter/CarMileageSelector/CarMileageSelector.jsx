@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react";
 
-import { CarMileageSelectorLabelStyleBase } from "./CarMileageSelectorStyle";
+import {
+  CarMileageSelectorLabelStyleBase,
+  CarMileageSelectorLabelFromStyleBase,
+  CarMileageSelectorLabelToStyleBase,
+} from "./CarMileageSelectorStyle";
 
 const CarMileageSelector = ({ cars }) => {
   const [carBrands] = useState(cars);
@@ -9,13 +13,13 @@ const CarMileageSelector = ({ cars }) => {
     <div>
       <h3>Car mileage / km</h3>
 
-      <CarMileageSelectorLabelStyleBase htmlFor="mileageFrom">
+      <CarMileageSelectorLabelFromStyleBase htmlFor="mileageFrom">
         <input id="mileageFrom" type="number" placeholder="From" />
-      </CarMileageSelectorLabelStyleBase>
+      </CarMileageSelectorLabelFromStyleBase>
 
-      <CarMileageSelectorLabelStyleBase htmlFor="mileageTo">
+      <CarMileageSelectorLabelToStyleBase htmlFor="mileageTo">
         <input id="mileageTo" type="number" placeholder="To" />
-      </CarMileageSelectorLabelStyleBase>
+      </CarMileageSelectorLabelToStyleBase>
     </div>
   );
 };
