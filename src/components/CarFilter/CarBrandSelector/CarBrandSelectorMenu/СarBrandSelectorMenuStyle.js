@@ -11,6 +11,7 @@ const CarBrandSelectorMenuContainerStyleBase = styled.div`
   padding-left: 18px;
   padding-right: 8px;
 
+  background-color: rgb(255, 255, 255);
   border-style: solid;
   border-radius: 14px;
   border-width: 1px;
@@ -20,7 +21,6 @@ const CarBrandSelectorMenuContainerStyleBase = styled.div`
   justify-content: space-between;
   align-items: flex-start;
 
-  position: relative;
   position: absolute;
   top: 0px;
 `;
