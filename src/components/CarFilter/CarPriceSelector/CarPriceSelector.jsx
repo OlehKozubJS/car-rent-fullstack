@@ -9,7 +9,7 @@ import {
 
 import { CarFilterHeader } from "./imports";
 
-const CarPriceSelector = ({ value, onChange }) => {
+const CarPriceSelector = ({ value, onMinChange, onMaxChange }) => {
   return (
     <div>
       <CarFilterHeader>Car price / 1 hour / dollars</CarFilterHeader>
@@ -19,6 +19,7 @@ const CarPriceSelector = ({ value, onChange }) => {
             id="priceFrom"
             type="text"
             placeholder="From"
+            onChange={onMinChange}
           />
         </CarPriceSelectorLabelFromStyleBase>
         <CarPriceSelectorDividerStyleBase />
@@ -27,6 +28,7 @@ const CarPriceSelector = ({ value, onChange }) => {
             id="priceTo"
             type="text"
             placeholder="To"
+            onChange={onMaxChange}
           />
         </CarPriceSelectorLabelToStyleBase>
       </div>
