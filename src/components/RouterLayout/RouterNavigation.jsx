@@ -7,15 +7,15 @@ import {
 
 const RouterNavigation = ({ pages }) => {
   return (
-    <nav>
+    <RouterNavigationContainerStyleBase>
       {pages.map(({ pagePath, pageTitle }, pageIndex) => {
         return (
-          <NavLink key={pageIndex} to={pagePath}>
+          <RouterNavigationLinkStyleBase key={pageIndex} to={pagePath}>
             {pageTitle}
-          </NavLink>
+          </RouterNavigationLinkStyleBase>
         );
       })}
-    </nav>
+    </RouterNavigationContainerStyleBase>
   );
 };
 
