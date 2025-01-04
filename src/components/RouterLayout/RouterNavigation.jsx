@@ -13,9 +13,10 @@ const RouterNavigation = ({ pages, currentLocation }) => {
           <RouterNavigationLinkStyleBase
             key={pageIndex}
             to={pagePath}
-            isactive={(currentLocation === pagePath).toString()}
+            isactive={"false"}
           >
             {pageTitle}
+            {(currentLocation === pagePath).toString()}
           </RouterNavigationLinkStyleBase>
         );
       })}
