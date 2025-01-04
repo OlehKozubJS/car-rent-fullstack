@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/car-rent-fullstack/static/css/main.4a41eecd.css",
-    "main.js": "/car-rent-fullstack/static/js/main.64fe6c71.js",
-    "static/js/812.9817457d.chunk.js": "/car-rent-fullstack/static/js/812.9817457d.chunk.js",
-    "static/js/78.94eb43f3.chunk.js": "/car-rent-fullstack/static/js/78.94eb43f3.chunk.js",
-    "static/js/727.15059261.chunk.js": "/car-rent-fullstack/static/js/727.15059261.chunk.js",
+    "main.js": "/car-rent-fullstack/static/js/main.90112b81.js",
+    "static/js/812.e4b570e6.chunk.js": "/car-rent-fullstack/static/js/812.e4b570e6.chunk.js",
+    "static/js/78.9a8a63ae.chunk.js": "/car-rent-fullstack/static/js/78.9a8a63ae.chunk.js",
+    "static/js/727.704c51e4.chunk.js": "/car-rent-fullstack/static/js/727.704c51e4.chunk.js",
     "static/js/411.9cc5973b.chunk.js": "/car-rent-fullstack/static/js/411.9cc5973b.chunk.js",
-    "static/js/924.b504efe4.chunk.js": "/car-rent-fullstack/static/js/924.b504efe4.chunk.js",
+    "static/js/924.34497bb1.chunk.js": "/car-rent-fullstack/static/js/924.34497bb1.chunk.js",
     "static/js/157.da35a7e3.chunk.js": "/car-rent-fullstack/static/js/157.da35a7e3.chunk.js",
     "static/js/471.39b30f54.chunk.js": "/car-rent-fullstack/static/js/471.39b30f54.chunk.js",
     "static/js/134.a5fe8f92.chunk.js": "/car-rent-fullstack/static/js/134.a5fe8f92.chunk.js",
@@ -24,10 +24,10 @@
     "static/media/icons.svg": "/car-rent-fullstack/static/media/icons.33633ab5c522b43212f596ab9c5993ed.svg",
     "index.html": "/car-rent-fullstack/index.html",
     "main.4a41eecd.css.map": "/car-rent-fullstack/static/css/main.4a41eecd.css.map",
-    "main.64fe6c71.js.map": "/car-rent-fullstack/static/js/main.64fe6c71.js.map",
-    "812.9817457d.chunk.js.map": "/car-rent-fullstack/static/js/812.9817457d.chunk.js.map",
-    "78.94eb43f3.chunk.js.map": "/car-rent-fullstack/static/js/78.94eb43f3.chunk.js.map",
-    "727.15059261.chunk.js.map": "/car-rent-fullstack/static/js/727.15059261.chunk.js.map",
+    "main.90112b81.js.map": "/car-rent-fullstack/static/js/main.90112b81.js.map",
+    "812.e4b570e6.chunk.js.map": "/car-rent-fullstack/static/js/812.e4b570e6.chunk.js.map",
+    "78.9a8a63ae.chunk.js.map": "/car-rent-fullstack/static/js/78.9a8a63ae.chunk.js.map",
+    "727.704c51e4.chunk.js.map": "/car-rent-fullstack/static/js/727.704c51e4.chunk.js.map",
     "411.9cc5973b.chunk.js.map": "/car-rent-fullstack/static/js/411.9cc5973b.chunk.js.map",
     "157.da35a7e3.chunk.js.map": "/car-rent-fullstack/static/js/157.da35a7e3.chunk.js.map",
     "471.39b30f54.chunk.js.map": "/car-rent-fullstack/static/js/471.39b30f54.chunk.js.map",
@@ -38,6 +38,6 @@
   },
   "entrypoints": [
     "static/css/main.4a41eecd.css",
-    "static/js/main.64fe6c71.js"
+    "static/js/main.90112b81.js"
   ]
 }
