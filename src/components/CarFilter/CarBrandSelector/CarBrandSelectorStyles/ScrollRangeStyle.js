@@ -11,7 +11,11 @@ const ScrollRangeStatorStyleBase = styled.div`
 
 const ScrollRangeRotorStyleBase = styled.div`
   position: absolute;
+
   width: 8px;
+  height: ${({ height }) => {
+    return height;
+  }}px;
   right: 0px;
 
   background-color: rgba(18, 20, 23, 0.05);
