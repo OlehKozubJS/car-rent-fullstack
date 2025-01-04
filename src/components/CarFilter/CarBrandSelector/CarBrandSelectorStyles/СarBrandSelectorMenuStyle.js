@@ -2,7 +2,9 @@ import styled from "@emotion/styled";
 
 const CarBrandSelectorMenuContainerStyleBase = styled.div`
   box-sizing: border-box;
-
+  height: ${({ height }) => {
+    return height;
+  }};
   width: 224px;
 
   padding-block: 14px;
