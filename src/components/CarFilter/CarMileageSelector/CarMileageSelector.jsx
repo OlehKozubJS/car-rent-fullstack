@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { CarMileageSelectorInputStyleBase } from "./CarMileageSelectorStyle";
+import { CarMileageSelectorLabelStyleBase } from "./CarMileageSelectorStyle";
 
 const CarMileageSelector = ({ cars }) => {
   const [carBrands] = useState(cars);
@@ -9,9 +9,9 @@ const CarMileageSelector = ({ cars }) => {
     <div>
       <h3>Car mileage / km</h3>
 
-      <CarMileageSelectorInputStyleBase htmlFor="mileageFrom">
+      <CarMileageSelectorLabelStyleBase htmlFor="mileageFrom">
         <input id="mileageFrom" type="number" placeholder="From" />
-      </CarMileageSelectorInputStyleBase>
+      </CarMileageSelectorLabelStyleBase>
 
       <label htmlFor="mileageTo">
         <input id="mileageTo" type="number" placeholder="To" />
