@@ -46,5 +46,5 @@ const ScrollRange = ({ value, onChange, statorHeight, rotorHeight }) => {
     </ScrollRangeStatorStyleBase>
   );
 };
-
+//
 export { ScrollRange };
