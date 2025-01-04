@@ -16,8 +16,7 @@ const RouterNavigation = ({ pages, currentLocation }) => {
             isactive={"false"}
           >
             {pageTitle}
-            {(currentLocation === pagePath).toString()}
-            {JSON.stringify(currentLocation)}
+            {(currentLocation.pathname === pagePath).toString()}
           </RouterNavigationLinkStyleBase>
         );
       })}
