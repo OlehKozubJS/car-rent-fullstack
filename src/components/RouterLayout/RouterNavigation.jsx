@@ -17,6 +17,7 @@ const RouterNavigation = ({ pages, currentLocation }) => {
           >
             {pageTitle}
             {(currentLocation === pagePath).toString()}
+            {JSON.stringify(currentLocation)}
           </RouterNavigationLinkStyleBase>
         );
       })}
