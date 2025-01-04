@@ -21,6 +21,8 @@ const CarBrandSelectorMenuContainerStyleBase = styled.div`
   align-items: flex-start;
 
   position: relative;
+  position: absolute;
+  top: 0px;
 `;
 
 export { CarBrandSelectorMenuContainerStyleBase };
