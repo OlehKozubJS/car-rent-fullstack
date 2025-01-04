@@ -2,6 +2,8 @@ import styled from "@emotion/styled";
 
 const CarFilterContainer = styled.div`
   display: flex;
+  justify-content: center;
+  column: 18px;
 `;
 
 const CarFilterHeader = styled.h3`
@@ -13,4 +15,4 @@ const CarFilterHeader = styled.h3`
   margin-bottom: 8px;
 `;
 
-export { CarFilterHeader };
+export { CarFilterContainer, CarFilterHeader };
