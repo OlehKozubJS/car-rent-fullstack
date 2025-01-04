@@ -9,7 +9,7 @@ import {
 
 import { CarFilterHeader } from "./imports";
 
-const CarPriceSelector = ({ value, onMinChange, onMaxChange }) => {
+const CarPriceSelector = ({ minValue, maxValue, onMinChange, onMaxChange }) => {
   return (
     <div>
       <CarFilterHeader>Car price / 1 hour / dollars</CarFilterHeader>
