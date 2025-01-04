@@ -19,6 +19,10 @@ const CarMileageSelectorLabelStyleBase = styled.label`
   }
 `;
 
+const CarMileageSelectorLabelFromStyleBase = styled.label``;
+
+const CarMileageSelectorLabelToStyleBase = styled.label``;
+
 const CarMileageSelectorInputStyleBase = styled.input`
   outline: none;
   border: none;
