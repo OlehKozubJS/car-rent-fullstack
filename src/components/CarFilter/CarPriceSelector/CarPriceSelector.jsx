@@ -13,22 +13,23 @@ const CarPriceSelector = ({ cars }) => {
   return (
     <div>
       <h3>Car price / dollars</h3>
+      <div style={{ display: "flex" }}>
+        <CarPriceSelectorLabelFromStyleBase htmlFor="mileageFrom">
+          <CarPriceSelectorInputStyleBase
+            id="mileageFrom"
+            type="number"
+            placeholder="From"
+          />
+        </CarPriceSelectorLabelFromStyleBase>
 
-      <CarPriceSelectorLabelFromStyleBase htmlFor="mileageFrom">
-        <CarPriceSelectorInputStyleBase
-          id="mileageFrom"
-          type="number"
-          placeholder="From"
-        />
-      </CarPriceSelectorLabelFromStyleBase>
-
-      <CarPriceSelectorLabelToStyleBase htmlFor="mileageTo">
-        <CarPriceSelectorInputStyleBase
-          id="mileageTo"
-          type="number"
-          placeholder="To"
-        />
-      </CarPriceSelectorLabelToStyleBase>
+        <CarPriceSelectorLabelToStyleBase htmlFor="mileageTo">
+          <CarPriceSelectorInputStyleBase
+            id="mileageTo"
+            type="number"
+            placeholder="To"
+          />
+        </CarPriceSelectorLabelToStyleBase>
+      </div>
     </div>
   );
 };
