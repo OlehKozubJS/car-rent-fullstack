@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Routes, Route, useParams } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import { carsLocalData, makesLocalData } from "./database";
 
@@ -18,7 +18,7 @@ const [MainPage, FavouriteCarsPage, TestPage] = lazyLoader([
 const App = () => {
   const [favouriteCars, setFavouriteCars] = useState([]);
 
-  const parameters = useParams();
+  const parameters = useLocation();
   useEffect(() => {
     console.log(parameters);
   }, [parameters]);
