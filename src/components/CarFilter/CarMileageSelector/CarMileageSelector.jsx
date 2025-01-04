@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
 import {
-  CarMileageSelectorLabelStyleBase,
   CarMileageSelectorLabelFromStyleBase,
   CarMileageSelectorLabelToStyleBase,
 } from "./CarMileageSelectorStyle";
