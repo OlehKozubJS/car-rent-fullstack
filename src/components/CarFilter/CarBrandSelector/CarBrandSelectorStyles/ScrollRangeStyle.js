@@ -16,6 +16,9 @@ const ScrollRangeRotorStyleBase = styled.div`
   height: ${({ height }) => {
     return height;
   }}px;
+  top: ${({ top }) => {
+    return top;
+  }}px;
   right: 0px;
 
   background-color: rgba(18, 20, 23, 0.05);
