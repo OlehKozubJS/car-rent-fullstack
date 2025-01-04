@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 
+import { CarBrandSelectorInputStyleBase } from "./CarMileageSelectorStyle";
+
 const CarMileageSelector = ({ cars }) => {
   const [carBrands] = useState(cars);
 
