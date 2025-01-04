@@ -2,7 +2,7 @@ import {
   CarModalItemsStyleBase,
   CarModalItemStyleBase,
   CarModalItemValueStyleBase,
-} from "../CarModalStyles";
+} from "../CarModalStyle";
 
 export {
   CarModalItemsStyleBase,
