@@ -4,7 +4,7 @@ import {
   CarBrandSelectorInputLabelStyleBase,
   CarBrandSelectorInputStyleBase,
   CarBrandSelectorInputButtonStyleBase,
-} from "./CarBrandSelectorStyles";
+} from "./СarBrandSelectorInputStyle";
 
 import { SVGimage } from "../imports";
 
