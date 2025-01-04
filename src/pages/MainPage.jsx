@@ -22,7 +22,9 @@ const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
     maMileage,
     minPrice,
     maxPrice,
-  }) => {};
+  }) => {
+    setFilteredCars(cars.filter(() => {}));
+  };
 
   return (
     <section>
