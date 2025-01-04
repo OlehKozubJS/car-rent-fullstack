@@ -19,9 +19,6 @@ const App = () => {
   const [favouriteCars, setFavouriteCars] = useState([]);
 
   const location = useLocation();
-  useEffect(() => {
-    console.log(location);
-  }, [location]);
 
   const addFavouriteCar = (car) => {
     setFavouriteCars([...favouriteCars, car]);
@@ -44,6 +41,7 @@ const App = () => {
               { pagePath: "/FavouriteCars", pageTitle: "Favourite Cars" },
               { pagePath: "/Test", pageTitle: "Test" },
             ]}
+            currentLocation={location}
           />
         }
       >
