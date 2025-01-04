@@ -37,7 +37,7 @@ const CarFilter = ({ carBrands, onSubmit }) => {
   };
 
   const handleSubmit = () => {
-    onSubmit();
+    onSubmit({ carBrand, minMileage, maxMileage, minPrice, maxPrice });
   };
 
   return (
