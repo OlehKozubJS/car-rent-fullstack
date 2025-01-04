@@ -7,7 +7,7 @@ const CarFilter = ({ cars, carBrands }) => {
     <form>
       <CarBrandSelector carBrands={carBrands} />
 
-      <CarMileageSelector cars={cars} />
+      <CarMileageSelector />
 
       <CarPriceSelector />
 
