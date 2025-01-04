@@ -16,7 +16,9 @@ const CarFilter = ({ cars, carBrands }) => {
 
       <CarPriceSelector />
 
-      <button type="submit">Search</button>
+      <CarFilterSubmitButtonStyleBase type="submit">
+        Search
+      </CarFilterSubmitButtonStyleBase>
     </CarFilterContainer>
   );
 };
