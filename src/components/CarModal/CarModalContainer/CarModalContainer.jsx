@@ -1,7 +1,7 @@
 import {
   CarModalBackdropStyleBase,
   CarModalContainerStyleBase,
-} from "./CarModalContainerStyles";
+} from "./CarModalContainerStyle";
 
 const CarModalContainer = ({ children }) => {
   return (
