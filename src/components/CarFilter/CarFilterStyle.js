@@ -5,6 +5,8 @@ const CarFilterContainer = styled.form`
   flex-wrap: wrap;
   justify-content: center;
   column-gap: 18px;
+
+  margin-bottom: 50px;
 `;
 
 const CarFilterHeader = styled.h3`
