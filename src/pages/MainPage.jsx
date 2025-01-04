@@ -15,20 +15,21 @@ const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
   const closeModal = () => {
     setIsModal(false);
   };
-  //
+  /*  { make, mileage, rentalPrice }) =>
+          (carBrand && make === carBrand) || true)
+  &&
+            (minMileage &&
+            minMileage <= mileage) ||
+          true) && (maxMileage && maxMileage >= mileage || true)
+  */
   const handleFilteredCars = ({
     carBrand,
     minMileage,
-    maMileage,
+    maxMileage,
     minPrice,
     maxPrice,
   }) => {
-    setFilteredCars(
-      cars.filter(
-        ({ make, rentalPrice, mileage }) =>
-          carBrand && make === carBrand && rentalPrice
-      )
-    );
+    setFilteredCars(cars.filter());
   };
 
   return (
