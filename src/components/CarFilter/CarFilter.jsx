@@ -16,6 +16,8 @@ const CarFilter = ({ carBrands, onSubmit }) => {
   const [] = useState();
   const [] = useState();
 
+  const handleCarBrand = () => {};
+
   const handleSubmit = () => {
     onSubmit();
   };
