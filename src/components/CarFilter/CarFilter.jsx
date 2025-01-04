@@ -20,13 +20,13 @@ const CarFilter = ({ carBrands, onSubmit }) => {
     setCarBrand(newCarBrand);
   };
 
-  const handleMinMileage = (minMileage) => {};
+  const handleMinMileage = (newMinMileage) => {setMinMileage(newMinMileage)};
 
-  const handleMaxMileage = (maxMileage) => {};
+  const handleMaxMileage = (newMaxMileage) => {setMaxMileage(newMaxMileage)};
 
-  const handleMinPrice = (minPrice) => {};
+  const handleMinPrice = (newMinPrice) => {setMinPrice(newMinPrice)};
 
-  const handleMaxPrice = (maxPrice) => {};
+  const handleMaxPrice = (newMaxPrice) => {setMaxPrice(newMaxPrice)};
 
   const handleSubmit = () => {
     onSubmit();
