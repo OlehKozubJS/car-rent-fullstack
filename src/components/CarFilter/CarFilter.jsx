@@ -36,7 +36,8 @@ const CarFilter = ({ carBrands, onSubmit }) => {
     setMaxPrice(newMaxPrice);
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
     onSubmit({ carBrand, minMileage, maxMileage, minPrice, maxPrice });
   };
 
