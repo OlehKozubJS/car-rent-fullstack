@@ -1,5 +1,12 @@
 import { useState, useEffect } from "react";
 
+import {
+  CarPriceSelectorLabelFromStyleBase,
+  CarPriceSelectorLabelToStyleBase,
+  CarPriceSelectorInputStyleBase,
+  CarPriceSelectorDividerStyleBase,
+} from "./CarPriceSelectorStyle";
+
 const CarPriceSelector = ({ cars }) => {
   const [carBrands] = useState(cars);
 
