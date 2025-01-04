@@ -23,7 +23,11 @@ const CarMileageSelector = ({ cars }) => {
         </CarMileageSelectorLabelFromStyleBase>
         <CarMileageSelectorDividerStyleBase />
         <CarMileageSelectorLabelToStyleBase htmlFor="mileageTo">
-          <input id="mileageTo" type="text" placeholder="To" />
+          <CarMileageSelectorInputStyleBase
+            id="mileageTo"
+            type="text"
+            placeholder="To"
+          />
         </CarMileageSelectorLabelToStyleBase>
       </div>
     </div>
