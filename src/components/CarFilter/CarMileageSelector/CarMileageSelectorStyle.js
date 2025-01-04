@@ -40,11 +40,7 @@ const CarMileageSelectorInputStyleBase = styled.input`
 `;
 
 const CarMileageSelectorDividerStyleBase = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  border: none;
+  background-color: rgba(138, 138, 137, 0.2);
 `;
 
 export {
