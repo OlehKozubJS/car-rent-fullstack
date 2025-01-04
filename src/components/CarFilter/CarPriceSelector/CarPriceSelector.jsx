@@ -14,13 +14,21 @@ const CarPriceSelector = ({ cars }) => {
     <div>
       <h3>Car price / dollars</h3>
 
-      <label htmlFor="mileageFrom">
-        <input id="mileageFrom" type="number" placeholder="From" />
-      </label>
+      <CarPriceSelectorLabelFromStyleBase htmlFor="mileageFrom">
+        <CarPriceSelectorInputStyleBase
+          id="mileageFrom"
+          type="number"
+          placeholder="From"
+        />
+      </CarPriceSelectorLabelFromStyleBase>
 
-      <label htmlFor="mileageTo">
-        <input id="mileageTo" type="number" placeholder="To" />
-      </label>
+      <CarPriceSelectorLabelToStyleBase htmlFor="mileageTo">
+        <CarPriceSelectorInputStyleBase
+          id="mileageTo"
+          type="number"
+          placeholder="To"
+        />
+      </CarPriceSelectorLabelToStyleBase>
     </div>
   );
 };
