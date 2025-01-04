@@ -7,7 +7,7 @@ import {
   CarFilterSubmitButtonStyleBase,
 } from "./CarFilterStyle";
 
-const CarFilter = ({ cars, carBrands }) => {
+const CarFilter = ({ carBrands }) => {
   return (
     <CarFilterContainer>
       <CarBrandSelector carBrands={carBrands} />
