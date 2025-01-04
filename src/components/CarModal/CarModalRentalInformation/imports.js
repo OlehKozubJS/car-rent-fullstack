@@ -1,3 +1,3 @@
-import { CarModalSubHeaderStyleBase } from "../CarModalStyles";
+import { CarModalSubHeaderStyleBase } from "../CarModalStyle";
 
 export { CarModalSubHeaderStyleBase };
