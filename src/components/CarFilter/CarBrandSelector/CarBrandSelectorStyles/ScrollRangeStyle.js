@@ -2,7 +2,9 @@ import styled from "@emotion/styled";
 
 const ScrollRangeStatorStyleBase = styled.div`
   width: 8px;
-  height: ${}px;
+  height: ${({ height }) => {
+    return height;
+  }}px;
 
   position: relative;
 `;
