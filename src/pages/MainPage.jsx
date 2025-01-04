@@ -16,7 +16,7 @@ const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
     setIsModal(false);
   };
 
-  const handleSubmit = () => {};
+  const handleFilteredCars = (query) => {};
 
   return (
     <section>
@@ -24,9 +24,7 @@ const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
       <CarFilter
         cars={cars}
         carBrands={carBrands}
-        onSubmit={(data) => {
-          console.log(data);
-        }}
+        onSubmit={handleFilteredCars}
       />
       <CarGallery
         cars={cars}
