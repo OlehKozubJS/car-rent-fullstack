@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const CarMileageSelectorLabelStyleBase = styled.label`
+const CarMileageSelectorLabelStyleBase = `
   display: flex;
   justify-content: space-between;
 
@@ -25,7 +25,7 @@ const CarMileageSelectorLabelFromStyleBase = styled.label`
 
 const CarMileageSelectorLabelToStyleBase = styled.label`
   ${CarMileageSelectorLabelStyleBase}
-  border-radius: 14px 0px 0px 14px;
+  border-radius: 0px 14px 14px 0px;
 `;
 
 const CarMileageSelectorInputStyleBase = styled.input`
