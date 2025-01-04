@@ -16,4 +16,27 @@ const CarFilterHeader = styled.h3`
   margin-bottom: 8px;
 `;
 
+const CarGalleryButtonStyleBase = styled.button`
+  margin-top: 28px;
+
+  display: inline-flex;
+  padding: 12px 50px;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  border-radius: 12px;
+  background-color: rgb(52, 112, 255);
+
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+
+  font-family: "Manrope-SemiBold", sans-serif;
+
+  &:hover {
+    background-color: rgb(11, 68, 205);
+  }
+`;
+
 export { CarFilterContainer, CarFilterHeader };
