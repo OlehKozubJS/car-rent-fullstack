@@ -26,10 +26,7 @@ const CarFilter = ({ carBrands, onSubmit }) => {
 
   return (
     <CarFilterContainer onSubmit={handleSubmit}>
-      <CarBrandSelector
-        carBrands={carBrands}
-        onChange={(carBrand) => console.log(carBrand)}
-      />
+      <CarBrandSelector carBrands={carBrands} onChange={handleCarBrand} />
 
       <CarMileageSelector />
 
