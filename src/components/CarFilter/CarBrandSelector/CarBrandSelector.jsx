@@ -11,7 +11,7 @@ import {
 import { CarFilterHeader } from "./imports";
 
 const CarBrandSelector = ({ carBrands, onChange }) => {
-  const [filteredCarBrands, setFilteredCarBrands] = useState([]);
+  const [filteredCarBrands, setFilteredCarBrands] = useState(carBrands);
   const [searchQuery, setSearchQuery] = useState("");
   const [isCarBrandsOptions, setIsCarBrandsOptions] = useState(false);
 
@@ -33,10 +33,6 @@ const CarBrandSelector = ({ carBrands, onChange }) => {
   const handleSearchQuery = (value) => {
     setSearchQuery(value);
   };
-
-  useEffect(() => {
-    setFilteredCarBrands(carBrands);
-  }, [carBrands]);
 
   useEffect(() => {
     const newFilteredCarBrands = carBrands.filter((carBrand) =>
