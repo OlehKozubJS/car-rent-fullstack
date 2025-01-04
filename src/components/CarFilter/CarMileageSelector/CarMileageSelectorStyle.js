@@ -40,6 +40,6 @@ const CarMileageSelectorDividerStyleBase = styled.button`
 
 export {
   CarMileageSelectorLabelStyleBase,
-  CarMileageSelectorDividerStyleBase,
+  CarMileageSelectorInputStyleBase,
   CarMileageSelectorDividerStyleBase,
 };
