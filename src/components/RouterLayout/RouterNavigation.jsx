@@ -5,12 +5,12 @@ import {
   RouterNavigationLinkStyleBase,
 } from "./RouterLayoutStyle";
 
-const RouterNavigation = ({ pages }) => {
+const RouterNavigation = ({ pages, currentLocation }) => {
   return (
     <RouterNavigationContainerStyleBase>
       {pages.map(({ pagePath, pageTitle }, pageIndex) => {
         return (
-          <RouterNavigationLinkStyleBase key={pageIndex} to={pagePath}>
+          <RouterNavigationLinkStyleBase key={pageIndex} to={pagePath} isActive>
             {pageTitle}
           </RouterNavigationLinkStyleBase>
         );
