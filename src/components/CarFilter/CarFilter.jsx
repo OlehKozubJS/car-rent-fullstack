@@ -10,7 +10,9 @@ import {
 } from "./CarFilterStyle";
 
 const CarFilter = ({ carBrands, onSubmit }) => {
-  const handleSubmit = () => {};
+  const handleSubmit = () => {
+    onSubmit();
+  };
 
   return (
     <CarFilterContainer onSubmit={handleSubmit}>
