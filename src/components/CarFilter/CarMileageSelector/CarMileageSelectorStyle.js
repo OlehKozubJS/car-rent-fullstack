@@ -10,7 +10,6 @@ const CarMileageSelectorLabelStyleBase = styled.label`
   padding: 14px 18px;
 
   background-color: rgb(247, 247, 251);
-  border-radius: 14px 0px 0px 14px;
 
   margin-bottom: 4px;
 
@@ -19,9 +18,15 @@ const CarMileageSelectorLabelStyleBase = styled.label`
   }
 `;
 
-const CarMileageSelectorLabelFromStyleBase = styled.label``;
+const CarMileageSelectorLabelFromStyleBase = styled.label`
+  ${CarMileageSelectorLabelStyleBase}
+  border-radius: 14px 0px 0px 14px;
+`;
 
-const CarMileageSelectorLabelToStyleBase = styled.label``;
+const CarMileageSelectorLabelToStyleBase = styled.label`
+  ${CarMileageSelectorLabelStyleBase}
+  border-radius: 14px 0px 0px 14px;
+`;
 
 const CarMileageSelectorInputStyleBase = styled.input`
   outline: none;
@@ -44,6 +49,8 @@ const CarMileageSelectorDividerStyleBase = styled.button`
 
 export {
   CarMileageSelectorLabelStyleBase,
+  CarMileageSelectorLabelFromStyleBase,
+  CarMileageSelectorLabelToStyleBase,
   CarMileageSelectorInputStyleBase,
   CarMileageSelectorDividerStyleBase,
 };
