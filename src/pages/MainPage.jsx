@@ -30,10 +30,7 @@ const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
   }) => {
     console.log({ carBrand, minMileage, maxMileage, minPrice, maxPrice });
     setFilteredCars(
-      cars.filter(
-        ({ make, mileage, rentalPrice }) =>
-          (carBrand && make === carBrand) || true
-      )
+      cars.filter(({ make, mileage, rentalPrice }) => make === carBrand)
     );
   };
 
