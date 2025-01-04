@@ -6,7 +6,7 @@ import { CarFilterContainer } from "./CarFilterStyle";
 
 const CarFilter = ({ cars, carBrands }) => {
   return (
-    <form>
+    <CarFilterContainer>
       <CarBrandSelector carBrands={carBrands} />
 
       <CarMileageSelector />
@@ -14,7 +14,7 @@ const CarFilter = ({ cars, carBrands }) => {
       <CarPriceSelector />
 
       <button type="submit">Search</button>
-    </form>
+    </CarFilterContainer>
   );
 };
 
