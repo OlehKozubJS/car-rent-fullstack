@@ -1,4 +1,4 @@
-import { CarModalDescriptionStyleBase } from "./CarModalDescriptionStyles";
+import { CarModalDescriptionStyleBase } from "./CarModalDescriptionStyle";
 
 const CarModalDescription = ({ description }) => {
   return (
