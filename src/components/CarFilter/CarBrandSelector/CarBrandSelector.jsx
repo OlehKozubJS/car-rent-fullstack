@@ -3,7 +3,10 @@ import { useState, useEffect } from "react";
 import { CarBrandSelectorInput } from "./CarBrandSelectorInput";
 import { CarBrandSelectorMenu } from "./CarBrandSelectorMenu";
 
-import { CarBrandSelectorNotFoundMessageStyleBase } from "./СarBrandSelectorStyle";
+import {
+  CarBrandSelectorContainerStyleBase,
+  CarBrandSelectorNotFoundMessageStyleBase,
+} from "./СarBrandSelectorStyle";
 
 import { CarFilterHeader } from "./imports";
 
@@ -43,7 +46,7 @@ const CarBrandSelector = ({ carBrands }) => {
   }, [searchQuery]);
 
   return (
-    <div>
+    <CarBrandSelectorContainerStyleBase>
       <CarFilterHeader>Car brand</CarFilterHeader>
       <CarBrandSelectorInput
         inputValue={searchQuery}
@@ -62,7 +65,7 @@ const CarBrandSelector = ({ carBrands }) => {
             Sorry, no results found
           </CarBrandSelectorNotFoundMessageStyleBase>
         ))}
-    </div>
+    </CarBrandSelectorContainerStyleBase>
   );
 };
 
