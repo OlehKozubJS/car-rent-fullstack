@@ -4,6 +4,7 @@ import { CarFilter, CarGallery, CarModal } from "./imports";
 // make rentalPrice mileage
 const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
   const [isModal, setIsModal] = useState(false);
+  const [filteredCars, setFilteredCars] = useState();
   const [car, setCar] = useState(null);
 
   const openModal = (newCar) => {
@@ -14,6 +15,8 @@ const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
   const closeModal = () => {
     setIsModal(false);
   };
+
+  const handleSubmit = () => {};
 
   return (
     <section>
