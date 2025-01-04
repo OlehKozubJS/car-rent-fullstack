@@ -7,9 +7,7 @@ import {
   CarPriceSelectorDividerStyleBase,
 } from "./CarPriceSelectorStyle";
 
-const CarPriceSelector = ({ cars }) => {
-  const [carBrands] = useState(cars);
-
+const CarPriceSelector = () => {
   return (
     <div>
       <h3>Car price / dollars</h3>
