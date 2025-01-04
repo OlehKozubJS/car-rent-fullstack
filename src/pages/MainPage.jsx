@@ -15,12 +15,7 @@ const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
   const closeModal = () => {
     setIsModal(false);
   };
-  /*  
-    && (!minMileage || Number(minMileage) <= mileage) 
-    && (!maxMileage || Number(maxMileage) >= mileage)
-    && (!minPrice || Number(minPrice) <= rentalPrice)
-    && (!maxPrice || Number(maxPrice) >= rentalPrice)
-  */
+
   const handleFilteredCars = ({
     carBrand,
     minMileage,
