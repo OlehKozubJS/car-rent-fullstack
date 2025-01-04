@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 const CarModalLinkStyleBase = styled.a`
-  display: inline-flex;
+  display: flex;
   padding: 12px 50px;
   justify-content: center;
   align-items: center;
