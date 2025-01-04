@@ -37,7 +37,9 @@ const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
     );
   };
 
-  useEffect(() => {}, [filteredCars]);
+  useEffect(() => {
+    console.log(filteredCars);
+  }, [filteredCars]);
 
   return (
     <section>
