@@ -1,3 +1,3 @@
-import { CarModalItemValueStyleBase } from "../CarModalStyles";
+import { CarModalItemValueStyleBase } from "../CarModalStyle";
 
 export { CarModalItemValueStyleBase };
