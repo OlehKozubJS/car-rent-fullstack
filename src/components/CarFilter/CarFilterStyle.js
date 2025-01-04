@@ -16,7 +16,7 @@ const CarFilterHeader = styled.h3`
   margin-bottom: 8px;
 `;
 
-const CarGalleryButtonStyleBase = styled.button`
+const CarFilterButtonButtonStyleBase = styled.button`
   margin-top: 28px;
 
   display: inline-flex;
