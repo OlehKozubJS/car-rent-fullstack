@@ -1,3 +1,4 @@
+import { CarFilterHeader } from "../CarFilterStyle";
 import { SVGimage } from "../imports";
 
-export { SVGimage };
+export { SVGimage, CarFilterHeader };
