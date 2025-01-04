@@ -2,10 +2,7 @@ import { useState, useEffect } from "react";
 
 import { SVGimage } from "../imports";
 
-import {
-  CarModalCloseButtonContainerStyleBase,
-  CarModalCloseButtonStyleBase,
-} from "./CarModalCloseButtonStyles";
+import { CarModalCloseButtonStyleBase } from "./CarModalCloseButtonStyle";
 
 const CarModalCloseButton = ({ onClose }) => {
   const [isHover, setIsHover] = useState(false);
