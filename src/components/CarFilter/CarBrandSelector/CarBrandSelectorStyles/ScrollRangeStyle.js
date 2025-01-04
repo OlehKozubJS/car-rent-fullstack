@@ -31,7 +31,6 @@ const ScrollRangeRotorStyleBase = styled.div`
   }
 
   &:active {
-    transition: 500ms;
     background-color: rgba(18, 20, 23, 0.25);
   }
 `;
