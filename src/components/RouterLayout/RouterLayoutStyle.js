@@ -1,4 +1,4 @@
-import styled from "@empotion/styled";
+import styled from "@emotion/styled";
 
 const RouterNavigationContainerStyleBase = styled.nav`
   display: flex;
