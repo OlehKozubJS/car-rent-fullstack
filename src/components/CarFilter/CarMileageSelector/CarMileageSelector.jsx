@@ -7,10 +7,12 @@ import {
   CarMileageSelectorDividerStyleBase,
 } from "./CarMileageSelectorStyle";
 
+import { CarFilterHeader } from "./imports";
+
 const CarMileageSelector = ({ value, onChange }) => {
   return (
     <div>
-      <h3>Car mileage / km</h3>
+      <CarFilterHeader>Car mileage / km</CarFilterHeader>
       <div style={{ display: "flex" }}>
         <CarMileageSelectorLabelFromStyleBase htmlFor="mileageFrom">
           <CarMileageSelectorInputStyleBase
