@@ -1,3 +1,7 @@
 import styled from "@empotion/styled";
 
-//export {};
+const RouterNavigationLinksStyleBase = styled.ul``;
+
+const RouterNavigationLinkStyleBase = styled.li``;
+
+export { RouterNavigationLinksStyleBase, RouterNavigationLinkStyleBase };
