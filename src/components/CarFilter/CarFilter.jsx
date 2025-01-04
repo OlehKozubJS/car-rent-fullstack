@@ -22,6 +22,12 @@ const CarFilter = ({ carBrands, onSubmit }) => {
 
   const handleMinMileage = (minMileage) => {};
 
+  const handleMaxMileage = (maxMileage) => {};
+
+  const handleMinPrice = (minPrice) => {};
+
+  const handleMaxPrice = (maxPrice) => {};
+
   const handleSubmit = () => {
     onSubmit();
   };
