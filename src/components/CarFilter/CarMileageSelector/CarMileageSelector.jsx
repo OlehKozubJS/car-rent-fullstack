@@ -9,9 +9,9 @@ const CarMileageSelector = ({ cars }) => {
     <div>
       <h3>Car mileage / km</h3>
 
-      <label htmlFor="mileageFrom">
+      <CarBrandSelectorInputStyleBase htmlFor="mileageFrom">
         <input id="mileageFrom" type="number" placeholder="From" />
-      </label>
+      </CarBrandSelectorInputStyleBase>
 
       <label htmlFor="mileageTo">
         <input id="mileageTo" type="number" placeholder="To" />
