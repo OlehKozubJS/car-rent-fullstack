@@ -30,9 +30,9 @@ const ScrollRange = ({ value, onChange, statorHeight, rotorHeight }) => {
     setIsDraggable(false);
   };
 
-  useEffect(handleEventListener("mouseup", handleMouseUp), []);
-
   useEffect(handleEventListener("mousemove", handleMouseMove), [isDraggable]);
+
+  useEffect(handleEventListener("mouseup", handleMouseUp), []);
 
   return (
     <ScrollRangeStatorStyleBase height={statorHeight}>
