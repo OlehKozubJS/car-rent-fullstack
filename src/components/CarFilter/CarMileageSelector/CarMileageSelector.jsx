@@ -12,14 +12,15 @@ const CarMileageSelector = ({ cars }) => {
   return (
     <div>
       <h3>Car mileage / km</h3>
-
-      <CarMileageSelectorLabelFromStyleBase htmlFor="mileageFrom">
-        <input id="mileageFrom" type="number" placeholder="From" />
-      </CarMileageSelectorLabelFromStyleBase>
-      <CarMileageSelectorDividerStyleBase />
-      <CarMileageSelectorLabelToStyleBase htmlFor="mileageTo">
-        <input id="mileageTo" type="number" placeholder="To" />
-      </CarMileageSelectorLabelToStyleBase>
+      <div>
+        <CarMileageSelectorLabelFromStyleBase htmlFor="mileageFrom">
+          <input id="mileageFrom" type="number" placeholder="From" />
+        </CarMileageSelectorLabelFromStyleBase>
+        <CarMileageSelectorDividerStyleBase />
+        <CarMileageSelectorLabelToStyleBase htmlFor="mileageTo">
+          <input id="mileageTo" type="number" placeholder="To" />
+        </CarMileageSelectorLabelToStyleBase>
+      </div>
     </div>
   );
 };
