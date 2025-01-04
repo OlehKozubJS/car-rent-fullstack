@@ -10,7 +10,7 @@ const CarMileageSelectorLabelStyleBase = styled.label`
   padding: 14px 18px;
 
   background-color: rgb(247, 247, 251);
-  border-radius: 14px;
+  border-radius: 14px 0px 0px 14px;
 
   margin-bottom: 4px;
 
