@@ -35,13 +35,16 @@ const ScrollRange = ({ value, onChange, statorHeight, rotorHeight }) => {
   useEffect(handleEventListener("mousemove", handleMouseMove), [isDraggable]);
 
   return (
-    <ScrollRangeStatorStyleBase height={statorHeight}>
+    <ScrollRangeStatorStyleBase
+      height={statorHeight}
+      style={{ top: `${value}px` }}
+    >
       <ScrollRangeRotorStyleBase
         onMouseDown={handleMouseDown}
-        style={{ top: `${value}px`, height: `${rotorHeight}px` }}
+        style={{ height: `${rotorHeight}px` }}
       ></ScrollRangeRotorStyleBase>
     </ScrollRangeStatorStyleBase>
   );
 };
-//      style={{  }}
+
 export { ScrollRange };
