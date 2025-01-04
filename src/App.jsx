@@ -18,10 +18,10 @@ const [MainPage, FavouriteCarsPage, TestPage] = lazyLoader([
 const App = () => {
   const [favouriteCars, setFavouriteCars] = useState([]);
 
-  const parameters = useLocation();
+  const location = useLocation();
   useEffect(() => {
-    console.log(parameters);
-  }, [parameters]);
+    console.log(location);
+  }, [location]);
 
   const addFavouriteCar = (car) => {
     setFavouriteCars([...favouriteCars, car]);
