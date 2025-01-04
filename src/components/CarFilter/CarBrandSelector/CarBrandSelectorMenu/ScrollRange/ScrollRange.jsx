@@ -5,7 +5,7 @@ import { handleEventListener } from "../imports";
 import {
   ScrollRangeStatorStyleBase,
   ScrollRangeRotorStyleBase,
-} from "./CarBrandSelectorStyles";
+} from "./ScrollRangeStyle";
 
 const ScrollRange = ({ value, onChange, statorHeight, rotorHeight }) => {
   const [isDraggable, setIsDraggable] = useState(false);
