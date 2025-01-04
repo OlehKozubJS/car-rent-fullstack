@@ -57,4 +57,4 @@ const TestPage = () => {
   );
 };
 
-export default TestPage;
+export { TestPage };
