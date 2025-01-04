@@ -4,7 +4,7 @@ import {
   CarModalRentalItemsStyleBase,
   CarModalRentalItemStyleBase,
   CarModalRentalItemValueStyleBase,
-} from "./CarModalRentalInformationStyles";
+} from "./CarModalRentalInformationStyle";
 
 const CarModalRentalInformation = ({
   rentalConditions,
