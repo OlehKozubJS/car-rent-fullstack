@@ -20,13 +20,21 @@ const CarFilter = ({ carBrands, onSubmit }) => {
     setCarBrand(newCarBrand);
   };
 
-  const handleMinMileage = (newMinMileage) => {setMinMileage(newMinMileage)};
+  const handleMinMileage = (newMinMileage) => {
+    setMinMileage(newMinMileage);
+  };
 
-  const handleMaxMileage = (newMaxMileage) => {setMaxMileage(newMaxMileage)};
+  const handleMaxMileage = (newMaxMileage) => {
+    setMaxMileage(newMaxMileage);
+  };
 
-  const handleMinPrice = (newMinPrice) => {setMinPrice(newMinPrice)};
+  const handleMinPrice = (newMinPrice) => {
+    setMinPrice(newMinPrice);
+  };
 
-  const handleMaxPrice = (newMaxPrice) => {setMaxPrice(newMaxPrice)};
+  const handleMaxPrice = (newMaxPrice) => {
+    setMaxPrice(newMaxPrice);
+  };
 
   const handleSubmit = () => {
     onSubmit();
@@ -36,9 +44,19 @@ const CarFilter = ({ carBrands, onSubmit }) => {
     <CarFilterContainer onSubmit={handleSubmit}>
       <CarBrandSelector carBrands={carBrands} onChange={handleCarBrand} />
 
-      <CarMileageSelector minValue={} maxValue={} onMinChange={handleMinMileage} onMaxChange={handleMaxMileage} />
+      <CarMileageSelector
+        minValue={minMileage}
+        maxValue={maxMileage}
+        onMinChange={handleMinMileage}
+        onMaxChange={handleMaxMileage}
+      />
 
-      <CarPriceSelector minValue={} maxValue={} onMaxChange={handleMinPrice} onMaxChange={handleMaxPrice} />
+      <CarPriceSelector
+        minValue={minPrice}
+        maxValue={maxPrice}
+        onMinChange={handleMinPrice}
+        onMaxChange={handleMaxPrice}
+      />
 
       <CarFilterSubmitButtonStyleBase type="submit">
         Search
