@@ -11,14 +11,16 @@ import {
 
 const CarFilter = ({ carBrands, onSubmit }) => {
   const [carBrand, setCarBrand] = useState("");
-  const [] = useState();
-  const [] = useState();
-  const [] = useState();
-  const [] = useState();
+  const [minMileage, setMinMileage] = useState(0);
+  const [maxMileage, setMaxMileage] = useState(0);
+  const [minPrice, setMinPrice] = useState(0);
+  const [maxPrice, setMaxPrice] = useState(0);
 
   const handleCarBrand = (newCarBrand) => {
     setCarBrand(newCarBrand);
   };
+
+  const handleMinMileage = (minMileage) => {};
 
   const handleSubmit = () => {
     onSubmit();
@@ -28,9 +30,9 @@ const CarFilter = ({ carBrands, onSubmit }) => {
     <CarFilterContainer onSubmit={handleSubmit}>
       <CarBrandSelector carBrands={carBrands} onChange={handleCarBrand} />
 
-      <CarMileageSelector />
+      <CarMileageSelector minValue={} maxValue={} onMinChange={} onMaxChange={} />
 
-      <CarPriceSelector />
+      <CarPriceSelector minValue={} maxValue={} onMaxChange={} onMaxChange={} />
 
       <CarFilterSubmitButtonStyleBase type="submit">
         Search
