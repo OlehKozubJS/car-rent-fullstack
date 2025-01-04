@@ -21,7 +21,7 @@ const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
       <CarFilter
         cars={cars}
         carBrands={carBrands}
-        onSubmit={({ data }) => {
+        onSubmit={(data) => {
           console.log(data);
         }}
       />
