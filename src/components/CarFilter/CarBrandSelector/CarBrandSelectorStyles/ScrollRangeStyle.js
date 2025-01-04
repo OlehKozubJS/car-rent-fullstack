@@ -25,13 +25,13 @@ const ScrollRangeRotorStyleBase = styled.div`
 
   border-radius: 10px;
 
-  transition: 500ms;
-
   &:hover {
+    transition: 500ms;
     background-color: rgba(18, 20, 23, 0.5);
   }
 
   &:active {
+    transition: 500ms;
     background-color: rgba(18, 20, 23, 0.25);
   }
 `;
