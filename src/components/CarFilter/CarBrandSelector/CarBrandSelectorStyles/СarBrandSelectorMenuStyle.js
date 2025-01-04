@@ -4,7 +4,7 @@ const CarBrandSelectorMenuContainerStyleBase = styled.div`
   box-sizing: border-box;
   height: ${({ height }) => {
     return height;
-  }};
+  }}px;
   width: 224px;
 
   padding-block: 14px;
