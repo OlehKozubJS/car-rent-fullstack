@@ -10,7 +10,11 @@ const RouterNavigation = ({ pages, currentLocation }) => {
     <RouterNavigationContainerStyleBase>
       {pages.map(({ pagePath, pageTitle }, pageIndex) => {
         return (
-          <RouterNavigationLinkStyleBase key={pageIndex} to={pagePath} isActive>
+          <RouterNavigationLinkStyleBase
+            key={pageIndex}
+            to={pagePath}
+            isActive={currentLocation === pagePath}
+          >
             {pageTitle}
           </RouterNavigationLinkStyleBase>
         );
