@@ -13,7 +13,7 @@ const RouterNavigationContainerStyleBase = styled.nav`
 const RouterNavigationLinkStyleBase = styled(NavLink)`
   margin-top: 28px;
 
-  height: 48px;
+  height: 36px;
 
   display: flex;
   padding: 12px 50px;
