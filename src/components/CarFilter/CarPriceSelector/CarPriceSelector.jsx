@@ -14,17 +14,17 @@ const CarPriceSelector = ({ value, onChange }) => {
     <div>
       <CarFilterHeader>Car price / dollars</CarFilterHeader>
       <div style={{ display: "flex" }}>
-        <CarPriceSelectorLabelFromStyleBase htmlFor="mileageFrom">
+        <CarPriceSelectorLabelFromStyleBase htmlFor="priceeFrom">
           <CarPriceSelectorInputStyleBase
-            id="mileageFrom"
+            id="priceFrom"
             type="text"
             placeholder="From"
           />
         </CarPriceSelectorLabelFromStyleBase>
         <CarPriceSelectorDividerStyleBase />
-        <CarPriceSelectorLabelToStyleBase htmlFor="mileageTo">
+        <CarPriceSelectorLabelToStyleBase htmlFor="priceTo">
           <CarPriceSelectorInputStyleBase
-            id="mileageTo"
+            id="priceTo"
             type="text"
             placeholder="To"
           />
