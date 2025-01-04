@@ -5,6 +5,8 @@ import { CarBrandSelectorMenu } from "./CarBrandSelectorMenu";
 
 import { CarBrandSelectorNotFoundMessageStyleBase } from "./CarBrandSelectorStyles";
 
+import { CarFilterHeader } from "./imports";
+
 const CarBrandSelector = ({ carBrands }) => {
   const [filteredCarBrands, setFilteredCarBrands] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
@@ -42,7 +44,7 @@ const CarBrandSelector = ({ carBrands }) => {
 
   return (
     <div>
-      <h3>Car brand</h3>
+      <CarFilterHeader>Car brand</CarFilterHeader>
       <CarBrandSelectorInput
         inputValue={searchQuery}
         onChange={handleSearchQuery}
