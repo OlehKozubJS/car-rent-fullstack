@@ -9,9 +9,11 @@ import {
   CarFilterSubmitButtonStyleBase,
 } from "./CarFilterStyle";
 
-const CarFilter = ({ carBrands }) => {
+const CarFilter = ({ carBrands, onSubmit }) => {
+  const handleSubmit = () => {};
+
   return (
-    <CarFilterContainer onSubmit={}>
+    <CarFilterContainer onSubmit={handleSubmit}>
       <CarBrandSelector carBrands={carBrands} />
 
       <CarMileageSelector />
