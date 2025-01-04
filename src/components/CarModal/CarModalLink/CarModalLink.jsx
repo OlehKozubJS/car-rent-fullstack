@@ -1,4 +1,4 @@
-import { CarModalLinkStyleBase } from "./CarModalLinkStyles";
+import { CarModalLinkStyleBase } from "./CarModalLinkStyle";
 
 const CarModalLink = () => {
   return (
