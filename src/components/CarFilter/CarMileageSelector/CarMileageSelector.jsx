@@ -12,7 +12,7 @@ const CarMileageSelector = ({ cars }) => {
   return (
     <div>
       <h3>Car mileage / km</h3>
-      <div>
+      <div style={{ display: "flex" }}>
         <CarMileageSelectorLabelFromStyleBase htmlFor="mileageFrom">
           <input id="mileageFrom" type="number" placeholder="From" />
         </CarMileageSelectorLabelFromStyleBase>
