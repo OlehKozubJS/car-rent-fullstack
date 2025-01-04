@@ -10,7 +10,7 @@ import {
 } from "./CarFilterStyle";
 
 const CarFilter = ({ carBrands, onSubmit }) => {
-  const [] = useState();
+  const [carBrand, setCarBrand] = useState("");
   const [] = useState();
   const [] = useState();
   const [] = useState();
