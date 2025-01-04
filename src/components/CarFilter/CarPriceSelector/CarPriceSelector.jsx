@@ -12,7 +12,7 @@ import { CarFilterHeader } from "./imports";
 const CarPriceSelector = ({ value, onChange }) => {
   return (
     <div>
-      <CarFilterHeader>Car price / dollars</CarFilterHeader>
+      <CarFilterHeader>Car price / 1 hour / dollars</CarFilterHeader>
       <div style={{ display: "flex" }}>
         <CarPriceSelectorLabelFromStyleBase htmlFor="priceFrom">
           <CarPriceSelectorInputStyleBase
