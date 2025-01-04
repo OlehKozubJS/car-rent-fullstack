@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 const CarFilterContainer = styled.form`
   display: flex;
   justify-content: center;
-  column: 18px;
+  column-gap: 18px;
 `;
 
 const CarFilterHeader = styled.h3`
