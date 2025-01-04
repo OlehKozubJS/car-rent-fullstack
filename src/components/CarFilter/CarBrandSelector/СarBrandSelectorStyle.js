@@ -1,5 +1,9 @@
 import styled from "@emotion/styled";
 
+const CarBrandSelectorContainerStyleBase = styled.div`
+  position: relative;
+`;
+
 const CarBrandSelectorNotFoundMessageStyleBase = styled.div`
   box-sizing: border-box;
 
