@@ -21,7 +21,7 @@ const CarPriceSelector = ({ cars }) => {
             placeholder="From"
           />
         </CarPriceSelectorLabelFromStyleBase>
-
+        <CarPriceSelectorDividerStyleBase />
         <CarPriceSelectorLabelToStyleBase htmlFor="mileageTo">
           <CarPriceSelectorInputStyleBase
             id="mileageTo"
