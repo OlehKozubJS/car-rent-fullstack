@@ -16,7 +16,10 @@ const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
     setIsModal(false);
   };
   /*  
-
+    && ((minMileage && minMileage <= mileage) || true) 
+    && ((maxMileage && maxMileage >= mileage) || true)
+    && ((minPrice && minPrice <= rentalPrice) || true)
+    && ((maxPrice && maxPrice >= rentalPrice) || true)
   */
   const handleFilteredCars = ({
     carBrand,
@@ -29,11 +32,7 @@ const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
     setFilteredCars(
       cars.filter(
         ({ make, mileage, rentalPrice }) =>
-          ((carBrand && make === carBrand) || true) &&
-          ((minMileage && minMileage <= mileage) || true) &&
-          ((maxMileage && maxMileage >= mileage) || true) &&
-          ((minPrice && minPrice <= rentalPrice) || true) &&
-          ((maxPrice && maxPrice >= rentalPrice) || true)
+          (carBrand && make === carBrand) || true
       )
     );
   };
