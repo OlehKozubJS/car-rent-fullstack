@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const CarFilterContainer = styled.div`
+const CarFilterContainer = styled.form`
   display: flex;
   justify-content: center;
   column: 18px;
