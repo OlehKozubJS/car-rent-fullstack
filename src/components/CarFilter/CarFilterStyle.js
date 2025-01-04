@@ -21,6 +21,8 @@ const CarFilterHeader = styled.h3`
 const CarFilterSubmitButtonStyleBase = styled.button`
   margin-top: 28px;
 
+  height: 48px;
+
   display: flex;
   padding: 12px 50px;
   justify-content: center;
