@@ -1,5 +1,5 @@
-import { useEffect, useState, Suspense } from "react";
-import { Routes, Route, NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Routes, Route } from "react-router-dom";
 
 import { carsLocalData, makesLocalData } from "./database";
 
