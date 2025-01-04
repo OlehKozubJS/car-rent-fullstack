@@ -1,5 +1,7 @@
 import styled from "@emotion/styled";
 
+const CarFilterContainer = styled.div``;
+
 const CarFilterHeader = styled.h3`
   font-family: "manrope-medium";
   font-size: 14px;
