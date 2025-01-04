@@ -22,7 +22,7 @@ const CarBrandSelectorMenuContainerStyleBase = styled.div`
   align-items: flex-start;
 
   position: absolute;
-  top: 52px;
+  top: 78px;
 `;
 
 export { CarBrandSelectorMenuContainerStyleBase };
