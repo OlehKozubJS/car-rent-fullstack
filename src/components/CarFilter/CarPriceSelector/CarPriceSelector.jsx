@@ -19,6 +19,7 @@ const CarPriceSelector = ({ minValue, maxValue, onMinChange, onMaxChange }) => {
             id="priceFrom"
             type="text"
             placeholder="From"
+            value={minValue}
             onChange={onMinChange}
           />
         </CarPriceSelectorLabelFromStyleBase>
@@ -28,6 +29,7 @@ const CarPriceSelector = ({ minValue, maxValue, onMinChange, onMaxChange }) => {
             id="priceTo"
             type="text"
             placeholder="To"
+            value={maxValue}
             onChange={onMaxChange}
           />
         </CarPriceSelectorLabelToStyleBase>
