@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import {
   CarMileageSelectorLabelFromStyleBase,
   CarMileageSelectorLabelToStyleBase,
+  CarMileageSelectorDividerStyleBase,
 } from "./CarMileageSelectorStyle";
 
 const CarMileageSelector = ({ cars }) => {
@@ -15,7 +16,7 @@ const CarMileageSelector = ({ cars }) => {
       <CarMileageSelectorLabelFromStyleBase htmlFor="mileageFrom">
         <input id="mileageFrom" type="number" placeholder="From" />
       </CarMileageSelectorLabelFromStyleBase>
-
+      <CarMileageSelectorDividerStyleBase />
       <CarMileageSelectorLabelToStyleBase htmlFor="mileageTo">
         <input id="mileageTo" type="number" placeholder="To" />
       </CarMileageSelectorLabelToStyleBase>
