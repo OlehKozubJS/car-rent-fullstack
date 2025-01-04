@@ -10,7 +10,7 @@ import {
 
 import { CarFilterHeader } from "./imports";
 
-const CarBrandSelector = ({ carBrands }) => {
+const CarBrandSelector = ({ carBrands, onChange }) => {
   const [filteredCarBrands, setFilteredCarBrands] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [isCarBrandsOptions, setIsCarBrandsOptions] = useState(false);
@@ -27,6 +27,7 @@ const CarBrandSelector = ({ carBrands }) => {
     setIsCarBrandsOptions(false);
     const newCarBrand = event.target.value;
     setSearchQuery(newCarBrand);
+    onChange(newCarBrand);
   };
 
   const handleSearchQuery = (value) => {
