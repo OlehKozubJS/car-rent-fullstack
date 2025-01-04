@@ -22,8 +22,8 @@ const RouterNavigationLinkStyleBase = styled(NavLink)`
 
   border: none;
   border-radius: 12px;
-  background-color: ${({ isActive }) => {
-    (isActive && "rgb(52, 112, 255)") || "rgba(138, 138, 137, 1)";
+  background-color: ${({ isactive }) => {
+    (isactive && "rgb(52, 112, 255)") || "rgba(138, 138, 137, 1)";
   }};
 
   color: #fff;
