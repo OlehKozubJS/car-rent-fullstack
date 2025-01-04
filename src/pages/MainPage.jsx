@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 import { CarFilter, CarGallery, CarModal } from "./imports";
-// make rentalPrice mileage
+
 const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
   const [isModal, setIsModal] = useState(false);
   const [filteredCars, setFilteredCars] = useState(cars);
@@ -15,8 +15,14 @@ const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
   const closeModal = () => {
     setIsModal(false);
   };
-
-  const handleFilteredCars = (query) => {};
+  // make rentalPrice mileage
+  const handleFilteredCars = ({
+    carBrand,
+    minMileage,
+    maMileage,
+    minPrice,
+    maxPrice,
+  }) => {};
 
   return (
     <section>
