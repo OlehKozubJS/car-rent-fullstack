@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 
 const CarFilterContainer = styled.form`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   column-gap: 18px;
 `;
