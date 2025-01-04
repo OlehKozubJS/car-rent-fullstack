@@ -41,7 +41,7 @@ const CarMileageSelectorInputStyleBase = styled.input`
 
 const CarMileageSelectorDividerStyleBase = styled.button`
   height: 48px;
-  width: 0px;
+  width: 1px;
 
   background-color: rgba(138, 138, 137, 0.2);
 `;
