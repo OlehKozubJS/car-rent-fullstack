@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { CarBrandSelectorInput } from "./CarBrandSelectorInput";
 import { CarBrandSelectorMenu } from "./CarBrandSelectorMenu";
 
-import { CarBrandSelectorNotFoundMessageStyleBase } from "./CarBrandSelectorStyles";
+import { CarBrandSelectorNotFoundMessageStyleBase } from "./СarBrandSelectorStyle";
 
 import { CarFilterHeader } from "./imports";
 
