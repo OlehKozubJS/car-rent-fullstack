@@ -16,7 +16,10 @@ const ScrollRange = ({ value, onChange, statorHeight, rotorHeight }) => {
     setMouseDownY(clientY);
   };
 
-  const handleMouseMove = ({ clientY }) => {
+  const handleMouseMove = (event) => {
+    const { clientY } = event;
+    event.preventDefault();
+
     if (isDraggable) {
       const newValue = value + clientY - mouseDownY;
 
