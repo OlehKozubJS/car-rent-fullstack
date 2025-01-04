@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const CarMileageSelectorLabelStyleBase = `
+const CarPriceSelectorLabelStyleBase = `
   display: flex;
   justify-content: space-between;
 
@@ -18,17 +18,17 @@ const CarMileageSelectorLabelStyleBase = `
   }
 `;
 
-const CarMileageSelectorLabelFromStyleBase = styled.label`
-  ${CarMileageSelectorLabelStyleBase}
+const CarPriceSelectorLabelFromStyleBase = styled.label`
+  ${CarPriceSelectorLabelStyleBase}
   border-radius: 14px 0px 0px 14px;
 `;
 
-const CarMileageSelectorLabelToStyleBase = styled.label`
-  ${CarMileageSelectorLabelStyleBase}
+const CarPriceSelectorLabelToStyleBase = styled.label`
+  ${CarPriceSelectorLabelStyleBase}
   border-radius: 0px 14px 14px 0px;
 `;
 
-const CarMileageSelectorInputStyleBase = styled.input`
+const CarPriceSelectorInputStyleBase = styled.input`
   outline: none;
   border: none;
 
@@ -39,7 +39,7 @@ const CarMileageSelectorInputStyleBase = styled.input`
   color: rgb(18, 20, 23);
 `;
 
-const CarMileageSelectorDividerStyleBase = styled.button`
+const CarPriceSelectorDividerStyleBase = styled.button`
   height: 48px;
   width: 1px;
 
@@ -47,9 +47,9 @@ const CarMileageSelectorDividerStyleBase = styled.button`
 `;
 
 export {
-  CarMileageSelectorLabelStyleBase,
-  CarMileageSelectorLabelFromStyleBase,
-  CarMileageSelectorLabelToStyleBase,
-  CarMileageSelectorInputStyleBase,
-  CarMileageSelectorDividerStyleBase,
+  CarPriceSelectorLabelStyleBase,
+  CarPriceSelectorLabelFromStyleBase,
+  CarPriceSelectorLabelToStyleBase,
+  CarPriceSelectorInputStyleBase,
+  CarPriceSelectorDividerStyleBase,
 };
