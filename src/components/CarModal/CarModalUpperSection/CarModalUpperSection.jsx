@@ -2,7 +2,7 @@ import { CarModalHeader } from "../CarModalHeader";
 import { CarModalCommonInformation } from "../CarModalCommonInformation";
 import { CarModalDescription } from "../CarModalDescription";
 
-import { CarModalImageStyleBase } from "../CarModalStyles";
+import { CarModalImageStyleBase } from "../CarModalStyle";
 
 const CarModalUpperSection = ({ car }) => {
   return (
