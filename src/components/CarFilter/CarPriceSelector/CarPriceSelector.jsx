@@ -7,7 +7,7 @@ import {
   CarPriceSelectorDividerStyleBase,
 } from "./CarPriceSelectorStyle";
 
-const CarPriceSelector = () => {
+const CarPriceSelector = ({ value, onChange }) => {
   return (
     <div>
       <h3>Car price / dollars</h3>
