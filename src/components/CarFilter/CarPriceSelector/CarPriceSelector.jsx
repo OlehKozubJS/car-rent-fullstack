@@ -14,7 +14,7 @@ const CarPriceSelector = ({ value, onChange }) => {
     <div>
       <CarFilterHeader>Car price / dollars</CarFilterHeader>
       <div style={{ display: "flex" }}>
-        <CarPriceSelectorLabelFromStyleBase htmlFor="priceeFrom">
+        <CarPriceSelectorLabelFromStyleBase htmlFor="priceFrom">
           <CarPriceSelectorInputStyleBase
             id="priceFrom"
             type="text"
