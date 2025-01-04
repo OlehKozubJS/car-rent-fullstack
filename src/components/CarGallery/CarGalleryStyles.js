@@ -65,7 +65,7 @@ const CarGalleryItemValueStyleBase = styled.span`
 const CarGalleryButtonStyleBase = styled.button`
   margin-top: 28px;
 
-  display: inline-flex;
+  display: flex;
   padding: 12px 50px;
   justify-content: center;
   align-items: center;
