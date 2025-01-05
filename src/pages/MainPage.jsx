@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
 import { CarFilter, CarGallery, CarModal } from "./imports";
-import { NavLink, Outlet } from "react-router-dom";
 
 const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
   const [isModal, setIsModal] = useState(false);
