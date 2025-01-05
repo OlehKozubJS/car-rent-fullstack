@@ -15,7 +15,9 @@ const TestPage = () => {
   const [pagePath, setPagePath] = useState("");
 
   const handlePagePath = (event) => {
+    event.preventDefault();
     setPagePath(event.currentTarget.elements.pageNameInput.value);
+    event.currentTarget.reset();
   };
 
   const handleRangeValue = (newRangeValue) => {
