@@ -59,7 +59,7 @@ const App = () => {
             path="toProgressWins"
             element={
               <p>
-                Progress Wins!<NavLink to="/favouriteCars">goodbye</NavLink>
+                Progress Wins!<NavLink to="/test">goodbye</NavLink>
               </p>
             }
           />
