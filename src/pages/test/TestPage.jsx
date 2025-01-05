@@ -12,7 +12,7 @@ const TestPage = () => {
   const [rangeValue, setRangeValue] = useState(0);
   const [valueY, setValueY] = useState(200);
   const [valueX, setValueX] = useState(0);
-  const [pagePath, setPagePath] = useState("");
+  const [pagePath, setPagePath] = useState("test");
 
   const handlePagePath = (event) => {
     event.preventDefault();
