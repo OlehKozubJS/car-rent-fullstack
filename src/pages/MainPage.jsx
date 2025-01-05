@@ -16,6 +16,8 @@ const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
     setIsModal(false);
   };
 
+const  = () => {};
+
   const handleFilteredCars = ({
     carBrand,
     minMileage,
