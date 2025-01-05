@@ -62,7 +62,7 @@ const TestPage = () => {
       <p>valueX={valueX}</p>
       <div>
         <form>
-          <input placeholder="" />
+          <input type="text" placeholder="Enter page name" />
           <button type="submit" onClick={handlePagePath}>
             Enter
           </button>
