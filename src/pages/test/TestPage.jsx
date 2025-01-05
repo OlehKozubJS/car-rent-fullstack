@@ -15,7 +15,7 @@ const TestPage = () => {
   const [pagePath, setPagePath] = useState("");
 
   const handlePagePath = (event) => {
-    setPagePath(event.target.value);
+    setPagePath(event.currentTarget.elements.pageNameInput.value);
   };
 
   const handleRangeValue = (newRangeValue) => {
@@ -61,11 +61,13 @@ const TestPage = () => {
       <p>valueY={valueY}</p>
       <p>valueX={valueX}</p>
       <div>
-        <form>
-          <input type="text" placeholder="Enter page name" />
-          <button type="submit" onClick={handlePagePath}>
-            Enter
-          </button>
+        <form onSubmit={handlePagePath}>
+          <input
+            name="pageNameInput"
+            type="text"
+            placeholder="Enter page name"
+          />
+          <button type="submit">Enter</button>
         </form>
         {isMainPage && <Navigate to={pagePath} />}
       </div>
