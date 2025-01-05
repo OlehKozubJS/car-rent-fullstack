@@ -12,6 +12,11 @@ const TestPage = () => {
   const [rangeValue, setRangeValue] = useState(0);
   const [valueY, setValueY] = useState(200);
   const [valueX, setValueX] = useState(0);
+  const [isMainPage, setIsMainPage] = useState(false);
+
+  const handleIsMainPage = () => {
+    setIsMainPage(true);
+  };
 
   const handleRangeValue = (newRangeValue) => {
     setRangeValue(newRangeValue);
@@ -55,6 +60,7 @@ const TestPage = () => {
       <p>{rangeValue}</p>
       <p>valueY={valueY}</p>
       <p>valueX={valueX}</p>
+      <button type="button" onClick={handleIsMainPage}></button>
       {isMainPage && <Navigate to="/" />}
     </section>
   );
