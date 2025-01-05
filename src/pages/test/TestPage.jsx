@@ -60,9 +60,12 @@ const TestPage = () => {
       <p>{rangeValue}</p>
       <p>valueY={valueY}</p>
       <p>valueX={valueX}</p>
-      <button type="button" onClick={handleIsMainPage}>
-        Open main page
-      </button>
+      <form>
+        <input placeholder="" />
+        <button type="submit" onClick={handleIsMainPage}>
+          Enter
+        </button>
+      </form>
       {isMainPage && <Navigate to="/" />}
     </section>
   );
