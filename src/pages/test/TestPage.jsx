@@ -14,8 +14,8 @@ const TestPage = () => {
   const [valueX, setValueX] = useState(0);
   const [pagePath, setPagePath] = useState("");
 
-  const handleIsMainPage = () => {
-    setIsMainPage(true);
+  const handlePagePath = (event) => {
+    setPagePath(event.target.value);
   };
 
   const handleRangeValue = (newRangeValue) => {
