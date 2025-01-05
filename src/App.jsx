@@ -54,7 +54,9 @@ const App = () => {
               onFavouriteClick={addFavouriteCar}
             />
           }
-        />
+        >
+          <Route path="toProgressWins" element={<p>Progress Wins!</p>} />
+        </Route>
         <Route
           path="FavouriteCars"
           element={
