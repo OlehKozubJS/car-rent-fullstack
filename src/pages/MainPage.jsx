@@ -16,7 +16,11 @@ const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
     setIsModal(false);
   };
 
-const  = () => {};
+  const deleteDollarSign = (rentalPrice) => {
+    let rentalPriceArray = rentalPrice.split("");
+    rentalPriceArray.pop();
+    return rentalPriceArray.join("");
+  };
 
   const handleFilteredCars = ({
     carBrand,
