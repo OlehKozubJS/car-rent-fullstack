@@ -36,8 +36,10 @@ const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
           (!carBrand || make === carBrand) &&
           (!minMileage || Number(minMileage) <= mileage) &&
           (!maxMileage || Number(maxMileage) >= mileage) &&
-          (!minPrice || Number(minPrice) <= rentalPrice) &&
-          (!maxPrice || Number(maxPrice) >= rentalPrice)
+          (!minPrice ||
+            Number(minPrice) <= Number(deleteDollarSign(rentalPrice))) &&
+          (!maxPrice ||
+            Number(maxPrice) >= Number(deleteDollarSign(rentalPrice)))
       )
     );
   };
