@@ -47,7 +47,6 @@ const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
   return (
     <section>
       <NavLink to="toProgressWins">hello</NavLink>
-      <NavLink to="/">goodbye</NavLink>
       <Outlet />
       {isModal && <CarModal car={car} onClose={closeModal} />}
       <CarFilter carBrands={carBrands} onSubmit={handleFilteredCars} />
