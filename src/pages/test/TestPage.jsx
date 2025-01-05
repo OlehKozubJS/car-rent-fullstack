@@ -55,6 +55,7 @@ const TestPage = () => {
       <p>{rangeValue}</p>
       <p>valueY={valueY}</p>
       <p>valueX={valueX}</p>
+      <Navigate to="favouriteCars" />
     </section>
   );
 };
