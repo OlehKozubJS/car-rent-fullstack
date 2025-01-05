@@ -18,7 +18,7 @@ const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
 
   const deleteDollarSign = (rentalPrice) => {
     let rentalPriceArray = rentalPrice.split("");
-    rentalPriceArray.pop();
+    rentalPriceArray.shift();
     return rentalPriceArray.join("");
   };
 
