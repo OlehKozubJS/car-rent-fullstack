@@ -46,7 +46,7 @@ const App = () => {
         }
       >
         <Route
-          index
+          path="/"
           element={
             <MainPage
               cars={carsLocalData}
