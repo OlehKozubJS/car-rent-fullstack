@@ -36,10 +36,6 @@ const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
     );
   };
 
-  useEffect(() => {
-    console.log(filteredCars);
-  }, [filteredCars]);
-
   return (
     <section>
       {isModal && <CarModal car={car} onClose={closeModal} />}
