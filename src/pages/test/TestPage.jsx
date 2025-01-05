@@ -12,7 +12,7 @@ const TestPage = () => {
   const [rangeValue, setRangeValue] = useState(0);
   const [valueY, setValueY] = useState(200);
   const [valueX, setValueX] = useState(0);
-  const [isMainPage, setIsMainPage] = useState(false);
+  const [pagePath, setPagePath] = useState("");
 
   const handleIsMainPage = () => {
     setIsMainPage(true);
@@ -63,11 +63,11 @@ const TestPage = () => {
       <div>
         <form>
           <input placeholder="" />
-          <button type="submit" onClick={handleIsMainPage}>
+          <button type="submit" onClick={handlePagePath}>
             Enter
           </button>
         </form>
-        {isMainPage && <Navigate to="/" />}
+        {isMainPage && <Navigate to={pagePath} />}
       </div>
     </section>
   );
