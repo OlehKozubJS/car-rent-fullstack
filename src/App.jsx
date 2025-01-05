@@ -55,7 +55,14 @@ const App = () => {
             />
           }
         >
-          <Route path="toProgressWins" element={<p>Progress Wins!</p>} />
+          <Route
+            path="toProgressWins"
+            element={
+              <p>
+                Progress Wins!<NavLink to="/">goodbye</NavLink>
+              </p>
+            }
+          />
         </Route>
         <Route
           path="FavouriteCars"
