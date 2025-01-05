@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 import { CarFilter, CarGallery, CarModal } from "./imports";
-import { Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
   const [isModal, setIsModal] = useState(false);
@@ -46,6 +46,8 @@ const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
 
   return (
     <section>
+      <NavLink></NavLink>
+      <Outlet />
       {isModal && <CarModal car={car} onClose={closeModal} />}
       <CarFilter carBrands={carBrands} onSubmit={handleFilteredCars} />
       <CarGallery
@@ -53,7 +55,6 @@ const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
         onLearnMoreClick={openModal}
         onFavouriteClick={onFavouriteClick}
       />
-      <Outlet />
     </section>
   );
 };
