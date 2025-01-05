@@ -29,7 +29,6 @@ const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
     minPrice,
     maxPrice,
   }) => {
-    console.log({ carBrand, minMileage, maxMileage, minPrice, maxPrice });
     setFilteredCars(
       cars.filter(
         ({ make, mileage, rentalPrice }) =>
@@ -43,10 +42,6 @@ const MainPage = ({ cars, carBrands, onFavouriteClick }) => {
       )
     );
   };
-
-  useEffect(() => {
-    console.log(filteredCars);
-  }, [filteredCars]);
 
   return (
     <section>
