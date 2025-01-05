@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import {} from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 import { LogicGates } from "./LogicGates";
 import { SimplestCustomRange } from "./SimplestCustomRange";
