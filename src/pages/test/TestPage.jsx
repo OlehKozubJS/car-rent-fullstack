@@ -71,7 +71,7 @@ const TestPage = () => {
           />
           <button type="submit">Enter</button>
         </form>
-        <Navigate to={pagePath} />
+        <Navigate to={`/${pagePath}`} />
       </div>
     </section>
   );
