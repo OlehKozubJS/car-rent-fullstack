@@ -3,13 +3,13 @@ const RecursionFunctionTest = () => {
     if (number <= 1) {
       return number;
     } else {
-      return recursionFunction(number - 1);
+      return number + recursionFunction(number - 1);
     }
   };
 
   return (
     <div>
-      <p>{recursionFunction(4)}</p>
+      <p>{recursionFunction(7)}</p>
     </div>
   );
 };
