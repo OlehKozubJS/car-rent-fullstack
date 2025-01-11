@@ -10,12 +10,13 @@ const RecursionFunctionTest = () => {
         ...fibonacciArray,
         fibonacciFunction(number - 1) + fibonacciFunction(number - 2),
       ];
+      return fibonacciArray;
     }
   };
 
   return (
     <div>
-      <p></p>
+      <p>{fibonacciFunction(10)}</p>
     </div>
   );
 };
