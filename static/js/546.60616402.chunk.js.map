@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/546.60616402.chunk.js","mappings":"+KAAA,MAAMA,EAAwBA,KACrBC,EAAAA,EAAAA,KAAA,S","sources":["pages/test/RecursionFunctionTest.jsx"],"sourcesContent":["const RecursionFunctionTest = () => {\n  return <div></div>;\n};\n\nexport { RecursionFunctionTest };\n"],"names":["RecursionFunctionTest","_jsx"],"sourceRoot":""}
