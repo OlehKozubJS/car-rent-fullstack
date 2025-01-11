@@ -1,5 +1,9 @@
 const RecursionFunctionTest = () => {
-  return <div></div>;
+  return (
+    <div>
+      <p></p>
+    </div>
+  );
 };
 
 export { RecursionFunctionTest };
