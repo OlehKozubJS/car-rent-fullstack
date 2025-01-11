@@ -1,15 +1,15 @@
 const RecursionFunctionTest = () => {
-  const fibonacciFunction = (number) => {
+  const recursionFunction = (number) => {
     if (number <= 1) {
       return number;
     } else {
-      return number * fibonacciFunction(number - 1);
+      return number * recursionFunction(number - 1);
     }
   };
 
   return (
     <div>
-      <p>{fibonacciFunction(5)}</p>
+      <p>{recursionFunction(5)}</p>
     </div>
   );
 };
