@@ -3,13 +3,13 @@ const RecursionFunctionTest = () => {
     if (number <= 1) {
       return number;
     } else {
-      return fibonacciFunction(number - 1);
+      return number * fibonacciFunction(number - 1);
     }
   };
 
   return (
     <div>
-      <p>{fibonacciFunction(10)}</p>
+      <p>{fibonacciFunction(5)}</p>
     </div>
   );
 };
