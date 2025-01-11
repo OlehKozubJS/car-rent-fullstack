@@ -9,7 +9,7 @@ const RecursionFunctionTest = () => {
 
   return (
     <div>
-      <p>{recursionFunction(7)}</p>
+      <p>{recursionFunction(2)}</p>
     </div>
   );
 };
