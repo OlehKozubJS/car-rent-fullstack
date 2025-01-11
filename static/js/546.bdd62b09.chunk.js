@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcar_rent_fullstack=self.webpackChunkcar_rent_fullstack||[]).push([[546],{546:(c,s,e)=>{e.r(s),e.d(s,{RecursionFunctionTest:()=>r});var n=e(329);const r=()=>{const c=s=>s<=1?s:s+c(2*s-3);return(0,n.jsx)("div",{children:(0,n.jsx)("p",{children:c(5)})})}}}]);
+//# sourceMappingURL=546.bdd62b09.chunk.js.map
