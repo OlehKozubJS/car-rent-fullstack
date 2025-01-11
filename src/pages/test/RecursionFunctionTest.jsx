@@ -1,16 +1,9 @@
 const RecursionFunctionTest = () => {
   const fibonacciFunction = (number) => {
-    let fibonacciArray = [];
-
     if (number <= 1) {
-      fibonacciArray = [...fibonacciArray, number];
-      return fibonacciArray;
+      return number;
     } else {
-      fibonacciArray = [
-        ...fibonacciArray,
-        fibonacciFunction(number - 1) + fibonacciFunction(number - 2),
-      ];
-      return fibonacciArray;
+      return fibonacciFunction(number - 1) + fibonacciFunction(number - 2);
     }
   };
 
