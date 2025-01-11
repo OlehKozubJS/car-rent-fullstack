@@ -39,7 +39,7 @@ const App = () => {
             pages={[
               { pagePath: "/", pageTitle: "Car Rent" },
               { pagePath: "/FavouriteCars", pageTitle: "Favourite Cars" },
-              { pagePath: "/Test", pageTitle: "Test" },
+              { pagePath: "/test", pageTitle: "Test" },
             ]}
             currentLocation={location}
           />
