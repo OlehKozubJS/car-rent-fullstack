@@ -74,6 +74,7 @@ const TestPage = () => {
         </form>
         <Navigate to={`/${pagePath}`} />
       </div>
+      <RecursionFunctionTest />
     </section>
   );
 };
