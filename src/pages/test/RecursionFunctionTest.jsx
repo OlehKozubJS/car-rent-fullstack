@@ -1,15 +1,15 @@
 const RecursionFunctionTest = () => {
   const recursionFunction = (number) => {
-    if (number <= 1) {
+    if (number <= 0) {
       return number;
     } else {
-      return recursionFunction(number - 1) * 2;
+      return number + recursionFunction(number - 1);
     }
   };
 
   return (
     <div>
-      <p>{recursionFunction(6)}</p>
+      <p>{recursionFunction(3)}</p>
     </div>
   );
 };
