@@ -4,6 +4,7 @@ import {
   ComponentSelectorContainerStyleBase,
   ComponentSelectorButtonStyleBase,
   ComponentSelectorRadioButtonStyleBase,
+  ComponentSelectorRadioButtonTextStyleBase,
 } from "./ComponentSelectorStyle";
 
 const ComponentSelector = ({
@@ -32,7 +33,9 @@ const ComponentSelector = ({
               onChange={chooseComponent}
               checked={componentName === value}
             />
-            <span>{value}</span>
+            <ComponentSelectorRadioButtonTextStyleBase>
+              {value}
+            </ComponentSelectorRadioButtonTextStyleBase>
           </ComponentSelectorButtonStyleBase>
         );
       })}
