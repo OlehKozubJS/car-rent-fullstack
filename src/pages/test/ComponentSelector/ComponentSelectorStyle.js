@@ -16,7 +16,7 @@ const ComponentSelectorButtonStyleBase = styled.label`
   height: 36px;
 
   display: flex;
-  padding: 12px 50px;
+  padding: 12px;
   justify-content: center;
   align-items: center;
 
