@@ -38,4 +38,4 @@ const CustomRange = ({ value, onChange }) => {
   );
 };
 
-export { SimplestCustomRange };
+export { CustomRange };
