@@ -10,10 +10,10 @@ const GradientHoverTestComponentStyleBase = styled.div`
   &:hover {
     background-image: linear-gradient(
       to right,
-      black,
-      white 10px,
-      white 25px,
-      black 35px
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1) 10px,
+      rgba(255, 255, 255, 1) 25px,
+      rgba(255, 255, 255, 0) 35px
     );
   }
 `;
