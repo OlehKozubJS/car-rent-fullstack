@@ -8,8 +8,9 @@ const GradientHoverTestComponentStyleBase = styled.div`
 const GradientHover = () => {
   return (
     <div>
-      Gradient hover
-      <div></div>
+      <GradientHoverTestComponentStyleBase>
+        Gradient hover
+      </GradientHoverTestComponentStyleBase>
     </div>
   );
 };
