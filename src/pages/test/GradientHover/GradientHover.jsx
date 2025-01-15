@@ -6,6 +6,9 @@ const GradientHoverTestComponentStyleBase = styled.div`
 
   background-color: black;
   color: white;
+
+  &:hover {
+  }
 `;
 
 const GradientHover = () => {
