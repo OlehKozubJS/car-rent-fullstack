@@ -23,7 +23,7 @@ const GradientHover = () => {
       <GradientHoverTestComponentStyleBase onMouseOver={handleMouseOver}>
         Gradient hover
         <GradientHoverGradientComponentStyleBase
-          backgroundImage={"none"}
+          backgroundimage={"none"}
         ></GradientHoverGradientComponentStyleBase>
       </GradientHoverTestComponentStyleBase>
     </div>
