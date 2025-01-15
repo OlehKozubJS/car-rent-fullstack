@@ -53,13 +53,7 @@ const TestPage = () => {
       {componentName === "Simplest custom range" && (
         <SimplestCustomRange onChange={handleRangeValue} value={rangeValue} />
       )}
-      {componentName === "Draggable component" && (
-        <DraggableComponentField
-          valueY={valueY}
-          valueX={valueX}
-          onChange={handleXYvalue}
-        />
-      )}
+      {componentName === "Draggable component" && <DraggableComponentField />}
       <p>{rangeValue}</p>
       <p>valueY={valueY}</p>
       <p>valueX={valueX}</p>
