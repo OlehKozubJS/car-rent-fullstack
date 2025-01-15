@@ -30,8 +30,8 @@ const ComponentSelector = ({
               name="chooseComponentRadio"
               type="radio"
               value={value}
-              onChange={chooseComponent}
               checked={componentName === value}
+              onChange={chooseComponent}
             />
             <ComponentSelectorRadioButtonTextStyleBase>
               {value}
