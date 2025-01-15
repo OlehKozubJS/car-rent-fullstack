@@ -14,7 +14,7 @@ const GradientHover = () => {
 
   const handleMouseOver = () => {};
 
-  useEffect(handleEventListener(handleEventListener), []);
+  useEffect(handleEventListener(handleEventListener), [isGradientAnimation]);
 
   return (
     <div>
