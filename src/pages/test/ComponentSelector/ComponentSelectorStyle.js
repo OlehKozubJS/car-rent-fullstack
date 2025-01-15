@@ -41,8 +41,8 @@ const ComponentSelectorRadioButtonStyleBase = styled.input`
   display: none;
 `;
 
-const ComponentSelectorRadioButtonTextStyleBase = styled.input`
-  display: none;
+const ComponentSelectorRadioButtonTextStyleBase = styled.span`
+  display: inline;
 `;
 
 export {
