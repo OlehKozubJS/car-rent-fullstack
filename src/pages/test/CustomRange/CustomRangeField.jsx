@@ -8,7 +8,7 @@ import { ComponentChooser } from "./ComponentChooser";
 import { DraggableComponentField } from "./DraggableComponent";
 import { RecursionFunctionTest } from "./RecursionFunctionTest";
 
-const TestPage = () => {
+const CustomRangeField = () => {
   const [componentName, setComponentName] = useState("Logic gates");
   const [rangeValue, setRangeValue] = useState(0);
   const [pagePath, setPagePath] = useState("test");
