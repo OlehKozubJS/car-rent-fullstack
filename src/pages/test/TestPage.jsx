@@ -39,9 +39,7 @@ const TestPage = () => {
         onChange={chooseComponent}
       />
       {componentName === "Logic gates" && <LogicGates />}
-      {componentName === "Simplest custom range" && (
-        <CustomRange value={rangeValue} />
-      )}
+      {componentName === "Simplest custom range" && <CustomRange />}
       {componentName === "Draggable component" && <DraggableComponentField />}
       <p>{rangeValue}</p>
       <p>valueY={valueY}</p>
