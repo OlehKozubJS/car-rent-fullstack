@@ -5,6 +5,8 @@ const ComponentChooser = ({
   currentComponentName,
   onChange,
 }) => {
+  const [componentName, setComponentName] = useState("Logic gates");
+
   const chooseComponent = ({ target }) => {
     onChange(target.value);
   };
