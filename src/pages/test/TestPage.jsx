@@ -4,7 +4,7 @@ import { Navigate } from "react-router-dom";
 
 import { LogicGates } from "./LogicGates";
 import { SimplestCustomRange } from "./SimplestCustomRange";
-import { PageChooser } from "./PageChooser";
+import { ComponentChooser } from "./ComponentChooser";
 import { DraggableComponent } from "./DraggableComponent";
 import { RecursionFunctionTest } from "./RecursionFunctionTest";
 
