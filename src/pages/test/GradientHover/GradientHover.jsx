@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import {} from "./GradientHoverStyle";
+import { GradientHoverTestComponentStyleBase } from "./GradientHoverStyle";
 
 const GradientHoverTestComponentStyleBase = styled.div`
   height: 250px;
