@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 
-import { Navigate } from "react-router-dom";
+import { ComponentChooser } from "./ComponentChooser";
 
 import { LogicGates } from "./LogicGates";
 import { CustomRangeField } from "./CustomRange";
-import { ComponentChooser } from "./ComponentChooser";
 import { DraggableComponentField } from "./DraggableComponent";
 import { RecursionFunctionTest } from "./RecursionFunctionTest";
 
