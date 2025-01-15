@@ -9,9 +9,9 @@ const SVGimageStyleBase = styled.svg`
 
 const SVGimage = ({ name }) => {
   return (
-    <svg className={css.Icon}>
+    <SVGimageStyleBase>
       <use xlinkHref={`${icons}#${name}`} />
-    </svg>
+    </SVGimageStyleBase>
   );
 };
 
