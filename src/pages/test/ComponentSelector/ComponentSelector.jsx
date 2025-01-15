@@ -27,7 +27,7 @@ const ComponentSelector = ({
           <ComponentSelectorButtonStyleBase
             key={value}
             htmlFor={value}
-            isactive={componentName === value}
+            isactive={(componentName === value).toString()}
           >
             <ComponentSelectorRadioButtonStyleBase
               id={value}
