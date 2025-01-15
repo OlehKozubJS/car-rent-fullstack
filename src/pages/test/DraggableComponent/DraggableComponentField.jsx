@@ -3,25 +3,8 @@ import { useEffect, useState } from "react";
 import { DraggableComponent } from "./DraggableComponent";
 
 const DraggableComponentField = () => {
-  const [componentName, setComponentName] = useState("Logic gates");
-  const [rangeValue, setRangeValue] = useState(0);
   const [valueY, setValueY] = useState(200);
   const [valueX, setValueX] = useState(0);
-  const [pagePath, setPagePath] = useState("test");
-
-  const handlePagePath = (event) => {
-    event.preventDefault();
-    setPagePath(event.currentTarget.elements.pageNameInput.value);
-    event.currentTarget.reset();
-  };
-
-  const handleRangeValue = (newRangeValue) => {
-    setRangeValue(newRangeValue);
-  };
-
-  const chooseComponent = (newComponentName) => {
-    setComponentName(newComponentName);
-  };
 
   const handleXYvalue = ({ valueY, valueX }) => {
     if (valueY >= 200) {
