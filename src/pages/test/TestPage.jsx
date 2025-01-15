@@ -54,7 +54,7 @@ const TestPage = () => {
         <SimplestCustomRange onChange={handleRangeValue} value={rangeValue} />
       )}
       {componentName === "Draggable component" && (
-        <DraggableComponent
+        <DraggableComponentField
           valueY={valueY}
           valueX={valueX}
           onChange={handleXYvalue}
