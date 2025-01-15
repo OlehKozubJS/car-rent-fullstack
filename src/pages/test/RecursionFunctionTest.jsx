@@ -7,6 +7,14 @@ const RecursionFunctionTest = () => {
     }
   };
 
+  const recursionFunction2 = (number) => {
+    if (number <= 0) {
+      return number;
+    } else {
+      return 2 * number - 1 + recursionFunction2(number - 1);
+    }
+  };
+
   return (
     <div>
       <p>Square of 0: {recursionFunction(0)}</p>
@@ -25,3 +33,8 @@ const RecursionFunctionTest = () => {
 };
 
 export { RecursionFunctionTest };
+/*
+
+(x + 1)^3 = (x^2 + 2x + 1)*(x + 1) = x^3 + 2x^2 + x + x^2 + 2x + 1 = x^3 + 3x^2 + 3x + 1
+
+*/
