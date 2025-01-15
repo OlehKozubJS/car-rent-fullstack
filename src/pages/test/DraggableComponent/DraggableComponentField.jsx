@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 
-import { Navigate } from "react-router-dom";
-
 import { DraggableComponent } from "./DraggableComponent";
 
 const DraggableComponentField = () => {
@@ -75,4 +73,4 @@ const DraggableComponentField = () => {
   );
 };
 
-export { TestPage };
+export { DraggableComponentField };
