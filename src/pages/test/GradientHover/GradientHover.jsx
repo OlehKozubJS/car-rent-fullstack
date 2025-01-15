@@ -17,15 +17,15 @@ const GradientHoverTestComponentStyleBase = styled.div`
         }}px,
       rgba(255, 255, 255, 1)
         ${({ gradientleft }) => {
-          return gradientleft + 10;
+          return gradientleft + 20;
         }}px,
       rgba(255, 255, 255, 1)
         ${({ gradientleft }) => {
-          return gradientleft + 15;
+          return gradientleft + 30;
         }}px,
       rgba(255, 255, 255, 0)
         ${({ gradientleft }) => {
-          return gradientleft + 25;
+          return gradientleft + 50;
         }}px
     );
   }
