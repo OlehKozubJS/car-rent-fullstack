@@ -10,12 +10,11 @@ const GradientHover = () => {
 
   return (
     <div>
-      <GradientHoverTestComponentStyleBase
-        gradientleft={30}
-        onMouseOver={handleMouseOver}
-      >
+      <GradientHoverTestComponentStyleBase onMouseOver={handleMouseOver}>
         Gradient hover
-        <GradientHoverGradientComponentStyleBase></GradientHoverGradientComponentStyleBase>
+        <GradientHoverGradientComponentStyleBase
+          gradientleft={30}
+        ></GradientHoverGradientComponentStyleBase>
       </GradientHoverTestComponentStyleBase>
     </div>
   );
