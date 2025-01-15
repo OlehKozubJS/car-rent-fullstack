@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 
+import { handleEventListener } from "../../../hooks";
+
 import {
   GradientHoverTestComponentStyleBase,
   GradientHoverGradientComponentStyleBase,
@@ -7,6 +9,8 @@ import {
 
 const GradientHover = () => {
   const handleMouseOver = () => {};
+
+  useEffect();
 
   return (
     <div>
