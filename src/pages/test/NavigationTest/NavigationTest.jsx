@@ -1,0 +1,50 @@
+import { useEffect, useState } from "react";
+
+import { Navigate } from "react-router-dom";
+
+const TestPage = () => {
+  const [componentName, setComponentName] = useState("Logic gates");
+
+  const [pagePath, setPagePath] = useState("test");
+
+  const handlePagePath = (event) => {
+    event.preventDefault();
+    setPagePath(event.currentTarget.elements.pageNameInput.value);
+    event.currentTarget.reset();
+  };
+
+  const chooseComponent = (newComponentName) => {
+    setComponentName(newComponentName);
+  };
+
+  return (
+    <section>
+      <ComponentChooser
+        componentNames={[
+          "Logic gates",
+          "Simplest custom range",
+          "Draggable component",
+        ]}
+        currentComponentName={componentName}
+        onChange={chooseComponent}
+      />
+      {componentName === "Logic gates" && <LogicGates />}
+      {componentName === "Simplest custom range" && <CustomRangeField />}
+      {componentName === "Draggable component" && <DraggableComponentField />}
+      <div>
+        <form onSubmit={handlePagePath}>
+          <input
+            name="pageNameInput"
+            type="text"
+            placeholder="Enter page name"
+          />
+          <button type="submit">Enter</button>
+        </form>
+        <Navigate to={`/${pagePath}`} />
+      </div>
+      <RecursionFunctionTest />
+    </section>
+  );
+};
+
+export { TestPage };
