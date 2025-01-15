@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkcar_rent_fullstack=self.webpackChunkcar_rent_fullstack||[]).push([[569],{2569:(e,r,s)=>{s.r(r),s.d(r,{GradientHover:()=>c});var a=s(3329);const c=()=>(0,a.jsxs)("div",{children:["Gradient hover",(0,a.jsx)("div",{})]})}}]);
-//# sourceMappingURL=569.f562ccf5.chunk.js.map
