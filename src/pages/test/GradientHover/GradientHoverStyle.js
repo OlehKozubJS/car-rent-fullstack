@@ -30,3 +30,5 @@ const GradientHoverTestComponentStyleBase = styled.div`
     );
   }
 `;
+
+export { GradientHoverTestComponentStyleBase };
