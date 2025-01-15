@@ -25,6 +25,7 @@ const TestPage = () => {
           "Draggable component",
           "Navigation test",
           "Recursion",
+          "Gradient hover",
         ]}
         initialComponentName={"Logic gates"}
         onChange={chooseComponent}
@@ -34,6 +35,7 @@ const TestPage = () => {
       {componentName === "Draggable component" && <DraggableComponentField />}
       {componentName === "Navigation test" && <NavigationTest />}
       {componentName === "Recursion" && <RecursionFunctionTest />}
+      {componentName === "Gradient hover" && <GradientHover />}
     </section>
   );
 };
