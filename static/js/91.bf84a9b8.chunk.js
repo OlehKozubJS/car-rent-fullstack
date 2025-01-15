@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcar_rent_fullstack=self.webpackChunkcar_rent_fullstack||[]).push([[91,569],{2569:(r,n,e)=>{e.r(n),e.d(n,{GradientHover:()=>h});var a,c=e(168),t=e(7745),d=e(3329);const i=t.ZP.div(a||(a=(0,c.Z)(["\n  height: 250px;\n  width: 400px;\n\n  background-color: black;\n  color: white;\n\n  &:hover {\n  }\n"]))),h=()=>(0,d.jsx)("div",{children:(0,d.jsx)(i,{children:"Gradient hover"})})},4091:(r,n,e)=>{e.r(n),e.d(n,{GradientHover:()=>a.GradientHover});var a=e(2569)}}]);
+//# sourceMappingURL=91.bf84a9b8.chunk.js.map
