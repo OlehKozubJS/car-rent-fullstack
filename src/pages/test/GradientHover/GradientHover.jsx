@@ -34,7 +34,7 @@ const GradientHoverTestComponentStyleBase = styled.div`
 const GradientHover = () => {
   return (
     <div>
-      <GradientHoverTestComponentStyleBase gradientleft={30}>
+      <GradientHoverTestComponentStyleBase gradientleft={30} onMouseOver={}>
         Gradient hover
       </GradientHoverTestComponentStyleBase>
     </div>
