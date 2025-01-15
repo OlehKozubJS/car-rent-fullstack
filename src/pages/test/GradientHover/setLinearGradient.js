@@ -1,5 +1,5 @@
 const setLinearGradient = (gradientLeft) => {
-  `linear-gradient(
+  return `linear-gradient(
     to right,
   rgba(255, 255, 255, 0),
   rgba(255, 255, 255, 0)
