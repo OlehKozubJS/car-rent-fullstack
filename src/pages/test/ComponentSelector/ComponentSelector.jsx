@@ -1,6 +1,9 @@
 import { useState } from "react";
 
-import {} from "./ComponentSelectorStyle";
+import {
+  ComponentSelectorContainerStyleBase,
+  ComponentSelectorButtonStyleBase,
+} from "./ComponentSelectorStyle";
 
 const ComponentSelector = ({
   componentNames,
