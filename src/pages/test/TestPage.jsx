@@ -31,6 +31,7 @@ const TestPage = () => {
           "Simplest custom range",
           "Draggable component",
           "Navigation test",
+          "Recursion",
         ]}
         currentComponentName={componentName}
         onChange={chooseComponent}
