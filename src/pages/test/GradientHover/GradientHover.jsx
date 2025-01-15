@@ -1,5 +1,10 @@
 const GradientHover = () => {
-  return <div></div>;
+  return (
+    <div>
+      Gradient hover
+      <div></div>
+    </div>
+  );
 };
 
 export { GradientHover };
