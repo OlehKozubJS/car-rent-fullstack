@@ -1,4 +1,8 @@
-const PageChooser = ({ componentNames, currentComponentName, onChange }) => {
+const ComponentChooser = ({
+  componentNames,
+  currentComponentName,
+  onChange,
+}) => {
   const chooseComponent = ({ target }) => {
     onChange(target.value);
   };
@@ -28,4 +32,4 @@ const PageChooser = ({ componentNames, currentComponentName, onChange }) => {
   );
 };
 
-export { PageChooser };
+export { ComponentChooser };
