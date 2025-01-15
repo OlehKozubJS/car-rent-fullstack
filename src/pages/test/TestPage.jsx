@@ -29,15 +29,6 @@ const TestPage = () => {
     setComponentName(newComponentName);
   };
 
-  const handleXYvalue = ({ valueY, valueX }) => {
-    if (valueY >= 200) {
-      setValueY(valueY);
-    }
-    if (valueX >= 0) {
-      setValueX(valueX);
-    }
-  };
-
   return (
     <section>
       <ComponentChooser
