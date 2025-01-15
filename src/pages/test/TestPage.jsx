@@ -6,6 +6,7 @@ import { LogicGates } from "./LogicGates";
 import { CustomRangeField } from "./CustomRange";
 import { DraggableComponentField } from "./DraggableComponent";
 import { RecursionFunctionTest } from "./RecursionFunctionTest";
+import { NavigationTest } from "./NavigationTest";
 
 const TestPage = () => {
   const [componentName, setComponentName] = useState("Logic gates");
@@ -29,6 +30,7 @@ const TestPage = () => {
           "Logic gates",
           "Simplest custom range",
           "Draggable component",
+          "Navigation test",
         ]}
         currentComponentName={componentName}
         onChange={chooseComponent}
@@ -36,17 +38,7 @@ const TestPage = () => {
       {componentName === "Logic gates" && <LogicGates />}
       {componentName === "Simplest custom range" && <CustomRangeField />}
       {componentName === "Draggable component" && <DraggableComponentField />}
-      <div>
-        <form onSubmit={handlePagePath}>
-          <input
-            name="pageNameInput"
-            type="text"
-            placeholder="Enter page name"
-          />
-          <button type="submit">Enter</button>
-        </form>
-        <Navigate to={`/${pagePath}`} />
-      </div>
+      {componentName === "Navigation test" && <NavigationTest />}
       <RecursionFunctionTest />
     </section>
   );
