@@ -19,17 +19,4 @@ const RangeDial = styled.div`
   background-color: rgb(100, 100, 250);
 `;
 
-const DraggableComponentStyle = styled.div`
-  position: absolute;
-  top: ${({ top }) => {
-    return top;
-  }}px;
-  left: ${({ left }) => {
-    return left;
-  }}px;
-  width: 50px;
-  height: 50px;
-  background-color: rgb(100, 100, 250);
-`;
-
-export { RangeField, RangeDial, DraggableComponentStyle };
+export { RangeField, RangeDial };
