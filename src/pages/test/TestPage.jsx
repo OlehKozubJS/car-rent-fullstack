@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { ComponentChooser } from "./ComponentChooser";
+import { ComponentSelector } from "./ComponentSelector";
 
 import { LogicGates } from "./LogicGates";
 import { CustomRangeField } from "./CustomRange";
@@ -17,7 +17,7 @@ const TestPage = () => {
 
   return (
     <section>
-      <ComponentChooser
+      <ComponentSelector
         componentNames={[
           "Logic gates",
           "Simplest custom range",
