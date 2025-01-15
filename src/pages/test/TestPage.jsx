@@ -25,7 +25,7 @@ const TestPage = () => {
           "Navigation test",
           "Recursion",
         ]}
-        currentComponentName={componentName}
+        currentComponentName={"Logic gates"}
         onChange={chooseComponent}
       />
       {componentName === "Logic gates" && <LogicGates />}
