@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 
-import { GradientHoverTestComponentStyleBase } from "./GradientHoverStyle";
+import {
+  GradientHoverTestComponentStyleBase,
+  GradientHoverGradientComponentStyleBase,
+} from "./GradientHoverStyle";
 
 const GradientHover = () => {
   const handleMouseOver = () => {};
@@ -12,6 +15,7 @@ const GradientHover = () => {
         onMouseOver={handleMouseOver}
       >
         Gradient hover
+        <GradientHoverGradientComponentStyleBase></GradientHoverGradientComponentStyleBase>
       </GradientHoverTestComponentStyleBase>
     </div>
   );
