@@ -11,7 +11,8 @@ const GradientHoverTestComponentStyleBase = styled.div`
 `;
 
 const GradientHoverGradientComponentStyleBase = styled.div`
-  posaition: absolute;
+  position: absolute;
+
   top: 0px;
   left: 0px;
   height: inherit;
