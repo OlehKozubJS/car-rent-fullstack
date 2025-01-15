@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
 
 import { LogicGates } from "./LogicGates";
-import { CustomRange } from "./CustomRange";
+import { CustomRangeField } from "./CustomRange";
 import { ComponentChooser } from "./ComponentChooser";
 import { DraggableComponentField } from "./DraggableComponent";
 import { RecursionFunctionTest } from "./RecursionFunctionTest";
@@ -17,10 +17,6 @@ const TestPage = () => {
     event.preventDefault();
     setPagePath(event.currentTarget.elements.pageNameInput.value);
     event.currentTarget.reset();
-  };
-
-  const handleRangeValue = (newRangeValue) => {
-    setRangeValue(newRangeValue);
   };
 
   const chooseComponent = (newComponentName) => {
