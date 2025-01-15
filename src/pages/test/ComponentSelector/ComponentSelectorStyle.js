@@ -11,10 +11,10 @@ const ComponentSelectorContainerStyleBase = styled.nav`
 `;
 
 const ComponentSelectorButtonStyleBase = styled.label`
-  height: 36px;
+  height: 24px;
 
   display: flex;
-  padding: 12px;
+  padding-inline: 24px;
   justify-content: center;
   align-items: center;
 
