@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import styled from "@emotion/styled";
+import {} from "./ComponentSelectorStyle";
 
-const ComponentChooser = ({
+const ComponentSelector = ({
   componentNames,
   initialComponentName,
   onChange,
