@@ -8,7 +8,7 @@ import {
 } from "./GradientHoverStyle";
 
 const GradientHover = () => {
-  const [isGradientAnimation, setIsGradientAnimation] = useState();
+  const [isGradientAnimation, setIsGradientAnimation] = useState(false);
 
   const gradientAnimation = () => {};
 
