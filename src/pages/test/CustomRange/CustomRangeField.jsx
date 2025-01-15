@@ -1,12 +1,6 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
-import { Navigate } from "react-router-dom";
-
-import { LogicGates } from "./LogicGates";
-import { SimplestCustomRange } from "./SimplestCustomRange";
-import { ComponentChooser } from "./ComponentChooser";
-import { DraggableComponentField } from "./DraggableComponent";
-import { RecursionFunctionTest } from "./RecursionFunctionTest";
+import { CustomRange } from "./CustomRange";
 
 const CustomRangeField = () => {
   const [componentName, setComponentName] = useState("Logic gates");
