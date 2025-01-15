@@ -9,17 +9,17 @@ const RecursionFunctionTest = () => {
 
   return (
     <div>
-      <p>{recursionFunction(0)}</p>
-      <p>{recursionFunction(1)}</p>
-      <p>{recursionFunction(2)}</p>
-      <p>{recursionFunction(3)}</p>
-      <p>{recursionFunction(4)}</p>
-      <p>{recursionFunction(5)}</p>
-      <p>{recursionFunction(6)}</p>
-      <p>{recursionFunction(7)}</p>
-      <p>{recursionFunction(8)}</p>
-      <p>{recursionFunction(9)}</p>
-      <p>{recursionFunction(10)}</p>
+      <p>Square of 0: {recursionFunction(0)}</p>
+      <p>Square of 1: {recursionFunction(1)}</p>
+      <p>Square of 2: {recursionFunction(2)}</p>
+      <p>Square of 3: {recursionFunction(3)}</p>
+      <p>Square of 4: {recursionFunction(4)}</p>
+      <p>Square of 5: {recursionFunction(5)}</p>
+      <p>Square of 6: {recursionFunction(6)}</p>
+      <p>Square of 7: {recursionFunction(7)}</p>
+      <p>Square of 8: {recursionFunction(8)}</p>
+      <p>Square of 9: {recursionFunction(9)}</p>
+      <p>Square of 10: {recursionFunction(10)}</p>
     </div>
   );
 };
