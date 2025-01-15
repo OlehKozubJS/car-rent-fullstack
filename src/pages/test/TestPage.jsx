@@ -11,8 +11,6 @@ import { RecursionFunctionTest } from "./RecursionFunctionTest";
 const TestPage = () => {
   const [componentName, setComponentName] = useState("Logic gates");
   const [rangeValue, setRangeValue] = useState(0);
-  const [valueY, setValueY] = useState(200);
-  const [valueX, setValueX] = useState(0);
   const [pagePath, setPagePath] = useState("test");
 
   const handlePagePath = (event) => {
