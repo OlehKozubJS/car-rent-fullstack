@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
 
 import { LogicGates } from "./LogicGates";
-import { SimplestCustomRange } from "./SimplestCustomRange";
+import { SimplestCustomRangeField } from "./SimplestCustomRangeField";
 import { ComponentChooser } from "./ComponentChooser";
 import { DraggableComponent } from "./DraggableComponent";
 import { RecursionFunctionTest } from "./RecursionFunctionTest";
