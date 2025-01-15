@@ -28,4 +28,4 @@ const TestPage = () => {
   );
 };
 
-export { TestPage };
+export { NavigationTest };
