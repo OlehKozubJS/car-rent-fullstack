@@ -39,4 +39,4 @@ const ComponentSelector = ({
   );
 };
 
-export { ComponentChooser };
+export { ComponentSelector };
