@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 const GradientHoverTestComponentStyleBase = styled.div`
+  height: 250px;
+  width: 400px;
+
   background-color: black;
   color: white;
 `;
