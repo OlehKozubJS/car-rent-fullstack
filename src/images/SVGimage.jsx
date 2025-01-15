@@ -1,5 +1,5 @@
 import icons from "./icons.svg";
-import css from "./SVGimage.module.css";
+import styled from "@emotion/css";
 
 const SVGimage = ({ name }) => {
   return (
