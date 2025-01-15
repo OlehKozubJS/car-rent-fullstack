@@ -3,7 +3,7 @@ const setLinearGradient = (gradientLeft) => {
     to right,
   rgba(255, 255, 255, 0),
   rgba(255, 255, 255, 0)
-    ${rgradientLeft}px,
+    ${gradientLeft}px,
   rgba(255, 255, 255, 1)
     ${gradientLeft}px,
   rgba(255, 255, 255, 1)
