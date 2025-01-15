@@ -37,4 +37,7 @@ const GradientHoverGradientComponentStyleBase = styled.div`
   );
 `;
 
-export { GradientHoverTestComponentStyleBase };
+export {
+  GradientHoverTestComponentStyleBase,
+  GradientHoverGradientComponentStyleBase,
+};
