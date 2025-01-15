@@ -32,8 +32,8 @@ const GradientHoverTestComponentStyleBase = styled.div`
 `;
 
 const GradientHoverGradientComponentStyleBase = styled.div`
-  height: 250px;
-  width: 400px;
+  height: inherit;
+  width: inherit;
 
   background-color: black;
   color: white;
