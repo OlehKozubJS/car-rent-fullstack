@@ -37,8 +37,6 @@ const TestPage = () => {
       {componentName === "Logic gates" && <LogicGates />}
       {componentName === "Simplest custom range" && <CustomRangeField />}
       {componentName === "Draggable component" && <DraggableComponentField />}
-      <p>valueY={valueY}</p>
-      <p>valueX={valueX}</p>
       <div>
         <form onSubmit={handlePagePath}>
           <input
