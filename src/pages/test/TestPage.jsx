@@ -40,7 +40,7 @@ const TestPage = () => {
 
   return (
     <section>
-      <PageChooser
+      <ComponentChooserChooser
         componentNames={[
           "Logic gates",
           "Simplest custom range",
