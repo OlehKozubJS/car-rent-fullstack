@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { handleEventListener } from "../../../hooks";
 
-import { RangeField, RangeDial } from "./SimplestCustomRangeStyle";
+import { RangeField, RangeDial } from "./CustomRangeStyle";
 
 const CustomRange = ({ value, onChange }) => {
   const [isDraggable, setIsDraggable] = useState(false);
