@@ -11,9 +11,10 @@ const GradientHoverTestComponentStyleBase = styled.div`
     background-image: linear-gradient(
       to right,
       rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 1) 10px,
-      rgba(255, 255, 255, 1) 25px,
-      rgba(255, 255, 255, 0) 35px
+      rgba(255, 255, 255, 0) 30px,
+      rgba(255, 255, 255, 1) 45px,
+      rgba(255, 255, 255, 1) 50px,
+      rgba(255, 255, 255, 0) 65px
     );
   }
 `;
