@@ -15,8 +15,8 @@ const GradientHoverGradientComponentStyleBase = styled.div`
 
   top: 0px;
   left: 0px;
-  height: inherit;
-  width: inherit;
+  height: 100%;
+  width: 100%;
 
   background: none;
   color: white;
