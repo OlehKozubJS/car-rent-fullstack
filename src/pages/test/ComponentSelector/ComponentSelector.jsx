@@ -19,10 +19,10 @@ const ComponentSelector = ({
   };
 
   return (
-    <nav>
+    <ComponentSelectorContainerStyleBase>
       {componentNames.map((value) => {
         return (
-          <label key={value} htmlFor={value}>
+          <ComponentSelectorButtonStyleBase key={value} htmlFor={value}>
             <input
               id={value}
               name="chooseComponentRadio"
@@ -32,10 +32,10 @@ const ComponentSelector = ({
               checked={componentName === value}
             />
             <span>{value}</span>
-          </label>
+          </ComponentSelectorButtonStyleBase>
         );
       })}
-    </nav>
+    </ComponentSelectorContainerStyleBase>
   );
 };
 
