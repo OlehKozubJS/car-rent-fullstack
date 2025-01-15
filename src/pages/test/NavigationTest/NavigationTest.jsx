@@ -19,30 +19,11 @@ const TestPage = () => {
 
   return (
     <section>
-      <ComponentChooser
-        componentNames={[
-          "Logic gates",
-          "Simplest custom range",
-          "Draggable component",
-        ]}
-        currentComponentName={componentName}
-        onChange={chooseComponent}
-      />
-      {componentName === "Logic gates" && <LogicGates />}
-      {componentName === "Simplest custom range" && <CustomRangeField />}
-      {componentName === "Draggable component" && <DraggableComponentField />}
-      <div>
-        <form onSubmit={handlePagePath}>
-          <input
-            name="pageNameInput"
-            type="text"
-            placeholder="Enter page name"
-          />
-          <button type="submit">Enter</button>
-        </form>
-        <Navigate to={`/${pagePath}`} />
-      </div>
-      <RecursionFunctionTest />
+      <form onSubmit={handlePagePath}>
+        <input name="pageNameInput" type="text" placeholder="Enter page name" />
+        <button type="submit">Enter</button>
+      </form>
+      <Navigate to={`/${pagePath}`} />
     </section>
   );
 };
