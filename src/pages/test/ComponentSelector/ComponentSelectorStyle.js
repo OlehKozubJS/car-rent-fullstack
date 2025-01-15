@@ -10,7 +10,7 @@ const ComponentSelectorContainerStyleBase = styled.nav`
   margin-bottom: 50px;
 `;
 
-const ComponentSelectorButtonStyleBase = styled(NavLink)`
+const ComponentSelectorButtonStyleBase = styled.label`
   margin-top: 28px;
 
   height: 36px;
