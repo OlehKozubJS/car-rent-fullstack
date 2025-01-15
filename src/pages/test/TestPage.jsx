@@ -5,7 +5,7 @@ import { ComponentChooser } from "./ComponentChooser";
 import { LogicGates } from "./LogicGates";
 import { CustomRangeField } from "./CustomRange";
 import { DraggableComponentField } from "./DraggableComponent";
-import { RecursionFunctionTest } from "./RecursionFunctionTest";
+import { RecursionFunctionTest } from "./Recursion";
 import { NavigationTest } from "./NavigationTest";
 
 const TestPage = () => {
@@ -39,7 +39,7 @@ const TestPage = () => {
       {componentName === "Simplest custom range" && <CustomRangeField />}
       {componentName === "Draggable component" && <DraggableComponentField />}
       {componentName === "Navigation test" && <NavigationTest />}
-      <RecursionFunctionTest />
+      {componentName === "Recursion" && <RecursionFunctionTest />}
     </section>
   );
 };
