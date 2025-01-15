@@ -3,6 +3,7 @@ import { useState } from "react";
 import {
   ComponentSelectorContainerStyleBase,
   ComponentSelectorButtonStyleBase,
+  ComponentSelectorRadioButtonStyleBase,
 } from "./ComponentSelectorStyle";
 
 const ComponentSelector = ({
@@ -23,7 +24,7 @@ const ComponentSelector = ({
       {componentNames.map((value) => {
         return (
           <ComponentSelectorButtonStyleBase key={value} htmlFor={value}>
-            <input
+            <ComponentSelectorRadioButtonStyleBaset
               id={value}
               name="chooseComponentRadio"
               type="radio"
