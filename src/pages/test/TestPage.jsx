@@ -10,7 +10,7 @@ import { NavigationTest } from "./NavigationTest";
 import { GradientHover } from "./GradientHover";
 
 const TestPage = () => {
-  const [componentName, setComponentName] = useState("Logic gates");
+  const [componentName, setComponentName] = useState("Gradient hover");
 
   const chooseComponent = (newComponentName) => {
     setComponentName(newComponentName);
@@ -27,7 +27,7 @@ const TestPage = () => {
           "Recursion",
           "Gradient hover",
         ]}
-        initialComponentName={"Gradient hover"}
+        initialComponentName={componentName}
         onChange={chooseComponent}
       />
       {componentName === "Logic gates" && <LogicGates />}
