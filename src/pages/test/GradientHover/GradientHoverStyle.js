@@ -20,9 +20,8 @@ const GradientHoverGradientComponentStyleBase = styled.div`
 
   background: none;
   color: white;
-
-  background-image: ${({ backgroundimage }) => {
-    return backgroundimage;
+  background-image: ${(props) => {
+    return props.backgroundimage;
   }};
 `;
 
