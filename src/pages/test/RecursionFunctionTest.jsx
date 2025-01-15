@@ -29,9 +29,9 @@ const RecursionFunctionTest = () => {
       <p>Square of 4: {recursionFunction2(4)}</p>
       <p>Square of 5: {recursionFunction2(5)}</p>
       <p>Square of 6: {recursionFunction2(6)}</p>
-      <p>Square of 7: {recursionFunction(7)}</p>
-      <p>Square of 8: {recursionFunction(8)}</p>
-      <p>Square of 9: {recursionFunction(9)}</p>
+      <p>Square of 7: {recursionFunction2(7)}</p>
+      <p>Square of 8: {recursionFunction2(8)}</p>
+      <p>Square of 9: {recursionFunction2(9)}</p>
       <p>Square of 10: {recursionFunction2(10)}</p>
     </div>
   );
