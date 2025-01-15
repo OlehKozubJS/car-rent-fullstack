@@ -5,7 +5,7 @@ const ComponentSelectorContainerStyleBase = styled.nav`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  column-gap: 12px;
+  gap: 12px;
 
   margin-bottom: 10px;
 `;
