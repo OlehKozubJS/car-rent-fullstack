@@ -11,7 +11,12 @@ const RecursionFunctionTest = () => {
     if (number <= 0) {
       return number;
     } else {
-      return 2 * number - 1 + recursionFunction2(number - 1);
+      return (
+        3 * recursionFunction(number - 1) +
+        3 * number -
+        2 +
+        recursionFunction2(number - 1)
+      );
     }
   };
 
