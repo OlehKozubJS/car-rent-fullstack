@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { NavLink } from "react-router-dom";
 
-const RouterNavigationContainerStyleBase = styled.nav`
+const ComponentSelectorContainerStyleBase = styled.nav`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -10,7 +10,7 @@ const RouterNavigationContainerStyleBase = styled.nav`
   margin-bottom: 50px;
 `;
 
-const RouterNavigationLinkStyleBase = styled(NavLink)`
+const ComponentSelectorButtonStyleBase = styled(NavLink)`
   margin-top: 28px;
 
   height: 36px;
@@ -37,4 +37,7 @@ const RouterNavigationLinkStyleBase = styled(NavLink)`
   }
 `;
 
-export { RouterNavigationContainerStyleBase, RouterNavigationLinkStyleBase };
+export {
+  ComponentSelectorContainerStyleBase,
+  ComponentSelectorButtonStyleBase,
+};
