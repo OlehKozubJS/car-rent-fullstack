@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { Navigate } from "react-router-dom";
 
-const TestPage = () => {
+const NavigationTest = () => {
   const [pagePath, setPagePath] = useState("test");
 
   const handlePagePath = (event) => {
