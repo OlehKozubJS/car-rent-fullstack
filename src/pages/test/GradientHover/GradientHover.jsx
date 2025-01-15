@@ -12,7 +12,9 @@ const GradientHover = () => {
 
   const gradientAnimation = () => {};
 
-  const handleMouseOver = () => {};
+  const handleMouseOver = () => {
+    setIsGradientAnimation(true);
+  };
 
   useEffect(handleEventListener(handleEventListener), [isGradientAnimation]);
 
