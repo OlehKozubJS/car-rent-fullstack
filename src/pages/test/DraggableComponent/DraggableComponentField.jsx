@@ -17,11 +17,7 @@ const DraggableComponentField = () => {
 
   return (
     <section>
-      <DraggableComponent
-        valueY={valueY}
-        valueX={valueX}
-        onChange={handleXYvalue}
-      />
+      <DraggableComponent />
       <p>valueY={valueY}</p>
       <p>valueX={valueX}</p>
     </section>
