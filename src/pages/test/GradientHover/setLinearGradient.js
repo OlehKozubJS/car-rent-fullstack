@@ -7,9 +7,9 @@ const setLinearGradient = (gradientLeft) => {
   rgba(255, 255, 255, 1)
     ${gradientLeft + 20}px,
   rgba(255, 255, 255, 1)
-    ${gradientLeft + 10}px,
+    ${gradientLeft + 30}px,
   rgba(255, 255, 255, 0)
-    ${gradientLeft + 20}px
+    ${gradientLeft + 50}px
   );`;
 };
 
