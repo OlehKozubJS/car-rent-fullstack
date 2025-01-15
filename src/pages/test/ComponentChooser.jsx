@@ -5,10 +5,12 @@ const ComponentChooser = ({
   currentComponentName,
   onChange,
 }) => {
-  const [componentName, setComponentName] = useState("Logic gates");
+  const [componentName, setComponentName] = useState(currentComponentName);
 
-  const chooseComponent = ({ target }) => {
-    onChange(target.value);
+  const chooseComponent = (event) => {
+    const newComponentName = event.target.value;
+    setComponentName(newComponentName);
+    onChange(newComponentName);
   };
 
   return (
@@ -22,7 +24,7 @@ const ComponentChooser = ({
               type="radio"
               value={value}
               onChange={chooseComponent}
-              checked={currentComponentName === value}
+              checked={componentName === value}
             />
             <span>{value}</span>
           </label>
