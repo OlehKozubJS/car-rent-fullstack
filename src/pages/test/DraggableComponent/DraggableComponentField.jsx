@@ -17,41 +17,13 @@ const DraggableComponentField = () => {
 
   return (
     <section>
-      <ComponentChooser
-        componentNames={[
-          "Logic gates",
-          "Simplest custom range",
-          "Draggable component",
-        ]}
-        currentComponentName={componentName}
-        onChange={chooseComponent}
+      <DraggableComponent
+        valueY={valueY}
+        valueX={valueX}
+        onChange={handleXYvalue}
       />
-      {componentName === "Logic gates" && <LogicGates />}
-      {componentName === "Simplest custom range" && (
-        <SimplestCustomRange onChange={handleRangeValue} value={rangeValue} />
-      )}
-      {componentName === "Draggable component" && (
-        <DraggableComponent
-          valueY={valueY}
-          valueX={valueX}
-          onChange={handleXYvalue}
-        />
-      )}
-      <p>{rangeValue}</p>
       <p>valueY={valueY}</p>
       <p>valueX={valueX}</p>
-      <div>
-        <form onSubmit={handlePagePath}>
-          <input
-            name="pageNameInput"
-            type="text"
-            placeholder="Enter page name"
-          />
-          <button type="submit">Enter</button>
-        </form>
-        <Navigate to={`/${pagePath}`} />
-      </div>
-      <RecursionFunctionTest />
     </section>
   );
 };
