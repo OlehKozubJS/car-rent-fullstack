@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 
 import { handleEventListener } from "../../../hooks";
 
+import { setLinearGradient } from "./setLinearGradient";
+
 import {
   GradientHoverTestComponentStyleBase,
   GradientHoverGradientComponentStyleBase,
@@ -23,7 +25,7 @@ const GradientHover = () => {
       <GradientHoverTestComponentStyleBase onMouseOver={handleMouseOver}>
         Gradient hover
         <GradientHoverGradientComponentStyleBase
-          backgroundimage={"none"}
+          backgroundimage={setLinearGradient(50)}
         ></GradientHoverGradientComponentStyleBase>
       </GradientHoverTestComponentStyleBase>
     </div>
