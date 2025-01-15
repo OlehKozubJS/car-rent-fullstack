@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
 
 import { LogicGates } from "./LogicGates";
-import { SimplestCustomRangeField } from "./SimplestCustomRangeField";
+import { SimplestCustomRange } from "./SimplestCustomRange";
 import { ComponentChooser } from "./ComponentChooser";
-import { DraggableComponent } from "./DraggableComponent";
+import { DraggableComponentField } from "./DraggableComponentField";
 import { RecursionFunctionTest } from "./RecursionFunctionTest";
 
 const TestPage = () => {
