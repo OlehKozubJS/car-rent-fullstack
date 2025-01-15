@@ -4,10 +4,10 @@ import styled from "@emotion/styled";
 
 const ComponentChooser = ({
   componentNames,
-  currentComponentName,
+  initialComponentName,
   onChange,
 }) => {
-  const [componentName, setComponentName] = useState(currentComponentName);
+  const [componentName, setComponentName] = useState(initialComponentName);
 
   const chooseComponent = (event) => {
     const newComponentName = event.target.value;
