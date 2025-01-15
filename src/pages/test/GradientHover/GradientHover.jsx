@@ -8,7 +8,9 @@ import {
 } from "./GradientHoverStyle";
 
 const GradientHover = () => {
-  const handleMouseOver = () => {};
+  const handleMouseOver = (handleEventListener(handleEventListener), []) => {};
+
+  const gradientAnimation = () => {};
 
   useEffect();
 
