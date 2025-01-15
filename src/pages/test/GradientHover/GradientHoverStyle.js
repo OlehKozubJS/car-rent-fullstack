@@ -6,9 +6,14 @@ const GradientHoverTestComponentStyleBase = styled.div`
 
   background-color: black;
   color: white;
+
+  position: relative;
 `;
 
 const GradientHoverGradientComponentStyleBase = styled.div`
+  posaition: absolute;
+  top: 0px;
+  left: 0px;
   height: inherit;
   width: inherit;
 
