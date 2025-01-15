@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcar_rent_fullstack=self.webpackChunkcar_rent_fullstack||[]).push([[569],{2569:(r,c,e)=>{e.r(c),e.d(c,{GradientHover:()=>d});var n,a=e(168),l=e(7745),s=e(3329);const t=l.ZP.div(n||(n=(0,a.Z)(["\n  background-color: black;\n  color: white;\n"]))),d=()=>(0,s.jsx)("div",{children:(0,s.jsx)(t,{children:"Gradient hover"})})}}]);
+//# sourceMappingURL=569.4bbb6a04.chunk.js.map
