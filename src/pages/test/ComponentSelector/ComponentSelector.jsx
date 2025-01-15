@@ -24,7 +24,7 @@ const ComponentSelector = ({
       {componentNames.map((value) => {
         return (
           <ComponentSelectorButtonStyleBase key={value} htmlFor={value}>
-            <ComponentSelectorRadioButtonStyleBaset
+            <ComponentSelectorRadioButtonStyleBase
               id={value}
               name="chooseComponentRadio"
               type="radio"
