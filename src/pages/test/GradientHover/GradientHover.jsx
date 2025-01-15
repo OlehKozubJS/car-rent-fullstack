@@ -11,6 +11,7 @@ import {
 
 const GradientHover = () => {
   const [isGradientAnimation, setIsGradientAnimation] = useState(false);
+  const [gra] = useState(-40);
 
   const gradientAnimation = () => {};
 
