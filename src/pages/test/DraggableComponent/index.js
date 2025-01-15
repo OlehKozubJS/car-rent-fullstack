@@ -1,3 +1,3 @@
-import {} from "./DraggableComponentField";
+import { DraggableComponentField } from "./DraggableComponentField";
 
-export {};
+export { DraggableComponentField };
