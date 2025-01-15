@@ -7,12 +7,10 @@ const ComponentSelectorContainerStyleBase = styled.nav`
   justify-content: center;
   column-gap: 18px;
 
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 `;
 
 const ComponentSelectorButtonStyleBase = styled.label`
-  margin-top: 28px;
-
   height: 36px;
 
   display: flex;
