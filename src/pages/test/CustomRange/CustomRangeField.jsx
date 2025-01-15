@@ -17,4 +17,4 @@ const CustomRangeField = () => {
   );
 };
 
-export {};
+export { CustomRangeField };
