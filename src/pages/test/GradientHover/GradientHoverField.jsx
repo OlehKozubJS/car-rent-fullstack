@@ -4,7 +4,7 @@ import { setLinearGradient } from "./setLinearGradient";
 
 import {
   GradientHoverTestComponentStyleBase,
-  GradientHoverGradientComponentStyleBase,
+  GradientHoverComponentStyleBase,
 } from "./GradientHoverStyle";
 
 const GradientHoverField = () => {
@@ -42,10 +42,10 @@ const GradientHoverField = () => {
     <div>
       <GradientHoverTestComponentStyleBase>
         Gradient hover
-        <GradientHoverGradientComponentStyleBase
+        <GradientHoverComponentStyleBase
           onMouseOver={handleMouseOver}
           backgroundimage={setLinearGradient(gradientLeft)}
-        ></GradientHoverGradientComponentStyleBase>
+        ></GradientHoverComponentStyleBase>
       </GradientHoverTestComponentStyleBase>
     </div>
   );
