@@ -10,7 +10,7 @@ import {
 } from "./GradientHoverStyle";
 
 const GradientHover = () => {
-  const [isGradientAnimation, setIsGradientAnimation] = useState(false);
+  const [isGradientAnimation, setIsGradientAnimation] = useState(true);
   const [parentNodeInformation, setParentnodeInformation] = useState({});
   const [gradientLeft, setGradientLeft] = useState(-40);
 
