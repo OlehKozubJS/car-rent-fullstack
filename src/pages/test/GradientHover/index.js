@@ -1,3 +1,5 @@
+import { GradientHover } from "./GradientHover";
+
 import { GradientHoverField } from "./GradientHoverField";
 
-export { GradientHoverField };
+export { GradientHover, GradientHoverField };
