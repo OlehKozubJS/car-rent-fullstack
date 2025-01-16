@@ -53,4 +53,4 @@ const GradientHoverField = () => {
   );
 };
 
-export { GradientHover };
+export { GradientHoverField };
