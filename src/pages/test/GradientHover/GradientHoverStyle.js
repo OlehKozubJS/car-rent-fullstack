@@ -1,16 +1,6 @@
 import styled from "styled-components";
 
-const GradientHoverTestComponentStyleBase = styled.div`
-  height: 150px;
-  width: 800px;
-
-  background-color: black;
-  color: white;
-
-  position: relative;
-`;
-
-const GradientHoverComponentStyleBase = styled.div`
+const GradientHoverStyleBase = styled.div`
   position: absolute;
 
   top: 0px;
@@ -25,4 +15,4 @@ const GradientHoverComponentStyleBase = styled.div`
   }};
 `;
 
-export { GradientHoverTestComponentStyleBase, GradientHoverComponentStyleBase };
+export { GradientHoverStyleBase };
