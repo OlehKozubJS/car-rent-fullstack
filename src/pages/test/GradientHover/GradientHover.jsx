@@ -33,7 +33,9 @@ const GradientHover = () => {
 
   useEffect(() => {
     const animation = setInterval(gradientAnimation, 10);
-
+    if (!isGradientAnimation) {
+      clearInterval(animation);
+    }
     return () => {
       clearInterval(animation);
     };
