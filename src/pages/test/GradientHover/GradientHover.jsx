@@ -14,7 +14,9 @@ const GradientHover = () => {
   const [gradientLeft, setGradientLeft] = useState(-40);
 
   const gradientAnimation = () => {
-    setIsGradientAnimation(false);
+    if (isGradientAnimation) {
+      setIsGradientAnimation(false);
+    }
   };
 
   const handleMouseOver = () => {
