@@ -19,7 +19,9 @@ const GradientHover = () => {
     setIsGradientAnimation(true);
   };
 
-  useEffect(handleEventListener(handleEventListener), [isGradientAnimation]);
+  useEffect(handleEventListener(handleEventListener, 100), [
+    isGradientAnimation,
+  ]);
 
   return (
     <div>
