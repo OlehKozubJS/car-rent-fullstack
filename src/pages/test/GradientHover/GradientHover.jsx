@@ -11,6 +11,7 @@ import {
 
 const GradientHover = () => {
   const [isGradientAnimation, setIsGradientAnimation] = useState(false);
+  const [parentNode, setParentnode] = useState({});
   const [gradientLeft, setGradientLeft] = useState(-40);
 
   const gradientAnimation = () => {
@@ -19,7 +20,7 @@ const GradientHover = () => {
     }
   };
 
-  const handleMouseOver = () => {
+  const handleMouseOver = (event) => {
     setIsGradientAnimation(true);
   };
 
