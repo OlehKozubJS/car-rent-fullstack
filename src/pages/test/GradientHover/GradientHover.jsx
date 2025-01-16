@@ -26,7 +26,7 @@ const GradientHover = () => {
 
   const handleMouseOver = (event) => {
     setParentnodeInformation(event.target.parentNode);
-    console.log(event.target.parentNode.style);
+    console.log(event.target.parentNode.offsetWidth);
     setIsGradientAnimation(true);
   };
 
