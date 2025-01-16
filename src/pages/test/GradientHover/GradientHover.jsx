@@ -33,9 +33,10 @@ const GradientHover = () => {
 
   return (
     <div>
-      <GradientHoverTestComponentStyleBase onMouseOver={handleMouseOver}>
+      <GradientHoverTestComponentStyleBase>
         Gradient hover
         <GradientHoverGradientComponentStyleBase
+          onMouseOver={handleMouseOver}
           backgroundimage={setLinearGradient(gradientLeft)}
         ></GradientHoverGradientComponentStyleBase>
       </GradientHoverTestComponentStyleBase>
