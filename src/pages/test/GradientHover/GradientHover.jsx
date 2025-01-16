@@ -16,7 +16,7 @@ const GradientHover = () => {
 
   const gradientAnimation = () => {
     if (isGradientAnimation) {
-      if (gradientLeft >= parentNodeInformation.style.width - 40) {
+      if (gradientLeft >= /*parentNodeInformation.style.width*/ -40) {
         setIsGradientAnimation(false);
       } else {
         setGradientLeft(gradientLeft + 5);
@@ -26,6 +26,7 @@ const GradientHover = () => {
 
   const handleMouseOver = (event) => {
     setParentnodeInformation(event.target.parentNode);
+    console.log(event.target.parentNode);
     setIsGradientAnimation(true);
   };
 
