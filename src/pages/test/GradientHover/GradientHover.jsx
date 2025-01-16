@@ -16,7 +16,10 @@ const GradientHover = () => {
 
   const gradientAnimation = () => {
     if (isGradientAnimation) {
-      setIsGradientAnimation(false);
+      if (gradientLeft >= parentNodeInformation.style.width - 40) {
+        setIsGradientAnimation(false);
+      } else {
+      }
     }
   };
 
