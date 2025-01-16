@@ -1,52 +1,17 @@
-import { useState, useEffect } from "react";
+import { GradientHover } from "./GradientHover";
 
-import { setLinearGradient } from "./setLinearGradient";
-
-import {
-  GradientHoverTestComponentStyleBase,
-  GradientHoverComponentStyleBase,
-} from "./GradientHoverStyle";
+import { GradientHoverFieldStyleBase } from "./GradientHoverFieldStyle";
 
 const GradientHoverField = () => {
-  const [isGradientAnimation, setIsGradientAnimation] = useState(false);
-  const [parentNodeInformation, setParentnodeInformation] = useState({});
-  const [gradientLeft, setGradientLeft] = useState(-40);
-
-  const gradientAnimation = () => {
-    if (isGradientAnimation) {
-      if (gradientLeft >= parentNodeInformation.offsetWidth + 40) {
-        setGradientLeft(-40);
-        setIsGradientAnimation(false);
-      } else {
-        setGradientLeft(gradientLeft + 5);
-      }
-    }
-  };
-
-  const handleMouseOver = (event) => {
-    setParentnodeInformation(event.target.parentNode);
-    setIsGradientAnimation(true);
-  };
-
-  useEffect(() => {
-    const animation = setInterval(gradientAnimation, 5);
-    if (!isGradientAnimation) {
-      clearInterval(animation);
-    }
-    return () => {
-      clearInterval(animation);
-    };
-  }, [isGradientAnimation, gradientLeft]);
-
   return (
     <div>
-      <GradientHoverTestComponentStyleBase>
+      <GradientHoverFieldStyleBase>
         Gradient hover
-        <GradientHoverComponentStyleBase
+        <GradientHover
           onMouseOver={handleMouseOver}
           backgroundimage={setLinearGradient(gradientLeft)}
-        ></GradientHoverComponentStyleBase>
-      </GradientHoverTestComponentStyleBase>
+        ></GradientHover>
+      </GradientHoverFieldStyleBase>
     </div>
   );
 };
