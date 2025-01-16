@@ -7,10 +7,7 @@ const GradientHoverField = () => {
     <div>
       <GradientHoverFieldStyleBase>
         Gradient hover
-        <GradientHover
-          onMouseOver={handleMouseOver}
-          backgroundimage={setLinearGradient(gradientLeft)}
-        ></GradientHover>
+        <GradientHover />
       </GradientHoverFieldStyleBase>
     </div>
   );
