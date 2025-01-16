@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 
-import { handleInterval } from "../../../hooks";
-
 import { setLinearGradient } from "./setLinearGradient";
 
 import {
