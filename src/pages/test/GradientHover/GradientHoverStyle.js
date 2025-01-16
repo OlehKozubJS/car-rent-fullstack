@@ -10,7 +10,7 @@ const GradientHoverTestComponentStyleBase = styled.div`
   position: relative;
 `;
 
-const GradientHoverGradientComponentStyleBase = styled.div`
+const GradientHoverComponentStyleBase = styled.div`
   position: absolute;
 
   top: 0px;
@@ -25,7 +25,4 @@ const GradientHoverGradientComponentStyleBase = styled.div`
   }};
 `;
 
-export {
-  GradientHoverTestComponentStyleBase,
-  GradientHoverGradientComponentStyleBase,
-};
+export { GradientHoverTestComponentStyleBase, GradientHoverComponentStyleBase };
