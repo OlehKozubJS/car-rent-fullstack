@@ -16,7 +16,8 @@ const GradientHover = () => {
 
   const gradientAnimation = () => {
     if (isGradientAnimation) {
-      if (gradientLeft >= parentNodeInformation.offsetWidth - 40) {
+      if (gradientLeft >= parentNodeInformation.offsetWidth + 40) {
+        setIsGradientAnimation();
         setIsGradientAnimation(false);
       } else {
         setGradientLeft(gradientLeft + 5);
