@@ -2,10 +2,7 @@ import { useState, useEffect } from "react";
 
 import { setLinearGradient } from "./setLinearGradient";
 
-import {
-  GradientHoverTestComponentStyleBase,
-  GradientHoverComponentStyleBase,
-} from "./GradientHoverStyle";
+import { GradienHoverStyleBase } from "./GradientHoverStyle";
 
 const GradientHover = () => {
   const [isGradientAnimation, setIsGradientAnimation] = useState(false);
