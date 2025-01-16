@@ -34,7 +34,9 @@ const GradientHover = () => {
   useEffect(() => {
     const animation = setInterval(gradientAnimation, 10);
 
-    return () 
+    return () => {
+      clearInterval(animation);
+    };
   }, [isGradientAnimation, gradientLeft]);
 
   return (
