@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { handleEventListener } from "../../../hooks";
+import { handleInterval } from "../../../hooks";
 
 import { setLinearGradient } from "./setLinearGradient";
 
@@ -25,7 +25,7 @@ const GradientHover = () => {
     setIsGradientAnimation(true);
   };
 
-  useEffect(handleEventListener(gradientAnimation, 100), [isGradientAnimation]);
+  useEffect(handleInterval(gradientAnimation, 100), [isGradientAnimation]);
 
   return (
     <div>
