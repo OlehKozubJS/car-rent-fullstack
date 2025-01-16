@@ -36,15 +36,10 @@ const GradientHover = () => {
   }, [isGradientAnimation, gradientLeft]);
 
   return (
-    <div>
-      <GradientHoverTestComponentStyleBase>
-        Gradient hover
-        <GradientHoverComponentStyleBase
-          onMouseOver={handleMouseOver}
-          backgroundimage={setLinearGradient(gradientLeft)}
-        ></GradientHoverComponentStyleBase>
-      </GradientHoverTestComponentStyleBase>
-    </div>
+    <GradientHoverStyleBase
+      onMouseOver={handleMouseOver}
+      backgroundimage={setLinearGradient(gradientLeft)}
+    ></GradientHoverStyleBase>
   );
 };
 
