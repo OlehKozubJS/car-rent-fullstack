@@ -10,13 +10,11 @@ const GradientHover = () => {
   const [gradientLeft, setGradientLeft] = useState(-40);
 
   const gradientAnimation = () => {
-    if (isGradientAnimation) {
-      if (gradientLeft >= parentNodeInformation.offsetWidth + 40) {
-        setGradientLeft(-40);
-        setIsGradientAnimation(false);
-      } else {
-        setGradientLeft(gradientLeft + 5);
-      }
+    if (gradientLeft >= parentNodeInformation.offsetWidth + 40) {
+      setGradientLeft(-40);
+      setIsGradientAnimation(false);
+    } else {
+      setGradientLeft(gradientLeft + 5);
     }
   };
 
