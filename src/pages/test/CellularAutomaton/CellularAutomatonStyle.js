@@ -17,3 +17,5 @@ const CellStyleBase = styled.div`
   border-width: 1px;
   border-color: rgb(0, 0, 0);
 `;
+
+export { CellularFieldStyleBase, CellStyleBase };
