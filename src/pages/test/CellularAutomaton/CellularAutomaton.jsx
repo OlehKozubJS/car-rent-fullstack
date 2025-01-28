@@ -5,13 +5,17 @@ import {
 
 import { Cells } from "./Cells";
 
-const CellularAutomaton = () => {
+const createCllsDataArray = () => {
   let cells = [];
 
   for (let cellNumber = 1; cellNumber <= 2500; cellNumber += 1) {
     cells = [...cells, false];
   }
 
+  return cells;
+};
+
+const CellularAutomaton = () => {
   return (
     <CellularFieldStyleBase>
       <Cells />
