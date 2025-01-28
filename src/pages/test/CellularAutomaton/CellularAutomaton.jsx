@@ -23,7 +23,7 @@ const CellularAutomaton = () => {
   const changeCellData = ({ target }) => {
     setCellsData(
       cellsData.map((cellData, cellNumber) => {
-        if (target.key === cellNumber) {
+        if (target.dataset.number === cellNumber) {
           return !cellData;
         } else {
           return cellData;
@@ -36,7 +36,11 @@ const CellularAutomaton = () => {
     <CellularFieldStyleBase onClick={changeCellData}>
       {cellsData.map((cellData, cellNumber) => {
         return (
-          <CellStyleBase key={cellNumber} isActive={cellData}></CellStyleBase>
+          <CellStyleBase
+            key={cellNumber}
+            data-number={cellNumber}
+            isActive={cellData}
+          ></CellStyleBase>
         );
       })}
     </CellularFieldStyleBase>
