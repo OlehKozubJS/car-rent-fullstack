@@ -11,7 +11,7 @@ import { GradientHoverField } from "./GradientHover";
 import { CellularAutomaton } from "./CellularAutomaton";
 
 const TestPage = () => {
-  const [componentName, setComponentName] = useState("Gradient hover");
+  const [componentName, setComponentName] = useState("Cellular automaton");
 
   const chooseComponent = (newComponentName) => {
     setComponentName(newComponentName);
