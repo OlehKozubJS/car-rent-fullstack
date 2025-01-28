@@ -1,7 +1,7 @@
 import { CellStyleBase } from "./CellularAutomatonStyle";
 
-const Cell = ({}) => {
-  return <CellStyleBase key={cellNumber}>{cellNumber}</CellStyleBase>;
+const Cell = ({ isActive }) => {
+  return <CellStyleBase key={cellNumber} isActive={isActive}></CellStyleBase>;
 };
 
 export { Cell };
