@@ -1,7 +1,7 @@
 import { CellStyleBase } from "./CellularAutomatonStyle";
 
 const Cells = () => {
-  const cells = [];
+  let cells = [];
 
   for (let cellNumber = 1; cellNumber <= 2500; cellNumber += 1) {
     cells = [...cells, <CellStyleBase></CellStyleBase>];
