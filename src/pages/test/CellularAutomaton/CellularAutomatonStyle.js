@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
 
 const CellularFieldStyleBase = styled.div`
-  height: 500px;
-  width: 500px;
+  height: 1000px;
+  width: 1000px;
 
   border-style: solid;
   border-width: 1px;
@@ -14,8 +14,8 @@ const CellularFieldStyleBase = styled.div`
 
 const CellStyleBase = styled.div`
   box-sizing: border-box;
-  height: 10px;
-  width: 10px;
+  height: 20px;
+  width: 20px;
 
   border-style: solid;
   border-width: 1px;
