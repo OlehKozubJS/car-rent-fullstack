@@ -20,12 +20,12 @@ const CellStyleBase = styled.div`
   border-style: solid;
   border-width: 1px;
   border-color: ${({ isActive }) => {
-    isActive ? "rgb(0, 0, 0)" : "rgb(255, 255, 255)";
+    return isActive ? "rgb(0, 0, 0)" : "rgb(255, 255, 255)";
   }};
 
   font-size: 9px;
   color: ${({ isActive }) => {
-    isActive ? "rgb(255, 255, 255)" : "rgb(0, 0, 0)";
+    return isActive ? "rgb(255, 255, 255)" : "rgb(0, 0, 0)";
   }};
 `;
 
