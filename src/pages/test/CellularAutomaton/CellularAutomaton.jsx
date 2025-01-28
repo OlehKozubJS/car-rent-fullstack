@@ -4,7 +4,7 @@ import {
 } from "./CellularAutomatonStyle";
 
 const CellularAutomaton = () => {
-  return <div></div>;
+  return <CellularFieldStyleBase></CellularFieldStyleBase>;
 };
 
 export { CellularAutomaton };
