@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkcar_rent_fullstack=self.webpackChunkcar_rent_fullstack||[]).push([[543],{8543:(e,r,l)=>{l.r(r),l.d(r,{CellStyleBase:()=>i,CellularFieldStyleBase:()=>o});var n,t,d=l(168),s=l(9716);const o=s.Z.div(n||(n=(0,d.Z)(["\n  height: 500px;\n  width: 500px;\n\n  border-style: solid;\n  border-width: 1px;\n  border-color: rgb(0, 0, 0);\n"]))),i=s.Z.div(t||(t=(0,d.Z)(["\n  height: 10px;\n  width: 10px;\n\n  border-style: solid;\n  border-width: 1px;\n  border-color: rgb(0, 0, 0);\n"])))}}]);
-//# sourceMappingURL=543.7ab14c9b.chunk.js.map
