@@ -1,6 +1,6 @@
 import { CellStyleBase } from "./CellularAutomatonStyle";
 
-const CellularAutomaton = () => {
+const Cells = () => {
   const cells = [];
 
   for (let cellNumber = 1; cellNumber <= 2500; cellNumber += 1) {
@@ -10,4 +10,4 @@ const CellularAutomaton = () => {
   return cells;
 };
 
-export { CellularAutomaton };
+export { Cells };
