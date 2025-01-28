@@ -22,6 +22,7 @@ const CellStyleBase = styled.div`
   border-color: rgb(0, 0, 0);
 
   font-size: 9px;
+  color: ;
 `;
 
 export { CellularFieldStyleBase, CellStyleBase };
