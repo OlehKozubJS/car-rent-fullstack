@@ -23,7 +23,7 @@ const CellStyleBase = styled.div`
 
   font-size: 9px;
   color: ${({ isActive }) => {
-    isActive ? "rgb()" : "rgb()";
+    isActive ? "rgb(255, 255, 255)" : "rgb(0, 0, 0)";
   }};
 `;
 
