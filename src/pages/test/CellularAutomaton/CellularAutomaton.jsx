@@ -18,7 +18,7 @@ const createCellsDataArray = () => {
 };
 
 const CellularAutomaton = () => {
-  = useState(createCellsDataArray);
+  const [cellsData, setCellsData] = useState(createCellsDataArray);
 
   return <CellularFieldStyleBase>{<CellStyleBase />}</CellularFieldStyleBase>;
 };
