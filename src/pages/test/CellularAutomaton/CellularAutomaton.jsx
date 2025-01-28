@@ -23,8 +23,7 @@ const CellularAutomaton = () => {
   const changeCellData = ({ target }) => {
     setCellsData(
       cellsData.map((cellData, cellNumber) => {
-        console.log(target.dataset);
-        if (target.dataset.number === cellNumber) {
+        if (Number(target.dataset.number) === cellNumber) {
           return !cellData;
         } else {
           return cellData;
