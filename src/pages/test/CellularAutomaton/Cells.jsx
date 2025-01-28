@@ -6,9 +6,7 @@ const Cells = () => {
   for (let cellNumber = 1; cellNumber <= 2500; cellNumber += 1) {
     cells = [
       ...cells,
-      <CellStyleBase key={cellNumber} isActive={true}>
-        {cellNumber}
-      </CellStyleBase>,
+      <CellStyleBase key={cellNumber} isActive={true}></CellStyleBase>,
     ];
   }
 
