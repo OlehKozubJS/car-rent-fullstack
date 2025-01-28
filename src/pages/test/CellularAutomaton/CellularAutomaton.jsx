@@ -9,7 +9,7 @@ const createCllsDataArray = () => {
   let cellsData = [];
 
   for (let cellNumber = 1; cellNumber <= 2500; cellNumber += 1) {
-    cellsData = [...cells, false];
+    cellsData = [...cellsData, false];
   }
 
   return cellsData;
