@@ -1,4 +1,7 @@
-import { CellularFieldStyleBase } from "./CellularAutomatonStyle";
+import {
+  CellularFieldStyleBase,
+  CellStyleBase,
+} from "./CellularAutomatonStyle";
 import { Cells } from "./Cells";
 
 const CellularAutomaton = () => {
