@@ -22,8 +22,10 @@ const CellularAutomaton = () => {
 
   return (
     <CellularFieldStyleBase>
-      {cellsData.map(() => {
-        return <CellStyleBase />;
+      {cellsData.map((cellData, cellNumber) => {
+        return (
+          <CellStyleBase key={cellNumber} isActive={cellData}></CellStyleBase>
+        );
       })}
     </CellularFieldStyleBase>
   );
