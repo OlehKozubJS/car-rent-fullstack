@@ -8,6 +8,7 @@ import { DraggableComponentField } from "./DraggableComponent";
 import { RecursionFunctionTest } from "./Recursion";
 import { NavigationTest } from "./NavigationTest";
 import { GradientHoverField } from "./GradientHover";
+import { CellularAutomaton } from "./CellularAutomaton";
 
 const TestPage = () => {
   const [componentName, setComponentName] = useState("Gradient hover");
@@ -26,6 +27,7 @@ const TestPage = () => {
           "Navigation test",
           "Recursion",
           "Gradient hover",
+          "Cellular automaton",
         ]}
         initialComponentName={componentName}
         onChange={chooseComponent}
@@ -36,6 +38,7 @@ const TestPage = () => {
       {componentName === "Navigation test" && <NavigationTest />}
       {componentName === "Recursion" && <RecursionFunctionTest />}
       {componentName === "Gradient hover" && <GradientHoverField />}
+      {componentName === "Cellular automaton" && <CellularAutomaton />}
     </section>
   );
 };
