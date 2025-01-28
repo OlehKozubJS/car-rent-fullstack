@@ -13,6 +13,7 @@ const CellularFieldStyleBase = styled.div`
 `;
 
 const CellStyleBase = styled.div`
+  box-sizing: border-box;
   height: 10px;
   width: 10px;
 
