@@ -20,6 +20,8 @@ const createCellsDataArray = () => {
 const CellularAutomaton = () => {
   const [cellsData, setCellsData] = useState(createCellsDataArray());
 
+  const changeCellData = () => {};
+
   return (
     <CellularFieldStyleBase onClick={changeCellData}>
       {cellsData.map((cellData, cellNumber) => {
