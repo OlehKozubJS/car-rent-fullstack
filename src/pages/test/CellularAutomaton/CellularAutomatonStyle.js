@@ -7,6 +7,9 @@ const CellularFieldStyleBase = styled.div`
   border-style: solid;
   border-width: 1px;
   border-color: rgb(0, 0, 0);
+
+  display: flex;
+  flex-wrap: wrap;
 `;
 
 const CellStyleBase = styled.div`
