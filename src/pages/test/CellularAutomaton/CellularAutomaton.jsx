@@ -9,10 +9,7 @@ const CellularAutomaton = () => {
   let cells = [];
 
   for (let cellNumber = 1; cellNumber <= 2500; cellNumber += 1) {
-    cells = [
-      ...cells,
-      <CellStyleBase key={cellNumber} isActive={false}></CellStyleBase>,
-    ];
+    cells = [...cells, false];
   }
 
   return (
