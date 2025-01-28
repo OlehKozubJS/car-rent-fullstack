@@ -21,7 +21,7 @@ const CellularAutomaton = () => {
   const [cellsData, setCellsData] = useState(createCellsDataArray());
 
   return (
-    <CellularFieldStyleBase>
+    <CellularFieldStyleBase onClick={changeCellData}>
       {cellsData.map((cellData, cellNumber) => {
         return (
           <CellStyleBase key={cellNumber} isActive={cellData}></CellStyleBase>
