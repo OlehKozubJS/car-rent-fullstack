@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 
 const CellularFieldStyleBase = styled.div`
+  box-sizing: content-box;
   height: 1000px;
   width: 1000px;
 
