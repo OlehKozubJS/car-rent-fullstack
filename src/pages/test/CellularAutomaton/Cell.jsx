@@ -1,7 +1,9 @@
+import { useState } from "react";
+
 import { CellStyleBase } from "./CellularAutomatonStyle";
 
 const Cell = ({ isActive }) => {
-  return <CellStyleBase key={cellNumber} isActive={isActive}></CellStyleBase>;
+  return <CellStyleBase isActive={isActive} onClick={}></CellStyleBase>;
 };
 
 export { Cell };
