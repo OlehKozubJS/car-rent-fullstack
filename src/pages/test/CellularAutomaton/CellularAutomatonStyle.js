@@ -22,8 +22,8 @@ const CellStyleBase = styled.div`
   border-color: rgb(0, 0, 0);
 
   font-size: 9px;
-  color: ${({}) => {
-    rgb();
+  color: ${({ isActive }) => {
+    isActive ? "rgb()" : "rgb()";
   }};
 `;
 
