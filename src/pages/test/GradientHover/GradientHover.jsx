@@ -25,9 +25,11 @@ const GradientHover = () => {
 
   useEffect(() => {
     const animation = setInterval(gradientAnimation, 5);
+
     if (!isGradientAnimation) {
       clearInterval(animation);
     }
+
     return () => {
       clearInterval(animation);
     };
