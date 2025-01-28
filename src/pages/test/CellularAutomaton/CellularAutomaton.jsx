@@ -1,0 +1,3 @@
+const CellularAutomaton = () => {};
+
+export { CellularAutomaton };
