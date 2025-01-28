@@ -7,7 +7,7 @@ import {
 
 import { Cells } from "./Cells";
 
-const createCllsDataArray = () => {
+const createCellsDataArray = () => {
   let cellsData = [];
 
   for (let cellNumber = 1; cellNumber <= 2500; cellNumber += 1) {
@@ -18,7 +18,7 @@ const createCllsDataArray = () => {
 };
 
 const CellularAutomaton = () => {
-  useState(createCllsDataArray);
+  = useState(createCellsDataArray);
 
   return <CellularFieldStyleBase>{<CellStyleBase />}</CellularFieldStyleBase>;
 };
