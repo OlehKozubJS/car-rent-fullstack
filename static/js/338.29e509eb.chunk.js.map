@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/338.29e509eb.chunk.js","mappings":"+JAAA,MAAMA,EAAoBA,M","sources":["pages/test/CellularAutomaton/CellularAutomaton.jsx"],"sourcesContent":["const CellularAutomaton = () => {};\n\nexport { CellularAutomaton };\n"],"names":["CellularAutomaton"],"sourceRoot":""}
