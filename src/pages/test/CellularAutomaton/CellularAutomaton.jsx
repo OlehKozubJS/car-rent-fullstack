@@ -2,6 +2,7 @@ import {
   CellularFieldStyleBase,
   CellStyleBase,
 } from "./CellularAutomatonStyle";
+
 import { Cells } from "./Cells";
 
 const CellularAutomaton = () => {
