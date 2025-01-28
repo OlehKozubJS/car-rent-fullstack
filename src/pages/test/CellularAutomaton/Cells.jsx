@@ -1,7 +1,7 @@
 import { CellStyleBase } from "./CellularAutomatonStyle";
 
 const CellularAutomaton = () => {
-  return <Cells></Cells>;
+  return <CellStyleBase></CellStyleBase>;
 };
 
 export { CellularAutomaton };
