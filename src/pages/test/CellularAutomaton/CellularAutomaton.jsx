@@ -21,7 +21,15 @@ const CellularAutomaton = () => {
   const [cellsData, setCellsData] = useState(createCellsDataArray());
 
   const changeCellData = ({ target }) => {
-    setCellsData(cellsData.map((cellData, cellNumber) => {}));
+    setCellsData(
+      cellsData.map((cellData, cellNumber) => {
+        if (target.key === cellNumber) {
+          return !cellData;
+        } else {
+          return cellData;
+        }
+      })
+    );
   };
 
   return (
