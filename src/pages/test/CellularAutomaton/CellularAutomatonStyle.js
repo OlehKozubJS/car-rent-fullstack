@@ -19,7 +19,9 @@ const CellStyleBase = styled.div`
 
   border-style: solid;
   border-width: 1px;
-  border-color: ${({ isActive }) => {
+  border-color: rgb(0, 0, 0);
+
+  background-color: ${({ isActive }) => {
     return isActive ? "rgb(0, 0, 0)" : "rgb(255, 255, 255)";
   }};
 
