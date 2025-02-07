@@ -1,9 +1,9 @@
 const handleEventListener = (eventType, callback) => {
   return () => {
-    addEventListener(eventType, callback);
+    window.addEventListener(eventType, callback);
 
     return () => {
-      removeEventListener(eventType, callback);
+      window.removeEventListener(eventType, callback);
     };
   };
 };
