@@ -21,19 +21,21 @@ const CellularAutomatonLite = () => {
   const [cellsData, setCellsData] = useState([]);
 
   const addCellData = ({ clientY, clientX }) => {
-    setCellsData(
+    setCellsData([
       ...cellsData,
       <CellStyleBase
         key={`${clientY}, ${clientX}`}
         top={clientY}
         left={clientX}
         isActive={true}
-      ></CellStyleBase>
-    );
+      ></CellStyleBase>,
+    ]);
   };
 
   return (
-    <CellularFieldStyleBase onClick={addCellData}></CellularFieldStyleBase>
+    <CellularFieldStyleBase onClick={addCellData}>
+      {...cellsData}
+    </CellularFieldStyleBase>
   );
 };
 
