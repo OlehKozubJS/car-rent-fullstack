@@ -1,4 +1,4 @@
-import { CellStyleBase } from "./CellularAutomatonStyle";
+import { CellStyleBase } from "./CellularAutomatonLiteStyle";
 
 const Cells = () => {
   let cells = [];
