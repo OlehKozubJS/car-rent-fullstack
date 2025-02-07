@@ -10,6 +10,7 @@ import { NavigationTest } from "./NavigationTest";
 import { GradientHoverField } from "./GradientHover";
 import { CellularAutomaton } from "./CellularAutomaton";
 import { CellularAutomatonLite } from "./CellularAutomatonLite";
+import { AnimationTest } from "./AnimationTest";
 
 const TestPage = () => {
   const [componentName, setComponentName] = useState("Cellular automaton lite");
@@ -43,6 +44,7 @@ const TestPage = () => {
       {componentName === "Gradient hover" && <GradientHoverField />}
       {componentName === "Cellular automaton" && <CellularAutomaton />}
       {componentName === "Cellular automaton lite" && <CellularAutomatonLite />}
+      {componentName === "Animation test" && <AnimationTest />}
     </section>
   );
 };
