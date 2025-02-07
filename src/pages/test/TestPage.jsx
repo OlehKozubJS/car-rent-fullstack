@@ -29,7 +29,7 @@ const TestPage = () => {
           "Recursion",
           "Gradient hover",
           "Cellular automaton",
-          "Cellular Automaton Lite",
+          "Cellular automaton lite",
         ]}
         initialComponentName={componentName}
         onChange={chooseComponent}
@@ -41,7 +41,7 @@ const TestPage = () => {
       {componentName === "Recursion" && <RecursionFunctionTest />}
       {componentName === "Gradient hover" && <GradientHoverField />}
       {componentName === "Cellular automaton" && <CellularAutomaton />}
-      {componentName === "Cellular Automaton Lite" && <CellularAutomatonLite />}
+      {componentName === "Cellular automaton lite" && <CellularAutomatonLite />}
     </section>
   );
 };
