@@ -30,6 +30,7 @@ const TestPage = () => {
           "Gradient hover",
           "Cellular automaton",
           "Cellular automaton lite",
+          "Animation test",
         ]}
         initialComponentName={componentName}
         onChange={chooseComponent}
