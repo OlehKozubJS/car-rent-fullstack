@@ -31,9 +31,9 @@ const CellularAutomatonLite = () => {
       ...cellsData,
 
       <CellStyleBase
-        key={`${y}, ${x}`}
-        top={y}
-        left={x}
+        key={`${roundY}, ${roundX}`}
+        top={roundY}
+        left={roundX}
         isActive={true}
       ></CellStyleBase>,
     ]);
