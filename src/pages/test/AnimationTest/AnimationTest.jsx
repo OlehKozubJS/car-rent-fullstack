@@ -6,7 +6,9 @@ const AnimationTest = () => {
   const [transformRotateValue, setTransformRotateValue] = useState(0);
 
   const handleTransformRotateValue = ({ valueX }) => {
-    setTransformRotateValue(valueX);
+    if (valueX >= 0 && valueX <= 180) {
+      setTransformRotateValue(valueX);
+    }
   };
 
   return (
