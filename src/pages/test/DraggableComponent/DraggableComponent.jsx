@@ -28,7 +28,6 @@ const DraggableComponent = ({ valueY, valueX, onChange }) => {
     setIsDraggable(false);
   };
 
-  useEffect(handleEventListener("mousedown", handleMouseDown), [isDraggable]);
   useEffect(handleEventListener("mousemove", handleMouseMove), [isDraggable]);
   useEffect(handleEventListener("mouseup", handleMouseUp), [isDraggable]);
 
