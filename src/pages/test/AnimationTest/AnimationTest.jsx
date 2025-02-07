@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import {} from "../DraggableComponent";
+import { DraggableComponent } from "../DraggableComponent";
 
 const AnimationTest = () => {
   return (
