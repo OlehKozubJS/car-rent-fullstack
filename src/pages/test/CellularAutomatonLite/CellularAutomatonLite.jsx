@@ -20,11 +20,13 @@ const createCellsDataArray = () => {
 const CellularAutomatonLite = () => {
   const [cellsData, setCellsData] = useState([]);
 
-  const addCellData = ({ clientY, clientX }) => {
+  const addCellData = ({ clientY, clientX, target }) => {
     setCellsData([
       ...cellsData,
       <CellStyleBase
-        key={`${clientY}, ${clientX}`}
+        key={`${clientY - target.getBoundingClientRect().top}, ${
+          clientX - target.getBoundingClientRect().left
+        }`}
         top={clientY}
         left={clientX}
         isActive={true}
