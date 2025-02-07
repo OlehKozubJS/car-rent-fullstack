@@ -24,14 +24,14 @@ const CellularAutomatonLite = () => {
     setCellsData([
       ...cellsData,
       <CellStyleBase
-        key={`${clientY - target.getBoundingClientRect().top}, ${
-          clientX - target.getBoundingClientRect().left
-        }`}
+        key={`${clientY}, ${clientX}`}
         top={clientY}
         left={clientX}
         isActive={true}
       ></CellStyleBase>,
     ]);
+    console.log(target.getBoundingClientRect().top);
+    console.log(target.getBoundingClientRect().left);
   };
 
   return (
