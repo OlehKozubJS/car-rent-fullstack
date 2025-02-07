@@ -12,7 +12,7 @@ import { CellularAutomaton } from "./CellularAutomaton";
 import { CellularAutomatonLite } from "./CellularAutomatonLite";
 
 const TestPage = () => {
-  const [componentName, setComponentName] = useState("Cellular automaton");
+  const [componentName, setComponentName] = useState("Cellular automaton lite");
 
   const chooseComponent = (newComponentName) => {
     setComponentName(newComponentName);
