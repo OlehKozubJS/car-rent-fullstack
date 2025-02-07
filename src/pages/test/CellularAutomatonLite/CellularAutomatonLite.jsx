@@ -19,6 +19,10 @@ const CellularAutomatonLite = () => {
     return { cellY, cellX };
   };
 
+  const getIsCell = (cells, cellY, cellX) => {
+    return cells.find();
+  };
+
   const addCellData = (event) => {
     const { cellY, cellX } = getCellPosition(event);
 
