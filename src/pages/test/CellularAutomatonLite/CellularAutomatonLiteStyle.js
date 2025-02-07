@@ -19,11 +19,11 @@ const CellStyleBase = styled.div`
 
   top: ${({ top }) => {
     return top;
-  }};
+  }}px;
 
   left: ${({ left }) => {
     return left;
-  }};
+  }}px;
 
   border-style: solid;
   border-width: 1px;
