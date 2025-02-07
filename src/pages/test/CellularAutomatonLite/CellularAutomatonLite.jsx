@@ -20,13 +20,15 @@ const CellularAutomatonLite = () => {
   };
 
   const addCellData = (event) => {
+    const { cellY, cellX } = getCellPosition(event);
+
     setCellsData([
       ...cellsData,
 
       <CellStyleBase
-        key={`${roundY}, ${roundX}`}
-        top={roundY}
-        left={roundX}
+        key={`${cellY}, ${cellX}`}
+        top={cellY}
+        left={cellX}
         isActive={true}
       ></CellStyleBase>,
     ]);
