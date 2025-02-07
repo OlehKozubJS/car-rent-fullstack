@@ -17,6 +17,8 @@ const CellStyleBase = styled.div`
   height: 10px;
   width: 10px;
 
+  top: ${({}) => {}};
+
   border-style: solid;
   border-width: 1px;
   border-color: rgb(0, 0, 0);
@@ -26,6 +28,7 @@ const CellStyleBase = styled.div`
   }};
 
   font-size: 9px;
+
   color: ${({ isActive }) => {
     return (isActive && "rgb(255, 255, 255)") || "rgb(0, 0, 0)";
   }};
