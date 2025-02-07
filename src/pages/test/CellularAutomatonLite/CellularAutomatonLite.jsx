@@ -5,18 +5,6 @@ import {
   CellStyleBase,
 } from "./CellularAutomatonLiteStyle";
 
-import { Cells } from "./Cells";
-
-const createCellsDataArray = () => {
-  let cellsData = [];
-
-  for (let cellNumber = 1; cellNumber <= 2500; cellNumber += 1) {
-    cellsData = [...cellsData, false];
-  }
-
-  return cellsData;
-};
-
 const CellularAutomatonLite = () => {
   const [cellsData, setCellsData] = useState([]);
 
