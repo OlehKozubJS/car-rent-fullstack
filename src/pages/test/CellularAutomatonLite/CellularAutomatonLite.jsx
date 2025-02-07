@@ -47,7 +47,6 @@ const CellularAutomatonLite = () => {
           isActive={true}
         ></CellStyleBase>,
       ]);
-      console.log(getIsCell(cellsData, cellY, cellX));
     }
   };
 
