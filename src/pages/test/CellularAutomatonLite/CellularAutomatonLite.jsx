@@ -34,11 +34,7 @@ const CellularAutomatonLite = () => {
 
   return (
     <CellularFieldStyleBase onClick={changeCellData}>
-      <CellStyleBase
-        key={cellNumber}
-        data-number={cellNumber}
-        isActive={true}
-      ></CellStyleBase>
+      <CellStyleBase key={0} top={0} left={0} isActive={true}></CellStyleBase>
     </CellularFieldStyleBase>
   );
 };
