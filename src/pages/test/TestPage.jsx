@@ -28,6 +28,7 @@ const TestPage = () => {
           "Recursion",
           "Gradient hover",
           "Cellular automaton",
+          "Cellular Automaton Lite",
         ]}
         initialComponentName={componentName}
         onChange={chooseComponent}
