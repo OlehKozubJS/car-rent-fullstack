@@ -34,7 +34,9 @@ const CellularAutomatonLite = () => {
 
   return (
     <CellularFieldStyleBase onClick={addCellData}>
-      {...cellsData}
+      {cellsData.map((cell) => {
+        return cell;
+      })}
     </CellularFieldStyleBase>
   );
 };
