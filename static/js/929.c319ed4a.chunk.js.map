@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/929.c319ed4a.chunk.js","mappings":"yKAAA,MAAMA,EAAgBA,KACbC,EAAAA,EAAAA,KAAA,OAAAC,SAAK,0B","sources":["pages/test/AnimationTest/AnimationTest.jsx"],"sourcesContent":["const AnimationTest = () => {\n  return <div>This is animation test</div>;\n};\n\nexport { AnimationTest };\n"],"names":["AnimationTest","_jsx","children"],"sourceRoot":""}
