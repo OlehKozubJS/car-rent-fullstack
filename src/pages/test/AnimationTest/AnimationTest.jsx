@@ -5,12 +5,12 @@ import { DraggableComponent } from "../DraggableComponent";
 const AnimationTest = () => {
 const [transformRotateValue, setTransformRotateValue] = useState();
 
-const handleTransformRotateValue = 
+const handleTransformRotateValue = (newValue) => {};
 
   return (
     <div>
       This is animation test
-      <DraggableComponent onChange={}valueX={}valueY={}/>
+      <DraggableComponent onChange={handleTransformRotateValue}valueX={}valueY={0}/>
     </div>
   );
 };
