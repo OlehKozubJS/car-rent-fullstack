@@ -18,7 +18,7 @@ const createCellsDataArray = () => {
 };
 
 const CellularAutomatonLite = () => {
-  const [cellsData, setCellsData] = useState(createCellsDataArray());
+  const [cellsData, setCellsData] = useState([]);
 
   const changeCellData = ({ target }) => {
     setCellsData(
@@ -33,17 +33,20 @@ const CellularAutomatonLite = () => {
   };
 
   return (
-    <CellularFieldStyleBase onClick={changeCellData}>
-      {cellsData.map((cellData, cellNumber) => {
-        return (
-          <CellStyleBase
-            key={cellNumber}
-            data-number={cellNumber}
-            isActive={cellData}
-          ></CellStyleBase>
-        );
-      })}
-    </CellularFieldStyleBase>
+    <>
+      Hello!
+      <CellularFieldStyleBase onClick={changeCellData}>
+        {cellsData.map((cellData, cellNumber) => {
+          return (
+            <CellStyleBase
+              key={cellNumber}
+              data-number={cellNumber}
+              isActive={cellData}
+            ></CellStyleBase>
+          );
+        })}
+      </CellularFieldStyleBase>
+    </>
   );
 };
 
