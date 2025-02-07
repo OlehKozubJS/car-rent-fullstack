@@ -5,7 +5,8 @@ import { DraggableComponent } from "../DraggableComponent";
 const AnimationTest = () => {
   return (
     <div>
-      This is animation test<></>
+      This is animation test
+      <DraggableComponent />
     </div>
   );
 };
