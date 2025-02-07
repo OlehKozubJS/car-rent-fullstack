@@ -13,7 +13,7 @@ import { CellularAutomatonLite } from "./CellularAutomatonLite";
 import { AnimationTest } from "./AnimationTest";
 
 const TestPage = () => {
-  const [componentName, setComponentName] = useState("Cellular automaton lite");
+  const [componentName, setComponentName] = useState("Animation test");
 
   const chooseComponent = (newComponentName) => {
     setComponentName(newComponentName);
