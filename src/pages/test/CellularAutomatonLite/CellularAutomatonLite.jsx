@@ -20,22 +20,20 @@ const createCellsDataArray = () => {
 const CellularAutomatonLite = () => {
   const [cellsData, setCellsData] = useState([]);
 
-  const changeCellData = ({ target }) => {
+  const addCellData = ({ clientY, clientX }) => {
     setCellsData(
-      cellsData.map((cellData, cellNumber) => {
-        if (Number(target.dataset.number) === cellNumber) {
-          return !cellData;
-        } else {
-          return cellData;
-        }
-      })
+      ...cellsData,
+      <CellStyleBase
+        key={`${clientY}, ${clientX}`}
+        top={clientY}
+        left={clientX}
+        isActive={true}
+      ></CellStyleBase>
     );
   };
 
   return (
-    <CellularFieldStyleBase onClick={changeCellData}>
-      <CellStyleBase key={0} top={0} left={0} isActive={true}></CellStyleBase>
-    </CellularFieldStyleBase>
+    <CellularFieldStyleBase onClick={addCellData}></CellularFieldStyleBase>
   );
 };
 
