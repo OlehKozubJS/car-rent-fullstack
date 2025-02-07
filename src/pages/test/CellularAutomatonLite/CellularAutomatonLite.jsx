@@ -22,20 +22,18 @@ const CellularAutomatonLite = () => {
 
   const addCellData = ({ clientY, clientX, target }) => {
     const y = clientY - target.getBoundingClientRect().top;
+    const x = clientX - target.getBoundingClientRect().left;
+
     setCellsData([
       ...cellsData,
 
       <CellStyleBase
-        key={`${y}, ${clientX}`}
-        top={clientY}
+        key={`${y}, ${x}`}
+        top={y}
         left={clientX}
         isActive={true}
       ></CellStyleBase>,
     ]);
-    console.log(target.getBoundingClientRect().top);
-    console.log(target.getBoundingClientRect().left);
-    console.log(clientY);
-    console.log(clientX);
   };
 
   return (
