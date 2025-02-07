@@ -11,9 +11,13 @@ const CellularFieldStyleBase = styled.div`
 
   display: flex;
   flex-wrap: wrap;
+
+  position: relative;
 `;
 
 const CellStyleBase = styled.div`
+  position: absolute;
+
   height: 10px;
   width: 10px;
 
