@@ -18,7 +18,7 @@ const createCellsDataArray = () => {
 };
 
 const CellularAutomatonLite = () => {
-  const [cellsData, setCellsData] = useState([]);
+  const [cellsData, setCellsData] = useState(createCellsDataArray());
 
   const changeCellData = ({ target }) => {
     setCellsData(
