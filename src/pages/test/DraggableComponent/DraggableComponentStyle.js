@@ -11,11 +11,17 @@ const DraggableComponentStyle = styled.div`
     return left;
   }}px;
 
-  width: ${({width}) => {return width;}}px;
+  width: ${({ width }) => {
+    return width;
+  }}px;
 
-  height: ${({height}) => {return height;}}px;
+  height: ${({ height }) => {
+    return height;
+  }}px;
 
-  background-color: ${({backgroundColor}}) => {return backgroundColor;}};
+  background-color: ${({ backgroundColor }) => {
+    return backgroundColor;
+  }};
 `;
 
 export { DraggableComponentStyle };
