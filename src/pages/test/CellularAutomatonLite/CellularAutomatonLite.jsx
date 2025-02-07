@@ -9,7 +9,7 @@ const CellularAutomatonLite = () => {
   const [cellsData, setCellsData] = useState([]);
 
   const getCellPosition = (event) => {
-    const { clientY, clientX, target } = event;
+    const { clientY, clientX, currentTarget } = event;
     const { top, left } = target.getBoundingClientRect();
     const y = clientY - top;
     const x = clientX - left;
@@ -35,7 +35,7 @@ const CellularAutomatonLite = () => {
     const { cellY, cellX } = getCellPosition(event);
 
     if (getIsCell(cellsData, cellY, cellX)) {
-      removeCell(cellsData, cellY, cellX);
+      setCellsData(removeCell(cellsData, cellY, cellX));
     } else {
       setCellsData([
         ...cellsData,
