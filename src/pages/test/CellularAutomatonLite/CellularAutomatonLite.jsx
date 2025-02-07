@@ -60,12 +60,3 @@ const CellularAutomatonLite = () => {
 };
 
 export { CellularAutomatonLite };
-/*
-
-      {cellsData.map((cellData, cellNumber) => {
-        return (
-
-        );
-      })}
-
-*/
