@@ -4,7 +4,14 @@ import { handleEventListener } from "../../../hooks";
 
 import { DraggableComponentStyle } from "./DraggableComponentStyle";
 
-const DraggableComponent = ({ valueY, valueX, onChange }) => {
+const DraggableComponent = ({
+  onChange,
+  valueY,
+  valueX,
+  height,
+  width,
+  backgroundColor,
+}) => {
   const [isDraggable, setIsDraggable] = useState(false);
   const [mouseDownY, setMouseDownY] = useState(valueY);
   const [mouseDownX, setMouseDownX] = useState(valueX);
@@ -36,6 +43,9 @@ const DraggableComponent = ({ valueY, valueX, onChange }) => {
       onMouseDown={handleMouseDown}
       top={valueY}
       left={valueX}
+      height={height}
+      width={width}
+      backgroundColor={backgroundColor}
     ></DraggableComponentStyle>
   );
 };
