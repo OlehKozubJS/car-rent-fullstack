@@ -34,15 +34,11 @@ const CellularAutomatonLite = () => {
 
   return (
     <CellularFieldStyleBase onClick={changeCellData}>
-      {cellsData.map((cellData, cellNumber) => {
-        return (
-          <CellStyleBase
-            key={cellNumber}
-            data-number={cellNumber}
-            isActive={cellData}
-          ></CellStyleBase>
-        );
-      })}
+      <CellStyleBase
+        key={cellNumber}
+        data-number={cellNumber}
+        isActive={cellData}
+      ></CellStyleBase>
     </CellularFieldStyleBase>
   );
 };
@@ -50,6 +46,10 @@ const CellularAutomatonLite = () => {
 export { CellularAutomatonLite };
 /*
 
+      {cellsData.map((cellData, cellNumber) => {
+        return (
 
+        );
+      })}
 
 */
