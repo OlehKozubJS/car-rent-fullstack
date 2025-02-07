@@ -24,6 +24,9 @@ const CellularAutomatonLite = () => {
     const y = clientY - target.getBoundingClientRect().top;
     const x = clientX - target.getBoundingClientRect().left;
 
+    const roundY = y - (y % 10);
+    const roundX = x - (x % 10);
+
     setCellsData([
       ...cellsData,
 
