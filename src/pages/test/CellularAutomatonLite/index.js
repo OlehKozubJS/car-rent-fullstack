@@ -1,3 +1,3 @@
-import { CellularAutomaton } from "./CellularAutomaton";
+import { CellularAutomatonLite } from "./CellularAutomatonLite";
 
-export { CellularAutomaton };
+export { CellularAutomatonLite };
