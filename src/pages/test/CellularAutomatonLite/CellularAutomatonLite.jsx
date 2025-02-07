@@ -20,25 +20,35 @@ const CellularAutomatonLite = () => {
   };
 
   const getIsCell = (cells, cellY, cellX) => {
-    return cells.find(
+    return cells.some(
       (cell) => cell.props.top === cellY && cell.props.left === cellX
+    );
+  };
+
+  const removeCell = (cells, cellY, cellX) => {
+    return cells.filter(
+      (cell) => !(cell.props.top === cellY && cell.props.left === cellX)
     );
   };
 
   const addCellData = (event) => {
     const { cellY, cellX } = getCellPosition(event);
 
-    setCellsData([
-      ...cellsData,
+    if (getIsCell(cellsData, cellY, cellX)) {
+      removeCell(cellsData, cellY, cellX);
+    } else {
+      setCellsData([
+        ...cellsData,
 
-      <CellStyleBase
-        key={`${cellY}, ${cellX}`}
-        top={cellY}
-        left={cellX}
-        isActive={true}
-      ></CellStyleBase>,
-    ]);
-    console.log(getIsCell(cellsData, cellY, cellX));
+        <CellStyleBase
+          key={`${cellY}, ${cellX}`}
+          top={cellY}
+          left={cellX}
+          isActive={true}
+        ></CellStyleBase>,
+      ]);
+      console.log(getIsCell(cellsData, cellY, cellX));
+    }
   };
 
   return (
