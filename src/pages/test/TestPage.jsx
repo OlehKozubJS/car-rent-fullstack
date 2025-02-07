@@ -9,6 +9,7 @@ import { RecursionFunctionTest } from "./Recursion";
 import { NavigationTest } from "./NavigationTest";
 import { GradientHoverField } from "./GradientHover";
 import { CellularAutomaton } from "./CellularAutomaton";
+import { CellularAutomatonLite } from "./CellularAutomatonLite";
 
 const TestPage = () => {
   const [componentName, setComponentName] = useState("Cellular automaton");
@@ -40,6 +41,7 @@ const TestPage = () => {
       {componentName === "Recursion" && <RecursionFunctionTest />}
       {componentName === "Gradient hover" && <GradientHoverField />}
       {componentName === "Cellular automaton" && <CellularAutomaton />}
+      {componentName === "Cellular automaton lite" && <CellularAutomatonLite />}
     </section>
   );
 };
