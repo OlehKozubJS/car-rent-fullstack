@@ -3,7 +3,7 @@ import { useState } from "react";
 import {
   CellularFieldStyleBase,
   CellStyleBase,
-} from "./CellularAutomatonStyle";
+} from "./CellularAutomatonLiteStyle";
 
 import { Cells } from "./Cells";
 
