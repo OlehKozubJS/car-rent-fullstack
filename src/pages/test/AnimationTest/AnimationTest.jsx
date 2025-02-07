@@ -18,6 +18,9 @@ const AnimationTest = () => {
           onChange={handleTransformRotateValue}
           valueX={transformRotateValue}
           valueY={0}
+          height={50}
+          width={150}
+          backgroundColor={"red"}
         />
       </div>
       <p>{transformRotateValue}</p>
