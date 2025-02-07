@@ -17,8 +17,13 @@ const CellStyleBase = styled.div`
   height: 10px;
   width: 10px;
 
-  top: ${({}) => {}};
-  right: ${({}) => {}};
+  top: ${({ top }) => {
+    return top;
+  }};
+
+  left: ${({ left }) => {
+    return left;
+  }};
 
   border-style: solid;
   border-width: 1px;
