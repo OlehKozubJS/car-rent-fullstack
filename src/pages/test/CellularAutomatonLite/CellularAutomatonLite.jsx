@@ -30,7 +30,7 @@ const CellularAutomatonLite = () => {
       <CellStyleBase
         key={`${y}, ${x}`}
         top={y}
-        left={clientX}
+        left={x}
         isActive={true}
       ></CellStyleBase>,
     ]);
