@@ -8,14 +8,18 @@ import {
 const CellularAutomatonLite = () => {
   const [cellsData, setCellsData] = useState([]);
 
-  const addCellData = (event) => {
+  const getCellPosition = (event) => {
     const { clientY, clientX, target } = event;
     const { top, left } = target.getBoundingClientRect();
     const y = clientY - top;
     const x = clientX - left;
-    const roundY = y - (y % 10);
-    const roundX = x - (x % 10);
+    const cellY = y - (y % 10);
+    const cellX = x - (x % 10);
 
+    return { cellY, cellX };
+  };
+
+  const addCellData = (event) => {
     setCellsData([
       ...cellsData,
 
