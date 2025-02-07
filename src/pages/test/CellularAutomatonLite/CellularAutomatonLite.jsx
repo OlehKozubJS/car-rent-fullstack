@@ -10,7 +10,7 @@ const CellularAutomatonLite = () => {
 
   const getCellPosition = (event) => {
     const { clientY, clientX, currentTarget } = event;
-    const { top, left } = target.getBoundingClientRect();
+    const { top, left } = currentTarget.getBoundingClientRect();
     const y = clientY - top;
     const x = clientX - left;
     const cellY = y - (y % 10);
