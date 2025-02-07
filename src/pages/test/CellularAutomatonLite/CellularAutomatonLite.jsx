@@ -34,7 +34,6 @@ const CellularAutomatonLite = () => {
 
   return (
     <>
-      Hello!
       <CellularFieldStyleBase onClick={changeCellData}>
         {cellsData.map((cellData, cellNumber) => {
           return (
