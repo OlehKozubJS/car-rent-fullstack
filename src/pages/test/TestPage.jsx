@@ -41,7 +41,7 @@ const TestPage = () => {
       {componentName === "Recursion" && <RecursionFunctionTest />}
       {componentName === "Gradient hover" && <GradientHoverField />}
       {componentName === "Cellular automaton" && <CellularAutomaton />}
-      {componentName === "Cellular automaton lite" && <CellularAutomatonLite />}
+      {componentName === "Cellular Automaton Lite" && <CellularAutomatonLite />}
     </section>
   );
 };
