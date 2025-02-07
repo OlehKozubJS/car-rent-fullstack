@@ -20,8 +20,7 @@ const createCellsDataArray = () => {
 const CellularAutomatonLite = () => {
   const [cellsData, setCellsData] = useState([]);
 
-  const addCellData = ({ target }) => {
-    const { clientY, clientX } = target;
+  const addCellData = ({ clientY, clientX }) => {
     setCellsData([
       ...cellsData,
       <CellStyleBase
