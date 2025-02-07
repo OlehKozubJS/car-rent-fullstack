@@ -11,11 +11,11 @@ const AnimationTest = () => {
 
   return (
     <div>
-      <div>
+      <div style={{ position: "relative", height: "50px" }}>
         <DraggableComponent
           onChange={handleTransformRotateValue}
           valueX={transformRotateValue}
-          valueY={250}
+          valueY={0}
         />
       </div>
       <p>{transformRotateValue}</p>
