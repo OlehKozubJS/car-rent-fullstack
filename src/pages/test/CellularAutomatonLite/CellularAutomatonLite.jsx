@@ -37,7 +37,7 @@ const CellularAutomatonLite = () => {
       <CellStyleBase
         key={cellNumber}
         data-number={cellNumber}
-        isActive={cellData}
+        isActive={true}
       ></CellStyleBase>
     </CellularFieldStyleBase>
   );
