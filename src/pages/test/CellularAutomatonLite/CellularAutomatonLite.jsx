@@ -32,9 +32,12 @@ const CellularAutomatonLite = () => {
     );
   };
 
-  return (
-    <>
-      Hello!
+  return <>Hello!</>;
+};
+
+export { CellularAutomatonLite };
+/*
+
       <CellularFieldStyleBase onClick={changeCellData}>
         {cellsData.map((cellData, cellNumber) => {
           return (
@@ -46,8 +49,5 @@ const CellularAutomatonLite = () => {
           );
         })}
       </CellularFieldStyleBase>
-    </>
-  );
-};
 
-export { CellularAutomatonLite };
+*/
