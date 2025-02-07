@@ -47,4 +47,4 @@ const CellularAutomatonLite = () => {
   );
 };
 
-export { CellularAutomaton };
+export { CellularAutomatonLite };
