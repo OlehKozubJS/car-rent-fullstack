@@ -4,8 +4,8 @@ import { DraggableComponent } from "../DraggableComponent";
 
 const AnimationTest = () => {
   const [transformRotateValue, setTransformRotateValue] = useState(0);
-  const [transformRotateXvalue, setTransformRotateXvalue] = useState(0);
   const [transformRotateYvalue, setTransformRotateYvalue] = useState(0);
+  const [transformRotateXvalue, setTransformRotateXvalue] = useState(0);
 
   const handleTransformRotateValue = ({ valueX }) => {
     if (valueX >= 0 && valueX <= 180) {
