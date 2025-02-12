@@ -58,6 +58,8 @@ const AnimationTest = () => {
         />
       </div>
       <p>{transformRotateValue}</p>
+      <p>{transformRotateYvalue}</p>
+      <p>{transformRotateXvalue}</p>
       <div></div>
     </div>
   );
