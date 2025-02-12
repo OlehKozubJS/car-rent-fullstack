@@ -49,7 +49,7 @@ const AnimationTest = () => {
       </div>
       <div style={{ position: "relative", height: "50px" }}>
         <DraggableComponent
-          onChange={handleTransformRotateValue}
+          onChange={handleTransformRotateXvalue}
           valueX={transformRotateXvalue}
           valueY={0}
           height={50}
