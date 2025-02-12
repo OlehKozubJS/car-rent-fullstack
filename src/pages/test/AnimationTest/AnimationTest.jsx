@@ -13,6 +13,18 @@ const AnimationTest = () => {
     }
   };
 
+  const handleTransformRotateYvalue = ({ valueX }) => {
+    if (valueX >= 0 && valueX <= 180) {
+      setTransformRotateYvalue(valueX);
+    }
+  };
+
+  const handleTransformRotateXvalue = ({ valueX }) => {
+    if (valueX >= 0 && valueX <= 180) {
+      setTransformRotateXvalue(valueX);
+    }
+  };
+
   return (
     <div>
       <div style={{ position: "relative", height: "50px" }}>
