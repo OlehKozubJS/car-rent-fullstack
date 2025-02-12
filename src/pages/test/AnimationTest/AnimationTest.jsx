@@ -23,7 +23,28 @@ const AnimationTest = () => {
           backgroundColor={"red"}
         />
       </div>
+      <div style={{ position: "relative", height: "50px" }}>
+        <DraggableComponent
+          onChange={handleTransformRotateValue}
+          valueX={transformRotateValue}
+          valueY={0}
+          height={50}
+          width={150}
+          backgroundColor={"red"}
+        />
+      </div>
+      <div style={{ position: "relative", height: "50px" }}>
+        <DraggableComponent
+          onChange={handleTransformRotateValue}
+          valueX={transformRotateValue}
+          valueY={0}
+          height={50}
+          width={150}
+          backgroundColor={"red"}
+        />
+      </div>
       <p>{transformRotateValue}</p>
+      <div></div>
     </div>
   );
 };
