@@ -26,6 +26,12 @@ const AnimationTest = () => {
     }
   };
 
+  const handlePerspective = ({ valueX }) => {
+    if (valueX >= 0 && valueX <= 180) {
+      setPerspective(valueX);
+    }
+  };
+
   return (
     <div>
       <div style={{ position: "relative", height: "50px" }}>
