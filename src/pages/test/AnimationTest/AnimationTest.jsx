@@ -30,7 +30,7 @@ const AnimationTest = () => {
           valueY={0}
           height={50}
           width={150}
-          backgroundColor={"red"}
+          backgroundColor={"green"}
         />
       </div>
       <div style={{ position: "relative", height: "50px" }}>
@@ -40,7 +40,7 @@ const AnimationTest = () => {
           valueY={0}
           height={50}
           width={150}
-          backgroundColor={"red"}
+          backgroundColor={"blue"}
         />
       </div>
       <p>{transformRotateValue}</p>
