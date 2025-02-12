@@ -57,9 +57,9 @@ const AnimationTest = () => {
           backgroundColor={"blue"}
         />
       </div>
-      <p>{transformRotateValue}</p>
-      <p>{transformRotateYvalue}</p>
-      <p>{transformRotateXvalue}</p>
+      <p>transform: rotate{transformRotateValue}</p>
+      <p>transfrom: rotateY{transformRotateYvalue}</p>
+      <p>transform: rotateX{transformRotateXvalue}</p>
       <div></div>
     </div>
   );
