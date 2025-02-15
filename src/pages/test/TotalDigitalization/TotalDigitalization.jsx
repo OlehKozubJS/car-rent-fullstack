@@ -4,6 +4,10 @@ const TotalDigitalization = () => {
   const [] = useState();
   const [] = useState();
 
+  const transformTextToDigits = () => {};
+
+  const transformDigitsToText = () => {};
+
   return (
     <div>
       <div>
