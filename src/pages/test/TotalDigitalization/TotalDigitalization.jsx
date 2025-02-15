@@ -15,7 +15,6 @@ const TotalDigitalization = () => {
   const transformTextToDigits = () => {
     setResult(
       query
-        .split("")
         .map((character) => {
           let binaryDigit = db.indexOf(character);
           if (binaryDigit < 10) {
