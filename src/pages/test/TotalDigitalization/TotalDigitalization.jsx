@@ -59,7 +59,7 @@ const TotalDigitalization = () => {
 
   const transformRussianCyrillicToLatin = () => {
     setResult(
-      query.split("").map((character) => {
+      query.map((character) => {
         return Object.keys();
       })
     );
