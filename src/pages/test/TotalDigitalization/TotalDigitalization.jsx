@@ -29,13 +29,7 @@ const TotalDigitalization = () => {
     setResult(
       query
         .split("")
-        .map((character) => {
-          let binaryDigit = db.indexOf(character);
-          if (binaryDigit < 10) {
-            binaryDigit = "0" + binaryDigit;
-          }
-          return String(binaryDigit);
-        })
+        .reduce((total, character, characterIndex) => {}, "")
         .join("")
     );
   };
