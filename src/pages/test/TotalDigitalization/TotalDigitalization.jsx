@@ -17,7 +17,6 @@ const TotalDigitalization = () => {
   return (
     <div>
       <div>
-        <textarea onClick={handleQuery} />
         <button
           onClick={transformTextToDigits}
           style={{
@@ -37,6 +36,7 @@ const TotalDigitalization = () => {
           Digits to text
         </button>
       </div>
+      <textarea onClick={handleQuery} />
       <p>{query}</p>
     </div>
   );
