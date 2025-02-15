@@ -29,7 +29,11 @@ const TotalDigitalization = () => {
     setResult(
       query
         .split("")
-        .reduce((total, character, characterIndex) => {}, "")
+        .reduce((total, character, characterIndex) => {
+          let newTotal = total + character;
+
+          return newTotal;
+        }, "")
         .join("")
     );
   };
