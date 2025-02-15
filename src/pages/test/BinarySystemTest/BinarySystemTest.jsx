@@ -28,6 +28,7 @@ const BinarySystemTest = () => {
       .map((number) => {
         return Number(number);
       });
+    console.log(queryDigitsArray);
     queryDigitsArray.sort((a, b) => b - a);
     setResult(
       String(
