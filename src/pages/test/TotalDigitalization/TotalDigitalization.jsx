@@ -1,7 +1,8 @@
 import { useState } from "react";
 
 import db from "./totalDigitalizationDB.json";
-import ctl from "./latinCyrillicDB.json";
+import ucl from "./uaCyrillicLatinDB.json";
+import rcl from "./ruCyrillicLatinDB.json";
 
 const TotalDigitalization = () => {
   const [query, setQuery] = useState("");
