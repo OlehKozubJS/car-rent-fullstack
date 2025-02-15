@@ -1,12 +1,10 @@
 import { DraggableComponent } from "../DraggableComponent";
 
 const AnimationTestController = ({ onChange, value, range, color }) => {
-  const handleValue = () => {
-    return ({ valueX }) => {
-      if (valueX >= 0 && valueX <= range) {
-        onChange(valueX);
-      }
-    };
+  const handleValue = ({ valueX }) => {
+    if (valueX >= 0 && valueX <= range) {
+      onChange(valueX);
+    }
   };
 
   return (
