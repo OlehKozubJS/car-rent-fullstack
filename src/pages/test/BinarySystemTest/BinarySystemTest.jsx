@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const BinarySystem = () => {
+const BinarySystemTest = () => {
   const [query, setQuery] = useState("");
   const [result, setResult] = useState("");
 
@@ -19,4 +19,4 @@ const BinarySystem = () => {
   );
 };
 
-export { BinarySystem };
+export { BinarySystemTest };
