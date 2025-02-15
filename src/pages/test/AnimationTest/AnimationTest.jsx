@@ -33,49 +33,16 @@ const AnimationTest = () => {
       setPerspectiveValue(valueX);
     }
   };
-
+  //handleTransformRotateValue transformRotateValue "red"
+  //handleTransformRotateYvalue transformRotateYvalue "green"
+  //handleTransformRotateXvalue transformRotateXvalue "blue"
+  //handlePerspectiveValue perspectiveValue "cyan"
   return (
     <div>
-      <div style={{ position: "relative", height: "25px" }}>
-        <DraggableComponent
-          onChange={handleTransformRotateValue}
-          valueX={transformRotateValue}
-          valueY={0}
-          height={25}
-          width={50}
-          backgroundColor={"red"}
-        />
-      </div>
-      <div style={{ position: "relative", height: "25px" }}>
-        <DraggableComponent
-          onChange={handleTransformRotateYvalue}
-          valueX={transformRotateYvalue}
-          valueY={0}
-          height={25}
-          width={50}
-          backgroundColor={"green"}
-        />
-      </div>
-      <div style={{ position: "relative", height: "25px" }}>
-        <DraggableComponent
-          onChange={handleTransformRotateXvalue}
-          valueX={transformRotateXvalue}
-          valueY={0}
-          height={25}
-          width={50}
-          backgroundColor={"blue"}
-        />
-      </div>
-      <div style={{ position: "relative", height: "25px" }}>
-        <DraggableComponent
-          onChange={handlePerspectiveValue}
-          valueX={perspectiveValue}
-          valueY={0}
-          height={25}
-          width={50}
-          backgroundColor={"cyan"}
-        />
-      </div>
+      <AnimationTestController />
+      <AnimationTestController />
+      <AnimationTestController />
+      <AnimationTestController />
       <p>transform: rotate: {transformRotateValue}</p>
       <p>transfrom: rotateY: {transformRotateYvalue}</p>
       <p>transform: rotateX: {transformRotateXvalue}</p>
