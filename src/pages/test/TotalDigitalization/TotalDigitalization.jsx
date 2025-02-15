@@ -83,14 +83,14 @@ const TotalDigitalization = () => {
           Digits to text
         </button>
         <button
-          onClick={transformCyrillicToLatin}
+          onClick={transformRussianCyrillicToLatin}
           type="button"
           style={{
             backgroundColor: "rgb(0, 0, 200)",
             color: "rgb(255, 255, 55)",
           }}
         >
-          Cyrillic to Latin
+          Russian Cyrillic to Latin
         </button>
       </div>
       <textarea
