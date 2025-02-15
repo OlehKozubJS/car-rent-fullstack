@@ -1,3 +1,3 @@
-import { BinarySystem } from "./BinarySystem";
+import { BinarySystem } from "./BinarySystemTest";
 
 export { BinarySystem };
