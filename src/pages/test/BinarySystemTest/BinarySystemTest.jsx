@@ -1,15 +1,5 @@
 import { useState } from "react";
 
-const dtb = (query) => {
-  if (query === 0) {
-    return "";
-  } else {
-    const binaryDigit = query % 2;
-    const newQuotient = Math.floor(query / 2);
-    return dtb(newQuotient) + binaryDigit;
-  }
-};
-
 const BinarySystemTest = () => {
   const [query, setQuery] = useState(0);
   const [result, setResult] = useState();
