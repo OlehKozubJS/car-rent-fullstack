@@ -15,7 +15,11 @@ const TotalDigitalization = () => {
       query
         .split("")
         .map((character) => {
-          return db.indexOf(character);
+          let binaryDigit = String(db.indexOf(character));
+          if (binaryDigit < 10) {
+            binaryDigit = "0" + binaryDigit;
+          }
+          return binaryDigit;
         })
         .join("")
     );
