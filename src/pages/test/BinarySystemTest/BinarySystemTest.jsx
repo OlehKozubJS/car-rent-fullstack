@@ -30,7 +30,7 @@ const BinarySystemTest = () => {
       <button onClick={transformDecimalToBinary}>Decimal to binary</button>
       <button onClick={transformBinaryToDecimal}>Binary to decimal</button>
       <p>
-        {result
+        {query
           .split("")
           .sort((a, b) => a > b)
           .join("")}
