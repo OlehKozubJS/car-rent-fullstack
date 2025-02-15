@@ -15,7 +15,7 @@ import { TotalDigitalization } from "./TotalDigitalization";
 import { BinarySystemTest } from "./BinarySystemTest";
 
 const TestPage = () => {
-  const [componentName, setComponentName] = useState("Binary system");
+  const [componentName, setComponentName] = useState("Total digitalization");
 
   const chooseComponent = (newComponentName) => {
     setComponentName(newComponentName);
