@@ -24,9 +24,15 @@ const BinarySystemTest = () => {
 
   const transformBinaryToDecimal = () => {
     return String(
-      [...String(query).split("")]
-        .sort((a, b) => Number(b) - Number(a))
-        .reduce()
+      [
+        ...String(query)
+          .split("")
+          .map((number) => {
+            Number(number);
+          }),
+      ]
+        .sort((a, b) => b - a)
+        .reduce((total) => {}, 0)
     );
   };
 
