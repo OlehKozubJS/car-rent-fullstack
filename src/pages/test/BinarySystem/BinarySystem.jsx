@@ -4,7 +4,9 @@ const BinarySystem = () => {
   const [query, setQuery] = useState("");
   const [result, setResult] = useState("");
 
-  const handleQuery = () => {};
+  const handleQuery = ({ target }) => {
+    setQuery(target.value);
+  };
 
   return (
     <div>
