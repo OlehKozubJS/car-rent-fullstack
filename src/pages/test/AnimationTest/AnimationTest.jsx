@@ -77,6 +77,7 @@ const AnimationTest = () => {
       <p>transform: rotate: {transformRotateValue}</p>
       <p>transfrom: rotateY: {transformRotateYvalue}</p>
       <p>transform: rotateX: {transformRotateXvalue}</p>
+      <p>transform: rotateX: {perspectiveValue}</p>
       <div></div>
     </div>
   );
