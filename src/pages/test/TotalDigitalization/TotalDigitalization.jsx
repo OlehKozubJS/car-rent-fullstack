@@ -8,8 +8,8 @@ const TotalDigitalization = () => {
     <div>
       <div>
         <textarea />
-        <button>Digits to text</button>
-        <button>Text to digits</button>
+        <button onClick={transformTextToDigits}>Text to digits</button>
+        <button onClick={transformDigitsToText}>Digits to text</button>
       </div>
       <p></p>
     </div>
