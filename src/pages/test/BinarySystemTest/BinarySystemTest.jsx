@@ -34,6 +34,7 @@ const BinarySystemTest = () => {
         ]
           .sort((a, b) => b - a)
           .reduce((total, number, index) => {
+            console.log(total);
             return total + number * Math.pow(2, index);
           }, 0)
       )
