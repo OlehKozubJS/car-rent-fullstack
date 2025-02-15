@@ -7,7 +7,7 @@ const AnimationTest = () => {
     r: 0,
     ry: 0,
     rx: 0,
-    p: 0,
+    p: 500,
   });
 
   const handleTransformValues = (newValues) => setTransformValues(newValues);
