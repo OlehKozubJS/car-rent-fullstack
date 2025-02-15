@@ -4,7 +4,9 @@ const dtb = (query, result) => {
   if (query <= 1) {
     return query + result;
   } else {
-    return String(transformDecimalToBinary(query % 2, result)) + result;
+    return Number(
+      String(transformDecimalToBinary(query % 2, result)) + String(result)
+    );
   }
 };
 
