@@ -25,7 +25,35 @@ const TotalDigitalization = () => {
     );
   };
 
-  const transformDigitsToText = () => {};
+  const transformTextToDigits = () => {
+    setResult(
+      query
+        .split("")
+        .map((character) => {
+          let binaryDigit = db.indexOf(character);
+          if (binaryDigit < 10) {
+            binaryDigit = "0" + binaryDigit;
+          }
+          return String(binaryDigit);
+        })
+        .join("")
+    );
+  };
+
+  const transformDigitsToText = () => {
+    setResult(
+      query
+        .split("")
+        .map((character) => {
+          let binaryDigit = db.indexOf(character);
+          if (binaryDigit < 10) {
+            binaryDigit = "0" + binaryDigit;
+          }
+          return String(binaryDigit);
+        })
+        .join("")
+    );
+  };
 
   return (
     <div>
