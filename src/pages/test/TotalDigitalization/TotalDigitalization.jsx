@@ -51,7 +51,11 @@ const TotalDigitalization = () => {
   };
 
   const transformCyrillicToLatin = () => {
-    setResult(query.split("").map(() => {}));
+    setResult(
+      query.split("").map((character) => {
+        return Object.keys();
+      })
+    );
   };
 
   return (
