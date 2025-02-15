@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { AnimationTestController } from "./AnimationTestController";
 
-const AnimationTest = () => {
+const AnimationTestControllers = () => {
   const [transformRotateValue, setTransformRotateValue] = useState(0);
   const [transformRotateYvalue, setTransformRotateYvalue] = useState(0);
   const [transformRotateXvalue, setTransformRotateXvalue] = useState(0);
@@ -59,22 +59,8 @@ const AnimationTest = () => {
       <p>transfrom: rotateY: {transformRotateYvalue}</p>
       <p>transform: rotateX: {transformRotateXvalue}</p>
       <p>transform: perspective: {perspectiveValue}</p>
-      <div>
-        <div
-          style={{
-            height: "250px",
-            width: "250px",
-            border: "5px solid rgb(150, 250, 250)",
-            backgroundColor: "red",
-            transformOrigin: "center",
-            transform: `perspective(${perspectiveValue}px) rotate(${transformRotateValue}deg) rotateY(${transformRotateYvalue}deg) rotateX(${transformRotateXvalue}deg)`,
-          }}
-        >
-          Hello
-        </div>
-      </div>
     </div>
   );
 };
 
-export { AnimationTest };
+export { AnimationTestControllers };
