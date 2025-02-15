@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcar_rent_fullstack=self.webpackChunkcar_rent_fullstack||[]).push([[1506],{1506:(t,n,e)=>{e.r(n),e.d(n,{DraggableComponentStyle:()=>o});var r,l=e(168);const o=e(9716).Z.div(r||(r=(0,l.Z)(["\n  position: absolute;\n\n  top: ","px;\n\n  left: ","px;\n\n  height: ","px;\n\n  width: ","px;\n\n  background-color: ",";\n"])),(t=>{let{top:n}=t;return n}),(t=>{let{left:n}=t;return n}),(t=>{let{height:n}=t;return n}),(t=>{let{width:n}=t;return n}),(t=>{let{backgroundColor:n}=t;return n}))}}]);
+//# sourceMappingURL=1506.25aef592.chunk.js.map

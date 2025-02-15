@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcar_rent_fullstack=self.webpackChunkcar_rent_fullstack||[]).push([[3957],{3957:(e,n,t)=>{t.r(n),t.d(n,{GradientHoverFieldStyleBase:()=>c});var r,a=t(168);const c=t(9716).Z.div(r||(r=(0,a.Z)(["\n  height: 150px;\n  width: 800px;\n\n  background-color: black;\n  color: white;\n\n  position: relative;\n"])))}}]);
+//# sourceMappingURL=3957.02783b29.chunk.js.map

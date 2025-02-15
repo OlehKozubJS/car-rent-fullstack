@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcar_rent_fullstack=self.webpackChunkcar_rent_fullstack||[]).push([[3904],{3904:(n,a,c)=>{c.r(a),c.d(a,{setLinearGradient:()=>r});const r=n=>"linear-gradient(\n    to right,\n  rgba(255, 255, 255, 0),\n  rgba(255, 255, 255, 0)\n    ".concat(n,"px,\n  rgba(255, 255, 255, 1)\n    ").concat(n+20,"px,\n  rgba(255, 255, 255, 1)\n    ").concat(n+20,"px,\n  rgba(255, 255, 255, 0)\n    ").concat(n+40,"px\n  );")}}]);
+//# sourceMappingURL=3904.4ead94ef.chunk.js.map
