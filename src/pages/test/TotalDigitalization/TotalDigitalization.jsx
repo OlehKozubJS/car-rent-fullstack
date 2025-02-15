@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 const TotalDigitalization = () => {
-  const [] = useState();
-  const [] = useState();
+  const [query, setQuery] = useState("");
+  const [result, setResult] = useState("");
 
   const transformTextToDigits = () => {};
 
