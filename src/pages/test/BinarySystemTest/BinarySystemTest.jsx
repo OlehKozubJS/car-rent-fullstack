@@ -34,7 +34,7 @@ const BinarySystemTest = () => {
     setResult(
       String(
         queryDigitsArray.reduce((total, number, index) => {
-          console.log(total);
+          //console.log(total);
           return total + number * Math.pow(2, index);
         }, 0)
       )
