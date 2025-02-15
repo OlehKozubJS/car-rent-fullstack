@@ -18,7 +18,7 @@ const BinarySystemTest = () => {
   };
 
   const transformDecimalToBinary = () => {
-    setResult(dtb(Number(result)));
+    setResult(dtb(Number(query)));
   };
 
   const transformBinaryToDecimal = () => {};
