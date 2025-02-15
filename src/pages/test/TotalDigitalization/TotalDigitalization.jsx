@@ -11,7 +11,11 @@ const TotalDigitalization = () => {
   };
 
   const transformTextToDigits = () => {
-    setResult();
+    setResult(
+      query.map((character) => {
+        return db.indexOf(character);
+      })
+    );
   };
 
   const transformDigitsToText = () => {};
