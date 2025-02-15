@@ -18,7 +18,6 @@ const BinarySystemTest = () => {
       <button onClick={transformDecimalToBinary}>Decimal to binary</button>
       <button onClick={transformBinaryToDecimal}>Binary to decimal</button>
       <p>{result}</p>
-      {query}
     </div>
   );
 };
