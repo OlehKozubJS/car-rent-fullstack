@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkcar_rent_fullstack=self.webpackChunkcar_rent_fullstack||[]).push([[210],{1210:(e,t,n)=>{n.r(t),n.d(t,{BinarySystem:()=>s});n(2791);var r=n(3329);const s=()=>(0,r.jsxs)("div",{children:[(0,r.jsx)("input",{type:"text",placeholder:"Enter a number"}),(0,r.jsx)("button",{children:"Decimal to binary"}),(0,r.jsx)("button",{children:"Binary to decimal"}),(0,r.jsx)("p",{})]})}}]);
-//# sourceMappingURL=210.4edf6903.chunk.js.map
