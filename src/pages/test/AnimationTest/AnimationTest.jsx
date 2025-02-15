@@ -2,6 +2,14 @@ import { useState } from "react";
 
 import { AnimationTestController } from "./AnimationTestController";
 
+const handleValue = (valueSetter) => {
+  return ({ valueX }) => {
+    if (valueX >= 0 && valueX <= 180) {
+      valueSetter(valueX);
+    }
+  };
+};
+
 const AnimationTest = () => {
   const [transformRotateValue, setTransformRotateValue] = useState(0);
   const [transformRotateYvalue, setTransformRotateYvalue] = useState(0);
