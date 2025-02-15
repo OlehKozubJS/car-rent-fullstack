@@ -24,6 +24,7 @@ const BinarySystemTest = () => {
     } else {
       const binaryDigit = query % 2;
       setQuery(Math.floor(query / 2));
+      console.log(query);
       setResult(transformDecimalToBinary() + binaryDigit);
     }
   };
