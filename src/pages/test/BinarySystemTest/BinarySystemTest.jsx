@@ -6,7 +6,7 @@ const dtb = (query) => {
   } else {
     const binaryDigit = query % 2;
     const newQuotient = Math.floor(query / 2);
-    return binaryDigit + dtb(newQuotient);
+    return dtb(newQuotient) + binaryDigit;
   }
 };
 
