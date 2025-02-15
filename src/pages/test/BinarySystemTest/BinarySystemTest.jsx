@@ -12,14 +12,20 @@ const dtb = (query) => {
 
 const BinarySystemTest = () => {
   const [query, setQuery] = useState(0);
-  const [result, setResult] = useState(0);
+  const [result, setResult] = useState();
 
   const handleQuery = ({ target }) => {
     setQuery(Number(target.value));
   };
 
   const transformDecimalToBinary = () => {
-    setResult(dtb(query));
+    if (query === 0) {
+      setResult("");
+    } else {
+      const binaryDigit = query % 2;
+      const newQuotient = Math.floor(query / 2);
+      return setResult(transformDecimalToBinary(newQuotient) + binaryDigit);
+    }
   };
 
   const transformBinaryToDecimal = () => {};
