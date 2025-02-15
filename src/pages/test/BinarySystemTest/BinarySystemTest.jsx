@@ -42,7 +42,12 @@ const BinarySystemTest = () => {
 
   return (
     <div>
-      <input type="text" placeholder="Enter a number" onChange={handleQuery} />
+      <input
+        name="numberInput"
+        type="text"
+        placeholder="Enter a number"
+        onChange={handleQuery}
+      />
       <button onClick={transformDecimalToBinary}>Decimal to binary</button>
       <button onClick={transformBinaryToDecimal}>Binary to decimal</button>
       <p>{result}</p>
