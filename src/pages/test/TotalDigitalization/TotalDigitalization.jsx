@@ -2,6 +2,7 @@ import { useState } from "react";
 
 const TotalDigitalization = () => {
   const [] = useState();
+  const [] = useState();
 
   return (
     <div>
