@@ -1,17 +1,4 @@
-import { useState } from "react";
-
-import { AnimationTestControllers } from "./AnimationTestControllers";
-
-const AnimationTestObject = () => {
-  const [transformValues, setTransformValues] = useState({
-    r: 0,
-    ry: 0,
-    rx: 0,
-    p: 500,
-  });
-
-  const handleTransformValues = (newValues) => setTransformValues(newValues);
-
+const AnimationTestObject = ({ transformValues }) => {
   return (
     <div>
       <div
