@@ -22,49 +22,6 @@ const TotalDigitalizationButton = () => {
     );
   };
 
-  const transformDigitsToText = () => {
-    setResult(
-      query
-        .reduce((total, character, characterIndex, characterArray) => {
-          let newTotal = total + character;
-
-          if (
-            characterIndex % 2 === 1 &&
-            characterIndex !== characterArray.length - 1
-          ) {
-            newTotal += " ";
-          }
-
-          return newTotal;
-        }, "")
-        .split(" ")
-        .map((character) => {
-          return db[Number(character)];
-        })
-        .join("")
-    );
-  };
-
-  const transformUkrainianCyrillicToLatin = () => {
-    setResult(
-      query.map((character) => {
-        return Object.keys(ucl).includes(character)
-          ? ucl[character]
-          : character;
-      })
-    );
-  };
-
-  const transformRussianCyrillicToLatin = () => {
-    setResult(
-      query.map((character) => {
-        return Object.keys(rcl).includes(character)
-          ? rcl[character]
-          : character;
-      })
-    );
-  };
-
   return (
     <div>
       <div>
