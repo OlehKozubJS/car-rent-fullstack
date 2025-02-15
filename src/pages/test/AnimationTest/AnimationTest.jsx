@@ -17,7 +17,7 @@ const AnimationTest = () => {
   const [perspectiveValue, setPerspectiveValue] = useState(0);
 
   const handleTransformRotateValue = handleValue(setTransformRotateValue);
-  const handleTransformRotateYvalue = handleValue(setTransformRotateXvalue);
+  const handleTransformRotateYvalue = handleValue(setTransformRotateYvalue);
   const handleTransformRotateXvalue = handleValue(setTransformRotateXvalue);
   const handlePerspectiveValue = handleValue(setPerspectiveValue);
 
