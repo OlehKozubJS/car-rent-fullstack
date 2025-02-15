@@ -6,6 +6,8 @@ const TotalDigitalization = () => {
   const [query, setQuery] = useState("");
   const [result, setResult] = useState("");
 
+  const handleQuery = ({ target }) => {};
+
   const transformTextToDigits = () => {};
 
   const transformDigitsToText = () => {};
@@ -13,7 +15,7 @@ const TotalDigitalization = () => {
   return (
     <div>
       <div>
-        <textarea />
+        <textarea onClick={handleQuery} />
         <button onClick={transformTextToDigits}>Text to digits</button>
         <button onClick={transformDigitsToText}>Digits to text</button>
       </div>
