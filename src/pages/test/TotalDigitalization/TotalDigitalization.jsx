@@ -7,7 +7,8 @@ const TotalDigitalization = () => {
     <div>
       <div>
         <textarea />
-        <button>Enter</button>
+        <button>Digits to text</button>
+        <button>Text to digits</button>
       </div>
       <p></p>
     </div>
