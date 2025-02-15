@@ -14,7 +14,7 @@ import { AnimationTest } from "./AnimationTest";
 import { TotalDigitalization } from "./TotalDigitalization";
 
 const TestPage = () => {
-  const [componentName, setComponentName] = useState("Animation test");
+  const [componentName, setComponentName] = useState("Total digitalization");
 
   const chooseComponent = (newComponentName) => {
     setComponentName(newComponentName);
