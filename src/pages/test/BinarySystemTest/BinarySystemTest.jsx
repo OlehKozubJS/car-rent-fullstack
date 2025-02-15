@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const dtb = (query) => {
   if (query === 0) {
-    return "";
+    return "0";
   } else {
     const binaryDigit = query % 2;
     const newQuotient = Math.floor(query / 2);
