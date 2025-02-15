@@ -11,6 +11,7 @@ import { GradientHoverField } from "./GradientHover";
 import { CellularAutomaton } from "./CellularAutomaton";
 import { CellularAutomatonLite } from "./CellularAutomatonLite";
 import { AnimationTest } from "./AnimationTest";
+import { TotalDigitalization } from "./TotalDigitalization";
 
 const TestPage = () => {
   const [componentName, setComponentName] = useState("Animation test");
@@ -32,6 +33,7 @@ const TestPage = () => {
           "Cellular automaton",
           "Cellular automaton lite",
           "Animation test",
+          "Total digitalization",
         ]}
         initialComponentName={componentName}
         onChange={chooseComponent}
@@ -45,6 +47,7 @@ const TestPage = () => {
       {componentName === "Cellular automaton" && <CellularAutomaton />}
       {componentName === "Cellular automaton lite" && <CellularAutomatonLite />}
       {componentName === "Animation test" && <AnimationTest />}
+      {componentName === "Total digitalization" && <TotalDigitalization />}
     </section>
   );
 };
