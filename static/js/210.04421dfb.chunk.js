@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkcar_rent_fullstack=self.webpackChunkcar_rent_fullstack||[]).push([[210],{1210:(e,t,n)=>{n.r(t),n.d(t,{BinarySystem:()=>a});var r=n(2791),s=n(3329);const a=()=>{const[e,t]=(0,r.useState)(""),[n,a]=(0,r.useState)("");return(0,s.jsxs)("div",{children:[(0,s.jsx)("input",{type:"text",placeholder:"Enter a number"}),(0,s.jsx)("button",{children:"Decimal to binary"}),(0,s.jsx)("button",{children:"Binary to decimal"}),(0,s.jsx)("p",{children:n})]})}}}]);
-//# sourceMappingURL=210.04421dfb.chunk.js.map
