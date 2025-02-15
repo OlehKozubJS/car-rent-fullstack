@@ -22,7 +22,13 @@ const BinarySystemTest = () => {
     setResult(dtb(query));
   };
 
-  const transformBinaryToDecimal = () => {};
+  const transformBinaryToDecimal = () => {
+    return String(
+      [...String(query).split("")]
+        .sort((a, b) => Number(b) - Number(a))
+        .reduce()
+    );
+  };
 
   return (
     <div>
