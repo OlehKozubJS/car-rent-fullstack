@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcar_rent_fullstack=self.webpackChunkcar_rent_fullstack||[]).push([[913,731],{1731:(a,i,t)=>{t.r(i),t.d(i,{TotalDigitalization:()=>s});t(2791);var l=t(3329);const s=()=>(0,l.jsxs)("div",{children:[(0,l.jsx)("div",{}),(0,l.jsx)("p",{})]})},3913:(a,i,t)=>{t.r(i),t.d(i,{TotalDigitalization:()=>l.TotalDigitalization});var l=t(1731)}}]);
+//# sourceMappingURL=913.39cec0c2.chunk.js.map
