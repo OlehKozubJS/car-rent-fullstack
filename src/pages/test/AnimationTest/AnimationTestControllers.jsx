@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { AnimationTestController } from "./AnimationTestController";
 
@@ -21,6 +21,8 @@ const AnimationTestControllers = () => {
     setTransformRotateXvalue(0);
     setPerspectiveValue(500);
   };
+
+  useEffect(() => {}, []);
 
   return (
     <div>
