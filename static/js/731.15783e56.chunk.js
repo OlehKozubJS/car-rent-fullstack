@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkcar_rent_fullstack=self.webpackChunkcar_rent_fullstack||[]).push([[731],{1731:(s,t,e)=>{e.r(t),e.d(t,{TotalDigitalization:()=>r});e(2791);var a=e(3329);const r=()=>(0,a.jsxs)("div",{children:[(0,a.jsxs)("div",{children:[(0,a.jsx)("textarea",{}),(0,a.jsx)("button",{children:"Enter"})]}),(0,a.jsx)("p",{})]})}}]);
-//# sourceMappingURL=731.15783e56.chunk.js.map
