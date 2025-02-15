@@ -9,19 +9,6 @@ const TotalDigitalizationButton = () => {
   };
 
   const transformTextToDigits = () => {
-    setResult(
-      query
-        .map((character) => {
-          let binaryDigit = db.indexOf(character);
-          if (binaryDigit < 10) {
-            binaryDigit = "0" + binaryDigit;
-          }
-          return String(binaryDigit);
-        })
-        .join("")
-    );
-  };
-
   return (
     <div>
       <div>
