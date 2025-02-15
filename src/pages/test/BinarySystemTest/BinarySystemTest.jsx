@@ -8,7 +8,12 @@ const BinarySystemTest = () => {
     setQuery(target.value);
   };
 
-  const transformDecimalToBinary = () => {};
+  const transformDecimalToBinary = () => {
+    if (Number(query) <= 1) {
+      setResult();
+    } else {
+    }
+  };
 
   const transformBinaryToDecimal = () => {};
 
