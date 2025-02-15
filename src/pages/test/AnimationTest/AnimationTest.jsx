@@ -26,7 +26,7 @@ const AnimationTest = () => {
             border: "5px solid rgb(150, 250, 250)",
             backgroundColor: "red",
             transformOrigin: "center",
-            transform: `perspective(${perspectiveValues.p}px) rotate(${transformRotateValue.r}deg) rotateY(${transformRotateYvalue.}deg) rotateX(${transformRotateXvalue}deg)`,
+            transform: `perspective(${transformValues.p}px) rotate(${transformValues.r}deg) rotateY(${transformValues.ry}deg) rotateX(${transformValues.rx}deg)`,
           }}
         >
           Hello
