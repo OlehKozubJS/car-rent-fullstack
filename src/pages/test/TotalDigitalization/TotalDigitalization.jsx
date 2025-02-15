@@ -71,11 +71,13 @@ const TotalDigitalization = () => {
           Digits to text
         </button>
       </div>
-      <button type="submit">Enter</button>
-      <textarea
-        onClick={handleQuery}
-        placeholder="Enter some text or numbers"
-      />
+      <form>
+        <button type="submit">Enter</button>
+        <textarea
+          onClick={handleQuery}
+          placeholder="Enter some text or numbers"
+        />
+      </form>
       <p>{result}</p>
     </div>
   );
