@@ -1,6 +1,8 @@
 import { useState } from "react";
 
 const TotalDigitalization = () => {
+  const [] = useState();
+
   return (
     <div>
       <div>
