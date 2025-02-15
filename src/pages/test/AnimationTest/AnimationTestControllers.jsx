@@ -22,7 +22,12 @@ const AnimationTestControllers = () => {
     setPerspectiveValue(500);
   };
 
-  useEffect(() => {}, []);
+  useEffect(() => {}, [
+    transformRotateValue,
+    transformRotateYvalue,
+    transformRotateXvalue,
+    perspectiveValue,
+  ]);
 
   return (
     <div>
