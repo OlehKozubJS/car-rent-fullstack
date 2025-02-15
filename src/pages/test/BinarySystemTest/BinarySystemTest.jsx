@@ -23,13 +23,14 @@ const BinarySystemTest = () => {
   };
 
   const transformBinaryToDecimal = () => {
-    let queryDigitsArray = String(query)
-      .split("")
-      .map((number) => {
-        return Number(number);
-      });
+    let queryDigitsArray = [
+      ...String(query)
+        .split("")
+        .map((number) => {
+          return Number(number);
+        }),
+    ].sort((a, b) => b - a);
 
-    queryDigitsArray.sort((a, b) => b - a);
     console.log(queryDigitsArray);
     setResult(
       String(
