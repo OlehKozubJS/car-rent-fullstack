@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-
 import { DraggableComponent } from "../DraggableComponent";
 
 const AnimationTestController = ({ onChange, value, range, color }) => {
