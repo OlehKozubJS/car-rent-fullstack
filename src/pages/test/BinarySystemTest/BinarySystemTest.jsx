@@ -32,7 +32,9 @@ const BinarySystemTest = () => {
           }),
       ]
         .sort((a, b) => b - a)
-        .reduce((total) => {}, 0)
+        .reduce((total, number, index) => {
+          return total + number * Math.pow(2, index);
+        }, 0)
     );
   };
 
