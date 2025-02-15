@@ -14,7 +14,7 @@ const AnimationTestController = ({ onChange, value, range, color }) => {
   return (
     <div style={{ position: "relative", height: "50px" }}>
       <DraggableComponent
-        onChange={onChange}
+        onChange={handleValue}
         valueX={value}
         valueY={0}
         height={50}
