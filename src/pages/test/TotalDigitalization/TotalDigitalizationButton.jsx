@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const TotalDigitalization = () => {
+const TotalDigitalizationButton = () => {
   const [query, setQuery] = useState("");
   const [result, setResult] = useState("");
 
