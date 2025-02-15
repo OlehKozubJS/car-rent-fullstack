@@ -33,7 +33,7 @@ const TotalDigitalization = () => {
           let newTotal = total + character;
 
           if (characterIndex % 2 === 1) {
-            newTotal += "-";
+            newTotal += " ";
           }
 
           return newTotal;
