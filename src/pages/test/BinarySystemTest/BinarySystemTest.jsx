@@ -29,7 +29,12 @@ const BinarySystemTest = () => {
       <input type="text" placeholder="Enter a number" onChange={handleQuery} />
       <button onClick={transformDecimalToBinary}>Decimal to binary</button>
       <button onClick={transformBinaryToDecimal}>Binary to decimal</button>
-      <p>{result}</p>
+      <p>
+        {result
+          .split("")
+          .sort((a, b) => a > b)
+          .join("")}
+      </p>
     </div>
   );
 };
