@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/car-rent-fullstack/static/js/main.136afcc6.js",
+    "main.js": "/car-rent-fullstack/static/js/main.873108dd.js",
     "static/js/78.7a9df79f.chunk.js": "/car-rent-fullstack/static/js/78.7a9df79f.chunk.js",
     "static/js/727.fa24bd08.chunk.js": "/car-rent-fullstack/static/js/727.fa24bd08.chunk.js",
     "static/js/924.f941a7a5.chunk.js": "/car-rent-fullstack/static/js/924.f941a7a5.chunk.js",
-    "static/js/157.0544487a.chunk.js": "/car-rent-fullstack/static/js/157.0544487a.chunk.js",
+    "static/js/157.06ee9e21.chunk.js": "/car-rent-fullstack/static/js/157.06ee9e21.chunk.js",
     "static/js/82.eb30bb7b.chunk.js": "/car-rent-fullstack/static/js/82.eb30bb7b.chunk.js",
     "static/js/929.b4565c1b.chunk.js": "/car-rent-fullstack/static/js/929.b4565c1b.chunk.js",
     "static/js/808.0f0b7cfc.chunk.js": "/car-rent-fullstack/static/js/808.0f0b7cfc.chunk.js",
@@ -44,9 +44,9 @@
     "static/js/999.b62be5c9.chunk.js": "/car-rent-fullstack/static/js/999.b62be5c9.chunk.js",
     "static/js/969.a05cc35a.chunk.js": "/car-rent-fullstack/static/js/969.a05cc35a.chunk.js",
     "static/js/38.2ba7956c.chunk.js": "/car-rent-fullstack/static/js/38.2ba7956c.chunk.js",
-    "static/js/504.b20792b1.chunk.js": "/car-rent-fullstack/static/js/504.b20792b1.chunk.js",
-    "static/js/913.4959b7f8.chunk.js": "/car-rent-fullstack/static/js/913.4959b7f8.chunk.js",
-    "static/js/731.030d27b6.chunk.js": "/car-rent-fullstack/static/js/731.030d27b6.chunk.js",
+    "static/js/504.6ff78498.chunk.js": "/car-rent-fullstack/static/js/504.6ff78498.chunk.js",
+    "static/js/913.6933383a.chunk.js": "/car-rent-fullstack/static/js/913.6933383a.chunk.js",
+    "static/js/731.2523bc1a.chunk.js": "/car-rent-fullstack/static/js/731.2523bc1a.chunk.js",
     "static/js/124.7ce7ade7.chunk.js": "/car-rent-fullstack/static/js/124.7ce7ade7.chunk.js",
     "static/js/317.317db55c.chunk.js": "/car-rent-fullstack/static/js/317.317db55c.chunk.js",
     "static/js/760.0cb25b34.chunk.js": "/car-rent-fullstack/static/js/760.0cb25b34.chunk.js",
@@ -60,10 +60,10 @@
     "static/media/MysteryQuest-Regular.ttf": "/car-rent-fullstack/static/media/MysteryQuest-Regular.e8b69c7e6f861fc34b22.ttf",
     "static/media/icons.svg": "/car-rent-fullstack/static/media/icons.33633ab5c522b43212f596ab9c5993ed.svg",
     "index.html": "/car-rent-fullstack/index.html",
-    "main.136afcc6.js.map": "/car-rent-fullstack/static/js/main.136afcc6.js.map",
+    "main.873108dd.js.map": "/car-rent-fullstack/static/js/main.873108dd.js.map",
     "78.7a9df79f.chunk.js.map": "/car-rent-fullstack/static/js/78.7a9df79f.chunk.js.map",
     "727.fa24bd08.chunk.js.map": "/car-rent-fullstack/static/js/727.fa24bd08.chunk.js.map",
-    "157.0544487a.chunk.js.map": "/car-rent-fullstack/static/js/157.0544487a.chunk.js.map",
+    "157.06ee9e21.chunk.js.map": "/car-rent-fullstack/static/js/157.06ee9e21.chunk.js.map",
     "82.eb30bb7b.chunk.js.map": "/car-rent-fullstack/static/js/82.eb30bb7b.chunk.js.map",
     "929.b4565c1b.chunk.js.map": "/car-rent-fullstack/static/js/929.b4565c1b.chunk.js.map",
     "808.0f0b7cfc.chunk.js.map": "/car-rent-fullstack/static/js/808.0f0b7cfc.chunk.js.map",
@@ -102,11 +102,11 @@
     "999.b62be5c9.chunk.js.map": "/car-rent-fullstack/static/js/999.b62be5c9.chunk.js.map",
     "969.a05cc35a.chunk.js.map": "/car-rent-fullstack/static/js/969.a05cc35a.chunk.js.map",
     "38.2ba7956c.chunk.js.map": "/car-rent-fullstack/static/js/38.2ba7956c.chunk.js.map",
-    "504.b20792b1.chunk.js.map": "/car-rent-fullstack/static/js/504.b20792b1.chunk.js.map",
-    "913.4959b7f8.chunk.js.map": "/car-rent-fullstack/static/js/913.4959b7f8.chunk.js.map",
-    "731.030d27b6.chunk.js.map": "/car-rent-fullstack/static/js/731.030d27b6.chunk.js.map"
+    "504.6ff78498.chunk.js.map": "/car-rent-fullstack/static/js/504.6ff78498.chunk.js.map",
+    "913.6933383a.chunk.js.map": "/car-rent-fullstack/static/js/913.6933383a.chunk.js.map",
+    "731.2523bc1a.chunk.js.map": "/car-rent-fullstack/static/js/731.2523bc1a.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.136afcc6.js"
+    "static/js/main.873108dd.js"
   ]
 }
