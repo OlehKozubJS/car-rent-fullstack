@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 
 import { AnimationTestController } from "./AnimationTestController";
 
-const AnimationTestControllers = () => {
-  const [transformRotateValue, setTransformRotateValue] = useState(0);
-  const [transformRotateYvalue, setTransformRotateYvalue] = useState(0);
-  const [transformRotateXvalue, setTransformRotateXvalue] = useState(0);
-  const [perspectiveValue, setPerspectiveValue] = useState(500);
+const AnimationTestControllers = ({ onChange, value }) => {
+  const [transformRotateValue, setTransformRotateValue] = useState(value.r);
+  const [transformRotateYvalue, setTransformRotateYvalue] = useState(value.ry);
+  const [transformRotateXvalue, setTransformRotateXvalue] = useState(value.rx);
+  const [perspectiveValue, setPerspectiveValue] = useState(value.p);
 
   const handleTransformRotateValue = (value) => setTransformRotateValue(value);
   const handleTransformRotateYvalue = (value) =>
