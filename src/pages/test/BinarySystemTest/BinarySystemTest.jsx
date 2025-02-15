@@ -10,8 +10,9 @@ const BinarySystemTest = () => {
 
   const transformDecimalToBinary = () => {
     if (Number(query) <= 1) {
-      setResult();
+      setResult(query + result);
     } else {
+      setResult(transformDecimalToBinary(String(Number(query) % 2) + result));
     }
   };
 
