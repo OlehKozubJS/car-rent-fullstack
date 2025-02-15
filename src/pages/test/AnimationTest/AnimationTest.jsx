@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { AnimationTestController } from "./AnimationTestController";
+import { AnimationTestControllers } from "./AnimationTestControllers;
 
 const AnimationTest = () => {
   const [transformRotateValue, setTransformRotateValue] = useState(0);
@@ -24,41 +24,7 @@ const AnimationTest = () => {
 
   return (
     <div>
-      <AnimationTestController
-        onChange={handleTransformRotateValue}
-        value={transformRotateValue}
-        range={180}
-        color={"red"}
-      />
-      <AnimationTestController
-        onChange={handleTransformRotateYvalue}
-        value={transformRotateYvalue}
-        range={180}
-        color={"green"}
-      />
-      <AnimationTestController
-        onChange={handleTransformRotateXvalue}
-        value={transformRotateXvalue}
-        range={180}
-        color={"blue"}
-      />
-      <AnimationTestController
-        onChange={handlePerspectiveValue}
-        value={perspectiveValue}
-        range={500}
-        color={"cyan"}
-      />
-      <button
-        type="button"
-        onClick={reset}
-        style={{ backgroundColor: "rgb(250, 225, 225)" }}
-      >
-        Reset
-      </button>
-      <p>transform: rotate: {transformRotateValue}</p>
-      <p>transfrom: rotateY: {transformRotateYvalue}</p>
-      <p>transform: rotateX: {transformRotateXvalue}</p>
-      <p>transform: perspective: {perspectiveValue}</p>
+      <AnimationTestControllers onChange={} value={}/>
       <div>
         <div
           style={{
