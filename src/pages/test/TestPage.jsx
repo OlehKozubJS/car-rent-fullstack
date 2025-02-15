@@ -35,6 +35,7 @@ const TestPage = () => {
           "Cellular automaton lite",
           "Animation test",
           "Total digitalization",
+          "Binary system",
         ]}
         initialComponentName={componentName}
         onChange={chooseComponent}
