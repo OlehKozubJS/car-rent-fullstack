@@ -4,7 +4,7 @@ const dtb = (query, result) => {
   if (query <= 1) {
     return query + result;
   } else {
-    return transformDecimalToBinary(query % 2, result) + result;
+    return String(transformDecimalToBinary(query % 2, result)) + result;
   }
 };
 
@@ -17,11 +17,7 @@ const BinarySystemTest = () => {
   };
 
   const transformDecimalToBinary = () => {
-    if (Number(query) <= 1) {
-      setResult(query + result);
-    } else {
-      setResult(transformDecimalToBinary(String(Number(query) % 2) + result));
-    }
+    setResult(dtb(result));
   };
 
   const transformBinaryToDecimal = () => {};
