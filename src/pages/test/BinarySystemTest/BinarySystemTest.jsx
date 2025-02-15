@@ -13,8 +13,8 @@ const BinarySystemTest = () => {
       setResult("");
     } else {
       const binaryDigit = query % 2;
-      const newQuotient = Math.floor(query / 2);
-      setResult(transformDecimalToBinary(newQuotient) + binaryDigit);
+      setQuery(Math.floor(query / 2));
+      setResult(transformDecimalToBinary() + binaryDigit);
     }
   };
 
