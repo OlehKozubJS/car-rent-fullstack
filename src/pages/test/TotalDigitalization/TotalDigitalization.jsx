@@ -51,6 +51,14 @@ const TotalDigitalization = () => {
     );
   };
 
+  const transformUkrainianCyrillicToLatin = () => {
+    setResult(
+      query.split("").map((character) => {
+        return Object.keys();
+      })
+    );
+  };
+
   const transformRussianCyrillicToLatin = () => {
     setResult(
       query.split("").map((character) => {
