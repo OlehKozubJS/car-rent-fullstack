@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-const dtb = (query) => {
+const dtb = (query, result) => {
   if (query <= 1) {
     return query + result;
   } else {
-    return (transformDecimalToBinary(query) % 2) + result;
+    return transformDecimalToBinary(query % 2) + result;
   }
 };
 
