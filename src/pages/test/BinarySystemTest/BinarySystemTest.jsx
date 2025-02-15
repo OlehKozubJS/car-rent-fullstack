@@ -4,6 +4,7 @@ const dtb = (query, result) => {
   if (query <= 1) {
     return Number(String(query));
   } else {
+    console.log(Number(String(dtb(query % 2, result)) + String(result)));
     return Number(String(dtb(query % 2, result)) + String(result));
   }
 };
