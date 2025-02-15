@@ -2,6 +2,8 @@ import { useState } from "react";
 
 import { DraggableComponent } from "../DraggableComponent";
 
+import { AnimationTestController } from "./AnimationTestController";
+
 const AnimationTest = () => {
   const [transformRotateValue, setTransformRotateValue] = useState(0);
   const [transformRotateYvalue, setTransformRotateYvalue] = useState(0);
