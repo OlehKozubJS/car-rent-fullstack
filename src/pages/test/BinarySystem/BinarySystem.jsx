@@ -9,7 +9,7 @@ const BinarySystem = () => {
       <input type="text" placeholder="Enter a number" />
       <button>Decimal to binary</button>
       <button>Binary to decimal</button>
-      <p>{}</p>
+      <p>{result}</p>
     </div>
   );
 };
