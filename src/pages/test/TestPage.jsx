@@ -50,6 +50,7 @@ const TestPage = () => {
       {componentName === "Cellular automaton lite" && <CellularAutomatonLite />}
       {componentName === "Animation test" && <AnimationTest />}
       {componentName === "Total digitalization" && <TotalDigitalization />}
+      {componentName === "Binary system" && <BinarySystemTest />}
     </section>
   );
 };
