@@ -54,6 +54,8 @@ const AnimationTest = () => {
             width: "250px",
             border: "5px solid rgb(150, 250, 250)",
             backgroundColor: "red",
+            transformOrigin: "center",
+            transform: `rotate(${transformRotateValue}deg)`,
           }}
         >
           Hello
