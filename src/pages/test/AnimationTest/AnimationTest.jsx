@@ -5,7 +5,7 @@ import { AnimationTestController } from "./AnimationTestController";
 const handleValue = (valueSetter) => {
   return ({ valueX }) => {
     if (valueX >= 0 && valueX <= 360) {
-      valueSetter(Math.floor(valueX / 2));
+      valueSetter(valueX);
     }
   };
 };
