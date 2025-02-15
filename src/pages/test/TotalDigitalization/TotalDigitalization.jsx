@@ -38,7 +38,10 @@ const TotalDigitalization = () => {
 
           return newTotal;
         }, "")
-        .split("")
+        .split(" ")
+        .map((character) => {
+          return db[Number(character)];
+        })
         .join("")
     );
   };
