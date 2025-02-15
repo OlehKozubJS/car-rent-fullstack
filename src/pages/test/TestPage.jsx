@@ -12,7 +12,7 @@ import { CellularAutomaton } from "./CellularAutomaton";
 import { CellularAutomatonLite } from "./CellularAutomatonLite";
 import { AnimationTest } from "./AnimationTest";
 import { TotalDigitalization } from "./TotalDigitalization";
-import { BinarySystem } from "./BinarySystem";
+import { BinarySystem } from "./BinarySystemTest";
 
 const TestPage = () => {
   const [componentName, setComponentName] = useState("Total digitalization");
