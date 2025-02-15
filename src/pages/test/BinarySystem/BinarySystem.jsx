@@ -14,6 +14,7 @@ const BinarySystem = () => {
       <button>Decimal to binary</button>
       <button>Binary to decimal</button>
       <p>{result}</p>
+      {query}
     </div>
   );
 };
