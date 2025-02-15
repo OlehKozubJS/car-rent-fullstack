@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const dtb = (query, result) => {
   if (query <= 1) {
-    return Number(String(query) + String(result));
+    return Number(String(query));
   } else {
     return Number(String(dtb(query % 2, result)) + String(result));
   }
