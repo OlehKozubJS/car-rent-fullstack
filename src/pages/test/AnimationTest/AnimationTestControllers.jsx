@@ -22,7 +22,14 @@ const AnimationTestControllers = () => {
     setPerspectiveValue(500);
   };
 
-  useEffect(() => {}, [
+  useEffect(() => {
+    onChange({
+      r: transformRotateValue,
+      ry: transformRotateYvalue,
+      rx: transformRotateXvalue,
+      p: perspectiveValue,
+    });
+  }, [
     transformRotateValue,
     transformRotateYvalue,
     transformRotateXvalue,
