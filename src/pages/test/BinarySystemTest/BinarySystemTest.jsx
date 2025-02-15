@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const dtb = (query, result) => {
   if (query <= 1) {
-    return query + result;
+    return Number(String(query) + String(result));
   } else {
     return Number(
       String(transformDecimalToBinary(query % 2, result)) + String(result)
