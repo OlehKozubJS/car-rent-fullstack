@@ -76,7 +76,7 @@ const TotalDigitalization = () => {
         placeholder="Enter some text or numbers"
         style={{ height: "300px", width: "750px", resize: "none" }}
       />
-      <p style={{ width: "750px" }}>{result}</p>
+      <p style={{ width: "750px", overflowWrap: "break-word" }}>{result}</p>
     </div>
   );
 };
