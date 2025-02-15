@@ -12,9 +12,12 @@ const TotalDigitalization = () => {
 
   const transformTextToDigits = () => {
     setResult(
-      query.map((character) => {
-        return db.indexOf(character);
-      })
+      query
+        .split("")
+        .map((character) => {
+          return db.indexOf(character);
+        })
+        .join("")
     );
   };
 
