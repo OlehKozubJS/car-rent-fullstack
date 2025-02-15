@@ -1,9 +1,6 @@
 import { useState } from "react";
 
 const TotalDigitalizationButton = () => {
-  const [query, setQuery] = useState("");
-  const [result, setResult] = useState("");
-
   const transformTextToDigits = () => {
   return (
     <div>
