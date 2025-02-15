@@ -50,6 +50,8 @@ const TotalDigitalization = () => {
     );
   };
 
+  const transformCyrillicToLatin = () => {};
+
   return (
     <div>
       <div>
