@@ -1,5 +1,13 @@
 import { useState } from "react";
 
+const dtb = (query) => {
+  if (query <= 1) {
+    return query + result;
+  } else {
+    return (transformDecimalToBinary(query) % 2) + result;
+  }
+};
+
 const BinarySystemTest = () => {
   const [query, setQuery] = useState("");
   const [result, setResult] = useState("");
