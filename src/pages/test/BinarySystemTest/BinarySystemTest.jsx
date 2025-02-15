@@ -23,20 +23,18 @@ const BinarySystemTest = () => {
   };
 
   const transformBinaryToDecimal = () => {
+    let queryDigitsArray = String(query)
+      .split("")
+      .map((number) => {
+        return number(number);
+      });
+    queryDigitsArray.sort((a, b) => b - a);
     setResult(
       String(
-        [
-          ...String(query)
-            .split("")
-            .map((number) => {
-              return number(number);
-            }),
-        ]
-          .sort((a, b) => b - a)
-          .reduce((total, number, index) => {
-            console.log(total);
-            return total + number * Math.pow(2, index);
-          }, 0)
+        queryDigitsArray.reduce((total, number, index) => {
+          console.log(total);
+          return total + number * Math.pow(2, index);
+        }, 0)
       )
     );
   };
