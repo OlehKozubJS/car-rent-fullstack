@@ -52,7 +52,7 @@ const TotalDigitalization = () => {
   const transformUkrainianCyrillicToLatin = () => {
     setResult(
       query.map((character) => {
-        return Object.keys();
+        return Object.keys(ucl);
       })
     );
   };
@@ -60,7 +60,7 @@ const TotalDigitalization = () => {
   const transformRussianCyrillicToLatin = () => {
     setResult(
       query.map((character) => {
-        return Object.keys();
+        return Object.keys(rcl);
       })
     );
   };
