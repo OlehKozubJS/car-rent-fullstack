@@ -20,13 +20,19 @@ const TotalDigitalization = () => {
         <textarea onClick={handleQuery} />
         <button
           onClick={transformTextToDigits}
-          style={{ backgroundColor: "rgb(0, 0, 200)" }}
+          style={{
+            backgroundColor: "rgb(0, 0, 200)",
+            color: "rgb(255, 255, 55)",
+          }}
         >
           Text to digits
         </button>
         <button
           onClick={transformDigitsToText}
-          style={{ backgroundColor: "rgb(0, 0, 200)" }}
+          style={{
+            backgroundColor: "rgb(0, 0, 200)",
+            color: "rgb(255, 255, 55)",
+          }}
         >
           Digits to text
         </button>
