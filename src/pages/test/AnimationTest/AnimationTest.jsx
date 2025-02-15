@@ -1,7 +1,5 @@
 import { useState } from "react";
 
-import { DraggableComponent } from "../DraggableComponent";
-
 import { AnimationTestController } from "./AnimationTestController";
 
 const AnimationTest = () => {
