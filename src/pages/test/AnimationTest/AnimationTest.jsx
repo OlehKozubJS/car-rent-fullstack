@@ -52,10 +52,12 @@ const AnimationTest = () => {
           style={{
             height: "250px",
             width: "250px",
-            borderColor: "magenta",
-            borderWidth: "5px",
+            border: "5px solid rgb(150, 250, 250)",
+            backgroundColor: "red",
           }}
-        ></div>
+        >
+          Hello
+        </div>
       </div>
     </div>
   );
