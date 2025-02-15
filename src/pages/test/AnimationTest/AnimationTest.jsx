@@ -38,7 +38,7 @@ const AnimationTest = () => {
       <AnimationTestController
         onChange={handlePerspectiveValue}
         value={perspectiveValue}
-        range={300}
+        range={500}
         color={"cyan"}
       />
       <p>transform: rotate: {transformRotateValue}</p>
