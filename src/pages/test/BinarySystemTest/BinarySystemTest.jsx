@@ -32,7 +32,7 @@ const BinarySystemTest = () => {
       <p>
         {query
           .split("")
-          .sort((a, b) => a > b)
+          .sort((a, b) => Number(a) - Number(b))
           .join("")}
       </p>
     </div>
