@@ -48,7 +48,11 @@ const AnimationTest = () => {
         range={500}
         color={"cyan"}
       />
-      <button type="button" onClick={reset}>
+      <button
+        type="button"
+        onClick={reset}
+        style={{ backgroundColor: "rgb(250, 225, 225)" }}
+      >
         Reset
       </button>
       <p>transform: rotate: {transformRotateValue}</p>
