@@ -38,6 +38,7 @@ const TotalDigitalization = () => {
 
           return newTotal;
         }, "")
+        .split(" ")
         .join("")
     );
   };
