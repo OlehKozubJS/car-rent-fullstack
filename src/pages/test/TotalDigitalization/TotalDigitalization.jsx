@@ -32,6 +32,10 @@ const TotalDigitalization = () => {
         .reduce((total, character, characterIndex) => {
           let newTotal = total + character;
 
+          if (characterIndex % 2 === 1) {
+            newTotal += 1;
+          }
+
           return newTotal;
         }, "")
         .join("")
