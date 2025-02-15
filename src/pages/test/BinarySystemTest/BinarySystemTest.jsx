@@ -19,7 +19,13 @@ const BinarySystemTest = () => {
   };
 
   const transformDecimalToBinary = () => {
-    setResult(dtb(query));
+    if (query === 0) {
+      setResult("");
+    } else {
+      const binaryDigit = query % 2;
+      setQuery(Math.floor(query / 2));
+      setResult(transformDecimalToBinary() + binaryDigit);
+    }
   };
 
   const transformBinaryToDecimal = () => {
