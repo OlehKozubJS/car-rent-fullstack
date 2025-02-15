@@ -1,11 +1,12 @@
 import { useState } from "react";
 
-const dtb = (query, result) => {
+const dtb = (query) => {
   if (query === 0) {
-    return Number(String(query));
+    return "0";
   } else {
     const binaryDigit = query % 2;
     const newQuotient = Math.floor(query / 2);
+    return binaryDigit + dtb(newQuotient);
   }
 };
 
@@ -18,7 +19,7 @@ const BinarySystemTest = () => {
   };
 
   const transformDecimalToBinary = () => {
-    setResult(dtb(Number(query), 0));
+    setResult(dtb(Number(query)));
   };
   //    setResult(dtb(Number(query)));
   const transformBinaryToDecimal = () => {};
