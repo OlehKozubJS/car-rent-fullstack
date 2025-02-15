@@ -15,7 +15,12 @@ const AnimationTest = () => {
     setTransformRotateXvalue(value);
   const handlePerspectiveValue = (value) => setPerspectiveValue(value);
 
-  const reset = () => {};
+  const reset = () => {
+    setTransformRotateValue(0);
+    setTransformRotateYvalue(0);
+    setTransformRotateXvalue(0);
+    setPerspectiveValue(500);
+  };
 
   return (
     <div>
