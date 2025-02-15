@@ -29,7 +29,7 @@ const BinarySystemTest = () => {
           ...String(query)
             .split("")
             .map((number) => {
-              Number(number);
+              return number(number);
             }),
         ]
           .sort((a, b) => b - a)
