@@ -4,10 +4,6 @@ const TotalDigitalizationButton = () => {
   const [query, setQuery] = useState("");
   const [result, setResult] = useState("");
 
-  const handleQuery = ({ target }) => {
-    setQuery(target.value.split(""));
-  };
-
   const transformTextToDigits = () => {
   return (
     <div>
