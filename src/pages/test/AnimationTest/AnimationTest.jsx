@@ -3,28 +3,21 @@ import { useState } from "react";
 import { AnimationTestControllers } from "./AnimationTestControllers";
 
 const AnimationTest = () => {
-  const [transformRotateValue, setTransformRotateValue] = useState(0);
-  const [transformRotateYvalue, setTransformRotateYvalue] = useState(0);
-  const [transformRotateXvalue, setTransformRotateXvalue] = useState(0);
-  const [perspectiveValue, setPerspectiveValue] = useState(500);
+  const [transformValues, setTransformValues] = useState({
+    r: 0,
+    ry: 0,
+    rx: 0,
+    p: 0,
+  });
 
-  const handleTransformRotateValue = (value) => setTransformRotateValue(value);
-  const handleTransformRotateYvalue = (value) =>
-    setTransformRotateYvalue(value);
-  const handleTransformRotateXvalue = (value) =>
-    setTransformRotateXvalue(value);
-  const handlePerspectiveValue = (value) => setPerspectiveValue(value);
-
-  const reset = () => {
-    setTransformRotateValue(0);
-    setTransformRotateYvalue(0);
-    setTransformRotateXvalue(0);
-    setPerspectiveValue(500);
-  };
+  const handleTransformValues = (newValues) => setTransformValues(newValues);
 
   return (
     <div>
-      <AnimationTestControllers onChange={} value={}/>
+      <AnimationTestControllers
+        onChange={handleTransformValues}
+        value={transformValues}
+      />
       <div>
         <div
           style={{
@@ -33,7 +26,7 @@ const AnimationTest = () => {
             border: "5px solid rgb(150, 250, 250)",
             backgroundColor: "red",
             transformOrigin: "center",
-            transform: `perspective(${perspectiveValue}px) rotate(${transformRotateValue}deg) rotateY(${transformRotateYvalue}deg) rotateX(${transformRotateXvalue}deg)`,
+            transform: `perspective(${perspectiveValues.p}px) rotate(${transformRotateValue.r}deg) rotateY(${transformRotateYvalue.}deg) rotateX(${transformRotateXvalue}deg)`,
           }}
         >
           Hello
