@@ -33,16 +33,28 @@ const AnimationTest = () => {
       setPerspectiveValue(valueX);
     }
   };
-  //handleTransformRotateValue transformRotateValue "red"
-  //handleTransformRotateYvalue transformRotateYvalue "green"
-  //handleTransformRotateXvalue transformRotateXvalue "blue"
-  //handlePerspectiveValue perspectiveValue "cyan"
   return (
     <div>
-      <AnimationTestController />
-      <AnimationTestController />
-      <AnimationTestController />
-      <AnimationTestController />
+      <AnimationTestController
+        onChange={handleTransformRotateValue}
+        value={transformRotateValue}
+        color={"red"}
+      />
+      <AnimationTestController
+        onChange={handleTransformRotateYvalue}
+        value={transformRotateYvalue}
+        color={"green"}
+      />
+      <AnimationTestController
+        onChange={handleTransformRotateXvalue}
+        value={transformRotateXvalue}
+        color={"blue"}
+      />
+      <AnimationTestController
+        onChange={handlePerspectiveValue}
+        value={perspectiveValue}
+        color={"cyan"}
+      />
       <p>transform: rotate: {transformRotateValue}</p>
       <p>transfrom: rotateY: {transformRotateYvalue}</p>
       <p>transform: rotateX: {transformRotateXvalue}</p>
