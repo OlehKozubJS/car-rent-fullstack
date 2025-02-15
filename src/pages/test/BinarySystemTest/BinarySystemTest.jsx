@@ -28,16 +28,18 @@ const BinarySystemTest = () => {
     }
   };
 
-  const transformBinaryToDecimal = () => {};
+  const transformBinaryToDecimal = () => {
+    setResult(
+      [...query.split("")].sort((a, b) => Number(b) - Number(a)).join("")
+    );
+  };
 
   return (
     <div>
       <input type="text" placeholder="Enter a number" onChange={handleQuery} />
       <button onClick={transformDecimalToBinary}>Decimal to binary</button>
       <button onClick={transformBinaryToDecimal}>Binary to decimal</button>
-      <p>
-        {[...query.split("")].sort((a, b) => Number(b) - Number(a)).join("")}
-      </p>
+      <p>{result}</p>
     </div>
   );
 };
