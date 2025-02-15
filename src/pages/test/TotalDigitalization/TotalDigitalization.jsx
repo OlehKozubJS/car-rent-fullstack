@@ -10,9 +10,9 @@ const TotalDigitalization = () => {
     setQuery(target.value);
   };
 
-  const transform = () => {
-    return (callback) => {
-      setResult(query.split("").map().join(""));
+  const transform = (callback) => {
+    return () => {
+      setResult(query.split("").map(callback).join(""));
     };
   };
 
