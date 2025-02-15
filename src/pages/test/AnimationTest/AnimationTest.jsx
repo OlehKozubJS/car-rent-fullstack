@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { AnimationTestControllers } from "./AnimationTestControllers;
+import { AnimationTestControllers } from "./AnimationTestControllers";
 
 const AnimationTest = () => {
   const [transformRotateValue, setTransformRotateValue] = useState(0);
