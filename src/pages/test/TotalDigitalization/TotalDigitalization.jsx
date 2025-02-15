@@ -74,7 +74,7 @@ const TotalDigitalization = () => {
           Digits to text
         </button>
         <button
-          onClick={transformDigitsToText}
+          onClick={transformCyrillicToLatin}
           style={{
             backgroundColor: "rgb(0, 0, 200)",
             color: "rgb(255, 255, 55)",
