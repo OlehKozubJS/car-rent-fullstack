@@ -26,7 +26,7 @@ const BinarySystemTest = () => {
     let queryDigitsArray = String(query)
       .split("")
       .map((number) => {
-        return number(number);
+        return Number(number);
       });
     queryDigitsArray.sort((a, b) => b - a);
     setResult(
