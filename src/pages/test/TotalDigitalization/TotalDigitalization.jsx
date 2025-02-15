@@ -10,7 +10,7 @@ const TotalDigitalization = () => {
     setQuery(target.value);
   };
 
-  const transformTextToDigits = () => {
+  const transform = (callback) => {
     setResult(
       query
         .split("")
