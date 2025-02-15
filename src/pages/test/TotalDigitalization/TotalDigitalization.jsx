@@ -6,7 +6,9 @@ const TotalDigitalization = () => {
   const [query, setQuery] = useState("");
   const [result, setResult] = useState("");
 
-  const handleQuery = ({ target }) => {};
+  const handleQuery = ({ target }) => {
+    setQuery(target.value);
+  };
 
   const transformTextToDigits = () => {};
 
@@ -19,7 +21,7 @@ const TotalDigitalization = () => {
         <button onClick={transformTextToDigits}>Text to digits</button>
         <button onClick={transformDigitsToText}>Digits to text</button>
       </div>
-      <p>{db.length}</p>
+      <p>{query}</p>
     </div>
   );
 };
