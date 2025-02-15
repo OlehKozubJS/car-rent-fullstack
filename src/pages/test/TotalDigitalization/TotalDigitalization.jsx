@@ -29,7 +29,6 @@ const TotalDigitalization = () => {
   const transformDigitsToText = () => {
     setResult(
       query
-        .split("")
         .reduce((total, character, characterIndex, characterArray) => {
           let newTotal = total + character;
 
