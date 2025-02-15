@@ -43,7 +43,7 @@ const TotalDigitalization = () => {
         </button>
       </div>
       <textarea onClick={handleQuery} />
-      <p>{query}</p>
+      <p>{result}</p>
     </div>
   );
 };
