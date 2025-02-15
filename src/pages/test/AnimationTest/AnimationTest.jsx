@@ -67,11 +67,11 @@ const AnimationTest = () => {
       <div style={{ position: "relative", height: "50px" }}>
         <DraggableComponent
           onChange={handlePerspectiveValue}
-          valueX={perspective}
+          valueX={perspectiveValue}
           valueY={0}
           height={50}
           width={150}
-          backgroundColor={"blue"}
+          backgroundColor={"cyan"}
         />
       </div>
       <p>transform: rotate: {transformRotateValue}</p>
