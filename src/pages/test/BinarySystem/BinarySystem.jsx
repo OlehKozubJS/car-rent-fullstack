@@ -4,8 +4,8 @@ const BinarySystem = () => {
   return (
     <div>
       <input />
-      <button></button>
-      <button></button>
+      <button>Decimal to binary</button>
+      <button>Binary to decimal</button>
       <p></p>
     </div>
   );
