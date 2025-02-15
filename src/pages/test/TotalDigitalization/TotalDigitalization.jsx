@@ -50,7 +50,9 @@ const TotalDigitalization = () => {
     );
   };
 
-  const transformCyrillicToLatin = () => {};
+  const transformCyrillicToLatin = () => {
+    setResult(query.split().map(() => {}));
+  };
 
   return (
     <div>
