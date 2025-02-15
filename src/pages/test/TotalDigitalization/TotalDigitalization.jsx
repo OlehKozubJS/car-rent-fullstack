@@ -74,9 +74,9 @@ const TotalDigitalization = () => {
       <textarea
         onChange={handleQuery}
         placeholder="Enter some text or numbers"
-        style={{ height: "300px", width: "750px" }}
+        style={{ height: "300px", width: "750px", resize: "none" }}
       />
-      <p>{result}</p>
+      <p style={{ width: "750px" }}>{result}</p>
     </div>
   );
 };
