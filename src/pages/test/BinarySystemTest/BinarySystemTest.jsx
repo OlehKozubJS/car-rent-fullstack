@@ -8,6 +8,10 @@ const BinarySystemTest = () => {
     setQuery(target.value);
   };
 
+  const transformDecimalToBinary = () => {};
+
+  const transformBinaryToDecimal = () => {};
+
   return (
     <div>
       <input type="text" placeholder="Enter a number" onChange={handleQuery} />
