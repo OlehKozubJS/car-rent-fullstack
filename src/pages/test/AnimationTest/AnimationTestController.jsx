@@ -4,12 +4,12 @@ import { DraggableComponent } from "../DraggableComponent";
 
 const AnimationTestController = ({ onChange, value, color }) => {
   return (
-    <div style={{ position: "relative", height: "25px" }}>
+    <div style={{ position: "relative", height: "50px" }}>
       <DraggableComponent
         onChange={onChange}
         valueX={value}
         valueY={0}
-        height={25}
+        height={50}
         width={50}
         backgroundColor={color}
       />
