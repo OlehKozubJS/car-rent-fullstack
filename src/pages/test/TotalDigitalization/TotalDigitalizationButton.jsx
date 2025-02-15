@@ -1,9 +1,5 @@
 import { useState } from "react";
 
-import db from "./totalDigitalizationDB.json";
-import ucl from "./uaCyrillicLatinDB.json";
-import rcl from "./ruCyrillicLatinDB.json";
-
 const TotalDigitalization = () => {
   const [query, setQuery] = useState("");
   const [result, setResult] = useState("");
@@ -122,4 +118,4 @@ const TotalDigitalization = () => {
   );
 };
 
-export { TotalDigitalization };
+export { TotalDigitalizationButton };
