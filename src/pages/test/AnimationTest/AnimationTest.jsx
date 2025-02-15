@@ -39,7 +39,7 @@ const AnimationTest = () => {
           onChange={handleTransformRotateValue}
           valueX={transformRotateValue}
           valueY={0}
-          height={50}
+          height={25}
           width={150}
           backgroundColor={"red"}
         />
@@ -49,8 +49,8 @@ const AnimationTest = () => {
           onChange={handleTransformRotateYvalue}
           valueX={transformRotateYvalue}
           valueY={0}
-          height={50}
-          width={150}
+          height={25}
+          width={50}
           backgroundColor={"green"}
         />
       </div>
@@ -59,8 +59,8 @@ const AnimationTest = () => {
           onChange={handleTransformRotateXvalue}
           valueX={transformRotateXvalue}
           valueY={0}
-          height={50}
-          width={150}
+          height={25}
+          width={50}
           backgroundColor={"blue"}
         />
       </div>
@@ -69,8 +69,8 @@ const AnimationTest = () => {
           onChange={handlePerspectiveValue}
           valueX={perspectiveValue}
           valueY={0}
-          height={50}
-          width={150}
+          height={25}
+          width={50}
           backgroundColor={"cyan"}
         />
       </div>
