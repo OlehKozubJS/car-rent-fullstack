@@ -34,7 +34,7 @@ const AnimationTest = () => {
 
   return (
     <div>
-      <div style={{ position: "relative", height: "50px" }}>
+      <div style={{ position: "relative", height: "25px" }}>
         <DraggableComponent
           onChange={handleTransformRotateValue}
           valueX={transformRotateValue}
@@ -44,7 +44,7 @@ const AnimationTest = () => {
           backgroundColor={"red"}
         />
       </div>
-      <div style={{ position: "relative", height: "50px" }}>
+      <div style={{ position: "relative", height: "25px" }}>
         <DraggableComponent
           onChange={handleTransformRotateYvalue}
           valueX={transformRotateYvalue}
@@ -54,7 +54,7 @@ const AnimationTest = () => {
           backgroundColor={"green"}
         />
       </div>
-      <div style={{ position: "relative", height: "50px" }}>
+      <div style={{ position: "relative", height: "25px" }}>
         <DraggableComponent
           onChange={handleTransformRotateXvalue}
           valueX={transformRotateXvalue}
@@ -64,7 +64,7 @@ const AnimationTest = () => {
           backgroundColor={"blue"}
         />
       </div>
-      <div style={{ position: "relative", height: "50px" }}>
+      <div style={{ position: "relative", height: "25px" }}>
         <DraggableComponent
           onChange={handlePerspectiveValue}
           valueX={perspectiveValue}
