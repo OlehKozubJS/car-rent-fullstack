@@ -14,7 +14,7 @@ const BinarySystemTest = () => {
     } else {
       const binaryDigit = query % 2;
       const newQuotient = Math.floor(query / 2);
-      return setResult(transformDecimalToBinary(newQuotient) + binaryDigit);
+      setResult(transformDecimalToBinary(newQuotient) + binaryDigit);
     }
   };
 
