@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 const dtb = (query, result) => {
-  if (query <= 1) {
+  if (query === 0) {
     return Number(String(query));
   } else {
-    console.log(Number(String(dtb(query % 2, result)) + String(result)));
-    return Number(String(dtb(query % 2, result)) + String(result));
+    const binaryDigit = query % 2;
+    const newQuotient = Math.floor(query / 2);
   }
 };
 
