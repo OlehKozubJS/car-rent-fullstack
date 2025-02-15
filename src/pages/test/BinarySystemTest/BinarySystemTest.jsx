@@ -11,15 +11,15 @@ const dtb = (query) => {
 };
 
 const BinarySystemTest = () => {
-  const [query, setQuery] = useState("");
-  const [result, setResult] = useState("");
+  const [query, setQuery] = useState(0);
+  const [result, setResult] = useState(0);
 
   const handleQuery = ({ target }) => {
-    setQuery(target.value);
+    setQuery(Number(target.value));
   };
 
   const transformDecimalToBinary = () => {
-    setResult(dtb(Number(query)));
+    setResult(dtb(query));
   };
 
   const transformBinaryToDecimal = () => {};
