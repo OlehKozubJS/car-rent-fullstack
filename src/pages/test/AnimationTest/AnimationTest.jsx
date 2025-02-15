@@ -16,29 +16,11 @@ const AnimationTest = () => {
   const [transformRotateXvalue, setTransformRotateXvalue] = useState(0);
   const [perspectiveValue, setPerspectiveValue] = useState(0);
 
-  const handleTransformRotateValue = ({ valueX }) => {
-    if (valueX >= 0 && valueX <= 180) {
-      setTransformRotateValue(valueX);
-    }
-  };
+  const handleTransformRotateValue = handleValue(setTransformRotateValue);
+  const handleTransformRotateYvalue = handleValue(setTransformRotateXvalue);
+  const handleTransformRotateXvalue = handleValue(setTransformRotateXvalue);
+  const handlePerspectiveValue = handleValue(setPerspectiveValue);
 
-  const handleTransformRotateYvalue = ({ valueX }) => {
-    if (valueX >= 0 && valueX <= 180) {
-      setTransformRotateYvalue(valueX);
-    }
-  };
-
-  const handleTransformRotateXvalue = ({ valueX }) => {
-    if (valueX >= 0 && valueX <= 180) {
-      setTransformRotateXvalue(valueX);
-    }
-  };
-
-  const handlePerspectiveValue = ({ valueX }) => {
-    if (valueX >= 0 && valueX <= 180) {
-      setPerspectiveValue(valueX);
-    }
-  };
   return (
     <div>
       <AnimationTestController
