@@ -48,7 +48,7 @@ const AnimationTest = () => {
       <p>transform: rotateX: {transformRotateXvalue}</p>
       <p>transform: perspective: {perspectiveValue}</p>
       <div>
-        <div></div>
+        <div style={{ height: "250px", width: "250px" }}></div>
       </div>
     </div>
   );
