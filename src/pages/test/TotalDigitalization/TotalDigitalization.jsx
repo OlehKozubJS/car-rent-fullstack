@@ -16,35 +16,21 @@ const TotalDigitalization = () => {
     };
   };
 
-  const transformTextToDigits = () => {
-    setResult(
-      query
-        .split("")
-        .map((character) => {
-          let binaryDigit = db.indexOf(character);
-          if (binaryDigit < 10) {
-            binaryDigit = "0" + binaryDigit;
-          }
-          return String(binaryDigit);
-        })
-        .join("")
-    );
-  };
+  const transformTextToDigits = transform((character) => {
+    let binaryDigit = db.indexOf(character);
+    if (binaryDigit < 10) {
+      binaryDigit = "0" + binaryDigit;
+    }
+    return String(binaryDigit);
+  });
 
-  const transformDigitsToText = () => {
-    setResult(
-      query
-        .split("")
-        .map((character) => {
-          let binaryDigit = db.indexOf(character);
-          if (binaryDigit < 10) {
-            binaryDigit = "0" + binaryDigit;
-          }
-          return String(binaryDigit);
-        })
-        .join("")
-    );
-  };
+  const transformDigitsToText = transform((character) => {
+    let binaryDigit = db.indexOf(character);
+    if (binaryDigit < 10) {
+      binaryDigit = "0" + binaryDigit;
+    }
+    return String(binaryDigit);
+  });
 
   return (
     <div>
